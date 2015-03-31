@@ -10,6 +10,11 @@
 
 @interface ViewController : UIViewController
 
+@property (weak, nonatomic) IBOutlet UIButton *boyBtn;
+@property (weak, nonatomic) IBOutlet UIButton *girlBtn;
+@property (strong,nonatomic) NSDictionary *GameDatas;
 
+
+- (IBAction)enterGame:(id)sender;
 @end
 

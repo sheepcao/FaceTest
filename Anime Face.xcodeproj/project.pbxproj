@@ -14,6 +14,26 @@
 		A47D6EBC1AC3E1ED00AC1768 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = A47D6EBB1AC3E1ED00AC1768 /* Images.xcassets */; };
 		A47D6EBF1AC3E1ED00AC1768 /* LaunchScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = A47D6EBD1AC3E1ED00AC1768 /* LaunchScreen.xib */; };
 		A47D6ECB1AC3E1ED00AC1768 /* Anime_FaceTests.m in Sources */ = {isa = PBXBuildFile; fileRef = A47D6ECA1AC3E1ED00AC1768 /* Anime_FaceTests.m */; };
+		A4CA3AA31ACA440900D50D80 /* gameViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = A4CA3AA11ACA440900D50D80 /* gameViewController.m */; };
+		A4CA3AA41ACA440900D50D80 /* gameViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = A4CA3AA21ACA440900D50D80 /* gameViewController.xib */; };
+		A4CA3AA61ACA63A900D50D80 /* GameData.plist in Resources */ = {isa = PBXBuildFile; fileRef = A4CA3AA51ACA63A900D50D80 /* GameData.plist */; };
+		A4CA3AB21ACA738D00D50D80 /* 1.png in Resources */ = {isa = PBXBuildFile; fileRef = A4CA3AA81ACA738D00D50D80 /* 1.png */; };
+		A4CA3AB31ACA738D00D50D80 /* 2.png in Resources */ = {isa = PBXBuildFile; fileRef = A4CA3AA91ACA738D00D50D80 /* 2.png */; };
+		A4CA3AB41ACA738D00D50D80 /* 3.png in Resources */ = {isa = PBXBuildFile; fileRef = A4CA3AAA1ACA738D00D50D80 /* 3.png */; };
+		A4CA3AB51ACA738D00D50D80 /* 4.png in Resources */ = {isa = PBXBuildFile; fileRef = A4CA3AAB1ACA738D00D50D80 /* 4.png */; };
+		A4CA3AB61ACA738D00D50D80 /* 5.png in Resources */ = {isa = PBXBuildFile; fileRef = A4CA3AAC1ACA738D00D50D80 /* 5.png */; };
+		A4CA3AB71ACA738D00D50D80 /* 6.png in Resources */ = {isa = PBXBuildFile; fileRef = A4CA3AAD1ACA738D00D50D80 /* 6.png */; };
+		A4CA3AB81ACA738D00D50D80 /* 7.png in Resources */ = {isa = PBXBuildFile; fileRef = A4CA3AAE1ACA738D00D50D80 /* 7.png */; };
+		A4CA3AB91ACA738D00D50D80 /* 8.png in Resources */ = {isa = PBXBuildFile; fileRef = A4CA3AAF1ACA738D00D50D80 /* 8.png */; };
+		A4CA3ABA1ACA738D00D50D80 /* 9.png in Resources */ = {isa = PBXBuildFile; fileRef = A4CA3AB01ACA738D00D50D80 /* 9.png */; };
+		A4CA3ABB1ACA738D00D50D80 /* 10.png in Resources */ = {isa = PBXBuildFile; fileRef = A4CA3AB11ACA738D00D50D80 /* 10.png */; };
+		A4CA3ABD1ACA90B800D50D80 /* 11.png in Resources */ = {isa = PBXBuildFile; fileRef = A4CA3ABC1ACA90B800D50D80 /* 11.png */; };
+		A4CA3AC21ACA9D3E00D50D80 /* APLMoveMeView.m in Sources */ = {isa = PBXBuildFile; fileRef = A4CA3ABF1ACA9D3E00D50D80 /* APLMoveMeView.m */; };
+		A4CA3AC31ACA9D3E00D50D80 /* APLPlacardView.m in Sources */ = {isa = PBXBuildFile; fileRef = A4CA3AC11ACA9D3E00D50D80 /* APLPlacardView.m */; };
+		A4CA3AC71ACAA0D300D50D80 /* elemntButton.m in Sources */ = {isa = PBXBuildFile; fileRef = A4CA3AC61ACAA0D300D50D80 /* elemntButton.m */; };
+		A4CA3ACA1ACAA2A500D50D80 /* hairButton.m in Sources */ = {isa = PBXBuildFile; fileRef = A4CA3AC91ACAA2A500D50D80 /* hairButton.m */; };
+		A4CA3ACD1ACAA32C00D50D80 /* 12.png in Resources */ = {isa = PBXBuildFile; fileRef = A4CA3ACB1ACAA32C00D50D80 /* 12.png */; };
+		A4CA3ACE1ACAA32C00D50D80 /* 13.png in Resources */ = {isa = PBXBuildFile; fileRef = A4CA3ACC1ACAA32C00D50D80 /* 13.png */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -40,6 +60,33 @@
 		A47D6EC41AC3E1ED00AC1768 /* Anime FaceTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "Anime FaceTests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
 		A47D6EC91AC3E1ED00AC1768 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		A47D6ECA1AC3E1ED00AC1768 /* Anime_FaceTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = Anime_FaceTests.m; sourceTree = "<group>"; };
+		A4CA3AA01ACA440900D50D80 /* gameViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = gameViewController.h; sourceTree = "<group>"; };
+		A4CA3AA11ACA440900D50D80 /* gameViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = gameViewController.m; sourceTree = "<group>"; };
+		A4CA3AA21ACA440900D50D80 /* gameViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = gameViewController.xib; sourceTree = "<group>"; };
+		A4CA3AA51ACA63A900D50D80 /* GameData.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = GameData.plist; sourceTree = "<group>"; };
+		A4CA3AA71ACA6E8D00D50D80 /* globalVar.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = globalVar.h; sourceTree = "<group>"; };
+		A4CA3AA81ACA738D00D50D80 /* 1.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = 1.png; sourceTree = "<group>"; };
+		A4CA3AA91ACA738D00D50D80 /* 2.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = 2.png; sourceTree = "<group>"; };
+		A4CA3AAA1ACA738D00D50D80 /* 3.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = 3.png; sourceTree = "<group>"; };
+		A4CA3AAB1ACA738D00D50D80 /* 4.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = 4.png; sourceTree = "<group>"; };
+		A4CA3AAC1ACA738D00D50D80 /* 5.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = 5.png; sourceTree = "<group>"; };
+		A4CA3AAD1ACA738D00D50D80 /* 6.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = 6.png; sourceTree = "<group>"; };
+		A4CA3AAE1ACA738D00D50D80 /* 7.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = 7.png; sourceTree = "<group>"; };
+		A4CA3AAF1ACA738D00D50D80 /* 8.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = 8.png; sourceTree = "<group>"; };
+		A4CA3AB01ACA738D00D50D80 /* 9.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = 9.png; sourceTree = "<group>"; };
+		A4CA3AB11ACA738D00D50D80 /* 10.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = 10.png; sourceTree = "<group>"; };
+		A4CA3ABC1ACA90B800D50D80 /* 11.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = 11.png; sourceTree = "<group>"; };
+		A4CA3ABE1ACA9D3E00D50D80 /* APLMoveMeView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = APLMoveMeView.h; sourceTree = "<group>"; };
+		A4CA3ABF1ACA9D3E00D50D80 /* APLMoveMeView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = APLMoveMeView.m; sourceTree = "<group>"; };
+		A4CA3AC01ACA9D3E00D50D80 /* APLPlacardView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = APLPlacardView.h; sourceTree = "<group>"; };
+		A4CA3AC11ACA9D3E00D50D80 /* APLPlacardView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = APLPlacardView.m; sourceTree = "<group>"; };
+		A4CA3AC41ACA9D9300D50D80 /* MoveMe-Prefix.pch */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "MoveMe-Prefix.pch"; sourceTree = "<group>"; };
+		A4CA3AC51ACAA0D300D50D80 /* elemntButton.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = elemntButton.h; sourceTree = "<group>"; };
+		A4CA3AC61ACAA0D300D50D80 /* elemntButton.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = elemntButton.m; sourceTree = "<group>"; };
+		A4CA3AC81ACAA2A500D50D80 /* hairButton.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = hairButton.h; sourceTree = "<group>"; };
+		A4CA3AC91ACAA2A500D50D80 /* hairButton.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = hairButton.m; sourceTree = "<group>"; };
+		A4CA3ACB1ACAA32C00D50D80 /* 12.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = 12.png; sourceTree = "<group>"; };
+		A4CA3ACC1ACAA32C00D50D80 /* 13.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = 13.png; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -81,14 +128,27 @@
 		A47D6EAD1AC3E1ED00AC1768 /* Anime Face */ = {
 			isa = PBXGroup;
 			children = (
+				A4CA3ABE1ACA9D3E00D50D80 /* APLMoveMeView.h */,
+				A4CA3ABF1ACA9D3E00D50D80 /* APLMoveMeView.m */,
+				A4CA3AC01ACA9D3E00D50D80 /* APLPlacardView.h */,
+				A4CA3AC11ACA9D3E00D50D80 /* APLPlacardView.m */,
+				A4CA3AC81ACAA2A500D50D80 /* hairButton.h */,
+				A4CA3AC91ACAA2A500D50D80 /* hairButton.m */,
+				A4CA3AC51ACAA0D300D50D80 /* elemntButton.h */,
+				A4CA3AC61ACAA0D300D50D80 /* elemntButton.m */,
+				A4CA3AA71ACA6E8D00D50D80 /* globalVar.h */,
 				A47D6EB21AC3E1ED00AC1768 /* AppDelegate.h */,
 				A47D6EB31AC3E1ED00AC1768 /* AppDelegate.m */,
 				A47D6EB51AC3E1ED00AC1768 /* ViewController.h */,
 				A47D6EB61AC3E1ED00AC1768 /* ViewController.m */,
+				A4CA3AA01ACA440900D50D80 /* gameViewController.h */,
+				A4CA3AA11ACA440900D50D80 /* gameViewController.m */,
+				A4CA3AA21ACA440900D50D80 /* gameViewController.xib */,
 				A47D6EB81AC3E1ED00AC1768 /* Main.storyboard */,
 				A47D6EBB1AC3E1ED00AC1768 /* Images.xcassets */,
 				A47D6EBD1AC3E1ED00AC1768 /* LaunchScreen.xib */,
 				A47D6EAE1AC3E1ED00AC1768 /* Supporting Files */,
+				A4CA3AC41ACA9D9300D50D80 /* MoveMe-Prefix.pch */,
 			);
 			path = "Anime Face";
 			sourceTree = "<group>";
@@ -96,8 +156,22 @@
 		A47D6EAE1AC3E1ED00AC1768 /* Supporting Files */ = {
 			isa = PBXGroup;
 			children = (
+				A4CA3AA81ACA738D00D50D80 /* 1.png */,
+				A4CA3AA91ACA738D00D50D80 /* 2.png */,
+				A4CA3AAA1ACA738D00D50D80 /* 3.png */,
+				A4CA3AAB1ACA738D00D50D80 /* 4.png */,
+				A4CA3AAC1ACA738D00D50D80 /* 5.png */,
+				A4CA3AAD1ACA738D00D50D80 /* 6.png */,
+				A4CA3AAE1ACA738D00D50D80 /* 7.png */,
+				A4CA3AAF1ACA738D00D50D80 /* 8.png */,
+				A4CA3AB01ACA738D00D50D80 /* 9.png */,
+				A4CA3AB11ACA738D00D50D80 /* 10.png */,
+				A4CA3ACB1ACAA32C00D50D80 /* 12.png */,
+				A4CA3ACC1ACAA32C00D50D80 /* 13.png */,
+				A4CA3ABC1ACA90B800D50D80 /* 11.png */,
 				A47D6EAF1AC3E1ED00AC1768 /* Info.plist */,
 				A47D6EB01AC3E1ED00AC1768 /* main.m */,
+				A4CA3AA51ACA63A900D50D80 /* GameData.plist */,
 			);
 			name = "Supporting Files";
 			sourceTree = "<group>";
@@ -199,7 +273,22 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				A4CA3AB71ACA738D00D50D80 /* 6.png in Resources */,
+				A4CA3AB51ACA738D00D50D80 /* 4.png in Resources */,
+				A4CA3AB61ACA738D00D50D80 /* 5.png in Resources */,
+				A4CA3AB81ACA738D00D50D80 /* 7.png in Resources */,
+				A4CA3AA41ACA440900D50D80 /* gameViewController.xib in Resources */,
+				A4CA3ABB1ACA738D00D50D80 /* 10.png in Resources */,
+				A4CA3AA61ACA63A900D50D80 /* GameData.plist in Resources */,
+				A4CA3AB31ACA738D00D50D80 /* 2.png in Resources */,
+				A4CA3AB41ACA738D00D50D80 /* 3.png in Resources */,
 				A47D6EBA1AC3E1ED00AC1768 /* Main.storyboard in Resources */,
+				A4CA3ACD1ACAA32C00D50D80 /* 12.png in Resources */,
+				A4CA3ACE1ACAA32C00D50D80 /* 13.png in Resources */,
+				A4CA3ABA1ACA738D00D50D80 /* 9.png in Resources */,
+				A4CA3ABD1ACA90B800D50D80 /* 11.png in Resources */,
+				A4CA3AB91ACA738D00D50D80 /* 8.png in Resources */,
+				A4CA3AB21ACA738D00D50D80 /* 1.png in Resources */,
 				A47D6EBF1AC3E1ED00AC1768 /* LaunchScreen.xib in Resources */,
 				A47D6EBC1AC3E1ED00AC1768 /* Images.xcassets in Resources */,
 			);
@@ -219,9 +308,14 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				A4CA3AC31ACA9D3E00D50D80 /* APLPlacardView.m in Sources */,
+				A4CA3AA31ACA440900D50D80 /* gameViewController.m in Sources */,
 				A47D6EB71AC3E1ED00AC1768 /* ViewController.m in Sources */,
+				A4CA3AC71ACAA0D300D50D80 /* elemntButton.m in Sources */,
 				A47D6EB41AC3E1ED00AC1768 /* AppDelegate.m in Sources */,
+				A4CA3AC21ACA9D3E00D50D80 /* APLMoveMeView.m in Sources */,
 				A47D6EB11AC3E1ED00AC1768 /* main.m in Sources */,
+				A4CA3ACA1ACAA2A500D50D80 /* hairButton.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -343,7 +437,9 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				GCC_PREFIX_HEADER = "Anime Face/MoveMe-Prefix.pch";
 				INFOPLIST_FILE = "Anime Face/Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 7.1;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 			};
@@ -353,7 +449,9 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				GCC_PREFIX_HEADER = "Anime Face/MoveMe-Prefix.pch";
 				INFOPLIST_FILE = "Anime Face/Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 7.1;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 			};
@@ -412,6 +510,7 @@
 				A47D6ED01AC3E1ED00AC1768 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		A47D6ED11AC3E1ED00AC1768 /* Build configuration list for PBXNativeTarget "Anime FaceTests" */ = {
 			isa = XCConfigurationList;
@@ -420,6 +519,7 @@
 				A47D6ED31AC3E1ED00AC1768 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};

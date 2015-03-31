@@ -1,13 +1,31 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="6211" systemVersion="14A298i" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="vXZ-lx-hvc">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="6751" systemVersion="14C109" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="AdM-gr-UdG">
     <dependencies>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="6204"/>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="6736"/>
     </dependencies>
     <scenes>
+        <!--Navigation Controller-->
+        <scene sceneID="LF0-cR-eYI">
+            <objects>
+                <navigationController id="AdM-gr-UdG" sceneMemberID="viewController">
+                    <simulatedScreenMetrics key="simulatedDestinationMetrics" type="retina4"/>
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" id="w98-Ga-rCq">
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="44"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                    </navigationBar>
+                    <connections>
+                        <segue destination="vXZ-lx-hvc" kind="relationship" relationship="rootViewController" id="Wza-uG-IBe"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="g3G-aL-UMm" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-360" y="291"/>
+        </scene>
         <!--View Controller-->
         <scene sceneID="ufC-wZ-h7g">
             <objects>
-                <viewController id="vXZ-lx-hvc" customClass="ViewController" customModuleProvider="" sceneMemberID="viewController">
+                <viewController id="vXZ-lx-hvc" customClass="ViewController" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="jyV-Pf-zRb"/>
                         <viewControllerLayoutGuide type="bottom" id="2fi-mo-0CV"/>
@@ -15,8 +33,84 @@
                     <view key="view" contentMode="scaleToFill" id="kh9-bI-dsS">
                         <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                        <subviews>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="mjn-1j-VOm">
+                                <rect key="frame" x="297" y="245" width="102" height="109"/>
+                                <color key="backgroundColor" red="1" green="0.5659143518518519" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                                <state key="normal" title="GIRL">
+                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <connections>
+                                    <action selector="enterGame:" destination="vXZ-lx-hvc" eventType="touchUpInside" id="8wc-4m-Ien"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="BGK-sf-pmI">
+                                <rect key="frame" x="187" y="245" width="102" height="109"/>
+                                <color key="backgroundColor" red="0.49571759259259163" green="0.85650091240000004" blue="0.85781249999999998" alpha="1" colorSpace="calibratedRGB"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="109" id="NRA-Sl-Zrk"/>
+                                    <constraint firstAttribute="width" constant="102" id="eZV-ZQ-pvo"/>
+                                </constraints>
+                                <state key="normal" title="BOY">
+                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <variation key="default">
+                                    <mask key="constraints">
+                                        <exclude reference="NRA-Sl-Zrk"/>
+                                        <exclude reference="eZV-ZQ-pvo"/>
+                                    </mask>
+                                </variation>
+                                <variation key="heightClass=regular-widthClass=compact">
+                                    <mask key="constraints">
+                                        <include reference="NRA-Sl-Zrk"/>
+                                        <include reference="eZV-ZQ-pvo"/>
+                                    </mask>
+                                </variation>
+                                <connections>
+                                    <action selector="enterGame:" destination="vXZ-lx-hvc" eventType="touchUpInside" id="axl-p4-D0G"/>
+                                </connections>
+                            </button>
+                        </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="BGK-sf-pmI" firstAttribute="width" secondItem="mjn-1j-VOm" secondAttribute="width" id="3d9-y3-eTD"/>
+                            <constraint firstItem="BGK-sf-pmI" firstAttribute="height" secondItem="mjn-1j-VOm" secondAttribute="height" id="eQo-SX-iTE"/>
+                            <constraint firstItem="mjn-1j-VOm" firstAttribute="leading" secondItem="BGK-sf-pmI" secondAttribute="trailing" constant="8" id="hLO-Ln-y9C">
+                                <variation key="heightClass=regular-widthClass=compact" constant="0.0"/>
+                            </constraint>
+                            <constraint firstItem="BGK-sf-pmI" firstAttribute="centerY" secondItem="mjn-1j-VOm" secondAttribute="centerY" id="mel-CW-jHj"/>
+                            <constraint firstAttribute="centerX" secondItem="BGK-sf-pmI" secondAttribute="centerX" constant="44" id="ya3-Jd-1NC">
+                                <variation key="heightClass=regular-widthClass=compact" constant="51"/>
+                            </constraint>
+                            <constraint firstAttribute="centerY" secondItem="BGK-sf-pmI" secondAttribute="centerY" constant="0.5" id="zEM-tn-iHs"/>
+                        </constraints>
+                        <variation key="default">
+                            <mask key="constraints">
+                                <exclude reference="3d9-y3-eTD"/>
+                                <exclude reference="eQo-SX-iTE"/>
+                                <exclude reference="mel-CW-jHj"/>
+                                <exclude reference="ya3-Jd-1NC"/>
+                                <exclude reference="zEM-tn-iHs"/>
+                                <exclude reference="hLO-Ln-y9C"/>
+                            </mask>
+                        </variation>
+                        <variation key="heightClass=regular-widthClass=compact">
+                            <mask key="constraints">
+                                <include reference="3d9-y3-eTD"/>
+                                <include reference="eQo-SX-iTE"/>
+                                <include reference="mel-CW-jHj"/>
+                                <include reference="ya3-Jd-1NC"/>
+                                <include reference="zEM-tn-iHs"/>
+                                <include reference="hLO-Ln-y9C"/>
+                            </mask>
+                        </variation>
                     </view>
+                    <navigationItem key="navigationItem" id="kTi-2y-CNK"/>
+                    <simulatedScreenMetrics key="simulatedDestinationMetrics" type="retina4"/>
+                    <connections>
+                        <outlet property="boyBtn" destination="BGK-sf-pmI" id="NL0-qK-fDe"/>
+                        <outlet property="girlBtn" destination="mjn-1j-VOm" id="b5f-QN-q6T"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="x5A-6p-PRh" sceneMemberID="firstResponder"/>
             </objects>
