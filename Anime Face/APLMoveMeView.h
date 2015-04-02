@@ -52,6 +52,7 @@
 
 @property (nonatomic, strong) NSArray *displayStrings;
 @property (nonatomic, strong) APLPlacardView *placardView;
+@property (nonatomic, strong) APLPlacardView *attachedView;
 
 - (void)setupNextDisplayString;
 

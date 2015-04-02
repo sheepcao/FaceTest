@@ -15,7 +15,10 @@
 @property (weak, nonatomic) IBOutlet APLMoveMeView *headImage;
 @property (weak, nonatomic) IBOutlet UIScrollView *catalogScrollView;
 @property (weak, nonatomic) IBOutlet UIScrollView *ListsScroll;
+@property (weak, nonatomic) IBOutlet UIImageView *backImage;
 @property (weak, nonatomic) IBOutlet APLPlacardView *faceImage;
+@property (weak, nonatomic) IBOutlet APLPlacardView *backHairImage;
+@property (weak, nonatomic) IBOutlet APLPlacardView *bodyImage;
 
 @property (strong,nonatomic) NSDictionary *GameData;
 

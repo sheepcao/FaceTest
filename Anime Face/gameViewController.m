@@ -92,10 +92,9 @@
         for (int j = 0 ; j<listElements.count; j++) {
             UIButton *element = [[UIButton alloc] initWithFrame:CGRectMake(0+(j%3)*ELEMENT_WIDTH, 0+(j/3)*ELEMENT_WIDTH/1.2, ELEMENT_WIDTH, ELEMENT_WIDTH/1.2)];
             [element setImage:[UIImage imageNamed:listElements[j]] forState:UIControlStateNormal];
-            element.backgroundColor = [UIColor yellowColor];
+//            element.backgroundColor = [UIColor yellowColor];
             element.tag = i;
             [element addTarget:self action:@selector(elementTapped:) forControlEvents:UIControlEventTouchUpInside];
-
             [oneList addSubview:element];
 
         }
@@ -107,6 +106,7 @@
     NSLog(@"element:%ld",sender.tag);
     [self.faceImage setImage:sender.imageView.image];
     self.headImage.placardView = self.faceImage;
+    
 }
 
 

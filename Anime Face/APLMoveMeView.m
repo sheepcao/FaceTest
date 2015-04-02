@@ -115,14 +115,12 @@ float differenceY;
         yTarget = -self.frame.size.height;
         
         CGPoint originalCenter = self.placardView.center;
-    NSLog(@"center:%f,%f",self.placardView.center.x,self.placardView.center.y
-          );
-    originalCenter.x +=xTarget;
-    originalCenter.y+=yTarget;
-    
-        NSLog(@"xTarget:%f",xTarget);
+        NSLog(@"center:%f,%f",self.placardView.center.x,self.placardView.center.y
+              );
+        originalCenter.x +=xTarget;
+        originalCenter.y+=yTarget;
+        
 
-    
     [UIView animateWithDuration:.12
                      animations:^{
                          
@@ -133,7 +131,51 @@ float differenceY;
 
                      }
      ];
+        
+        
+        if (self.attachedView) {
+            
+            
+            
+            float xAttached = location.x - differenceX;
+            float yAttached = location.y - differenceY;
+            
+            NSLog(@"xTarget:%f",xTarget);
+            if(xAttached > self.frame.size.width)
+                xAttached = self.frame.size.width;
+            else if (xAttached < -self.frame.size.width)
+                xAttached = -self.frame.size.width;
+            
+            if(yAttached > self.frame.size.height)
+                yAttached = self.frame.size.height;
+            else if(yAttached < -self.frame.size.height)
+                yAttached = -self.frame.size.height;
+            
+            CGPoint attachedCenter = self.attachedView.center;
+            NSLog(@"attachedView center:%f,%f",self.attachedView.center.x,self.attachedView.center.y
+                  );
+            attachedCenter.x +=xAttached;
+            attachedCenter.y+=yAttached;
+            
+            NSLog(@"attachedView:%f",xAttached);
+            
+            [UIView animateWithDuration:.12
+                             animations:^{
+                                 
+                                 [self.attachedView setCenter:attachedCenter];
+                                 
+                                 differenceX = location.x;
+                                 differenceY = location.y;
+                                 
+                             }
+             ];
+        }
+        
+        
+        
     }
+    
+    
 		return;
 //	}
 }
