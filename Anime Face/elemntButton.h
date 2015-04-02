@@ -12,5 +12,7 @@
 
 @property (nonatomic,strong) NSString *imageName;
 @property (nonatomic,strong) NSNumber *imageLevel;
+@property (nonatomic,strong) NSString *originImageName;
+
 
 @end

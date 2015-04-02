@@ -12,9 +12,24 @@
                 <outlet property="backHairImage" destination="KC0-xs-SdP" id="lcM-Z7-Ycc"/>
                 <outlet property="backImage" destination="bCg-Zr-12Q" id="NBW-h7-KY7"/>
                 <outlet property="bodyImage" destination="2FQ-Js-oSS" id="nj9-SR-Vi8"/>
+                <outlet property="bottomtextView" destination="PWg-zF-hye" id="uNu-lm-bqX"/>
                 <outlet property="catalogScrollView" destination="2t8-n1-aLq" id="wWB-70-eHy"/>
+                <outlet property="clothingView" destination="8IZ-HA-Aai" id="lkw-cb-QAo"/>
+                <outlet property="eyeView" destination="GwI-sl-iGQ" id="3Ru-7A-ByY"/>
+                <outlet property="eyebrowView" destination="EcT-uC-SSS" id="aO8-Ze-WdN"/>
+                <outlet property="faceFrameView" destination="bar-hd-gKp" id="wWv-mU-MnE"/>
                 <outlet property="faceImage" destination="8I5-yA-sCc" id="dcC-QL-cNG"/>
+                <outlet property="frontHairView" destination="QzV-Am-JQQ" id="2fn-dW-eSW"/>
+                <outlet property="gestureView" destination="eja-jM-WhB" id="Flb-4c-j8d"/>
+                <outlet property="glassesView" destination="YCS-hc-O4F" id="FM6-Lc-tCy"/>
+                <outlet property="hatView" destination="t5U-Oh-HPN" id="ngq-71-E64"/>
                 <outlet property="headImage" destination="14F-ET-7hy" id="Pwc-W8-i2A"/>
+                <outlet property="moodView" destination="ocM-gj-PU6" id="bOy-DF-Tco"/>
+                <outlet property="mouthView" destination="oVE-p8-9Sc" id="nM4-8D-Fsf"/>
+                <outlet property="mustacheView" destination="9Hp-U4-gei" id="Se5-r5-fAY"/>
+                <outlet property="noseView" destination="Z2E-9u-IhM" id="pZB-eb-aTw"/>
+                <outlet property="petView" destination="Lds-Bk-z73" id="N1a-eu-kUg"/>
+                <outlet property="toptextView" destination="AFr-RA-XYv" id="gAp-7g-Zyz"/>
                 <outlet property="view" destination="i5M-Pr-FkT" id="sfx-zR-JGt"/>
             </connections>
         </placeholder>
@@ -26,7 +41,7 @@
                 <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="14F-ET-7hy" customClass="APLMoveMeView">
                     <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
                     <subviews>
-                        <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="whk-7R-FxA" userLabel="moodY">
+                        <view hidden="YES" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="whk-7R-FxA" userLabel="moodY">
                             <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
                             <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                             <constraints>
@@ -46,7 +61,7 @@
                                 </mask>
                             </variation>
                         </view>
-                        <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="TmG-Rm-WN4" userLabel="petY">
+                        <view hidden="YES" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="TmG-Rm-WN4" userLabel="petY">
                             <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
                             <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                             <constraints>
@@ -63,7 +78,7 @@
                                 </mask>
                             </variation>
                         </view>
-                        <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="qMT-L1-BA9" userLabel="glassesY">
+                        <view hidden="YES" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="qMT-L1-BA9" userLabel="glassesY">
                             <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
                             <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                             <constraints>
@@ -80,7 +95,7 @@
                                 </mask>
                             </variation>
                         </view>
-                        <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="qGu-dv-XF5" userLabel="clothingY">
+                        <view hidden="YES" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="qGu-dv-XF5" userLabel="clothingY">
                             <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
                             <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                             <constraints>
@@ -97,7 +112,7 @@
                                 </mask>
                             </variation>
                         </view>
-                        <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="oCB-zN-ztN" userLabel="mustacheY">
+                        <view hidden="YES" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="oCB-zN-ztN" userLabel="mustacheY">
                             <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
                             <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                             <constraints>
@@ -114,7 +129,7 @@
                                 </mask>
                             </variation>
                         </view>
-                        <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="abQ-4b-ssR" userLabel="noseY">
+                        <view hidden="YES" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="abQ-4b-ssR" userLabel="noseY">
                             <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
                             <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                             <constraints>
@@ -131,7 +146,7 @@
                                 </mask>
                             </variation>
                         </view>
-                        <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="4yv-WQ-Sdd" userLabel="mouthY">
+                        <view hidden="YES" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="4yv-WQ-Sdd" userLabel="mouthY">
                             <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
                             <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                             <constraints>
@@ -148,7 +163,7 @@
                                 </mask>
                             </variation>
                         </view>
-                        <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="o4J-8u-Ciu" userLabel="eyeY">
+                        <view hidden="YES" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="o4J-8u-Ciu" userLabel="eyeY">
                             <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
                             <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                             <constraints>
@@ -165,7 +180,7 @@
                                 </mask>
                             </variation>
                         </view>
-                        <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="yBe-n8-zzL" userLabel="eyebrowY">
+                        <view hidden="YES" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="yBe-n8-zzL" userLabel="eyebrowY">
                             <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
                             <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                             <constraints>
@@ -182,7 +197,7 @@
                                 </mask>
                             </variation>
                         </view>
-                        <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="CKC-0y-OjI" userLabel="faceY">
+                        <view hidden="YES" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="CKC-0y-OjI" userLabel="faceY">
                             <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
                             <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                             <constraints>
@@ -199,7 +214,7 @@
                                 </mask>
                             </variation>
                         </view>
-                        <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="QOe-IX-mBo" userLabel="faceFrameY">
+                        <view hidden="YES" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="QOe-IX-mBo" userLabel="faceFrameY">
                             <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
                             <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                             <constraints>
@@ -500,7 +515,9 @@
                         <constraint firstItem="Lds-Bk-z73" firstAttribute="top" secondItem="TmG-Rm-WN4" secondAttribute="bottom" constant="-23" id="7vU-4d-jmA">
                             <variation key="heightClass=regular-widthClass=compact" constant="0.0"/>
                         </constraint>
-                        <constraint firstAttribute="centerX" secondItem="8IZ-HA-Aai" secondAttribute="centerX" constant="1" id="8bo-S9-BPu"/>
+                        <constraint firstAttribute="centerX" secondItem="8IZ-HA-Aai" secondAttribute="centerX" constant="1" id="8bo-S9-BPu">
+                            <variation key="heightClass=regular-widthClass=compact" constant="0.0"/>
+                        </constraint>
                         <constraint firstItem="QOe-IX-mBo" firstAttribute="leading" secondItem="14F-ET-7hy" secondAttribute="leading" constant="103" id="9xn-Zj-QO6">
                             <variation key="heightClass=regular-widthClass=compact" constant="100"/>
                         </constraint>
@@ -517,6 +534,7 @@
                         <constraint firstItem="qMT-L1-BA9" firstAttribute="width" secondItem="14F-ET-7hy" secondAttribute="height" multiplier="1:2" id="ESt-bD-5NW"/>
                         <constraint firstItem="2FQ-Js-oSS" firstAttribute="width" secondItem="eja-jM-WhB" secondAttribute="width" id="FL9-86-u7S"/>
                         <constraint firstItem="bCg-Zr-12Q" firstAttribute="leading" secondItem="14F-ET-7hy" secondAttribute="leading" id="FQD-kr-5Fy"/>
+                        <constraint firstAttribute="width" secondItem="8IZ-HA-Aai" secondAttribute="height" multiplier="207:167" id="GBy-mU-Iel"/>
                         <constraint firstItem="4yv-WQ-Sdd" firstAttribute="leading" secondItem="14F-ET-7hy" secondAttribute="leading" id="GzP-dK-Lzn"/>
                         <constraint firstItem="9Hp-U4-gei" firstAttribute="width" secondItem="14F-ET-7hy" secondAttribute="height" multiplier="22:69" id="HVG-pI-eCV"/>
                         <constraint firstItem="PWg-zF-hye" firstAttribute="width" secondItem="bCg-Zr-12Q" secondAttribute="height" multiplier="1:1" id="HnH-Fn-SV4"/>
@@ -736,6 +754,7 @@
                             <exclude reference="f2c-wj-o8E"/>
                             <exclude reference="jzn-tM-e2j"/>
                             <exclude reference="8bo-S9-BPu"/>
+                            <exclude reference="GBy-mU-Iel"/>
                             <exclude reference="qJ1-rw-s0L"/>
                             <exclude reference="umN-yN-Rd6"/>
                             <exclude reference="2Cu-Ww-qJr"/>
@@ -761,11 +780,6 @@
                             <exclude reference="clg-ou-ELO"/>
                             <exclude reference="dzu-8L-ts9"/>
                             <exclude reference="oEt-2g-mud"/>
-                            <exclude reference="K0k-D2-boV"/>
-                            <exclude reference="MAQ-65-tt2"/>
-                            <exclude reference="Vj7-CE-w3S"/>
-                            <exclude reference="f86-UZ-eGl"/>
-                            <exclude reference="kNx-lk-dAy"/>
                             <exclude reference="FL9-86-u7S"/>
                             <exclude reference="N05-z6-ZmG"/>
                             <exclude reference="UKQ-6F-QjB"/>
@@ -773,6 +787,11 @@
                             <exclude reference="7vU-4d-jmA"/>
                             <exclude reference="DqD-lt-m4W"/>
                             <exclude reference="Idd-EI-uPa"/>
+                            <exclude reference="K0k-D2-boV"/>
+                            <exclude reference="MAQ-65-tt2"/>
+                            <exclude reference="Vj7-CE-w3S"/>
+                            <exclude reference="f86-UZ-eGl"/>
+                            <exclude reference="kNx-lk-dAy"/>
                             <exclude reference="HVG-pI-eCV"/>
                             <exclude reference="ZRr-K8-2If"/>
                             <exclude reference="sGS-zf-IwN"/>
@@ -880,7 +899,8 @@
                             <include reference="f2c-wj-o8E"/>
                             <include reference="jzn-tM-e2j"/>
                             <include reference="8bo-S9-BPu"/>
-                            <include reference="qJ1-rw-s0L"/>
+                            <include reference="GBy-mU-Iel"/>
+                            <exclude reference="qJ1-rw-s0L"/>
                             <include reference="umN-yN-Rd6"/>
                             <exclude reference="2Cu-Ww-qJr"/>
                             <include reference="NQD-qM-2Qs"/>
@@ -905,11 +925,6 @@
                             <include reference="clg-ou-ELO"/>
                             <include reference="dzu-8L-ts9"/>
                             <include reference="oEt-2g-mud"/>
-                            <include reference="K0k-D2-boV"/>
-                            <include reference="MAQ-65-tt2"/>
-                            <exclude reference="Vj7-CE-w3S"/>
-                            <exclude reference="f86-UZ-eGl"/>
-                            <include reference="kNx-lk-dAy"/>
                             <exclude reference="FL9-86-u7S"/>
                             <include reference="N05-z6-ZmG"/>
                             <include reference="UKQ-6F-QjB"/>
@@ -917,6 +932,11 @@
                             <include reference="7vU-4d-jmA"/>
                             <include reference="DqD-lt-m4W"/>
                             <include reference="Idd-EI-uPa"/>
+                            <include reference="K0k-D2-boV"/>
+                            <include reference="MAQ-65-tt2"/>
+                            <exclude reference="Vj7-CE-w3S"/>
+                            <exclude reference="f86-UZ-eGl"/>
+                            <include reference="kNx-lk-dAy"/>
                             <include reference="HVG-pI-eCV"/>
                             <include reference="ZRr-K8-2If"/>
                             <include reference="sGS-zf-IwN"/>

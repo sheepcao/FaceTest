@@ -7,6 +7,9 @@
 //
 
 #import "gameViewController.h"
+#import "elemntButton.h"
+#import "hairButton.h"
+
 #define CATALOG_NUM 15
 #define CATALOG_BUTTON_WIDTH 70
 #define ELEMENT_WIDTH SCREEN_WIDTH/3
@@ -14,12 +17,18 @@
 
 @interface gameViewController ()<UIScrollViewDelegate>
 
+@property (nonatomic,strong) NSArray *imagesArray;
+
 @end
 
 @implementation gameViewController
 
 - (void)viewDidLoad {
     [super viewDidLoad];
+    
+    self.imagesArray = @[self.faceFrameView,@"hair",self.mustacheView,self.clothingView,self.eyeView,self.eyebrowView,self.mouthView,self.gestureView,self.glassesView,self.noseView,self.moodView,self.faceImage,self.hatView,self.backImage,self.petView];
+    
+    [self.bodyImage setImage:[UIImage imageNamed:@"body1"]];
     
     [self performSelector:@selector(setupCatalog) withObject:nil afterDelay:0.8];
     [self performSelector:@selector(setupLists) withObject:nil afterDelay:0.8];
@@ -90,10 +99,11 @@
         [self.ListsScroll addSubview:oneList];
         
         for (int j = 0 ; j<listElements.count; j++) {
-            UIButton *element = [[UIButton alloc] initWithFrame:CGRectMake(0+(j%3)*ELEMENT_WIDTH, 0+(j/3)*ELEMENT_WIDTH/1.2, ELEMENT_WIDTH, ELEMENT_WIDTH/1.2)];
+            elemntButton *element = [[elemntButton alloc] initWithFrame:CGRectMake(0+(j%3)*ELEMENT_WIDTH, 0+(j/3)*ELEMENT_WIDTH/1.2, ELEMENT_WIDTH, ELEMENT_WIDTH/1.2)];
             [element setImage:[UIImage imageNamed:listElements[j]] forState:UIControlStateNormal];
 //            element.backgroundColor = [UIColor yellowColor];
-            element.tag = i;
+            element.imageLevel =[NSNumber numberWithInt:i];
+            
             [element addTarget:self action:@selector(elementTapped:) forControlEvents:UIControlEventTouchUpInside];
             [oneList addSubview:element];
 
@@ -101,9 +111,9 @@
         
     }
 }
--(void)elementTapped:(UIButton *)sender
+-(void)elementTapped:(elemntButton *)sender
 {
-    NSLog(@"element:%ld",sender.tag);
+    NSLog(@"element:%@",sender.imageLevel);
     [self.faceImage setImage:sender.imageView.image];
     self.headImage.placardView = self.faceImage;
     
