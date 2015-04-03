@@ -101,7 +101,7 @@
         for (int j = 0 ; j<listElements.count; j++) {
             elemntButton *element = [[elemntButton alloc] initWithFrame:CGRectMake(0+(j%3)*ELEMENT_WIDTH, 0+(j/3)*ELEMENT_WIDTH/1.2, ELEMENT_WIDTH, ELEMENT_WIDTH/1.2)];
             [element setImage:[UIImage imageNamed:listElements[j]] forState:UIControlStateNormal];
-//            element.backgroundColor = [UIColor yellowColor];
+            element.imageName = listElements[j];
             element.imageLevel =[NSNumber numberWithInt:i];
             
             [element addTarget:self action:@selector(elementTapped:) forControlEvents:UIControlEventTouchUpInside];
@@ -114,9 +114,92 @@
 -(void)elementTapped:(elemntButton *)sender
 {
     NSLog(@"element:%@",sender.imageLevel);
-    [self.faceImage setImage:sender.imageView.image];
-    self.headImage.placardView = self.faceImage;
+    if ([sender.imageLevel intValue]==1) {
+        
+        NSString *imageName = sender.imageName;
+        NSArray *imageNameArray = [imageName componentsSeparatedByString:@"-"];
+        if (imageNameArray.count>1) {
+            sender.imageColor = [imageNameArray[1] intValue];
+        }
+        if (sender.imageColor>1) {
+            [self showHairColorViewWith:sender];
+        }
+        
+        NSString *frontImageName = [NSString stringWithFormat:@"%@-0-front",sender.imageName];
+        [self.frontHairView setImage:[UIImage imageNamed:frontImageName]];
+        
+        NSString *backImageName = [NSString stringWithFormat:@"%@-0-back",sender.imageName];
+        UIImage *backImage = [UIImage imageNamed:backImageName];
+        if (backImage) {
+            
+            [self.backHairImage setImage:[UIImage imageNamed:backImageName]];
+            self.headImage.attachedView = self.backHairImage;
+        }else
+        {
+            [self.backHairImage setImage:nil];
+            self.headImage.attachedView = nil;
+
+        }
+        
+        self.headImage.placardView = self.frontHairView;
+    }else
+    {
+        [self.imagesArray[[sender.imageLevel intValue]] setImage:sender.imageView.image];
+        self.headImage.placardView = self.imagesArray[[sender.imageLevel intValue]];
+    }
+}
+
+-(void)showHairColorViewWith:(elemntButton *)sender
+{
+    UIView *colorView = [[UIView alloc] initWithFrame:CGRectMake(0, SCREEN_HEIGHT, SCREEN_WIDTH, sender.frame.size.height)];
+    colorView.backgroundColor = [UIColor whiteColor];
     
+    for (int i = 0; i<sender.imageColor; i++) {
+        elemntButton *colorBtn = [[elemntButton alloc] initWithFrame:CGRectMake(5+i*(sender.frame.size.width*3/4),(sender.frame.size.height - (sender.frame.size.width*3/4-10))/2, sender.frame.size.width*3/4-10,sender.frame.size.width*3/4-10)];
+        NSString *imageWithColor = [NSString stringWithFormat:@"%@-%d",sender.imageName,i];
+        [colorBtn setImage:[UIImage imageNamed:imageWithColor] forState:UIControlStateNormal];
+        colorBtn.imageName = [NSString stringWithFormat:@"%@-%d",sender.imageName,i];
+        [colorBtn addTarget:self action:@selector(colorTapped:) forControlEvents:UIControlEventTouchUpInside];
+        [colorView addSubview:colorBtn];
+
+    }
+//    colorView.backgroundColor = [UIColor yellowColor];
+    [self.view addSubview:colorView];
+    
+    [self showColorViewAnimationFor:colorView];
+    
+}
+
+
+-(void)showColorViewAnimationFor:(UIView *)animatingView
+{
+    [UIView beginAnimations:nil context:NULL];
+    [UIView setAnimationDuration:0.5];
+
+    CGRect aframe = animatingView.frame;
+    aframe.origin.y-=aframe.size.height;
+    [animatingView setFrame:aframe];
+    
+    [UIView commitAnimations];
+}
+-(void)colorTapped:(elemntButton *)sender
+{
+    NSString *frontImageName = [NSString stringWithFormat:@"%@-front",sender.imageName];
+    [self.frontHairView setImage:[UIImage imageNamed:frontImageName]];
+    
+    NSString *backImageName = [NSString stringWithFormat:@"%@-back",sender.imageName];
+    
+    UIImage *backImage = [UIImage imageNamed:backImageName];
+    if (backImage) {
+        
+        [self.backHairImage setImage:[UIImage imageNamed:backImageName]];
+        self.headImage.attachedView = self.backHairImage;
+    }else
+    {
+        [self.backHairImage setImage:nil];
+        self.headImage.attachedView = nil;
+        
+    }
 }
 
 
