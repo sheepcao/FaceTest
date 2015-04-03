@@ -18,7 +18,7 @@
 @interface gameViewController ()<UIScrollViewDelegate>
 
 @property (nonatomic,strong) NSArray *imagesArray;
-
+@property (nonatomic,strong) UIView *colorView;
 @end
 
 @implementation gameViewController
@@ -41,6 +41,7 @@
 
 
 
+
 #pragma mark setup Catalog
 -(void)setupCatalog
 {
@@ -60,6 +61,9 @@
 -(void)catalogTapped:(UIButton *)sender
 {
     NSLog(@"tag:%ld",sender.tag);
+    if (self.colorView) {
+        [self hideColorViewAnimationFor:self.colorView];
+    }
     [self scrollToCatalog:sender.tag];
     [self.ListsScroll setContentOffset:CGPointMake(SCREEN_WIDTH * sender.tag, 0)];
     
@@ -114,6 +118,11 @@
 -(void)elementTapped:(elemntButton *)sender
 {
     NSLog(@"element:%@",sender.imageLevel);
+    
+    if (self.colorView) {
+        [self hideColorViewAnimationFor:self.colorView];
+    }
+    
     if ([sender.imageLevel intValue]==1) {
         
         NSString *imageName = sender.imageName;
@@ -147,12 +156,28 @@
         [self.imagesArray[[sender.imageLevel intValue]] setImage:sender.imageView.image];
         self.headImage.placardView = self.imagesArray[[sender.imageLevel intValue]];
     }
+    
+    if ([sender.imageLevel intValue] == 2) {
+        self.headImage.swipeOrientation = swipevertical;
+    }
+    
 }
 
 -(void)showHairColorViewWith:(elemntButton *)sender
 {
-    UIView *colorView = [[UIView alloc] initWithFrame:CGRectMake(0, SCREEN_HEIGHT, SCREEN_WIDTH, sender.frame.size.height)];
-    colorView.backgroundColor = [UIColor whiteColor];
+
+    if (!self.colorView) {
+        self.colorView = [[UIView alloc] initWithFrame:CGRectMake(0, SCREEN_HEIGHT, SCREEN_WIDTH, sender.frame.size.height)];
+    }else
+    {
+        
+        
+        for (UIView *subView in [self.colorView subviews]) {
+            [subView removeFromSuperview];
+        }
+    }
+//    self.colorView = [[UIView alloc] initWithFrame:CGRectMake(0, SCREEN_HEIGHT, SCREEN_WIDTH, sender.frame.size.height)];
+    self.colorView.backgroundColor = [UIColor whiteColor];
     
     for (int i = 0; i<sender.imageColor; i++) {
         elemntButton *colorBtn = [[elemntButton alloc] initWithFrame:CGRectMake(5+i*(sender.frame.size.width*3/4),(sender.frame.size.height - (sender.frame.size.width*3/4-10))/2, sender.frame.size.width*3/4-10,sender.frame.size.width*3/4-10)];
@@ -160,13 +185,13 @@
         [colorBtn setImage:[UIImage imageNamed:imageWithColor] forState:UIControlStateNormal];
         colorBtn.imageName = [NSString stringWithFormat:@"%@-%d",sender.imageName,i];
         [colorBtn addTarget:self action:@selector(colorTapped:) forControlEvents:UIControlEventTouchUpInside];
-        [colorView addSubview:colorBtn];
+        [self.colorView addSubview:colorBtn];
 
     }
 //    colorView.backgroundColor = [UIColor yellowColor];
-    [self.view addSubview:colorView];
+    [self.view addSubview:self.colorView];
     
-    [self showColorViewAnimationFor:colorView];
+    [self showColorViewAnimationFor:self.colorView];
     
 }
 
@@ -182,6 +207,19 @@
     
     [UIView commitAnimations];
 }
+
+-(void)hideColorViewAnimationFor:(UIView *)animatingView
+{
+    [UIView beginAnimations:nil context:NULL];
+    [UIView setAnimationDuration:0.5];
+    
+    CGRect aframe = animatingView.frame;
+    aframe.origin.y=SCREEN_HEIGHT;
+    [animatingView setFrame:aframe];
+    
+    [UIView commitAnimations];
+}
+
 -(void)colorTapped:(elemntButton *)sender
 {
     NSString *frontImageName = [NSString stringWithFormat:@"%@-front",sender.imageName];

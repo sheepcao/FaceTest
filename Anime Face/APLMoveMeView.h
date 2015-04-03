@@ -48,11 +48,21 @@
  */
 #import "APLPlacardView.h"
 
+
+typedef enum SwipeOrientation : NSUInteger {
+    swipeHorizontal   = 1, /*!< Enum value ADBMobilePrivacyStatusOptIn. */
+    swipevertical  = 2, /*!< Enum value ADBMobilePrivacyStatusOptOut. */
+    swipeAll = 3  /*!< Enum value ADBMobilePrivacyStatusUnknown. @note only available in conjunction with offline tracking */
+} SwipeOrientation;
+
 @interface APLMoveMeView : UIView
 
 @property (nonatomic, strong) NSArray *displayStrings;
 @property (nonatomic, strong) APLPlacardView *placardView;
 @property (nonatomic, strong) APLPlacardView *attachedView;
+
+@property SwipeOrientation swipeOrientation;
+
 
 - (void)setupNextDisplayString;
 

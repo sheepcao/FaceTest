@@ -117,8 +117,17 @@ float differenceY;
         CGPoint originalCenter = self.placardView.center;
         NSLog(@"center:%f,%f",self.placardView.center.x,self.placardView.center.y
               );
-        originalCenter.x +=xTarget;
-        originalCenter.y+=yTarget;
+        if (self.swipeOrientation == swipevertical) {
+            originalCenter.y+=yTarget;
+        }else if(self.swipeOrientation == swipeHorizontal)
+        {
+            originalCenter.x +=xTarget;
+        }else
+        {
+            originalCenter.x +=xTarget;
+            originalCenter.y+=yTarget;
+        }
+
         
 
     [UIView animateWithDuration:.12
@@ -126,8 +135,8 @@ float differenceY;
                          
                          [self.placardView setCenter:originalCenter];
                          
-                         differenceX = location.x;
-                         differenceY = location.y;
+//                         differenceX = location.x;
+//                         differenceY = location.y;
 
                      }
      ];
@@ -154,8 +163,17 @@ float differenceY;
             CGPoint attachedCenter = self.attachedView.center;
             NSLog(@"attachedView center:%f,%f",self.attachedView.center.x,self.attachedView.center.y
                   );
-            attachedCenter.x +=xAttached;
-            attachedCenter.y+=yAttached;
+            
+            if (self.swipeOrientation == swipevertical) {
+                originalCenter.y+=yTarget;
+            }else if(self.swipeOrientation == swipeHorizontal)
+            {
+                originalCenter.x +=xTarget;
+            }else
+            {
+                originalCenter.x +=xTarget;
+                originalCenter.y+=yTarget;
+            }
             
             NSLog(@"attachedView:%f",xAttached);
             
@@ -164,14 +182,15 @@ float differenceY;
                                  
                                  [self.attachedView setCenter:attachedCenter];
                                  
-                                 differenceX = location.x;
-                                 differenceY = location.y;
+//                                 differenceX = location.x;
+//                                 differenceY = location.y;
                                  
                              }
              ];
         }
         
-        
+        differenceX = location.x;
+        differenceY = location.y;
         
     }
     
