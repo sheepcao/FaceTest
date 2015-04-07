@@ -1,0 +1,83 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="6751" systemVersion="14C109" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES">
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="6736"/>
+        <capability name="Aspect ratio constraints" minToolsVersion="5.1"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="rewardViewController">
+            <connections>
+                <outlet property="productView" destination="tkE-is-5iT" id="Ezj-hj-wSu"/>
+                <outlet property="resultLabel" destination="jnK-oV-g0g" id="hhq-k6-2S8"/>
+                <outlet property="startReward" destination="dwv-F1-ghN" id="8MX-oC-Ban"/>
+                <outlet property="view" destination="i5M-Pr-FkT" id="sfx-zR-JGt"/>
+            </connections>
+        </placeholder>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view clearsContextBeforeDrawing="NO" contentMode="scaleToFill" id="i5M-Pr-FkT">
+            <rect key="frame" x="0.0" y="0.0" width="414" height="736"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="cER-dx-gwI">
+                    <rect key="frame" x="0.0" y="0.0" width="414" height="736"/>
+                </imageView>
+                <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="tkE-is-5iT">
+                    <rect key="frame" x="117" y="278" width="180" height="180"/>
+                    <constraints>
+                        <constraint firstAttribute="width" secondItem="tkE-is-5iT" secondAttribute="height" multiplier="1:1" id="Pof-Mc-qDh"/>
+                        <constraint firstAttribute="width" constant="180" id="xso-TA-JN9"/>
+                    </constraints>
+                </imageView>
+                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="dwv-F1-ghN">
+                    <rect key="frame" x="170" y="498" width="75" height="40"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="40" id="KeP-n2-iBk"/>
+                        <constraint firstAttribute="width" constant="75" id="NHZ-V9-7w9"/>
+                    </constraints>
+                    <state key="normal" title="开始摇奖">
+                        <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                    </state>
+                    <connections>
+                        <action selector="start:" destination="-1" eventType="touchUpInside" id="RG0-Kj-MMB"/>
+                    </connections>
+                </button>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="2" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="jnK-oV-g0g" userLabel="result">
+                    <rect key="frame" x="127" y="181" width="161" height="68"/>
+                    <constraints>
+                        <constraint firstAttribute="width" constant="161" id="UBo-DJ-qYY"/>
+                        <constraint firstAttribute="width" secondItem="jnK-oV-g0g" secondAttribute="height" multiplier="71:30" id="e7U-pE-ryr"/>
+                    </constraints>
+                    <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                    <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                    <nil key="highlightedColor"/>
+                </label>
+            </subviews>
+            <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+            <constraints>
+                <constraint firstItem="jnK-oV-g0g" firstAttribute="centerY" secondItem="cER-dx-gwI" secondAttribute="centerY" constant="-147" id="345-dW-YSB"/>
+                <constraint firstItem="tkE-is-5iT" firstAttribute="centerY" secondItem="jnK-oV-g0g" secondAttribute="centerY" constant="147" id="ENm-oF-W3a"/>
+                <constraint firstItem="tkE-is-5iT" firstAttribute="centerX" secondItem="jnK-oV-g0g" secondAttribute="centerX" id="FGg-Vi-MbH"/>
+                <constraint firstItem="tkE-is-5iT" firstAttribute="centerX" secondItem="cER-dx-gwI" secondAttribute="centerX" id="LSR-bm-MNx"/>
+                <constraint firstAttribute="trailing" secondItem="cER-dx-gwI" secondAttribute="trailing" id="OmN-Lx-0DR"/>
+                <constraint firstItem="cER-dx-gwI" firstAttribute="top" secondItem="i5M-Pr-FkT" secondAttribute="top" id="P0U-xC-eFQ"/>
+                <constraint firstItem="tkE-is-5iT" firstAttribute="top" secondItem="jnK-oV-g0g" secondAttribute="bottom" constant="29" id="SS7-D7-EWB"/>
+                <constraint firstItem="tkE-is-5iT" firstAttribute="centerY" secondItem="cER-dx-gwI" secondAttribute="centerY" id="Svk-dv-N1M"/>
+                <constraint firstItem="tkE-is-5iT" firstAttribute="centerX" secondItem="dwv-F1-ghN" secondAttribute="centerX" id="aEm-bm-oc3"/>
+                <constraint firstAttribute="bottom" secondItem="cER-dx-gwI" secondAttribute="bottom" id="bmL-kA-xZQ"/>
+                <constraint firstItem="dwv-F1-ghN" firstAttribute="top" secondItem="tkE-is-5iT" secondAttribute="bottom" constant="40" id="jjq-bI-irW"/>
+                <constraint firstItem="cER-dx-gwI" firstAttribute="leading" secondItem="i5M-Pr-FkT" secondAttribute="leading" id="mte-Ub-wrY"/>
+                <constraint firstItem="tkE-is-5iT" firstAttribute="leading" secondItem="cER-dx-gwI" secondAttribute="trailing" constant="-297" id="rvo-F2-61K"/>
+            </constraints>
+            <simulatedScreenMetrics key="simulatedDestinationMetrics" type="retina55"/>
+            <variation key="default">
+                <mask key="constraints">
+                    <exclude reference="345-dW-YSB"/>
+                    <exclude reference="ENm-oF-W3a"/>
+                    <exclude reference="rvo-F2-61K"/>
+                </mask>
+            </variation>
+            <point key="canvasLocation" x="334" y="264"/>
+        </view>
+    </objects>
+</document>

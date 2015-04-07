@@ -8,6 +8,7 @@
 
 #import "ViewController.h"
 #import "gameViewController.h"
+#import "rewardViewController.h"
 
 @interface ViewController ()
 
@@ -102,6 +103,12 @@
     }
 }
 
+
+- (IBAction)getReward:(id)sender {
+    rewardViewController *myReward = [[rewardViewController alloc] initWithNibName:@"rewardViewController" bundle:nil];
+    [self.navigationController pushViewController:myReward animated:YES];
+
+}
 
 - (IBAction)enterGame:(id)sender {
     gameViewController *myGame = [[gameViewController alloc] initWithNibName:@"gameViewController" bundle:nil];

@@ -3,6 +3,7 @@
     <dependencies>
         <deployment identifier="iOS"/>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="6736"/>
+        <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
     </dependencies>
     <scenes>
         <!--Navigation Controller-->
@@ -70,10 +71,39 @@
                                     <action selector="enterGame:" destination="vXZ-lx-hvc" eventType="touchUpInside" id="axl-p4-D0G"/>
                                 </connections>
                             </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="CaS-MJ-gws">
+                                <rect key="frame" x="-23" y="-15" width="46" height="30"/>
+                                <color key="backgroundColor" red="1" green="0.18532986109999999" blue="0.04415509259" alpha="1" colorSpace="calibratedRGB"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="46" id="9jk-n6-9zP"/>
+                                    <constraint firstAttribute="height" constant="30" id="zz2-xJ-Npy"/>
+                                </constraints>
+                                <state key="normal" title="抽奖">
+                                    <color key="titleColor" white="0.0" alpha="1" colorSpace="calibratedWhite"/>
+                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <variation key="default">
+                                    <mask key="constraints">
+                                        <exclude reference="9jk-n6-9zP"/>
+                                        <exclude reference="zz2-xJ-Npy"/>
+                                    </mask>
+                                </variation>
+                                <variation key="heightClass=regular-widthClass=compact">
+                                    <mask key="constraints">
+                                        <include reference="9jk-n6-9zP"/>
+                                        <include reference="zz2-xJ-Npy"/>
+                                    </mask>
+                                </variation>
+                                <connections>
+                                    <action selector="getReward:" destination="vXZ-lx-hvc" eventType="touchUpInside" id="yn3-bM-0H8"/>
+                                </connections>
+                            </button>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
                         <constraints>
                             <constraint firstItem="BGK-sf-pmI" firstAttribute="width" secondItem="mjn-1j-VOm" secondAttribute="width" id="3d9-y3-eTD"/>
+                            <constraint firstItem="CaS-MJ-gws" firstAttribute="trailing" secondItem="kh9-bI-dsS" secondAttribute="trailingMargin" id="AJ4-BW-aye"/>
+                            <constraint firstItem="CaS-MJ-gws" firstAttribute="top" secondItem="jyV-Pf-zRb" secondAttribute="bottom" constant="8" id="djK-3i-bI3"/>
                             <constraint firstItem="BGK-sf-pmI" firstAttribute="height" secondItem="mjn-1j-VOm" secondAttribute="height" id="eQo-SX-iTE"/>
                             <constraint firstItem="mjn-1j-VOm" firstAttribute="leading" secondItem="BGK-sf-pmI" secondAttribute="trailing" constant="8" id="hLO-Ln-y9C">
                                 <variation key="heightClass=regular-widthClass=compact" constant="0.0"/>
@@ -85,22 +115,32 @@
                             <constraint firstAttribute="centerY" secondItem="BGK-sf-pmI" secondAttribute="centerY" constant="0.5" id="zEM-tn-iHs"/>
                         </constraints>
                         <variation key="default">
+                            <mask key="subviews">
+                                <exclude reference="CaS-MJ-gws"/>
+                            </mask>
                             <mask key="constraints">
                                 <exclude reference="3d9-y3-eTD"/>
                                 <exclude reference="eQo-SX-iTE"/>
                                 <exclude reference="mel-CW-jHj"/>
                                 <exclude reference="ya3-Jd-1NC"/>
                                 <exclude reference="zEM-tn-iHs"/>
+                                <exclude reference="AJ4-BW-aye"/>
+                                <exclude reference="djK-3i-bI3"/>
                                 <exclude reference="hLO-Ln-y9C"/>
                             </mask>
                         </variation>
                         <variation key="heightClass=regular-widthClass=compact">
+                            <mask key="subviews">
+                                <include reference="CaS-MJ-gws"/>
+                            </mask>
                             <mask key="constraints">
                                 <include reference="3d9-y3-eTD"/>
                                 <include reference="eQo-SX-iTE"/>
                                 <include reference="mel-CW-jHj"/>
                                 <include reference="ya3-Jd-1NC"/>
                                 <include reference="zEM-tn-iHs"/>
+                                <include reference="AJ4-BW-aye"/>
+                                <include reference="djK-3i-bI3"/>
                                 <include reference="hLO-Ln-y9C"/>
                             </mask>
                         </variation>

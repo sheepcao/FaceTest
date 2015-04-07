@@ -25,6 +25,8 @@
 
 - (void)viewDidLoad {
     [super viewDidLoad];
+    self.navigationController.navigationBarHidden = NO;
+
     
     self.imagesArray = @[self.faceFrameView,@"hair",self.mustacheView,self.clothingView,self.eyeView,self.eyebrowView,self.mouthView,self.gestureView,self.glassesView,self.noseView,self.moodView,self.faceImage,self.hatView,self.backImage,self.petView];
     
@@ -142,7 +144,7 @@
         if (backImage) {
             
             [self.backHairImage setImage:[UIImage imageNamed:backImageName]];
-            self.headImage.attachedView = self.backHairImage;
+//            self.headImage.attachedView = self.backHairImage;
         }else
         {
             [self.backHairImage setImage:nil];
@@ -150,15 +152,33 @@
 
         }
         
-        self.headImage.placardView = self.frontHairView;
+//        self.headImage.placardView = self.frontHairView;
     }else
     {
         [self.imagesArray[[sender.imageLevel intValue]] setImage:sender.imageView.image];
         self.headImage.placardView = self.imagesArray[[sender.imageLevel intValue]];
     }
     
-    if ([sender.imageLevel intValue] == 2) {
+    if ([sender.imageLevel intValue] == 4)// eye view
+    {
         self.headImage.swipeOrientation = swipevertical;
+        self.headImage.limitationUp = self.headImage.placardView.center.y-48;
+        self.headImage.limitationDown =self.headImage.placardView.center.y + 25;
+
+    }else if ([sender.imageLevel intValue] == 9)
+    {
+        self.headImage.swipeOrientation = swipevertical;
+        self.headImage.limitationUp = self.headImage.placardView.center.y -72;
+        self.headImage.limitationDown = self.headImage.placardView.center.y +72;
+    }else if ([sender.imageLevel intValue] == 6)
+    {
+        self.headImage.swipeOrientation = swipevertical;
+        self.headImage.limitationUp =self.headImage.placardView.center.y - 70;
+        self.headImage.limitationDown =self.headImage.placardView.center.y + 70;
+    }else
+    {
+        self.headImage.limitationUp = 0;
+        self.headImage.limitationDown = 0;
     }
     
 }

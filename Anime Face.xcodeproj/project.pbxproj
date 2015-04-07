@@ -14,6 +14,13 @@
 		A47D6EBC1AC3E1ED00AC1768 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = A47D6EBB1AC3E1ED00AC1768 /* Images.xcassets */; };
 		A47D6EBF1AC3E1ED00AC1768 /* LaunchScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = A47D6EBD1AC3E1ED00AC1768 /* LaunchScreen.xib */; };
 		A47D6ECB1AC3E1ED00AC1768 /* Anime_FaceTests.m in Sources */ = {isa = PBXBuildFile; fileRef = A47D6ECA1AC3E1ED00AC1768 /* Anime_FaceTests.m */; };
+		A4A211001AD3A2F4006973E0 /* rewardViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = A4A210FE1AD3A2F4006973E0 /* rewardViewController.m */; };
+		A4A211011AD3A2F4006973E0 /* rewardViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = A4A210FF1AD3A2F4006973E0 /* rewardViewController.xib */; };
+		A4A211051AD3A411006973E0 /* 1.png in Resources */ = {isa = PBXBuildFile; fileRef = A4A211021AD3A411006973E0 /* 1.png */; };
+		A4A211061AD3A411006973E0 /* 2.png in Resources */ = {isa = PBXBuildFile; fileRef = A4A211031AD3A411006973E0 /* 2.png */; };
+		A4A211091AD3ADF6006973E0 /* QuestionMark.png in Resources */ = {isa = PBXBuildFile; fileRef = A4A211081AD3ADF6006973E0 /* QuestionMark.png */; };
+		A4A2110B1AD3B03F006973E0 /* 3.png in Resources */ = {isa = PBXBuildFile; fileRef = A4A2110A1AD3B03F006973E0 /* 3.png */; };
+		A4A2110E1AD3B2AE006973E0 /* imageWithName.m in Sources */ = {isa = PBXBuildFile; fileRef = A4A2110D1AD3B2AE006973E0 /* imageWithName.m */; };
 		A4CA3AA31ACA440900D50D80 /* gameViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = A4CA3AA11ACA440900D50D80 /* gameViewController.m */; };
 		A4CA3AA41ACA440900D50D80 /* gameViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = A4CA3AA21ACA440900D50D80 /* gameViewController.xib */; };
 		A4CA3AA61ACA63A900D50D80 /* GameData.plist in Resources */ = {isa = PBXBuildFile; fileRef = A4CA3AA51ACA63A900D50D80 /* GameData.plist */; };
@@ -89,6 +96,15 @@
 		A47D6EC41AC3E1ED00AC1768 /* Anime FaceTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "Anime FaceTests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
 		A47D6EC91AC3E1ED00AC1768 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		A47D6ECA1AC3E1ED00AC1768 /* Anime_FaceTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = Anime_FaceTests.m; sourceTree = "<group>"; };
+		A4A210FD1AD3A2F4006973E0 /* rewardViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = rewardViewController.h; sourceTree = "<group>"; };
+		A4A210FE1AD3A2F4006973E0 /* rewardViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = rewardViewController.m; sourceTree = "<group>"; };
+		A4A210FF1AD3A2F4006973E0 /* rewardViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = rewardViewController.xib; sourceTree = "<group>"; };
+		A4A211021AD3A411006973E0 /* 1.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = 1.png; sourceTree = "<group>"; };
+		A4A211031AD3A411006973E0 /* 2.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = 2.png; sourceTree = "<group>"; };
+		A4A211081AD3ADF6006973E0 /* QuestionMark.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = QuestionMark.png; sourceTree = "<group>"; };
+		A4A2110A1AD3B03F006973E0 /* 3.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = 3.png; sourceTree = "<group>"; };
+		A4A2110C1AD3B2AE006973E0 /* imageWithName.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = imageWithName.h; sourceTree = "<group>"; };
+		A4A2110D1AD3B2AE006973E0 /* imageWithName.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = imageWithName.m; sourceTree = "<group>"; };
 		A4CA3AA01ACA440900D50D80 /* gameViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = gameViewController.h; sourceTree = "<group>"; };
 		A4CA3AA11ACA440900D50D80 /* gameViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = gameViewController.m; sourceTree = "<group>"; };
 		A4CA3AA21ACA440900D50D80 /* gameViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = gameViewController.xib; sourceTree = "<group>"; };
@@ -197,11 +213,16 @@
 				A4CA3AA71ACA6E8D00D50D80 /* globalVar.h */,
 				A47D6EB21AC3E1ED00AC1768 /* AppDelegate.h */,
 				A47D6EB31AC3E1ED00AC1768 /* AppDelegate.m */,
+				A4A2110C1AD3B2AE006973E0 /* imageWithName.h */,
+				A4A2110D1AD3B2AE006973E0 /* imageWithName.m */,
 				A47D6EB51AC3E1ED00AC1768 /* ViewController.h */,
 				A47D6EB61AC3E1ED00AC1768 /* ViewController.m */,
 				A4CA3AA01ACA440900D50D80 /* gameViewController.h */,
 				A4CA3AA11ACA440900D50D80 /* gameViewController.m */,
 				A4CA3AA21ACA440900D50D80 /* gameViewController.xib */,
+				A4A210FD1AD3A2F4006973E0 /* rewardViewController.h */,
+				A4A210FE1AD3A2F4006973E0 /* rewardViewController.m */,
+				A4A210FF1AD3A2F4006973E0 /* rewardViewController.xib */,
 				A47D6EB81AC3E1ED00AC1768 /* Main.storyboard */,
 				A47D6EBB1AC3E1ED00AC1768 /* Images.xcassets */,
 				A47D6EBD1AC3E1ED00AC1768 /* LaunchScreen.xib */,
@@ -214,6 +235,10 @@
 		A47D6EAE1AC3E1ED00AC1768 /* Supporting Files */ = {
 			isa = PBXGroup;
 			children = (
+				A4A211021AD3A411006973E0 /* 1.png */,
+				A4A211081AD3ADF6006973E0 /* QuestionMark.png */,
+				A4A211031AD3A411006973E0 /* 2.png */,
+				A4A2110A1AD3B03F006973E0 /* 3.png */,
 				A4E6CDAA1ACCE52F00A1D6EC /* element */,
 				A47D6EAF1AC3E1ED00AC1768 /* Info.plist */,
 				A47D6EB01AC3E1ED00AC1768 /* main.m */,
@@ -380,13 +405,16 @@
 				A4E6CDE41ACCE54200A1D6EC /* hair1-2-0-front.png in Resources */,
 				A4E6CDEC1ACCE54200A1D6EC /* mouth2.png in Resources */,
 				A4E6CDD31ACCE54200A1D6EC /* clothing1.png in Resources */,
+				A4A211061AD3A411006973E0 /* 2.png in Resources */,
 				A4E6CDCF1ACCE54200A1D6EC /* background1.png in Resources */,
+				A4A211011AD3A2F4006973E0 /* rewardViewController.xib in Resources */,
 				A4E6CDEA1ACCE54200A1D6EC /* mood2.png in Resources */,
 				A4D6592E1ACE6D3600FE32CE /* hair2-2-1.png in Resources */,
 				A4E6CDE01ACCE54200A1D6EC /* glasses2.png in Resources */,
 				A4E6CDE21ACCE54200A1D6EC /* hair1-2-1-front.png in Resources */,
 				A4E6CDD01ACCE54200A1D6EC /* background2.png in Resources */,
 				A4E6CDE71ACCE54200A1D6EC /* hat1.png in Resources */,
+				A4A211091AD3ADF6006973E0 /* QuestionMark.png in Resources */,
 				A4D6592A1ACE6CD600FE32CE /* hair1-2-0.png in Resources */,
 				A4E6CDDA1ACCE54200A1D6EC /* face2.png in Resources */,
 				A4E6CDEE1ACCE54200A1D6EC /* mustache2.png in Resources */,
@@ -394,6 +422,7 @@
 				A4E6CDEB1ACCE54200A1D6EC /* mouth1.png in Resources */,
 				A4E6CDDC1ACCE54200A1D6EC /* facemark2.png in Resources */,
 				A4E6CDF11ACCE54200A1D6EC /* pet1.png in Resources */,
+				A4A211051AD3A411006973E0 /* 1.png in Resources */,
 				A4E6CDD11ACCE54200A1D6EC /* body1.png in Resources */,
 				A4CA3AA61ACA63A900D50D80 /* GameData.plist in Resources */,
 				A4E6CDD71ACCE54200A1D6EC /* eyebrow1.png in Resources */,
@@ -411,6 +440,7 @@
 				A4E6CDE61ACCE54200A1D6EC /* hair2-2-1-front.png in Resources */,
 				A4E6CDE51ACCE54200A1D6EC /* hair2-2-0-front.png in Resources */,
 				A4E6CDE91ACCE54200A1D6EC /* mood1.png in Resources */,
+				A4A2110B1AD3B03F006973E0 /* 3.png in Resources */,
 				A4E6CDD51ACCE54200A1D6EC /* eye1.png in Resources */,
 				A4D659281ACE30D600FE32CE /* hair2-2.png in Resources */,
 				A4E6CDE31ACCE54200A1D6EC /* hair1-2-0-back.png in Resources */,
@@ -432,9 +462,11 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				A4A211001AD3A2F4006973E0 /* rewardViewController.m in Sources */,
 				A4CA3AC31ACA9D3E00D50D80 /* APLPlacardView.m in Sources */,
 				A4CA3AA31ACA440900D50D80 /* gameViewController.m in Sources */,
 				A47D6EB71AC3E1ED00AC1768 /* ViewController.m in Sources */,
+				A4A2110E1AD3B2AE006973E0 /* imageWithName.m in Sources */,
 				A4CA3AC71ACAA0D300D50D80 /* elemntButton.m in Sources */,
 				A47D6EB41AC3E1ED00AC1768 /* AppDelegate.m in Sources */,
 				A4CA3AC21ACA9D3E00D50D80 /* APLMoveMeView.m in Sources */,

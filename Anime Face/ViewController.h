@@ -14,6 +14,7 @@
 @property (weak, nonatomic) IBOutlet UIButton *girlBtn;
 @property (strong,nonatomic) NSDictionary *GameDatas;
 
+- (IBAction)getReward:(id)sender;
 
 - (IBAction)enterGame:(id)sender;
 @end

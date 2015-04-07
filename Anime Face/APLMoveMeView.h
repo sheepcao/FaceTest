@@ -62,7 +62,10 @@ typedef enum SwipeOrientation : NSUInteger {
 @property (nonatomic, strong) APLPlacardView *attachedView;
 
 @property SwipeOrientation swipeOrientation;
-
+@property NSInteger limitationUp;
+@property NSInteger limitationDown;
+@property NSInteger limitationLeft;
+@property NSInteger limitationRight;
 
 - (void)setupNextDisplayString;
 

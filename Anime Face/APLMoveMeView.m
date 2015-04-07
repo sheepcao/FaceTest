@@ -104,31 +104,54 @@ float differenceY;
     float yTarget = location.y - differenceY;
     
     NSLog(@"xTarget:%f",xTarget);
-    if(xTarget > self.frame.size.width)
-        xTarget = self.frame.size.width;
-    else if (xTarget < -self.frame.size.width)
-        xTarget = -self.frame.size.width;
-    
-    if(yTarget > self.frame.size.height)
-        yTarget = self.frame.size.height;
-    else if(yTarget < -self.frame.size.height)
-        yTarget = -self.frame.size.height;
         
+
+        if(xTarget > self.frame.size.width)
+            xTarget = self.frame.size.width;
+        else if (xTarget < -self.frame.size.width)
+            xTarget = -self.frame.size.width;
+        
+        if(yTarget > self.frame.size.height)
+            yTarget = self.frame.size.height;
+        else if(yTarget < -self.frame.size.height)
+            yTarget = -self.frame.size.height;
+        
+//        if (self.limitationUp != 0) {
+//            if (  yTarget < -self.limitationUp) {
+//                yTarget = -self.limitationUp;
+//            }
+//        }else
+//        {
+//            if(yTarget < -self.frame.size.height)
+//                yTarget = -self.frame.size.height;
+//        }
+//        if (self.limitationDown != 0 ) {
+//            if (yTarget > self.limitationDown) {
+//                yTarget = self.limitationDown;
+//            }
+//        }else
+//        {
+//            if(yTarget > self.frame.size.height)
+//                yTarget = self.frame.size.height;
+//            
+//        }
         CGPoint originalCenter = self.placardView.center;
         NSLog(@"center:%f,%f",self.placardView.center.x,self.placardView.center.y
               );
         if (self.swipeOrientation == swipevertical) {
             originalCenter.y+=yTarget;
-        }else if(self.swipeOrientation == swipeHorizontal)
-        {
-            originalCenter.x +=xTarget;
-        }else
+        }else if(self.swipeOrientation == swipeAll)
         {
             originalCenter.x +=xTarget;
             originalCenter.y+=yTarget;
         }
 
-        
+    if (self.limitationDown != 0 && originalCenter.y>self.limitationDown) {
+        originalCenter.y = self.limitationDown;
+    }
+    if (self.limitationUp != 0 && originalCenter.y<self.limitationUp) {
+            originalCenter.y = self.limitationUp;
+    }
 
     [UIView animateWithDuration:.12
                      animations:^{
@@ -166,10 +189,7 @@ float differenceY;
             
             if (self.swipeOrientation == swipevertical) {
                 originalCenter.y+=yTarget;
-            }else if(self.swipeOrientation == swipeHorizontal)
-            {
-                originalCenter.x +=xTarget;
-            }else
+            }else if(self.swipeOrientation == swipeAll)
             {
                 originalCenter.x +=xTarget;
                 originalCenter.y+=yTarget;
