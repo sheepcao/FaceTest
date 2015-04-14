@@ -10,11 +10,11 @@
             ignoreCount = "0"
             continueAfterRunningActions = "No"
             filePath = "Anime Face/gameViewController.m"
-            timestampString = "450685917.717591"
+            timestampString = "450696638.767585"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "120"
-            endingLineNumber = "120"
+            startingLineNumber = "155"
+            endingLineNumber = "155"
             landmarkName = "-setupLists"
             landmarkType = "5">
          </BreakpointContent>
@@ -26,11 +26,11 @@
             ignoreCount = "0"
             continueAfterRunningActions = "No"
             filePath = "Anime Face/gameViewController.m"
-            timestampString = "450685917.717591"
+            timestampString = "450696638.767585"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "126"
-            endingLineNumber = "126"
+            startingLineNumber = "161"
+            endingLineNumber = "161"
             landmarkName = "-setupLists"
             landmarkType = "5">
          </BreakpointContent>
@@ -42,11 +42,11 @@
             ignoreCount = "0"
             continueAfterRunningActions = "No"
             filePath = "Anime Face/gameViewController.m"
-            timestampString = "450682125.20825"
+            timestampString = "450696638.767585"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "65"
-            endingLineNumber = "65"
+            startingLineNumber = "89"
+            endingLineNumber = "89"
             landmarkName = "-setupCatalog"
             landmarkType = "5">
          </BreakpointContent>
@@ -58,11 +58,11 @@
             ignoreCount = "0"
             continueAfterRunningActions = "No"
             filePath = "Anime Face/gameViewController.m"
-            timestampString = "450686348.266056"
+            timestampString = "450696638.767585"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "163"
-            endingLineNumber = "163"
+            startingLineNumber = "208"
+            endingLineNumber = "208"
             landmarkName = "-elementTapped:"
             landmarkType = "5">
          </BreakpointContent>
@@ -74,11 +74,11 @@
             ignoreCount = "0"
             continueAfterRunningActions = "No"
             filePath = "Anime Face/gameViewController.m"
-            timestampString = "450686348.266056"
+            timestampString = "450696638.767585"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "265"
-            endingLineNumber = "265"
+            startingLineNumber = "310"
+            endingLineNumber = "310"
             landmarkName = "-showHairColorViewWith:"
             landmarkType = "5">
          </BreakpointContent>
@@ -90,11 +90,11 @@
             ignoreCount = "0"
             continueAfterRunningActions = "No"
             filePath = "Anime Face/gameViewController.m"
-            timestampString = "450686348.266056"
+            timestampString = "450696638.767585"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "286"
-            endingLineNumber = "286"
+            startingLineNumber = "331"
+            endingLineNumber = "331"
             landmarkName = "-showColorViewAnimationFor:"
             landmarkType = "5">
          </BreakpointContent>
@@ -106,11 +106,11 @@
             ignoreCount = "0"
             continueAfterRunningActions = "No"
             filePath = "Anime Face/gameViewController.m"
-            timestampString = "450686348.266056"
+            timestampString = "450696638.767585"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "270"
-            endingLineNumber = "270"
+            startingLineNumber = "315"
+            endingLineNumber = "315"
             landmarkName = "-showHairColorViewWith:"
             landmarkType = "5">
          </BreakpointContent>
@@ -154,11 +154,11 @@
             ignoreCount = "0"
             continueAfterRunningActions = "No"
             filePath = "Anime Face/gameViewController.m"
-            timestampString = "450686348.266056"
+            timestampString = "450696638.767585"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "203"
-            endingLineNumber = "203"
+            startingLineNumber = "248"
+            endingLineNumber = "248"
             landmarkName = "-elementTapped:"
             landmarkType = "5">
          </BreakpointContent>
@@ -186,11 +186,11 @@
             ignoreCount = "0"
             continueAfterRunningActions = "No"
             filePath = "Anime Face/gameViewController.m"
-            timestampString = "450686348.266056"
+            timestampString = "450696638.767585"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "357"
-            endingLineNumber = "357"
+            startingLineNumber = "402"
+            endingLineNumber = "402"
             landmarkName = "-saveImage"
             landmarkType = "5">
          </BreakpointContent>
@@ -202,11 +202,11 @@
             ignoreCount = "0"
             continueAfterRunningActions = "No"
             filePath = "Anime Face/gameViewController.m"
-            timestampString = "450686348.266056"
+            timestampString = "450696638.767585"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "254"
-            endingLineNumber = "254"
+            startingLineNumber = "299"
+            endingLineNumber = "299"
             landmarkName = "-showHairColorViewWith:"
             landmarkType = "5">
          </BreakpointContent>

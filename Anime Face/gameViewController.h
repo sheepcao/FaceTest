@@ -35,9 +35,16 @@
 @property (weak, nonatomic) IBOutlet UIImageView *bottomtextView;
 @property (weak, nonatomic) IBOutlet APLPlacardView *moodView;
 
+@property (weak, nonatomic) IBOutlet UIImageView *loadingView;
+@property (strong, nonatomic) IBOutlet UIView *loadPage;
 
+- (IBAction)backTapp:(id)sender;
+- (IBAction)storeTap:(id)sender;
+- (IBAction)luckyHouseTap:(id)sender;
+- (IBAction)saveAndShare:(id)sender;
 
 
 @property (strong,nonatomic) NSDictionary *GameData;
+@property int sex;//1:male  2:female
 
 @end

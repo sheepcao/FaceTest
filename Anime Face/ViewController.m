@@ -110,9 +110,10 @@
 
 }
 
-- (IBAction)enterGame:(id)sender {
+- (IBAction)enterGame:(UIButton *)sender {
     gameViewController *myGame = [[gameViewController alloc] initWithNibName:@"gameViewController" bundle:nil];
     myGame.GameData = self.GameDatas;
+    myGame.sex = (int)sender.tag;
     [self.navigationController pushViewController:myGame animated:YES];
     
 }

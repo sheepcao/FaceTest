@@ -9,6 +9,7 @@
 #import "gameViewController.h"
 #import "elemntButton.h"
 #import "hairButton.h"
+#import "rewardViewController.h"
 
 #define CATALOG_NUM 15
 #define CATALOG_BUTTON_WIDTH 70
@@ -25,29 +26,44 @@
 
 - (void)viewDidLoad {
     [super viewDidLoad];
-    UIView *buttonContainer = [[UIView alloc] initWithFrame:CGRectMake(0, 0, 100, 44)];
-    buttonContainer.backgroundColor = [UIColor clearColor];
-    UIButton *button0 = [UIButton buttonWithType:UIButtonTypeCustom];
-    [button0 setFrame:CGRectMake(0, 0, 100, 44)];
-    [button0 setTitle:@"Save" forState:UIControlStateNormal];
-    [button0 setTitleColor:[UIColor blueColor] forState:UIControlStateNormal];
-//    [button0 setBackgroundImage:[UIImage imageNamed:@"button0.png"] forState:UIControlStateNormal];
-    [button0 addTarget:self action:@selector(saveImage) forControlEvents:UIControlEventTouchUpInside];
-    [button0 setShowsTouchWhenHighlighted:YES];
-    [buttonContainer addSubview:button0];
     
-    self.navigationItem.titleView = buttonContainer;
+    [self.loadingView setImage:[UIImage imageNamed:[NSString stringWithFormat:@"loading%d",self.sex]]];
+    [self.loadPage setHidden:NO];
     
-    self.navigationController.navigationBarHidden = YES;
+    
+    //eric: button on navigation bar....
+    
+//    UIView *buttonContainer = [[UIView alloc] initWithFrame:CGRectMake(0, 0, 100, 44)];
+//    buttonContainer.backgroundColor = [UIColor clearColor];
+//    UIButton *button0 = [UIButton buttonWithType:UIButtonTypeCustom];
+//    [button0 setFrame:CGRectMake(0, 0, 100, 44)];
+//    [button0 setTitle:@"Save" forState:UIControlStateNormal];
+//    [button0 setTitleColor:[UIColor blueColor] forState:UIControlStateNormal];
+////    [button0 setBackgroundImage:[UIImage imageNamed:@"button0.png"] forState:UIControlStateNormal];
+//    [button0 addTarget:self action:@selector(saveImage) forControlEvents:UIControlEventTouchUpInside];
+//    [button0 setShowsTouchWhenHighlighted:YES];
+//    [buttonContainer addSubview:button0];
+//    
+//    self.navigationItem.titleView = buttonContainer;
+    
 
     
     self.imagesArray = @[self.faceFrameView,@"hair",self.mustacheView,self.clothingView,self.eyeView,self.eyebrowView,self.mouthView,self.gestureView,self.glassesView,self.noseView,self.moodView,self.faceImage,self.hatView,self.backImage,self.petView];
     
-    [self.bodyImage setImage:[UIImage imageNamed:@"body1"]];
+    [self.bodyImage setImage:[UIImage imageNamed:[NSString stringWithFormat:@"body%d",self.sex]]];
+    
+    [self.backImage setImage:[UIImage imageNamed:@"background1"]];
+    
+    [self.faceFrameView setImage:[UIImage imageNamed:@"face1"]];
+    [self.frontHairView setImage:[UIImage imageNamed:@"hair1-2-0-front"]];
+    [self.backHairImage setImage:[UIImage imageNamed:@"hair1-2-0-back"]];
+    
+    
+    
 //    self.catalogScrollView.backgroundColor = [UIColor colorWithPatternImage:[UIImage imageNamed:@"slip-background.png"]];
 
     [self performSelector:@selector(setupCatalog) withObject:nil afterDelay:0.8];
-    [self performSelector:@selector(setupLists) withObject:nil afterDelay:0.8];
+    [self performSelector:@selector(setupLists) withObject:nil afterDelay:0.9];
 //
 //    [self setupCatalog];
 //    [self setupLists];
@@ -56,6 +72,14 @@
 }
 
 
+-(void)viewWillAppear:(BOOL)animated
+{
+    [super viewWillAppear:animated];
+    self.navigationController.navigationBarHidden = YES;
+    
+
+
+}
 
 
 #pragma mark setup Catalog
@@ -74,13 +98,18 @@
         UIButton *catalogBtn = [[UIButton alloc] initWithFrame:CGRectMake(0+i*CATALOG_BUTTON_WIDTH, 0, CATALOG_BUTTON_WIDTH, 40)];
 //        [catalogBtn setTitle:catalogText[i] forState:UIControlStateNormal];
         [catalogBtn setImage:[UIImage imageNamed:catalogText[i]] forState:UIControlStateNormal];
-        [catalogBtn setImage:[UIImage imageNamed:[NSString stringWithFormat:@"%@1",catalogText[i]]] forState:UIControlStateNormal];
+        [catalogBtn setImage:[UIImage imageNamed:[NSString stringWithFormat:@"%@1",catalogText[i]]] forState:UIControlStateSelected];
 
         [catalogBtn setImageEdgeInsets:UIEdgeInsetsMake(7, 17, 10, 17)];
         
         catalogBtn.tag = i;
         [catalogBtn addTarget:self action:@selector(catalogTapped:) forControlEvents:UIControlEventTouchUpInside];
         [self.catalogScrollView addSubview:catalogBtn];
+        
+        if(i==0)
+        {
+            [catalogBtn setSelected:YES];
+        }
 
     }
     
@@ -96,6 +125,12 @@
     }
     [self scrollToCatalog:sender.tag];
     [self.ListsScroll setContentOffset:CGPointMake(SCREEN_WIDTH * sender.tag, 0)];
+    
+    UIView *superView = [sender superview];
+    for (UIButton *subBtn in [superView subviews]) {
+        [subBtn setSelected:NO];
+    }
+    [sender setSelected:YES];
     
 }
 -(void)scrollToCatalog:(NSInteger)BtnTag
@@ -142,12 +177,22 @@
             [element setBackgroundImage: [UIImage imageNamed:@"fame1"] forState:UIControlStateNormal];
             [element setBackgroundImage:[UIImage imageNamed:@"fame-choosed1"] forState:UIControlStateSelected];
             
+            
+            if (j == 0) {
+            
+                [element setSelected:YES];
+            }
+            
             NSLog(@"button:%@",element);
             [oneList addSubview:element];
 
         }
         
     }
+    
+    
+    [self.loadPage setHidden:YES];
+
 }
 -(void)elementTapped:(elemntButton *)sender
 {
@@ -385,4 +430,24 @@
 }
 */
 
+- (IBAction)backTapp:(id)sender {
+    
+    [self.navigationController popViewControllerAnimated:YES];
+}
+
+- (IBAction)storeTap:(id)sender {
+
+    
+}
+
+- (IBAction)luckyHouseTap:(id)sender {
+    
+    
+    rewardViewController *myReward = [[rewardViewController alloc] initWithNibName:@"rewardViewController" bundle:nil];
+    [self.navigationController pushViewController:myReward animated:YES];
+    
+}
+
+- (IBAction)saveAndShare:(id)sender {
+}
 @end

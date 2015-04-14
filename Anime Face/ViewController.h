@@ -16,6 +16,6 @@
 
 - (IBAction)getReward:(id)sender;
 
-- (IBAction)enterGame:(id)sender;
+- (IBAction)enterGame:(UIButton *)sender;
 @end
 
