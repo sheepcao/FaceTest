@@ -10,11 +10,11 @@
             ignoreCount = "0"
             continueAfterRunningActions = "No"
             filePath = "Anime Face/gameViewController.m"
-            timestampString = "450084667.644416"
+            timestampString = "450685917.717591"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "92"
-            endingLineNumber = "92"
+            startingLineNumber = "120"
+            endingLineNumber = "120"
             landmarkName = "-setupLists"
             landmarkType = "5">
          </BreakpointContent>
@@ -26,11 +26,11 @@
             ignoreCount = "0"
             continueAfterRunningActions = "No"
             filePath = "Anime Face/gameViewController.m"
-            timestampString = "450084667.644416"
+            timestampString = "450685917.717591"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "98"
-            endingLineNumber = "98"
+            startingLineNumber = "126"
+            endingLineNumber = "126"
             landmarkName = "-setupLists"
             landmarkType = "5">
          </BreakpointContent>
@@ -42,11 +42,11 @@
             ignoreCount = "0"
             continueAfterRunningActions = "No"
             filePath = "Anime Face/gameViewController.m"
-            timestampString = "450084667.644416"
+            timestampString = "450682125.20825"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "50"
-            endingLineNumber = "50"
+            startingLineNumber = "65"
+            endingLineNumber = "65"
             landmarkName = "-setupCatalog"
             landmarkType = "5">
          </BreakpointContent>
@@ -54,15 +54,15 @@
       <BreakpointProxy
          BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
          <BreakpointContent
-            shouldBeEnabled = "No"
+            shouldBeEnabled = "Yes"
             ignoreCount = "0"
             continueAfterRunningActions = "No"
             filePath = "Anime Face/gameViewController.m"
-            timestampString = "450084667.644416"
+            timestampString = "450686348.266056"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "123"
-            endingLineNumber = "123"
+            startingLineNumber = "163"
+            endingLineNumber = "163"
             landmarkName = "-elementTapped:"
             landmarkType = "5">
          </BreakpointContent>
@@ -74,11 +74,11 @@
             ignoreCount = "0"
             continueAfterRunningActions = "No"
             filePath = "Anime Face/gameViewController.m"
-            timestampString = "450084667.644416"
+            timestampString = "450686348.266056"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "199"
-            endingLineNumber = "199"
+            startingLineNumber = "265"
+            endingLineNumber = "265"
             landmarkName = "-showHairColorViewWith:"
             landmarkType = "5">
          </BreakpointContent>
@@ -90,11 +90,11 @@
             ignoreCount = "0"
             continueAfterRunningActions = "No"
             filePath = "Anime Face/gameViewController.m"
-            timestampString = "450084667.644416"
+            timestampString = "450686348.266056"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "220"
-            endingLineNumber = "220"
+            startingLineNumber = "286"
+            endingLineNumber = "286"
             landmarkName = "-showColorViewAnimationFor:"
             landmarkType = "5">
          </BreakpointContent>
@@ -106,11 +106,11 @@
             ignoreCount = "0"
             continueAfterRunningActions = "No"
             filePath = "Anime Face/gameViewController.m"
-            timestampString = "450084667.644416"
+            timestampString = "450686348.266056"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "204"
-            endingLineNumber = "204"
+            startingLineNumber = "270"
+            endingLineNumber = "270"
             landmarkName = "-showHairColorViewWith:"
             landmarkType = "5">
          </BreakpointContent>
@@ -154,11 +154,11 @@
             ignoreCount = "0"
             continueAfterRunningActions = "No"
             filePath = "Anime Face/gameViewController.m"
-            timestampString = "450084667.644416"
+            timestampString = "450686348.266056"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "163"
-            endingLineNumber = "163"
+            startingLineNumber = "203"
+            endingLineNumber = "203"
             landmarkName = "-elementTapped:"
             landmarkType = "5">
          </BreakpointContent>
@@ -176,6 +176,38 @@
             startingLineNumber = "83"
             endingLineNumber = "83"
             landmarkName = "-start:"
+            landmarkType = "5">
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            shouldBeEnabled = "Yes"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "Anime Face/gameViewController.m"
+            timestampString = "450686348.266056"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "357"
+            endingLineNumber = "357"
+            landmarkName = "-saveImage"
+            landmarkType = "5">
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            shouldBeEnabled = "Yes"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "Anime Face/gameViewController.m"
+            timestampString = "450686348.266056"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "254"
+            endingLineNumber = "254"
+            landmarkName = "-showHairColorViewWith:"
             landmarkType = "5">
          </BreakpointContent>
       </BreakpointProxy>

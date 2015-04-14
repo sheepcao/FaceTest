@@ -12,7 +12,7 @@
 
 #define CATALOG_NUM 15
 #define CATALOG_BUTTON_WIDTH 70
-#define ELEMENT_WIDTH SCREEN_WIDTH/3
+#define ELEMENT_WIDTH (SCREEN_WIDTH-(6*4))/3
 
 
 @interface gameViewController ()<UIScrollViewDelegate>
@@ -25,13 +25,27 @@
 
 - (void)viewDidLoad {
     [super viewDidLoad];
-    self.navigationController.navigationBarHidden = NO;
+    UIView *buttonContainer = [[UIView alloc] initWithFrame:CGRectMake(0, 0, 100, 44)];
+    buttonContainer.backgroundColor = [UIColor clearColor];
+    UIButton *button0 = [UIButton buttonWithType:UIButtonTypeCustom];
+    [button0 setFrame:CGRectMake(0, 0, 100, 44)];
+    [button0 setTitle:@"Save" forState:UIControlStateNormal];
+    [button0 setTitleColor:[UIColor blueColor] forState:UIControlStateNormal];
+//    [button0 setBackgroundImage:[UIImage imageNamed:@"button0.png"] forState:UIControlStateNormal];
+    [button0 addTarget:self action:@selector(saveImage) forControlEvents:UIControlEventTouchUpInside];
+    [button0 setShowsTouchWhenHighlighted:YES];
+    [buttonContainer addSubview:button0];
+    
+    self.navigationItem.titleView = buttonContainer;
+    
+    self.navigationController.navigationBarHidden = YES;
 
     
     self.imagesArray = @[self.faceFrameView,@"hair",self.mustacheView,self.clothingView,self.eyeView,self.eyebrowView,self.mouthView,self.gestureView,self.glassesView,self.noseView,self.moodView,self.faceImage,self.hatView,self.backImage,self.petView];
     
     [self.bodyImage setImage:[UIImage imageNamed:@"body1"]];
-    
+//    self.catalogScrollView.backgroundColor = [UIColor colorWithPatternImage:[UIImage imageNamed:@"slip-background.png"]];
+
     [self performSelector:@selector(setupCatalog) withObject:nil afterDelay:0.8];
     [self performSelector:@selector(setupLists) withObject:nil afterDelay:0.8];
 //
@@ -48,21 +62,35 @@
 -(void)setupCatalog
 {
     [self.catalogScrollView setContentSize:CGSizeMake(CATALOG_NUM*CATALOG_BUTTON_WIDTH, 40)];
+    
+
     self.catalogScrollView.canCancelContentTouches = YES;
+    
+    
+    
     NSArray *catalogText = [self.GameData objectForKey:@"catalog"];
     
     for (int i = 0 ; i < CATALOG_NUM; i++) {
         UIButton *catalogBtn = [[UIButton alloc] initWithFrame:CGRectMake(0+i*CATALOG_BUTTON_WIDTH, 0, CATALOG_BUTTON_WIDTH, 40)];
-        [catalogBtn setTitle:catalogText[i] forState:UIControlStateNormal];
+//        [catalogBtn setTitle:catalogText[i] forState:UIControlStateNormal];
+        [catalogBtn setImage:[UIImage imageNamed:catalogText[i]] forState:UIControlStateNormal];
+        [catalogBtn setImage:[UIImage imageNamed:[NSString stringWithFormat:@"%@1",catalogText[i]]] forState:UIControlStateNormal];
+
+        [catalogBtn setImageEdgeInsets:UIEdgeInsetsMake(7, 17, 10, 17)];
+        
         catalogBtn.tag = i;
         [catalogBtn addTarget:self action:@selector(catalogTapped:) forControlEvents:UIControlEventTouchUpInside];
         [self.catalogScrollView addSubview:catalogBtn];
 
     }
+    
+    
+//    UIImageView *catalogBack = [[UIImageView alloc] initWithImage:[UIImage imageNamed:@"slip-background.png"]];
+    
 }
 -(void)catalogTapped:(UIButton *)sender
 {
-    NSLog(@"tag:%ld",sender.tag);
+    NSLog(@"tag:%ld",(long)sender.tag);
     if (self.colorView) {
         [self hideColorViewAnimationFor:self.colorView];
     }
@@ -105,12 +133,16 @@
         [self.ListsScroll addSubview:oneList];
         
         for (int j = 0 ; j<listElements.count; j++) {
-            elemntButton *element = [[elemntButton alloc] initWithFrame:CGRectMake(0+(j%3)*ELEMENT_WIDTH, 0+(j/3)*ELEMENT_WIDTH/1.2, ELEMENT_WIDTH, ELEMENT_WIDTH/1.2)];
+            elemntButton *element = [[elemntButton alloc] initWithFrame:CGRectMake(0+(j%3)*(ELEMENT_WIDTH+6), 0+(j/3)*(ELEMENT_WIDTH+6)/1.2, ELEMENT_WIDTH, ELEMENT_WIDTH/1.2)];
             [element setImage:[UIImage imageNamed:listElements[j]] forState:UIControlStateNormal];
             element.imageName = listElements[j];
             element.imageLevel =[NSNumber numberWithInt:i];
             
             [element addTarget:self action:@selector(elementTapped:) forControlEvents:UIControlEventTouchUpInside];
+            [element setBackgroundImage: [UIImage imageNamed:@"fame1"] forState:UIControlStateNormal];
+            [element setBackgroundImage:[UIImage imageNamed:@"fame-choosed1"] forState:UIControlStateSelected];
+            
+            NSLog(@"button:%@",element);
             [oneList addSubview:element];
 
         }
@@ -120,6 +152,14 @@
 -(void)elementTapped:(elemntButton *)sender
 {
     NSLog(@"element:%@",sender.imageLevel);
+    
+    UIView *superView = [sender superview];
+    for (UIButton *subBtn in [superView subviews]) {
+        [subBtn setSelected:NO];
+    }
+    [sender setSelected:YES];
+
+    
     
     if (self.colorView) {
         [self hideColorViewAnimationFor:self.colorView];
@@ -165,6 +205,21 @@
         self.headImage.limitationUp = self.headImage.placardView.center.y-48;
         self.headImage.limitationDown =self.headImage.placardView.center.y + 25;
 
+    }else if ([sender.imageLevel intValue] == 2)
+    {
+        self.headImage.swipeOrientation = swipevertical;
+        self.headImage.limitationUp =self.headImage.placardView.center.y - 70;
+        self.headImage.limitationDown =self.headImage.placardView.center.y + 70;
+    }else if ([sender.imageLevel intValue] == 5)
+    {
+        self.headImage.swipeOrientation = swipevertical;
+        self.headImage.limitationUp = self.headImage.placardView.center.y-48;
+        self.headImage.limitationDown =self.headImage.placardView.center.y + 25;
+    }else if ([sender.imageLevel intValue] == 8)
+    {
+        self.headImage.swipeOrientation = swipeAll;
+        self.headImage.limitationUp = 0;
+        self.headImage.limitationDown = 0;
     }else if ([sender.imageLevel intValue] == 9)
     {
         self.headImage.swipeOrientation = swipevertical;
@@ -175,8 +230,19 @@
         self.headImage.swipeOrientation = swipevertical;
         self.headImage.limitationUp =self.headImage.placardView.center.y - 70;
         self.headImage.limitationDown =self.headImage.placardView.center.y + 70;
+    }else if ([sender.imageLevel intValue] == 11)
+    {
+        self.headImage.swipeOrientation = swipeAll;
+        self.headImage.limitationUp =0;
+        self.headImage.limitationDown =0;
+    }else if ([sender.imageLevel intValue] == 14)
+    {
+        self.headImage.swipeOrientation = swipeAll;
+        self.headImage.limitationUp =0;
+        self.headImage.limitationDown =0;
     }else
     {
+        self.headImage.swipeOrientation = swipeNone;
         self.headImage.limitationUp = 0;
         self.headImage.limitationDown = 0;
     }
@@ -282,6 +348,31 @@
     // Dispose of any resources that can be recreated.
 }
 
+#pragma mark Save Image
+
+-(void)saveImage
+{
+    
+    
+    
+    if ([[UIScreen mainScreen] respondsToSelector:@selector(scale)])
+        UIGraphicsBeginImageContextWithOptions(self.headImage.frame.size, NO, [UIScreen mainScreen].scale);
+    else
+        UIGraphicsBeginImageContext(self.headImage.frame.size);
+    //获取图像
+
+    [self.headImage.layer renderInContext:UIGraphicsGetCurrentContext()];
+    UIImage *imageShare = UIGraphicsGetImageFromCurrentImageContext();
+    UIGraphicsEndImageContext();
+    
+    UIImageWriteToSavedPhotosAlbum(imageShare, nil, nil,nil);
+    
+    UIAlertView *successAlert = [[UIAlertView alloc] initWithTitle:@"成功保存" message:@"已将保存萌照至系统相册" delegate:nil cancelButtonTitle:@"确定" otherButtonTitles: nil];
+    [successAlert show];
+
+    
+    NSLog(@"saved Image!");
+}
 
 
 /*

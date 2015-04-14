@@ -52,7 +52,8 @@
 typedef enum SwipeOrientation : NSUInteger {
     swipeHorizontal   = 1, /*!< Enum value ADBMobilePrivacyStatusOptIn. */
     swipevertical  = 2, /*!< Enum value ADBMobilePrivacyStatusOptOut. */
-    swipeAll = 3  /*!< Enum value ADBMobilePrivacyStatusUnknown. @note only available in conjunction with offline tracking */
+    swipeAll = 3,
+    swipeNone = 4 /*!< Enum value ADBMobilePrivacyStatusUnknown. @note only available in conjunction with offline tracking */
 } SwipeOrientation;
 
 @interface APLMoveMeView : UIView
