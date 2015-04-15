@@ -9,38 +9,16 @@
 /* Begin PBXBuildFile section */
 		A44BB7121ADCA647009D2378 /* back-press.png in Resources */ = {isa = PBXBuildFile; fileRef = A44BB6D71ADCA647009D2378 /* back-press.png */; };
 		A44BB7131ADCA647009D2378 /* back.png in Resources */ = {isa = PBXBuildFile; fileRef = A44BB6D81ADCA647009D2378 /* back.png */; };
-		A44BB7141ADCA647009D2378 /* 背景1.png in Resources */ = {isa = PBXBuildFile; fileRef = A44BB6D91ADCA647009D2378 /* 背景1.png */; };
-		A44BB7151ADCA647009D2378 /* 背景.png in Resources */ = {isa = PBXBuildFile; fileRef = A44BB6DA1ADCA647009D2378 /* 背景.png */; };
 		A44BB7161ADCA647009D2378 /* boy-normal.png in Resources */ = {isa = PBXBuildFile; fileRef = A44BB6DB1ADCA647009D2378 /* boy-normal.png */; };
 		A44BB7171ADCA647009D2378 /* boy-press.png in Resources */ = {isa = PBXBuildFile; fileRef = A44BB6DC1ADCA647009D2378 /* boy-press.png */; };
 		A44BB7181ADCA647009D2378 /* choose.png in Resources */ = {isa = PBXBuildFile; fileRef = A44BB6DD1ADCA647009D2378 /* choose.png */; };
-		A44BB7191ADCA647009D2378 /* 衣服1.png in Resources */ = {isa = PBXBuildFile; fileRef = A44BB6DE1ADCA647009D2378 /* 衣服1.png */; };
-		A44BB71A1ADCA647009D2378 /* 衣服.png in Resources */ = {isa = PBXBuildFile; fileRef = A44BB6DF1ADCA647009D2378 /* 衣服.png */; };
 		A44BB71B1ADCA647009D2378 /* diamond frame.png in Resources */ = {isa = PBXBuildFile; fileRef = A44BB6E01ADCA647009D2378 /* diamond frame.png */; };
 		A44BB71C1ADCA647009D2378 /* diamond++.png in Resources */ = {isa = PBXBuildFile; fileRef = A44BB6E11ADCA647009D2378 /* diamond++.png */; };
 		A44BB71D1ADCA647009D2378 /* diamond++press.png in Resources */ = {isa = PBXBuildFile; fileRef = A44BB6E21ADCA647009D2378 /* diamond++press.png */; };
-		A44BB71E1ADCA647009D2378 /* 眼睛1.png in Resources */ = {isa = PBXBuildFile; fileRef = A44BB6E31ADCA647009D2378 /* 眼睛1.png */; };
-		A44BB71F1ADCA647009D2378 /* 眼睛.png in Resources */ = {isa = PBXBuildFile; fileRef = A44BB6E41ADCA647009D2378 /* 眼睛.png */; };
-		A44BB7201ADCA647009D2378 /* 眼眉1.png in Resources */ = {isa = PBXBuildFile; fileRef = A44BB6E51ADCA647009D2378 /* 眼眉1.png */; };
-		A44BB7211ADCA647009D2378 /* 眼眉.png in Resources */ = {isa = PBXBuildFile; fileRef = A44BB6E61ADCA647009D2378 /* 眼眉.png */; };
-		A44BB7221ADCA647009D2378 /* 脸饰1.png in Resources */ = {isa = PBXBuildFile; fileRef = A44BB6E71ADCA647009D2378 /* 脸饰1.png */; };
-		A44BB7231ADCA647009D2378 /* 脸饰.png in Resources */ = {isa = PBXBuildFile; fileRef = A44BB6E81ADCA647009D2378 /* 脸饰.png */; };
-		A44BB7241ADCA647009D2378 /* 脸型1.png in Resources */ = {isa = PBXBuildFile; fileRef = A44BB6E91ADCA647009D2378 /* 脸型1.png */; };
-		A44BB7251ADCA647009D2378 /* 脸型.png in Resources */ = {isa = PBXBuildFile; fileRef = A44BB6EA1ADCA647009D2378 /* 脸型.png */; };
 		A44BB7271ADCA647009D2378 /* first back ground.png in Resources */ = {isa = PBXBuildFile; fileRef = A44BB6EC1ADCA647009D2378 /* first back ground.png */; };
 		A44BB7281ADCA647009D2378 /* gamebackground.png in Resources */ = {isa = PBXBuildFile; fileRef = A44BB6ED1ADCA647009D2378 /* gamebackground.png */; };
-		A44BB7291ADCA647009D2378 /* 手势1.png in Resources */ = {isa = PBXBuildFile; fileRef = A44BB6EE1ADCA647009D2378 /* 手势1.png */; };
-		A44BB72A1ADCA647009D2378 /* 手势.png in Resources */ = {isa = PBXBuildFile; fileRef = A44BB6EF1ADCA647009D2378 /* 手势.png */; };
 		A44BB72B1ADCA647009D2378 /* girl-normal.png in Resources */ = {isa = PBXBuildFile; fileRef = A44BB6F01ADCA647009D2378 /* girl-normal.png */; };
 		A44BB72C1ADCA647009D2378 /* girl-pressl.png in Resources */ = {isa = PBXBuildFile; fileRef = A44BB6F11ADCA647009D2378 /* girl-pressl.png */; };
-		A44BB72D1ADCA647009D2378 /* 眼镜1.png in Resources */ = {isa = PBXBuildFile; fileRef = A44BB6F21ADCA647009D2378 /* 眼镜1.png */; };
-		A44BB72E1ADCA647009D2378 /* 眼镜.png in Resources */ = {isa = PBXBuildFile; fileRef = A44BB6F31ADCA647009D2378 /* 眼镜.png */; };
-		A44BB72F1ADCA647009D2378 /* 头发1.png in Resources */ = {isa = PBXBuildFile; fileRef = A44BB6F41ADCA647009D2378 /* 头发1.png */; };
-		A44BB7301ADCA647009D2378 /* 头发.png in Resources */ = {isa = PBXBuildFile; fileRef = A44BB6F51ADCA647009D2378 /* 头发.png */; };
-		A44BB7311ADCA647009D2378 /* 帽子1.png in Resources */ = {isa = PBXBuildFile; fileRef = A44BB6F61ADCA647009D2378 /* 帽子1.png */; };
-		A44BB7321ADCA647009D2378 /* 帽子.png in Resources */ = {isa = PBXBuildFile; fileRef = A44BB6F71ADCA647009D2378 /* 帽子.png */; };
-		A44BB7331ADCA647009D2378 /* 胡子1.png in Resources */ = {isa = PBXBuildFile; fileRef = A44BB6F81ADCA647009D2378 /* 胡子1.png */; };
-		A44BB7341ADCA647009D2378 /* 胡子.png in Resources */ = {isa = PBXBuildFile; fileRef = A44BB6F91ADCA647009D2378 /* 胡子.png */; };
 		A44BB7351ADCA647009D2378 /* inside-clothstore-press.png in Resources */ = {isa = PBXBuildFile; fileRef = A44BB6FA1ADCA647009D2378 /* inside-clothstore-press.png */; };
 		A44BB7361ADCA647009D2378 /* inside-clothstore.png in Resources */ = {isa = PBXBuildFile; fileRef = A44BB6FB1ADCA647009D2378 /* inside-clothstore.png */; };
 		A44BB7371ADCA647009D2378 /* inside-luckystore-press.png in Resources */ = {isa = PBXBuildFile; fileRef = A44BB6FC1ADCA647009D2378 /* inside-luckystore-press.png */; };
@@ -49,12 +27,6 @@
 		A44BB73A1ADCA647009D2378 /* loading1000.png in Resources */ = {isa = PBXBuildFile; fileRef = A44BB6FF1ADCA647009D2378 /* loading1000.png */; };
 		A44BB73B1ADCA647009D2378 /* luckystore-normal-main.png in Resources */ = {isa = PBXBuildFile; fileRef = A44BB7001ADCA647009D2378 /* luckystore-normal-main.png */; };
 		A44BB73C1ADCA647009D2378 /* luckystore-press-main.png in Resources */ = {isa = PBXBuildFile; fileRef = A44BB7011ADCA647009D2378 /* luckystore-press-main.png */; };
-		A44BB73D1ADCA647009D2378 /* 嘴巴1.png in Resources */ = {isa = PBXBuildFile; fileRef = A44BB7021ADCA647009D2378 /* 嘴巴1.png */; };
-		A44BB73E1ADCA647009D2378 /* 嘴巴.png in Resources */ = {isa = PBXBuildFile; fileRef = A44BB7031ADCA647009D2378 /* 嘴巴.png */; };
-		A44BB73F1ADCA647009D2378 /* 鼻子1.png in Resources */ = {isa = PBXBuildFile; fileRef = A44BB7041ADCA647009D2378 /* 鼻子1.png */; };
-		A44BB7401ADCA647009D2378 /* 鼻子.png in Resources */ = {isa = PBXBuildFile; fileRef = A44BB7051ADCA647009D2378 /* 鼻子.png */; };
-		A44BB7411ADCA647009D2378 /* 宠物1.png in Resources */ = {isa = PBXBuildFile; fileRef = A44BB7061ADCA647009D2378 /* 宠物1.png */; };
-		A44BB7421ADCA647009D2378 /* 宠物.png in Resources */ = {isa = PBXBuildFile; fileRef = A44BB7071ADCA647009D2378 /* 宠物.png */; };
 		A44BB7431ADCA647009D2378 /* save-press.png in Resources */ = {isa = PBXBuildFile; fileRef = A44BB7081ADCA647009D2378 /* save-press.png */; };
 		A44BB7441ADCA647009D2378 /* save.png in Resources */ = {isa = PBXBuildFile; fileRef = A44BB7091ADCA647009D2378 /* save.png */; };
 		A44BB7451ADCA647009D2378 /* setting-normal.png in Resources */ = {isa = PBXBuildFile; fileRef = A44BB70A1ADCA647009D2378 /* setting-normal.png */; };
@@ -74,6 +46,36 @@
 		A46BBC1D1ADE4075009D2280 /* title.png in Resources */ = {isa = PBXBuildFile; fileRef = A46BBC1B1ADE4075009D2280 /* title.png */; };
 		A46BBC1E1ADE4075009D2280 /* youpiao.png in Resources */ = {isa = PBXBuildFile; fileRef = A46BBC1C1ADE4075009D2280 /* youpiao.png */; };
 		A46BBC201ADE40D6009D2280 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = A46BBC1F1ADE40D6009D2280 /* Main.storyboard */; };
+		A46BBC3F1ADE52EE009D2280 /* 嘴巴.png in Resources */ = {isa = PBXBuildFile; fileRef = A46BBC211ADE52EE009D2280 /* 嘴巴.png */; };
+		A46BBC401ADE52EE009D2280 /* 嘴巴1.png in Resources */ = {isa = PBXBuildFile; fileRef = A46BBC221ADE52EE009D2280 /* 嘴巴1.png */; };
+		A46BBC411ADE52EE009D2280 /* 头发.png in Resources */ = {isa = PBXBuildFile; fileRef = A46BBC231ADE52EE009D2280 /* 头发.png */; };
+		A46BBC421ADE52EE009D2280 /* 头发1.png in Resources */ = {isa = PBXBuildFile; fileRef = A46BBC241ADE52EE009D2280 /* 头发1.png */; };
+		A46BBC431ADE52EE009D2280 /* 宠物.png in Resources */ = {isa = PBXBuildFile; fileRef = A46BBC251ADE52EE009D2280 /* 宠物.png */; };
+		A46BBC441ADE52EE009D2280 /* 宠物1.png in Resources */ = {isa = PBXBuildFile; fileRef = A46BBC261ADE52EE009D2280 /* 宠物1.png */; };
+		A46BBC451ADE52EE009D2280 /* 帽子.png in Resources */ = {isa = PBXBuildFile; fileRef = A46BBC271ADE52EE009D2280 /* 帽子.png */; };
+		A46BBC461ADE52EE009D2280 /* 帽子1.png in Resources */ = {isa = PBXBuildFile; fileRef = A46BBC281ADE52EE009D2280 /* 帽子1.png */; };
+		A46BBC471ADE52EE009D2280 /* 心情.png in Resources */ = {isa = PBXBuildFile; fileRef = A46BBC291ADE52EE009D2280 /* 心情.png */; };
+		A46BBC481ADE52EE009D2280 /* 心情1.png in Resources */ = {isa = PBXBuildFile; fileRef = A46BBC2A1ADE52EE009D2280 /* 心情1.png */; };
+		A46BBC491ADE52EE009D2280 /* 手势.png in Resources */ = {isa = PBXBuildFile; fileRef = A46BBC2B1ADE52EE009D2280 /* 手势.png */; };
+		A46BBC4A1ADE52EE009D2280 /* 手势1.png in Resources */ = {isa = PBXBuildFile; fileRef = A46BBC2C1ADE52EE009D2280 /* 手势1.png */; };
+		A46BBC4B1ADE52EE009D2280 /* 眼眉.png in Resources */ = {isa = PBXBuildFile; fileRef = A46BBC2D1ADE52EE009D2280 /* 眼眉.png */; };
+		A46BBC4C1ADE52EE009D2280 /* 眼眉1.png in Resources */ = {isa = PBXBuildFile; fileRef = A46BBC2E1ADE52EE009D2280 /* 眼眉1.png */; };
+		A46BBC4D1ADE52EE009D2280 /* 眼睛.png in Resources */ = {isa = PBXBuildFile; fileRef = A46BBC2F1ADE52EE009D2280 /* 眼睛.png */; };
+		A46BBC4E1ADE52EE009D2280 /* 眼睛1.png in Resources */ = {isa = PBXBuildFile; fileRef = A46BBC301ADE52EE009D2280 /* 眼睛1.png */; };
+		A46BBC4F1ADE52EE009D2280 /* 眼镜.png in Resources */ = {isa = PBXBuildFile; fileRef = A46BBC311ADE52EE009D2280 /* 眼镜.png */; };
+		A46BBC501ADE52EE009D2280 /* 眼镜1.png in Resources */ = {isa = PBXBuildFile; fileRef = A46BBC321ADE52EE009D2280 /* 眼镜1.png */; };
+		A46BBC511ADE52EE009D2280 /* 背景.png in Resources */ = {isa = PBXBuildFile; fileRef = A46BBC331ADE52EE009D2280 /* 背景.png */; };
+		A46BBC521ADE52EE009D2280 /* 背景1.png in Resources */ = {isa = PBXBuildFile; fileRef = A46BBC341ADE52EE009D2280 /* 背景1.png */; };
+		A46BBC531ADE52EE009D2280 /* 胡子.png in Resources */ = {isa = PBXBuildFile; fileRef = A46BBC351ADE52EE009D2280 /* 胡子.png */; };
+		A46BBC541ADE52EE009D2280 /* 胡子1.png in Resources */ = {isa = PBXBuildFile; fileRef = A46BBC361ADE52EE009D2280 /* 胡子1.png */; };
+		A46BBC551ADE52EE009D2280 /* 脸型.png in Resources */ = {isa = PBXBuildFile; fileRef = A46BBC371ADE52EE009D2280 /* 脸型.png */; };
+		A46BBC561ADE52EE009D2280 /* 脸型1.png in Resources */ = {isa = PBXBuildFile; fileRef = A46BBC381ADE52EE009D2280 /* 脸型1.png */; };
+		A46BBC571ADE52EE009D2280 /* 脸饰.png in Resources */ = {isa = PBXBuildFile; fileRef = A46BBC391ADE52EE009D2280 /* 脸饰.png */; };
+		A46BBC581ADE52EE009D2280 /* 脸饰1.png in Resources */ = {isa = PBXBuildFile; fileRef = A46BBC3A1ADE52EE009D2280 /* 脸饰1.png */; };
+		A46BBC591ADE52EE009D2280 /* 衣服.png in Resources */ = {isa = PBXBuildFile; fileRef = A46BBC3B1ADE52EE009D2280 /* 衣服.png */; };
+		A46BBC5A1ADE52EE009D2280 /* 衣服1.png in Resources */ = {isa = PBXBuildFile; fileRef = A46BBC3C1ADE52EE009D2280 /* 衣服1.png */; };
+		A46BBC5B1ADE52EE009D2280 /* 鼻子.png in Resources */ = {isa = PBXBuildFile; fileRef = A46BBC3D1ADE52EE009D2280 /* 鼻子.png */; };
+		A46BBC5C1ADE52EE009D2280 /* 鼻子1.png in Resources */ = {isa = PBXBuildFile; fileRef = A46BBC3E1ADE52EE009D2280 /* 鼻子1.png */; };
 		A47D6EB11AC3E1ED00AC1768 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = A47D6EB01AC3E1ED00AC1768 /* main.m */; };
 		A47D6EB41AC3E1ED00AC1768 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = A47D6EB31AC3E1ED00AC1768 /* AppDelegate.m */; };
 		A47D6EB71AC3E1ED00AC1768 /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = A47D6EB61AC3E1ED00AC1768 /* ViewController.m */; };
@@ -151,38 +153,16 @@
 /* Begin PBXFileReference section */
 		A44BB6D71ADCA647009D2378 /* back-press.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "back-press.png"; sourceTree = "<group>"; };
 		A44BB6D81ADCA647009D2378 /* back.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = back.png; sourceTree = "<group>"; };
-		A44BB6D91ADCA647009D2378 /* 背景1.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "背景1.png"; sourceTree = "<group>"; };
-		A44BB6DA1ADCA647009D2378 /* 背景.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "背景.png"; sourceTree = "<group>"; };
 		A44BB6DB1ADCA647009D2378 /* boy-normal.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "boy-normal.png"; sourceTree = "<group>"; };
 		A44BB6DC1ADCA647009D2378 /* boy-press.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "boy-press.png"; sourceTree = "<group>"; };
 		A44BB6DD1ADCA647009D2378 /* choose.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = choose.png; sourceTree = "<group>"; };
-		A44BB6DE1ADCA647009D2378 /* 衣服1.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "衣服1.png"; sourceTree = "<group>"; };
-		A44BB6DF1ADCA647009D2378 /* 衣服.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "衣服.png"; sourceTree = "<group>"; };
 		A44BB6E01ADCA647009D2378 /* diamond frame.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "diamond frame.png"; sourceTree = "<group>"; };
 		A44BB6E11ADCA647009D2378 /* diamond++.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "diamond++.png"; sourceTree = "<group>"; };
 		A44BB6E21ADCA647009D2378 /* diamond++press.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "diamond++press.png"; sourceTree = "<group>"; };
-		A44BB6E31ADCA647009D2378 /* 眼睛1.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "眼睛1.png"; sourceTree = "<group>"; };
-		A44BB6E41ADCA647009D2378 /* 眼睛.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "眼睛.png"; sourceTree = "<group>"; };
-		A44BB6E51ADCA647009D2378 /* 眼眉1.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "眼眉1.png"; sourceTree = "<group>"; };
-		A44BB6E61ADCA647009D2378 /* 眼眉.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "眼眉.png"; sourceTree = "<group>"; };
-		A44BB6E71ADCA647009D2378 /* 脸饰1.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "脸饰1.png"; sourceTree = "<group>"; };
-		A44BB6E81ADCA647009D2378 /* 脸饰.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "脸饰.png"; sourceTree = "<group>"; };
-		A44BB6E91ADCA647009D2378 /* 脸型1.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "脸型1.png"; sourceTree = "<group>"; };
-		A44BB6EA1ADCA647009D2378 /* 脸型.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "脸型.png"; sourceTree = "<group>"; };
 		A44BB6EC1ADCA647009D2378 /* first back ground.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "first back ground.png"; sourceTree = "<group>"; };
 		A44BB6ED1ADCA647009D2378 /* gamebackground.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = gamebackground.png; sourceTree = "<group>"; };
-		A44BB6EE1ADCA647009D2378 /* 手势1.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "手势1.png"; sourceTree = "<group>"; };
-		A44BB6EF1ADCA647009D2378 /* 手势.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "手势.png"; sourceTree = "<group>"; };
 		A44BB6F01ADCA647009D2378 /* girl-normal.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "girl-normal.png"; sourceTree = "<group>"; };
 		A44BB6F11ADCA647009D2378 /* girl-pressl.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "girl-pressl.png"; sourceTree = "<group>"; };
-		A44BB6F21ADCA647009D2378 /* 眼镜1.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "眼镜1.png"; sourceTree = "<group>"; };
-		A44BB6F31ADCA647009D2378 /* 眼镜.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "眼镜.png"; sourceTree = "<group>"; };
-		A44BB6F41ADCA647009D2378 /* 头发1.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "头发1.png"; sourceTree = "<group>"; };
-		A44BB6F51ADCA647009D2378 /* 头发.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "头发.png"; sourceTree = "<group>"; };
-		A44BB6F61ADCA647009D2378 /* 帽子1.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "帽子1.png"; sourceTree = "<group>"; };
-		A44BB6F71ADCA647009D2378 /* 帽子.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "帽子.png"; sourceTree = "<group>"; };
-		A44BB6F81ADCA647009D2378 /* 胡子1.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "胡子1.png"; sourceTree = "<group>"; };
-		A44BB6F91ADCA647009D2378 /* 胡子.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "胡子.png"; sourceTree = "<group>"; };
 		A44BB6FA1ADCA647009D2378 /* inside-clothstore-press.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "inside-clothstore-press.png"; sourceTree = "<group>"; };
 		A44BB6FB1ADCA647009D2378 /* inside-clothstore.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "inside-clothstore.png"; sourceTree = "<group>"; };
 		A44BB6FC1ADCA647009D2378 /* inside-luckystore-press.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "inside-luckystore-press.png"; sourceTree = "<group>"; };
@@ -191,12 +171,6 @@
 		A44BB6FF1ADCA647009D2378 /* loading1000.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = loading1000.png; sourceTree = "<group>"; };
 		A44BB7001ADCA647009D2378 /* luckystore-normal-main.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "luckystore-normal-main.png"; sourceTree = "<group>"; };
 		A44BB7011ADCA647009D2378 /* luckystore-press-main.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "luckystore-press-main.png"; sourceTree = "<group>"; };
-		A44BB7021ADCA647009D2378 /* 嘴巴1.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "嘴巴1.png"; sourceTree = "<group>"; };
-		A44BB7031ADCA647009D2378 /* 嘴巴.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "嘴巴.png"; sourceTree = "<group>"; };
-		A44BB7041ADCA647009D2378 /* 鼻子1.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "鼻子1.png"; sourceTree = "<group>"; };
-		A44BB7051ADCA647009D2378 /* 鼻子.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "鼻子.png"; sourceTree = "<group>"; };
-		A44BB7061ADCA647009D2378 /* 宠物1.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "宠物1.png"; sourceTree = "<group>"; };
-		A44BB7071ADCA647009D2378 /* 宠物.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "宠物.png"; sourceTree = "<group>"; };
 		A44BB7081ADCA647009D2378 /* save-press.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "save-press.png"; sourceTree = "<group>"; };
 		A44BB7091ADCA647009D2378 /* save.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = save.png; sourceTree = "<group>"; };
 		A44BB70A1ADCA647009D2378 /* setting-normal.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "setting-normal.png"; sourceTree = "<group>"; };
@@ -216,6 +190,36 @@
 		A46BBC1B1ADE4075009D2280 /* title.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = title.png; sourceTree = "<group>"; };
 		A46BBC1C1ADE4075009D2280 /* youpiao.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = youpiao.png; sourceTree = "<group>"; };
 		A46BBC1F1ADE40D6009D2280 /* Main.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = Main.storyboard; sourceTree = "<group>"; };
+		A46BBC211ADE52EE009D2280 /* 嘴巴.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "嘴巴.png"; sourceTree = "<group>"; };
+		A46BBC221ADE52EE009D2280 /* 嘴巴1.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "嘴巴1.png"; sourceTree = "<group>"; };
+		A46BBC231ADE52EE009D2280 /* 头发.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "头发.png"; sourceTree = "<group>"; };
+		A46BBC241ADE52EE009D2280 /* 头发1.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "头发1.png"; sourceTree = "<group>"; };
+		A46BBC251ADE52EE009D2280 /* 宠物.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "宠物.png"; sourceTree = "<group>"; };
+		A46BBC261ADE52EE009D2280 /* 宠物1.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "宠物1.png"; sourceTree = "<group>"; };
+		A46BBC271ADE52EE009D2280 /* 帽子.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "帽子.png"; sourceTree = "<group>"; };
+		A46BBC281ADE52EE009D2280 /* 帽子1.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "帽子1.png"; sourceTree = "<group>"; };
+		A46BBC291ADE52EE009D2280 /* 心情.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "心情.png"; sourceTree = "<group>"; };
+		A46BBC2A1ADE52EE009D2280 /* 心情1.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "心情1.png"; sourceTree = "<group>"; };
+		A46BBC2B1ADE52EE009D2280 /* 手势.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "手势.png"; sourceTree = "<group>"; };
+		A46BBC2C1ADE52EE009D2280 /* 手势1.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "手势1.png"; sourceTree = "<group>"; };
+		A46BBC2D1ADE52EE009D2280 /* 眼眉.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "眼眉.png"; sourceTree = "<group>"; };
+		A46BBC2E1ADE52EE009D2280 /* 眼眉1.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "眼眉1.png"; sourceTree = "<group>"; };
+		A46BBC2F1ADE52EE009D2280 /* 眼睛.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "眼睛.png"; sourceTree = "<group>"; };
+		A46BBC301ADE52EE009D2280 /* 眼睛1.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "眼睛1.png"; sourceTree = "<group>"; };
+		A46BBC311ADE52EE009D2280 /* 眼镜.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "眼镜.png"; sourceTree = "<group>"; };
+		A46BBC321ADE52EE009D2280 /* 眼镜1.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "眼镜1.png"; sourceTree = "<group>"; };
+		A46BBC331ADE52EE009D2280 /* 背景.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "背景.png"; sourceTree = "<group>"; };
+		A46BBC341ADE52EE009D2280 /* 背景1.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "背景1.png"; sourceTree = "<group>"; };
+		A46BBC351ADE52EE009D2280 /* 胡子.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "胡子.png"; sourceTree = "<group>"; };
+		A46BBC361ADE52EE009D2280 /* 胡子1.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "胡子1.png"; sourceTree = "<group>"; };
+		A46BBC371ADE52EE009D2280 /* 脸型.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "脸型.png"; sourceTree = "<group>"; };
+		A46BBC381ADE52EE009D2280 /* 脸型1.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "脸型1.png"; sourceTree = "<group>"; };
+		A46BBC391ADE52EE009D2280 /* 脸饰.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "脸饰.png"; sourceTree = "<group>"; };
+		A46BBC3A1ADE52EE009D2280 /* 脸饰1.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "脸饰1.png"; sourceTree = "<group>"; };
+		A46BBC3B1ADE52EE009D2280 /* 衣服.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "衣服.png"; sourceTree = "<group>"; };
+		A46BBC3C1ADE52EE009D2280 /* 衣服1.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "衣服1.png"; sourceTree = "<group>"; };
+		A46BBC3D1ADE52EE009D2280 /* 鼻子.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "鼻子.png"; sourceTree = "<group>"; };
+		A46BBC3E1ADE52EE009D2280 /* 鼻子1.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "鼻子1.png"; sourceTree = "<group>"; };
 		A47D6EAB1AC3E1ED00AC1768 /* Anime Face.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Anime Face.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		A47D6EAF1AC3E1ED00AC1768 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		A47D6EB01AC3E1ED00AC1768 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
@@ -319,40 +323,18 @@
 				A44BB75B1ADCF1E7009D2378 /* hengleng1.png */,
 				A44BB6D71ADCA647009D2378 /* back-press.png */,
 				A44BB6D81ADCA647009D2378 /* back.png */,
-				A44BB6D91ADCA647009D2378 /* 背景1.png */,
-				A44BB6DA1ADCA647009D2378 /* 背景.png */,
 				A44BB6DB1ADCA647009D2378 /* boy-normal.png */,
 				A44BB6DC1ADCA647009D2378 /* boy-press.png */,
 				A44BB6DD1ADCA647009D2378 /* choose.png */,
-				A44BB6DE1ADCA647009D2378 /* 衣服1.png */,
-				A44BB6DF1ADCA647009D2378 /* 衣服.png */,
 				A44BB6E01ADCA647009D2378 /* diamond frame.png */,
 				A44BB6E11ADCA647009D2378 /* diamond++.png */,
 				A44BB6E21ADCA647009D2378 /* diamond++press.png */,
-				A44BB6E31ADCA647009D2378 /* 眼睛1.png */,
-				A44BB6E41ADCA647009D2378 /* 眼睛.png */,
-				A44BB6E51ADCA647009D2378 /* 眼眉1.png */,
-				A44BB6E61ADCA647009D2378 /* 眼眉.png */,
-				A44BB6E71ADCA647009D2378 /* 脸饰1.png */,
-				A44BB6E81ADCA647009D2378 /* 脸饰.png */,
-				A44BB6E91ADCA647009D2378 /* 脸型1.png */,
-				A44BB6EA1ADCA647009D2378 /* 脸型.png */,
 				A44BB7551ADCE9BC009D2378 /* fame-choosed1.png */,
 				A44BB7561ADCE9BC009D2378 /* fame1.png */,
 				A44BB6EC1ADCA647009D2378 /* first back ground.png */,
 				A44BB6ED1ADCA647009D2378 /* gamebackground.png */,
-				A44BB6EE1ADCA647009D2378 /* 手势1.png */,
-				A44BB6EF1ADCA647009D2378 /* 手势.png */,
 				A44BB6F01ADCA647009D2378 /* girl-normal.png */,
 				A44BB6F11ADCA647009D2378 /* girl-pressl.png */,
-				A44BB6F21ADCA647009D2378 /* 眼镜1.png */,
-				A44BB6F31ADCA647009D2378 /* 眼镜.png */,
-				A44BB6F41ADCA647009D2378 /* 头发1.png */,
-				A44BB6F51ADCA647009D2378 /* 头发.png */,
-				A44BB6F61ADCA647009D2378 /* 帽子1.png */,
-				A44BB6F71ADCA647009D2378 /* 帽子.png */,
-				A44BB6F81ADCA647009D2378 /* 胡子1.png */,
-				A44BB6F91ADCA647009D2378 /* 胡子.png */,
 				A44BB6FA1ADCA647009D2378 /* inside-clothstore-press.png */,
 				A44BB6FB1ADCA647009D2378 /* inside-clothstore.png */,
 				A44BB6FC1ADCA647009D2378 /* inside-luckystore-press.png */,
@@ -363,12 +345,6 @@
 				A44BB6FF1ADCA647009D2378 /* loading1000.png */,
 				A44BB7001ADCA647009D2378 /* luckystore-normal-main.png */,
 				A44BB7011ADCA647009D2378 /* luckystore-press-main.png */,
-				A44BB7021ADCA647009D2378 /* 嘴巴1.png */,
-				A44BB7031ADCA647009D2378 /* 嘴巴.png */,
-				A44BB7041ADCA647009D2378 /* 鼻子1.png */,
-				A44BB7051ADCA647009D2378 /* 鼻子.png */,
-				A44BB7061ADCA647009D2378 /* 宠物1.png */,
-				A44BB7071ADCA647009D2378 /* 宠物.png */,
 				A44BB7081ADCA647009D2378 /* save-press.png */,
 				A44BB7091ADCA647009D2378 /* save.png */,
 				A44BB70A1ADCA647009D2378 /* setting-normal.png */,
@@ -473,6 +449,36 @@
 		A4E6CDAA1ACCE52F00A1D6EC /* element */ = {
 			isa = PBXGroup;
 			children = (
+				A46BBC211ADE52EE009D2280 /* 嘴巴.png */,
+				A46BBC221ADE52EE009D2280 /* 嘴巴1.png */,
+				A46BBC231ADE52EE009D2280 /* 头发.png */,
+				A46BBC241ADE52EE009D2280 /* 头发1.png */,
+				A46BBC251ADE52EE009D2280 /* 宠物.png */,
+				A46BBC261ADE52EE009D2280 /* 宠物1.png */,
+				A46BBC271ADE52EE009D2280 /* 帽子.png */,
+				A46BBC281ADE52EE009D2280 /* 帽子1.png */,
+				A46BBC291ADE52EE009D2280 /* 心情.png */,
+				A46BBC2A1ADE52EE009D2280 /* 心情1.png */,
+				A46BBC2B1ADE52EE009D2280 /* 手势.png */,
+				A46BBC2C1ADE52EE009D2280 /* 手势1.png */,
+				A46BBC2D1ADE52EE009D2280 /* 眼眉.png */,
+				A46BBC2E1ADE52EE009D2280 /* 眼眉1.png */,
+				A46BBC2F1ADE52EE009D2280 /* 眼睛.png */,
+				A46BBC301ADE52EE009D2280 /* 眼睛1.png */,
+				A46BBC311ADE52EE009D2280 /* 眼镜.png */,
+				A46BBC321ADE52EE009D2280 /* 眼镜1.png */,
+				A46BBC331ADE52EE009D2280 /* 背景.png */,
+				A46BBC341ADE52EE009D2280 /* 背景1.png */,
+				A46BBC351ADE52EE009D2280 /* 胡子.png */,
+				A46BBC361ADE52EE009D2280 /* 胡子1.png */,
+				A46BBC371ADE52EE009D2280 /* 脸型.png */,
+				A46BBC381ADE52EE009D2280 /* 脸型1.png */,
+				A46BBC391ADE52EE009D2280 /* 脸饰.png */,
+				A46BBC3A1ADE52EE009D2280 /* 脸饰1.png */,
+				A46BBC3B1ADE52EE009D2280 /* 衣服.png */,
+				A46BBC3C1ADE52EE009D2280 /* 衣服1.png */,
+				A46BBC3D1ADE52EE009D2280 /* 鼻子.png */,
+				A46BBC3E1ADE52EE009D2280 /* 鼻子1.png */,
 				A4E6CDAB1ACCE54200A1D6EC /* background1.png */,
 				A4E6CDAC1ACCE54200A1D6EC /* background2.png */,
 				A4E6CDAD1ACCE54200A1D6EC /* body1.png */,
@@ -599,39 +605,41 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				A44BB7221ADCA647009D2378 /* 脸饰1.png in Resources */,
 				A4E6CDEF1ACCE54200A1D6EC /* nose1.png in Resources */,
-				A44BB7251ADCA647009D2378 /* 脸型.png in Resources */,
 				A4E6CDD81ACCE54200A1D6EC /* eyebrow2.png in Resources */,
 				A44BB7131ADCA647009D2378 /* back.png in Resources */,
+				A46BBC4A1ADE52EE009D2280 /* 手势1.png in Resources */,
 				A44BB74A1ADCA647009D2378 /* store-normal-main.png in Resources */,
-				A44BB72F1ADCA647009D2378 /* 头发1.png in Resources */,
 				A4E6CDDE1ACCE54200A1D6EC /* gesture2.png in Resources */,
+				A46BBC5C1ADE52EE009D2280 /* 鼻子1.png in Resources */,
 				A4CA3AA41ACA440900D50D80 /* gameViewController.xib in Resources */,
 				A44BB7281ADCA647009D2378 /* gamebackground.png in Resources */,
 				A4E6CDED1ACCE54200A1D6EC /* mustache1.png in Resources */,
 				A44BB7481ADCA647009D2378 /* share.png in Resources */,
 				A4E6CDD41ACCE54200A1D6EC /* clothing2.png in Resources */,
+				A46BBC431ADE52EE009D2280 /* 宠物.png in Resources */,
+				A46BBC561ADE52EE009D2280 /* 脸型1.png in Resources */,
+				A46BBC541ADE52EE009D2280 /* 胡子1.png in Resources */,
 				A4E6CDF21ACCE54200A1D6EC /* pet2.png in Resources */,
-				A44BB73F1ADCA647009D2378 /* 鼻子1.png in Resources */,
+				A46BBC401ADE52EE009D2280 /* 嘴巴1.png in Resources */,
 				A4E6CDD61ACCE54200A1D6EC /* eye2.png in Resources */,
-				A44BB72E1ADCA647009D2378 /* 眼镜.png in Resources */,
-				A44BB7151ADCA647009D2378 /* 背景.png in Resources */,
 				A46BBC1E1ADE4075009D2280 /* youpiao.png in Resources */,
+				A46BBC491ADE52EE009D2280 /* 手势.png in Resources */,
 				A4D659301ACE6D6900FE32CE /* hair1-2-1.png in Resources */,
-				A44BB7301ADCA647009D2378 /* 头发.png in Resources */,
+				A46BBC471ADE52EE009D2280 /* 心情.png in Resources */,
 				A4E6CDE41ACCE54200A1D6EC /* hair1-2-0-front.png in Resources */,
 				A44BB73A1ADCA647009D2378 /* loading1000.png in Resources */,
-				A44BB7401ADCA647009D2378 /* 鼻子.png in Resources */,
 				A4E6CDEC1ACCE54200A1D6EC /* mouth2.png in Resources */,
+				A46BBC411ADE52EE009D2280 /* 头发.png in Resources */,
 				A4E6CDD31ACCE54200A1D6EC /* clothing1.png in Resources */,
 				A4A211061AD3A411006973E0 /* 2.png in Resources */,
-				A44BB7141ADCA647009D2378 /* 背景1.png in Resources */,
 				A44BB71C1ADCA647009D2378 /* diamond++.png in Resources */,
 				A4E6CDCF1ACCE54200A1D6EC /* background1.png in Resources */,
 				A44BB7581ADCE9BC009D2378 /* fame1.png in Resources */,
+				A46BBC521ADE52EE009D2280 /* 背景1.png in Resources */,
+				A46BBC511ADE52EE009D2280 /* 背景.png in Resources */,
 				A4A211011AD3A2F4006973E0 /* rewardViewController.xib in Resources */,
-				A44BB7241ADCA647009D2378 /* 脸型1.png in Resources */,
+				A46BBC5A1ADE52EE009D2280 /* 衣服1.png in Resources */,
 				A44BB7601ADCFC18009D2378 /* photo.png in Resources */,
 				A4E6CDEA1ACCE54200A1D6EC /* mood2.png in Resources */,
 				A4D6592E1ACE6D3600FE32CE /* hair2-2-1.png in Resources */,
@@ -640,32 +648,36 @@
 				A4E6CDE21ACCE54200A1D6EC /* hair1-2-1-front.png in Resources */,
 				A4E6CDD01ACCE54200A1D6EC /* background2.png in Resources */,
 				A46BBC1D1ADE4075009D2280 /* title.png in Resources */,
+				A46BBC4F1ADE52EE009D2280 /* 眼镜.png in Resources */,
 				A4E6CDE71ACCE54200A1D6EC /* hat1.png in Resources */,
 				A4A211091AD3ADF6006973E0 /* QuestionMark.png in Resources */,
+				A46BBC461ADE52EE009D2280 /* 帽子1.png in Resources */,
 				A44BB75C1ADCF1E7009D2378 /* hengleng1.png in Resources */,
 				A4D6592A1ACE6CD600FE32CE /* hair1-2-0.png in Resources */,
 				A44BB7431ADCA647009D2378 /* save-press.png in Resources */,
-				A44BB7321ADCA647009D2378 /* 帽子.png in Resources */,
 				A4E6CDDA1ACCE54200A1D6EC /* face2.png in Resources */,
 				A44BB7271ADCA647009D2378 /* first back ground.png in Resources */,
 				A44BB7571ADCE9BC009D2378 /* fame-choosed1.png in Resources */,
 				A4E6CDEE1ACCE54200A1D6EC /* mustache2.png in Resources */,
+				A46BBC421ADE52EE009D2280 /* 头发1.png in Resources */,
 				A44BB7381ADCA647009D2378 /* inside-luckystore.png in Resources */,
 				A44BB7161ADCA647009D2378 /* boy-normal.png in Resources */,
+				A46BBC551ADE52EE009D2280 /* 脸型.png in Resources */,
 				A46BBC201ADE40D6009D2280 /* Main.storyboard in Resources */,
 				A44BB7461ADCA647009D2378 /* setting-press.png in Resources */,
 				A44BB7351ADCA647009D2378 /* inside-clothstore-press.png in Resources */,
 				A4E6CDD21ACCE54200A1D6EC /* body1000.png in Resources */,
+				A46BBC571ADE52EE009D2280 /* 脸饰.png in Resources */,
 				A4E6CDEB1ACCE54200A1D6EC /* mouth1.png in Resources */,
-				A44BB72D1ADCA647009D2378 /* 眼镜1.png in Resources */,
 				A44BB7451ADCA647009D2378 /* setting-normal.png in Resources */,
 				A4E6CDDC1ACCE54200A1D6EC /* facemark2.png in Resources */,
 				A4E6CDF11ACCE54200A1D6EC /* pet1.png in Resources */,
+				A46BBC591ADE52EE009D2280 /* 衣服.png in Resources */,
 				A4A211051AD3A411006973E0 /* 1.png in Resources */,
-				A44BB7341ADCA647009D2378 /* 胡子.png in Resources */,
 				A44BB71D1ADCA647009D2378 /* diamond++press.png in Resources */,
+				A46BBC4D1ADE52EE009D2280 /* 眼睛.png in Resources */,
+				A46BBC3F1ADE52EE009D2280 /* 嘴巴.png in Resources */,
 				A4E6CDD11ACCE54200A1D6EC /* body1.png in Resources */,
-				A44BB73E1ADCA647009D2378 /* 嘴巴.png in Resources */,
 				A44BB7391ADCA647009D2378 /* loading1.png in Resources */,
 				A4CA3AA61ACA63A900D50D80 /* GameData.plist in Resources */,
 				A4E6CDD71ACCE54200A1D6EC /* eyebrow1.png in Resources */,
@@ -674,26 +686,22 @@
 				A44BB7641ADD1814009D2378 /* boy portrait.png in Resources */,
 				A4E6CDDF1ACCE54200A1D6EC /* glasses1.png in Resources */,
 				A4E6CDF01ACCE54200A1D6EC /* nose2.png in Resources */,
-				A44BB7191ADCA647009D2378 /* 衣服1.png in Resources */,
 				A4E6CDE11ACCE54200A1D6EC /* hair1-2-1-back.png in Resources */,
 				A44BB7651ADD1814009D2378 /* girl portrait.png in Resources */,
+				A46BBC4C1ADE52EE009D2280 /* 眼眉1.png in Resources */,
+				A46BBC501ADE52EE009D2280 /* 眼镜1.png in Resources */,
 				A4E6CDDD1ACCE54200A1D6EC /* gesture1.png in Resources */,
-				A44BB72A1ADCA647009D2378 /* 手势.png in Resources */,
 				A4E6CDE81ACCE54200A1D6EC /* hat2.png in Resources */,
 				A47D6EBF1AC3E1ED00AC1768 /* LaunchScreen.xib in Resources */,
 				A47D6EBC1AC3E1ED00AC1768 /* Images.xcassets in Resources */,
 				A4D659271ACE30D600FE32CE /* hair1-2.png in Resources */,
-				A44BB7231ADCA647009D2378 /* 脸饰.png in Resources */,
-				A44BB7211ADCA647009D2378 /* 眼眉.png in Resources */,
 				A44BB73C1ADCA647009D2378 /* luckystore-press-main.png in Resources */,
-				A44BB71F1ADCA647009D2378 /* 眼睛.png in Resources */,
-				A44BB7411ADCA647009D2378 /* 宠物1.png in Resources */,
 				A44BB71B1ADCA647009D2378 /* diamond frame.png in Resources */,
-				A44BB73D1ADCA647009D2378 /* 嘴巴1.png in Resources */,
-				A44BB71E1ADCA647009D2378 /* 眼睛1.png in Resources */,
-				A44BB71A1ADCA647009D2378 /* 衣服.png in Resources */,
+				A46BBC4B1ADE52EE009D2280 /* 眼眉.png in Resources */,
 				A4D6592C1ACE6D0B00FE32CE /* hair2-2-0.png in Resources */,
 				A4E6CDE61ACCE54200A1D6EC /* hair2-2-1-front.png in Resources */,
+				A46BBC531ADE52EE009D2280 /* 胡子.png in Resources */,
+				A46BBC481ADE52EE009D2280 /* 心情1.png in Resources */,
 				A4E6CDE51ACCE54200A1D6EC /* hair2-2-0-front.png in Resources */,
 				A4E6CDE91ACCE54200A1D6EC /* mood1.png in Resources */,
 				A4A2110B1AD3B03F006973E0 /* 3.png in Resources */,
@@ -701,18 +709,18 @@
 				A44BB7471ADCA647009D2378 /* share-press.png in Resources */,
 				A4D659281ACE30D600FE32CE /* hair2-2.png in Resources */,
 				A44BB7181ADCA647009D2378 /* choose.png in Resources */,
+				A46BBC451ADE52EE009D2280 /* 帽子.png in Resources */,
+				A46BBC441ADE52EE009D2280 /* 宠物1.png in Resources */,
 				A44BB73B1ADCA647009D2378 /* luckystore-normal-main.png in Resources */,
-				A44BB7201ADCA647009D2378 /* 眼眉1.png in Resources */,
+				A46BBC5B1ADE52EE009D2280 /* 鼻子.png in Resources */,
 				A4E6CDE31ACCE54200A1D6EC /* hair1-2-0-back.png in Resources */,
-				A44BB7421ADCA647009D2378 /* 宠物.png in Resources */,
 				A44BB72B1ADCA647009D2378 /* girl-normal.png in Resources */,
 				A44BB7371ADCA647009D2378 /* inside-luckystore-press.png in Resources */,
-				A44BB7311ADCA647009D2378 /* 帽子1.png in Resources */,
 				A44BB72C1ADCA647009D2378 /* girl-pressl.png in Resources */,
 				A44BB7441ADCA647009D2378 /* save.png in Resources */,
-				A44BB7291ADCA647009D2378 /* 手势1.png in Resources */,
-				A44BB7331ADCA647009D2378 /* 胡子1.png in Resources */,
+				A46BBC4E1ADE52EE009D2280 /* 眼睛1.png in Resources */,
 				A44BB7171ADCA647009D2378 /* boy-press.png in Resources */,
+				A46BBC581ADE52EE009D2280 /* 脸饰1.png in Resources */,
 				A4E6CDDB1ACCE54200A1D6EC /* facemark1.png in Resources */,
 				A44BB74B1ADCA647009D2378 /* store-press-main.png in Resources */,
 				A44BB7541ADCE7D2009D2378 /* slip-background2.png in Resources */,

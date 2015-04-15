@@ -103,7 +103,7 @@
         [catalogBtn setImage:[UIImage imageNamed:catalogText[i]] forState:UIControlStateNormal];
         [catalogBtn setImage:[UIImage imageNamed:[NSString stringWithFormat:@"%@1",catalogText[i]]] forState:UIControlStateSelected];
 
-        [catalogBtn setImageEdgeInsets:UIEdgeInsetsMake(7, 17, 10, 17)];
+        [catalogBtn setImageEdgeInsets:UIEdgeInsetsMake(1, 15, 3, 16)];
         
         catalogBtn.tag = i;
         [catalogBtn addTarget:self action:@selector(catalogTapped:) forControlEvents:UIControlEventTouchUpInside];
@@ -416,8 +416,7 @@
 
 -(void)saveImage
 {
-    
-    
+
     
     if ([[UIScreen mainScreen] respondsToSelector:@selector(scale)])
         UIGraphicsBeginImageContextWithOptions(self.headImage.frame.size, NO, [UIScreen mainScreen].scale);
@@ -468,7 +467,20 @@
 }
 
 - (IBAction)saveAndShare:(id)sender {
+    UIView *whiteView = [[UIView alloc] initWithFrame:self.view.frame];
+    [whiteView setBackgroundColor:[UIColor whiteColor]];
     
-    [self saveImage];
+    [self.view addSubview:whiteView];
+    
+    [UIView animateWithDuration: 0.5
+                     animations: ^{
+                         whiteView.alpha = 0.0;
+                     }
+                     completion: ^(BOOL finished) {
+                         [whiteView removeFromSuperview];
+                         [self saveImage];
+
+                     }
+     ];
 }
 @end
