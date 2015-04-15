@@ -45,6 +45,12 @@
 
 
 @property (strong,nonatomic) NSDictionary *GameData;
-@property int sex;//1:male  2:female
+@property int sex;//1:male  1000:female
+
+
+@property (weak, nonatomic) IBOutlet NSLayoutConstraint *moveMeViewLeading;
+@property (weak, nonatomic) IBOutlet NSLayoutConstraint *moveMeViewTrailing;
+@property (weak, nonatomic) IBOutlet NSLayoutConstraint *backViewLeading;
+@property (weak, nonatomic) IBOutlet NSLayoutConstraint *backViewTrailing;
 
 @end

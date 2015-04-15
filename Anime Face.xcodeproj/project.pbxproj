@@ -63,7 +63,6 @@
 		A44BB7481ADCA647009D2378 /* share.png in Resources */ = {isa = PBXBuildFile; fileRef = A44BB70D1ADCA647009D2378 /* share.png */; };
 		A44BB74A1ADCA647009D2378 /* store-normal-main.png in Resources */ = {isa = PBXBuildFile; fileRef = A44BB70F1ADCA647009D2378 /* store-normal-main.png */; };
 		A44BB74B1ADCA647009D2378 /* store-press-main.png in Resources */ = {isa = PBXBuildFile; fileRef = A44BB7101ADCA647009D2378 /* store-press-main.png */; };
-		A44BB74C1ADCA647009D2378 /* title.png in Resources */ = {isa = PBXBuildFile; fileRef = A44BB7111ADCA647009D2378 /* title.png */; };
 		A44BB7541ADCE7D2009D2378 /* slip-background2.png in Resources */ = {isa = PBXBuildFile; fileRef = A44BB7531ADCE7D2009D2378 /* slip-background2.png */; };
 		A44BB7571ADCE9BC009D2378 /* fame-choosed1.png in Resources */ = {isa = PBXBuildFile; fileRef = A44BB7551ADCE9BC009D2378 /* fame-choosed1.png */; };
 		A44BB7581ADCE9BC009D2378 /* fame1.png in Resources */ = {isa = PBXBuildFile; fileRef = A44BB7561ADCE9BC009D2378 /* fame1.png */; };
@@ -72,11 +71,12 @@
 		A44BB7601ADCFC18009D2378 /* photo.png in Resources */ = {isa = PBXBuildFile; fileRef = A44BB75E1ADCFC18009D2378 /* photo.png */; };
 		A44BB7641ADD1814009D2378 /* boy portrait.png in Resources */ = {isa = PBXBuildFile; fileRef = A44BB7611ADD1814009D2378 /* boy portrait.png */; };
 		A44BB7651ADD1814009D2378 /* girl portrait.png in Resources */ = {isa = PBXBuildFile; fileRef = A44BB7621ADD1814009D2378 /* girl portrait.png */; };
-		A44BB7661ADD1814009D2378 /* youpiao.png in Resources */ = {isa = PBXBuildFile; fileRef = A44BB7631ADD1814009D2378 /* youpiao.png */; };
+		A46BBC1D1ADE4075009D2280 /* title.png in Resources */ = {isa = PBXBuildFile; fileRef = A46BBC1B1ADE4075009D2280 /* title.png */; };
+		A46BBC1E1ADE4075009D2280 /* youpiao.png in Resources */ = {isa = PBXBuildFile; fileRef = A46BBC1C1ADE4075009D2280 /* youpiao.png */; };
+		A46BBC201ADE40D6009D2280 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = A46BBC1F1ADE40D6009D2280 /* Main.storyboard */; };
 		A47D6EB11AC3E1ED00AC1768 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = A47D6EB01AC3E1ED00AC1768 /* main.m */; };
 		A47D6EB41AC3E1ED00AC1768 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = A47D6EB31AC3E1ED00AC1768 /* AppDelegate.m */; };
 		A47D6EB71AC3E1ED00AC1768 /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = A47D6EB61AC3E1ED00AC1768 /* ViewController.m */; };
-		A47D6EBA1AC3E1ED00AC1768 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = A47D6EB81AC3E1ED00AC1768 /* Main.storyboard */; };
 		A47D6EBC1AC3E1ED00AC1768 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = A47D6EBB1AC3E1ED00AC1768 /* Images.xcassets */; };
 		A47D6EBF1AC3E1ED00AC1768 /* LaunchScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = A47D6EBD1AC3E1ED00AC1768 /* LaunchScreen.xib */; };
 		A47D6ECB1AC3E1ED00AC1768 /* Anime_FaceTests.m in Sources */ = {isa = PBXBuildFile; fileRef = A47D6ECA1AC3E1ED00AC1768 /* Anime_FaceTests.m */; };
@@ -205,7 +205,6 @@
 		A44BB70D1ADCA647009D2378 /* share.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = share.png; sourceTree = "<group>"; };
 		A44BB70F1ADCA647009D2378 /* store-normal-main.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "store-normal-main.png"; sourceTree = "<group>"; };
 		A44BB7101ADCA647009D2378 /* store-press-main.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "store-press-main.png"; sourceTree = "<group>"; };
-		A44BB7111ADCA647009D2378 /* title.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = title.png; sourceTree = "<group>"; };
 		A44BB7531ADCE7D2009D2378 /* slip-background2.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "slip-background2.png"; sourceTree = "<group>"; };
 		A44BB7551ADCE9BC009D2378 /* fame-choosed1.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "fame-choosed1.png"; sourceTree = "<group>"; };
 		A44BB7561ADCE9BC009D2378 /* fame1.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = fame1.png; sourceTree = "<group>"; };
@@ -214,7 +213,9 @@
 		A44BB75E1ADCFC18009D2378 /* photo.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = photo.png; sourceTree = "<group>"; };
 		A44BB7611ADD1814009D2378 /* boy portrait.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "boy portrait.png"; sourceTree = "<group>"; };
 		A44BB7621ADD1814009D2378 /* girl portrait.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "girl portrait.png"; sourceTree = "<group>"; };
-		A44BB7631ADD1814009D2378 /* youpiao.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = youpiao.png; sourceTree = "<group>"; };
+		A46BBC1B1ADE4075009D2280 /* title.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = title.png; sourceTree = "<group>"; };
+		A46BBC1C1ADE4075009D2280 /* youpiao.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = youpiao.png; sourceTree = "<group>"; };
+		A46BBC1F1ADE40D6009D2280 /* Main.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = Main.storyboard; sourceTree = "<group>"; };
 		A47D6EAB1AC3E1ED00AC1768 /* Anime Face.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Anime Face.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		A47D6EAF1AC3E1ED00AC1768 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		A47D6EB01AC3E1ED00AC1768 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
@@ -222,7 +223,6 @@
 		A47D6EB31AC3E1ED00AC1768 /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
 		A47D6EB51AC3E1ED00AC1768 /* ViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ViewController.h; sourceTree = "<group>"; };
 		A47D6EB61AC3E1ED00AC1768 /* ViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ViewController.m; sourceTree = "<group>"; };
-		A47D6EB91AC3E1ED00AC1768 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		A47D6EBB1AC3E1ED00AC1768 /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
 		A47D6EBE1AC3E1ED00AC1768 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = Base; path = Base.lproj/LaunchScreen.xib; sourceTree = "<group>"; };
 		A47D6EC41AC3E1ED00AC1768 /* Anime FaceTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "Anime FaceTests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -380,8 +380,8 @@
 				A44BB7101ADCA647009D2378 /* store-press-main.png */,
 				A44BB7611ADD1814009D2378 /* boy portrait.png */,
 				A44BB7621ADD1814009D2378 /* girl portrait.png */,
-				A44BB7631ADD1814009D2378 /* youpiao.png */,
-				A44BB7111ADCA647009D2378 /* title.png */,
+				A46BBC1B1ADE4075009D2280 /* title.png */,
+				A46BBC1C1ADE4075009D2280 /* youpiao.png */,
 			);
 			path = images;
 			sourceTree = "<group>";
@@ -428,7 +428,7 @@
 				A4A210FD1AD3A2F4006973E0 /* rewardViewController.h */,
 				A4A210FE1AD3A2F4006973E0 /* rewardViewController.m */,
 				A4A210FF1AD3A2F4006973E0 /* rewardViewController.xib */,
-				A47D6EB81AC3E1ED00AC1768 /* Main.storyboard */,
+				A46BBC1F1ADE40D6009D2280 /* Main.storyboard */,
 				A47D6EBB1AC3E1ED00AC1768 /* Images.xcassets */,
 				A47D6EBD1AC3E1ED00AC1768 /* LaunchScreen.xib */,
 				A47D6EAE1AC3E1ED00AC1768 /* Supporting Files */,
@@ -617,6 +617,7 @@
 				A4E6CDD61ACCE54200A1D6EC /* eye2.png in Resources */,
 				A44BB72E1ADCA647009D2378 /* 眼镜.png in Resources */,
 				A44BB7151ADCA647009D2378 /* 背景.png in Resources */,
+				A46BBC1E1ADE4075009D2280 /* youpiao.png in Resources */,
 				A4D659301ACE6D6900FE32CE /* hair1-2-1.png in Resources */,
 				A44BB7301ADCA647009D2378 /* 头发.png in Resources */,
 				A4E6CDE41ACCE54200A1D6EC /* hair1-2-0-front.png in Resources */,
@@ -638,6 +639,7 @@
 				A4E6CDE01ACCE54200A1D6EC /* glasses2.png in Resources */,
 				A4E6CDE21ACCE54200A1D6EC /* hair1-2-1-front.png in Resources */,
 				A4E6CDD01ACCE54200A1D6EC /* background2.png in Resources */,
+				A46BBC1D1ADE4075009D2280 /* title.png in Resources */,
 				A4E6CDE71ACCE54200A1D6EC /* hat1.png in Resources */,
 				A4A211091AD3ADF6006973E0 /* QuestionMark.png in Resources */,
 				A44BB75C1ADCF1E7009D2378 /* hengleng1.png in Resources */,
@@ -649,8 +651,8 @@
 				A44BB7571ADCE9BC009D2378 /* fame-choosed1.png in Resources */,
 				A4E6CDEE1ACCE54200A1D6EC /* mustache2.png in Resources */,
 				A44BB7381ADCA647009D2378 /* inside-luckystore.png in Resources */,
-				A44BB7661ADD1814009D2378 /* youpiao.png in Resources */,
 				A44BB7161ADCA647009D2378 /* boy-normal.png in Resources */,
+				A46BBC201ADE40D6009D2280 /* Main.storyboard in Resources */,
 				A44BB7461ADCA647009D2378 /* setting-press.png in Resources */,
 				A44BB7351ADCA647009D2378 /* inside-clothstore-press.png in Resources */,
 				A4E6CDD21ACCE54200A1D6EC /* body1000.png in Resources */,
@@ -667,7 +669,6 @@
 				A44BB7391ADCA647009D2378 /* loading1.png in Resources */,
 				A4CA3AA61ACA63A900D50D80 /* GameData.plist in Resources */,
 				A4E6CDD71ACCE54200A1D6EC /* eyebrow1.png in Resources */,
-				A47D6EBA1AC3E1ED00AC1768 /* Main.storyboard in Resources */,
 				A4E6CDD91ACCE54200A1D6EC /* face1.png in Resources */,
 				A44BB75F1ADCFC18009D2378 /* photo-press.png in Resources */,
 				A44BB7641ADD1814009D2378 /* boy portrait.png in Resources */,
@@ -689,7 +690,6 @@
 				A44BB7411ADCA647009D2378 /* 宠物1.png in Resources */,
 				A44BB71B1ADCA647009D2378 /* diamond frame.png in Resources */,
 				A44BB73D1ADCA647009D2378 /* 嘴巴1.png in Resources */,
-				A44BB74C1ADCA647009D2378 /* title.png in Resources */,
 				A44BB71E1ADCA647009D2378 /* 眼睛1.png in Resources */,
 				A44BB71A1ADCA647009D2378 /* 衣服.png in Resources */,
 				A4D6592C1ACE6D0B00FE32CE /* hair2-2-0.png in Resources */,
@@ -766,14 +766,6 @@
 /* End PBXTargetDependency section */
 
 /* Begin PBXVariantGroup section */
-		A47D6EB81AC3E1ED00AC1768 /* Main.storyboard */ = {
-			isa = PBXVariantGroup;
-			children = (
-				A47D6EB91AC3E1ED00AC1768 /* Base */,
-			);
-			name = Main.storyboard;
-			sourceTree = "<group>";
-		};
 		A47D6EBD1AC3E1ED00AC1768 /* LaunchScreen.xib */ = {
 			isa = PBXVariantGroup;
 			children = (

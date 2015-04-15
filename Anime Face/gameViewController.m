@@ -27,6 +27,9 @@
 - (void)viewDidLoad {
     [super viewDidLoad];
     
+
+
+    
     [self.loadingView setImage:[UIImage imageNamed:[NSString stringWithFormat:@"loading%d",self.sex]]];
     [self.loadPage setHidden:NO];
     
@@ -113,6 +116,20 @@
 
     }
     
+    if(IS_IPHONE_4_OR_LESS)
+    {
+        [self.moveMeViewLeading setConstant:50];
+        [self.moveMeViewTrailing setConstant:50];
+        [self.headImage setNeedsUpdateConstraints];
+        
+        [self.backViewLeading setConstant:-50];
+        [self.backViewTrailing setConstant:-50];
+        [self.backImage setNeedsUpdateConstraints];
+        
+        [self.view setNeedsUpdateConstraints];
+        [self.view layoutIfNeeded];
+        
+    }
     
 //    UIImageView *catalogBack = [[UIImageView alloc] initWithImage:[UIImage imageNamed:@"slip-background.png"]];
     
@@ -131,6 +148,8 @@
         [subBtn setSelected:NO];
     }
     [sender setSelected:YES];
+    
+
     
 }
 -(void)scrollToCatalog:(NSInteger)BtnTag
@@ -449,5 +468,7 @@
 }
 
 - (IBAction)saveAndShare:(id)sender {
+    
+    [self saveImage];
 }
 @end
