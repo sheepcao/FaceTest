@@ -78,6 +78,13 @@
         [sender setTitle:@"停!" forState:UIControlStateNormal];
     }else
     {
+        CGPoint productViewCenter = self.productView.center;
+      
+        CGRect productViewFrame = self.productView.frame;
+        
+        [self.productView setFrame:CGRectMake(0, 0, 0, 0)];
+        [self.productView setCenter:productViewCenter];
+        
         [self.productView stopAnimating];
         
         
@@ -85,8 +92,20 @@
         [self.productView setImage:[UIImage imageNamed:self.imageOptins[selected]]];
         [sender setTitle:@"开始抽奖" forState:UIControlStateNormal];
         
-        [self.resultLabel setText:[NSString stringWithFormat:@"恭喜,您获得了新品:\n%@",self.imageOptins[selected]]];
 
+        
+        [UIView animateWithDuration: 1.7
+                         animations: ^{
+                             
+                             [self.productView setFrame:productViewFrame];
+                         }
+                         completion: ^(BOOL finished) {
+                             
+                             [self.resultLabel setText:[NSString stringWithFormat:@"恭喜,您获得了新品:\n%@",self.imageOptins[selected]]];
+
+                             
+                         }
+         ];
         
 
     }

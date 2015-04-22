@@ -94,8 +94,7 @@
     self.catalogScrollView.canCancelContentTouches = YES;
     
     
-    
-    NSArray *catalogText = [self.GameData objectForKey:@"catalog"];
+    NSArray *catalogText = [self.GameData objectForKey:[NSString stringWithFormat:@"catalog%d",self.sex]];
     
     for (int i = 0 ; i < CATALOG_NUM; i++) {
         UIButton *catalogBtn = [[UIButton alloc] initWithFrame:CGRectMake(0+i*CATALOG_BUTTON_WIDTH, 0, CATALOG_BUTTON_WIDTH, 40)];
@@ -173,7 +172,7 @@
 
     
     for (int i = 0 ; i < CATALOG_NUM; i++) {
-        NSArray *listElements = [listsText objectForKey:[[self.GameData objectForKey:@"catalog"] objectAtIndex:i]];
+        NSArray *listElements = [listsText objectForKey:[[self.GameData objectForKey:[NSString stringWithFormat:@"catalog%d",self.sex]] objectAtIndex:i]];
 
         UIScrollView *oneList = [[UIScrollView alloc] initWithFrame:CGRectMake(0+i*SCREEN_WIDTH, 0, SCREEN_WIDTH,  self.ListsScroll.frame.size.height)];
         [oneList setContentSize:CGSizeMake(SCREEN_WIDTH,(1+listElements.count/3)*(ELEMENT_WIDTH/1.2))];
@@ -188,6 +187,11 @@
         
         for (int j = 0 ; j<listElements.count; j++) {
             elemntButton *element = [[elemntButton alloc] initWithFrame:CGRectMake(0+(j%3)*(ELEMENT_WIDTH+6), 0+(j/3)*(ELEMENT_WIDTH+6)/1.2, ELEMENT_WIDTH, ELEMENT_WIDTH/1.2)];
+            
+            CGFloat sidesOffside = ELEMENT_WIDTH - ELEMENT_WIDTH/1.2;
+            
+            [element setImageEdgeInsets:UIEdgeInsetsMake(0, sidesOffside/2, 0, sidesOffside/2)];
+
             [element setImage:[UIImage imageNamed:listElements[j]] forState:UIControlStateNormal];
             element.imageName = listElements[j];
             element.imageLevel =[NSNumber numberWithInt:i];
@@ -326,11 +330,25 @@
             [subView removeFromSuperview];
         }
     }
-//    self.colorView = [[UIView alloc] initWithFrame:CGRectMake(0, SCREEN_HEIGHT, SCREEN_WIDTH, sender.frame.size.height)];
-    self.colorView.backgroundColor = [UIColor whiteColor];
+    self.colorView.backgroundColor = [UIColor clearColor];
     
     for (int i = 0; i<sender.imageColor; i++) {
-        elemntButton *colorBtn = [[elemntButton alloc] initWithFrame:CGRectMake(5+i*(sender.frame.size.width*3/4),(sender.frame.size.height - (sender.frame.size.width*3/4-10))/2, sender.frame.size.width*3/4-10,sender.frame.size.width*3/4-10)];
+        
+        CGFloat btnSize = 0;
+        if (sender.imageColor == 2) {
+            btnSize = (sender.frame.size.width*3/4-10)/1.2;
+        }else if(sender.imageColor == 4)
+        {
+            btnSize = (sender.frame.size.width*3/4-10)/1.6;
+        }else
+        {
+            btnSize = (sender.frame.size.width*3/4-10)/2.0;
+        }
+        
+        CGFloat startX = (SCREEN_WIDTH-(btnSize*sender.imageColor + 5*(sender.imageColor-1)))/2;
+        
+        
+        elemntButton *colorBtn = [[elemntButton alloc] initWithFrame:CGRectMake(startX+i*(btnSize+5),(sender.frame.size.height - btnSize-5), btnSize,btnSize)];
         NSString *imageWithColor = [NSString stringWithFormat:@"%@-%d",sender.imageName,i];
         [colorBtn setImage:[UIImage imageNamed:imageWithColor] forState:UIControlStateNormal];
         colorBtn.imageName = [NSString stringWithFormat:@"%@-%d",sender.imageName,i];
@@ -471,12 +489,14 @@
     [whiteView setBackgroundColor:[UIColor whiteColor]];
     
     [self.view addSubview:whiteView];
+    whiteView.alpha = 0.8;
     
-    [UIView animateWithDuration: 0.5
+    [UIView animateWithDuration: 0.7
                      animations: ^{
-                         whiteView.alpha = 0.0;
+                         whiteView.alpha = 0;
                      }
                      completion: ^(BOOL finished) {
+                         
                          [whiteView removeFromSuperview];
                          [self saveImage];
 

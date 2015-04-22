@@ -1,8 +1,8 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="6751" systemVersion="14C109" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="AdM-gr-UdG">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="7531" systemVersion="14C109" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="AdM-gr-UdG">
     <dependencies>
         <deployment identifier="iOS"/>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="6736"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="7520"/>
         <capability name="Aspect ratio constraints" minToolsVersion="5.1"/>
         <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
         <capability name="Constraints with non-1.0 multipliers" minToolsVersion="5.1"/>
@@ -52,7 +52,7 @@
                                     </mask>
                                 </variation>
                             </imageView>
-                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="boy portrait.png" translatesAutoresizingMaskIntoConstraints="NO" id="MuH-yZ-p8K">
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" image="boy portrait.png" translatesAutoresizingMaskIntoConstraints="NO" id="MuH-yZ-p8K">
                                 <rect key="frame" x="21" y="151" width="127" height="158"/>
                                 <constraints>
                                     <constraint firstAttribute="width" secondItem="MuH-yZ-p8K" secondAttribute="height" multiplier="127:158" id="GYt-56-ogr"/>
@@ -64,7 +64,7 @@
                                     </mask>
                                 </variation>
                             </imageView>
-                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="girl portrait.png" translatesAutoresizingMaskIntoConstraints="NO" id="5eh-IV-qq8">
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" image="girl portrait.png" translatesAutoresizingMaskIntoConstraints="NO" id="5eh-IV-qq8">
                                 <rect key="frame" x="171" y="151" width="127" height="158"/>
                                 <constraints>
                                     <constraint firstAttribute="width" secondItem="5eh-IV-qq8" secondAttribute="height" multiplier="127:158" id="RRO-Xe-dpf"/>
@@ -76,7 +76,7 @@
                                     </mask>
                                 </variation>
                             </imageView>
-                            <button opaque="NO" tag="1" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="BGK-sf-pmI">
+                            <button opaque="NO" tag="1" contentMode="scaleToFill" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="BGK-sf-pmI">
                                 <rect key="frame" x="34" y="301" width="100" height="58.5"/>
                                 <constraints>
                                     <constraint firstAttribute="width" secondItem="BGK-sf-pmI" secondAttribute="height" multiplier="75:44" id="Frj-u9-5MQ"/>
@@ -123,7 +123,7 @@
                                     <action selector="enterGame:" destination="vXZ-lx-hvc" eventType="touchUpInside" id="axl-p4-D0G"/>
                                 </connections>
                             </button>
-                            <button opaque="NO" tag="1000" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="mjn-1j-VOm">
+                            <button opaque="NO" tag="1000" contentMode="scaleToFill" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="mjn-1j-VOm">
                                 <rect key="frame" x="184" y="301" width="100" height="58.5"/>
                                 <constraints>
                                     <constraint firstAttribute="width" secondItem="mjn-1j-VOm" secondAttribute="height" multiplier="371:217" id="19P-yr-NmY"/>
@@ -161,7 +161,7 @@
                                     <action selector="enterGame:" destination="vXZ-lx-hvc" eventType="touchUpInside" id="8wc-4m-Ien"/>
                                 </connections>
                             </button>
-                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="uJY-g3-R0d" userLabel="store">
+                            <button opaque="NO" contentMode="scaleToFill" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="uJY-g3-R0d" userLabel="store">
                                 <rect key="frame" x="115" y="389.5" width="90" height="44.5"/>
                                 <constraints>
                                     <constraint firstAttribute="width" constant="90" id="DJh-b6-PUm"/>
@@ -171,13 +171,14 @@
                                     <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
                                 </state>
                                 <state key="highlighted" image="store-press-main.png"/>
-                                <variation key="widthClass=compact">
+                                <variation key="widthClass=compact" misplaced="YES">
+                                    <rect key="frame" x="110" y="395" width="100" height="50"/>
                                     <mask key="constraints">
                                         <exclude reference="DJh-b6-PUm"/>
                                     </mask>
                                 </variation>
                             </button>
-                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="dNS-Fr-ZbD" userLabel="luckyHouse">
+                            <button opaque="NO" contentMode="scaleToFill" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="dNS-Fr-ZbD" userLabel="luckyHouse">
                                 <rect key="frame" x="115" y="449.5" width="90" height="44.5"/>
                                 <constraints>
                                     <constraint firstAttribute="width" constant="90" id="GoG-gS-bIR"/>
@@ -187,7 +188,8 @@
                                     <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
                                 </state>
                                 <state key="highlighted" image="luckystore-press-main.png"/>
-                                <variation key="widthClass=compact">
+                                <variation key="widthClass=compact" misplaced="YES">
+                                    <rect key="frame" x="110" y="460" width="100" height="50"/>
                                     <mask key="constraints">
                                         <exclude reference="GoG-gS-bIR"/>
                                     </mask>
