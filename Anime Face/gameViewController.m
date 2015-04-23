@@ -461,39 +461,57 @@
             UIAlertView *failAlert = [[UIAlertView alloc] initWithTitle:@"成功失败" message:@"请在设置－隐私－照片中允许访问您的相册" delegate:nil cancelButtonTitle:@"确定" otherButtonTitles: nil];
             
             [failAlert show];
-            NSLog(@"saved Image!");
+            NSLog(@"save Image failed!");
         }];
+    }else if ([ALAssetsLibrary authorizationStatus] == ALAuthorizationStatusAuthorized)
+    {
+        UIImageWriteToSavedPhotosAlbum(image, nil, nil,nil);
+        
+        UIAlertView *successAlert = [[UIAlertView alloc] initWithTitle:@"成功保存" message:@"已将保存萌照至系统相册" delegate:nil cancelButtonTitle:@"确定" otherButtonTitles: nil];
+        
+        [successAlert show];
+        NSLog(@"saved Image!");
+       
+    }else
+    {
+        UIAlertView *failAlert = [[UIAlertView alloc] initWithTitle:@"成功失败" message:@"请在设置－隐私－照片中允许访问您的相册" delegate:nil cancelButtonTitle:@"确定" otherButtonTitles: nil];
+        
+        [failAlert show];
+        NSLog(@"save Image failed!");
     }
 
     
-//    UIImageWriteToSavedPhotosAlbum(image, nil, nil,nil);
-//    
-//    UIAlertView *successAlert = [[UIAlertView alloc] initWithTitle:@"成功保存" message:@"已将保存萌照至系统相册" delegate:nil cancelButtonTitle:@"确定" otherButtonTitles: nil];
-//    [successAlert show];
-//
-//    
-//    NSLog(@"saved Image!");
+
 }
 
 
-/*
-#pragma mark - Navigation
 
-// In a storyboard-based application, you will often want to do a little preparation before navigation
-- (void)prepareForSegue:(UIStoryboardSegue *)segue sender:(id)sender {
-    // Get the new view controller using [segue destinationViewController].
-    // Pass the selected object to the new view controller.
-}
-*/
 
 - (IBAction)share:(id)sender {
     
 }
 
 - (IBAction)saveAlbum:(id)sender {
-    
     [self saveImage:self.imageShare];
+
 }
+
+- (IBAction)cancelPhoto:(id)sender {
+    
+    [UIView animateWithDuration: 0.45
+                     animations: ^{
+                            self.photoPage.alpha = 0.0f;
+                         
+                     }
+                     completion:nil
+     ];
+    
+
+}
+
+
+
+
 
 - (IBAction)backTapp:(id)sender {
     
@@ -501,6 +519,8 @@
 }
 
 - (IBAction)storeTap:(id)sender {
+
+
 
     
 }
@@ -526,6 +546,9 @@
     self.imageShare = UIGraphicsGetImageFromCurrentImageContext();
     UIGraphicsEndImageContext();
     
+    [self.photoImage setImage:self.imageShare];
+
+    
     
     UIView *whiteView = [[UIView alloc] initWithFrame:self.view.frame];
     [whiteView setBackgroundColor:[UIColor whiteColor]];
@@ -533,16 +556,29 @@
     [self.view addSubview:whiteView];
     whiteView.alpha = 0.8;
     
-    [UIView animateWithDuration: 0.7
+    [UIView animateWithDuration: 0.75
                      animations: ^{
                          whiteView.alpha = 0;
+
                      }
                      completion: ^(BOOL finished) {
                          
-                         [whiteView removeFromSuperview];
+                         if (self.photoPage.alpha <0.001) {
+                             self.photoPage.alpha = 1.0;
+                         }
                          
-                         [self.photoImage setImage:self.imageShare];
-                         [self.view addSubview:self.photoPage];
+//                         [UIView animateWithDuration: 0.4
+//                                          animations: ^{
+//                                              whiteView.alpha = 0;
+//
+//                                              if (self.photoPage.alpha <0.001) {
+//                                                  self.photoPage.alpha = 1.0;
+//                                              }
+//                                          }
+//                                          completion:nil
+//                          ];
+                         
+                         [whiteView removeFromSuperview];
 
 
                      }

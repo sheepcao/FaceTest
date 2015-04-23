@@ -39,12 +39,15 @@
 @property (strong, nonatomic) IBOutlet UIView *loadPage;
 
 
-@property (weak, nonatomic) IBOutlet UIView *photoPage;
-@property (weak, nonatomic) IBOutlet UIImageView *photoImage;
+@property (strong, nonatomic) IBOutlet UIView *photoPage;
+@property (strong, nonatomic) IBOutlet UIImageView *photoImage;
+
 
 - (IBAction)share:(id)sender;
 - (IBAction)saveAlbum:(id)sender;
-@property (weak, nonatomic) IBOutlet UIButton *cancelPhtot;
+- (IBAction)cancelPhoto:(id)sender;
+
+
 
 
 - (IBAction)backTapp:(id)sender;

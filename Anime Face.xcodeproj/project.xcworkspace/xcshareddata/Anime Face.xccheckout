@@ -7,14 +7,14 @@
 	<key>IDESourceControlProjectIdentifier</key>
 	<string>F80E4499-A880-4A7E-BF62-2C8E5A46BE50</string>
 	<key>IDESourceControlProjectName</key>
-	<string>Anime Face</string>
+	<string>project</string>
 	<key>IDESourceControlProjectOriginsDictionary</key>
 	<dict>
 		<key>802CD86BA10DB2F5CB936E9FDED8B7C2F41CEC65</key>
 		<string>https://github.com/sheepcao/FaceTest.git</string>
 	</dict>
 	<key>IDESourceControlProjectPath</key>
-	<string>Anime Face.xcodeproj</string>
+	<string>Anime Face.xcodeproj/project.xcworkspace</string>
 	<key>IDESourceControlProjectRelativeInstallPathDictionary</key>
 	<dict>
 		<key>802CD86BA10DB2F5CB936E9FDED8B7C2F41CEC65</key>
@@ -34,7 +34,7 @@
 			<key>IDESourceControlWCCIdentifierKey</key>
 			<string>802CD86BA10DB2F5CB936E9FDED8B7C2F41CEC65</string>
 			<key>IDESourceControlWCCName</key>
-			<string>Anime%20Face</string>
+			<string>FaceTest</string>
 		</dict>
 	</array>
 </dict>
