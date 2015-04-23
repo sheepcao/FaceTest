@@ -555,6 +555,8 @@
     
     [self.view addSubview:whiteView];
     whiteView.alpha = 0.8;
+    [self.photoPage sendSubviewToBack:self.photoBack];
+
     
     [UIView animateWithDuration: 0.75
                      animations: ^{

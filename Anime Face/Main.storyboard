@@ -52,7 +52,7 @@
                                     </mask>
                                 </variation>
                             </imageView>
-                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" image="boy portrait.png" translatesAutoresizingMaskIntoConstraints="NO" id="MuH-yZ-p8K">
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="boy portrait.png" translatesAutoresizingMaskIntoConstraints="NO" id="MuH-yZ-p8K">
                                 <rect key="frame" x="21" y="151" width="127" height="158"/>
                                 <constraints>
                                     <constraint firstAttribute="width" secondItem="MuH-yZ-p8K" secondAttribute="height" multiplier="127:158" id="GYt-56-ogr"/>
@@ -64,7 +64,7 @@
                                     </mask>
                                 </variation>
                             </imageView>
-                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" image="girl portrait.png" translatesAutoresizingMaskIntoConstraints="NO" id="5eh-IV-qq8">
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="girl portrait.png" translatesAutoresizingMaskIntoConstraints="NO" id="5eh-IV-qq8">
                                 <rect key="frame" x="171" y="151" width="127" height="158"/>
                                 <constraints>
                                     <constraint firstAttribute="width" secondItem="5eh-IV-qq8" secondAttribute="height" multiplier="127:158" id="RRO-Xe-dpf"/>
@@ -76,7 +76,7 @@
                                     </mask>
                                 </variation>
                             </imageView>
-                            <button opaque="NO" tag="1" contentMode="scaleToFill" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="BGK-sf-pmI">
+                            <button opaque="NO" tag="1" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="BGK-sf-pmI">
                                 <rect key="frame" x="34" y="301" width="100" height="58.5"/>
                                 <constraints>
                                     <constraint firstAttribute="width" secondItem="BGK-sf-pmI" secondAttribute="height" multiplier="75:44" id="Frj-u9-5MQ"/>
@@ -123,7 +123,7 @@
                                     <action selector="enterGame:" destination="vXZ-lx-hvc" eventType="touchUpInside" id="axl-p4-D0G"/>
                                 </connections>
                             </button>
-                            <button opaque="NO" tag="1000" contentMode="scaleToFill" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="mjn-1j-VOm">
+                            <button opaque="NO" tag="1000" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="mjn-1j-VOm">
                                 <rect key="frame" x="184" y="301" width="100" height="58.5"/>
                                 <constraints>
                                     <constraint firstAttribute="width" secondItem="mjn-1j-VOm" secondAttribute="height" multiplier="371:217" id="19P-yr-NmY"/>
@@ -161,7 +161,7 @@
                                     <action selector="enterGame:" destination="vXZ-lx-hvc" eventType="touchUpInside" id="8wc-4m-Ien"/>
                                 </connections>
                             </button>
-                            <button opaque="NO" contentMode="scaleToFill" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="uJY-g3-R0d" userLabel="store">
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="uJY-g3-R0d" userLabel="store">
                                 <rect key="frame" x="115" y="389.5" width="90" height="44.5"/>
                                 <constraints>
                                     <constraint firstAttribute="width" constant="90" id="DJh-b6-PUm"/>
@@ -178,7 +178,7 @@
                                     </mask>
                                 </variation>
                             </button>
-                            <button opaque="NO" contentMode="scaleToFill" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="dNS-Fr-ZbD" userLabel="luckyHouse">
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="dNS-Fr-ZbD" userLabel="luckyHouse">
                                 <rect key="frame" x="115" y="449.5" width="90" height="44.5"/>
                                 <constraints>
                                     <constraint firstAttribute="width" constant="90" id="GoG-gS-bIR"/>
@@ -240,7 +240,7 @@
                             <constraint firstItem="BGK-sf-pmI" firstAttribute="centerX" secondItem="MuH-yZ-p8K" secondAttribute="centerX" constant="-0.5" id="ISb-4T-RBP"/>
                             <constraint firstItem="2fi-mo-0CV" firstAttribute="top" secondItem="mcr-nV-DyI" secondAttribute="bottom" id="Iae-sR-UVt"/>
                             <constraint firstItem="uJY-g3-R0d" firstAttribute="width" secondItem="dNS-Fr-ZbD" secondAttribute="width" id="Khq-sV-GLy"/>
-                            <constraint firstItem="Ibk-Q5-rOZ" firstAttribute="centerX" secondItem="MuH-yZ-p8K" secondAttribute="centerX" multiplier="157:84" constant="73.5" id="NSI-Br-JkZ">
+                            <constraint firstItem="Ibk-Q5-rOZ" firstAttribute="centerX" secondItem="MuH-yZ-p8K" secondAttribute="centerX" multiplier="157:84" constant="0.065476190476175589" id="NSI-Br-JkZ">
                                 <variation key="widthClass=compact" constant="0.0"/>
                             </constraint>
                             <constraint firstItem="Ibk-Q5-rOZ" firstAttribute="width" secondItem="IGh-og-X8A" secondAttribute="height" multiplier="157:54" id="NeM-HD-fAI"/>
@@ -253,7 +253,7 @@
                             <constraint firstItem="mjn-1j-VOm" firstAttribute="top" secondItem="5eh-IV-qq8" secondAttribute="bottom" constant="-8" id="U9C-nJ-Jf2"/>
                             <constraint firstItem="5eh-IV-qq8" firstAttribute="centerX" secondItem="mjn-1j-VOm" secondAttribute="centerX" constant="0.5" id="Xoj-mY-Zc8"/>
                             <constraint firstItem="dNS-Fr-ZbD" firstAttribute="top" secondItem="uJY-g3-R0d" secondAttribute="bottom" constant="16" id="Xy0-Hf-F8p"/>
-                            <constraint firstItem="uJY-g3-R0d" firstAttribute="top" secondItem="BGK-sf-pmI" secondAttribute="bottom" multiplier="11:10" constant="30" id="b77-Qb-MxA">
+                            <constraint firstItem="uJY-g3-R0d" firstAttribute="top" secondItem="BGK-sf-pmI" secondAttribute="bottom" multiplier="11:10" constant="-5.9500000000000455" id="b77-Qb-MxA">
                                 <variation key="widthClass=compact" constant="0.0"/>
                             </constraint>
                             <constraint firstItem="mcr-nV-DyI" firstAttribute="centerX" secondItem="IGh-og-X8A" secondAttribute="centerX" id="cnz-Hu-IcL"/>
@@ -272,7 +272,7 @@
                             <constraint firstItem="Ibk-Q5-rOZ" firstAttribute="top" secondItem="IGh-og-X8A" secondAttribute="bottom" constant="-21" id="mdt-qv-PfN"/>
                             <constraint firstItem="BGK-sf-pmI" firstAttribute="centerY" secondItem="mjn-1j-VOm" secondAttribute="centerY" id="mel-CW-jHj"/>
                             <constraint firstItem="uJY-g3-R0d" firstAttribute="centerX" secondItem="dNS-Fr-ZbD" secondAttribute="centerX" constant="-0.5" id="mg1-BW-axW"/>
-                            <constraint firstItem="5eh-IV-qq8" firstAttribute="centerX" secondItem="Ibk-Q5-rOZ" secondAttribute="centerX" multiplier="157:105" constant="76.5" id="rHu-8B-Zsk">
+                            <constraint firstItem="5eh-IV-qq8" firstAttribute="centerX" secondItem="Ibk-Q5-rOZ" secondAttribute="centerX" multiplier="157:105" constant="-1.7476190476190538" id="rHu-8B-Zsk">
                                 <variation key="widthClass=compact" constant="-1"/>
                             </constraint>
                             <constraint firstItem="mcr-nV-DyI" firstAttribute="leading" secondItem="kh9-bI-dsS" secondAttribute="leadingMargin" constant="-16" id="sF2-KO-btu"/>

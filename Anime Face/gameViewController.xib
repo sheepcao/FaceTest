@@ -35,6 +35,7 @@
                 <outlet property="mustacheView" destination="9Hp-U4-gei" id="Se5-r5-fAY"/>
                 <outlet property="noseView" destination="Z2E-9u-IhM" id="pZB-eb-aTw"/>
                 <outlet property="petView" destination="Lds-Bk-z73" id="N1a-eu-kUg"/>
+                <outlet property="photoBack" destination="Si5-M7-VK9" id="sco-jr-KNf"/>
                 <outlet property="photoImage" destination="l7z-Jq-ZM2" id="dnG-ID-ihR"/>
                 <outlet property="photoPage" destination="W3f-uL-pHd" id="H8Q-Vc-1zw"/>
                 <outlet property="toptextView" destination="AFr-RA-XYv" id="gAp-7g-Zyz"/>
@@ -1225,9 +1226,6 @@
                 <view alpha="0.0" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="W3f-uL-pHd">
                     <rect key="frame" x="0.0" y="0.0" width="414" height="736"/>
                     <subviews>
-                        <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="photo dark.png" translatesAutoresizingMaskIntoConstraints="NO" id="Si5-M7-VK9">
-                            <rect key="frame" x="0.0" y="0.0" width="414" height="736"/>
-                        </imageView>
                         <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="youpiaotiao.png" translatesAutoresizingMaskIntoConstraints="NO" id="sI8-9f-iVk">
                             <rect key="frame" x="8" y="8" width="398" height="34"/>
                             <constraints>
@@ -1249,18 +1247,18 @@
                         <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="xsX-fp-6NK">
                             <rect key="frame" x="42" y="475" width="331" height="261"/>
                             <subviews>
-                                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="xdH-wz-LQn">
+                                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="xdH-wz-LQn">
                                     <rect key="frame" x="51" y="70" width="228" height="35"/>
                                     <color key="backgroundColor" red="0.57254901960000004" green="0.56470588239999997" blue="0.56470588239999997" alpha="1" colorSpace="calibratedRGB"/>
                                     <constraints>
                                         <constraint firstAttribute="width" constant="228" id="JhZ-ff-YRt"/>
                                         <constraint firstAttribute="width" secondItem="xdH-wz-LQn" secondAttribute="height" multiplier="228:35" id="ktG-vO-3e7"/>
                                     </constraints>
-                                    <fontDescription key="fontDescription" name="Menlo-Italic" family="Menlo" pointSize="16"/>
-                                    <state key="normal" title="分享并保存">
+                                    <state key="normal" title="分享并保存" backgroundImage="sharesave normal.png">
                                         <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                         <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
                                     </state>
+                                    <state key="highlighted" backgroundImage="sharesave press.png"/>
                                     <variation key="default">
                                         <mask key="constraints">
                                             <exclude reference="JhZ-ff-YRt"/>
@@ -1277,7 +1275,7 @@
                                         <constraint firstAttribute="width" secondItem="fal-Ns-Sei" secondAttribute="height" multiplier="228:35" id="3hl-70-n0u"/>
                                     </constraints>
                                     <fontDescription key="fontDescription" name="Menlo-Italic" family="Menlo" pointSize="16"/>
-                                    <state key="normal" title="取消">
+                                    <state key="normal" title="取消" backgroundImage="sharesave normal.png">
                                         <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                         <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
                                     </state>
@@ -1292,10 +1290,11 @@
                                         <constraint firstAttribute="width" secondItem="Xrl-Id-9YC" secondAttribute="height" multiplier="228:35" id="NsY-Vl-VLo"/>
                                     </constraints>
                                     <fontDescription key="fontDescription" name="Menlo-Italic" family="Menlo" pointSize="16"/>
-                                    <state key="normal" title="保存至相册">
+                                    <state key="normal" title="保存至相册" backgroundImage="sharesave normal.png">
                                         <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                         <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
                                     </state>
+                                    <state key="highlighted" backgroundImage="sharesave press.png"/>
                                     <connections>
                                         <action selector="saveAlbum:" destination="-1" eventType="touchUpInside" id="EHc-nl-Ruf"/>
                                     </connections>
@@ -1321,6 +1320,9 @@
                                 </mask>
                             </variation>
                         </view>
+                        <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="photo dark.png" translatesAutoresizingMaskIntoConstraints="NO" id="Si5-M7-VK9">
+                            <rect key="frame" x="0.0" y="0.0" width="414" height="736"/>
+                        </imageView>
                     </subviews>
                     <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
                     <constraints>
@@ -1338,7 +1340,7 @@
                         <constraint firstItem="wgk-fP-oC9" firstAttribute="width" secondItem="sI8-9f-iVk" secondAttribute="width" id="mOZ-Gk-vSu"/>
                         <constraint firstItem="sI8-9f-iVk" firstAttribute="centerX" secondItem="l7z-Jq-ZM2" secondAttribute="centerX" id="uFA-mV-31E"/>
                         <constraint firstAttribute="bottom" secondItem="Si5-M7-VK9" secondAttribute="bottom" id="uay-3V-kUQ"/>
-                        <constraint firstItem="xsX-fp-6NK" firstAttribute="centerX" secondItem="wgk-fP-oC9" secondAttribute="centerX" constant="0.5" id="vHe-6Q-4PX"/>
+                        <constraint firstItem="xsX-fp-6NK" firstAttribute="centerX" secondItem="wgk-fP-oC9" secondAttribute="centerX" id="vHe-6Q-4PX"/>
                         <constraint firstItem="Si5-M7-VK9" firstAttribute="top" secondItem="W3f-uL-pHd" secondAttribute="top" id="wYW-pb-Ugz"/>
                         <constraint firstAttribute="bottom" secondItem="xsX-fp-6NK" secondAttribute="bottom" id="ylA-xs-4fU"/>
                         <constraint firstItem="wgk-fP-oC9" firstAttribute="centerX" secondItem="sI8-9f-iVk" secondAttribute="centerX" id="zXh-yB-aUS"/>
@@ -1566,6 +1568,8 @@
         <image name="photo dark.png" width="1080" height="1920"/>
         <image name="photo-press.png" width="202" height="123"/>
         <image name="photo.png" width="202" height="123"/>
+        <image name="sharesave normal.png" width="830" height="137"/>
+        <image name="sharesave press.png" width="830" height="137"/>
         <image name="slip-background2.png" width="1242" height="120"/>
         <image name="youpiaotiao.png" width="1077" height="99"/>
     </resources>
