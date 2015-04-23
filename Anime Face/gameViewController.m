@@ -11,6 +11,8 @@
 #import "hairButton.h"
 #import "rewardViewController.h"
 
+#import <AssetsLibrary/AssetsLibrary.h>
+
 #define CATALOG_NUM 15
 #define CATALOG_BUTTON_WIDTH 70
 #define ELEMENT_WIDTH (SCREEN_WIDTH-(6*4))/3
@@ -20,6 +22,7 @@
 
 @property (nonatomic,strong) NSArray *imagesArray;
 @property (nonatomic,strong) UIView *colorView;
+@property (nonatomic,strong) UIImage *imageShare;
 @end
 
 @implementation gameViewController
@@ -67,6 +70,8 @@
 
     [self performSelector:@selector(setupCatalog) withObject:nil afterDelay:0.8];
     [self performSelector:@selector(setupLists) withObject:nil afterDelay:0.9];
+    
+    self.imageShare = [[UIImage alloc] init];
 //
 //    [self setupCatalog];
 //    [self setupLists];
@@ -101,6 +106,7 @@
 //        [catalogBtn setTitle:catalogText[i] forState:UIControlStateNormal];
         [catalogBtn setImage:[UIImage imageNamed:catalogText[i]] forState:UIControlStateNormal];
         [catalogBtn setImage:[UIImage imageNamed:[NSString stringWithFormat:@"%@1",catalogText[i]]] forState:UIControlStateSelected];
+        
 
         [catalogBtn setImageEdgeInsets:UIEdgeInsetsMake(1, 15, 3, 16)];
         
@@ -130,7 +136,6 @@
         
     }
     
-//    UIImageView *catalogBack = [[UIImageView alloc] initWithImage:[UIImage imageNamed:@"slip-background.png"]];
     
 }
 -(void)catalogTapped:(UIButton *)sender
@@ -434,27 +439,40 @@
 
 #pragma mark Save Image
 
--(void)saveImage
+-(void)saveImage:(UIImage *)image
 {
+    if ([ALAssetsLibrary authorizationStatus] == ALAuthorizationStatusNotDetermined) {
+        ALAssetsLibrary *assetsLibrary = [[ALAssetsLibrary alloc] init];
+        [assetsLibrary enumerateGroupsWithTypes:ALAssetsGroupAll usingBlock:^(ALAssetsGroup *group, BOOL *stop) {
+            if (*stop) {
+                // INSERT CODE TO PERFORM WHEN USER TAPS OK eg. :
+                UIImageWriteToSavedPhotosAlbum(image, nil, nil,nil);
+ 
+                UIAlertView *successAlert = [[UIAlertView alloc] initWithTitle:@"成功保存" message:@"已将保存萌照至系统相册" delegate:nil cancelButtonTitle:@"确定" otherButtonTitles: nil];
+               
+                [successAlert show];
+                NSLog(@"saved Image!");
+
+                return;
+            }
+            *stop = TRUE;
+        } failureBlock:^(NSError *error) {
+            // INSERT CODE TO PERFORM WHEN USER TAPS DONT ALLOW, eg. :
+            UIAlertView *failAlert = [[UIAlertView alloc] initWithTitle:@"成功失败" message:@"请在设置－隐私－照片中允许访问您的相册" delegate:nil cancelButtonTitle:@"确定" otherButtonTitles: nil];
+            
+            [failAlert show];
+            NSLog(@"saved Image!");
+        }];
+    }
 
     
-    if ([[UIScreen mainScreen] respondsToSelector:@selector(scale)])
-        UIGraphicsBeginImageContextWithOptions(self.headImage.frame.size, NO, [UIScreen mainScreen].scale);
-    else
-        UIGraphicsBeginImageContext(self.headImage.frame.size);
-    //获取图像
-
-    [self.headImage.layer renderInContext:UIGraphicsGetCurrentContext()];
-    UIImage *imageShare = UIGraphicsGetImageFromCurrentImageContext();
-    UIGraphicsEndImageContext();
-    
-    UIImageWriteToSavedPhotosAlbum(imageShare, nil, nil,nil);
-    
-    UIAlertView *successAlert = [[UIAlertView alloc] initWithTitle:@"成功保存" message:@"已将保存萌照至系统相册" delegate:nil cancelButtonTitle:@"确定" otherButtonTitles: nil];
-    [successAlert show];
-
-    
-    NSLog(@"saved Image!");
+//    UIImageWriteToSavedPhotosAlbum(image, nil, nil,nil);
+//    
+//    UIAlertView *successAlert = [[UIAlertView alloc] initWithTitle:@"成功保存" message:@"已将保存萌照至系统相册" delegate:nil cancelButtonTitle:@"确定" otherButtonTitles: nil];
+//    [successAlert show];
+//
+//    
+//    NSLog(@"saved Image!");
 }
 
 
@@ -467,6 +485,15 @@
     // Pass the selected object to the new view controller.
 }
 */
+
+- (IBAction)share:(id)sender {
+    
+}
+
+- (IBAction)saveAlbum:(id)sender {
+    
+    [self saveImage:self.imageShare];
+}
 
 - (IBAction)backTapp:(id)sender {
     
@@ -487,6 +514,19 @@
 }
 
 - (IBAction)saveAndShare:(id)sender {
+    
+    
+    if ([[UIScreen mainScreen] respondsToSelector:@selector(scale)])
+        UIGraphicsBeginImageContextWithOptions(self.headImage.frame.size, NO, [UIScreen mainScreen].scale);
+    else
+        UIGraphicsBeginImageContext(self.headImage.frame.size);
+    //获取图像
+    
+    [self.headImage.layer renderInContext:UIGraphicsGetCurrentContext()];
+    self.imageShare = UIGraphicsGetImageFromCurrentImageContext();
+    UIGraphicsEndImageContext();
+    
+    
     UIView *whiteView = [[UIView alloc] initWithFrame:self.view.frame];
     [whiteView setBackgroundColor:[UIColor whiteColor]];
     
@@ -500,7 +540,10 @@
                      completion: ^(BOOL finished) {
                          
                          [whiteView removeFromSuperview];
-                         [self saveImage];
+                         
+                         [self.photoImage setImage:self.imageShare];
+                         [self.view addSubview:self.photoPage];
+
 
                      }
      ];

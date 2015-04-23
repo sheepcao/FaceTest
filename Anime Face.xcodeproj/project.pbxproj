@@ -61,6 +61,19 @@
 		A44BB7601ADCFC18009D2378 /* photo.png in Resources */ = {isa = PBXBuildFile; fileRef = A44BB75E1ADCFC18009D2378 /* photo.png */; };
 		A44BB7641ADD1814009D2378 /* boy portrait.png in Resources */ = {isa = PBXBuildFile; fileRef = A44BB7611ADD1814009D2378 /* boy portrait.png */; };
 		A44BB7651ADD1814009D2378 /* girl portrait.png in Resources */ = {isa = PBXBuildFile; fileRef = A44BB7621ADD1814009D2378 /* girl portrait.png */; };
+		A456D2661AE8C0E40032F41F /* 头发女.png in Resources */ = {isa = PBXBuildFile; fileRef = A456D2641AE8C0E40032F41F /* 头发女.png */; };
+		A456D2671AE8C0E40032F41F /* 头发女1.png in Resources */ = {isa = PBXBuildFile; fileRef = A456D2651AE8C0E40032F41F /* 头发女1.png */; };
+		A456D26B1AE8C73B0032F41F /* storeViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = A456D2691AE8C73B0032F41F /* storeViewController.m */; };
+		A456D26C1AE8C73B0032F41F /* storeViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = A456D26A1AE8C73B0032F41F /* storeViewController.xib */; };
+		A456D2761AE8C8370032F41F /* photo dark.png in Resources */ = {isa = PBXBuildFile; fileRef = A456D26F1AE8C8370032F41F /* photo dark.png */; };
+		A456D2771AE8C8370032F41F /* photo save-press.png in Resources */ = {isa = PBXBuildFile; fileRef = A456D2701AE8C8370032F41F /* photo save-press.png */; };
+		A456D2781AE8C8370032F41F /* photo save.png in Resources */ = {isa = PBXBuildFile; fileRef = A456D2711AE8C8370032F41F /* photo save.png */; };
+		A456D2791AE8C8370032F41F /* photo share-press.png in Resources */ = {isa = PBXBuildFile; fileRef = A456D2721AE8C8370032F41F /* photo share-press.png */; };
+		A456D27A1AE8C8370032F41F /* photo share.png in Resources */ = {isa = PBXBuildFile; fileRef = A456D2731AE8C8370032F41F /* photo share.png */; };
+		A456D27B1AE8C8370032F41F /* photo-cancel-press.png in Resources */ = {isa = PBXBuildFile; fileRef = A456D2741AE8C8370032F41F /* photo-cancel-press.png */; };
+		A456D27C1AE8C8370032F41F /* photo-cancel.png in Resources */ = {isa = PBXBuildFile; fileRef = A456D2751AE8C8370032F41F /* photo-cancel.png */; };
+		A456D27F1AE8C8880032F41F /* youpiaotiao.png in Resources */ = {isa = PBXBuildFile; fileRef = A456D27E1AE8C8880032F41F /* youpiaotiao.png */; };
+		A456D2811AE8D2300032F41F /* AssetsLibrary.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A456D2801AE8D2300032F41F /* AssetsLibrary.framework */; };
 		A46BBC1D1ADE4075009D2280 /* title.png in Resources */ = {isa = PBXBuildFile; fileRef = A46BBC1B1ADE4075009D2280 /* title.png */; };
 		A46BBC1E1ADE4075009D2280 /* youpiao.png in Resources */ = {isa = PBXBuildFile; fileRef = A46BBC1C1ADE4075009D2280 /* youpiao.png */; };
 		A46BBC201ADE40D6009D2280 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = A46BBC1F1ADE40D6009D2280 /* Main.storyboard */; };
@@ -227,6 +240,20 @@
 		A44BB75E1ADCFC18009D2378 /* photo.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = photo.png; sourceTree = "<group>"; };
 		A44BB7611ADD1814009D2378 /* boy portrait.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "boy portrait.png"; sourceTree = "<group>"; };
 		A44BB7621ADD1814009D2378 /* girl portrait.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "girl portrait.png"; sourceTree = "<group>"; };
+		A456D2641AE8C0E40032F41F /* 头发女.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "头发女.png"; sourceTree = "<group>"; };
+		A456D2651AE8C0E40032F41F /* 头发女1.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "头发女1.png"; sourceTree = "<group>"; };
+		A456D2681AE8C73B0032F41F /* storeViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = storeViewController.h; sourceTree = "<group>"; };
+		A456D2691AE8C73B0032F41F /* storeViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = storeViewController.m; sourceTree = "<group>"; };
+		A456D26A1AE8C73B0032F41F /* storeViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = storeViewController.xib; sourceTree = "<group>"; };
+		A456D26F1AE8C8370032F41F /* photo dark.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "photo dark.png"; sourceTree = "<group>"; };
+		A456D2701AE8C8370032F41F /* photo save-press.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "photo save-press.png"; sourceTree = "<group>"; };
+		A456D2711AE8C8370032F41F /* photo save.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "photo save.png"; sourceTree = "<group>"; };
+		A456D2721AE8C8370032F41F /* photo share-press.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "photo share-press.png"; sourceTree = "<group>"; };
+		A456D2731AE8C8370032F41F /* photo share.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "photo share.png"; sourceTree = "<group>"; };
+		A456D2741AE8C8370032F41F /* photo-cancel-press.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "photo-cancel-press.png"; sourceTree = "<group>"; };
+		A456D2751AE8C8370032F41F /* photo-cancel.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "photo-cancel.png"; sourceTree = "<group>"; };
+		A456D27E1AE8C8880032F41F /* youpiaotiao.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = youpiaotiao.png; sourceTree = "<group>"; };
+		A456D2801AE8D2300032F41F /* AssetsLibrary.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AssetsLibrary.framework; path = System/Library/Frameworks/AssetsLibrary.framework; sourceTree = SDKROOT; };
 		A46BBC1B1ADE4075009D2280 /* title.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = title.png; sourceTree = "<group>"; };
 		A46BBC1C1ADE4075009D2280 /* youpiao.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = youpiao.png; sourceTree = "<group>"; };
 		A46BBC1F1ADE40D6009D2280 /* Main.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = Main.storyboard; sourceTree = "<group>"; };
@@ -348,6 +375,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				A456D2811AE8D2300032F41F /* AssetsLibrary.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -424,9 +452,25 @@
 			path = images;
 			sourceTree = "<group>";
 		};
+		A456D27D1AE8C83D0032F41F /* photoViewImage */ = {
+			isa = PBXGroup;
+			children = (
+				A456D26F1AE8C8370032F41F /* photo dark.png */,
+				A456D2701AE8C8370032F41F /* photo save-press.png */,
+				A456D2711AE8C8370032F41F /* photo save.png */,
+				A456D2721AE8C8370032F41F /* photo share-press.png */,
+				A456D2731AE8C8370032F41F /* photo share.png */,
+				A456D2741AE8C8370032F41F /* photo-cancel-press.png */,
+				A456D2751AE8C8370032F41F /* photo-cancel.png */,
+				A456D27E1AE8C8880032F41F /* youpiaotiao.png */,
+			);
+			name = photoViewImage;
+			sourceTree = "<group>";
+		};
 		A47D6EA21AC3E1ED00AC1768 = {
 			isa = PBXGroup;
 			children = (
+				A456D2801AE8D2300032F41F /* AssetsLibrary.framework */,
 				A47D6EAD1AC3E1ED00AC1768 /* Anime Face */,
 				A47D6EC71AC3E1ED00AC1768 /* Anime FaceTests */,
 				A47D6EAC1AC3E1ED00AC1768 /* Products */,
@@ -460,6 +504,9 @@
 				A4A2110D1AD3B2AE006973E0 /* imageWithName.m */,
 				A47D6EB51AC3E1ED00AC1768 /* ViewController.h */,
 				A47D6EB61AC3E1ED00AC1768 /* ViewController.m */,
+				A456D2681AE8C73B0032F41F /* storeViewController.h */,
+				A456D2691AE8C73B0032F41F /* storeViewController.m */,
+				A456D26A1AE8C73B0032F41F /* storeViewController.xib */,
 				A4CA3AA01ACA440900D50D80 /* gameViewController.h */,
 				A4CA3AA11ACA440900D50D80 /* gameViewController.m */,
 				A4CA3AA21ACA440900D50D80 /* gameViewController.xib */,
@@ -478,6 +525,7 @@
 		A47D6EAE1AC3E1ED00AC1768 /* Supporting Files */ = {
 			isa = PBXGroup;
 			children = (
+				A456D27D1AE8C83D0032F41F /* photoViewImage */,
 				A44BB6D61ADCA647009D2378 /* images */,
 				A4A211021AD3A411006973E0 /* 01.png */,
 				A4A211081AD3ADF6006973E0 /* QuestionMark.png */,
@@ -522,6 +570,8 @@
 				A46BBC221ADE52EE009D2280 /* 嘴巴1.png */,
 				A46BBC231ADE52EE009D2280 /* 头发.png */,
 				A46BBC241ADE52EE009D2280 /* 头发1.png */,
+				A456D2641AE8C0E40032F41F /* 头发女.png */,
+				A456D2651AE8C0E40032F41F /* 头发女1.png */,
 				A46BBC251ADE52EE009D2280 /* 宠物.png */,
 				A46BBC261ADE52EE009D2280 /* 宠物1.png */,
 				A46BBC271ADE52EE009D2280 /* 帽子.png */,
@@ -694,16 +744,19 @@
 				51ABD24F1AE78CFB005BC8F0 /* 5.png in Resources */,
 				51ABD24D1AE78CFB005BC8F0 /* 3.png in Resources */,
 				A4E6CDD41ACCE54200A1D6EC /* clothing2.png in Resources */,
+				A456D27C1AE8C8370032F41F /* photo-cancel.png in Resources */,
 				A46BBC431ADE52EE009D2280 /* 宠物.png in Resources */,
 				A46BBC561ADE52EE009D2280 /* 脸型1.png in Resources */,
 				A46BBC541ADE52EE009D2280 /* 胡子1.png in Resources */,
 				A4E6CDF21ACCE54200A1D6EC /* pet2.png in Resources */,
 				A46BBC401ADE52EE009D2280 /* 嘴巴1.png in Resources */,
+				A456D2671AE8C0E40032F41F /* 头发女1.png in Resources */,
 				A4E6CDD61ACCE54200A1D6EC /* eye2.png in Resources */,
 				A47EF4FC1AE5EFF7005C32E0 /* hair1-2-1.png in Resources */,
 				A46BBC1E1ADE4075009D2280 /* youpiao.png in Resources */,
 				A46BBC491ADE52EE009D2280 /* 手势.png in Resources */,
 				A46BBC471ADE52EE009D2280 /* 心情.png in Resources */,
+				A456D2761AE8C8370032F41F /* photo dark.png in Resources */,
 				A4C856F41AE64FBD005208F0 /* hair2-4-3-front.png in Resources */,
 				A4E6CDE41ACCE54200A1D6EC /* hair1-2-0-front.png in Resources */,
 				A44BB73A1ADCA647009D2378 /* loading1000.png in Resources */,
@@ -727,6 +780,7 @@
 				A4E6CDEA1ACCE54200A1D6EC /* mood2.png in Resources */,
 				A44BB7121ADCA647009D2378 /* back-press.png in Resources */,
 				A4E6CDE01ACCE54200A1D6EC /* glasses2.png in Resources */,
+				A456D27A1AE8C8370032F41F /* photo share.png in Resources */,
 				A4E6CDE21ACCE54200A1D6EC /* hair1-2-1-front.png in Resources */,
 				A4E6CDD01ACCE54200A1D6EC /* background2.png in Resources */,
 				A46BBC1D1ADE4075009D2280 /* title.png in Resources */,
@@ -741,6 +795,7 @@
 				A44BB7431ADCA647009D2378 /* save-press.png in Resources */,
 				A4E6CDDA1ACCE54200A1D6EC /* face2.png in Resources */,
 				A44BB7271ADCA647009D2378 /* first back ground.png in Resources */,
+				A456D2661AE8C0E40032F41F /* 头发女.png in Resources */,
 				A44BB7571ADCE9BC009D2378 /* fame-choosed1.png in Resources */,
 				A4E6CDEE1ACCE54200A1D6EC /* mustache2.png in Resources */,
 				A46BBC421ADE52EE009D2280 /* 头发1.png in Resources */,
@@ -751,7 +806,9 @@
 				A44BB7461ADCA647009D2378 /* setting-press.png in Resources */,
 				A44BB7351ADCA647009D2378 /* inside-clothstore-press.png in Resources */,
 				51ABD2631AE78EE0005BC8F0 /* hairG2-7-3-front.png in Resources */,
+				A456D27F1AE8C8880032F41F /* youpiaotiao.png in Resources */,
 				51ABD25F1AE78EE0005BC8F0 /* hairG1-2.png in Resources */,
+				A456D26C1AE8C73B0032F41F /* storeViewController.xib in Resources */,
 				51ABD2621AE78EE0005BC8F0 /* hairG2-7-2-front.png in Resources */,
 				A4E6CDD21ACCE54200A1D6EC /* body1000.png in Resources */,
 				A46BBC571ADE52EE009D2280 /* 脸饰.png in Resources */,
@@ -770,6 +827,7 @@
 				A4C856F51AE64FBD005208F0 /* hair2-4-3.png in Resources */,
 				A4C856F31AE64FBD005208F0 /* hair2-4-2.png in Resources */,
 				A44BB7391ADCA647009D2378 /* loading1.png in Resources */,
+				A456D27B1AE8C8370032F41F /* photo-cancel-press.png in Resources */,
 				A4CA3AA61ACA63A900D50D80 /* GameData.plist in Resources */,
 				A4E6CDD71ACCE54200A1D6EC /* eyebrow1.png in Resources */,
 				A4E6CDD91ACCE54200A1D6EC /* face1.png in Resources */,
@@ -788,6 +846,7 @@
 				A47D6EBF1AC3E1ED00AC1768 /* LaunchScreen.xib in Resources */,
 				A47D6EBC1AC3E1ED00AC1768 /* Images.xcassets in Resources */,
 				A4D659271ACE30D600FE32CE /* hair1-2.png in Resources */,
+				A456D2791AE8C8370032F41F /* photo share-press.png in Resources */,
 				A44BB73C1ADCA647009D2378 /* luckystore-press-main.png in Resources */,
 				A44BB71B1ADCA647009D2378 /* diamond frame.png in Resources */,
 				A46BBC4B1ADE52EE009D2280 /* 眼眉.png in Resources */,
@@ -801,6 +860,7 @@
 				A44BB7471ADCA647009D2378 /* share-press.png in Resources */,
 				A4D659281ACE30D600FE32CE /* hair2-4.png in Resources */,
 				A44BB7181ADCA647009D2378 /* choose.png in Resources */,
+				A456D2781AE8C8370032F41F /* photo save.png in Resources */,
 				A46BBC451ADE52EE009D2280 /* 帽子.png in Resources */,
 				51ABD24C1AE78CFB005BC8F0 /* 2.png in Resources */,
 				A46BBC441ADE52EE009D2280 /* 宠物1.png in Resources */,
@@ -808,6 +868,7 @@
 				A46BBC5B1ADE52EE009D2280 /* 鼻子.png in Resources */,
 				A4E6CDE31ACCE54200A1D6EC /* hair1-2-0-back.png in Resources */,
 				A44BB72B1ADCA647009D2378 /* girl-normal.png in Resources */,
+				A456D2771AE8C8370032F41F /* photo save-press.png in Resources */,
 				A44BB7371ADCA647009D2378 /* inside-luckystore-press.png in Resources */,
 				A44BB72C1ADCA647009D2378 /* girl-pressl.png in Resources */,
 				51ABD2661AE78EE0005BC8F0 /* hairG2-7-6-front.png in Resources */,
@@ -848,6 +909,7 @@
 				A4CA3AC21ACA9D3E00D50D80 /* APLMoveMeView.m in Sources */,
 				A47D6EB11AC3E1ED00AC1768 /* main.m in Sources */,
 				A4CA3ACA1ACAA2A500D50D80 /* hairButton.m in Sources */,
+				A456D26B1AE8C73B0032F41F /* storeViewController.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

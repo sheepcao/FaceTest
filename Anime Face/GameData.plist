@@ -74,6 +74,11 @@
 			<string>hair1-2</string>
 			<string>hair2-4</string>
 		</array>
+		<key>头发女</key>
+		<array>
+			<string>hairG1-2</string>
+			<string>hairG2-7</string>
+		</array>
 		<key>脸型</key>
 		<array>
 			<string>face1</string>
