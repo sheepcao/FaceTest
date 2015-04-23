@@ -24,7 +24,7 @@
     self.navigationController.navigationBarHidden = NO;
 
     
-    self.imageOptins = @[@"1",@"2",@"3"];
+    self.imageOptins = @[@"01",@"02",@"03"];
     
     // Do any additional setup after loading the view from its nib.
     

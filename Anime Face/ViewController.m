@@ -23,6 +23,8 @@
 
     [self copyPlistToDocument:@"GameData"];
     self.GameDatas = [self readDataFromPlist:@"GameData"];
+    
+    
 
     
 }

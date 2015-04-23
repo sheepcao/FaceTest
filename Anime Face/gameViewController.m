@@ -349,7 +349,9 @@
         
         
         elemntButton *colorBtn = [[elemntButton alloc] initWithFrame:CGRectMake(startX+i*(btnSize+5),(sender.frame.size.height - btnSize-5), btnSize,btnSize)];
-        NSString *imageWithColor = [NSString stringWithFormat:@"%@-%d",sender.imageName,i];
+//        NSString *imageWithColor = [NSString stringWithFormat:@"%@-%d",sender.imageName,i];
+        NSString *imageWithColor = [NSString stringWithFormat:@"%d",i];
+
         [colorBtn setImage:[UIImage imageNamed:imageWithColor] forState:UIControlStateNormal];
         colorBtn.imageName = [NSString stringWithFormat:@"%@-%d",sender.imageName,i];
         [colorBtn addTarget:self action:@selector(colorTapped:) forControlEvents:UIControlEventTouchUpInside];
