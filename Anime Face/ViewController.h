@@ -15,6 +15,7 @@
 @property (strong,nonatomic) NSDictionary *GameDatas;
 
 - (IBAction)getReward:(id)sender;
+- (IBAction)store:(id)sender;
 
 - (IBAction)enterGame:(UIButton *)sender;
 @end

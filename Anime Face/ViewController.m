@@ -9,6 +9,7 @@
 #import "ViewController.h"
 #import "gameViewController.h"
 #import "rewardViewController.h"
+#import "storeViewController.h"
 
 @interface ViewController ()
 
@@ -110,6 +111,14 @@
     rewardViewController *myReward = [[rewardViewController alloc] initWithNibName:@"rewardViewController" bundle:nil];
     [self.navigationController pushViewController:myReward animated:YES];
 
+}
+
+- (IBAction)store:(id)sender {
+    
+    storeViewController *myStore = [[storeViewController alloc] initWithNibName:@"storeViewController" bundle:nil];
+    [self.navigationController pushViewController:myStore animated:YES];
+
+    
 }
 
 - (IBAction)enterGame:(UIButton *)sender {

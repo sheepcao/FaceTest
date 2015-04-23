@@ -177,6 +177,9 @@
                                         <exclude reference="DJh-b6-PUm"/>
                                     </mask>
                                 </variation>
+                                <connections>
+                                    <action selector="store:" destination="vXZ-lx-hvc" eventType="touchUpInside" id="CP0-uF-P3u"/>
+                                </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="dNS-Fr-ZbD" userLabel="luckyHouse">
                                 <rect key="frame" x="115" y="449.5" width="90" height="44.5"/>

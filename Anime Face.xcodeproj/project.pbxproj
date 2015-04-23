@@ -25,6 +25,51 @@
 		51ABD2651AE78EE0005BC8F0 /* hairG2-7-5-front.png in Resources */ = {isa = PBXBuildFile; fileRef = 51ABD25A1AE78EE0005BC8F0 /* hairG2-7-5-front.png */; };
 		51ABD2661AE78EE0005BC8F0 /* hairG2-7-6-front.png in Resources */ = {isa = PBXBuildFile; fileRef = 51ABD25B1AE78EE0005BC8F0 /* hairG2-7-6-front.png */; };
 		51ABD2671AE78EE0005BC8F0 /* hairG2-7.png in Resources */ = {isa = PBXBuildFile; fileRef = 51ABD25C1AE78EE0005BC8F0 /* hairG2-7.png */; };
+		A445632D1AE9217E0040D1C5 /* face0.png in Resources */ = {isa = PBXBuildFile; fileRef = A445632A1AE9217E0040D1C5 /* face0.png */; };
+		A445632E1AE9217E0040D1C5 /* face10.png in Resources */ = {isa = PBXBuildFile; fileRef = A445632B1AE9217E0040D1C5 /* face10.png */; };
+		A445632F1AE9217E0040D1C5 /* face11.png in Resources */ = {isa = PBXBuildFile; fileRef = A445632C1AE9217E0040D1C5 /* face11.png */; };
+		A44563321AE9220E0040D1C5 /* mouth1.png in Resources */ = {isa = PBXBuildFile; fileRef = A44563301AE9220E0040D1C5 /* mouth1.png */; };
+		A44563331AE9220E0040D1C5 /* mouth2.png in Resources */ = {isa = PBXBuildFile; fileRef = A44563311AE9220E0040D1C5 /* mouth2.png */; };
+		A44563AC1AE93D440040D1C5 /* box-open.png in Resources */ = {isa = PBXBuildFile; fileRef = A44563851AE93D440040D1C5 /* box-open.png */; };
+		A44563AD1AE93D440040D1C5 /* box.png in Resources */ = {isa = PBXBuildFile; fileRef = A44563861AE93D440040D1C5 /* box.png */; };
+		A44563AE1AE93D440040D1C5 /* buy-press.png in Resources */ = {isa = PBXBuildFile; fileRef = A44563871AE93D440040D1C5 /* buy-press.png */; };
+		A44563AF1AE93D440040D1C5 /* buy.png in Resources */ = {isa = PBXBuildFile; fileRef = A44563881AE93D440040D1C5 /* buy.png */; };
+		A44563B01AE93D440040D1C5 /* cancel-press.png in Resources */ = {isa = PBXBuildFile; fileRef = A44563891AE93D440040D1C5 /* cancel-press.png */; };
+		A44563B11AE93D440040D1C5 /* cancel.png in Resources */ = {isa = PBXBuildFile; fileRef = A445638A1AE93D440040D1C5 /* cancel.png */; };
+		A44563B21AE93D440040D1C5 /* diamond .png in Resources */ = {isa = PBXBuildFile; fileRef = A445638B1AE93D440040D1C5 /* diamond .png */; };
+		A44563B31AE93D440040D1C5 /* diamond board button-press.png in Resources */ = {isa = PBXBuildFile; fileRef = A445638C1AE93D440040D1C5 /* diamond board button-press.png */; };
+		A44563B41AE93D440040D1C5 /* diamond board button.png in Resources */ = {isa = PBXBuildFile; fileRef = A445638D1AE93D440040D1C5 /* diamond board button.png */; };
+		A44563B51AE93D440040D1C5 /* diamond how much.png in Resources */ = {isa = PBXBuildFile; fileRef = A445638E1AE93D440040D1C5 /* diamond how much.png */; };
+		A44563B61AE93D440040D1C5 /* diamond not enough board.png in Resources */ = {isa = PBXBuildFile; fileRef = A445638F1AE93D440040D1C5 /* diamond not enough board.png */; };
+		A44563B71AE93D440040D1C5 /* diamond purchase board.png in Resources */ = {isa = PBXBuildFile; fileRef = A44563901AE93D440040D1C5 /* diamond purchase board.png */; };
+		A44563B81AE93D440040D1C5 /* diamond++.png in Resources */ = {isa = PBXBuildFile; fileRef = A44563911AE93D440040D1C5 /* diamond++.png */; };
+		A44563B91AE93D440040D1C5 /* diamond++press.png in Resources */ = {isa = PBXBuildFile; fileRef = A44563921AE93D440040D1C5 /* diamond++press.png */; };
+		A44563BA1AE93D440040D1C5 /* heart.png in Resources */ = {isa = PBXBuildFile; fileRef = A44563931AE93D440040D1C5 /* heart.png */; };
+		A44563BB1AE93D440040D1C5 /* mistery background.png in Resources */ = {isa = PBXBuildFile; fileRef = A44563941AE93D440040D1C5 /* mistery background.png */; };
+		A44563BC1AE93D440040D1C5 /* mistery room card.png in Resources */ = {isa = PBXBuildFile; fileRef = A44563951AE93D440040D1C5 /* mistery room card.png */; };
+		A44563BD1AE93D440040D1C5 /* mistery-above.png in Resources */ = {isa = PBXBuildFile; fileRef = A44563961AE93D440040D1C5 /* mistery-above.png */; };
+		A44563BE1AE93D440040D1C5 /* mistery-back-press.png in Resources */ = {isa = PBXBuildFile; fileRef = A44563971AE93D440040D1C5 /* mistery-back-press.png */; };
+		A44563BF1AE93D440040D1C5 /* mistery-back.png in Resources */ = {isa = PBXBuildFile; fileRef = A44563981AE93D440040D1C5 /* mistery-back.png */; };
+		A44563C01AE93D440040D1C5 /* photo dark.png in Resources */ = {isa = PBXBuildFile; fileRef = A44563991AE93D440040D1C5 /* photo dark.png */; };
+		A44563C11AE93D440040D1C5 /* photo save-press.png in Resources */ = {isa = PBXBuildFile; fileRef = A445639A1AE93D440040D1C5 /* photo save-press.png */; };
+		A44563C21AE93D440040D1C5 /* photo save.png in Resources */ = {isa = PBXBuildFile; fileRef = A445639B1AE93D440040D1C5 /* photo save.png */; };
+		A44563C31AE93D440040D1C5 /* photo share-press.png in Resources */ = {isa = PBXBuildFile; fileRef = A445639C1AE93D440040D1C5 /* photo share-press.png */; };
+		A44563C41AE93D440040D1C5 /* photo share.png in Resources */ = {isa = PBXBuildFile; fileRef = A445639D1AE93D440040D1C5 /* photo share.png */; };
+		A44563C51AE93D440040D1C5 /* photo-cancel-press.png in Resources */ = {isa = PBXBuildFile; fileRef = A445639E1AE93D440040D1C5 /* photo-cancel-press.png */; };
+		A44563C61AE93D440040D1C5 /* photo-cancel.png in Resources */ = {isa = PBXBuildFile; fileRef = A445639F1AE93D440040D1C5 /* photo-cancel.png */; };
+		A44563C71AE93D440040D1C5 /* price.png in Resources */ = {isa = PBXBuildFile; fileRef = A44563A01AE93D440040D1C5 /* price.png */; };
+		A44563C81AE93D440040D1C5 /* star.png in Resources */ = {isa = PBXBuildFile; fileRef = A44563A11AE93D440040D1C5 /* star.png */; };
+		A44563C91AE93D440040D1C5 /* store background.png in Resources */ = {isa = PBXBuildFile; fileRef = A44563A21AE93D440040D1C5 /* store background.png */; };
+		A44563CA1AE93D440040D1C5 /* store to mistery-press.png in Resources */ = {isa = PBXBuildFile; fileRef = A44563A31AE93D440040D1C5 /* store to mistery-press.png */; };
+		A44563CB1AE93D440040D1C5 /* store to mistery.png in Resources */ = {isa = PBXBuildFile; fileRef = A44563A41AE93D440040D1C5 /* store to mistery.png */; };
+		A44563CC1AE93D440040D1C5 /* store-above.png in Resources */ = {isa = PBXBuildFile; fileRef = A44563A51AE93D440040D1C5 /* store-above.png */; };
+		A44563CD1AE93D440040D1C5 /* store-below.png in Resources */ = {isa = PBXBuildFile; fileRef = A44563A61AE93D440040D1C5 /* store-below.png */; };
+		A44563CE1AE93D440040D1C5 /* store-introduce board.png in Resources */ = {isa = PBXBuildFile; fileRef = A44563A71AE93D440040D1C5 /* store-introduce board.png */; };
+		A44563CF1AE93D440040D1C5 /* store-introduce title.png in Resources */ = {isa = PBXBuildFile; fileRef = A44563A81AE93D440040D1C5 /* store-introduce title.png */; };
+		A44563D01AE93D440040D1C5 /* sure-press.png in Resources */ = {isa = PBXBuildFile; fileRef = A44563A91AE93D440040D1C5 /* sure-press.png */; };
+		A44563D11AE93D440040D1C5 /* sure.png in Resources */ = {isa = PBXBuildFile; fileRef = A44563AA1AE93D440040D1C5 /* sure.png */; };
+		A44563D21AE93D440040D1C5 /* youpiaotiao.png in Resources */ = {isa = PBXBuildFile; fileRef = A44563AB1AE93D440040D1C5 /* youpiaotiao.png */; };
+		A44563D41AE93D610040D1C5 /* 虚线.png in Resources */ = {isa = PBXBuildFile; fileRef = A44563D31AE93D610040D1C5 /* 虚线.png */; };
 		A44BB7121ADCA647009D2378 /* back-press.png in Resources */ = {isa = PBXBuildFile; fileRef = A44BB6D71ADCA647009D2378 /* back-press.png */; };
 		A44BB7131ADCA647009D2378 /* back.png in Resources */ = {isa = PBXBuildFile; fileRef = A44BB6D81ADCA647009D2378 /* back.png */; };
 		A44BB7161ADCA647009D2378 /* boy-normal.png in Resources */ = {isa = PBXBuildFile; fileRef = A44BB6DB1ADCA647009D2378 /* boy-normal.png */; };
@@ -64,7 +109,6 @@
 		A456D2671AE8C0E40032F41F /* 头发女1.png in Resources */ = {isa = PBXBuildFile; fileRef = A456D2651AE8C0E40032F41F /* 头发女1.png */; };
 		A456D26B1AE8C73B0032F41F /* storeViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = A456D2691AE8C73B0032F41F /* storeViewController.m */; };
 		A456D26C1AE8C73B0032F41F /* storeViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = A456D26A1AE8C73B0032F41F /* storeViewController.xib */; };
-		A456D2761AE8C8370032F41F /* photo dark.png in Resources */ = {isa = PBXBuildFile; fileRef = A456D26F1AE8C8370032F41F /* photo dark.png */; };
 		A456D2771AE8C8370032F41F /* photo save-press.png in Resources */ = {isa = PBXBuildFile; fileRef = A456D2701AE8C8370032F41F /* photo save-press.png */; };
 		A456D2781AE8C8370032F41F /* photo save.png in Resources */ = {isa = PBXBuildFile; fileRef = A456D2711AE8C8370032F41F /* photo save.png */; };
 		A456D2791AE8C8370032F41F /* photo share-press.png in Resources */ = {isa = PBXBuildFile; fileRef = A456D2721AE8C8370032F41F /* photo share-press.png */; };
@@ -73,7 +117,6 @@
 		A456D27C1AE8C8370032F41F /* photo-cancel.png in Resources */ = {isa = PBXBuildFile; fileRef = A456D2751AE8C8370032F41F /* photo-cancel.png */; };
 		A456D27F1AE8C8880032F41F /* youpiaotiao.png in Resources */ = {isa = PBXBuildFile; fileRef = A456D27E1AE8C8880032F41F /* youpiaotiao.png */; };
 		A456D2811AE8D2300032F41F /* AssetsLibrary.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A456D2801AE8D2300032F41F /* AssetsLibrary.framework */; };
-		A45C93861AE8E7FB0081346B /* store&lucky in Resources */ = {isa = PBXBuildFile; fileRef = A45C93851AE8E7FB0081346B /* store&lucky */; };
 		A45C93881AE8F95F0081346B /* fame1.png in Resources */ = {isa = PBXBuildFile; fileRef = A45C93871AE8F95F0081346B /* fame1.png */; };
 		A45C938B1AE8F9730081346B /* sharesave normal.png in Resources */ = {isa = PBXBuildFile; fileRef = A45C93891AE8F9730081346B /* sharesave normal.png */; };
 		A45C938C1AE8F9730081346B /* sharesave press.png in Resources */ = {isa = PBXBuildFile; fileRef = A45C938A1AE8F9730081346B /* sharesave press.png */; };
@@ -152,8 +195,6 @@
 		A4E6CDD61ACCE54200A1D6EC /* eye2.png in Resources */ = {isa = PBXBuildFile; fileRef = A4E6CDB21ACCE54200A1D6EC /* eye2.png */; };
 		A4E6CDD71ACCE54200A1D6EC /* eyebrow1.png in Resources */ = {isa = PBXBuildFile; fileRef = A4E6CDB31ACCE54200A1D6EC /* eyebrow1.png */; };
 		A4E6CDD81ACCE54200A1D6EC /* eyebrow2.png in Resources */ = {isa = PBXBuildFile; fileRef = A4E6CDB41ACCE54200A1D6EC /* eyebrow2.png */; };
-		A4E6CDD91ACCE54200A1D6EC /* face1.png in Resources */ = {isa = PBXBuildFile; fileRef = A4E6CDB51ACCE54200A1D6EC /* face1.png */; };
-		A4E6CDDA1ACCE54200A1D6EC /* face2.png in Resources */ = {isa = PBXBuildFile; fileRef = A4E6CDB61ACCE54200A1D6EC /* face2.png */; };
 		A4E6CDDB1ACCE54200A1D6EC /* facemark1.png in Resources */ = {isa = PBXBuildFile; fileRef = A4E6CDB71ACCE54200A1D6EC /* facemark1.png */; };
 		A4E6CDDC1ACCE54200A1D6EC /* facemark2.png in Resources */ = {isa = PBXBuildFile; fileRef = A4E6CDB81ACCE54200A1D6EC /* facemark2.png */; };
 		A4E6CDDD1ACCE54200A1D6EC /* gesture1.png in Resources */ = {isa = PBXBuildFile; fileRef = A4E6CDB91ACCE54200A1D6EC /* gesture1.png */; };
@@ -168,8 +209,6 @@
 		A4E6CDE81ACCE54200A1D6EC /* hat2.png in Resources */ = {isa = PBXBuildFile; fileRef = A4E6CDC41ACCE54200A1D6EC /* hat2.png */; };
 		A4E6CDE91ACCE54200A1D6EC /* mood1.png in Resources */ = {isa = PBXBuildFile; fileRef = A4E6CDC51ACCE54200A1D6EC /* mood1.png */; };
 		A4E6CDEA1ACCE54200A1D6EC /* mood2.png in Resources */ = {isa = PBXBuildFile; fileRef = A4E6CDC61ACCE54200A1D6EC /* mood2.png */; };
-		A4E6CDEB1ACCE54200A1D6EC /* mouth1.png in Resources */ = {isa = PBXBuildFile; fileRef = A4E6CDC71ACCE54200A1D6EC /* mouth1.png */; };
-		A4E6CDEC1ACCE54200A1D6EC /* mouth2.png in Resources */ = {isa = PBXBuildFile; fileRef = A4E6CDC81ACCE54200A1D6EC /* mouth2.png */; };
 		A4E6CDED1ACCE54200A1D6EC /* mustache1.png in Resources */ = {isa = PBXBuildFile; fileRef = A4E6CDC91ACCE54200A1D6EC /* mustache1.png */; };
 		A4E6CDEE1ACCE54200A1D6EC /* mustache2.png in Resources */ = {isa = PBXBuildFile; fileRef = A4E6CDCA1ACCE54200A1D6EC /* mustache2.png */; };
 		A4E6CDEF1ACCE54200A1D6EC /* nose1.png in Resources */ = {isa = PBXBuildFile; fileRef = A4E6CDCB1ACCE54200A1D6EC /* nose1.png */; };
@@ -207,6 +246,51 @@
 		51ABD25A1AE78EE0005BC8F0 /* hairG2-7-5-front.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "hairG2-7-5-front.png"; sourceTree = "<group>"; };
 		51ABD25B1AE78EE0005BC8F0 /* hairG2-7-6-front.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "hairG2-7-6-front.png"; sourceTree = "<group>"; };
 		51ABD25C1AE78EE0005BC8F0 /* hairG2-7.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "hairG2-7.png"; sourceTree = "<group>"; };
+		A445632A1AE9217E0040D1C5 /* face0.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = face0.png; sourceTree = "<group>"; };
+		A445632B1AE9217E0040D1C5 /* face10.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = face10.png; sourceTree = "<group>"; };
+		A445632C1AE9217E0040D1C5 /* face11.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = face11.png; sourceTree = "<group>"; };
+		A44563301AE9220E0040D1C5 /* mouth1.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = mouth1.png; sourceTree = "<group>"; };
+		A44563311AE9220E0040D1C5 /* mouth2.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = mouth2.png; sourceTree = "<group>"; };
+		A44563851AE93D440040D1C5 /* box-open.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "box-open.png"; sourceTree = "<group>"; };
+		A44563861AE93D440040D1C5 /* box.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = box.png; sourceTree = "<group>"; };
+		A44563871AE93D440040D1C5 /* buy-press.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "buy-press.png"; sourceTree = "<group>"; };
+		A44563881AE93D440040D1C5 /* buy.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = buy.png; sourceTree = "<group>"; };
+		A44563891AE93D440040D1C5 /* cancel-press.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "cancel-press.png"; sourceTree = "<group>"; };
+		A445638A1AE93D440040D1C5 /* cancel.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = cancel.png; sourceTree = "<group>"; };
+		A445638B1AE93D440040D1C5 /* diamond .png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "diamond .png"; sourceTree = "<group>"; };
+		A445638C1AE93D440040D1C5 /* diamond board button-press.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "diamond board button-press.png"; sourceTree = "<group>"; };
+		A445638D1AE93D440040D1C5 /* diamond board button.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "diamond board button.png"; sourceTree = "<group>"; };
+		A445638E1AE93D440040D1C5 /* diamond how much.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "diamond how much.png"; sourceTree = "<group>"; };
+		A445638F1AE93D440040D1C5 /* diamond not enough board.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "diamond not enough board.png"; sourceTree = "<group>"; };
+		A44563901AE93D440040D1C5 /* diamond purchase board.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "diamond purchase board.png"; sourceTree = "<group>"; };
+		A44563911AE93D440040D1C5 /* diamond++.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "diamond++.png"; sourceTree = "<group>"; };
+		A44563921AE93D440040D1C5 /* diamond++press.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "diamond++press.png"; sourceTree = "<group>"; };
+		A44563931AE93D440040D1C5 /* heart.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = heart.png; sourceTree = "<group>"; };
+		A44563941AE93D440040D1C5 /* mistery background.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "mistery background.png"; sourceTree = "<group>"; };
+		A44563951AE93D440040D1C5 /* mistery room card.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "mistery room card.png"; sourceTree = "<group>"; };
+		A44563961AE93D440040D1C5 /* mistery-above.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "mistery-above.png"; sourceTree = "<group>"; };
+		A44563971AE93D440040D1C5 /* mistery-back-press.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "mistery-back-press.png"; sourceTree = "<group>"; };
+		A44563981AE93D440040D1C5 /* mistery-back.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "mistery-back.png"; sourceTree = "<group>"; };
+		A44563991AE93D440040D1C5 /* photo dark.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "photo dark.png"; sourceTree = "<group>"; };
+		A445639A1AE93D440040D1C5 /* photo save-press.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "photo save-press.png"; sourceTree = "<group>"; };
+		A445639B1AE93D440040D1C5 /* photo save.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "photo save.png"; sourceTree = "<group>"; };
+		A445639C1AE93D440040D1C5 /* photo share-press.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "photo share-press.png"; sourceTree = "<group>"; };
+		A445639D1AE93D440040D1C5 /* photo share.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "photo share.png"; sourceTree = "<group>"; };
+		A445639E1AE93D440040D1C5 /* photo-cancel-press.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "photo-cancel-press.png"; sourceTree = "<group>"; };
+		A445639F1AE93D440040D1C5 /* photo-cancel.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "photo-cancel.png"; sourceTree = "<group>"; };
+		A44563A01AE93D440040D1C5 /* price.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = price.png; sourceTree = "<group>"; };
+		A44563A11AE93D440040D1C5 /* star.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = star.png; sourceTree = "<group>"; };
+		A44563A21AE93D440040D1C5 /* store background.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "store background.png"; sourceTree = "<group>"; };
+		A44563A31AE93D440040D1C5 /* store to mistery-press.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "store to mistery-press.png"; sourceTree = "<group>"; };
+		A44563A41AE93D440040D1C5 /* store to mistery.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "store to mistery.png"; sourceTree = "<group>"; };
+		A44563A51AE93D440040D1C5 /* store-above.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "store-above.png"; sourceTree = "<group>"; };
+		A44563A61AE93D440040D1C5 /* store-below.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "store-below.png"; sourceTree = "<group>"; };
+		A44563A71AE93D440040D1C5 /* store-introduce board.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "store-introduce board.png"; sourceTree = "<group>"; };
+		A44563A81AE93D440040D1C5 /* store-introduce title.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "store-introduce title.png"; sourceTree = "<group>"; };
+		A44563A91AE93D440040D1C5 /* sure-press.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "sure-press.png"; sourceTree = "<group>"; };
+		A44563AA1AE93D440040D1C5 /* sure.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = sure.png; sourceTree = "<group>"; };
+		A44563AB1AE93D440040D1C5 /* youpiaotiao.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = youpiaotiao.png; sourceTree = "<group>"; };
+		A44563D31AE93D610040D1C5 /* 虚线.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "虚线.png"; sourceTree = "<group>"; };
 		A44BB6D71ADCA647009D2378 /* back-press.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "back-press.png"; sourceTree = "<group>"; };
 		A44BB6D81ADCA647009D2378 /* back.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = back.png; sourceTree = "<group>"; };
 		A44BB6DB1ADCA647009D2378 /* boy-normal.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "boy-normal.png"; sourceTree = "<group>"; };
@@ -247,7 +331,6 @@
 		A456D2681AE8C73B0032F41F /* storeViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = storeViewController.h; sourceTree = "<group>"; };
 		A456D2691AE8C73B0032F41F /* storeViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = storeViewController.m; sourceTree = "<group>"; };
 		A456D26A1AE8C73B0032F41F /* storeViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = storeViewController.xib; sourceTree = "<group>"; };
-		A456D26F1AE8C8370032F41F /* photo dark.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "photo dark.png"; sourceTree = "<group>"; };
 		A456D2701AE8C8370032F41F /* photo save-press.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "photo save-press.png"; sourceTree = "<group>"; };
 		A456D2711AE8C8370032F41F /* photo save.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "photo save.png"; sourceTree = "<group>"; };
 		A456D2721AE8C8370032F41F /* photo share-press.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "photo share-press.png"; sourceTree = "<group>"; };
@@ -256,7 +339,6 @@
 		A456D2751AE8C8370032F41F /* photo-cancel.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "photo-cancel.png"; sourceTree = "<group>"; };
 		A456D27E1AE8C8880032F41F /* youpiaotiao.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = youpiaotiao.png; sourceTree = "<group>"; };
 		A456D2801AE8D2300032F41F /* AssetsLibrary.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AssetsLibrary.framework; path = System/Library/Frameworks/AssetsLibrary.framework; sourceTree = SDKROOT; };
-		A45C93851AE8E7FB0081346B /* store&lucky */ = {isa = PBXFileReference; lastKnownFileType = folder; path = "store&lucky"; sourceTree = "<group>"; };
 		A45C93871AE8F95F0081346B /* fame1.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = fame1.png; sourceTree = "<group>"; };
 		A45C93891AE8F9730081346B /* sharesave normal.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "sharesave normal.png"; sourceTree = "<group>"; };
 		A45C938A1AE8F9730081346B /* sharesave press.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "sharesave press.png"; sourceTree = "<group>"; };
@@ -350,8 +432,6 @@
 		A4E6CDB21ACCE54200A1D6EC /* eye2.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = eye2.png; sourceTree = "<group>"; };
 		A4E6CDB31ACCE54200A1D6EC /* eyebrow1.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = eyebrow1.png; sourceTree = "<group>"; };
 		A4E6CDB41ACCE54200A1D6EC /* eyebrow2.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = eyebrow2.png; sourceTree = "<group>"; };
-		A4E6CDB51ACCE54200A1D6EC /* face1.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = face1.png; sourceTree = "<group>"; };
-		A4E6CDB61ACCE54200A1D6EC /* face2.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = face2.png; sourceTree = "<group>"; };
 		A4E6CDB71ACCE54200A1D6EC /* facemark1.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = facemark1.png; sourceTree = "<group>"; };
 		A4E6CDB81ACCE54200A1D6EC /* facemark2.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = facemark2.png; sourceTree = "<group>"; };
 		A4E6CDB91ACCE54200A1D6EC /* gesture1.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = gesture1.png; sourceTree = "<group>"; };
@@ -366,8 +446,6 @@
 		A4E6CDC41ACCE54200A1D6EC /* hat2.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = hat2.png; sourceTree = "<group>"; };
 		A4E6CDC51ACCE54200A1D6EC /* mood1.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = mood1.png; sourceTree = "<group>"; };
 		A4E6CDC61ACCE54200A1D6EC /* mood2.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = mood2.png; sourceTree = "<group>"; };
-		A4E6CDC71ACCE54200A1D6EC /* mouth1.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = mouth1.png; sourceTree = "<group>"; };
-		A4E6CDC81ACCE54200A1D6EC /* mouth2.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = mouth2.png; sourceTree = "<group>"; };
 		A4E6CDC91ACCE54200A1D6EC /* mustache1.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = mustache1.png; sourceTree = "<group>"; };
 		A4E6CDCA1ACCE54200A1D6EC /* mustache2.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = mustache2.png; sourceTree = "<group>"; };
 		A4E6CDCB1ACCE54200A1D6EC /* nose1.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = nose1.png; sourceTree = "<group>"; };
@@ -411,6 +489,53 @@
 				51ABD25C1AE78EE0005BC8F0 /* hairG2-7.png */,
 			);
 			path = hair;
+			sourceTree = "<group>";
+		};
+		A44563341AE93C5E0040D1C5 /* storeLucky */ = {
+			isa = PBXGroup;
+			children = (
+				A44563851AE93D440040D1C5 /* box-open.png */,
+				A44563861AE93D440040D1C5 /* box.png */,
+				A44563871AE93D440040D1C5 /* buy-press.png */,
+				A44563881AE93D440040D1C5 /* buy.png */,
+				A44563891AE93D440040D1C5 /* cancel-press.png */,
+				A445638A1AE93D440040D1C5 /* cancel.png */,
+				A445638B1AE93D440040D1C5 /* diamond .png */,
+				A445638C1AE93D440040D1C5 /* diamond board button-press.png */,
+				A445638D1AE93D440040D1C5 /* diamond board button.png */,
+				A445638E1AE93D440040D1C5 /* diamond how much.png */,
+				A445638F1AE93D440040D1C5 /* diamond not enough board.png */,
+				A44563901AE93D440040D1C5 /* diamond purchase board.png */,
+				A44563911AE93D440040D1C5 /* diamond++.png */,
+				A44563921AE93D440040D1C5 /* diamond++press.png */,
+				A44563931AE93D440040D1C5 /* heart.png */,
+				A44563941AE93D440040D1C5 /* mistery background.png */,
+				A44563951AE93D440040D1C5 /* mistery room card.png */,
+				A44563961AE93D440040D1C5 /* mistery-above.png */,
+				A44563971AE93D440040D1C5 /* mistery-back-press.png */,
+				A44563981AE93D440040D1C5 /* mistery-back.png */,
+				A44563991AE93D440040D1C5 /* photo dark.png */,
+				A445639A1AE93D440040D1C5 /* photo save-press.png */,
+				A445639B1AE93D440040D1C5 /* photo save.png */,
+				A445639C1AE93D440040D1C5 /* photo share-press.png */,
+				A445639D1AE93D440040D1C5 /* photo share.png */,
+				A445639E1AE93D440040D1C5 /* photo-cancel-press.png */,
+				A445639F1AE93D440040D1C5 /* photo-cancel.png */,
+				A44563A01AE93D440040D1C5 /* price.png */,
+				A44563A11AE93D440040D1C5 /* star.png */,
+				A44563A21AE93D440040D1C5 /* store background.png */,
+				A44563A31AE93D440040D1C5 /* store to mistery-press.png */,
+				A44563A41AE93D440040D1C5 /* store to mistery.png */,
+				A44563A51AE93D440040D1C5 /* store-above.png */,
+				A44563A61AE93D440040D1C5 /* store-below.png */,
+				A44563A71AE93D440040D1C5 /* store-introduce board.png */,
+				A44563A81AE93D440040D1C5 /* store-introduce title.png */,
+				A44563A91AE93D440040D1C5 /* sure-press.png */,
+				A44563AA1AE93D440040D1C5 /* sure.png */,
+				A44563D31AE93D610040D1C5 /* 虚线.png */,
+				A44563AB1AE93D440040D1C5 /* youpiaotiao.png */,
+			);
+			name = storeLucky;
 			sourceTree = "<group>";
 		};
 		A44BB6D61ADCA647009D2378 /* images */ = {
@@ -463,7 +588,6 @@
 			children = (
 				A45C93891AE8F9730081346B /* sharesave normal.png */,
 				A45C938A1AE8F9730081346B /* sharesave press.png */,
-				A456D26F1AE8C8370032F41F /* photo dark.png */,
 				A456D2701AE8C8370032F41F /* photo save-press.png */,
 				A456D2711AE8C8370032F41F /* photo save.png */,
 				A456D2721AE8C8370032F41F /* photo share-press.png */,
@@ -533,7 +657,7 @@
 		A47D6EAE1AC3E1ED00AC1768 /* Supporting Files */ = {
 			isa = PBXGroup;
 			children = (
-				A45C93851AE8E7FB0081346B /* store&lucky */,
+				A44563341AE93C5E0040D1C5 /* storeLucky */,
 				A456D27D1AE8C83D0032F41F /* photoViewImage */,
 				A44BB6D61ADCA647009D2378 /* images */,
 				A4A211021AD3A411006973E0 /* 01.png */,
@@ -617,10 +741,11 @@
 				A4E6CDB21ACCE54200A1D6EC /* eye2.png */,
 				A4E6CDB31ACCE54200A1D6EC /* eyebrow1.png */,
 				A4E6CDB41ACCE54200A1D6EC /* eyebrow2.png */,
-				A4E6CDB51ACCE54200A1D6EC /* face1.png */,
-				A4E6CDB61ACCE54200A1D6EC /* face2.png */,
 				A4E6CDB71ACCE54200A1D6EC /* facemark1.png */,
 				A4E6CDB81ACCE54200A1D6EC /* facemark2.png */,
+				A445632A1AE9217E0040D1C5 /* face0.png */,
+				A445632B1AE9217E0040D1C5 /* face10.png */,
+				A445632C1AE9217E0040D1C5 /* face11.png */,
 				A4E6CDB91ACCE54200A1D6EC /* gesture1.png */,
 				A4E6CDBA1ACCE54200A1D6EC /* gesture2.png */,
 				A4E6CDBB1ACCE54200A1D6EC /* glasses1.png */,
@@ -638,8 +763,8 @@
 				A4E6CDC41ACCE54200A1D6EC /* hat2.png */,
 				A4E6CDC51ACCE54200A1D6EC /* mood1.png */,
 				A4E6CDC61ACCE54200A1D6EC /* mood2.png */,
-				A4E6CDC71ACCE54200A1D6EC /* mouth1.png */,
-				A4E6CDC81ACCE54200A1D6EC /* mouth2.png */,
+				A44563301AE9220E0040D1C5 /* mouth1.png */,
+				A44563311AE9220E0040D1C5 /* mouth2.png */,
 				A4E6CDC91ACCE54200A1D6EC /* mustache1.png */,
 				A4E6CDCA1ACCE54200A1D6EC /* mustache2.png */,
 				A4E6CDCB1ACCE54200A1D6EC /* nose1.png */,
@@ -741,8 +866,10 @@
 				A4E6CDEF1ACCE54200A1D6EC /* nose1.png in Resources */,
 				A4E6CDD81ACCE54200A1D6EC /* eyebrow2.png in Resources */,
 				A44BB7131ADCA647009D2378 /* back.png in Resources */,
+				A44563B01AE93D440040D1C5 /* cancel-press.png in Resources */,
 				A46BBC4A1ADE52EE009D2280 /* 手势1.png in Resources */,
 				A44BB74A1ADCA647009D2378 /* store-normal-main.png in Resources */,
+				A44563B71AE93D440040D1C5 /* diamond purchase board.png in Resources */,
 				A4E6CDDE1ACCE54200A1D6EC /* gesture2.png in Resources */,
 				A46BBC5C1ADE52EE009D2280 /* 鼻子1.png in Resources */,
 				A4CA3AA41ACA440900D50D80 /* gameViewController.xib in Resources */,
@@ -751,8 +878,10 @@
 				A44BB7281ADCA647009D2378 /* gamebackground.png in Resources */,
 				A4E6CDED1ACCE54200A1D6EC /* mustache1.png in Resources */,
 				A44BB7481ADCA647009D2378 /* share.png in Resources */,
+				A44563B61AE93D440040D1C5 /* diamond not enough board.png in Resources */,
 				51ABD24F1AE78CFB005BC8F0 /* 5.png in Resources */,
 				51ABD24D1AE78CFB005BC8F0 /* 3.png in Resources */,
+				A44563B91AE93D440040D1C5 /* diamond++press.png in Resources */,
 				A4E6CDD41ACCE54200A1D6EC /* clothing2.png in Resources */,
 				A456D27C1AE8C8370032F41F /* photo-cancel.png in Resources */,
 				A46BBC431ADE52EE009D2280 /* 宠物.png in Resources */,
@@ -760,34 +889,48 @@
 				A46BBC541ADE52EE009D2280 /* 胡子1.png in Resources */,
 				A4E6CDF21ACCE54200A1D6EC /* pet2.png in Resources */,
 				A46BBC401ADE52EE009D2280 /* 嘴巴1.png in Resources */,
+				A44563D01AE93D440040D1C5 /* sure-press.png in Resources */,
 				A456D2671AE8C0E40032F41F /* 头发女1.png in Resources */,
 				A4E6CDD61ACCE54200A1D6EC /* eye2.png in Resources */,
+				A44563AD1AE93D440040D1C5 /* box.png in Resources */,
 				A47EF4FC1AE5EFF7005C32E0 /* hair1-2-1.png in Resources */,
 				A45C93881AE8F95F0081346B /* fame1.png in Resources */,
 				A46BBC1E1ADE4075009D2280 /* youpiao.png in Resources */,
+				A44563C21AE93D440040D1C5 /* photo save.png in Resources */,
+				A44563C91AE93D440040D1C5 /* store background.png in Resources */,
 				A46BBC491ADE52EE009D2280 /* 手势.png in Resources */,
 				A46BBC471ADE52EE009D2280 /* 心情.png in Resources */,
-				A456D2761AE8C8370032F41F /* photo dark.png in Resources */,
 				A4C856F41AE64FBD005208F0 /* hair2-4-3-front.png in Resources */,
+				A44563BF1AE93D440040D1C5 /* mistery-back.png in Resources */,
 				A4E6CDE41ACCE54200A1D6EC /* hair1-2-0-front.png in Resources */,
+				A44563321AE9220E0040D1C5 /* mouth1.png in Resources */,
 				A44BB73A1ADCA647009D2378 /* loading1000.png in Resources */,
-				A4E6CDEC1ACCE54200A1D6EC /* mouth2.png in Resources */,
+				A44563CF1AE93D440040D1C5 /* store-introduce title.png in Resources */,
+				A44563B41AE93D440040D1C5 /* diamond board button.png in Resources */,
 				51ABD2651AE78EE0005BC8F0 /* hairG2-7-5-front.png in Resources */,
 				A46BBC411ADE52EE009D2280 /* 头发.png in Resources */,
+				A44563B21AE93D440040D1C5 /* diamond .png in Resources */,
+				A44563B11AE93D440040D1C5 /* cancel.png in Resources */,
 				51ABD24B1AE78CFB005BC8F0 /* 1.png in Resources */,
 				A4E6CDD31ACCE54200A1D6EC /* clothing1.png in Resources */,
+				A44563C71AE93D440040D1C5 /* price.png in Resources */,
+				A44563B51AE93D440040D1C5 /* diamond how much.png in Resources */,
 				A4A211061AD3A411006973E0 /* 02.png in Resources */,
 				A44BB71C1ADCA647009D2378 /* diamond++.png in Resources */,
 				A4E6CDCF1ACCE54200A1D6EC /* background1.png in Resources */,
 				A46BBC521ADE52EE009D2280 /* 背景1.png in Resources */,
+				A44563BD1AE93D440040D1C5 /* mistery-above.png in Resources */,
 				51ABD2641AE78EE0005BC8F0 /* hairG2-7-4-front.png in Resources */,
 				A46BBC511ADE52EE009D2280 /* 背景.png in Resources */,
 				A4C856F11AE64FBD005208F0 /* hair2-4-1-front.png in Resources */,
 				51ABD25E1AE78EE0005BC8F0 /* hairG1-2-1-front.png in Resources */,
 				A4A211011AD3A2F4006973E0 /* rewardViewController.xib in Resources */,
+				A445632F1AE9217E0040D1C5 /* face11.png in Resources */,
 				A46BBC5A1ADE52EE009D2280 /* 衣服1.png in Resources */,
 				A44BB7601ADCFC18009D2378 /* photo.png in Resources */,
+				A44563BB1AE93D440040D1C5 /* mistery background.png in Resources */,
 				A4E6CDEA1ACCE54200A1D6EC /* mood2.png in Resources */,
+				A44563B81AE93D440040D1C5 /* diamond++.png in Resources */,
 				A44BB7121ADCA647009D2378 /* back-press.png in Resources */,
 				A4E6CDE01ACCE54200A1D6EC /* glasses2.png in Resources */,
 				A456D27A1AE8C8370032F41F /* photo share.png in Resources */,
@@ -803,30 +946,35 @@
 				51ABD25D1AE78EE0005BC8F0 /* hairG1-2-0-front.png in Resources */,
 				A44BB75C1ADCF1E7009D2378 /* hengleng1.png in Resources */,
 				A44BB7431ADCA647009D2378 /* save-press.png in Resources */,
-				A4E6CDDA1ACCE54200A1D6EC /* face2.png in Resources */,
+				A44563CC1AE93D440040D1C5 /* store-above.png in Resources */,
 				A44BB7271ADCA647009D2378 /* first back ground.png in Resources */,
+				A44563CE1AE93D440040D1C5 /* store-introduce board.png in Resources */,
 				A456D2661AE8C0E40032F41F /* 头发女.png in Resources */,
 				A44BB7571ADCE9BC009D2378 /* fame-choosed1.png in Resources */,
 				A4E6CDEE1ACCE54200A1D6EC /* mustache2.png in Resources */,
 				A46BBC421ADE52EE009D2280 /* 头发1.png in Resources */,
-				A45C93861AE8E7FB0081346B /* store&lucky in Resources */,
 				A44BB7381ADCA647009D2378 /* inside-luckystore.png in Resources */,
+				A445632D1AE9217E0040D1C5 /* face0.png in Resources */,
+				A44563BA1AE93D440040D1C5 /* heart.png in Resources */,
 				A44BB7161ADCA647009D2378 /* boy-normal.png in Resources */,
 				A46BBC551ADE52EE009D2280 /* 脸型.png in Resources */,
+				A44563AF1AE93D440040D1C5 /* buy.png in Resources */,
 				A46BBC201ADE40D6009D2280 /* Main.storyboard in Resources */,
+				A44563D21AE93D440040D1C5 /* youpiaotiao.png in Resources */,
 				A44BB7461ADCA647009D2378 /* setting-press.png in Resources */,
 				A44BB7351ADCA647009D2378 /* inside-clothstore-press.png in Resources */,
 				51ABD2631AE78EE0005BC8F0 /* hairG2-7-3-front.png in Resources */,
+				A44563C01AE93D440040D1C5 /* photo dark.png in Resources */,
 				A456D27F1AE8C8880032F41F /* youpiaotiao.png in Resources */,
 				51ABD25F1AE78EE0005BC8F0 /* hairG1-2.png in Resources */,
 				A456D26C1AE8C73B0032F41F /* storeViewController.xib in Resources */,
 				51ABD2621AE78EE0005BC8F0 /* hairG2-7-2-front.png in Resources */,
 				A4E6CDD21ACCE54200A1D6EC /* body1000.png in Resources */,
 				A46BBC571ADE52EE009D2280 /* 脸饰.png in Resources */,
-				A4E6CDEB1ACCE54200A1D6EC /* mouth1.png in Resources */,
 				A47EF4FD1AE5EFF7005C32E0 /* hair2-4-0.png in Resources */,
 				A44BB7451ADCA647009D2378 /* setting-normal.png in Resources */,
 				A4E6CDDC1ACCE54200A1D6EC /* facemark2.png in Resources */,
+				A445632E1AE9217E0040D1C5 /* face10.png in Resources */,
 				A4E6CDF11ACCE54200A1D6EC /* pet1.png in Resources */,
 				A46BBC591ADE52EE009D2280 /* 衣服.png in Resources */,
 				A4A211051AD3A411006973E0 /* 01.png in Resources */,
@@ -834,30 +982,38 @@
 				51ABD24E1AE78CFB005BC8F0 /* 4.png in Resources */,
 				A46BBC4D1ADE52EE009D2280 /* 眼睛.png in Resources */,
 				A46BBC3F1ADE52EE009D2280 /* 嘴巴.png in Resources */,
+				A44563CB1AE93D440040D1C5 /* store to mistery.png in Resources */,
 				A4E6CDD11ACCE54200A1D6EC /* body1.png in Resources */,
 				A4C856F51AE64FBD005208F0 /* hair2-4-3.png in Resources */,
 				A4C856F31AE64FBD005208F0 /* hair2-4-2.png in Resources */,
 				A44BB7391ADCA647009D2378 /* loading1.png in Resources */,
+				A44563AE1AE93D440040D1C5 /* buy-press.png in Resources */,
 				A456D27B1AE8C8370032F41F /* photo-cancel-press.png in Resources */,
 				A45C938B1AE8F9730081346B /* sharesave normal.png in Resources */,
 				A4CA3AA61ACA63A900D50D80 /* GameData.plist in Resources */,
 				A4E6CDD71ACCE54200A1D6EC /* eyebrow1.png in Resources */,
-				A4E6CDD91ACCE54200A1D6EC /* face1.png in Resources */,
 				A44BB75F1ADCFC18009D2378 /* photo-press.png in Resources */,
+				A44563D41AE93D610040D1C5 /* 虚线.png in Resources */,
 				51ABD2601AE78EE0005BC8F0 /* hairG2-7-0-front.png in Resources */,
 				A44BB7641ADD1814009D2378 /* boy portrait.png in Resources */,
 				A4E6CDDF1ACCE54200A1D6EC /* glasses1.png in Resources */,
 				A4E6CDF01ACCE54200A1D6EC /* nose2.png in Resources */,
 				A4E6CDE11ACCE54200A1D6EC /* hair1-2-1-back.png in Resources */,
 				A44BB7651ADD1814009D2378 /* girl portrait.png in Resources */,
+				A44563D11AE93D440040D1C5 /* sure.png in Resources */,
+				A44563CA1AE93D440040D1C5 /* store to mistery-press.png in Resources */,
 				A46BBC4C1ADE52EE009D2280 /* 眼眉1.png in Resources */,
+				A44563331AE9220E0040D1C5 /* mouth2.png in Resources */,
 				A46BBC501ADE52EE009D2280 /* 眼镜1.png in Resources */,
 				A4C856F21AE64FBD005208F0 /* hair2-4-2-front.png in Resources */,
+				A44563BC1AE93D440040D1C5 /* mistery room card.png in Resources */,
 				A4E6CDDD1ACCE54200A1D6EC /* gesture1.png in Resources */,
+				A44563C51AE93D440040D1C5 /* photo-cancel-press.png in Resources */,
 				A4E6CDE81ACCE54200A1D6EC /* hat2.png in Resources */,
 				A47D6EBF1AC3E1ED00AC1768 /* LaunchScreen.xib in Resources */,
 				A47D6EBC1AC3E1ED00AC1768 /* Images.xcassets in Resources */,
 				A4D659271ACE30D600FE32CE /* hair1-2.png in Resources */,
+				A44563CD1AE93D440040D1C5 /* store-below.png in Resources */,
 				A456D2791AE8C8370032F41F /* photo share-press.png in Resources */,
 				A44BB73C1ADCA647009D2378 /* luckystore-press-main.png in Resources */,
 				A44BB71B1ADCA647009D2378 /* diamond frame.png in Resources */,
@@ -865,11 +1021,16 @@
 				A46BBC531ADE52EE009D2280 /* 胡子.png in Resources */,
 				51ABD2611AE78EE0005BC8F0 /* hairG2-7-1-front.png in Resources */,
 				A47EF4FB1AE5EFF7005C32E0 /* hair1-2-0.png in Resources */,
+				A44563C31AE93D440040D1C5 /* photo share-press.png in Resources */,
 				A46BBC481ADE52EE009D2280 /* 心情1.png in Resources */,
+				A44563C81AE93D440040D1C5 /* star.png in Resources */,
+				A44563AC1AE93D440040D1C5 /* box-open.png in Resources */,
 				A4E6CDE91ACCE54200A1D6EC /* mood1.png in Resources */,
 				A4A2110B1AD3B03F006973E0 /* 03.png in Resources */,
 				A4E6CDD51ACCE54200A1D6EC /* eye1.png in Resources */,
+				A44563C11AE93D440040D1C5 /* photo save-press.png in Resources */,
 				A44BB7471ADCA647009D2378 /* share-press.png in Resources */,
+				A44563BE1AE93D440040D1C5 /* mistery-back-press.png in Resources */,
 				A4D659281ACE30D600FE32CE /* hair2-4.png in Resources */,
 				A44BB7181ADCA647009D2378 /* choose.png in Resources */,
 				A456D2781AE8C8370032F41F /* photo save.png in Resources */,
@@ -879,6 +1040,7 @@
 				A44BB73B1ADCA647009D2378 /* luckystore-normal-main.png in Resources */,
 				A46BBC5B1ADE52EE009D2280 /* 鼻子.png in Resources */,
 				A4E6CDE31ACCE54200A1D6EC /* hair1-2-0-back.png in Resources */,
+				A44563B31AE93D440040D1C5 /* diamond board button-press.png in Resources */,
 				A44BB72B1ADCA647009D2378 /* girl-normal.png in Resources */,
 				A456D2771AE8C8370032F41F /* photo save-press.png in Resources */,
 				A44BB7371ADCA647009D2378 /* inside-luckystore-press.png in Resources */,
@@ -886,11 +1048,13 @@
 				51ABD2661AE78EE0005BC8F0 /* hairG2-7-6-front.png in Resources */,
 				A44BB7441ADCA647009D2378 /* save.png in Resources */,
 				A46BBC4E1ADE52EE009D2280 /* 眼睛1.png in Resources */,
+				A44563C41AE93D440040D1C5 /* photo share.png in Resources */,
 				51ABD2501AE78CFB005BC8F0 /* 6.png in Resources */,
 				A44BB7171ADCA647009D2378 /* boy-press.png in Resources */,
 				A46BBC581ADE52EE009D2280 /* 脸饰1.png in Resources */,
 				A47EF4FE1AE5EFF7005C32E0 /* hair2-4-1.png in Resources */,
 				A4E6CDDB1ACCE54200A1D6EC /* facemark1.png in Resources */,
+				A44563C61AE93D440040D1C5 /* photo-cancel.png in Resources */,
 				A44BB74B1ADCA647009D2378 /* store-press-main.png in Resources */,
 				A44BB7541ADCE7D2009D2378 /* slip-background2.png in Resources */,
 				A44BB7361ADCA647009D2378 /* inside-clothstore.png in Resources */,
