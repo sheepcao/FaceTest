@@ -13,9 +13,7 @@
 
 #import <AssetsLibrary/AssetsLibrary.h>
 
-#define CATALOG_NUM 15
-#define CATALOG_BUTTON_WIDTH 70
-#define ELEMENT_WIDTH (SCREEN_WIDTH-(6*4))/3
+
 
 
 @interface gameViewController ()<UIScrollViewDelegate>
@@ -148,8 +146,11 @@
     [self.ListsScroll setContentOffset:CGPointMake(SCREEN_WIDTH * sender.tag, 0)];
     
     UIView *superView = [sender superview];
-    for (UIButton *subBtn in [superView subviews]) {
-        [subBtn setSelected:NO];
+    for (UIView *subView in [superView subviews]) {
+        if ([subView isKindOfClass:[UIButton class]]) {
+            UIButton *subBtn = (UIButton *)subView;
+            [subBtn setSelected:NO];
+        }
     }
     [sender setSelected:YES];
     

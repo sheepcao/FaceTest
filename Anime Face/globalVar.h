@@ -24,7 +24,9 @@
 #define IS_IPHONE_6 (IS_IPHONE && SCREEN_MAX_LENGTH == 667.0)
 #define IS_IPHONE_6P (IS_IPHONE && SCREEN_MAX_LENGTH == 736.0)
 
-
+#define CATALOG_NUM 15
+#define CATALOG_BUTTON_WIDTH 70
+#define ELEMENT_WIDTH (SCREEN_WIDTH-(6*4))/3
 
 #define REVIEW_URL @"http://itunes.apple.com/us/app/anygoal/id978629670?ls=1&mt=8"
 

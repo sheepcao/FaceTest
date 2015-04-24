@@ -7,7 +7,6 @@
 //
 
 #import "ViewController.h"
-#import "globalVar.h"
 #import "APLMoveMeView.h"
 //#import "APLPlacardView.h"
 

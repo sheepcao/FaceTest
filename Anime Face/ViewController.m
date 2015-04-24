@@ -116,6 +116,8 @@
 - (IBAction)store:(id)sender {
     
     storeViewController *myStore = [[storeViewController alloc] initWithNibName:@"storeViewController" bundle:nil];
+    myStore.GameData = self.GameDatas;
+    
     [self.navigationController pushViewController:myStore animated:YES];
 
     
