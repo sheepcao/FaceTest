@@ -328,4 +328,7 @@ bool showingDefault;
 
 - (IBAction)addDiamond:(id)sender {
 }
+
+- (IBAction)colorBtnTapped:(id)sender {
+}
 @end
