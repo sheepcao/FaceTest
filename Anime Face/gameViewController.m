@@ -181,7 +181,7 @@
         NSArray *listElements = [listsText objectForKey:[[self.GameData objectForKey:[NSString stringWithFormat:@"catalog%d",self.sex]] objectAtIndex:i]];
 
         UIScrollView *oneList = [[UIScrollView alloc] initWithFrame:CGRectMake(0+i*SCREEN_WIDTH, 0, SCREEN_WIDTH,  self.ListsScroll.frame.size.height)];
-        [oneList setContentSize:CGSizeMake(SCREEN_WIDTH,(1+listElements.count/3)*(ELEMENT_WIDTH/1.2))];
+        [oneList setContentSize:CGSizeMake(SCREEN_WIDTH,(1+listElements.count/3)*(ELEMENT_WIDTH+6)/1.2)];
         oneList.canCancelContentTouches = YES;
         oneList.bounces = NO;
         oneList.showsVerticalScrollIndicator=NO;
@@ -192,7 +192,7 @@
         [self.ListsScroll addSubview:oneList];
         
         for (int j = 0 ; j<listElements.count; j++) {
-            elemntButton *element = [[elemntButton alloc] initWithFrame:CGRectMake(0+(j%3)*(ELEMENT_WIDTH+6), 0+(j/3)*(ELEMENT_WIDTH+6)/1.2, ELEMENT_WIDTH, ELEMENT_WIDTH/1.2)];
+            elemntButton *element = [[elemntButton alloc] initWithFrame:CGRectMake(6+(j%3)*(ELEMENT_WIDTH+6), 0+(j/3)*(ELEMENT_WIDTH+6)/1.2, ELEMENT_WIDTH, ELEMENT_WIDTH/1.2)];
             
             CGFloat sidesOffside = ELEMENT_WIDTH - ELEMENT_WIDTH/1.2;
             

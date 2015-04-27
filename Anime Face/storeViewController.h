@@ -38,4 +38,11 @@
 @property (strong, nonatomic) IBOutlet NSLayoutConstraint *buttonDistanceV2;
 
 @property (strong, nonatomic) IBOutlet NSLayoutConstraint *buttonDistanceV1;
+
+
+- (IBAction)backTap:(id)sender;
+- (IBAction)goLuckyHouse:(id)sender;
+- (IBAction)addDiamond:(id)sender;
+
+
 @end

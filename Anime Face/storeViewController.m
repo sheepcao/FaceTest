@@ -35,15 +35,15 @@
 -(void)setupCatalog
 {
     
-    [self.catalogScroll setContentSize:CGSizeMake(CATALOG_NUM*CATALOG_BUTTON_WIDTH, 40)];
+    [self.catalogScroll setContentSize:CGSizeMake(CATALOG_NUM_STORE*CATALOG_BUTTON_WIDTH, 40)];
     
     
     self.catalogScroll.canCancelContentTouches = YES;
     
     
-    NSArray *catalogText = [self.GameData objectForKey:@"catalog1"];
+    NSArray *catalogText = [self.GameData objectForKey:@"catalogStore"];
     
-    for (int i = 0 ; i < CATALOG_NUM; i++) {
+    for (int i = 0 ; i < catalogText.count; i++) {
         UIButton *catalogBtn = [[UIButton alloc] initWithFrame:CGRectMake(0+i*CATALOG_BUTTON_WIDTH, 0, CATALOG_BUTTON_WIDTH, 40)];
         //        [catalogBtn setTitle:catalogText[i] forState:UIControlStateNormal];
         [catalogBtn setImage:[UIImage imageNamed:catalogText[i]] forState:UIControlStateNormal];
@@ -78,7 +78,7 @@
         
         
         [self.buttonDistanceV1 setConstant:3];
-        [self.buttonDistanceV2 setConstant:-5];
+        [self.buttonDistanceV2 setConstant:3];
         [self.buttonDistanceV3 setConstant:3];
         
         [self.view setNeedsUpdateConstraints];
@@ -117,7 +117,7 @@
 -(void)setupLists
 {
 //    [self.productListScorll setFrame:CGRectMake(0, self.catalogScroll.frame.origin.y+self.catalogScroll.frame.size.height, SCREEN_WIDTH, self.productListScorll.frame.size.height)];
-    [self.productListScorll setContentSize:CGSizeMake(CATALOG_NUM*SCREEN_WIDTH,self.productListScorll.frame.size.height)];
+    [self.productListScorll setContentSize:CGSizeMake(CATALOG_NUM_STORE*SCREEN_WIDTH,self.productListScorll.frame.size.height)];
     self.productListScorll.canCancelContentTouches = YES;
     self.productListScorll.pagingEnabled = YES;
     self.productListScorll.bounces = NO;
@@ -127,8 +127,8 @@
     NSDictionary *listsText = [self.GameData objectForKey:@"Lists"];
     
     
-    for (int i = 0 ; i < CATALOG_NUM; i++) {
-        NSArray *listElements = [listsText objectForKey:[[self.GameData objectForKey:@"catalog1"] objectAtIndex:i]];
+    for (int i = 0 ; i < CATALOG_NUM_STORE; i++) {
+        NSArray *listElements = [listsText objectForKey:[[self.GameData objectForKey:@"catalogStore"] objectAtIndex:i]];
         
         UIScrollView *oneList = [[UIScrollView alloc] initWithFrame:CGRectMake(0+i*SCREEN_WIDTH, 0, SCREEN_WIDTH,  self.productListScorll.frame.size.height)];
         [oneList setContentSize:CGSizeMake(SCREEN_WIDTH,(1+listElements.count/3)*(ELEMENT_WIDTH/1.2))];
@@ -185,7 +185,7 @@
     [sender setSelected:YES];
     
 
-    if ([sender.imageLevel intValue]==1) {
+    if ([sender.imageLevel intValue]==0) {
         
         if (!self.starView.isHidden) {
             [self.starView setHidden:YES];
@@ -194,8 +194,12 @@
             [self.colorView setHidden:NO];
         }
         
+        [self.faceImage setImage:[UIImage imageNamed:@"face0"]];
+        
         NSString *frontImageName = [NSString stringWithFormat:@"%@-0-front",sender.imageName];
         [self.productImage setImage:[UIImage imageNamed:frontImageName]];
+        
+        
         
         NSString *backImageName = [NSString stringWithFormat:@"%@-0-back",sender.imageName];
         UIImage *backImage = [UIImage imageNamed:backImageName];
@@ -217,6 +221,13 @@
         if (!self.colorView.isHidden) {
             [self.colorView setHidden:YES];
         }
+        
+        [self.backHairImage setImage:nil];
+        [self.faceImage setImage:nil];
+        
+        
+        NSString *frontImageName = sender.imageName;
+        [self.productImage setImage:[UIImage imageNamed:frontImageName]];
     }
     
     
@@ -257,4 +268,12 @@
 }
 */
 
+- (IBAction)backTap:(id)sender {
+}
+
+- (IBAction)goLuckyHouse:(id)sender {
+}
+
+- (IBAction)addDiamond:(id)sender {
+}
 @end

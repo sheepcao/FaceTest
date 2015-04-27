@@ -6,8 +6,18 @@
 	<dict>
 		<key>宠物</key>
 		<array>
+			<string>pet0</string>
 			<string>pet1</string>
 			<string>pet2</string>
+			<string>pet3</string>
+			<string>pet4</string>
+			<string>pet5</string>
+			<string>pet6</string>
+			<string>pet7</string>
+			<string>pet8</string>
+			<string>pet9</string>
+			<string>pet10</string>
+			<string>pet11</string>
 		</array>
 		<key>背景</key>
 		<array>
@@ -16,13 +26,71 @@
 		</array>
 		<key>帽子</key>
 		<array>
+			<string>hat0</string>
 			<string>hat1</string>
 			<string>hat2</string>
+			<string>hat3</string>
+			<string>hat4</string>
+			<string>hat5</string>
+			<string>hat6</string>
+			<string>hat7</string>
+			<string>hat8</string>
+			<string>hat9</string>
+			<string>hat10</string>
+			<string>hat11</string>
+			<string>hat12</string>
+			<string>hat13</string>
+			<string>hat14</string>
+			<string>hat15</string>
+			<string>hat16</string>
+			<string>hat17</string>
+			<string>hat18</string>
+			<string>hat19</string>
+			<string>hat20</string>
+			<string>hat21</string>
+			<string>hat22</string>
+			<string>hat23</string>
+			<string>hat24</string>
+			<string>hat25</string>
+			<string>hat26</string>
+			<string>hat27</string>
+			<string>hat28</string>
+			<string>hat29</string>
+			<string>hat30</string>
+			<string>hat31</string>
+			<string>hat32</string>
+			<string>hat33</string>
+			<string>hat34</string>
+			<string>hat35</string>
+			<string>hat36</string>
+			<string>hat37</string>
 		</array>
 		<key>脸饰</key>
 		<array>
+			<string>facemark0</string>
 			<string>facemark1</string>
 			<string>facemark2</string>
+			<string>facemark3</string>
+			<string>facemark4</string>
+			<string>facemark5</string>
+			<string>facemark6</string>
+			<string>facemark7</string>
+			<string>facemark8</string>
+			<string>facemark9</string>
+			<string>facemark10</string>
+			<string>facemark11</string>
+			<string>facemark12</string>
+			<string>facemark13</string>
+			<string>facemark14</string>
+			<string>facemark15</string>
+			<string>facemark16</string>
+			<string>facemark17</string>
+			<string>facemark18</string>
+			<string>facemark19</string>
+			<string>facemark20</string>
+			<string>facemark21</string>
+			<string>facemark22</string>
+			<string>facemark23</string>
 		</array>
 		<key>心情</key>
 		<array>
@@ -31,38 +99,246 @@
 		</array>
 		<key>鼻子</key>
 		<array>
+			<string>nose0</string>
 			<string>nose1</string>
 			<string>nose2</string>
+			<string>nose3</string>
+			<string>nose4</string>
+			<string>nose5</string>
+			<string>nose6</string>
+			<string>nose7</string>
+			<string>nose8</string>
+			<string>nose9</string>
+			<string>nose10</string>
+			<string>nose11</string>
+			<string>nose12</string>
+			<string>nose13</string>
 		</array>
 		<key>眼镜</key>
 		<array>
-			<string>glasses1</string>
-			<string>glasses2</string>
+			<string>glass0</string>
+			<string>glass1</string>
+			<string>glass2</string>
+			<string>glass3</string>
+			<string>glass4</string>
+			<string>glass5</string>
+			<string>glass6</string>
+			<string>glass7</string>
+			<string>glass8</string>
+			<string>glass9</string>
+			<string>glass10</string>
+			<string>glass11</string>
+			<string>glass12</string>
+			<string>glass13</string>
+			<string>glass14</string>
+			<string>glass15</string>
+			<string>glass16</string>
+			<string>glass17</string>
 		</array>
 		<key>手势</key>
 		<array>
+			<string>gesture0</string>
 			<string>gesture1</string>
 			<string>gesture2</string>
+			<string>gesture2.5</string>
+			<string>gesture3</string>
+			<string>gesture3.5</string>
+			<string>gesture4</string>
+			<string>gesture5</string>
+			<string>gesture6</string>
+			<string>gesture7</string>
+			<string>gesture8</string>
+			<string>gesture9</string>
+			<string>gesture10</string>
+			<string>gesture11</string>
+			<string>gesture12</string>
+			<string>gesture13</string>
+			<string>gesture14</string>
+			<string>gesture15</string>
+			<string>gesture16</string>
+			<string>gesture17</string>
+			<string>gesture18</string>
+			<string>gesture19</string>
+			<string>gesture20</string>
+			<string>gesture21</string>
+			<string>gesture22</string>
+			<string>gesture23</string>
+			<string>gesture24</string>
+			<string>gesture25</string>
+			<string>gesture26</string>
+			<string>gesture27</string>
+			<string>gesture28</string>
+			<string>gesture29</string>
+			<string>gesture30</string>
+			<string>gesture31</string>
+			<string>gesture32</string>
+			<string>gesture33</string>
 		</array>
 		<key>嘴巴</key>
 		<array>
+			<string>mouth0</string>
 			<string>mouth1</string>
 			<string>mouth2</string>
+			<string>mouth3</string>
+			<string>mouth4</string>
+			<string>mouth5</string>
+			<string>mouth6</string>
+			<string>mouth7</string>
+			<string>mouth8</string>
+			<string>mouth9</string>
+			<string>mouth10</string>
+			<string>mouth11</string>
+			<string>mouth12</string>
+			<string>mouth13</string>
+			<string>mouth14</string>
+			<string>mouth15</string>
+			<string>mouth16</string>
+			<string>mouth17</string>
+			<string>mouth18</string>
+			<string>mouth19</string>
+			<string>mouth20</string>
+			<string>mouth21</string>
+			<string>mouth22</string>
+			<string>mouth23</string>
+			<string>mouth24</string>
+			<string>mouth25</string>
+			<string>mouth26</string>
+			<string>mouth27</string>
+			<string>mouth28</string>
+			<string>mouth29</string>
+			<string>mouth30</string>
+			<string>mouth31</string>
+			<string>mouth32</string>
+			<string>mouth33</string>
+			<string>mouth34</string>
 		</array>
 		<key>眼眉</key>
 		<array>
+			<string>eyebrow0</string>
 			<string>eyebrow1</string>
 			<string>eyebrow2</string>
+			<string>eyebrow3</string>
+			<string>eyebrow4</string>
+			<string>eyebrow5</string>
+			<string>eyebrow6</string>
+			<string>eyebrow7</string>
+			<string>eyebrow8</string>
+			<string>eyebrow9</string>
+			<string>eyebrow10</string>
+			<string>eyebrow11</string>
+			<string>eyebrow12</string>
+			<string>eyebrow13</string>
+			<string>eyebrow14</string>
+			<string>eyebrow15</string>
+			<string>eyebrow16</string>
+			<string>eyebrow17</string>
+			<string>eyebrow18</string>
 		</array>
 		<key>眼睛</key>
 		<array>
+			<string>eye0</string>
 			<string>eye1</string>
+			<string>eye01</string>
 			<string>eye2</string>
+			<string>eye3</string>
+			<string>eye4</string>
+			<string>eye5</string>
+			<string>eye6</string>
+			<string>eye7</string>
+			<string>eye8</string>
+			<string>eye9</string>
+			<string>eye10</string>
+			<string>eye11</string>
+			<string>eye12</string>
+			<string>eye13</string>
+			<string>eye14</string>
+			<string>eye15</string>
+			<string>eye16</string>
+			<string>eye17</string>
+			<string>eye18</string>
+			<string>eye19</string>
+			<string>eye20</string>
+			<string>eye21</string>
+			<string>eye22</string>
+			<string>eye23</string>
+			<string>eye24</string>
+			<string>eye25</string>
+			<string>eye26</string>
+			<string>eye27</string>
+			<string>eye28</string>
+			<string>eye29</string>
+			<string>eye30</string>
 		</array>
 		<key>衣服</key>
 		<array>
-			<string>clothing1</string>
-			<string>clothing2</string>
+			<string>cloth-b-1</string>
+			<string>cloth-b-2</string>
+			<string>cloth-b-3</string>
+			<string>cloth-b-4</string>
+			<string>cloth-b-5</string>
+			<string>cloth-b-6</string>
+			<string>cloth-b-7</string>
+			<string>cloth-b-8</string>
+			<string>cloth-b-9</string>
+			<string>cloth-b-10</string>
+			<string>cloth-b-11</string>
+			<string>cloth-b-12</string>
+			<string>cloth-b-13</string>
+			<string>cloth-b-14</string>
+			<string>cloth-b-15</string>
+			<string>cloth-b-16</string>
+			<string>cloth-b-17</string>
+			<string>cloth-b-18</string>
+			<string>cloth-b-19</string>
+			<string>cloth-b-20</string>
+			<string>cloth-b-21</string>
+			<string>cloth-b-22</string>
+			<string>cloth-b-23</string>
+			<string>cloth-b-24</string>
+			<string>cloth-b-25</string>
+			<string>cloth-b-26</string>
+			<string>cloth-b-27</string>
+			<string>cloth-b-28</string>
+			<string>cloth-b-29</string>
+			<string>cloth-b-30</string>
+			<string>cloth-tong1</string>
+			<string>cloth-tong2</string>
+			<string>cloth-tong3</string>
+			<string>cloth-tong4</string>
+		</array>
+		<key>衣服女</key>
+		<array>
+			<string>cloth-g-1</string>
+			<string>cloth-g-2</string>
+			<string>cloth-g-3</string>
+			<string>cloth-g-4</string>
+			<string>cloth-g-5</string>
+			<string>cloth-g-6</string>
+			<string>cloth-g-7</string>
+			<string>cloth-g-8</string>
+			<string>cloth-g-9</string>
+			<string>cloth-g-10</string>
+			<string>cloth-g-11</string>
+			<string>cloth-g-12</string>
+			<string>cloth-g-13</string>
+			<string>cloth-g-14</string>
+			<string>cloth-g-15</string>
+			<string>cloth-g-16</string>
+			<string>cloth-g-17</string>
+			<string>cloth-g-18</string>
+			<string>cloth-g-19</string>
+			<string>cloth-g-20</string>
+			<string>cloth-g-21</string>
+			<string>cloth-g-22</string>
+			<string>cloth-g-23</string>
+			<string>cloth-g-24</string>
+			<string>cloth-g-25</string>
+			<string>cloth-g-26</string>
+			<string>cloth-g-27</string>
+			<string>cloth-tong1</string>
+			<string>cloth-tong2</string>
+			<string>cloth-tong3</string>
+			<string>cloth-tong4</string>
 		</array>
 		<key>胡子</key>
 		<array>
@@ -81,9 +357,18 @@
 		</array>
 		<key>脸型</key>
 		<array>
+			<string>face0</string>
+			<string>face1</string>
+			<string>face2</string>
+			<string>face3</string>
+			<string>face4</string>
+			<string>face5</string>
+			<string>face6</string>
+			<string>face7</string>
+			<string>face8</string>
+			<string>face9</string>
 			<string>face10</string>
 			<string>face11</string>
-			<string>face0</string>
 		</array>
 	</dict>
 	<key>catalog1</key>
@@ -109,13 +394,27 @@
 		<string>脸型</string>
 		<string>头发女</string>
 		<string>胡子</string>
-		<string>衣服</string>
+		<string>衣服女</string>
 		<string>眼睛</string>
 		<string>眼眉</string>
 		<string>嘴巴</string>
 		<string>手势</string>
 		<string>眼镜</string>
 		<string>鼻子</string>
+		<string>心情</string>
+		<string>脸饰</string>
+		<string>帽子</string>
+		<string>背景</string>
+		<string>宠物</string>
+	</array>
+	<key>catalogStore</key>
+	<array>
+		<string>头发</string>
+		<string>衣服</string>
+		<string>眼睛</string>
+		<string>嘴巴</string>
+		<string>手势</string>
+		<string>眼镜</string>
 		<string>心情</string>
 		<string>脸饰</string>
 		<string>帽子</string>
