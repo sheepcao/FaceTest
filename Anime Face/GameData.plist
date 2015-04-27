@@ -423,6 +423,23 @@
 	</array>
 	<key>productInfo</key>
 	<dict>
+		<key>头发</key>
+		<array>
+			<dict>
+				<key>name</key>
+				<string>hair1-2</string>
+				<key>title</key>
+				<string>XXX</string>
+				<key>price</key>
+				<string>200</string>
+				<key>star</key>
+				<string>2</string>
+				<key>colorNum</key>
+				<string>2</string>
+				<key>sex</key>
+				<string>2</string>
+			</dict>
+		</array>
 		<key>宠物</key>
 		<array>
 			<dict>

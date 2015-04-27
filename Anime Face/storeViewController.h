@@ -48,6 +48,6 @@
 - (IBAction)goLuckyHouse:(id)sender;
 - (IBAction)addDiamond:(id)sender;
 
-- (IBAction)colorBtnTapped:(id)sender;
+- (IBAction)colorBtnTapped:(UIButton *)sender;
 
 @end

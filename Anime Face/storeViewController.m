@@ -223,6 +223,7 @@ bool showingDefault;
     [self.priceLabel setText:[NSString stringWithFormat:@"%d",sender.price]];
     
     [self drawStars:sender.stars];
+    [self drawColors:sender.colorNum];
 
     sexSelectedNow = sender.sex;
     
@@ -285,6 +286,17 @@ bool showingDefault;
     }
 }
 
+-(void)drawColors:(int)starNum
+{
+    for (int i = 0; i<starNum; i++) {
+        [self.colorButtons[i] setHidden:NO];
+    }
+    for (int i = starNum; i<7; i++) {
+        [self.colorButtons[i] setHidden:YES];
+        
+    }
+}
+
 
 
 - (void)didReceiveMemoryWarning {
@@ -329,6 +341,10 @@ bool showingDefault;
 - (IBAction)addDiamond:(id)sender {
 }
 
-- (IBAction)colorBtnTapped:(id)sender {
+- (IBAction)colorBtnTapped:(UIButton *)sender {
+    
+
+    
+    
 }
 @end
