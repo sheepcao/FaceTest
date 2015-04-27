@@ -179,7 +179,7 @@
 		A4A2110E1AD3B2AE006973E0 /* imageWithName.m in Sources */ = {isa = PBXBuildFile; fileRef = A4A2110D1AD3B2AE006973E0 /* imageWithName.m */; };
 		A4BF61D01AEDC55A009B38BE /* gesture0.png in Resources */ = {isa = PBXBuildFile; fileRef = A4BF61AB1AEDC55A009B38BE /* gesture0.png */; };
 		A4BF61D11AEDC55A009B38BE /* gesture1.png in Resources */ = {isa = PBXBuildFile; fileRef = A4BF61AC1AEDC55A009B38BE /* gesture1.png */; };
-		A4BF61D21AEDC55A009B38BE /* gesture2.5 .png in Resources */ = {isa = PBXBuildFile; fileRef = A4BF61AD1AEDC55A009B38BE /* gesture2.5 .png */; };
+		A4BF61D21AEDC55A009B38BE /* gesture2.5.png in Resources */ = {isa = PBXBuildFile; fileRef = A4BF61AD1AEDC55A009B38BE /* gesture2.5.png */; };
 		A4BF61D31AEDC55A009B38BE /* gesture2.png in Resources */ = {isa = PBXBuildFile; fileRef = A4BF61AE1AEDC55A009B38BE /* gesture2.png */; };
 		A4BF61D41AEDC55A009B38BE /* gesture3.5.png in Resources */ = {isa = PBXBuildFile; fileRef = A4BF61AF1AEDC55A009B38BE /* gesture3.5.png */; };
 		A4BF61D51AEDC55A009B38BE /* gesture3.png in Resources */ = {isa = PBXBuildFile; fileRef = A4BF61B01AEDC55A009B38BE /* gesture3.png */; };
@@ -213,7 +213,6 @@
 		A4BF61F11AEDC55A009B38BE /* gesture31.png in Resources */ = {isa = PBXBuildFile; fileRef = A4BF61CC1AEDC55A009B38BE /* gesture31.png */; };
 		A4BF61F21AEDC55A009B38BE /* gesture32.png in Resources */ = {isa = PBXBuildFile; fileRef = A4BF61CD1AEDC55A009B38BE /* gesture32.png */; };
 		A4BF61F31AEDC55A009B38BE /* gesture33.png in Resources */ = {isa = PBXBuildFile; fileRef = A4BF61CE1AEDC55A009B38BE /* gesture33.png */; };
-		A4BF61F41AEDC55A009B38BE /* 预览框图标 in Resources */ = {isa = PBXBuildFile; fileRef = A4BF61CF1AEDC55A009B38BE /* 预览框图标 */; };
 		A4BF62191AEDC610009B38BE /* mouth0.png in Resources */ = {isa = PBXBuildFile; fileRef = A4BF61F61AEDC610009B38BE /* mouth0.png */; };
 		A4BF621A1AEDC610009B38BE /* mouth1.png in Resources */ = {isa = PBXBuildFile; fileRef = A4BF61F71AEDC610009B38BE /* mouth1.png */; };
 		A4BF621B1AEDC610009B38BE /* mouth2.png in Resources */ = {isa = PBXBuildFile; fileRef = A4BF61F81AEDC610009B38BE /* mouth2.png */; };
@@ -479,6 +478,43 @@
 		A4BF640B1AEDCB34009B38BE /* sure to quit board.png in Resources */ = {isa = PBXBuildFile; fileRef = A4BF64031AEDCB34009B38BE /* sure to quit board.png */; };
 		A4BF640E1AEDFF63009B38BE /* 衣服女.png in Resources */ = {isa = PBXBuildFile; fileRef = A4BF640C1AEDFF63009B38BE /* 衣服女.png */; };
 		A4BF640F1AEDFF63009B38BE /* 衣服女1.png in Resources */ = {isa = PBXBuildFile; fileRef = A4BF640D1AEDFF63009B38BE /* 衣服女1.png */; };
+		A4BF64351AEE10F9009B38BE /* gesture0-yulan.png in Resources */ = {isa = PBXBuildFile; fileRef = A4BF64111AEE10F9009B38BE /* gesture0-yulan.png */; };
+		A4BF64361AEE10F9009B38BE /* gesture1-yulan.png in Resources */ = {isa = PBXBuildFile; fileRef = A4BF64121AEE10F9009B38BE /* gesture1-yulan.png */; };
+		A4BF64371AEE10F9009B38BE /* gesture2-yulan.png in Resources */ = {isa = PBXBuildFile; fileRef = A4BF64131AEE10F9009B38BE /* gesture2-yulan.png */; };
+		A4BF64381AEE10F9009B38BE /* gesture2.5-yulan.png in Resources */ = {isa = PBXBuildFile; fileRef = A4BF64141AEE10F9009B38BE /* gesture2.5-yulan.png */; };
+		A4BF64391AEE10F9009B38BE /* gesture3-yulan.png in Resources */ = {isa = PBXBuildFile; fileRef = A4BF64151AEE10F9009B38BE /* gesture3-yulan.png */; };
+		A4BF643A1AEE10F9009B38BE /* gesture3.5-yulan.png in Resources */ = {isa = PBXBuildFile; fileRef = A4BF64161AEE10F9009B38BE /* gesture3.5-yulan.png */; };
+		A4BF643B1AEE10F9009B38BE /* gesture4-yulan.png in Resources */ = {isa = PBXBuildFile; fileRef = A4BF64171AEE10F9009B38BE /* gesture4-yulan.png */; };
+		A4BF643C1AEE10F9009B38BE /* gesture5-yulan.png in Resources */ = {isa = PBXBuildFile; fileRef = A4BF64181AEE10F9009B38BE /* gesture5-yulan.png */; };
+		A4BF643D1AEE10F9009B38BE /* gesture6-yulan.png in Resources */ = {isa = PBXBuildFile; fileRef = A4BF64191AEE10F9009B38BE /* gesture6-yulan.png */; };
+		A4BF643E1AEE10F9009B38BE /* gesture7-yulan.png in Resources */ = {isa = PBXBuildFile; fileRef = A4BF641A1AEE10F9009B38BE /* gesture7-yulan.png */; };
+		A4BF643F1AEE10F9009B38BE /* gesture8-yulan.png in Resources */ = {isa = PBXBuildFile; fileRef = A4BF641B1AEE10F9009B38BE /* gesture8-yulan.png */; };
+		A4BF64401AEE10F9009B38BE /* gesture9-yulan.png in Resources */ = {isa = PBXBuildFile; fileRef = A4BF641C1AEE10F9009B38BE /* gesture9-yulan.png */; };
+		A4BF64411AEE10F9009B38BE /* gesture10-yulan.png in Resources */ = {isa = PBXBuildFile; fileRef = A4BF641D1AEE10F9009B38BE /* gesture10-yulan.png */; };
+		A4BF64421AEE10F9009B38BE /* gesture11-yulan.png in Resources */ = {isa = PBXBuildFile; fileRef = A4BF641E1AEE10F9009B38BE /* gesture11-yulan.png */; };
+		A4BF64431AEE10F9009B38BE /* gesture12-yulan.png in Resources */ = {isa = PBXBuildFile; fileRef = A4BF641F1AEE10F9009B38BE /* gesture12-yulan.png */; };
+		A4BF64441AEE10F9009B38BE /* gesture13-yulan.png in Resources */ = {isa = PBXBuildFile; fileRef = A4BF64201AEE10F9009B38BE /* gesture13-yulan.png */; };
+		A4BF64451AEE10F9009B38BE /* gesture14-yulan.png in Resources */ = {isa = PBXBuildFile; fileRef = A4BF64211AEE10F9009B38BE /* gesture14-yulan.png */; };
+		A4BF64461AEE10F9009B38BE /* gesture15-yulan.png in Resources */ = {isa = PBXBuildFile; fileRef = A4BF64221AEE10F9009B38BE /* gesture15-yulan.png */; };
+		A4BF64471AEE10F9009B38BE /* gesture16-yulan.png in Resources */ = {isa = PBXBuildFile; fileRef = A4BF64231AEE10F9009B38BE /* gesture16-yulan.png */; };
+		A4BF64481AEE10F9009B38BE /* gesture17-yulan.png in Resources */ = {isa = PBXBuildFile; fileRef = A4BF64241AEE10F9009B38BE /* gesture17-yulan.png */; };
+		A4BF64491AEE10F9009B38BE /* gesture18-yulan.png in Resources */ = {isa = PBXBuildFile; fileRef = A4BF64251AEE10F9009B38BE /* gesture18-yulan.png */; };
+		A4BF644A1AEE10F9009B38BE /* gesture19-yulan.png in Resources */ = {isa = PBXBuildFile; fileRef = A4BF64261AEE10F9009B38BE /* gesture19-yulan.png */; };
+		A4BF644B1AEE10F9009B38BE /* gesture20-yulan.png in Resources */ = {isa = PBXBuildFile; fileRef = A4BF64271AEE10F9009B38BE /* gesture20-yulan.png */; };
+		A4BF644C1AEE10F9009B38BE /* gesture21-yulan.png in Resources */ = {isa = PBXBuildFile; fileRef = A4BF64281AEE10F9009B38BE /* gesture21-yulan.png */; };
+		A4BF644D1AEE10F9009B38BE /* gesture22-yulan.png in Resources */ = {isa = PBXBuildFile; fileRef = A4BF64291AEE10F9009B38BE /* gesture22-yulan.png */; };
+		A4BF644E1AEE10F9009B38BE /* gesture23-yulan.png in Resources */ = {isa = PBXBuildFile; fileRef = A4BF642A1AEE10F9009B38BE /* gesture23-yulan.png */; };
+		A4BF644F1AEE10F9009B38BE /* gesture24-yulan.png in Resources */ = {isa = PBXBuildFile; fileRef = A4BF642B1AEE10F9009B38BE /* gesture24-yulan.png */; };
+		A4BF64501AEE10F9009B38BE /* gesture25-yulan.png in Resources */ = {isa = PBXBuildFile; fileRef = A4BF642C1AEE10F9009B38BE /* gesture25-yulan.png */; };
+		A4BF64511AEE10F9009B38BE /* gesture26-yulan.png in Resources */ = {isa = PBXBuildFile; fileRef = A4BF642D1AEE10F9009B38BE /* gesture26-yulan.png */; };
+		A4BF64521AEE10F9009B38BE /* gesture27-yulan.png in Resources */ = {isa = PBXBuildFile; fileRef = A4BF642E1AEE10F9009B38BE /* gesture27-yulan.png */; };
+		A4BF64531AEE10F9009B38BE /* gesture28-yulan.png in Resources */ = {isa = PBXBuildFile; fileRef = A4BF642F1AEE10F9009B38BE /* gesture28-yulan.png */; };
+		A4BF64541AEE10F9009B38BE /* gesture29-yulan.png in Resources */ = {isa = PBXBuildFile; fileRef = A4BF64301AEE10F9009B38BE /* gesture29-yulan.png */; };
+		A4BF64551AEE10F9009B38BE /* gesture30-yulan.png in Resources */ = {isa = PBXBuildFile; fileRef = A4BF64311AEE10F9009B38BE /* gesture30-yulan.png */; };
+		A4BF64561AEE10F9009B38BE /* gesture31-yulan.png in Resources */ = {isa = PBXBuildFile; fileRef = A4BF64321AEE10F9009B38BE /* gesture31-yulan.png */; };
+		A4BF64571AEE10F9009B38BE /* gesture32-yulan.png in Resources */ = {isa = PBXBuildFile; fileRef = A4BF64331AEE10F9009B38BE /* gesture32-yulan.png */; };
+		A4BF64581AEE10F9009B38BE /* gesture33-yulan.png in Resources */ = {isa = PBXBuildFile; fileRef = A4BF64341AEE10F9009B38BE /* gesture33-yulan.png */; };
+		A4BF645B1AEE13FF009B38BE /* buttonProduct.m in Sources */ = {isa = PBXBuildFile; fileRef = A4BF645A1AEE13FF009B38BE /* buttonProduct.m */; };
 		A4C856F01AE64FBD005208F0 /* hair2-4-0-front.png in Resources */ = {isa = PBXBuildFile; fileRef = A4C856EA1AE64FBD005208F0 /* hair2-4-0-front.png */; };
 		A4C856F11AE64FBD005208F0 /* hair2-4-1-front.png in Resources */ = {isa = PBXBuildFile; fileRef = A4C856EB1AE64FBD005208F0 /* hair2-4-1-front.png */; };
 		A4C856F21AE64FBD005208F0 /* hair2-4-2-front.png in Resources */ = {isa = PBXBuildFile; fileRef = A4C856EC1AE64FBD005208F0 /* hair2-4-2-front.png */; };
@@ -698,7 +734,7 @@
 		A4A2110D1AD3B2AE006973E0 /* imageWithName.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = imageWithName.m; sourceTree = "<group>"; };
 		A4BF61AB1AEDC55A009B38BE /* gesture0.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = gesture0.png; sourceTree = "<group>"; };
 		A4BF61AC1AEDC55A009B38BE /* gesture1.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = gesture1.png; sourceTree = "<group>"; };
-		A4BF61AD1AEDC55A009B38BE /* gesture2.5 .png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "gesture2.5 .png"; sourceTree = "<group>"; };
+		A4BF61AD1AEDC55A009B38BE /* gesture2.5.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = gesture2.5.png; sourceTree = "<group>"; };
 		A4BF61AE1AEDC55A009B38BE /* gesture2.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = gesture2.png; sourceTree = "<group>"; };
 		A4BF61AF1AEDC55A009B38BE /* gesture3.5.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = gesture3.5.png; sourceTree = "<group>"; };
 		A4BF61B01AEDC55A009B38BE /* gesture3.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = gesture3.png; sourceTree = "<group>"; };
@@ -732,7 +768,6 @@
 		A4BF61CC1AEDC55A009B38BE /* gesture31.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = gesture31.png; sourceTree = "<group>"; };
 		A4BF61CD1AEDC55A009B38BE /* gesture32.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = gesture32.png; sourceTree = "<group>"; };
 		A4BF61CE1AEDC55A009B38BE /* gesture33.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = gesture33.png; sourceTree = "<group>"; };
-		A4BF61CF1AEDC55A009B38BE /* 预览框图标 */ = {isa = PBXFileReference; lastKnownFileType = folder; path = "预览框图标"; sourceTree = "<group>"; };
 		A4BF61F61AEDC610009B38BE /* mouth0.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = mouth0.png; sourceTree = "<group>"; };
 		A4BF61F71AEDC610009B38BE /* mouth1.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = mouth1.png; sourceTree = "<group>"; };
 		A4BF61F81AEDC610009B38BE /* mouth2.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = mouth2.png; sourceTree = "<group>"; };
@@ -998,6 +1033,44 @@
 		A4BF64031AEDCB34009B38BE /* sure to quit board.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "sure to quit board.png"; sourceTree = "<group>"; };
 		A4BF640C1AEDFF63009B38BE /* 衣服女.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "衣服女.png"; sourceTree = "<group>"; };
 		A4BF640D1AEDFF63009B38BE /* 衣服女1.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "衣服女1.png"; sourceTree = "<group>"; };
+		A4BF64111AEE10F9009B38BE /* gesture0-yulan.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "gesture0-yulan.png"; sourceTree = "<group>"; };
+		A4BF64121AEE10F9009B38BE /* gesture1-yulan.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "gesture1-yulan.png"; sourceTree = "<group>"; };
+		A4BF64131AEE10F9009B38BE /* gesture2-yulan.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "gesture2-yulan.png"; sourceTree = "<group>"; };
+		A4BF64141AEE10F9009B38BE /* gesture2.5-yulan.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "gesture2.5-yulan.png"; sourceTree = "<group>"; };
+		A4BF64151AEE10F9009B38BE /* gesture3-yulan.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "gesture3-yulan.png"; sourceTree = "<group>"; };
+		A4BF64161AEE10F9009B38BE /* gesture3.5-yulan.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "gesture3.5-yulan.png"; sourceTree = "<group>"; };
+		A4BF64171AEE10F9009B38BE /* gesture4-yulan.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "gesture4-yulan.png"; sourceTree = "<group>"; };
+		A4BF64181AEE10F9009B38BE /* gesture5-yulan.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "gesture5-yulan.png"; sourceTree = "<group>"; };
+		A4BF64191AEE10F9009B38BE /* gesture6-yulan.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "gesture6-yulan.png"; sourceTree = "<group>"; };
+		A4BF641A1AEE10F9009B38BE /* gesture7-yulan.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "gesture7-yulan.png"; sourceTree = "<group>"; };
+		A4BF641B1AEE10F9009B38BE /* gesture8-yulan.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "gesture8-yulan.png"; sourceTree = "<group>"; };
+		A4BF641C1AEE10F9009B38BE /* gesture9-yulan.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "gesture9-yulan.png"; sourceTree = "<group>"; };
+		A4BF641D1AEE10F9009B38BE /* gesture10-yulan.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "gesture10-yulan.png"; sourceTree = "<group>"; };
+		A4BF641E1AEE10F9009B38BE /* gesture11-yulan.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "gesture11-yulan.png"; sourceTree = "<group>"; };
+		A4BF641F1AEE10F9009B38BE /* gesture12-yulan.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "gesture12-yulan.png"; sourceTree = "<group>"; };
+		A4BF64201AEE10F9009B38BE /* gesture13-yulan.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "gesture13-yulan.png"; sourceTree = "<group>"; };
+		A4BF64211AEE10F9009B38BE /* gesture14-yulan.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "gesture14-yulan.png"; sourceTree = "<group>"; };
+		A4BF64221AEE10F9009B38BE /* gesture15-yulan.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "gesture15-yulan.png"; sourceTree = "<group>"; };
+		A4BF64231AEE10F9009B38BE /* gesture16-yulan.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "gesture16-yulan.png"; sourceTree = "<group>"; };
+		A4BF64241AEE10F9009B38BE /* gesture17-yulan.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "gesture17-yulan.png"; sourceTree = "<group>"; };
+		A4BF64251AEE10F9009B38BE /* gesture18-yulan.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "gesture18-yulan.png"; sourceTree = "<group>"; };
+		A4BF64261AEE10F9009B38BE /* gesture19-yulan.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "gesture19-yulan.png"; sourceTree = "<group>"; };
+		A4BF64271AEE10F9009B38BE /* gesture20-yulan.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "gesture20-yulan.png"; sourceTree = "<group>"; };
+		A4BF64281AEE10F9009B38BE /* gesture21-yulan.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "gesture21-yulan.png"; sourceTree = "<group>"; };
+		A4BF64291AEE10F9009B38BE /* gesture22-yulan.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "gesture22-yulan.png"; sourceTree = "<group>"; };
+		A4BF642A1AEE10F9009B38BE /* gesture23-yulan.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "gesture23-yulan.png"; sourceTree = "<group>"; };
+		A4BF642B1AEE10F9009B38BE /* gesture24-yulan.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "gesture24-yulan.png"; sourceTree = "<group>"; };
+		A4BF642C1AEE10F9009B38BE /* gesture25-yulan.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "gesture25-yulan.png"; sourceTree = "<group>"; };
+		A4BF642D1AEE10F9009B38BE /* gesture26-yulan.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "gesture26-yulan.png"; sourceTree = "<group>"; };
+		A4BF642E1AEE10F9009B38BE /* gesture27-yulan.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "gesture27-yulan.png"; sourceTree = "<group>"; };
+		A4BF642F1AEE10F9009B38BE /* gesture28-yulan.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "gesture28-yulan.png"; sourceTree = "<group>"; };
+		A4BF64301AEE10F9009B38BE /* gesture29-yulan.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "gesture29-yulan.png"; sourceTree = "<group>"; };
+		A4BF64311AEE10F9009B38BE /* gesture30-yulan.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "gesture30-yulan.png"; sourceTree = "<group>"; };
+		A4BF64321AEE10F9009B38BE /* gesture31-yulan.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "gesture31-yulan.png"; sourceTree = "<group>"; };
+		A4BF64331AEE10F9009B38BE /* gesture32-yulan.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "gesture32-yulan.png"; sourceTree = "<group>"; };
+		A4BF64341AEE10F9009B38BE /* gesture33-yulan.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "gesture33-yulan.png"; sourceTree = "<group>"; };
+		A4BF64591AEE13FF009B38BE /* buttonProduct.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = buttonProduct.h; sourceTree = "<group>"; };
+		A4BF645A1AEE13FF009B38BE /* buttonProduct.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = buttonProduct.m; sourceTree = "<group>"; };
 		A4C856EA1AE64FBD005208F0 /* hair2-4-0-front.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "hair2-4-0-front.png"; path = "Anime Face/hair2-4-0-front.png"; sourceTree = SOURCE_ROOT; };
 		A4C856EB1AE64FBD005208F0 /* hair2-4-1-front.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "hair2-4-1-front.png"; path = "Anime Face/hair2-4-1-front.png"; sourceTree = SOURCE_ROOT; };
 		A4C856EC1AE64FBD005208F0 /* hair2-4-2-front.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "hair2-4-2-front.png"; path = "Anime Face/hair2-4-2-front.png"; sourceTree = SOURCE_ROOT; };
@@ -1249,6 +1322,8 @@
 				A4A2110D1AD3B2AE006973E0 /* imageWithName.m */,
 				A47D6EB51AC3E1ED00AC1768 /* ViewController.h */,
 				A47D6EB61AC3E1ED00AC1768 /* ViewController.m */,
+				A4BF64591AEE13FF009B38BE /* buttonProduct.h */,
+				A4BF645A1AEE13FF009B38BE /* buttonProduct.m */,
 				A456D2681AE8C73B0032F41F /* storeViewController.h */,
 				A456D2691AE8C73B0032F41F /* storeViewController.m */,
 				A456D26A1AE8C73B0032F41F /* storeViewController.xib */,
@@ -1305,9 +1380,10 @@
 		A4BF61AA1AEDC53C009B38BE /* gesture */ = {
 			isa = PBXGroup;
 			children = (
+				A4BF64101AEE10ED009B38BE /* yulan */,
 				A4BF61AB1AEDC55A009B38BE /* gesture0.png */,
 				A4BF61AC1AEDC55A009B38BE /* gesture1.png */,
-				A4BF61AD1AEDC55A009B38BE /* gesture2.5 .png */,
+				A4BF61AD1AEDC55A009B38BE /* gesture2.5.png */,
 				A4BF61AE1AEDC55A009B38BE /* gesture2.png */,
 				A4BF61AF1AEDC55A009B38BE /* gesture3.5.png */,
 				A4BF61B01AEDC55A009B38BE /* gesture3.png */,
@@ -1341,7 +1417,6 @@
 				A4BF61CC1AEDC55A009B38BE /* gesture31.png */,
 				A4BF61CD1AEDC55A009B38BE /* gesture32.png */,
 				A4BF61CE1AEDC55A009B38BE /* gesture33.png */,
-				A4BF61CF1AEDC55A009B38BE /* 预览框图标 */,
 			);
 			name = gesture;
 			sourceTree = "<group>";
@@ -1662,6 +1737,49 @@
 			name = hat;
 			sourceTree = "<group>";
 		};
+		A4BF64101AEE10ED009B38BE /* yulan */ = {
+			isa = PBXGroup;
+			children = (
+				A4BF64111AEE10F9009B38BE /* gesture0-yulan.png */,
+				A4BF64121AEE10F9009B38BE /* gesture1-yulan.png */,
+				A4BF64131AEE10F9009B38BE /* gesture2-yulan.png */,
+				A4BF64141AEE10F9009B38BE /* gesture2.5-yulan.png */,
+				A4BF64151AEE10F9009B38BE /* gesture3-yulan.png */,
+				A4BF64161AEE10F9009B38BE /* gesture3.5-yulan.png */,
+				A4BF64171AEE10F9009B38BE /* gesture4-yulan.png */,
+				A4BF64181AEE10F9009B38BE /* gesture5-yulan.png */,
+				A4BF64191AEE10F9009B38BE /* gesture6-yulan.png */,
+				A4BF641A1AEE10F9009B38BE /* gesture7-yulan.png */,
+				A4BF641B1AEE10F9009B38BE /* gesture8-yulan.png */,
+				A4BF641C1AEE10F9009B38BE /* gesture9-yulan.png */,
+				A4BF641D1AEE10F9009B38BE /* gesture10-yulan.png */,
+				A4BF641E1AEE10F9009B38BE /* gesture11-yulan.png */,
+				A4BF641F1AEE10F9009B38BE /* gesture12-yulan.png */,
+				A4BF64201AEE10F9009B38BE /* gesture13-yulan.png */,
+				A4BF64211AEE10F9009B38BE /* gesture14-yulan.png */,
+				A4BF64221AEE10F9009B38BE /* gesture15-yulan.png */,
+				A4BF64231AEE10F9009B38BE /* gesture16-yulan.png */,
+				A4BF64241AEE10F9009B38BE /* gesture17-yulan.png */,
+				A4BF64251AEE10F9009B38BE /* gesture18-yulan.png */,
+				A4BF64261AEE10F9009B38BE /* gesture19-yulan.png */,
+				A4BF64271AEE10F9009B38BE /* gesture20-yulan.png */,
+				A4BF64281AEE10F9009B38BE /* gesture21-yulan.png */,
+				A4BF64291AEE10F9009B38BE /* gesture22-yulan.png */,
+				A4BF642A1AEE10F9009B38BE /* gesture23-yulan.png */,
+				A4BF642B1AEE10F9009B38BE /* gesture24-yulan.png */,
+				A4BF642C1AEE10F9009B38BE /* gesture25-yulan.png */,
+				A4BF642D1AEE10F9009B38BE /* gesture26-yulan.png */,
+				A4BF642E1AEE10F9009B38BE /* gesture27-yulan.png */,
+				A4BF642F1AEE10F9009B38BE /* gesture28-yulan.png */,
+				A4BF64301AEE10F9009B38BE /* gesture29-yulan.png */,
+				A4BF64311AEE10F9009B38BE /* gesture30-yulan.png */,
+				A4BF64321AEE10F9009B38BE /* gesture31-yulan.png */,
+				A4BF64331AEE10F9009B38BE /* gesture32-yulan.png */,
+				A4BF64341AEE10F9009B38BE /* gesture33-yulan.png */,
+			);
+			name = yulan;
+			sourceTree = "<group>";
+		};
 		A4E6CDAA1ACCE52F00A1D6EC /* element */ = {
 			isa = PBXGroup;
 			children = (
@@ -1833,10 +1951,12 @@
 				A44563B71AE93D440040D1C5 /* diamond purchase board.png in Resources */,
 				A46BBC5C1ADE52EE009D2280 /* 鼻子1.png in Resources */,
 				A4CA3AA41ACA440900D50D80 /* gameViewController.xib in Resources */,
+				A4BF643F1AEE10F9009B38BE /* gesture8-yulan.png in Resources */,
 				A4BF632D1AEDC6FE009B38BE /* eyebrow4.png in Resources */,
 				A4BF622D1AEDC610009B38BE /* mouth20.png in Resources */,
 				51ABD2671AE78EE0005BC8F0 /* hairG2-7.png in Resources */,
 				A4BF63FB1AEDCAEA009B38BE /* body1000.png in Resources */,
+				A4BF64521AEE10F9009B38BE /* gesture27-yulan.png in Resources */,
 				A4BF62211AEDC610009B38BE /* mouth8.png in Resources */,
 				A4BF623A1AEDC610009B38BE /* mouth33.png in Resources */,
 				A45C938C1AE8F9730081346B /* sharesave press.png in Resources */,
@@ -1849,6 +1969,7 @@
 				A4BF62191AEDC610009B38BE /* mouth0.png in Resources */,
 				A44563B61AE93D440040D1C5 /* diamond not enough board.png in Resources */,
 				A4BF62FE1AEDC6A6009B38BE /* eye8.png in Resources */,
+				A4BF643C1AEE10F9009B38BE /* gesture5-yulan.png in Resources */,
 				A4BF62C41AEDC681009B38BE /* cloth-g-16.png in Resources */,
 				51ABD24F1AE78CFB005BC8F0 /* 5.png in Resources */,
 				A4BF62261AEDC610009B38BE /* mouth13.png in Resources */,
@@ -1856,12 +1977,14 @@
 				A44563B91AE93D440040D1C5 /* diamond++press.png in Resources */,
 				A456D27C1AE8C8370032F41F /* photo-cancel.png in Resources */,
 				A4BF61ED1AEDC55A009B38BE /* gesture27.png in Resources */,
+				A4BF64351AEE10F9009B38BE /* gesture0-yulan.png in Resources */,
 				A4BF63011AEDC6A6009B38BE /* eye11.png in Resources */,
 				A4BF62A71AEDC681009B38BE /* cloth-b-17.png in Resources */,
 				A46BBC431ADE52EE009D2280 /* 宠物.png in Resources */,
 				A4BF62A61AEDC681009B38BE /* cloth-b-16.png in Resources */,
 				A46BBC561ADE52EE009D2280 /* 脸型1.png in Resources */,
 				A46BBC541ADE52EE009D2280 /* 胡子1.png in Resources */,
+				A4BF643B1AEE10F9009B38BE /* gesture4-yulan.png in Resources */,
 				A4BF63581AEDC726009B38BE /* facemark3.png in Resources */,
 				A4BF63F41AEDC827009B38BE /* hat34.png in Resources */,
 				A4BF63DC1AEDC827009B38BE /* hat10.png in Resources */,
@@ -1880,10 +2003,12 @@
 				A47EF4FC1AE5EFF7005C32E0 /* hair1-2-1.png in Resources */,
 				A4BF63341AEDC6FE009B38BE /* eyebrow11.png in Resources */,
 				A45C93881AE8F95F0081346B /* fame1.png in Resources */,
+				A4BF64501AEE10F9009B38BE /* gesture25-yulan.png in Resources */,
 				A4BF62CD1AEDC681009B38BE /* cloth-g-25.png in Resources */,
 				A4BF635C1AEDC726009B38BE /* facemark7.png in Resources */,
 				A4BF63E71AEDC827009B38BE /* hat21.png in Resources */,
 				A46BBC1E1ADE4075009D2280 /* youpiao.png in Resources */,
+				A4BF64571AEE10F9009B38BE /* gesture32-yulan.png in Resources */,
 				A4BF62B71AEDC681009B38BE /* cloth-g-3.png in Resources */,
 				A4BF632E1AEDC6FE009B38BE /* eyebrow5.png in Resources */,
 				A4BF62B51AEDC681009B38BE /* cloth-g-1.png in Resources */,
@@ -1892,6 +2017,7 @@
 				A44563C21AE93D440040D1C5 /* photo save.png in Resources */,
 				A4BF63A01AEDC7DC009B38BE /* pet1.png in Resources */,
 				A4BF632C1AEDC6FE009B38BE /* eyebrow3.png in Resources */,
+				A4BF643D1AEE10F9009B38BE /* gesture6-yulan.png in Resources */,
 				A4BF639F1AEDC7DC009B38BE /* pet0.png in Resources */,
 				A44563C91AE93D440040D1C5 /* store background.png in Resources */,
 				A4BF629F1AEDC681009B38BE /* cloth-b-9.png in Resources */,
@@ -1927,9 +2053,11 @@
 				A4BF62A11AEDC681009B38BE /* cloth-b-11.png in Resources */,
 				A4BF62C11AEDC681009B38BE /* cloth-g-13.png in Resources */,
 				A4BF62361AEDC610009B38BE /* mouth29.png in Resources */,
+				A4BF644E1AEE10F9009B38BE /* gesture23-yulan.png in Resources */,
 				A44563C71AE93D440040D1C5 /* price.png in Resources */,
 				A4BF62AA1AEDC681009B38BE /* cloth-b-20.png in Resources */,
 				A4A211061AD3A411006973E0 /* 02.png in Resources */,
+				A4BF64581AEE10F9009B38BE /* gesture33-yulan.png in Resources */,
 				A4BF61EE1AEDC55A009B38BE /* gesture28.png in Resources */,
 				A44BB71C1ADCA647009D2378 /* diamond++.png in Resources */,
 				A4BF62A81AEDC681009B38BE /* cloth-b-18.png in Resources */,
@@ -1951,6 +2079,7 @@
 				A46BBC511ADE52EE009D2280 /* 背景.png in Resources */,
 				A4BF62C81AEDC681009B38BE /* cloth-g-20.png in Resources */,
 				A4BF63651AEDC726009B38BE /* facemark16.png in Resources */,
+				A4BF64391AEE10F9009B38BE /* gesture3-yulan.png in Resources */,
 				A4C856F11AE64FBD005208F0 /* hair2-4-1-front.png in Resources */,
 				A4BF63A21AEDC7DC009B38BE /* pet3.png in Resources */,
 				51ABD25E1AE78EE0005BC8F0 /* hairG1-2-1-front.png in Resources */,
@@ -1973,15 +2102,19 @@
 				A4BF62501AEDC64D009B38BE /* nose5.png in Resources */,
 				A44563B81AE93D440040D1C5 /* diamond++.png in Resources */,
 				A4BF638D1AEDC79F009B38BE /* glass13.png in Resources */,
+				A4BF644A1AEE10F9009B38BE /* gesture19-yulan.png in Resources */,
 				A44BB7121ADCA647009D2378 /* back-press.png in Resources */,
 				A4BF62B81AEDC681009B38BE /* cloth-g-4.png in Resources */,
 				A4BF62C71AEDC681009B38BE /* cloth-g-19.png in Resources */,
 				A456D27A1AE8C8370032F41F /* photo share.png in Resources */,
 				A4BF63801AEDC79F009B38BE /* glass0.png in Resources */,
+				A4BF643A1AEE10F9009B38BE /* gesture3.5-yulan.png in Resources */,
 				A4BF62B91AEDC681009B38BE /* cloth-g-5.png in Resources */,
 				A4BF62F81AEDC6A6009B38BE /* eye2.png in Resources */,
 				A4E6CDE21ACCE54200A1D6EC /* hair1-2-1-front.png in Resources */,
 				A4BF63EE1AEDC827009B38BE /* hat28.png in Resources */,
+				A4BF64481AEE10F9009B38BE /* gesture17-yulan.png in Resources */,
+				A4BF64361AEE10F9009B38BE /* gesture1-yulan.png in Resources */,
 				A4BF61D31AEDC55A009B38BE /* gesture2.png in Resources */,
 				A4E6CDD01ACCE54200A1D6EC /* background2.png in Resources */,
 				A4BF62201AEDC610009B38BE /* mouth7.png in Resources */,
@@ -1998,7 +2131,9 @@
 				A4BF62A21AEDC681009B38BE /* cloth-b-12.png in Resources */,
 				A4BF63291AEDC6FE009B38BE /* eyebrow0.png in Resources */,
 				A4BF63F61AEDC827009B38BE /* hat36.png in Resources */,
+				A4BF64511AEE10F9009B38BE /* gesture26-yulan.png in Resources */,
 				51ABD24A1AE78CFB005BC8F0 /* 0.png in Resources */,
+				A4BF64451AEE10F9009B38BE /* gesture14-yulan.png in Resources */,
 				A4BF63121AEDC6A6009B38BE /* eye28.png in Resources */,
 				A42253661AEA16D90076E58B /* face4.png in Resources */,
 				A4A211091AD3ADF6006973E0 /* QuestionMark.png in Resources */,
@@ -2046,9 +2181,11 @@
 				A4BF63901AEDC79F009B38BE /* glass16.png in Resources */,
 				A46BBC201ADE40D6009D2280 /* Main.storyboard in Resources */,
 				A4BF63591AEDC726009B38BE /* facemark4.png in Resources */,
+				A4BF64371AEE10F9009B38BE /* gesture2-yulan.png in Resources */,
 				A4BF62B01AEDC681009B38BE /* cloth-b-26.png in Resources */,
 				A44563D21AE93D440040D1C5 /* youpiaotiao.png in Resources */,
 				A4BF63AA1AEDC7DC009B38BE /* pet11.png in Resources */,
+				A4BF64561AEE10F9009B38BE /* gesture31-yulan.png in Resources */,
 				A44BB7461ADCA647009D2378 /* setting-press.png in Resources */,
 				A422536A1AEA16D90076E58B /* face8.png in Resources */,
 				A44BB7351ADCA647009D2378 /* inside-clothstore-press.png in Resources */,
@@ -2071,11 +2208,12 @@
 				A4BF629B1AEDC681009B38BE /* cloth-b-5.png in Resources */,
 				A4BF62311AEDC610009B38BE /* mouth24.png in Resources */,
 				A4BF630A1AEDC6A6009B38BE /* eye20.png in Resources */,
-				A4BF61D21AEDC55A009B38BE /* gesture2.5 .png in Resources */,
+				A4BF61D21AEDC55A009B38BE /* gesture2.5.png in Resources */,
 				A4BF629D1AEDC681009B38BE /* cloth-b-7.png in Resources */,
 				A4BF621F1AEDC610009B38BE /* mouth6.png in Resources */,
 				A4BF62D31AEDC681009B38BE /* cloth-tong4.png in Resources */,
 				A4BF61DC1AEDC55A009B38BE /* gesture10.png in Resources */,
+				A4BF644C1AEE10F9009B38BE /* gesture21-yulan.png in Resources */,
 				A4BF64041AEDCB34009B38BE /* music board.png in Resources */,
 				A4BF63E01AEDC827009B38BE /* hat14.png in Resources */,
 				A4BF62A91AEDC681009B38BE /* cloth-b-19.png in Resources */,
@@ -2085,6 +2223,7 @@
 				A4BF63E31AEDC827009B38BE /* hat17.png in Resources */,
 				A4BF62F71AEDC6A6009B38BE /* eye01.png in Resources */,
 				A4BF623B1AEDC610009B38BE /* mouth34.png in Resources */,
+				A4BF64471AEE10F9009B38BE /* gesture16-yulan.png in Resources */,
 				A4BF62A51AEDC681009B38BE /* cloth-b-15.png in Resources */,
 				A46BBC591ADE52EE009D2280 /* 衣服.png in Resources */,
 				A4BF63F21AEDC827009B38BE /* hat32.png in Resources */,
@@ -2132,6 +2271,7 @@
 				A42253641AEA16D90076E58B /* face2.png in Resources */,
 				A4BF62BF1AEDC681009B38BE /* cloth-g-11.png in Resources */,
 				A4BF63A71AEDC7DC009B38BE /* pet8.png in Resources */,
+				A4BF64551AEE10F9009B38BE /* gesture30-yulan.png in Resources */,
 				A4BF63E51AEDC827009B38BE /* hat19.png in Resources */,
 				A4BF63F71AEDC827009B38BE /* hat37.png in Resources */,
 				A4BF62F61AEDC6A6009B38BE /* eye1.png in Resources */,
@@ -2139,6 +2279,8 @@
 				A4BF63021AEDC6A6009B38BE /* eye12.png in Resources */,
 				A4BF64091AEDCB34009B38BE /* sound of.png in Resources */,
 				A44563D41AE93D610040D1C5 /* 虚线.png in Resources */,
+				A4BF64531AEE10F9009B38BE /* gesture28-yulan.png in Resources */,
+				A4BF643E1AEE10F9009B38BE /* gesture7-yulan.png in Resources */,
 				51ABD2601AE78EE0005BC8F0 /* hairG2-7-0-front.png in Resources */,
 				A4BF62511AEDC64D009B38BE /* nose6.png in Resources */,
 				A44BB7641ADD1814009D2378 /* boy portrait.png in Resources */,
@@ -2147,6 +2289,7 @@
 				A4BF61F01AEDC55A009B38BE /* gesture30.png in Resources */,
 				A4E6CDE11ACCE54200A1D6EC /* hair1-2-1-back.png in Resources */,
 				A4BF63EF1AEDC827009B38BE /* hat29.png in Resources */,
+				A4BF64401AEE10F9009B38BE /* gesture9-yulan.png in Resources */,
 				A4BF62AE1AEDC681009B38BE /* cloth-b-24.png in Resources */,
 				A44BB7651ADD1814009D2378 /* girl portrait.png in Resources */,
 				A4BF62541AEDC64D009B38BE /* nose9.png in Resources */,
@@ -2154,6 +2297,7 @@
 				A4BF63A61AEDC7DC009B38BE /* pet7.png in Resources */,
 				A4BF62AD1AEDC681009B38BE /* cloth-b-23.png in Resources */,
 				A4BF63EA1AEDC827009B38BE /* hat24.png in Resources */,
+				A4BF64441AEE10F9009B38BE /* gesture13-yulan.png in Resources */,
 				A4BF636C1AEDC726009B38BE /* facemark23.png in Resources */,
 				A44563CA1AE93D440040D1C5 /* store to mistery-press.png in Resources */,
 				A4BF62C01AEDC681009B38BE /* cloth-g-12.png in Resources */,
@@ -2168,11 +2312,15 @@
 				A4BF63A11AEDC7DC009B38BE /* pet2.png in Resources */,
 				A4BF63DF1AEDC827009B38BE /* hat13.png in Resources */,
 				A46BBC501ADE52EE009D2280 /* 眼镜1.png in Resources */,
+				A4BF644D1AEE10F9009B38BE /* gesture22-yulan.png in Resources */,
 				A4BF61E51AEDC55A009B38BE /* gesture19.png in Resources */,
 				A4BF640F1AEDFF63009B38BE /* 衣服女1.png in Resources */,
 				A4C856F21AE64FBD005208F0 /* hair2-4-2-front.png in Resources */,
 				A4BF62571AEDC64D009B38BE /* nose12.png in Resources */,
+				A4BF64461AEE10F9009B38BE /* gesture15-yulan.png in Resources */,
+				A4BF64431AEE10F9009B38BE /* gesture12-yulan.png in Resources */,
 				A4BF63371AEDC6FE009B38BE /* eyebrow14.png in Resources */,
+				A4BF64491AEE10F9009B38BE /* gesture18-yulan.png in Resources */,
 				A4BF62BD1AEDC681009B38BE /* cloth-g-9.png in Resources */,
 				A4BF63E91AEDC827009B38BE /* hat23.png in Resources */,
 				A44563BC1AE93D440040D1C5 /* mistery room card.png in Resources */,
@@ -2206,6 +2354,7 @@
 				A4BF62BE1AEDC681009B38BE /* cloth-g-10.png in Resources */,
 				A44563C81AE93D440040D1C5 /* star.png in Resources */,
 				A4BF62A31AEDC681009B38BE /* cloth-b-13.png in Resources */,
+				A4BF64421AEE10F9009B38BE /* gesture11-yulan.png in Resources */,
 				A4BF61F31AEDC55A009B38BE /* gesture33.png in Resources */,
 				A4BF624B1AEDC64D009B38BE /* nose0.png in Resources */,
 				A4BF63681AEDC726009B38BE /* facemark19.png in Resources */,
@@ -2215,6 +2364,7 @@
 				A4BF61E91AEDC55A009B38BE /* gesture23.png in Resources */,
 				A4BF630F1AEDC6A6009B38BE /* eye25.png in Resources */,
 				A4BF635A1AEDC726009B38BE /* facemark5.png in Resources */,
+				A4BF644B1AEE10F9009B38BE /* gesture20-yulan.png in Resources */,
 				A4E6CDE91ACCE54200A1D6EC /* mood1.png in Resources */,
 				A4A2110B1AD3B03F006973E0 /* 03.png in Resources */,
 				A4BF63E81AEDC827009B38BE /* hat22.png in Resources */,
@@ -2232,6 +2382,7 @@
 				A4BF62F51AEDC6A6009B38BE /* eye0.png in Resources */,
 				A4BF63691AEDC726009B38BE /* facemark20.png in Resources */,
 				A4BF63EB1AEDC827009B38BE /* hat25.png in Resources */,
+				A4BF64381AEE10F9009B38BE /* gesture2.5-yulan.png in Resources */,
 				A4BF633A1AEDC6FE009B38BE /* eyebrow17.png in Resources */,
 				A456D2781AE8C8370032F41F /* photo save.png in Resources */,
 				A46BBC451ADE52EE009D2280 /* 帽子.png in Resources */,
@@ -2240,6 +2391,7 @@
 				A4BF63D41AEDC827009B38BE /* hat2.png in Resources */,
 				A4BF62381AEDC610009B38BE /* mouth31.png in Resources */,
 				A4BF63061AEDC6A6009B38BE /* eye16.png in Resources */,
+				A4BF644F1AEE10F9009B38BE /* gesture24-yulan.png in Resources */,
 				A4BF63D61AEDC827009B38BE /* hat4.png in Resources */,
 				A4BF63851AEDC79F009B38BE /* glass5.png in Resources */,
 				A4BF63911AEDC79F009B38BE /* glass17.png in Resources */,
@@ -2266,9 +2418,9 @@
 				A4BF63DA1AEDC827009B38BE /* hat8.png in Resources */,
 				A42253631AEA16D90076E58B /* face1.png in Resources */,
 				A4BF622A1AEDC610009B38BE /* mouth17.png in Resources */,
+				A4BF64411AEE10F9009B38BE /* gesture10-yulan.png in Resources */,
 				A4BF622E1AEDC610009B38BE /* mouth21.png in Resources */,
 				A44BB7371ADCA647009D2378 /* inside-luckystore-press.png in Resources */,
-				A4BF61F41AEDC55A009B38BE /* 预览框图标 in Resources */,
 				A44BB72C1ADCA647009D2378 /* girl-pressl.png in Resources */,
 				A4BF62CE1AEDC681009B38BE /* cloth-g-26.png in Resources */,
 				A4BF63D31AEDC827009B38BE /* hat1.png in Resources */,
@@ -2281,6 +2433,7 @@
 				A4BF61DD1AEDC55A009B38BE /* gesture11.png in Resources */,
 				A4BF61D11AEDC55A009B38BE /* gesture1.png in Resources */,
 				A4BF629E1AEDC681009B38BE /* cloth-b-8.png in Resources */,
+				A4BF64541AEE10F9009B38BE /* gesture29-yulan.png in Resources */,
 				A44563C41AE93D440040D1C5 /* photo share.png in Resources */,
 				A4BF624F1AEDC64D009B38BE /* nose4.png in Resources */,
 				A4BF62231AEDC610009B38BE /* mouth10.png in Resources */,
@@ -2330,6 +2483,7 @@
 				A47D6EB11AC3E1ED00AC1768 /* main.m in Sources */,
 				A4CA3ACA1ACAA2A500D50D80 /* hairButton.m in Sources */,
 				A456D26B1AE8C73B0032F41F /* storeViewController.m in Sources */,
+				A4BF645B1AEE13FF009B38BE /* buttonProduct.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

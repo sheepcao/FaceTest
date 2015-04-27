@@ -7,16 +7,22 @@
 //
 
 #import "storeViewController.h"
-#import "elemntButton.h"
+#import "buttonProduct.h"
 
 
 @interface storeViewController ()<UIScrollViewDelegate>
 
 @property (strong,nonatomic) NSArray *heartArray;
+@property (strong,nonatomic) buttonProduct *defaultButton;
 
 @end
 
 @implementation storeViewController
+
+
+int sexSelectedNow;
+bool showingDefault;
+
 
 - (void)viewDidLoad {
     [super viewDidLoad];
@@ -29,6 +35,18 @@
     [self performSelector:@selector(setupLists) withObject:nil afterDelay:0.9];
     
     
+}
+
+
+-(void)viewDidAppear:(BOOL)animated
+{
+    showingDefault = YES;
+}
+
+-(void)setDefaultView:(buttonProduct *)button
+{
+    [self elementTapped:button];
+    showingDefault = NO;
 }
 
 #pragma mark setup Catalog
@@ -65,17 +83,7 @@
 //    
     if(IS_IPHONE_4_OR_LESS)
     {
-//        [self.moveMeViewLeading setConstant:50];
-//        [self.moveMeViewTrailing setConstant:50];
-//        [self.headImage setNeedsUpdateConstraints];
-//        
-//        [self.backViewLeading setConstant:-50];
-//        [self.backViewTrailing setConstant:-50];
-//        [self.backImage setNeedsUpdateConstraints];
-//        
-//        [self.view setNeedsUpdateConstraints];
-//        [self.view layoutIfNeeded];
-        
+
         
         [self.buttonDistanceV1 setConstant:3];
         [self.buttonDistanceV2 setConstant:3];
@@ -124,7 +132,7 @@
     self.productListScorll.showsHorizontalScrollIndicator = NO;
     self.productListScorll.delegate = self;
     
-    NSDictionary *listsText = [self.GameData objectForKey:@"Lists"];
+    NSDictionary *listsText = [self.GameData objectForKey:@"productInfo"];
     
     
     for (int i = 0 ; i < CATALOG_NUM_STORE; i++) {
@@ -143,15 +151,39 @@
         
         for (int j = 0 ; j<listElements.count; j++) {
             
-            elemntButton *element = [[elemntButton alloc] initWithFrame:CGRectMake(0+(j%3)*(ELEMENT_WIDTH+6), 0+(j/3)*(ELEMENT_WIDTH+6)/1.2, ELEMENT_WIDTH, ELEMENT_WIDTH/1.2)];
+            NSString *elementImageName = [listElements[j] objectForKey:@"name"];
+            int elementPrice =[[listElements[j] objectForKey:@"price"] intValue];
+            int elementStars =[[listElements[j] objectForKey:@"star"] intValue];
+            int elementColors =[[listElements[j] objectForKey:@"colorNum"] intValue];
+            int elementSex =[[listElements[j] objectForKey:@"sex"] intValue];
+            NSString *elementTitle = [listElements[j] objectForKey:@"title"];
+
+
+
+            
+            buttonProduct *element = [[buttonProduct alloc] initWithFrame:CGRectMake(0+(j%3)*(ELEMENT_WIDTH+6), 0+(j/3)*(ELEMENT_WIDTH+6)/1.2, ELEMENT_WIDTH, ELEMENT_WIDTH/1.2)];
             
             CGFloat sidesOffside = ELEMENT_WIDTH - ELEMENT_WIDTH/1.2;
             
             [element setImageEdgeInsets:UIEdgeInsetsMake(0, sidesOffside/2, 0, sidesOffside/2)];
             
-            [element setImage:[UIImage imageNamed:listElements[j]] forState:UIControlStateNormal];
-            element.imageName = listElements[j];
+            [element setImage:[UIImage imageNamed:elementImageName] forState:UIControlStateNormal];
+            element.imageName = elementImageName;
             element.imageLevel =[NSNumber numberWithInt:i];
+            element.price = elementPrice;
+            element.sex = elementSex;
+            element.titleName = elementTitle;
+            if (i == 0)//hair list
+            {
+                element.colorNum = elementColors;
+            }else
+            {
+                element.stars = elementStars;
+            }
+            
+            if (showingDefault) {
+                [self setDefaultView:element];
+            }
             
             [element addTarget:self action:@selector(elementTapped:) forControlEvents:UIControlEventTouchUpInside];
             [element setBackgroundImage: [UIImage imageNamed:@"fame1"] forState:UIControlStateNormal];
@@ -170,11 +202,15 @@
         
     }
     
+//    if (showingDefault) {
+//        [self setDefaultView:self.defaultButton];
+//    }
+    
     
     [self.loadingView setHidden:YES];
     
 }
--(void)elementTapped:(elemntButton *)sender
+-(void)elementTapped:(buttonProduct *)sender
 {
     NSLog(@"element:%@",sender.imageLevel);
     
@@ -183,6 +219,12 @@
         [subBtn setSelected:NO];
     }
     [sender setSelected:YES];
+    
+    [self.priceLabel setText:[NSString stringWithFormat:@"%d",sender.price]];
+    
+    [self drawStars:sender.stars];
+
+    sexSelectedNow = sender.sex;
     
 
     if ([sender.imageLevel intValue]==0) {
@@ -225,12 +267,22 @@
         [self.backHairImage setImage:nil];
         [self.faceImage setImage:nil];
         
-        
         NSString *frontImageName = sender.imageName;
         [self.productImage setImage:[UIImage imageNamed:frontImageName]];
     }
     
     
+}
+
+-(void)drawStars:(int)starNum
+{
+    for (int i = 0; i<starNum; i++) {
+        [self.heartArray[i] setHidden:NO];
+    }
+    for (int i = starNum; i<5; i++) {
+        [self.heartArray[i] setHidden:YES];
+
+    }
 }
 
 

@@ -32,6 +32,7 @@
 
     
     [self.loadingView setImage:[UIImage imageNamed:[NSString stringWithFormat:@"loading%d",self.sex]]];
+    
     [self.loadPage setHidden:NO];
     
     
@@ -199,6 +200,17 @@
             [element setImageEdgeInsets:UIEdgeInsetsMake(0, sidesOffside/2, 0, sidesOffside/2)];
 
             [element setImage:[UIImage imageNamed:listElements[j]] forState:UIControlStateNormal];
+            if(i==7)//guesture
+            {
+                NSString *preView = [NSString stringWithFormat:@"%@-yulan",listElements[j]];
+                
+                [element setImage:[UIImage imageNamed:preView] forState:UIControlStateNormal];
+
+            }else
+            {
+                [element setImage:[UIImage imageNamed:listElements[j]] forState:UIControlStateNormal];
+
+            }
             element.imageName = listElements[j];
             element.imageLevel =[NSNumber numberWithInt:i];
             
@@ -269,7 +281,7 @@
 //        self.headImage.placardView = self.frontHairView;
     }else
     {
-        [self.imagesArray[[sender.imageLevel intValue]] setImage:sender.imageView.image];
+        [self.imagesArray[[sender.imageLevel intValue]] setImage:[UIImage imageNamed:sender.imageName]];
         self.headImage.placardView = self.imagesArray[[sender.imageLevel intValue]];
     }
     
@@ -330,7 +342,6 @@
         self.colorView = [[UIView alloc] initWithFrame:CGRectMake(0, SCREEN_HEIGHT, SCREEN_WIDTH, sender.frame.size.height)];
     }else
     {
-        
         
         for (UIView *subView in [self.colorView subviews]) {
             [subView removeFromSuperview];
@@ -557,6 +568,7 @@
     [self.view addSubview:whiteView];
     whiteView.alpha = 0.8;
     [self.photoPage sendSubviewToBack:self.photoBack];
+    
 
     
     [UIView animateWithDuration: 0.75
@@ -568,6 +580,7 @@
                          
                          if (self.photoPage.alpha <0.001) {
                              self.photoPage.alpha = 1.0;
+                             [self.view bringSubviewToFront:self.photoPage];
                          }
                          
 //                         [UIView animateWithDuration: 0.4

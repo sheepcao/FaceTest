@@ -421,5 +421,39 @@
 		<string>背景</string>
 		<string>宠物</string>
 	</array>
+	<key>productInfo</key>
+	<dict>
+		<key>宠物</key>
+		<array>
+			<dict>
+				<key>name</key>
+				<string>pet0</string>
+				<key>title</key>
+				<string>XXX</string>
+				<key>price</key>
+				<string>23</string>
+				<key>star</key>
+				<string>4</string>
+				<key>colorNum</key>
+				<string>1</string>
+				<key>sex</key>
+				<string>1</string>
+			</dict>
+			<dict>
+				<key>title</key>
+				<string>XX1</string>
+				<key>name</key>
+				<string>pet1</string>
+				<key>price</key>
+				<string>100</string>
+				<key>star</key>
+				<string>5</string>
+				<key>colorNum</key>
+				<string>1</string>
+				<key>sex</key>
+				<string>1000</string>
+			</dict>
+		</array>
+	</dict>
 </dict>
 </plist>
