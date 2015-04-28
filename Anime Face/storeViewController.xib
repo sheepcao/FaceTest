@@ -13,6 +13,7 @@
                 <outlet property="buttonDistanceV1" destination="1Jb-zc-YM9" id="wiq-U1-cai"/>
                 <outlet property="buttonDistanceV2" destination="VRg-2d-AFy" id="2It-Qs-Wct"/>
                 <outlet property="buttonDistanceV3" destination="bvP-Ic-SJl" id="iwE-Ip-qcW"/>
+                <outlet property="buyAction" destination="75x-Rx-M74" id="UR4-Qo-6fm"/>
                 <outlet property="catalogScroll" destination="Qa3-aR-zLV" id="f9e-u6-ebF"/>
                 <outlet property="colorView" destination="2QV-Uc-gfb" id="KcC-5G-QJI"/>
                 <outlet property="faceImage" destination="uJb-9s-lbs" id="Ufi-Xw-cjw"/>
@@ -432,7 +433,7 @@
                                                 <constraint firstAttribute="width" secondItem="K25-fS-jrJ" secondAttribute="height" multiplier="2:1" id="J9h-Gw-LRb"/>
                                             </constraints>
                                         </imageView>
-                                        <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="jiJ-Ym-luG">
+                                        <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="jiJ-Ym-luG" customClass="elemntButton">
                                             <rect key="frame" x="-23" y="-15" width="46" height="30"/>
                                             <constraints>
                                                 <constraint firstAttribute="width" secondItem="jiJ-Ym-luG" secondAttribute="height" multiplier="1:1" id="CwO-Xz-B2U"/>
@@ -454,7 +455,7 @@
                                                 <action selector="colorBtnTapped:" destination="-1" eventType="touchUpInside" id="HgI-sR-2vL"/>
                                             </connections>
                                         </button>
-                                        <button opaque="NO" tag="1" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="uaX-vN-LFK">
+                                        <button opaque="NO" tag="1" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="uaX-vN-LFK" customClass="elemntButton">
                                             <rect key="frame" x="-23" y="-15" width="46" height="30"/>
                                             <constraints>
                                                 <constraint firstAttribute="width" secondItem="uaX-vN-LFK" secondAttribute="height" multiplier="1:1" id="R9H-Ja-vnM"/>
@@ -476,7 +477,7 @@
                                                 <action selector="colorBtnTapped:" destination="-1" eventType="touchUpInside" id="ado-gT-fOF"/>
                                             </connections>
                                         </button>
-                                        <button opaque="NO" tag="2" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="qaG-WD-73J">
+                                        <button opaque="NO" tag="2" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="qaG-WD-73J" customClass="elemntButton">
                                             <rect key="frame" x="-23" y="-15" width="46" height="30"/>
                                             <constraints>
                                                 <constraint firstAttribute="width" secondItem="qaG-WD-73J" secondAttribute="height" multiplier="1:1" id="bpa-Gc-fF5"/>
@@ -498,7 +499,7 @@
                                                 <action selector="colorBtnTapped:" destination="-1" eventType="touchUpInside" id="VrW-HC-KkP"/>
                                             </connections>
                                         </button>
-                                        <button opaque="NO" tag="3" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="1Yx-vm-CGX">
+                                        <button opaque="NO" tag="3" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="1Yx-vm-CGX" customClass="elemntButton">
                                             <rect key="frame" x="-23" y="-15" width="46" height="30"/>
                                             <constraints>
                                                 <constraint firstAttribute="width" secondItem="1Yx-vm-CGX" secondAttribute="height" multiplier="1:1" id="3VP-ud-mkb"/>
@@ -520,7 +521,7 @@
                                                 <action selector="colorBtnTapped:" destination="-1" eventType="touchUpInside" id="nV4-xL-X6j"/>
                                             </connections>
                                         </button>
-                                        <button opaque="NO" tag="4" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="OkZ-LR-2vX">
+                                        <button opaque="NO" tag="4" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="OkZ-LR-2vX" customClass="elemntButton">
                                             <rect key="frame" x="-23" y="-15" width="46" height="30"/>
                                             <constraints>
                                                 <constraint firstAttribute="width" secondItem="OkZ-LR-2vX" secondAttribute="height" multiplier="1:1" id="6PH-kx-l9l"/>
@@ -542,7 +543,7 @@
                                                 <action selector="colorBtnTapped:" destination="-1" eventType="touchUpInside" id="4qT-wc-cX5"/>
                                             </connections>
                                         </button>
-                                        <button opaque="NO" tag="5" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="7d8-ye-k8A">
+                                        <button opaque="NO" tag="5" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="7d8-ye-k8A" customClass="elemntButton">
                                             <rect key="frame" x="-23" y="-15" width="46" height="30"/>
                                             <constraints>
                                                 <constraint firstAttribute="width" secondItem="7d8-ye-k8A" secondAttribute="height" multiplier="1:1" id="xVX-O4-Ywa"/>
@@ -564,7 +565,7 @@
                                                 <action selector="colorBtnTapped:" destination="-1" eventType="touchUpInside" id="qPx-wz-3Ae"/>
                                             </connections>
                                         </button>
-                                        <button opaque="NO" tag="6" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Kgr-h4-hRN">
+                                        <button opaque="NO" tag="6" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Kgr-h4-hRN" customClass="elemntButton">
                                             <rect key="frame" x="-23" y="-15" width="46" height="30"/>
                                             <constraints>
                                                 <constraint firstAttribute="width" secondItem="Kgr-h4-hRN" secondAttribute="height" multiplier="1:1" id="S3D-Fh-k6W"/>
@@ -661,6 +662,16 @@
                                             <exclude reference="Kgr-h4-hRN"/>
                                         </mask>
                                         <mask key="constraints">
+                                            <exclude reference="8u3-f5-NOm"/>
+                                            <exclude reference="LQa-Qd-shc"/>
+                                            <exclude reference="JeS-nW-Nq8"/>
+                                            <exclude reference="lIU-vl-Zbp"/>
+                                            <exclude reference="riY-0K-4MU"/>
+                                            <exclude reference="YH9-fG-1hc"/>
+                                            <exclude reference="oWC-js-ChC"/>
+                                            <exclude reference="Vjs-ge-mOg"/>
+                                            <exclude reference="hyD-pg-wu0"/>
+                                            <exclude reference="jug-fo-JHC"/>
                                             <exclude reference="Fct-S5-S0a"/>
                                             <exclude reference="LoV-kY-qJA"/>
                                             <exclude reference="XFb-KM-oBo"/>
@@ -669,26 +680,16 @@
                                             <exclude reference="sGf-4l-2bR"/>
                                             <exclude reference="v3G-1f-4jp"/>
                                             <exclude reference="z5G-FS-5ae"/>
-                                            <exclude reference="BB0-Xc-02B"/>
-                                            <exclude reference="U1Q-CM-DIV"/>
-                                            <exclude reference="f79-WT-HDa"/>
-                                            <exclude reference="zbi-Ml-D9V"/>
-                                            <exclude reference="Vjs-ge-mOg"/>
-                                            <exclude reference="hyD-pg-wu0"/>
-                                            <exclude reference="jug-fo-JHC"/>
-                                            <exclude reference="JeS-nW-Nq8"/>
-                                            <exclude reference="lIU-vl-Zbp"/>
-                                            <exclude reference="riY-0K-4MU"/>
                                             <exclude reference="0ru-bq-TqZ"/>
                                             <exclude reference="2Sy-w6-zDM"/>
                                             <exclude reference="9a7-P9-kEh"/>
                                             <exclude reference="ioN-Ll-D8N"/>
                                             <exclude reference="rGw-f9-kr0"/>
                                             <exclude reference="y3Z-h0-63F"/>
-                                            <exclude reference="YH9-fG-1hc"/>
-                                            <exclude reference="oWC-js-ChC"/>
-                                            <exclude reference="8u3-f5-NOm"/>
-                                            <exclude reference="LQa-Qd-shc"/>
+                                            <exclude reference="BB0-Xc-02B"/>
+                                            <exclude reference="U1Q-CM-DIV"/>
+                                            <exclude reference="f79-WT-HDa"/>
+                                            <exclude reference="zbi-Ml-D9V"/>
                                         </mask>
                                     </variation>
                                     <variation key="heightClass=regular-widthClass=compact">
@@ -702,6 +703,16 @@
                                             <include reference="Kgr-h4-hRN"/>
                                         </mask>
                                         <mask key="constraints">
+                                            <exclude reference="8u3-f5-NOm"/>
+                                            <include reference="LQa-Qd-shc"/>
+                                            <include reference="JeS-nW-Nq8"/>
+                                            <exclude reference="lIU-vl-Zbp"/>
+                                            <include reference="riY-0K-4MU"/>
+                                            <exclude reference="YH9-fG-1hc"/>
+                                            <include reference="oWC-js-ChC"/>
+                                            <include reference="Vjs-ge-mOg"/>
+                                            <include reference="hyD-pg-wu0"/>
+                                            <exclude reference="jug-fo-JHC"/>
                                             <include reference="Fct-S5-S0a"/>
                                             <include reference="LoV-kY-qJA"/>
                                             <include reference="XFb-KM-oBo"/>
@@ -710,26 +721,16 @@
                                             <include reference="sGf-4l-2bR"/>
                                             <include reference="v3G-1f-4jp"/>
                                             <include reference="z5G-FS-5ae"/>
-                                            <include reference="BB0-Xc-02B"/>
-                                            <exclude reference="U1Q-CM-DIV"/>
-                                            <include reference="f79-WT-HDa"/>
-                                            <include reference="zbi-Ml-D9V"/>
-                                            <include reference="Vjs-ge-mOg"/>
-                                            <include reference="hyD-pg-wu0"/>
-                                            <exclude reference="jug-fo-JHC"/>
-                                            <include reference="JeS-nW-Nq8"/>
-                                            <exclude reference="lIU-vl-Zbp"/>
-                                            <include reference="riY-0K-4MU"/>
                                             <include reference="0ru-bq-TqZ"/>
                                             <exclude reference="2Sy-w6-zDM"/>
                                             <include reference="9a7-P9-kEh"/>
                                             <include reference="ioN-Ll-D8N"/>
                                             <include reference="rGw-f9-kr0"/>
                                             <exclude reference="y3Z-h0-63F"/>
-                                            <exclude reference="YH9-fG-1hc"/>
-                                            <include reference="oWC-js-ChC"/>
-                                            <exclude reference="8u3-f5-NOm"/>
-                                            <include reference="LQa-Qd-shc"/>
+                                            <include reference="BB0-Xc-02B"/>
+                                            <exclude reference="U1Q-CM-DIV"/>
+                                            <include reference="f79-WT-HDa"/>
+                                            <include reference="zbi-Ml-D9V"/>
                                         </mask>
                                     </variation>
                                 </view>

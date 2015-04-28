@@ -7,6 +7,7 @@
 //
 
 #import "ViewController.h"
+#import "elemntButton.h"
 
 @interface storeViewController : ViewController
 @property (strong, nonatomic) IBOutlet UIScrollView *catalogScroll;
@@ -28,7 +29,7 @@
 @property (strong, nonatomic) IBOutlet UIImageView *heart4;
 @property (strong, nonatomic) IBOutlet UIImageView *heart5;
 
-@property (strong, nonatomic) IBOutletCollection(UIButton) NSArray *colorButtons;
+@property (strong, nonatomic) IBOutletCollection(elemntButton) NSArray *colorButtons;
 
 
 
@@ -48,6 +49,7 @@
 - (IBAction)goLuckyHouse:(id)sender;
 - (IBAction)addDiamond:(id)sender;
 
-- (IBAction)colorBtnTapped:(UIButton *)sender;
+- (IBAction)colorBtnTapped:(elemntButton *)sender;
+@property (strong, nonatomic) IBOutlet UIButton *buyAction;
 
 @end

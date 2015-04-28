@@ -426,11 +426,11 @@
             ignoreCount = "0"
             continueAfterRunningActions = "No"
             filePath = "Anime Face/storeViewController.m"
-            timestampString = "451820724.868747"
+            timestampString = "451881053.526601"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "230"
-            endingLineNumber = "230"
+            startingLineNumber = "229"
+            endingLineNumber = "229"
             landmarkName = "-elementTapped:"
             landmarkType = "5">
          </BreakpointContent>
@@ -442,12 +442,12 @@
             ignoreCount = "0"
             continueAfterRunningActions = "No"
             filePath = "Anime Face/storeViewController.m"
-            timestampString = "451820773.494102"
+            timestampString = "451881053.526601"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "290"
-            endingLineNumber = "290"
-            landmarkName = "-drawColors:"
+            startingLineNumber = "292"
+            endingLineNumber = "292"
+            landmarkName = "-drawColors:withImageName:"
             landmarkType = "5">
          </BreakpointContent>
       </BreakpointProxy>

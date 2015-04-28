@@ -223,7 +223,6 @@ bool showingDefault;
     [self.priceLabel setText:[NSString stringWithFormat:@"%d",sender.price]];
     
     [self drawStars:sender.stars];
-    [self drawColors:sender.colorNum];
 
     sexSelectedNow = sender.sex;
     
@@ -256,6 +255,9 @@ bool showingDefault;
             
         }
         
+        [self drawColors:sender.colorNum withImageName:sender.imageName];
+
+        
     }else
     {
         if (self.starView.isHidden) {
@@ -286,14 +288,16 @@ bool showingDefault;
     }
 }
 
--(void)drawColors:(int)starNum
+-(void)drawColors:(int)starNum withImageName:(NSString *)imageName
 {
     for (int i = 0; i<starNum; i++) {
         [self.colorButtons[i] setHidden:NO];
+        elemntButton *btn = self.colorButtons[i];
+        btn.imageName = imageName;
+        
     }
     for (int i = starNum; i<7; i++) {
         [self.colorButtons[i] setHidden:YES];
-        
     }
 }
 
@@ -341,9 +345,23 @@ bool showingDefault;
 - (IBAction)addDiamond:(id)sender {
 }
 
-- (IBAction)colorBtnTapped:(UIButton *)sender {
+- (IBAction)colorBtnTapped:(elemntButton *)sender {
     
-
+    NSString *frontImageName = [NSString stringWithFormat:@"%@-%d-front",sender.imageName,sender.tag];
+    [self.productImage setImage:[UIImage imageNamed:frontImageName]];
+    
+    
+    
+    NSString *backImageName = [NSString stringWithFormat:@"%@-%d-back",sender.imageName,sender.tag];
+    UIImage *backImage = [UIImage imageNamed:backImageName];
+    if (backImage) {
+        
+        [self.backHairImage setImage:[UIImage imageNamed:backImageName]];
+    }else
+    {
+        [self.backHairImage setImage:nil];
+        
+    }
     
     
 }
