@@ -170,6 +170,7 @@
 		A47EF4FC1AE5EFF7005C32E0 /* hair1-2-1.png in Resources */ = {isa = PBXBuildFile; fileRef = A47EF4F81AE5EFF7005C32E0 /* hair1-2-1.png */; };
 		A47EF4FD1AE5EFF7005C32E0 /* hair2-4-0.png in Resources */ = {isa = PBXBuildFile; fileRef = A47EF4F91AE5EFF7005C32E0 /* hair2-4-0.png */; };
 		A47EF4FE1AE5EFF7005C32E0 /* hair2-4-1.png in Resources */ = {isa = PBXBuildFile; fileRef = A47EF4FA1AE5EFF7005C32E0 /* hair2-4-1.png */; };
+		A49116F61AEF4FB10050A6DA /* productNow.m in Sources */ = {isa = PBXBuildFile; fileRef = A49116F51AEF4FB10050A6DA /* productNow.m */; };
 		A4A211001AD3A2F4006973E0 /* rewardViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = A4A210FE1AD3A2F4006973E0 /* rewardViewController.m */; };
 		A4A211011AD3A2F4006973E0 /* rewardViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = A4A210FF1AD3A2F4006973E0 /* rewardViewController.xib */; };
 		A4A211051AD3A411006973E0 /* 01.png in Resources */ = {isa = PBXBuildFile; fileRef = A4A211021AD3A411006973E0 /* 01.png */; };
@@ -723,6 +724,8 @@
 		A47EF4F81AE5EFF7005C32E0 /* hair1-2-1.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "hair1-2-1.png"; path = "Anime Face/hair1-2-1.png"; sourceTree = SOURCE_ROOT; };
 		A47EF4F91AE5EFF7005C32E0 /* hair2-4-0.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "hair2-4-0.png"; path = "Anime Face/hair2-4-0.png"; sourceTree = SOURCE_ROOT; };
 		A47EF4FA1AE5EFF7005C32E0 /* hair2-4-1.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "hair2-4-1.png"; path = "Anime Face/hair2-4-1.png"; sourceTree = SOURCE_ROOT; };
+		A49116F41AEF4FB10050A6DA /* productNow.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = productNow.h; sourceTree = "<group>"; };
+		A49116F51AEF4FB10050A6DA /* productNow.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = productNow.m; sourceTree = "<group>"; };
 		A4A210FD1AD3A2F4006973E0 /* rewardViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = rewardViewController.h; sourceTree = "<group>"; };
 		A4A210FE1AD3A2F4006973E0 /* rewardViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = rewardViewController.m; sourceTree = "<group>"; };
 		A4A210FF1AD3A2F4006973E0 /* rewardViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = rewardViewController.xib; sourceTree = "<group>"; };
@@ -1324,6 +1327,8 @@
 				A47D6EB61AC3E1ED00AC1768 /* ViewController.m */,
 				A4BF64591AEE13FF009B38BE /* buttonProduct.h */,
 				A4BF645A1AEE13FF009B38BE /* buttonProduct.m */,
+				A49116F41AEF4FB10050A6DA /* productNow.h */,
+				A49116F51AEF4FB10050A6DA /* productNow.m */,
 				A456D2681AE8C73B0032F41F /* storeViewController.h */,
 				A456D2691AE8C73B0032F41F /* storeViewController.m */,
 				A456D26A1AE8C73B0032F41F /* storeViewController.xib */,
@@ -2475,6 +2480,7 @@
 				A4A211001AD3A2F4006973E0 /* rewardViewController.m in Sources */,
 				A4CA3AC31ACA9D3E00D50D80 /* APLPlacardView.m in Sources */,
 				A4CA3AA31ACA440900D50D80 /* gameViewController.m in Sources */,
+				A49116F61AEF4FB10050A6DA /* productNow.m in Sources */,
 				A47D6EB71AC3E1ED00AC1768 /* ViewController.m in Sources */,
 				A4A2110E1AD3B2AE006973E0 /* imageWithName.m in Sources */,
 				A4CA3AC71ACAA0D300D50D80 /* elemntButton.m in Sources */,

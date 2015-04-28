@@ -16,6 +16,7 @@
                 <outlet property="buyAction" destination="75x-Rx-M74" id="UR4-Qo-6fm"/>
                 <outlet property="catalogScroll" destination="Qa3-aR-zLV" id="f9e-u6-ebF"/>
                 <outlet property="colorView" destination="2QV-Uc-gfb" id="KcC-5G-QJI"/>
+                <outlet property="diamondLabel" destination="DOi-vk-hdL" id="QwI-26-b0s"/>
                 <outlet property="faceImage" destination="uJb-9s-lbs" id="Ufi-Xw-cjw"/>
                 <outlet property="heart1" destination="KRn-Ep-suf" id="WFr-no-dY3"/>
                 <outlet property="heart2" destination="Uca-h0-nbd" id="fA1-TR-YBF"/>
@@ -113,6 +114,25 @@
                         <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="diamondhowmuch.png" translatesAutoresizingMaskIntoConstraints="NO" id="gvy-VG-4Ff">
                             <rect key="frame" x="0.0" y="0.0" width="240" height="128"/>
                         </imageView>
+                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="diamond" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="DOi-vk-hdL">
+                            <rect key="frame" x="0.0" y="-21" width="42" height="21"/>
+                            <constraints>
+                                <constraint firstAttribute="width" secondItem="DOi-vk-hdL" secondAttribute="height" multiplier="5:2" id="H9t-jn-rOS"/>
+                            </constraints>
+                            <fontDescription key="fontDescription" type="system" pointSize="16"/>
+                            <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                            <nil key="highlightedColor"/>
+                            <variation key="default">
+                                <mask key="constraints">
+                                    <exclude reference="H9t-jn-rOS"/>
+                                </mask>
+                            </variation>
+                            <variation key="heightClass=regular-widthClass=compact">
+                                <mask key="constraints">
+                                    <include reference="H9t-jn-rOS"/>
+                                </mask>
+                            </variation>
+                        </label>
                         <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="wpJ-Rt-1hK">
                             <rect key="frame" x="-23" y="-15" width="46" height="30"/>
                             <constraints>
@@ -144,11 +164,14 @@
                         <constraint firstAttribute="height" constant="36" id="3vZ-FD-B5a">
                             <variation key="heightClass=regular-widthClass=compact" constant="31"/>
                         </constraint>
+                        <constraint firstItem="DOi-vk-hdL" firstAttribute="centerX" secondItem="gvy-VG-4Ff" secondAttribute="centerX" id="5H6-1r-lEu"/>
                         <constraint firstItem="gvy-VG-4Ff" firstAttribute="top" secondItem="Haq-SI-aaJ" secondAttribute="top" id="KFO-Rf-SHw"/>
+                        <constraint firstItem="DOi-vk-hdL" firstAttribute="centerY" secondItem="gvy-VG-4Ff" secondAttribute="centerY" id="RN5-f1-n5R"/>
                         <constraint firstAttribute="height" secondItem="wpJ-Rt-1hK" secondAttribute="height" multiplier="10:9" id="USv-8C-NvJ">
                             <variation key="heightClass=regular-widthClass=compact" constant="1"/>
                         </constraint>
                         <constraint firstAttribute="bottom" secondItem="gvy-VG-4Ff" secondAttribute="bottom" id="YJV-Ln-HmN"/>
+                        <constraint firstItem="DOi-vk-hdL" firstAttribute="height" secondItem="wpJ-Rt-1hK" secondAttribute="height" id="ZL1-Z0-zr7"/>
                         <constraint firstAttribute="trailing" secondItem="gvy-VG-4Ff" secondAttribute="trailing" id="fvi-Yx-7pD"/>
                         <constraint firstAttribute="centerY" secondItem="wpJ-Rt-1hK" secondAttribute="centerY" constant="-0.5" id="gSK-TQ-L7u">
                             <variation key="heightClass=regular-widthClass=compact" constant="-1"/>
@@ -161,35 +184,43 @@
                     <variation key="default">
                         <mask key="subviews">
                             <exclude reference="gvy-VG-4Ff"/>
+                            <exclude reference="DOi-vk-hdL"/>
                             <exclude reference="wpJ-Rt-1hK"/>
                         </mask>
                         <mask key="constraints">
                             <exclude reference="3vZ-FD-B5a"/>
                             <exclude reference="jMy-UO-8es"/>
-                            <exclude reference="USv-8C-NvJ"/>
-                            <exclude reference="gSK-TQ-L7u"/>
-                            <exclude reference="kS1-TO-SwM"/>
                             <exclude reference="3mu-3C-VUE"/>
                             <exclude reference="KFO-Rf-SHw"/>
                             <exclude reference="YJV-Ln-HmN"/>
                             <exclude reference="fvi-Yx-7pD"/>
+                            <exclude reference="5H6-1r-lEu"/>
+                            <exclude reference="RN5-f1-n5R"/>
+                            <exclude reference="ZL1-Z0-zr7"/>
+                            <exclude reference="USv-8C-NvJ"/>
+                            <exclude reference="gSK-TQ-L7u"/>
+                            <exclude reference="kS1-TO-SwM"/>
                         </mask>
                     </variation>
                     <variation key="heightClass=regular-widthClass=compact">
                         <mask key="subviews">
                             <include reference="gvy-VG-4Ff"/>
+                            <include reference="DOi-vk-hdL"/>
                             <include reference="wpJ-Rt-1hK"/>
                         </mask>
                         <mask key="constraints">
                             <include reference="3vZ-FD-B5a"/>
                             <include reference="jMy-UO-8es"/>
-                            <include reference="USv-8C-NvJ"/>
-                            <include reference="gSK-TQ-L7u"/>
-                            <include reference="kS1-TO-SwM"/>
                             <include reference="3mu-3C-VUE"/>
                             <include reference="KFO-Rf-SHw"/>
                             <include reference="YJV-Ln-HmN"/>
                             <include reference="fvi-Yx-7pD"/>
+                            <include reference="5H6-1r-lEu"/>
+                            <include reference="RN5-f1-n5R"/>
+                            <include reference="ZL1-Z0-zr7"/>
+                            <include reference="USv-8C-NvJ"/>
+                            <include reference="gSK-TQ-L7u"/>
+                            <include reference="kS1-TO-SwM"/>
                         </mask>
                     </variation>
                 </view>
@@ -824,6 +855,9 @@
                                     <include reference="yG4-MR-aCk"/>
                                 </mask>
                             </variation>
+                            <connections>
+                                <action selector="buyProduct:" destination="-1" eventType="touchUpInside" id="7YN-r6-CBd"/>
+                            </connections>
                         </button>
                     </subviews>
                     <constraints>

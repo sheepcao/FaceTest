@@ -8,12 +8,14 @@
 
 #import "storeViewController.h"
 #import "buttonProduct.h"
+#import "productNow.h"
 
 
 @interface storeViewController ()<UIScrollViewDelegate>
 
 @property (strong,nonatomic) NSArray *heartArray;
 @property (strong,nonatomic) buttonProduct *defaultButton;
+@property (strong,nonatomic) product *productNow;
 
 @end
 
@@ -34,7 +36,31 @@ bool showingDefault;
     [self performSelector:@selector(setupCatalog) withObject:nil afterDelay:0.8];
     [self performSelector:@selector(setupLists) withObject:nil afterDelay:0.9];
     
+    NSString *diamond = [[NSUserDefaults standardUserDefaults] objectForKey:@"diamond"];
     
+    if (diamond) {
+        [self.diamondLabel setText:diamond];
+    }else
+    {
+        [[NSUserDefaults standardUserDefaults] setObject:@"1000" forKey:@"diamond"];
+        [self.diamondLabel setText:@"1000"];
+
+    }
+    
+    
+}
+
+-(void)refreshProducts
+{
+
+    for (UIView *subs in [self.productListScorll subviews] ) {
+        if ([subs isKindOfClass:[UIScrollView class]]) {
+            [subs removeFromSuperview];
+        }
+        
+    }
+    showingDefault = YES;
+    [self setupLists];
 }
 
 
@@ -149,6 +175,13 @@ bool showingDefault;
         
         [self.productListScorll addSubview:oneList];
         
+        
+        
+        if (listElements.count == 0) {
+           //to be empty ....
+        }
+        
+        
         for (int j = 0 ; j<listElements.count; j++) {
             
             NSString *elementImageName = [listElements[j] objectForKey:@"name"];
@@ -173,6 +206,10 @@ bool showingDefault;
             element.price = elementPrice;
             element.sex = elementSex;
             element.titleName = elementTitle;
+            element.producrNum = j;
+            element.catelogName =[[self.GameData objectForKey:@"catalogStore"] objectAtIndex:i];
+            
+            
             if (i == 0)//hair list
             {
                 element.colorNum = elementColors;
@@ -205,7 +242,7 @@ bool showingDefault;
 //    if (showingDefault) {
 //        [self setDefaultView:self.defaultButton];
 //    }
-    
+
     
     [self.loadingView setHidden:YES];
     
@@ -225,6 +262,13 @@ bool showingDefault;
     [self drawStars:sender.stars];
 
     sexSelectedNow = sender.sex;
+    
+    self.productNow = [[product alloc] init];
+    self.productNow.price = sender.price;
+    self.productNow.sex = sender.sex;
+    self.productNow.productName = sender.imageName;
+    self.productNow.productCategory = sender.catelogName;
+    self.productNow.productNumber = sender.producrNum;
     
 
     if ([sender.imageLevel intValue]==0) {
@@ -337,6 +381,8 @@ bool showingDefault;
 */
 
 - (IBAction)backTap:(id)sender {
+    
+    [self.navigationController popViewControllerAnimated:YES];
 }
 
 - (IBAction)goLuckyHouse:(id)sender {
@@ -363,6 +409,130 @@ bool showingDefault;
         
     }
     
+    
+}
+- (IBAction)buyProduct:(id)sender {
+    if (!self.productNow) {
+        return;
+    }
+    
+    if ([self checkDiamond:self.productNow.price]) {
+        
+        [self writeToPurchased];
+        [self deleteItemFromPlist:@"GameData" withCatelog:self.productNow.productCategory andElementNum:self.productNow.productNumber];
+        self.GameData = [self readDataFromPlist:@"GameData"];
+        [self costDiamond:self.productNow.price];
+        
+        
+        [self refreshProducts];
+        
+        UIAlertView *success = [[UIAlertView alloc] initWithTitle:@"success!" message:@"购买成功" delegate:nil cancelButtonTitle:@"OK" otherButtonTitles:nil, nil];
+        [success show];
+
+    }else
+    {
+        UIView *alertView = [[UIView alloc] initWithFrame:CGRectMake((SCREEN_WIDTH-280)/2, SCREEN_HEIGHT+10, 280, 185)];
+        alertView.alpha = 0.0f;
+        UIImageView *backImg = [[UIImageView alloc] initWithFrame:CGRectMake(0, 0, 280, 185)];
+        [backImg setImage:[UIImage imageNamed:@"diamond not enough board"]];
+        [alertView addSubview:backImg];
+        
+        
+        [UIView beginAnimations:nil context:NULL];
+        [UIView setAnimationDuration:0.5];
+        
+        [alertView setFrame:CGRectMake((SCREEN_WIDTH-280)/2, (SCREEN_HEIGHT-185)/2, 280, 185)];
+        alertView.alpha = 1;
+        
+        [UIView commitAnimations];
+        
+        
+    }
+    
+    
+}
+
+-(void)costDiamond:(int)price
+{
+    int diamondRemain = [[[NSUserDefaults standardUserDefaults] objectForKey:@"diamond"] intValue];
+    NSString *diamondNow =[NSString stringWithFormat:@"%d",diamondRemain - price];
+    
+    [[NSUserDefaults standardUserDefaults] setObject:diamondNow forKey:@"diamond"];
+    
+    [self.diamondLabel setText:diamondNow];
+    
+    
+}
+
+-(BOOL)checkDiamond:(int)price;
+{
+    int diamondRemain = [[[NSUserDefaults standardUserDefaults] objectForKey:@"diamond"] intValue];
+    
+    return diamondRemain>=price;
+}
+
+//eric: purchased product is a dic with two keys:haveNew(@"yes" or @"no") and purchasedArray(NSMutableArray).
+-(void)writeToPurchased
+{
+    if ([[NSUserDefaults standardUserDefaults] objectForKey:self.productNow.productCategory]) {
+        
+        
+        NSMutableDictionary *purchasedCatelog = [[NSMutableDictionary alloc] init];
+        [purchasedCatelog setObject:@"yes" forKey:@"haveNew"];
+        
+        NSMutableArray *purchasedArray = [[NSUserDefaults standardUserDefaults] objectForKey:self.productNow.productCategory];
+        
+        NSString *newProductName = [NSString stringWithFormat:@"%@+new",self.productNow.productName];
+        [purchasedArray addObject:newProductName];
+        [purchasedCatelog setObject:purchasedArray forKey:@"purchasedArray"];
+
+        
+        [[NSUserDefaults standardUserDefaults] setObject:purchasedCatelog forKey:self.productNow.productCategory];
+        
+       
+    }else
+    {
+        NSMutableDictionary *purchasedCatelog = [[NSMutableDictionary alloc] init];
+        [purchasedCatelog setObject:@"yes" forKey:@"haveNew"];
+        
+        NSMutableArray *purchasedArray = [[NSMutableArray alloc] init];
+        
+        NSString *newProductName = [NSString stringWithFormat:@"%@+new",self.productNow.productName];
+        [purchasedArray addObject:newProductName];
+        
+        [purchasedCatelog setObject:purchasedArray forKey:@"purchasedArray"];
+        
+        [[NSUserDefaults standardUserDefaults] setObject:purchasedCatelog forKey:self.productNow.productCategory];
+    }
+}
+
+-(void)deleteItemFromPlist:(NSString *)plistname withCatelog:(NSString *)catelog andElementNum:(int)elementNum
+{
+    NSString *documentsDirectory = [NSSearchPathForDirectoriesInDomains(NSDocumentDirectory, NSUserDomainMask, YES) objectAtIndex:0];
+    NSString *plistPath = [documentsDirectory stringByAppendingPathComponent:[ NSString stringWithFormat:@"%@.plist",plistname ]];
+    NSFileManager* manager = [NSFileManager defaultManager];
+    if ([manager fileExistsAtPath:plistPath] == YES)
+    {
+        if ([manager isWritableFileAtPath:plistPath])
+        {
+            NSMutableDictionary* infoDict = [NSMutableDictionary dictionaryWithContentsOfFile:plistPath];
+            NSDictionary *allProducts = [infoDict objectForKey:@"productInfo"];
+            [[allProducts objectForKey:catelog] removeObjectAtIndex:elementNum];
+            [infoDict setObject:allProducts forKey:@"productInfo"];
+            [infoDict writeToFile:plistPath atomically:NO];
+            [manager setAttributes:[NSDictionary dictionaryWithObject:[NSDate date] forKey:NSFileModificationDate] ofItemAtPath:[[NSBundle mainBundle] bundlePath] error:nil];
+        }
+    }
+}
+
+-(NSMutableDictionary *)readDataFromPlist:(NSString *)plistname
+{
+    //read level data from plist
+    NSString *documentsDirectory = [NSSearchPathForDirectoriesInDomains(NSDocumentDirectory, NSUserDomainMask, YES) objectAtIndex:0];
+    NSString *plistPath = [documentsDirectory stringByAppendingPathComponent:[ NSString stringWithFormat:@"%@.plist",plistname ]];
+    NSMutableDictionary *levelData = [[NSMutableDictionary alloc] initWithContentsOfFile:plistPath];
+    //    NSLog(@"levelData%@",levelData);
+    return levelData;
     
 }
 @end

@@ -31,6 +31,7 @@
 
 @property (strong, nonatomic) IBOutletCollection(elemntButton) NSArray *colorButtons;
 
+@property (strong, nonatomic) IBOutlet UILabel *diamondLabel;
 
 
 @property (strong, nonatomic) IBOutlet UIView *loadingView;
@@ -51,5 +52,6 @@
 
 - (IBAction)colorBtnTapped:(elemntButton *)sender;
 @property (strong, nonatomic) IBOutlet UIButton *buyAction;
+- (IBAction)buyProduct:(id)sender;
 
 @end

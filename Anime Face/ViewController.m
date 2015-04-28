@@ -22,13 +22,35 @@
     // Do any additional setup after loading the view, typically from a nib.
     self.navigationController.navigationBarHidden = YES;
 
-    [self copyPlistToDocument:@"GameData"];
-    self.GameDatas = [self readDataFromPlist:@"GameData"];
+//    [self copyPlistToDocument:@"GameData"];
+//    self.GameDatas = [self readDataFromPlist:@"GameData"];
+    
+    [self updatePlistWhenUpdateing];
     
     
 
     
 }
+
+-(void)updatePlistWhenUpdateing
+{
+    if ([[[NSUserDefaults standardUserDefaults] objectForKey:@"prior_version"] isEqualToString:VERSIONNUMBER]) {
+        
+        [self copyPlistToDocument:@"GameData"];
+        self.GameDatas = [self readDataFromPlist:@"GameData"];
+        
+        return;
+    }else
+    {
+        [self removePlistFromDocument:@"gameData"];
+        [self copyPlistToDocument:@"GameData"];
+        self.GameDatas = [self readDataFromPlist:@"GameData"];
+        
+        [[NSUserDefaults standardUserDefaults] setObject:VERSIONNUMBER forKey:@"prior_version"];
+    }
+}
+
+
 
 - (void)didReceiveMemoryWarning {
     [super didReceiveMemoryWarning];

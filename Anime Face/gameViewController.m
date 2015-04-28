@@ -105,6 +105,20 @@
 //        [catalogBtn setTitle:catalogText[i] forState:UIControlStateNormal];
         [catalogBtn setImage:[UIImage imageNamed:catalogText[i]] forState:UIControlStateNormal];
         [catalogBtn setImage:[UIImage imageNamed:[NSString stringWithFormat:@"%@1",catalogText[i]]] forState:UIControlStateSelected];
+        if([[NSUserDefaults standardUserDefaults] objectForKey:catalogText[i]])
+        {
+            NSMutableDictionary *purchasedCatelog = [[NSUserDefaults standardUserDefaults] objectForKey:catalogText[i]];
+            
+            if ([[purchasedCatelog objectForKey:@"haveNew"] isEqualToString:@"yes"]) {
+                NSLog(@"have new!!!!!!");
+                
+                UIImageView *newImage = [[UIImageView alloc] initWithFrame:CGRectMake(catalogBtn.frame.size.width*5/7, 2, catalogBtn.frame.size.width/6, catalogBtn.frame.size.width/6)];
+                [newImage setImage:[UIImage imageNamed:@"new small"]];
+                newImage.tag = 9999;// to identify
+                [catalogBtn addSubview:newImage];
+                
+            }
+        }
         
 
         [catalogBtn setImageEdgeInsets:UIEdgeInsetsMake(1, 15, 3, 16)];
@@ -179,7 +193,12 @@
 
     
     for (int i = 0 ; i < CATALOG_NUM; i++) {
-        NSArray *listElements = [listsText objectForKey:[[self.GameData objectForKey:[NSString stringWithFormat:@"catalog%d",self.sex]] objectAtIndex:i]];
+        
+        NSString *catalogKey = [[self.GameData objectForKey:[NSString stringWithFormat:@"catalog%d",self.sex]] objectAtIndex:i];
+        
+        NSArray *listElements = [listsText objectForKey:catalogKey];
+        NSMutableArray *allListElements = [NSMutableArray arrayWithArray:listElements];
+
 
         UIScrollView *oneList = [[UIScrollView alloc] initWithFrame:CGRectMake(0+i*SCREEN_WIDTH, 0, SCREEN_WIDTH,  self.ListsScroll.frame.size.height)];
         [oneList setContentSize:CGSizeMake(SCREEN_WIDTH,(1+listElements.count/3)*(ELEMENT_WIDTH+6)/1.2)];
@@ -189,29 +208,82 @@
         oneList.showsHorizontalScrollIndicator=NO;
 
         
+        if([[NSUserDefaults standardUserDefaults] objectForKey:catalogKey])
+        {
+            NSMutableDictionary *purchasedCatelog = [[NSUserDefaults standardUserDefaults] objectForKey:[[self.GameData objectForKey:[NSString stringWithFormat:@"catalog%d",self.sex]] objectAtIndex:i]];
+            
+            NSArray *purchasedProducts = [purchasedCatelog objectForKey:@"purchasedArray"];
+            for (int i = 0;  i<purchasedProducts.count; i++) {
+                [allListElements addObject:purchasedProducts[i]];
+            }
+            
+            
+        }
 
         [self.ListsScroll addSubview:oneList];
         
-        for (int j = 0 ; j<listElements.count; j++) {
+        for (int j = 0 ; j<allListElements.count; j++) {
             elemntButton *element = [[elemntButton alloc] initWithFrame:CGRectMake(6+(j%3)*(ELEMENT_WIDTH+6), 0+(j/3)*(ELEMENT_WIDTH+6)/1.2, ELEMENT_WIDTH, ELEMENT_WIDTH/1.2)];
             
             CGFloat sidesOffside = ELEMENT_WIDTH - ELEMENT_WIDTH/1.2;
             
             [element setImageEdgeInsets:UIEdgeInsetsMake(0, sidesOffside/2, 0, sidesOffside/2)];
 
-            [element setImage:[UIImage imageNamed:listElements[j]] forState:UIControlStateNormal];
-            if(i==7)//guesture
-            {
-                NSString *preView = [NSString stringWithFormat:@"%@-yulan",listElements[j]];
+            
+            if (j>=listElements.count) {
                 
-                [element setImage:[UIImage imageNamed:preView] forState:UIControlStateNormal];
+                
+                NSString *newProductImageName = allListElements[j];
+                NSArray *nameArray = [newProductImageName componentsSeparatedByString:@"+"];
+                if (nameArray.count>1) {
+                    NSString * newProductImageNameFinal = nameArray[0];
+                    [element setImage:[UIImage imageNamed:newProductImageNameFinal] forState:UIControlStateNormal];
+                    
+                    UIImageView *newImage = [[UIImageView alloc] initWithFrame:CGRectMake(element.frame.size.width*5/6, 2, element.frame.size.width/6, element.frame.size.width/6)];
+                    [newImage setImage:[UIImage imageNamed:@"new big"]];
+                    newImage.tag = 8888;// to identify
+                    [element addSubview:newImage];
+                    
+                    element.imageName = newProductImageNameFinal;
+                    
+                    if(i==7)//guesture
+                    {
+                        NSString *preView = [NSString stringWithFormat:@"%@-yulan",newProductImageNameFinal];
+                        
+                        [element setImage:[UIImage imageNamed:preView] forState:UIControlStateNormal];
+                        
+                    }
+
+                    
+                }else
+                {
+                    [element setImage:[UIImage imageNamed:newProductImageName] forState:UIControlStateNormal];
+                    element.imageName = newProductImageName;
+                    if(i==7)//guesture
+                    {
+                        NSString *preView = [NSString stringWithFormat:@"%@-yulan",newProductImageName];
+                        
+                        [element setImage:[UIImage imageNamed:preView] forState:UIControlStateNormal];
+                        
+                    }
+
+                }
+
 
             }else
             {
-                [element setImage:[UIImage imageNamed:listElements[j]] forState:UIControlStateNormal];
+                [element setImage:[UIImage imageNamed:allListElements[j]] forState:UIControlStateNormal];
+                element.imageName = allListElements[j];
+                if(i==7)//guesture
+                {
+                    NSString *preView = [NSString stringWithFormat:@"%@-yulan",allListElements[j]];
+                    
+                    [element setImage:[UIImage imageNamed:preView] forState:UIControlStateNormal];
+                    
+                }
 
             }
-            element.imageName = listElements[j];
+            
             element.imageLevel =[NSNumber numberWithInt:i];
             
             [element addTarget:self action:@selector(elementTapped:) forControlEvents:UIControlEventTouchUpInside];
@@ -224,7 +296,7 @@
                 [element setSelected:YES];
             }
             
-            NSLog(@"button:%@",element);
+//            NSLog(@"button:%@",element);
             [oneList addSubview:element];
 
         }

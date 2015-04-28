@@ -16,5 +16,7 @@
 @property int stars;
 @property int colorNum;
 @property int sex;//1:boy,1000:girl
+@property int producrNum;
+@property (nonatomic, strong) NSString *catelogName;
 
 @end
