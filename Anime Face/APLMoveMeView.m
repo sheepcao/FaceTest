@@ -188,11 +188,11 @@ float differenceY;
                   );
             
             if (self.swipeOrientation == swipevertical) {
-                originalCenter.y+=yTarget;
+                originalCenter.y+=yAttached;
             }else if(self.swipeOrientation == swipeAll)
             {
-                originalCenter.x +=xTarget;
-                originalCenter.y+=yTarget;
+                originalCenter.x +=xAttached;
+                originalCenter.y+=yAttached;
             }
             
             NSLog(@"attachedView:%f",xAttached);
@@ -269,7 +269,7 @@ float differenceY;
 #define GROW_ANIMATION_DURATION_SECONDS 0.15
 	
 	NSValue *touchPointValue = [NSValue valueWithCGPoint:touchPoint];
-	[UIView beginAnimations:nil context:(__bridge_retained void *)touchPointValue];
+	[UIView beginAnimations:nil context:(/*__bridge_retained*/ void *)touchPointValue];
 	[UIView setAnimationDuration:GROW_ANIMATION_DURATION_SECONDS];
 	[UIView setAnimationDelegate:self];
 	[UIView setAnimationDidStopSelector:@selector(growAnimationDidStop:finished:context:)];

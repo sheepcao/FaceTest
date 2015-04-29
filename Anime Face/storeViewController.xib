@@ -190,16 +190,16 @@
                         <mask key="constraints">
                             <exclude reference="3vZ-FD-B5a"/>
                             <exclude reference="jMy-UO-8es"/>
-                            <exclude reference="3mu-3C-VUE"/>
-                            <exclude reference="KFO-Rf-SHw"/>
-                            <exclude reference="YJV-Ln-HmN"/>
-                            <exclude reference="fvi-Yx-7pD"/>
                             <exclude reference="5H6-1r-lEu"/>
                             <exclude reference="RN5-f1-n5R"/>
                             <exclude reference="ZL1-Z0-zr7"/>
                             <exclude reference="USv-8C-NvJ"/>
                             <exclude reference="gSK-TQ-L7u"/>
                             <exclude reference="kS1-TO-SwM"/>
+                            <exclude reference="3mu-3C-VUE"/>
+                            <exclude reference="KFO-Rf-SHw"/>
+                            <exclude reference="YJV-Ln-HmN"/>
+                            <exclude reference="fvi-Yx-7pD"/>
                         </mask>
                     </variation>
                     <variation key="heightClass=regular-widthClass=compact">
@@ -211,16 +211,16 @@
                         <mask key="constraints">
                             <include reference="3vZ-FD-B5a"/>
                             <include reference="jMy-UO-8es"/>
-                            <include reference="3mu-3C-VUE"/>
-                            <include reference="KFO-Rf-SHw"/>
-                            <include reference="YJV-Ln-HmN"/>
-                            <include reference="fvi-Yx-7pD"/>
                             <include reference="5H6-1r-lEu"/>
                             <include reference="RN5-f1-n5R"/>
                             <include reference="ZL1-Z0-zr7"/>
                             <include reference="USv-8C-NvJ"/>
                             <include reference="gSK-TQ-L7u"/>
                             <include reference="kS1-TO-SwM"/>
+                            <include reference="3mu-3C-VUE"/>
+                            <include reference="KFO-Rf-SHw"/>
+                            <include reference="YJV-Ln-HmN"/>
+                            <include reference="fvi-Yx-7pD"/>
                         </mask>
                     </variation>
                 </view>
@@ -244,7 +244,7 @@
                                 </mask>
                             </variation>
                         </imageView>
-                        <scrollView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Qa3-aR-zLV">
+                        <scrollView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" showsHorizontalScrollIndicator="NO" showsVerticalScrollIndicator="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Qa3-aR-zLV">
                             <rect key="frame" x="0.0" y="2" width="320" height="36"/>
                             <constraints>
                                 <constraint firstAttribute="height" constant="36" id="ght-yO-98g"/>

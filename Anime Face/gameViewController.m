@@ -92,8 +92,11 @@
 #pragma mark setup Catalog
 -(void)setupCatalog
 {
-    [self.catalogScrollView setContentSize:CGSizeMake(CATALOG_NUM*CATALOG_BUTTON_WIDTH, 40)];
     
+    [self.catalogScrollView setContentSize:CGSizeMake(CATALOG_NUM_STORE*CATALOG_BUTTON_WIDTH, self.catalogScrollView.frame.size.height)];
+    
+    self.catalogScrollView.pagingEnabled = YES;
+
 
     self.catalogScrollView.canCancelContentTouches = YES;
     
@@ -168,6 +171,8 @@
         }
     }
     [sender setSelected:YES];
+    
+
     
 
     
@@ -281,7 +286,6 @@
                     [element setImage:[UIImage imageNamed:preView] forState:UIControlStateNormal];
                     
                 }
-
             }
             
             element.imageLevel =[NSNumber numberWithInt:i];

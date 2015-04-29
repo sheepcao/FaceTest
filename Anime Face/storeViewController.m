@@ -66,6 +66,8 @@ bool showingDefault;
 
 -(void)viewDidAppear:(BOOL)animated
 {
+    
+    [super viewDidAppear:animated];
     showingDefault = YES;
 }
 
@@ -79,9 +81,10 @@ bool showingDefault;
 -(void)setupCatalog
 {
     
-    [self.catalogScroll setContentSize:CGSizeMake(CATALOG_NUM_STORE*CATALOG_BUTTON_WIDTH, 40)];
+    [self.catalogScroll setContentSize:CGSizeMake(CATALOG_NUM_STORE*CATALOG_BUTTON_WIDTH, self.catalogScroll.frame.size.height)];
     
-    
+    self.catalogScroll.pagingEnabled = YES;
+
     self.catalogScroll.canCancelContentTouches = YES;
     
     
@@ -393,12 +396,12 @@ bool showingDefault;
 
 - (IBAction)colorBtnTapped:(elemntButton *)sender {
     
-    NSString *frontImageName = [NSString stringWithFormat:@"%@-%d-front",sender.imageName,sender.tag];
+    NSString *frontImageName = [NSString stringWithFormat:@"%@-%ld-front",sender.imageName,(long)sender.tag];
     [self.productImage setImage:[UIImage imageNamed:frontImageName]];
     
     
     
-    NSString *backImageName = [NSString stringWithFormat:@"%@-%d-back",sender.imageName,sender.tag];
+    NSString *backImageName = [NSString stringWithFormat:@"%@-%ld-back",sender.imageName,(long)sender.tag];
     UIImage *backImage = [UIImage imageNamed:backImageName];
     if (backImage) {
         
@@ -480,7 +483,10 @@ bool showingDefault;
         NSMutableDictionary *purchasedCatelog = [[NSMutableDictionary alloc] init];
         [purchasedCatelog setObject:@"yes" forKey:@"haveNew"];
         
-        NSMutableArray *purchasedArray = [[NSUserDefaults standardUserDefaults] objectForKey:self.productNow.productCategory];
+        NSMutableDictionary *purchasedDic = [[NSUserDefaults standardUserDefaults] objectForKey:self.productNow.productCategory];
+        
+        NSMutableArray *purchasedArray = [purchasedDic objectForKey:@"purchasedArray"];
+
         
         NSString *newProductName = [NSString stringWithFormat:@"%@+new",self.productNow.productName];
         [purchasedArray addObject:newProductName];
