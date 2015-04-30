@@ -89,7 +89,7 @@
         
         
         NSInteger selected =  arc4random() % self.imageOptins.count;
-        [self.productView setImage:[UIImage imageNamed:self.imageOptins[selected]]];
+        [self.productView setImage:[UIImage imageWithContentsOfFile:[[NSBundle mainBundle] pathForResource:self.imageOptins[selected] ofType:@"png"]]];
         [sender setTitle:@"开始抽奖" forState:UIControlStateNormal];
         
 

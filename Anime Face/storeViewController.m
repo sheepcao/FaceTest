@@ -93,8 +93,8 @@ bool showingDefault;
     for (int i = 0 ; i < catalogText.count; i++) {
         UIButton *catalogBtn = [[UIButton alloc] initWithFrame:CGRectMake(0+i*CATALOG_BUTTON_WIDTH, 0, CATALOG_BUTTON_WIDTH, 40)];
         //        [catalogBtn setTitle:catalogText[i] forState:UIControlStateNormal];
-        [catalogBtn setImage:[UIImage imageNamed:catalogText[i]] forState:UIControlStateNormal];
-        [catalogBtn setImage:[UIImage imageNamed:[NSString stringWithFormat:@"%@1",catalogText[i]]] forState:UIControlStateSelected];
+        [catalogBtn setImage:[UIImage imageWithContentsOfFile:[[NSBundle mainBundle] pathForResource:catalogText[i] ofType:@"png"]] forState:UIControlStateNormal];
+        [catalogBtn setImage:[UIImage imageWithContentsOfFile:[[NSBundle mainBundle] pathForResource:[NSString stringWithFormat:@"%@1",catalogText[i]] ofType:@"png"]] forState:UIControlStateSelected];
         
         
         [catalogBtn setImageEdgeInsets:UIEdgeInsetsMake(1, 15, 3, 16)];
@@ -203,7 +203,7 @@ bool showingDefault;
             
             [element setImageEdgeInsets:UIEdgeInsetsMake(0, sidesOffside/2, 0, sidesOffside/2)];
             
-            [element setImage:[UIImage imageNamed:elementImageName] forState:UIControlStateNormal];
+            [element setImage:[UIImage imageWithContentsOfFile:[[NSBundle mainBundle] pathForResource:elementImageName ofType:@"png"]] forState:UIControlStateNormal];
             element.imageName = elementImageName;
             element.imageLevel =[NSNumber numberWithInt:i];
             element.price = elementPrice;
@@ -226,8 +226,8 @@ bool showingDefault;
             }
             
             [element addTarget:self action:@selector(elementTapped:) forControlEvents:UIControlEventTouchUpInside];
-            [element setBackgroundImage: [UIImage imageNamed:@"fame1"] forState:UIControlStateNormal];
-            [element setBackgroundImage:[UIImage imageNamed:@"fame-choosed1"] forState:UIControlStateSelected];
+            [element setBackgroundImage: [UIImage imageWithContentsOfFile:[[NSBundle mainBundle] pathForResource:@"fame1" ofType:@"png"]] forState:UIControlStateNormal];
+            [element setBackgroundImage:[UIImage imageWithContentsOfFile:[[NSBundle mainBundle] pathForResource:@"fame-choosed1" ofType:@"png"]] forState:UIControlStateSelected];
             
             
             if (j == 0) {
@@ -283,18 +283,18 @@ bool showingDefault;
             [self.colorView setHidden:NO];
         }
         
-        [self.faceImage setImage:[UIImage imageNamed:@"face0"]];
+        [self.faceImage setImage:[UIImage imageWithContentsOfFile:[[NSBundle mainBundle] pathForResource:@"face0" ofType:@"png"]]];
         
         NSString *frontImageName = [NSString stringWithFormat:@"%@-0-front",sender.imageName];
-        [self.productImage setImage:[UIImage imageNamed:frontImageName]];
+        [self.productImage setImage:[UIImage imageWithContentsOfFile:[[NSBundle mainBundle] pathForResource:frontImageName ofType:@"png"]]];
         
         
         
         NSString *backImageName = [NSString stringWithFormat:@"%@-0-back",sender.imageName];
-        UIImage *backImage = [UIImage imageNamed:backImageName];
+        UIImage *backImage = [UIImage imageWithContentsOfFile:[[NSBundle mainBundle] pathForResource:backImageName ofType:@"png"]];
         if (backImage) {
             
-            [self.backHairImage setImage:[UIImage imageNamed:backImageName]];
+            [self.backHairImage setImage:[UIImage imageWithContentsOfFile:[[NSBundle mainBundle] pathForResource:backImageName ofType:@"png"]]];
             //            self.headImage.attachedView = self.backHairImage;
         }else
         {
@@ -318,7 +318,7 @@ bool showingDefault;
         [self.faceImage setImage:nil];
         
         NSString *frontImageName = sender.imageName;
-        [self.productImage setImage:[UIImage imageNamed:frontImageName]];
+        [self.productImage setImage:[UIImage imageWithContentsOfFile:[[NSBundle mainBundle] pathForResource:frontImageName ofType:@"png"]]];
     }
     
     
@@ -397,15 +397,15 @@ bool showingDefault;
 - (IBAction)colorBtnTapped:(elemntButton *)sender {
     
     NSString *frontImageName = [NSString stringWithFormat:@"%@-%ld-front",sender.imageName,(long)sender.tag];
-    [self.productImage setImage:[UIImage imageNamed:frontImageName]];
+    [self.productImage setImage:[UIImage imageWithContentsOfFile:[[NSBundle mainBundle] pathForResource:frontImageName ofType:@"png"]]];
     
     
     
     NSString *backImageName = [NSString stringWithFormat:@"%@-%ld-back",sender.imageName,(long)sender.tag];
-    UIImage *backImage = [UIImage imageNamed:backImageName];
+    UIImage *backImage = [UIImage imageWithContentsOfFile:[[NSBundle mainBundle] pathForResource:backImageName ofType:@"png"]];
     if (backImage) {
         
-        [self.backHairImage setImage:[UIImage imageNamed:backImageName]];
+        [self.backHairImage setImage:[UIImage imageWithContentsOfFile:[[NSBundle mainBundle] pathForResource:backImageName ofType:@"png"]]];
     }else
     {
         [self.backHairImage setImage:nil];
@@ -437,7 +437,7 @@ bool showingDefault;
         UIView *alertView = [[UIView alloc] initWithFrame:CGRectMake((SCREEN_WIDTH-280)/2, SCREEN_HEIGHT+10, 280, 185)];
         alertView.alpha = 0.0f;
         UIImageView *backImg = [[UIImageView alloc] initWithFrame:CGRectMake(0, 0, 280, 185)];
-        [backImg setImage:[UIImage imageNamed:@"diamond not enough board"]];
+        [backImg setImage:[UIImage imageWithContentsOfFile:[[NSBundle mainBundle] pathForResource:@"diamond not enough board" ofType:@"png"]]];
         [alertView addSubview:backImg];
         
         

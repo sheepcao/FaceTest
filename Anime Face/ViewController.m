@@ -37,14 +37,13 @@
     if ([[[NSUserDefaults standardUserDefaults] objectForKey:@"prior_version"] isEqualToString:VERSIONNUMBER]) {
         
         [self copyPlistToDocument:@"GameData"];
-        self.GameDatas = [self readDataFromPlist:@"GameData"];
         
         return;
     }else
     {
         [self removePlistFromDocument:@"gameData"];
         [self copyPlistToDocument:@"GameData"];
-        self.GameDatas = [self readDataFromPlist:@"GameData"];
+//        self.GameDatas = [self readDataFromPlist:@"GameData"];
         
         [[NSUserDefaults standardUserDefaults] setObject:VERSIONNUMBER forKey:@"prior_version"];
     }
@@ -138,6 +137,8 @@
 - (IBAction)store:(id)sender {
     
     storeViewController *myStore = [[storeViewController alloc] initWithNibName:@"storeViewController" bundle:nil];
+    self.GameDatas = [self readDataFromPlist:@"GameData"];
+
     myStore.GameData = self.GameDatas;
     
     [self.navigationController pushViewController:myStore animated:YES];
@@ -147,6 +148,8 @@
 
 - (IBAction)enterGame:(UIButton *)sender {
     gameViewController *myGame = [[gameViewController alloc] initWithNibName:@"gameViewController" bundle:nil];
+    self.GameDatas = [self readDataFromPlist:@"GameData"];
+
     myGame.GameData = self.GameDatas;
     myGame.sex = (int)sender.tag;
     [self.navigationController pushViewController:myGame animated:YES];

@@ -25,50 +25,44 @@
 
 @implementation gameViewController
 
+
+int lastOffside;
+
 - (void)viewDidLoad {
     [super viewDidLoad];
     
 
 
-    
-    [self.loadingView setImage:[UIImage imageNamed:[NSString stringWithFormat:@"loading%d",self.sex]]];
+    NSString *path = [[NSBundle mainBundle] pathForResource:[NSString stringWithFormat:@"loading%d",self.sex] ofType:@"png"];
+
+    [self.loadingView setImage:[UIImage imageWithContentsOfFile:path]];
     
     [self.loadPage setHidden:NO];
     
     
     //eric: button on navigation bar....
     
-//    UIView *buttonContainer = [[UIView alloc] initWithFrame:CGRectMake(0, 0, 100, 44)];
-//    buttonContainer.backgroundColor = [UIColor clearColor];
-//    UIButton *button0 = [UIButton buttonWithType:UIButtonTypeCustom];
-//    [button0 setFrame:CGRectMake(0, 0, 100, 44)];
-//    [button0 setTitle:@"Save" forState:UIControlStateNormal];
-//    [button0 setTitleColor:[UIColor blueColor] forState:UIControlStateNormal];
-////    [button0 setBackgroundImage:[UIImage imageNamed:@"button0.png"] forState:UIControlStateNormal];
-//    [button0 addTarget:self action:@selector(saveImage) forControlEvents:UIControlEventTouchUpInside];
-//    [button0 setShowsTouchWhenHighlighted:YES];
-//    [buttonContainer addSubview:button0];
-//    
-//    self.navigationItem.titleView = buttonContainer;
+
     
 
     
     self.imagesArray = @[self.faceFrameView,@"hair",self.mustacheView,self.clothingView,self.eyeView,self.eyebrowView,self.mouthView,self.gestureView,self.glassesView,self.noseView,self.moodView,self.faceImage,self.hatView,self.backImage,self.petView];
     
-    [self.bodyImage setImage:[UIImage imageNamed:[NSString stringWithFormat:@"body%d",self.sex]]];
+    NSString *path1 = [[NSBundle mainBundle] pathForResource:[NSString stringWithFormat:@"body%d",self.sex] ofType:@"png"];
+    [self.bodyImage setImage:[UIImage imageWithContentsOfFile:path1]];
     
-    [self.backImage setImage:[UIImage imageNamed:@"background1"]];
+    [self.backImage setImage:[UIImage imageWithContentsOfFile:[[NSBundle mainBundle] pathForResource:@"background1" ofType:@"png"]]];
     
-    [self.faceFrameView setImage:[UIImage imageNamed:@"face1"]];
-    [self.frontHairView setImage:[UIImage imageNamed:@"hair1-2-0-front"]];
-    [self.backHairImage setImage:[UIImage imageNamed:@"hair1-2-0-back"]];
+    [self.faceFrameView setImage:[UIImage imageWithContentsOfFile:[[NSBundle mainBundle] pathForResource:@"face1" ofType:@"png"]]];
+    [self.frontHairView setImage:[UIImage imageWithContentsOfFile:[[NSBundle mainBundle] pathForResource:@"hair1-2-0-front" ofType:@"png"]]];
+    [self.backHairImage setImage:[UIImage imageWithContentsOfFile:[[NSBundle mainBundle] pathForResource:@"hair1-2-0-back" ofType:@"png"]]];
     
     
     
-//    self.catalogScrollView.backgroundColor = [UIColor colorWithPatternImage:[UIImage imageNamed:@"slip-background.png"]];
+//    self.catalogScrollView.backgroundColor = [UIColor colorWithPatternImage:[UIImage imageWithContentsOfFile:@"slip-background.png"]];
 
     [self performSelector:@selector(setupCatalog) withObject:nil afterDelay:0.8];
-    [self performSelector:@selector(setupLists) withObject:nil afterDelay:0.9];
+    [self performSelector:@selector(setupListsForPage:) withObject:@"0" afterDelay:0.9];
     
     self.imageShare = [[UIImage alloc] init];
 //
@@ -93,7 +87,7 @@
 -(void)setupCatalog
 {
     
-    [self.catalogScrollView setContentSize:CGSizeMake(CATALOG_NUM_STORE*CATALOG_BUTTON_WIDTH, self.catalogScrollView.frame.size.height)];
+    [self.catalogScrollView setContentSize:CGSizeMake(CATALOG_NUM*CATALOG_BUTTON_WIDTH, self.catalogScrollView.frame.size.height)];
     
     self.catalogScrollView.pagingEnabled = YES;
 
@@ -106,8 +100,8 @@
     for (int i = 0 ; i < CATALOG_NUM; i++) {
         UIButton *catalogBtn = [[UIButton alloc] initWithFrame:CGRectMake(0+i*CATALOG_BUTTON_WIDTH, 0, CATALOG_BUTTON_WIDTH, 40)];
 //        [catalogBtn setTitle:catalogText[i] forState:UIControlStateNormal];
-        [catalogBtn setImage:[UIImage imageNamed:catalogText[i]] forState:UIControlStateNormal];
-        [catalogBtn setImage:[UIImage imageNamed:[NSString stringWithFormat:@"%@1",catalogText[i]]] forState:UIControlStateSelected];
+        [catalogBtn setImage:[UIImage imageWithContentsOfFile:[[NSBundle mainBundle] pathForResource:catalogText[i] ofType:@"png"]] forState:UIControlStateNormal];
+        [catalogBtn setImage:[UIImage imageWithContentsOfFile:[[NSBundle mainBundle] pathForResource:[NSString stringWithFormat:@"%@1",catalogText[i]] ofType:@"png"]] forState:UIControlStateSelected];
         if([[NSUserDefaults standardUserDefaults] objectForKey:catalogText[i]])
         {
             NSMutableDictionary *purchasedCatelog = [[NSUserDefaults standardUserDefaults] objectForKey:catalogText[i]];
@@ -116,7 +110,7 @@
                 NSLog(@"have new!!!!!!");
                 
                 UIImageView *newImage = [[UIImageView alloc] initWithFrame:CGRectMake(catalogBtn.frame.size.width*5/7, 2, catalogBtn.frame.size.width/6, catalogBtn.frame.size.width/6)];
-                [newImage setImage:[UIImage imageNamed:@"new small"]];
+                [newImage setImage:[UIImage imageWithContentsOfFile:[[NSBundle mainBundle] pathForResource:@"new small" ofType:@"png"]]];
                 newImage.tag = 9999;// to identify
                 [catalogBtn addSubview:newImage];
                 
@@ -126,13 +120,15 @@
 
         [catalogBtn setImageEdgeInsets:UIEdgeInsetsMake(1, 15, 3, 16)];
         
-        catalogBtn.tag = i;
+        catalogBtn.tag = i+1;
         [catalogBtn addTarget:self action:@selector(catalogTapped:) forControlEvents:UIControlEventTouchUpInside];
         [self.catalogScrollView addSubview:catalogBtn];
         
         if(i==0)
         {
             [catalogBtn setSelected:YES];
+            lastOffside = 0;
+
         }
 
     }
@@ -157,11 +153,20 @@
 -(void)catalogTapped:(UIButton *)sender
 {
     NSLog(@"tag:%ld",(long)sender.tag);
+    int page = (int)(sender.tag-1);
+
     if (self.colorView) {
         [self hideColorViewAnimationFor:self.colorView];
     }
     [self scrollToCatalog:sender.tag];
-    [self.ListsScroll setContentOffset:CGPointMake(SCREEN_WIDTH * sender.tag, 0)];
+    
+    [UIView beginAnimations:nil context:NULL];
+    [UIView setAnimationDuration:0.35];
+    
+
+    [self.ListsScroll setContentOffset:CGPointMake(SCREEN_WIDTH * page, 0)];
+    
+    [UIView commitAnimations];
     
     UIView *superView = [sender superview];
     for (UIView *subView in [superView subviews]) {
@@ -175,16 +180,69 @@
 
     
 
+    NSLog(@"bool1:%d",(page-lastOffside)<2);
+    NSLog(@"bool2:%d",(page-lastOffside)>-2);
+
+    
+//    if ((page-lastOffside)<2 && (page-lastOffside)>-2) {
+//    }else
+//    {
+//        [self setupListsForPage:[NSString stringWithFormat:@"%d",page]];
+//        lastOffside = (int)page;
+//    }
+    
+    NSDictionary *listsText = [self.GameData objectForKey:@"Lists"];
+    
+    for (UIView *scroll in [self.ListsScroll subviews]) {
+        if ([scroll isKindOfClass:[UIScrollView class]]) {
+
+            
+            if (scroll.tag==1000+page) {
+                
+                [self makeListFullElementsForPage:page withData:listsText];
+            }else
+            {
+                for (UIView *elementBtn in [scroll subviews]) {
+                    if (elementBtn.frame.origin.y>3*(ELEMENT_WIDTH+6)/1.2) {
+                        [elementBtn removeFromSuperview];
+                    }
+                }
+                
+            }
+        }
+    }
+
+    
+    
     
 }
 -(void)scrollToCatalog:(NSInteger)BtnTag
 {
     UIButton * catalogBtn =(UIButton *)[self.catalogScrollView viewWithTag:BtnTag];
+    
+    
+    [UIView beginAnimations:nil context:NULL];
+    [UIView setAnimationDuration:0.35];
+    
+    
     [self.catalogScrollView setContentOffset:CGPointMake((catalogBtn.center.x - self.catalogScrollView.center.x), 0) animated:YES];
+    
+    [UIView commitAnimations];
+    
+
+    for (UIView *subView in [self.catalogScrollView subviews]) {
+        if ([subView isKindOfClass:[UIButton class]]) {
+            UIButton *subBtn = (UIButton *)subView;
+            [subBtn setSelected:NO];
+        }
+    }
+    [catalogBtn setSelected:YES];
+
+    
 }
 
 #pragma mark setup Lists
--(void)setupLists
+-(void)setupListsForPage:(NSString *)pageNum
 {
     [self.ListsScroll setFrame:CGRectMake(0, self.catalogScrollView.frame.origin.y+self.catalogScrollView.frame.size.height, SCREEN_WIDTH, SCREEN_HEIGHT - (self.catalogScrollView.frame.origin.y+self.catalogScrollView.frame.size.height))];
     [self.ListsScroll setContentSize:CGSizeMake(CATALOG_NUM*SCREEN_WIDTH,self.ListsScroll.frame.size.height)];
@@ -194,24 +252,56 @@
     self.ListsScroll.showsHorizontalScrollIndicator = NO;
     self.ListsScroll.delegate = self;
     
-    NSDictionary *listsText = [self.GameData objectForKey:@"Lists"];
-
+    for (UIView *subScroll in [self.ListsScroll subviews]) {
+        if ([subScroll isKindOfClass:[UIScrollView class]]) {
+            [subScroll removeFromSuperview];
+        }
+    }
     
-    for (int i = 0 ; i < CATALOG_NUM; i++) {
+    
+    NSDictionary *listsText = [self.GameData objectForKey:@"Lists"];
+ 
+    [self makeListElementsForPage:[pageNum intValue] withData:listsText];
+    
+    
+    [self.loadPage setHidden:YES];
+
+}
+
+
+-(void)makeListElementsForPage:(int)pageNow withData:(NSDictionary *)dic
+{
+    int page = -1;
+    
+    if (pageNow == 0 ) {
+        page =1;
+    }else if(pageNow == CATALOG_NUM-1)
+    {
+        page = CATALOG_NUM-2;
+    }else
+    {
+        page = pageNow;
+    }
+    
+//    for (int i = page-1 ; i < page+2 ; i++) {
+        for (int i = 0 ; i < CATALOG_NUM ; i++) {
+
         
         NSString *catalogKey = [[self.GameData objectForKey:[NSString stringWithFormat:@"catalog%d",self.sex]] objectAtIndex:i];
         
-        NSArray *listElements = [listsText objectForKey:catalogKey];
+        NSArray *listElements = [dic objectForKey:catalogKey];
         NSMutableArray *allListElements = [NSMutableArray arrayWithArray:listElements];
-
-
+        
+        
         UIScrollView *oneList = [[UIScrollView alloc] initWithFrame:CGRectMake(0+i*SCREEN_WIDTH, 0, SCREEN_WIDTH,  self.ListsScroll.frame.size.height)];
         [oneList setContentSize:CGSizeMake(SCREEN_WIDTH,(1+listElements.count/3)*(ELEMENT_WIDTH+6)/1.2)];
         oneList.canCancelContentTouches = YES;
         oneList.bounces = NO;
         oneList.showsVerticalScrollIndicator=NO;
         oneList.showsHorizontalScrollIndicator=NO;
-
+        oneList.tag = 1000+i;
+        oneList.delegate = self;
+        
         
         if([[NSUserDefaults standardUserDefaults] objectForKey:catalogKey])
         {
@@ -224,16 +314,27 @@
             
             
         }
-
+        
         [self.ListsScroll addSubview:oneList];
         
-        for (int j = 0 ; j<allListElements.count; j++) {
+        
+        int elementCount = 0;
+        //for the current page
+//        if (i == pageNow) {
+//            elementCount = (int)allListElements.count;
+//        }else
+//        {
+            elementCount =(int)(allListElements.count>9?9:allListElements.count);
+//        }
+        
+        
+        for (int j = 0 ; j<elementCount; j++) {
             elemntButton *element = [[elemntButton alloc] initWithFrame:CGRectMake(6+(j%3)*(ELEMENT_WIDTH+6), 0+(j/3)*(ELEMENT_WIDTH+6)/1.2, ELEMENT_WIDTH, ELEMENT_WIDTH/1.2)];
             
             CGFloat sidesOffside = ELEMENT_WIDTH - ELEMENT_WIDTH/1.2;
             
             [element setImageEdgeInsets:UIEdgeInsetsMake(0, sidesOffside/2, 0, sidesOffside/2)];
-
+            
             
             if (j>=listElements.count) {
                 
@@ -242,75 +343,83 @@
                 NSArray *nameArray = [newProductImageName componentsSeparatedByString:@"+"];
                 if (nameArray.count>1) {
                     NSString * newProductImageNameFinal = nameArray[0];
-                    [element setImage:[UIImage imageNamed:newProductImageNameFinal] forState:UIControlStateNormal];
+                    NSString *preView = [NSString stringWithFormat:@"%@-yulan",newProductImageNameFinal];
+                    
+                    [element setImage:[UIImage imageWithContentsOfFile:[[NSBundle mainBundle] pathForResource:preView ofType:@"png"]] forState:UIControlStateNormal];
+                    
+//                    [element setImage:[UIImage imageWithContentsOfFile:[[NSBundle mainBundle] pathForResource:newProductImageNameFinal ofType:@"png"]] forState:UIControlStateNormal];
                     
                     UIImageView *newImage = [[UIImageView alloc] initWithFrame:CGRectMake(element.frame.size.width*5/6, 2, element.frame.size.width/6, element.frame.size.width/6)];
-                    [newImage setImage:[UIImage imageNamed:@"new big"]];
+                    
+                    [newImage setImage:[UIImage imageWithContentsOfFile:[[NSBundle mainBundle] pathForResource:@"new big" ofType:@"png"]]];
                     newImage.tag = 8888;// to identify
                     [element addSubview:newImage];
                     
                     element.imageName = newProductImageNameFinal;
+//                    
+//                    if(i==7)//guesture
+//                    {
+//                        NSString *preView = [NSString stringWithFormat:@"%@-yulan",newProductImageNameFinal];
+//                        
+//                        [element setImage:[UIImage imageWithContentsOfFile:[[NSBundle mainBundle] pathForResource:preView ofType:@"png"]] forState:UIControlStateNormal];
+//                        
+//                    }
                     
-                    if(i==7)//guesture
-                    {
-                        NSString *preView = [NSString stringWithFormat:@"%@-yulan",newProductImageNameFinal];
-                        
-                        [element setImage:[UIImage imageNamed:preView] forState:UIControlStateNormal];
-                        
-                    }
-
                     
                 }else
                 {
-                    [element setImage:[UIImage imageNamed:newProductImageName] forState:UIControlStateNormal];
+                    NSString *preView = [NSString stringWithFormat:@"%@-yulan",newProductImageName];
+                    
+                    [element setImage:[UIImage imageWithContentsOfFile:[[NSBundle mainBundle] pathForResource:preView ofType:@"png"]] forState:UIControlStateNormal];
                     element.imageName = newProductImageName;
-                    if(i==7)//guesture
-                    {
-                        NSString *preView = [NSString stringWithFormat:@"%@-yulan",newProductImageName];
-                        
-                        [element setImage:[UIImage imageNamed:preView] forState:UIControlStateNormal];
-                        
-                    }
-
+//                    if(i==7)//guesture
+//                    {
+//                        NSString *preView = [NSString stringWithFormat:@"%@-yulan",newProductImageName];
+//                        
+//                        [element setImage:[UIImage imageWithContentsOfFile:[[NSBundle mainBundle] pathForResource:preView ofType:@"png"]] forState:UIControlStateNormal];
+//                        
+//                    }
+//                    
                 }
-
-
+                
+                
             }else
             {
-                [element setImage:[UIImage imageNamed:allListElements[j]] forState:UIControlStateNormal];
+                NSString *preView = [NSString stringWithFormat:@"%@-yulan",allListElements[j]];
+                
+                [element setImage:[UIImage imageWithContentsOfFile:[[NSBundle mainBundle] pathForResource:preView ofType:@"png"]] forState:UIControlStateNormal];
                 element.imageName = allListElements[j];
-                if(i==7)//guesture
-                {
-                    NSString *preView = [NSString stringWithFormat:@"%@-yulan",allListElements[j]];
-                    
-                    [element setImage:[UIImage imageNamed:preView] forState:UIControlStateNormal];
-                    
-                }
+//                if(i==7)//guesture
+//                {
+//                    NSString *preView = [NSString stringWithFormat:@"%@-yulan",allListElements[j]];
+//                    
+//                    [element setImage:[UIImage imageWithContentsOfFile:[[NSBundle mainBundle] pathForResource:preView ofType:@"png"]] forState:UIControlStateNormal];
+//                    
+//                }
             }
             
             element.imageLevel =[NSNumber numberWithInt:i];
             
             [element addTarget:self action:@selector(elementTapped:) forControlEvents:UIControlEventTouchUpInside];
-            [element setBackgroundImage: [UIImage imageNamed:@"fame1"] forState:UIControlStateNormal];
-            [element setBackgroundImage:[UIImage imageNamed:@"fame-choosed1"] forState:UIControlStateSelected];
+            [element setBackgroundImage: [UIImage imageWithContentsOfFile:[[NSBundle mainBundle] pathForResource:@"fame1" ofType:@"png"]] forState:UIControlStateNormal];
+            [element setBackgroundImage:[UIImage imageWithContentsOfFile:[[NSBundle mainBundle] pathForResource:@"fame-choosed1" ofType:@"png"]] forState:UIControlStateSelected];
             
             
             if (j == 0) {
-            
+                
                 [element setSelected:YES];
             }
             
-//            NSLog(@"button:%@",element);
+            //            NSLog(@"button:%@",element);
             [oneList addSubview:element];
-
+            
         }
         
     }
-    
-    
-    [self.loadPage setHidden:YES];
-
 }
+
+
+
 -(void)elementTapped:(elemntButton *)sender
 {
     NSLog(@"element:%@",sender.imageLevel);
@@ -339,13 +448,13 @@
         }
         
         NSString *frontImageName = [NSString stringWithFormat:@"%@-0-front",sender.imageName];
-        [self.frontHairView setImage:[UIImage imageNamed:frontImageName]];
+        [self.frontHairView setImage:[UIImage imageWithContentsOfFile:[[NSBundle mainBundle] pathForResource:frontImageName ofType:@"png"]]];
         
         NSString *backImageName = [NSString stringWithFormat:@"%@-0-back",sender.imageName];
-        UIImage *backImage = [UIImage imageNamed:backImageName];
+        UIImage *backImage = [UIImage imageWithContentsOfFile:[[NSBundle mainBundle] pathForResource:backImageName ofType:@"png"]];
         if (backImage) {
             
-            [self.backHairImage setImage:[UIImage imageNamed:backImageName]];
+            [self.backHairImage setImage:[UIImage imageWithContentsOfFile:[[NSBundle mainBundle] pathForResource:backImageName ofType:@"png"]]];
 //            self.headImage.attachedView = self.backHairImage;
         }else
         {
@@ -357,7 +466,7 @@
 //        self.headImage.placardView = self.frontHairView;
     }else
     {
-        [self.imagesArray[[sender.imageLevel intValue]] setImage:[UIImage imageNamed:sender.imageName]];
+        [self.imagesArray[[sender.imageLevel intValue]] setImage:[UIImage imageWithContentsOfFile:[[NSBundle mainBundle] pathForResource:sender.imageName ofType:@"png"]]];
         self.headImage.placardView = self.imagesArray[[sender.imageLevel intValue]];
     }
     
@@ -445,7 +554,7 @@
 //        NSString *imageWithColor = [NSString stringWithFormat:@"%@-%d",sender.imageName,i];
         NSString *imageWithColor = [NSString stringWithFormat:@"%d",i];
 
-        [colorBtn setImage:[UIImage imageNamed:imageWithColor] forState:UIControlStateNormal];
+        [colorBtn setImage:[UIImage imageWithContentsOfFile:[[NSBundle mainBundle] pathForResource:imageWithColor ofType:@"png"]] forState:UIControlStateNormal];
         colorBtn.imageName = [NSString stringWithFormat:@"%@-%d",sender.imageName,i];
         [colorBtn addTarget:self action:@selector(colorTapped:) forControlEvents:UIControlEventTouchUpInside];
         [self.colorView addSubview:colorBtn];
@@ -486,14 +595,14 @@
 -(void)colorTapped:(elemntButton *)sender
 {
     NSString *frontImageName = [NSString stringWithFormat:@"%@-front",sender.imageName];
-    [self.frontHairView setImage:[UIImage imageNamed:frontImageName]];
+    [self.frontHairView setImage:[UIImage imageWithContentsOfFile:[[NSBundle mainBundle] pathForResource:frontImageName ofType:@"png"]]];
     
     NSString *backImageName = [NSString stringWithFormat:@"%@-back",sender.imageName];
     
-    UIImage *backImage = [UIImage imageNamed:backImageName];
+    UIImage *backImage = [UIImage imageWithContentsOfFile:[[NSBundle mainBundle] pathForResource:backImageName ofType:@"png"]];
     if (backImage) {
         
-        [self.backHairImage setImage:[UIImage imageNamed:backImageName]];
+        [self.backHairImage setImage:[UIImage imageWithContentsOfFile:[[NSBundle mainBundle] pathForResource:backImageName ofType:@"png"]]];
         self.headImage.attachedView = self.backHairImage;
     }else
     {
@@ -504,7 +613,155 @@
 }
 
 
+
+
+-(void)makeListFullElementsForPage:(int)page withData:(NSDictionary *)dic
+{
+    
+    
+    
+    NSString *catalogKey = [[self.GameData objectForKey:[NSString stringWithFormat:@"catalog%d",self.sex]] objectAtIndex:page];
+    
+    NSArray *listElements = [dic objectForKey:catalogKey];
+    NSMutableArray *allListElements = [NSMutableArray arrayWithArray:listElements];
+    
+    
+    UIScrollView *oneList = (UIScrollView *)[self.ListsScroll viewWithTag:(1000+page)];
+    
+    for (UIView *elementBtn in [oneList subviews]) {
+        if ([elementBtn isKindOfClass:[elemntButton class]]) {
+            [elementBtn removeFromSuperview];
+        }
+    }
+    
+    
+    
+    if([[NSUserDefaults standardUserDefaults] objectForKey:catalogKey])
+    {
+        NSMutableDictionary *purchasedCatelog = [[NSUserDefaults standardUserDefaults] objectForKey:[[self.GameData objectForKey:[NSString stringWithFormat:@"catalog%d",self.sex]] objectAtIndex:page]];
+        
+        NSArray *purchasedProducts = [purchasedCatelog objectForKey:@"purchasedArray"];
+        for (int i = 0;  i<purchasedProducts.count; i++) {
+            [allListElements addObject:purchasedProducts[i]];
+        }
+        
+        
+    }
+    
+    
+    for (int j = 0 ; j<allListElements.count; j++) {
+        elemntButton *element = [[elemntButton alloc] initWithFrame:CGRectMake(6+(j%3)*(ELEMENT_WIDTH+6), 0+(j/3)*(ELEMENT_WIDTH+6)/1.2, ELEMENT_WIDTH, ELEMENT_WIDTH/1.2)];
+        
+        CGFloat sidesOffside = ELEMENT_WIDTH - ELEMENT_WIDTH/1.2;
+        
+        [element setImageEdgeInsets:UIEdgeInsetsMake(0, sidesOffside/2, 0, sidesOffside/2)];
+        
+        
+        if (j>=listElements.count) {
+            
+            
+            NSString *newProductImageName = allListElements[j];
+            NSArray *nameArray = [newProductImageName componentsSeparatedByString:@"+"];
+            if (nameArray.count>1) {
+                
+                NSString * newProductImageNameFinal = nameArray[0];
+                
+                NSString *preView = [NSString stringWithFormat:@"%@-yulan",newProductImageNameFinal];
+                
+                [element setImage:[UIImage imageWithContentsOfFile:[[NSBundle mainBundle] pathForResource:preView ofType:@"png"]] forState:UIControlStateNormal];
+                
+                //                    [element setImage:[UIImage imageWithContentsOfFile:[[NSBundle mainBundle] pathForResource:newProductImageNameFinal ofType:@"png"]] forState:UIControlStateNormal];
+                
+                UIImageView *newImage = [[UIImageView alloc] initWithFrame:CGRectMake(element.frame.size.width*5/6, 2, element.frame.size.width/6, element.frame.size.width/6)];
+                
+                [newImage setImage:[UIImage imageWithContentsOfFile:[[NSBundle mainBundle] pathForResource:@"new big" ofType:@"png"]]];
+                newImage.tag = 8888;// to identify
+                [element addSubview:newImage];
+                
+                element.imageName = newProductImageNameFinal;
+                //
+                //                    if(page==7)//guesture
+                //                    {
+                //                        NSString *preView = [NSString stringWithFormat:@"%@-yulan",newProductImageNameFinal];
+                //
+                //                        [element setImage:[UIImage imageWithContentsOfFile:[[NSBundle mainBundle] pathForResource:preView ofType:@"png"]] forState:UIControlStateNormal];
+                //
+                //                    }
+                
+                
+            }else
+            {
+                //                    [element setImage:[UIImage imageWithContentsOfFile:[[NSBundle mainBundle] pathForResource:newProductImageName ofType:@"png"]] forState:UIControlStateNormal];
+                NSString *preView = [NSString stringWithFormat:@"%@-yulan",newProductImageName];
+                
+                [element setImage:[UIImage imageWithContentsOfFile:[[NSBundle mainBundle] pathForResource:preView ofType:@"png"]] forState:UIControlStateNormal];
+                
+                element.imageName = newProductImageName;
+                //                    if(page==7)//guesture
+                //                    {
+                //                        NSString *preView = [NSString stringWithFormat:@"%@-yulan",newProductImageName];
+                //
+                //                        [element setImage:[UIImage imageWithContentsOfFile:[[NSBundle mainBundle] pathForResource:preView ofType:@"png"]] forState:UIControlStateNormal];
+                //
+                //                    }
+                
+            }
+            
+            
+        }else
+        {
+            //                [element setImage:[UIImage imageWithContentsOfFile:[[NSBundle mainBundle] pathForResource:allListElements[j] ofType:@"png"]] forState:UIControlStateNormal];
+            NSString *preView = [NSString stringWithFormat:@"%@-yulan",allListElements[j]];
+            
+            [element setImage:[UIImage imageWithContentsOfFile:[[NSBundle mainBundle] pathForResource:preView ofType:@"png"]] forState:UIControlStateNormal];
+            element.imageName = allListElements[j];
+            //                if(page==7)//guesture
+            //                {
+            //                    NSString *preView = [NSString stringWithFormat:@"%@-yulan",allListElements[j]];
+            //
+            //                    [element setImage:[UIImage imageWithContentsOfFile:[[NSBundle mainBundle] pathForResource:preView ofType:@"png"]] forState:UIControlStateNormal];
+            //
+            //                }
+        }
+        
+        element.imageLevel =[NSNumber numberWithInt:page];
+        
+        [element addTarget:self action:@selector(elementTapped:) forControlEvents:UIControlEventTouchUpInside];
+        [element setBackgroundImage: [UIImage imageWithContentsOfFile:[[NSBundle mainBundle] pathForResource:@"fame1" ofType:@"png"]] forState:UIControlStateNormal];
+        [element setBackgroundImage:[UIImage imageWithContentsOfFile:[[NSBundle mainBundle] pathForResource:@"fame-choosed1" ofType:@"png"]] forState:UIControlStateSelected];
+        
+        
+        //            NSLog(@"button:%@",element);
+        [oneList addSubview:element];
+        
+    }
+        
+    [oneList setContentOffset:CGPointMake(0, 0) animated:NO];
+
+}
+
+
+-(void)makeOtherListCleanForPage:(int)page
+{
+    for (UIView *scroll in [self.ListsScroll subviews]) {
+        if ([scroll isKindOfClass:[UIScrollView class]]) {
+            if (scroll.tag!=1000+page) {
+                for (UIView *elementBtn in [scroll subviews]) {
+                    if (elementBtn.frame.origin.y>3*(ELEMENT_WIDTH+6)/1.2) {
+                        [elementBtn removeFromSuperview];
+                    }
+                }
+            }
+        }
+    }
+}
+
+
 #pragma mark scroll delegate
+
+
+
+
 - (void)scrollViewDidEndDecelerating:(UIScrollView *)scrollView
 {
     if (scrollView == self.ListsScroll ){
@@ -512,12 +769,32 @@
         [scrollView setContentOffset:CGPointMake((pageWidth * (int)(scrollView.contentOffset.x / pageWidth)), 0)];
         int page = (int)(scrollView.contentOffset.x / pageWidth);
 
-        [self scrollToCatalog:page];
+        [self scrollToCatalog:page+1];
+        
+
+        
+        NSDictionary *listsText = [self.GameData objectForKey:@"Lists"];
+
+        for (UIView *scroll in [self.ListsScroll subviews]) {
+            if ([scroll isKindOfClass:[UIScrollView class]]) {
+                if (scroll.tag==1000+page) {
+                    
+                    [self makeListFullElementsForPage:page withData:listsText];
+                }else
+                {
+                    for (UIView *elementBtn in [scroll subviews]) {
+                        if (elementBtn.frame.origin.y>3*(ELEMENT_WIDTH+6)/1.2) {
+                            [elementBtn removeFromSuperview];
+                        }
+                    }
+                }
+            }
+        }
+        
 
     }
     
     
-
 }
 
 - (void)didReceiveMemoryWarning {
