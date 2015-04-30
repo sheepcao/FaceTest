@@ -10,6 +10,8 @@
 #import "elemntButton.h"
 #import "hairButton.h"
 #import "rewardViewController.h"
+#import "storeViewController.h"
+
 
 #import <AssetsLibrary/AssetsLibrary.h>
 
@@ -27,11 +29,12 @@
 
 
 int lastOffside;
+bool needSaveAlert;
 
 - (void)viewDidLoad {
     [super viewDidLoad];
     
-
+    needSaveAlert = NO;
 
     NSString *path = [[NSBundle mainBundle] pathForResource:[NSString stringWithFormat:@"loading%d",self.sex] ofType:@"png"];
 
@@ -82,14 +85,38 @@ int lastOffside;
 
 }
 
+-(void)refreshLists
+{
+    
+    NSString *path = [[NSBundle mainBundle] pathForResource:[NSString stringWithFormat:@"loading%d",self.sex] ofType:@"png"];
+    
+    [self.loadingView setImage:[UIImage imageWithContentsOfFile:path]];
+    
+    [self.loadPage setHidden:NO];
+    
+    
+    
+    [self performSelector:@selector(setupCatalog) withObject:nil afterDelay:0.8];
+    [self performSelector:@selector(setupListsForPage:) withObject:@"0" afterDelay:0.9];
+
+}
+
 
 #pragma mark setup Catalog
 -(void)setupCatalog
 {
     
-    [self.catalogScrollView setContentSize:CGSizeMake(CATALOG_NUM*CATALOG_BUTTON_WIDTH, self.catalogScrollView.frame.size.height)];
+    for (UIView *subScroll in [self.catalogScrollView subviews]) {
+        if ([subScroll isKindOfClass:[UIButton class]]) {
+            [subScroll removeFromSuperview];
+        }
+    }
     
-    self.catalogScrollView.pagingEnabled = YES;
+    
+    [self.catalogScrollView setContentSize:CGSizeMake(CATALOG_NUM*CATALOG_BUTTON_WIDTH, self.catalogScrollView.frame.size.height)];
+    [self.catalogScrollView setContentOffset:CGPointMake(0, 0)];
+    
+//    self.catalogScrollView.pagingEnabled = YES;
 
 
     self.catalogScrollView.canCancelContentTouches = YES;
@@ -104,7 +131,7 @@ int lastOffside;
         [catalogBtn setImage:[UIImage imageWithContentsOfFile:[[NSBundle mainBundle] pathForResource:[NSString stringWithFormat:@"%@1",catalogText[i]] ofType:@"png"]] forState:UIControlStateSelected];
         if([[NSUserDefaults standardUserDefaults] objectForKey:catalogText[i]])
         {
-            NSMutableDictionary *purchasedCatelog = [[NSUserDefaults standardUserDefaults] objectForKey:catalogText[i]];
+            NSMutableDictionary *purchasedCatelog = [NSMutableDictionary dictionaryWithDictionary:[[NSUserDefaults standardUserDefaults] objectForKey:catalogText[i]]];
             
             if ([[purchasedCatelog objectForKey:@"haveNew"] isEqualToString:@"yes"]) {
                 NSLog(@"have new!!!!!!");
@@ -112,7 +139,16 @@ int lastOffside;
                 UIImageView *newImage = [[UIImageView alloc] initWithFrame:CGRectMake(catalogBtn.frame.size.width*5/7, 2, catalogBtn.frame.size.width/6, catalogBtn.frame.size.width/6)];
                 [newImage setImage:[UIImage imageWithContentsOfFile:[[NSBundle mainBundle] pathForResource:@"new small" ofType:@"png"]]];
                 newImage.tag = 9999;// to identify
-                [catalogBtn addSubview:newImage];
+                
+                bool hasAdded = NO;
+                for (UIView *image in [catalogBtn subviews]) {
+                    if ([image isKindOfClass:[UIImageView class]] &&image.tag == 9999) {
+                        hasAdded = YES;
+                    }
+                }
+                if (!hasAdded) {
+                    [catalogBtn addSubview:newImage];
+                }
                 
             }
         }
@@ -158,7 +194,7 @@ int lastOffside;
     if (self.colorView) {
         [self hideColorViewAnimationFor:self.colorView];
     }
-    [self scrollToCatalog:sender.tag];
+    [self scrollToCatalog:sender.tag withDuration:0.35];
     
     [UIView beginAnimations:nil context:NULL];
     [UIView setAnimationDuration:0.35];
@@ -184,12 +220,7 @@ int lastOffside;
     NSLog(@"bool2:%d",(page-lastOffside)>-2);
 
     
-//    if ((page-lastOffside)<2 && (page-lastOffside)>-2) {
-//    }else
-//    {
-//        [self setupListsForPage:[NSString stringWithFormat:@"%d",page]];
-//        lastOffside = (int)page;
-//    }
+
     
     NSDictionary *listsText = [self.GameData objectForKey:@"Lists"];
     
@@ -216,13 +247,13 @@ int lastOffside;
     
     
 }
--(void)scrollToCatalog:(NSInteger)BtnTag
+-(void)scrollToCatalog:(NSInteger)BtnTag withDuration:(CGFloat)time
 {
     UIButton * catalogBtn =(UIButton *)[self.catalogScrollView viewWithTag:BtnTag];
     
     
     [UIView beginAnimations:nil context:NULL];
-    [UIView setAnimationDuration:0.35];
+    [UIView setAnimationDuration:time];
     
     
     [self.catalogScrollView setContentOffset:CGPointMake((catalogBtn.center.x - self.catalogScrollView.center.x), 0) animated:YES];
@@ -239,6 +270,27 @@ int lastOffside;
     [catalogBtn setSelected:YES];
 
     
+    for (UIView *image in [catalogBtn subviews]) {
+        if (image.tag == 9999) {
+            [image removeFromSuperview];
+            
+            NSString *catalogKey = [[self.GameData objectForKey:[NSString stringWithFormat:@"catalog%d",self.sex]] objectAtIndex:(BtnTag-1)];
+
+            if([[NSUserDefaults standardUserDefaults] objectForKey:catalogKey])
+            {
+                NSMutableDictionary *purchasedCatelog = [NSMutableDictionary dictionaryWithDictionary:[[NSUserDefaults standardUserDefaults] objectForKey:catalogKey]];
+                
+                [purchasedCatelog setObject:@"no" forKey:@"haveNew"];
+                [[NSUserDefaults standardUserDefaults] setObject:purchasedCatelog forKey:catalogKey];
+            }
+            
+        }
+    }
+
+
+
+
+    
 }
 
 #pragma mark setup Lists
@@ -251,6 +303,9 @@ int lastOffside;
     self.ListsScroll.bounces = NO;
     self.ListsScroll.showsHorizontalScrollIndicator = NO;
     self.ListsScroll.delegate = self;
+    
+    [self.ListsScroll setContentOffset:CGPointMake(0, 0)];
+
     
     for (UIView *subScroll in [self.ListsScroll subviews]) {
         if ([subScroll isKindOfClass:[UIScrollView class]]) {
@@ -294,7 +349,8 @@ int lastOffside;
         
         
         UIScrollView *oneList = [[UIScrollView alloc] initWithFrame:CGRectMake(0+i*SCREEN_WIDTH, 0, SCREEN_WIDTH,  self.ListsScroll.frame.size.height)];
-        [oneList setContentSize:CGSizeMake(SCREEN_WIDTH,(1+listElements.count/3)*(ELEMENT_WIDTH+6)/1.2)];
+        int rowForNotFull = (listElements.count%3 == 0)?0:1;
+        [oneList setContentSize:CGSizeMake(SCREEN_WIDTH,(rowForNotFull+listElements.count/3)*(ELEMENT_WIDTH+6)/1.2)];
         oneList.canCancelContentTouches = YES;
         oneList.bounces = NO;
         oneList.showsVerticalScrollIndicator=NO;
@@ -305,7 +361,7 @@ int lastOffside;
         
         if([[NSUserDefaults standardUserDefaults] objectForKey:catalogKey])
         {
-            NSMutableDictionary *purchasedCatelog = [[NSUserDefaults standardUserDefaults] objectForKey:[[self.GameData objectForKey:[NSString stringWithFormat:@"catalog%d",self.sex]] objectAtIndex:i]];
+            NSMutableDictionary *purchasedCatelog = [NSMutableDictionary dictionaryWithDictionary:[[NSUserDefaults standardUserDefaults] objectForKey:[[self.GameData objectForKey:[NSString stringWithFormat:@"catalog%d",self.sex]] objectAtIndex:i]]];
             
             NSArray *purchasedProducts = [purchasedCatelog objectForKey:@"purchasedArray"];
             for (int i = 0;  i<purchasedProducts.count; i++) {
@@ -518,6 +574,51 @@ int lastOffside;
         self.headImage.limitationDown = 0;
     }
     
+    
+    
+    for (UIView *image in [sender subviews]) {
+        if (image.tag == 8888) {
+            [image removeFromSuperview];
+            
+            NSString *catalogKey = [[self.GameData objectForKey:[NSString stringWithFormat:@"catalog%d",self.sex]] objectAtIndex:([sender.imageLevel intValue])];
+            
+            
+            if([[NSUserDefaults standardUserDefaults] objectForKey:catalogKey])
+            {
+                NSMutableDictionary *purchasedCatelog =[NSMutableDictionary dictionaryWithDictionary: [[NSUserDefaults standardUserDefaults] objectForKey:catalogKey]];
+                
+                NSMutableArray *purchasedArray =[NSMutableArray arrayWithArray:[purchasedCatelog objectForKey:@"purchasedArray"]];
+                
+                
+                NSString *newProductName = [NSString stringWithFormat:@"%@+new",sender.imageName];
+                NSUInteger index =  [purchasedArray indexOfObject:newProductName];
+                
+                if(purchasedArray.count == 1)
+                {
+                    [purchasedArray removeAllObjects];
+                    [purchasedArray addObject:sender.imageName];
+                }else
+                {
+                    [purchasedArray removeObjectAtIndex:index];
+                    [purchasedArray insertObject:sender.imageName atIndex:index];
+
+                }
+                
+                
+                [purchasedCatelog setObject:purchasedArray forKey:@"purchasedArray"];
+
+
+                [[NSUserDefaults standardUserDefaults] setObject:purchasedCatelog forKey:catalogKey];
+
+            }
+            
+        }
+    }
+    
+    
+    needSaveAlert = YES;
+    
+    
 }
 
 -(void)showHairColorViewWith:(elemntButton *)sender
@@ -638,7 +739,7 @@ int lastOffside;
     
     if([[NSUserDefaults standardUserDefaults] objectForKey:catalogKey])
     {
-        NSMutableDictionary *purchasedCatelog = [[NSUserDefaults standardUserDefaults] objectForKey:[[self.GameData objectForKey:[NSString stringWithFormat:@"catalog%d",self.sex]] objectAtIndex:page]];
+        NSMutableDictionary *purchasedCatelog = [NSMutableDictionary dictionaryWithDictionary:[[NSUserDefaults standardUserDefaults] objectForKey:[[self.GameData objectForKey:[NSString stringWithFormat:@"catalog%d",self.sex]] objectAtIndex:page]]];
         
         NSArray *purchasedProducts = [purchasedCatelog objectForKey:@"purchasedArray"];
         for (int i = 0;  i<purchasedProducts.count; i++) {
@@ -647,6 +748,8 @@ int lastOffside;
         
         
     }
+    int rowForNotFull = (allListElements.count%3 == 0)?0:1;
+    [oneList setContentSize:CGSizeMake(SCREEN_WIDTH,(rowForNotFull+allListElements.count/3)*(ELEMENT_WIDTH+6)/1.2)];
     
     
     for (int j = 0 ; j<allListElements.count; j++) {
@@ -769,7 +872,7 @@ int lastOffside;
         [scrollView setContentOffset:CGPointMake((pageWidth * (int)(scrollView.contentOffset.x / pageWidth)), 0)];
         int page = (int)(scrollView.contentOffset.x / pageWidth);
 
-        [self scrollToCatalog:page+1];
+        [self scrollToCatalog:page+1 withDuration:0];
         
 
         
@@ -880,13 +983,38 @@ int lastOffside;
 
 - (IBAction)backTapp:(id)sender {
     
-    [self.navigationController popViewControllerAnimated:YES];
+    if (needSaveAlert) {
+        UIAlertView *alert = [[UIAlertView alloc] initWithTitle:@"注意" message:@"当前形象尚未保存，确定返回主界面吗" delegate:self cancelButtonTitle:@"取消" otherButtonTitles:@"返回主界面", nil];
+        [alert show];
+    }else
+    {
+        [self.navigationController popViewControllerAnimated:YES];
+
+    }
+    
+    
 }
 
 - (IBAction)storeTap:(id)sender {
 
 
-
+    storeViewController *myStore = [[storeViewController alloc] initWithNibName:@"storeViewController" bundle:nil];
+    self.GameData = [self readDataFromPlist:@"GameData"];
+    
+    myStore.GameData = self.GameData;
+    myStore.delegateRefresh = self;
+    
+    [self.navigationController pushViewController:myStore animated:YES];
+    
+}
+-(NSMutableDictionary *)readDataFromPlist:(NSString *)plistname
+{
+    //read level data from plist
+    NSString *documentsDirectory = [NSSearchPathForDirectoriesInDomains(NSDocumentDirectory, NSUserDomainMask, YES) objectAtIndex:0];
+    NSString *plistPath = [documentsDirectory stringByAppendingPathComponent:[ NSString stringWithFormat:@"%@.plist",plistname ]];
+    NSMutableDictionary *levelData = [[NSMutableDictionary alloc] initWithContentsOfFile:plistPath];
+    //    NSLog(@"levelData%@",levelData);
+    return levelData;
     
 }
 
@@ -952,5 +1080,14 @@ int lastOffside;
 
                      }
      ];
+}
+
+
+- (void)alertView:(UIAlertView *)alertView clickedButtonAtIndex:(NSInteger)buttonIndex
+{
+    if (buttonIndex == 1) {
+        [self.navigationController popViewControllerAnimated:YES];
+
+    }
 }
 @end

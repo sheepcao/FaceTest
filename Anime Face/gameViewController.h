@@ -10,7 +10,11 @@
 #import "APLMoveMeView.h"
 //#import "APLPlacardView.h"
 
-@interface gameViewController : ViewController
+
+
+
+@interface gameViewController : ViewController<refreshProductsDelegates>
+
 @property (weak, nonatomic) IBOutlet APLMoveMeView *headImage;
 @property (weak, nonatomic) IBOutlet UIScrollView *catalogScrollView;
 @property (weak, nonatomic) IBOutlet UIScrollView *ListsScroll;

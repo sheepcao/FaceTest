@@ -83,7 +83,7 @@ bool showingDefault;
     
     [self.catalogScroll setContentSize:CGSizeMake(CATALOG_NUM_STORE*CATALOG_BUTTON_WIDTH, self.catalogScroll.frame.size.height)];
     
-    self.catalogScroll.pagingEnabled = YES;
+//    self.catalogScroll.pagingEnabled = YES;
 
     self.catalogScroll.canCancelContentTouches = YES;
     
@@ -385,6 +385,7 @@ bool showingDefault;
 
 - (IBAction)backTap:(id)sender {
     
+    [self.delegateRefresh refreshLists];
     [self.navigationController popViewControllerAnimated:YES];
 }
 
@@ -483,9 +484,9 @@ bool showingDefault;
         NSMutableDictionary *purchasedCatelog = [[NSMutableDictionary alloc] init];
         [purchasedCatelog setObject:@"yes" forKey:@"haveNew"];
         
-        NSMutableDictionary *purchasedDic = [[NSUserDefaults standardUserDefaults] objectForKey:self.productNow.productCategory];
+        NSMutableDictionary *purchasedDic = [NSMutableDictionary dictionaryWithDictionary:[[NSUserDefaults standardUserDefaults] objectForKey:self.productNow.productCategory]];
         
-        NSMutableArray *purchasedArray = [purchasedDic objectForKey:@"purchasedArray"];
+        NSMutableArray *purchasedArray = [NSMutableArray arrayWithArray:[purchasedDic objectForKey:@"purchasedArray"]];
 
         
         NSString *newProductName = [NSString stringWithFormat:@"%@+new",self.productNow.productName];

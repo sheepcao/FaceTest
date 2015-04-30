@@ -35,4 +35,13 @@
 
 #define VERSIONNUMBER   [[[NSBundle mainBundle] infoDictionary] objectForKey:@"CFBundleShortVersionString"]
 
+
+
+
+@protocol refreshProductsDelegates <NSObject>
+
+-(void)refreshLists;
+
+@end
+
 #endif

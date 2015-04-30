@@ -10,6 +10,9 @@
 #import "elemntButton.h"
 
 @interface storeViewController : ViewController
+
+@property (weak,nonatomic) id<refreshProductsDelegates>delegateRefresh;
+
 @property (strong, nonatomic) IBOutlet UIScrollView *catalogScroll;
 @property (strong, nonatomic) IBOutlet UIScrollView *productListScorll;
 
