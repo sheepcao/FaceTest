@@ -6,6 +6,7 @@
 	<dict>
 		<key>宠物</key>
 		<array>
+			<string>nothing</string>
 			<string>pet0</string>
 			<string>pet1</string>
 			<string>pet2</string>
@@ -26,6 +27,7 @@
 		</array>
 		<key>帽子</key>
 		<array>
+			<string>nothing</string>
 			<string>hat0</string>
 			<string>hat1</string>
 			<string>hat2</string>
@@ -67,6 +69,7 @@
 		</array>
 		<key>脸饰</key>
 		<array>
+			<string>nothing</string>
 			<string>facemark0</string>
 			<string>facemark1</string>
 			<string>facemark2</string>
@@ -94,11 +97,13 @@
 		</array>
 		<key>心情</key>
 		<array>
+			<string>nothing</string>
 			<string>mood1</string>
 			<string>mood2</string>
 		</array>
 		<key>鼻子</key>
 		<array>
+			<string>nothing</string>
 			<string>nose0</string>
 			<string>nose1</string>
 			<string>nose2</string>
@@ -116,6 +121,7 @@
 		</array>
 		<key>眼镜</key>
 		<array>
+			<string>nothing</string>
 			<string>glass0</string>
 			<string>glass1</string>
 			<string>glass2</string>
@@ -137,6 +143,7 @@
 		</array>
 		<key>手势</key>
 		<array>
+			<string>nothing</string>
 			<string>gesture0</string>
 			<string>gesture1</string>
 			<string>gesture2</string>
@@ -214,6 +221,7 @@
 		</array>
 		<key>眼眉</key>
 		<array>
+			<string>nothing</string>
 			<string>eyebrow0</string>
 			<string>eyebrow1</string>
 			<string>eyebrow2</string>
@@ -271,6 +279,7 @@
 		</array>
 		<key>衣服</key>
 		<array>
+			<string>nothing</string>
 			<string>cloth-b-1</string>
 			<string>cloth-b-2</string>
 			<string>cloth-b-3</string>
@@ -308,6 +317,7 @@
 		</array>
 		<key>衣服女</key>
 		<array>
+			<string>nothing</string>
 			<string>cloth-g-1</string>
 			<string>cloth-g-2</string>
 			<string>cloth-g-3</string>
@@ -342,16 +352,19 @@
 		</array>
 		<key>胡子</key>
 		<array>
+			<string>nothing</string>
 			<string>mustache1</string>
 			<string>mustache2</string>
 		</array>
 		<key>头发</key>
 		<array>
+			<string>nothing</string>
 			<string>hair1-2</string>
 			<string>hair2-4</string>
 		</array>
 		<key>头发女</key>
 		<array>
+			<string>nothing</string>
 			<string>hairG1-2</string>
 			<string>hairG2-7</string>
 		</array>

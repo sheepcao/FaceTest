@@ -25,6 +25,13 @@
 		51ABD2651AE78EE0005BC8F0 /* hairG2-7-5-front.png in Resources */ = {isa = PBXBuildFile; fileRef = 51ABD25A1AE78EE0005BC8F0 /* hairG2-7-5-front.png */; };
 		51ABD2661AE78EE0005BC8F0 /* hairG2-7-6-front.png in Resources */ = {isa = PBXBuildFile; fileRef = 51ABD25B1AE78EE0005BC8F0 /* hairG2-7-6-front.png */; };
 		51ABD2671AE78EE0005BC8F0 /* hairG2-7.png in Resources */ = {isa = PBXBuildFile; fileRef = 51ABD25C1AE78EE0005BC8F0 /* hairG2-7.png */; };
+		A4024E281AF7056F000867D4 /* NetAssociation.m in Sources */ = {isa = PBXBuildFile; fileRef = A4024E211AF7056F000867D4 /* NetAssociation.m */; };
+		A4024E291AF7056F000867D4 /* NetworkClock.m in Sources */ = {isa = PBXBuildFile; fileRef = A4024E231AF7056F000867D4 /* NetworkClock.m */; };
+		A4024E2A1AF7056F000867D4 /* Notes in Resources */ = {isa = PBXBuildFile; fileRef = A4024E241AF7056F000867D4 /* Notes */; };
+		A4024E2B1AF7056F000867D4 /* NSDate+NetworkClock.m in Sources */ = {isa = PBXBuildFile; fileRef = A4024E261AF7056F000867D4 /* NSDate+NetworkClock.m */; };
+		A4024E2E1AF70579000867D4 /* GCDAsyncUdpSocket.m in Sources */ = {isa = PBXBuildFile; fileRef = A4024E2D1AF70579000867D4 /* GCDAsyncUdpSocket.m */; };
+		A4024E331AF73599000867D4 /* nothing-yulan.png in Resources */ = {isa = PBXBuildFile; fileRef = A4024E311AF73599000867D4 /* nothing-yulan.png */; };
+		A4024E341AF73599000867D4 /* nothing.png in Resources */ = {isa = PBXBuildFile; fileRef = A4024E321AF73599000867D4 /* nothing.png */; };
 		A40441CC1AF1CE5500E87C27 /* hat0-yulan.png in Resources */ = {isa = PBXBuildFile; fileRef = A40441A61AF1CE5500E87C27 /* hat0-yulan.png */; };
 		A40441CD1AF1CE5500E87C27 /* hat1-yulan.png in Resources */ = {isa = PBXBuildFile; fileRef = A40441A71AF1CE5500E87C27 /* hat1-yulan.png */; };
 		A40441CE1AF1CE5500E87C27 /* hat2-yulan.png in Resources */ = {isa = PBXBuildFile; fileRef = A40441A81AF1CE5500E87C27 /* hat2-yulan.png */; };
@@ -830,6 +837,19 @@
 		51ABD25A1AE78EE0005BC8F0 /* hairG2-7-5-front.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "hairG2-7-5-front.png"; sourceTree = "<group>"; };
 		51ABD25B1AE78EE0005BC8F0 /* hairG2-7-6-front.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "hairG2-7-6-front.png"; sourceTree = "<group>"; };
 		51ABD25C1AE78EE0005BC8F0 /* hairG2-7.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "hairG2-7.png"; sourceTree = "<group>"; };
+		A4024E1F1AF7056F000867D4 /* ios-ntp.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "ios-ntp.h"; sourceTree = "<group>"; };
+		A4024E201AF7056F000867D4 /* NetAssociation.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = NetAssociation.h; sourceTree = "<group>"; };
+		A4024E211AF7056F000867D4 /* NetAssociation.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = NetAssociation.m; sourceTree = "<group>"; };
+		A4024E221AF7056F000867D4 /* NetworkClock.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = NetworkClock.h; sourceTree = "<group>"; };
+		A4024E231AF7056F000867D4 /* NetworkClock.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = NetworkClock.m; sourceTree = "<group>"; };
+		A4024E241AF7056F000867D4 /* Notes */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = Notes; sourceTree = "<group>"; };
+		A4024E251AF7056F000867D4 /* NSDate+NetworkClock.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSDate+NetworkClock.h"; sourceTree = "<group>"; };
+		A4024E261AF7056F000867D4 /* NSDate+NetworkClock.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSDate+NetworkClock.m"; sourceTree = "<group>"; };
+		A4024E271AF7056F000867D4 /* ntp-log.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "ntp-log.h"; sourceTree = "<group>"; };
+		A4024E2C1AF70579000867D4 /* GCDAsyncUdpSocket.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GCDAsyncUdpSocket.h; sourceTree = "<group>"; };
+		A4024E2D1AF70579000867D4 /* GCDAsyncUdpSocket.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GCDAsyncUdpSocket.m; sourceTree = "<group>"; };
+		A4024E311AF73599000867D4 /* nothing-yulan.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "nothing-yulan.png"; sourceTree = "<group>"; };
+		A4024E321AF73599000867D4 /* nothing.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = nothing.png; sourceTree = "<group>"; };
 		A40441A61AF1CE5500E87C27 /* hat0-yulan.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "hat0-yulan.png"; sourceTree = "<group>"; };
 		A40441A71AF1CE5500E87C27 /* hat1-yulan.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "hat1-yulan.png"; sourceTree = "<group>"; };
 		A40441A81AF1CE5500E87C27 /* hat2-yulan.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "hat2-yulan.png"; sourceTree = "<group>"; };
@@ -1681,6 +1701,24 @@
 			path = hair;
 			sourceTree = "<group>";
 		};
+		A4024E1A1AF7054A000867D4 /* publicTime */ = {
+			isa = PBXGroup;
+			children = (
+				A4024E1F1AF7056F000867D4 /* ios-ntp.h */,
+				A4024E201AF7056F000867D4 /* NetAssociation.h */,
+				A4024E211AF7056F000867D4 /* NetAssociation.m */,
+				A4024E221AF7056F000867D4 /* NetworkClock.h */,
+				A4024E231AF7056F000867D4 /* NetworkClock.m */,
+				A4024E241AF7056F000867D4 /* Notes */,
+				A4024E251AF7056F000867D4 /* NSDate+NetworkClock.h */,
+				A4024E261AF7056F000867D4 /* NSDate+NetworkClock.m */,
+				A4024E271AF7056F000867D4 /* ntp-log.h */,
+				A4024E2C1AF70579000867D4 /* GCDAsyncUdpSocket.h */,
+				A4024E2D1AF70579000867D4 /* GCDAsyncUdpSocket.m */,
+			);
+			name = publicTime;
+			sourceTree = "<group>";
+		};
 		A40441F31AF1CE7500E87C27 /* yulan */ = {
 			isa = PBXGroup;
 			children = (
@@ -2156,6 +2194,7 @@
 		A47D6EA21AC3E1ED00AC1768 = {
 			isa = PBXGroup;
 			children = (
+				A4024E1A1AF7054A000867D4 /* publicTime */,
 				A456D2801AE8D2300032F41F /* AssetsLibrary.framework */,
 				A47D6EAD1AC3E1ED00AC1768 /* Anime Face */,
 				A47D6EC71AC3E1ED00AC1768 /* Anime FaceTests */,
@@ -2664,6 +2703,8 @@
 		A4E6CDAA1ACCE52F00A1D6EC /* element */ = {
 			isa = PBXGroup;
 			children = (
+				A4024E311AF73599000867D4 /* nothing-yulan.png */,
+				A4024E321AF73599000867D4 /* nothing.png */,
 				51ABD2431AE78CFB005BC8F0 /* 0.png */,
 				51ABD2441AE78CFB005BC8F0 /* 1.png */,
 				51ABD2451AE78CFB005BC8F0 /* 2.png */,
@@ -2786,6 +2827,7 @@
 				TargetAttributes = {
 					A47D6EAA1AC3E1ED00AC1768 = {
 						CreatedOnToolsVersion = 6.2;
+						DevelopmentTeam = DBBLJY69ER;
 					};
 					A47D6EC31AC3E1ED00AC1768 = {
 						CreatedOnToolsVersion = 6.2;
@@ -3030,6 +3072,7 @@
 				A40443451AF1CF6800E87C27 /* cloth-tong4-yulan.png in Resources */,
 				A404435D1AF1D0E700E87C27 /* nose8-yulan.png in Resources */,
 				A4BF62A41AEDC681009B38BE /* cloth-b-14.png in Resources */,
+				A4024E341AF73599000867D4 /* nothing.png in Resources */,
 				A40441E81AF1CE5500E87C27 /* hat28-yulan.png in Resources */,
 				A4A211011AD3A2F4006973E0 /* rewardViewController.xib in Resources */,
 				A40443171AF1CF6800E87C27 /* cloth-b-15-yulan.png in Resources */,
@@ -3063,6 +3106,7 @@
 				A44563B81AE93D440040D1C5 /* diamond++.png in Resources */,
 				A40442571AF1CEF700E87C27 /* facemark12-yulan.png in Resources */,
 				A4BF638D1AEDC79F009B38BE /* glass13.png in Resources */,
+				A4024E2A1AF7056F000867D4 /* Notes in Resources */,
 				A44BB7121ADCA647009D2378 /* back-press.png in Resources */,
 				A4BF62B81AEDC681009B38BE /* cloth-g-4.png in Resources */,
 				A4BF62C71AEDC681009B38BE /* cloth-g-19.png in Resources */,
@@ -3465,6 +3509,7 @@
 				A44563C11AE93D440040D1C5 /* photo save-press.png in Resources */,
 				A44BB7471ADCA647009D2378 /* share-press.png in Resources */,
 				A40442261AF1CEDC00E87C27 /* glass6-yulan.png in Resources */,
+				A4024E331AF73599000867D4 /* nothing-yulan.png in Resources */,
 				A4BF62CA1AEDC681009B38BE /* cloth-g-22.png in Resources */,
 				A44563BE1AE93D440040D1C5 /* mistery-back-press.png in Resources */,
 				A4D659281ACE30D600FE32CE /* hair2-4.png in Resources */,
@@ -3611,11 +3656,15 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				A4024E2B1AF7056F000867D4 /* NSDate+NetworkClock.m in Sources */,
 				A4A211001AD3A2F4006973E0 /* rewardViewController.m in Sources */,
 				A4CA3AC31ACA9D3E00D50D80 /* APLPlacardView.m in Sources */,
+				A4024E291AF7056F000867D4 /* NetworkClock.m in Sources */,
 				A4CA3AA31ACA440900D50D80 /* gameViewController.m in Sources */,
+				A4024E2E1AF70579000867D4 /* GCDAsyncUdpSocket.m in Sources */,
 				A49116F61AEF4FB10050A6DA /* productNow.m in Sources */,
 				A47D6EB71AC3E1ED00AC1768 /* ViewController.m in Sources */,
+				A4024E281AF7056F000867D4 /* NetAssociation.m in Sources */,
 				A4A2110E1AD3B2AE006973E0 /* imageWithName.m in Sources */,
 				A4CA3AC71ACAA0D300D50D80 /* elemntButton.m in Sources */,
 				A47D6EB41AC3E1ED00AC1768 /* AppDelegate.m in Sources */,
@@ -3738,6 +3787,7 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
 				GCC_PREFIX_HEADER = "Anime Face/MoveMe-Prefix.pch";
 				INFOPLIST_FILE = "Anime Face/Info.plist";
 				IPHONEOS_DEPLOYMENT_TARGET = 7.1;
@@ -3752,6 +3802,7 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
 				GCC_PREFIX_HEADER = "Anime Face/MoveMe-Prefix.pch";
 				INFOPLIST_FILE = "Anime Face/Info.plist";
 				IPHONEOS_DEPLOYMENT_TARGET = 7.1;

@@ -12,14 +12,21 @@
 #import "storeViewController.h"
 
 @interface ViewController ()
+{
+    NetworkClock *                  netClock;
+    NetAssociation *                netAssociation;
+}
 
 @end
 
 @implementation ViewController
 
+
 - (void)viewDidLoad {
     [super viewDidLoad];
-    // Do any additional setup after loading the view, typically from a nib.
+    
+    netClock = [NetworkClock sharedNetworkClock];
+
     self.navigationController.navigationBarHidden = YES;
 
 //    [self copyPlistToDocument:@"GameData"];
@@ -27,6 +34,7 @@
     
     [self updatePlistWhenUpdateing];
     
+    [self dailyReward];
     
 
     
@@ -155,4 +163,71 @@
     [self.navigationController pushViewController:myGame animated:YES];
     
 }
+
+#pragma mark Daily reward
+- (void)dailyReward
+{
+    
+    //eric:set last day
+    
+    netAssociation = [[NetAssociation alloc] initWithServerName:@"time.apple.com"];
+    netAssociation.delegate = self;
+    [netAssociation sendTimeQuery];
+
+    
+//    [self performSelector:@selector(getTime) withObject:nil afterDelay:1.0 ];
+    
+
+    
+}
+
+
+
+-(void)giveReward:(NSString *)day
+{
+    [[NSUserDefaults standardUserDefaults] setObject:day forKey:@"lastDailyReword"];
+    
+    UIAlertView *rewardAlert = [[UIAlertView alloc] initWithTitle:@"感谢您的支持" message:@"幸运屋已开启，快来试试手气吧" delegate:nil cancelButtonTitle:nil otherButtonTitles:@"确定", nil];
+    
+    rewardAlert.tag = 100;
+    [rewardAlert show];
+    
+}
+
+/*┏━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━┓
+ ┃ Called when that single NetAssociation has a network time to report.                             ┃
+ ┗━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━┛*/
+- (void) reportFromDelegate {
+    NSDateFormatter *dateFormat = [[NSDateFormatter alloc] init];
+    [dateFormat setDateFormat:@"MM/dd"];
+    
+    NSUserDefaults *defaults = [NSUserDefaults standardUserDefaults];
+    NSArray *languages = [defaults objectForKey:@"AppleLanguages"];
+    NSString *currentLang = [languages objectAtIndex:0];
+    //set locale
+    NSLocale *locale = [[NSLocale alloc] initWithLocaleIdentifier:currentLang];
+    [dateFormat setLocale:locale];
+    
+    NSDate *dateNet = [[NSDate date] dateByAddingTimeInterval:-netAssociation.offset];
+    
+    NSString *today = [dateFormat stringFromDate:dateNet];
+    NSString *todaylocal = [dateFormat stringFromDate:[NSDate date]];
+    
+    NSLog(@"today is :%@----local is :%@",today,todaylocal);
+    NSLog(@"time:%@",[NSDate date]);
+    NSLog(@"time2:%@",dateNet);
+    
+    
+    if (![[NSUserDefaults standardUserDefaults] objectForKey:@"lastDailyReword"]) {
+        
+        [self giveReward:today];
+        
+    }else if(![[[NSUserDefaults standardUserDefaults] objectForKey:@"lastDailyReword"] isEqualToString:today])
+    {
+        [self giveReward:today];
+    }
+
+    
+}
+
 @end

@@ -8,8 +8,9 @@
 
 #import <UIKit/UIKit.h>
 #import "globalVar.h"
+#import "ios-ntp.h"
 
-@interface ViewController : UIViewController
+@interface ViewController : UIViewController<NetAssociationDelegate>
 
 @property (weak, nonatomic) IBOutlet UIButton *boyBtn;
 @property (weak, nonatomic) IBOutlet UIButton *girlBtn;
