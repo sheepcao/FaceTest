@@ -18,6 +18,59 @@
 	<string>1.0</string>
 	<key>CFBundleSignature</key>
 	<string>????</string>
+	<key>CFBundleURLTypes</key>
+	<array>
+		<dict>
+			<key>CFBundleTypeRole</key>
+			<string>Editor</string>
+			<key>CFBundleURLName</key>
+			<string>wx</string>
+			<key>CFBundleURLSchemes</key>
+			<array>
+				<string>wx0f49518adaee1d8d</string>
+			</array>
+		</dict>
+		<dict>
+			<key>CFBundleTypeRole</key>
+			<string>Editor</string>
+			<key>CFBundleURLName</key>
+			<string>wb</string>
+			<key>CFBundleURLSchemes</key>
+			<array>
+				<string>sina.789bf7b6c8c34f97cf98c70f037b8fa3</string>
+			</array>
+		</dict>
+		<dict>
+			<key>CFBundleTypeRole</key>
+			<string>Editor</string>
+			<key>CFBundleURLName</key>
+			<string>fb</string>
+			<key>CFBundleURLSchemes</key>
+			<array>
+				<string>fb501186406701085</string>
+			</array>
+		</dict>
+		<dict>
+			<key>CFBundleTypeRole</key>
+			<string>Editor</string>
+			<key>CFBundleURLName</key>
+			<string>qq</string>
+			<key>CFBundleURLSchemes</key>
+			<array>
+				<string>QQ41D5E8AF</string>
+			</array>
+		</dict>
+		<dict>
+			<key>CFBundleTypeRole</key>
+			<string>Editor</string>
+			<key>CFBundleURLName</key>
+			<string>com.sheepcao.Anime-Face</string>
+			<key>CFBundleURLSchemes</key>
+			<array>
+				<string>Anime-Face</string>
+			</array>
+		</dict>
+	</array>
 	<key>CFBundleVersion</key>
 	<string>1.1</string>
 	<key>LSRequiresIPhoneOS</key>

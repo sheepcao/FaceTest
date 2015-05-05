@@ -154,11 +154,11 @@
             ignoreCount = "0"
             continueAfterRunningActions = "No"
             filePath = "Anime Face/gameViewController.m"
-            timestampString = "452079625.545554"
+            timestampString = "452487311.18429"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "1074"
-            endingLineNumber = "1074"
+            startingLineNumber = "1152"
+            endingLineNumber = "1152"
             landmarkName = "-saveAndShare:"
             landmarkType = "5">
          </BreakpointContent>
@@ -186,11 +186,11 @@
             ignoreCount = "0"
             continueAfterRunningActions = "No"
             filePath = "Anime Face/gameViewController.m"
-            timestampString = "452079625.545554"
+            timestampString = "452487311.18429"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "1058"
-            endingLineNumber = "1058"
+            startingLineNumber = "1136"
+            endingLineNumber = "1136"
             landmarkName = "-saveAndShare:"
             landmarkType = "5">
          </BreakpointContent>
@@ -314,7 +314,7 @@
                   moduleName = "Anime Face"
                   usesParentBreakpointCondition = "Yes"
                   urlString = "file:///Users/ericcao/Documents/develop/iOSTest/Anime%20Face/FaceTest/Anime%20Face/storeViewController.m"
-                  timestampString = "452571323.167883"
+                  timestampString = "452487547.915683"
                   startingColumnNumber = "9223372036854775807"
                   endingColumnNumber = "9223372036854775807"
                   startingLineNumber = "113"
@@ -329,7 +329,7 @@
                   moduleName = "Anime Face"
                   usesParentBreakpointCondition = "Yes"
                   urlString = "file:///Users/ericcao/Documents/develop/iOSTest/Anime%20Face/FaceTest/Anime%20Face/storeViewController.m"
-                  timestampString = "452571323.168024"
+                  timestampString = "452487547.915894"
                   startingColumnNumber = "9223372036854775807"
                   endingColumnNumber = "9223372036854775807"
                   startingLineNumber = "113"
@@ -864,6 +864,22 @@
             startingLineNumber = "215"
             endingLineNumber = "215"
             landmarkName = "-reportFromDelegate"
+            landmarkType = "5">
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            shouldBeEnabled = "Yes"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "Anime Face/AppDelegate.m"
+            timestampString = "452487333.495535"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "67"
+            endingLineNumber = "67"
+            landmarkName = "-setShareIDs"
             landmarkType = "5">
          </BreakpointContent>
       </BreakpointProxy>

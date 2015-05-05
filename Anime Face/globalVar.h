@@ -29,7 +29,7 @@
 #define CATALOG_BUTTON_WIDTH 70
 #define ELEMENT_WIDTH (SCREEN_WIDTH-(6*4))/3
 
-#define REVIEW_URL @"http://itunes.apple.com/us/app/anygoal/id978629670?ls=1&mt=8"
+#define REVIEW_URL @"https://itunes.apple.com/us/app/anime-face/id983454917?ls=1&mt=8"
 
 #define ALLAPP_URL @"itms://itunes.apple.com/us/artist/cao-guangxu/id844914783"
 

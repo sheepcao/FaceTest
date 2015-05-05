@@ -957,6 +957,84 @@ bool needSaveAlert;
 
 - (IBAction)share:(id)sender {
     
+    if ([ALAssetsLibrary authorizationStatus] == ALAuthorizationStatusNotDetermined) {
+        ALAssetsLibrary *assetsLibrary = [[ALAssetsLibrary alloc] init];
+        [assetsLibrary enumerateGroupsWithTypes:ALAssetsGroupAll usingBlock:^(ALAssetsGroup *group, BOOL *stop) {
+            if (*stop) {
+                // INSERT CODE TO PERFORM WHEN USER TAPS OK eg. :
+                UIImageWriteToSavedPhotosAlbum(self.imageShare, nil, nil,nil);
+                
+//                UIAlertView *successAlert = [[UIAlertView alloc] initWithTitle:@"成功保存" message:@"已将保存萌照至系统相册" delegate:nil cancelButtonTitle:@"确定" otherButtonTitles: nil];
+//                
+//                [successAlert show];
+                NSLog(@"saved Image!");
+                
+                return;
+            }
+            *stop = TRUE;
+        } failureBlock:^(NSError *error) {
+            // INSERT CODE TO PERFORM WHEN USER TAPS DONT ALLOW, eg. :
+            UIAlertView *failAlert = [[UIAlertView alloc] initWithTitle:@"成功失败" message:@"请在设置－隐私－照片中允许访问您的相册" delegate:nil cancelButtonTitle:@"确定" otherButtonTitles: nil];
+            
+            [failAlert show];
+            NSLog(@"save Image failed!");
+        }];
+    }else if ([ALAssetsLibrary authorizationStatus] == ALAuthorizationStatusAuthorized)
+    {
+        UIImageWriteToSavedPhotosAlbum(self.imageShare, nil, nil,nil);
+        
+//        UIAlertView *successAlert = [[UIAlertView alloc] initWithTitle:@"成功保存" message:@"已将保存萌照至系统相册" delegate:nil cancelButtonTitle:@"确定" otherButtonTitles: nil];
+//        
+//        [successAlert show];
+        NSLog(@"saved Image!");
+        
+    }else
+    {
+        UIAlertView *failAlert = [[UIAlertView alloc] initWithTitle:@"成功失败" message:@"请在设置－隐私－照片中允许访问您的相册" delegate:nil cancelButtonTitle:@"确定" otherButtonTitles: nil];
+        
+        [failAlert show];
+        NSLog(@"save Image failed!");
+    }
+    
+    
+
+    
+    //构造分享内容
+    id<ISSContent> publishContent = [ShareSDK content:@"萌漫头"
+                                       defaultContent:NSLocalizedString(@"",nil)
+                                                image:[ShareSDK pngImageWithImage:self.imageShare]
+                                                title:@"萌漫头"
+                                                  url:REVIEW_URL
+                                          description:NSLocalizedString(@"",nil)
+                                            mediaType:SSPublishContentMediaTypeImage];
+    //创建弹出菜单容器
+    id<ISSContainer> container = [ShareSDK container];
+    [container setIPadContainerWithView:sender arrowDirect:UIPopoverArrowDirectionUp];
+    
+    //弹出分享菜单
+    [ShareSDK showShareActionSheet:container
+                         shareList:nil
+                           content:publishContent
+                     statusBarTips:YES
+                       authOptions:nil
+                      shareOptions:nil
+                            result:^(ShareType type, SSResponseState state, id<ISSPlatformShareInfo> statusInfo, id<ICMErrorInfo> error, BOOL end) {
+                                
+                                if (state == SSResponseStateSuccess)
+                                {
+//                                    [MobClick event:@"share"];
+                                    
+                                    NSLog(NSLocalizedString(@"TEXT_ShARE_SUC", @"分享成功"));
+                                }
+                                else if (state == SSResponseStateFail)
+                                {
+                                    NSLog(NSLocalizedString(@"TEXT_ShARE_FAI", @"分享失败,错误码:%d,错误描述:%@"), [error errorCode], [error errorDescription]);
+                                }
+                            }];
+    
+    
+
+    
 }
 
 - (IBAction)saveAlbum:(id)sender {
