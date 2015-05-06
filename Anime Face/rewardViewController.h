@@ -14,6 +14,14 @@
 @property (weak, nonatomic) IBOutlet UILabel *resultLabel;
 @property (weak, nonatomic) IBOutlet UIImageView *productView;
 @property (strong, nonatomic) IBOutlet UIImageView *boxImage;
+@property (strong, nonatomic) IBOutlet UIView *rewardView;
+@property (strong, nonatomic) IBOutlet UIImageView *popAnimation;
+
+@property (strong, nonatomic) IBOutlet UIImageView *productCard;
+
+@property (strong, nonatomic) IBOutlet UIImageView *productBought;
+
+- (IBAction)cardTapped:(id)sender;
 
 - (IBAction)start:(id)sender;
 @end

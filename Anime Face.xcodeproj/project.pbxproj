@@ -18,12 +18,12 @@
 		51ABD25E1AE78EE0005BC8F0 /* hairG1-2-1-front.png in Resources */ = {isa = PBXBuildFile; fileRef = 51ABD2531AE78EE0005BC8F0 /* hairG1-2-1-front.png */; };
 		51ABD25F1AE78EE0005BC8F0 /* hairG1-2.png in Resources */ = {isa = PBXBuildFile; fileRef = 51ABD2541AE78EE0005BC8F0 /* hairG1-2.png */; };
 		51ABD2601AE78EE0005BC8F0 /* hairG2-7-0-front.png in Resources */ = {isa = PBXBuildFile; fileRef = 51ABD2551AE78EE0005BC8F0 /* hairG2-7-0-front.png */; };
-		51ABD2611AE78EE0005BC8F0 /* hairG2-7-1-front.png in Resources */ = {isa = PBXBuildFile; fileRef = 51ABD2561AE78EE0005BC8F0 /* hairG2-7-1-front.png */; };
-		51ABD2621AE78EE0005BC8F0 /* hairG2-7-2-front.png in Resources */ = {isa = PBXBuildFile; fileRef = 51ABD2571AE78EE0005BC8F0 /* hairG2-7-2-front.png */; };
+		51ABD2611AE78EE0005BC8F0 /* hairG2-7-6-front.png in Resources */ = {isa = PBXBuildFile; fileRef = 51ABD2561AE78EE0005BC8F0 /* hairG2-7-6-front.png */; };
+		51ABD2621AE78EE0005BC8F0 /* hairG2-7-5-front.png in Resources */ = {isa = PBXBuildFile; fileRef = 51ABD2571AE78EE0005BC8F0 /* hairG2-7-5-front.png */; };
 		51ABD2631AE78EE0005BC8F0 /* hairG2-7-3-front.png in Resources */ = {isa = PBXBuildFile; fileRef = 51ABD2581AE78EE0005BC8F0 /* hairG2-7-3-front.png */; };
 		51ABD2641AE78EE0005BC8F0 /* hairG2-7-4-front.png in Resources */ = {isa = PBXBuildFile; fileRef = 51ABD2591AE78EE0005BC8F0 /* hairG2-7-4-front.png */; };
-		51ABD2651AE78EE0005BC8F0 /* hairG2-7-5-front.png in Resources */ = {isa = PBXBuildFile; fileRef = 51ABD25A1AE78EE0005BC8F0 /* hairG2-7-5-front.png */; };
-		51ABD2661AE78EE0005BC8F0 /* hairG2-7-6-front.png in Resources */ = {isa = PBXBuildFile; fileRef = 51ABD25B1AE78EE0005BC8F0 /* hairG2-7-6-front.png */; };
+		51ABD2651AE78EE0005BC8F0 /* hairG2-7-1-front.png in Resources */ = {isa = PBXBuildFile; fileRef = 51ABD25A1AE78EE0005BC8F0 /* hairG2-7-1-front.png */; };
+		51ABD2661AE78EE0005BC8F0 /* hairG2-7-2-front.png in Resources */ = {isa = PBXBuildFile; fileRef = 51ABD25B1AE78EE0005BC8F0 /* hairG2-7-2-front.png */; };
 		51ABD2671AE78EE0005BC8F0 /* hairG2-7.png in Resources */ = {isa = PBXBuildFile; fileRef = 51ABD25C1AE78EE0005BC8F0 /* hairG2-7.png */; };
 		A4024E281AF7056F000867D4 /* NetAssociation.m in Sources */ = {isa = PBXBuildFile; fileRef = A4024E211AF7056F000867D4 /* NetAssociation.m */; };
 		A4024E291AF7056F000867D4 /* NetworkClock.m in Sources */ = {isa = PBXBuildFile; fileRef = A4024E231AF7056F000867D4 /* NetworkClock.m */; };
@@ -466,17 +466,9 @@
 		A47D6EBC1AC3E1ED00AC1768 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = A47D6EBB1AC3E1ED00AC1768 /* Images.xcassets */; };
 		A47D6EBF1AC3E1ED00AC1768 /* LaunchScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = A47D6EBD1AC3E1ED00AC1768 /* LaunchScreen.xib */; };
 		A47D6ECB1AC3E1ED00AC1768 /* Anime_FaceTests.m in Sources */ = {isa = PBXBuildFile; fileRef = A47D6ECA1AC3E1ED00AC1768 /* Anime_FaceTests.m */; };
-		A47EF4FB1AE5EFF7005C32E0 /* hair1-2-0.png in Resources */ = {isa = PBXBuildFile; fileRef = A47EF4F71AE5EFF7005C32E0 /* hair1-2-0.png */; };
-		A47EF4FC1AE5EFF7005C32E0 /* hair1-2-1.png in Resources */ = {isa = PBXBuildFile; fileRef = A47EF4F81AE5EFF7005C32E0 /* hair1-2-1.png */; };
-		A47EF4FD1AE5EFF7005C32E0 /* hair2-4-0.png in Resources */ = {isa = PBXBuildFile; fileRef = A47EF4F91AE5EFF7005C32E0 /* hair2-4-0.png */; };
-		A47EF4FE1AE5EFF7005C32E0 /* hair2-4-1.png in Resources */ = {isa = PBXBuildFile; fileRef = A47EF4FA1AE5EFF7005C32E0 /* hair2-4-1.png */; };
 		A49116F61AEF4FB10050A6DA /* productNow.m in Sources */ = {isa = PBXBuildFile; fileRef = A49116F51AEF4FB10050A6DA /* productNow.m */; };
 		A4A211001AD3A2F4006973E0 /* rewardViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = A4A210FE1AD3A2F4006973E0 /* rewardViewController.m */; };
 		A4A211011AD3A2F4006973E0 /* rewardViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = A4A210FF1AD3A2F4006973E0 /* rewardViewController.xib */; };
-		A4A211051AD3A411006973E0 /* 01.png in Resources */ = {isa = PBXBuildFile; fileRef = A4A211021AD3A411006973E0 /* 01.png */; };
-		A4A211061AD3A411006973E0 /* 02.png in Resources */ = {isa = PBXBuildFile; fileRef = A4A211031AD3A411006973E0 /* 02.png */; };
-		A4A211091AD3ADF6006973E0 /* QuestionMark.png in Resources */ = {isa = PBXBuildFile; fileRef = A4A211081AD3ADF6006973E0 /* QuestionMark.png */; };
-		A4A2110B1AD3B03F006973E0 /* 03.png in Resources */ = {isa = PBXBuildFile; fileRef = A4A2110A1AD3B03F006973E0 /* 03.png */; };
 		A4A2110E1AD3B2AE006973E0 /* imageWithName.m in Sources */ = {isa = PBXBuildFile; fileRef = A4A2110D1AD3B2AE006973E0 /* imageWithName.m */; };
 		A4A962E11AF9DDC8008B0738 /* 幸运屋.png in Resources */ = {isa = PBXBuildFile; fileRef = A4A962E01AF9DDC8008B0738 /* 幸运屋.png */; };
 		A4A962EE1AF9E142008B0738 /* wenhao0.png in Resources */ = {isa = PBXBuildFile; fileRef = A4A962E31AF9E142008B0738 /* wenhao0.png */; };
@@ -490,6 +482,13 @@
 		A4A962F61AF9E142008B0738 /* wenhao7.png in Resources */ = {isa = PBXBuildFile; fileRef = A4A962EB1AF9E142008B0738 /* wenhao7.png */; };
 		A4A962F71AF9E142008B0738 /* wenhao8.png in Resources */ = {isa = PBXBuildFile; fileRef = A4A962EC1AF9E142008B0738 /* wenhao8.png */; };
 		A4A962F81AF9E142008B0738 /* wenhao9.png in Resources */ = {isa = PBXBuildFile; fileRef = A4A962ED1AF9E142008B0738 /* wenhao9.png */; };
+		A4A963011AFA0DC9008B0738 /* tanchu0.png in Resources */ = {isa = PBXBuildFile; fileRef = A4A962FA1AFA0DC9008B0738 /* tanchu0.png */; };
+		A4A963021AFA0DC9008B0738 /* tanchu1.png in Resources */ = {isa = PBXBuildFile; fileRef = A4A962FB1AFA0DC9008B0738 /* tanchu1.png */; };
+		A4A963031AFA0DC9008B0738 /* tanchu2.png in Resources */ = {isa = PBXBuildFile; fileRef = A4A962FC1AFA0DC9008B0738 /* tanchu2.png */; };
+		A4A963041AFA0DC9008B0738 /* tanchu3.png in Resources */ = {isa = PBXBuildFile; fileRef = A4A962FD1AFA0DC9008B0738 /* tanchu3.png */; };
+		A4A963051AFA0DC9008B0738 /* tanchu4.png in Resources */ = {isa = PBXBuildFile; fileRef = A4A962FE1AFA0DC9008B0738 /* tanchu4.png */; };
+		A4A963061AFA0DC9008B0738 /* tanchu5.png in Resources */ = {isa = PBXBuildFile; fileRef = A4A962FF1AFA0DC9008B0738 /* tanchu5.png */; };
+		A4A963071AFA0DC9008B0738 /* tanchu6.png in Resources */ = {isa = PBXBuildFile; fileRef = A4A963001AFA0DC9008B0738 /* tanchu6.png */; };
 		A4BF61D01AEDC55A009B38BE /* gesture0.png in Resources */ = {isa = PBXBuildFile; fileRef = A4BF61AB1AEDC55A009B38BE /* gesture0.png */; };
 		A4BF61D11AEDC55A009B38BE /* gesture1.png in Resources */ = {isa = PBXBuildFile; fileRef = A4BF61AC1AEDC55A009B38BE /* gesture1.png */; };
 		A4BF61D21AEDC55A009B38BE /* gesture2.5.png in Resources */ = {isa = PBXBuildFile; fileRef = A4BF61AD1AEDC55A009B38BE /* gesture2.5.png */; };
@@ -795,9 +794,7 @@
 		A4C856F01AE64FBD005208F0 /* hair2-4-0-front.png in Resources */ = {isa = PBXBuildFile; fileRef = A4C856EA1AE64FBD005208F0 /* hair2-4-0-front.png */; };
 		A4C856F11AE64FBD005208F0 /* hair2-4-1-front.png in Resources */ = {isa = PBXBuildFile; fileRef = A4C856EB1AE64FBD005208F0 /* hair2-4-1-front.png */; };
 		A4C856F21AE64FBD005208F0 /* hair2-4-2-front.png in Resources */ = {isa = PBXBuildFile; fileRef = A4C856EC1AE64FBD005208F0 /* hair2-4-2-front.png */; };
-		A4C856F31AE64FBD005208F0 /* hair2-4-2.png in Resources */ = {isa = PBXBuildFile; fileRef = A4C856ED1AE64FBD005208F0 /* hair2-4-2.png */; };
 		A4C856F41AE64FBD005208F0 /* hair2-4-3-front.png in Resources */ = {isa = PBXBuildFile; fileRef = A4C856EE1AE64FBD005208F0 /* hair2-4-3-front.png */; };
-		A4C856F51AE64FBD005208F0 /* hair2-4-3.png in Resources */ = {isa = PBXBuildFile; fileRef = A4C856EF1AE64FBD005208F0 /* hair2-4-3.png */; };
 		A4CA3AA31ACA440900D50D80 /* gameViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = A4CA3AA11ACA440900D50D80 /* gameViewController.m */; };
 		A4CA3AA41ACA440900D50D80 /* gameViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = A4CA3AA21ACA440900D50D80 /* gameViewController.xib */; };
 		A4CA3AA61ACA63A900D50D80 /* GameData.plist in Resources */ = {isa = PBXBuildFile; fileRef = A4CA3AA51ACA63A900D50D80 /* GameData.plist */; };
@@ -869,12 +866,12 @@
 		51ABD2531AE78EE0005BC8F0 /* hairG1-2-1-front.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "hairG1-2-1-front.png"; sourceTree = "<group>"; };
 		51ABD2541AE78EE0005BC8F0 /* hairG1-2.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "hairG1-2.png"; sourceTree = "<group>"; };
 		51ABD2551AE78EE0005BC8F0 /* hairG2-7-0-front.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "hairG2-7-0-front.png"; sourceTree = "<group>"; };
-		51ABD2561AE78EE0005BC8F0 /* hairG2-7-1-front.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "hairG2-7-1-front.png"; sourceTree = "<group>"; };
-		51ABD2571AE78EE0005BC8F0 /* hairG2-7-2-front.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "hairG2-7-2-front.png"; sourceTree = "<group>"; };
+		51ABD2561AE78EE0005BC8F0 /* hairG2-7-6-front.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "hairG2-7-6-front.png"; sourceTree = "<group>"; };
+		51ABD2571AE78EE0005BC8F0 /* hairG2-7-5-front.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "hairG2-7-5-front.png"; sourceTree = "<group>"; };
 		51ABD2581AE78EE0005BC8F0 /* hairG2-7-3-front.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "hairG2-7-3-front.png"; sourceTree = "<group>"; };
 		51ABD2591AE78EE0005BC8F0 /* hairG2-7-4-front.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "hairG2-7-4-front.png"; sourceTree = "<group>"; };
-		51ABD25A1AE78EE0005BC8F0 /* hairG2-7-5-front.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "hairG2-7-5-front.png"; sourceTree = "<group>"; };
-		51ABD25B1AE78EE0005BC8F0 /* hairG2-7-6-front.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "hairG2-7-6-front.png"; sourceTree = "<group>"; };
+		51ABD25A1AE78EE0005BC8F0 /* hairG2-7-1-front.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "hairG2-7-1-front.png"; sourceTree = "<group>"; };
+		51ABD25B1AE78EE0005BC8F0 /* hairG2-7-2-front.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "hairG2-7-2-front.png"; sourceTree = "<group>"; };
 		51ABD25C1AE78EE0005BC8F0 /* hairG2-7.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "hairG2-7.png"; sourceTree = "<group>"; };
 		A4024E1F1AF7056F000867D4 /* ios-ntp.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "ios-ntp.h"; sourceTree = "<group>"; };
 		A4024E201AF7056F000867D4 /* NetAssociation.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = NetAssociation.h; sourceTree = "<group>"; };
@@ -1337,19 +1334,11 @@
 		A47D6EC41AC3E1ED00AC1768 /* Anime FaceTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "Anime FaceTests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
 		A47D6EC91AC3E1ED00AC1768 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		A47D6ECA1AC3E1ED00AC1768 /* Anime_FaceTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = Anime_FaceTests.m; sourceTree = "<group>"; };
-		A47EF4F71AE5EFF7005C32E0 /* hair1-2-0.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "hair1-2-0.png"; path = "Anime Face/hair1-2-0.png"; sourceTree = SOURCE_ROOT; };
-		A47EF4F81AE5EFF7005C32E0 /* hair1-2-1.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "hair1-2-1.png"; path = "Anime Face/hair1-2-1.png"; sourceTree = SOURCE_ROOT; };
-		A47EF4F91AE5EFF7005C32E0 /* hair2-4-0.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "hair2-4-0.png"; path = "Anime Face/hair2-4-0.png"; sourceTree = SOURCE_ROOT; };
-		A47EF4FA1AE5EFF7005C32E0 /* hair2-4-1.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "hair2-4-1.png"; path = "Anime Face/hair2-4-1.png"; sourceTree = SOURCE_ROOT; };
 		A49116F41AEF4FB10050A6DA /* productNow.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = productNow.h; sourceTree = "<group>"; };
 		A49116F51AEF4FB10050A6DA /* productNow.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = productNow.m; sourceTree = "<group>"; };
 		A4A210FD1AD3A2F4006973E0 /* rewardViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = rewardViewController.h; sourceTree = "<group>"; };
 		A4A210FE1AD3A2F4006973E0 /* rewardViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = rewardViewController.m; sourceTree = "<group>"; };
 		A4A210FF1AD3A2F4006973E0 /* rewardViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = rewardViewController.xib; sourceTree = "<group>"; };
-		A4A211021AD3A411006973E0 /* 01.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = 01.png; sourceTree = "<group>"; };
-		A4A211031AD3A411006973E0 /* 02.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = 02.png; sourceTree = "<group>"; };
-		A4A211081AD3ADF6006973E0 /* QuestionMark.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = QuestionMark.png; sourceTree = "<group>"; };
-		A4A2110A1AD3B03F006973E0 /* 03.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = 03.png; sourceTree = "<group>"; };
 		A4A2110C1AD3B2AE006973E0 /* imageWithName.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = imageWithName.h; sourceTree = "<group>"; };
 		A4A2110D1AD3B2AE006973E0 /* imageWithName.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = imageWithName.m; sourceTree = "<group>"; };
 		A4A962E01AF9DDC8008B0738 /* 幸运屋.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "幸运屋.png"; sourceTree = "<group>"; };
@@ -1364,6 +1353,13 @@
 		A4A962EB1AF9E142008B0738 /* wenhao7.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = wenhao7.png; sourceTree = "<group>"; };
 		A4A962EC1AF9E142008B0738 /* wenhao8.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = wenhao8.png; sourceTree = "<group>"; };
 		A4A962ED1AF9E142008B0738 /* wenhao9.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = wenhao9.png; sourceTree = "<group>"; };
+		A4A962FA1AFA0DC9008B0738 /* tanchu0.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = tanchu0.png; sourceTree = "<group>"; };
+		A4A962FB1AFA0DC9008B0738 /* tanchu1.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = tanchu1.png; sourceTree = "<group>"; };
+		A4A962FC1AFA0DC9008B0738 /* tanchu2.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = tanchu2.png; sourceTree = "<group>"; };
+		A4A962FD1AFA0DC9008B0738 /* tanchu3.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = tanchu3.png; sourceTree = "<group>"; };
+		A4A962FE1AFA0DC9008B0738 /* tanchu4.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = tanchu4.png; sourceTree = "<group>"; };
+		A4A962FF1AFA0DC9008B0738 /* tanchu5.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = tanchu5.png; sourceTree = "<group>"; };
+		A4A963001AFA0DC9008B0738 /* tanchu6.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = tanchu6.png; sourceTree = "<group>"; };
 		A4BF61AB1AEDC55A009B38BE /* gesture0.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = gesture0.png; sourceTree = "<group>"; };
 		A4BF61AC1AEDC55A009B38BE /* gesture1.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = gesture1.png; sourceTree = "<group>"; };
 		A4BF61AD1AEDC55A009B38BE /* gesture2.5.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = gesture2.5.png; sourceTree = "<group>"; };
@@ -1670,9 +1666,7 @@
 		A4C856EA1AE64FBD005208F0 /* hair2-4-0-front.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "hair2-4-0-front.png"; path = "Anime Face/hair2-4-0-front.png"; sourceTree = SOURCE_ROOT; };
 		A4C856EB1AE64FBD005208F0 /* hair2-4-1-front.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "hair2-4-1-front.png"; path = "Anime Face/hair2-4-1-front.png"; sourceTree = SOURCE_ROOT; };
 		A4C856EC1AE64FBD005208F0 /* hair2-4-2-front.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "hair2-4-2-front.png"; path = "Anime Face/hair2-4-2-front.png"; sourceTree = SOURCE_ROOT; };
-		A4C856ED1AE64FBD005208F0 /* hair2-4-2.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "hair2-4-2.png"; path = "Anime Face/hair2-4-2.png"; sourceTree = SOURCE_ROOT; };
 		A4C856EE1AE64FBD005208F0 /* hair2-4-3-front.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "hair2-4-3-front.png"; path = "Anime Face/hair2-4-3-front.png"; sourceTree = SOURCE_ROOT; };
-		A4C856EF1AE64FBD005208F0 /* hair2-4-3.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "hair2-4-3.png"; path = "Anime Face/hair2-4-3.png"; sourceTree = SOURCE_ROOT; };
 		A4CA3AA01ACA440900D50D80 /* gameViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = gameViewController.h; sourceTree = "<group>"; };
 		A4CA3AA11ACA440900D50D80 /* gameViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = gameViewController.m; sourceTree = "<group>"; };
 		A4CA3AA21ACA440900D50D80 /* gameViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = gameViewController.xib; sourceTree = "<group>"; };
@@ -1787,21 +1781,15 @@
 				A4C856EB1AE64FBD005208F0 /* hair2-4-1-front.png */,
 				A4C856EC1AE64FBD005208F0 /* hair2-4-2-front.png */,
 				A4C856EE1AE64FBD005208F0 /* hair2-4-3-front.png */,
-				A47EF4F71AE5EFF7005C32E0 /* hair1-2-0.png */,
-				A47EF4F81AE5EFF7005C32E0 /* hair1-2-1.png */,
-				A47EF4F91AE5EFF7005C32E0 /* hair2-4-0.png */,
-				A47EF4FA1AE5EFF7005C32E0 /* hair2-4-1.png */,
-				A4C856ED1AE64FBD005208F0 /* hair2-4-2.png */,
-				A4C856EF1AE64FBD005208F0 /* hair2-4-3.png */,
 				51ABD2521AE78EE0005BC8F0 /* hairG1-2-0-front.png */,
 				51ABD2531AE78EE0005BC8F0 /* hairG1-2-1-front.png */,
 				51ABD2551AE78EE0005BC8F0 /* hairG2-7-0-front.png */,
-				51ABD2561AE78EE0005BC8F0 /* hairG2-7-1-front.png */,
-				51ABD2571AE78EE0005BC8F0 /* hairG2-7-2-front.png */,
+				51ABD2561AE78EE0005BC8F0 /* hairG2-7-6-front.png */,
+				51ABD2571AE78EE0005BC8F0 /* hairG2-7-5-front.png */,
 				51ABD2581AE78EE0005BC8F0 /* hairG2-7-3-front.png */,
 				51ABD2591AE78EE0005BC8F0 /* hairG2-7-4-front.png */,
-				51ABD25A1AE78EE0005BC8F0 /* hairG2-7-5-front.png */,
-				51ABD25B1AE78EE0005BC8F0 /* hairG2-7-6-front.png */,
+				51ABD25A1AE78EE0005BC8F0 /* hairG2-7-1-front.png */,
+				51ABD25B1AE78EE0005BC8F0 /* hairG2-7-2-front.png */,
 			);
 			path = hair;
 			sourceTree = "<group>";
@@ -2191,6 +2179,7 @@
 		A44563341AE93C5E0040D1C5 /* storeLucky */ = {
 			isa = PBXGroup;
 			children = (
+				A4A962F91AFA0DBE008B0738 /* 弹出特效 */,
 				A4A962E21AF9E142008B0738 /* 问号 */,
 				A44563851AE93D440040D1C5 /* box-open.png */,
 				A44563861AE93D440040D1C5 /* box.png */,
@@ -2373,10 +2362,6 @@
 				A44563341AE93C5E0040D1C5 /* storeLucky */,
 				A456D27D1AE8C83D0032F41F /* photoViewImage */,
 				A44BB6D61ADCA647009D2378 /* images */,
-				A4A211021AD3A411006973E0 /* 01.png */,
-				A4A211081AD3ADF6006973E0 /* QuestionMark.png */,
-				A4A211031AD3A411006973E0 /* 02.png */,
-				A4A2110A1AD3B03F006973E0 /* 03.png */,
 				A4E6CDAA1ACCE52F00A1D6EC /* element */,
 				A47D6EAF1AC3E1ED00AC1768 /* Info.plist */,
 				A47D6EB01AC3E1ED00AC1768 /* main.m */,
@@ -2418,6 +2403,20 @@
 				A4A962ED1AF9E142008B0738 /* wenhao9.png */,
 			);
 			path = "问号";
+			sourceTree = "<group>";
+		};
+		A4A962F91AFA0DBE008B0738 /* 弹出特效 */ = {
+			isa = PBXGroup;
+			children = (
+				A4A962FA1AFA0DC9008B0738 /* tanchu0.png */,
+				A4A962FB1AFA0DC9008B0738 /* tanchu1.png */,
+				A4A962FC1AFA0DC9008B0738 /* tanchu2.png */,
+				A4A962FD1AFA0DC9008B0738 /* tanchu3.png */,
+				A4A962FE1AFA0DC9008B0738 /* tanchu4.png */,
+				A4A962FF1AFA0DC9008B0738 /* tanchu5.png */,
+				A4A963001AFA0DC9008B0738 /* tanchu6.png */,
+			);
+			name = "弹出特效";
 			sourceTree = "<group>";
 		};
 		A4BF61AA1AEDC53C009B38BE /* gesture */ = {
@@ -3175,7 +3174,6 @@
 				A4BF62331AEDC610009B38BE /* mouth26.png in Resources */,
 				A44563AD1AE93D440040D1C5 /* box.png in Resources */,
 				A40444071AF1D28000E87C27 /* gesture5-yulan.png in Resources */,
-				A47EF4FC1AE5EFF7005C32E0 /* hair1-2-1.png in Resources */,
 				A4BF63341AEDC6FE009B38BE /* eyebrow11.png in Resources */,
 				A40442C11AF1CF3600E87C27 /* eye21-yulan.png in Resources */,
 				A45C93881AE8F95F0081346B /* fame1.png in Resources */,
@@ -3229,7 +3227,7 @@
 				A4BF62D21AEDC681009B38BE /* cloth-tong3.png in Resources */,
 				A44563B41AE93D440040D1C5 /* diamond board button.png in Resources */,
 				A40442BE1AF1CF3600E87C27 /* eye18-yulan.png in Resources */,
-				51ABD2651AE78EE0005BC8F0 /* hairG2-7-5-front.png in Resources */,
+				51ABD2651AE78EE0005BC8F0 /* hairG2-7-1-front.png in Resources */,
 				A4BF61E31AEDC55A009B38BE /* gesture17.png in Resources */,
 				A40442C01AF1CF3600E87C27 /* eye20-yulan.png in Resources */,
 				A46BBC411ADE52EE009D2280 /* 头发.png in Resources */,
@@ -3258,7 +3256,6 @@
 				A4BF62361AEDC610009B38BE /* mouth29.png in Resources */,
 				A44563C71AE93D440040D1C5 /* price.png in Resources */,
 				A4BF62AA1AEDC681009B38BE /* cloth-b-20.png in Resources */,
-				A4A211061AD3A411006973E0 /* 02.png in Resources */,
 				A4BF61EE1AEDC55A009B38BE /* gesture28.png in Resources */,
 				A44BB71C1ADCA647009D2378 /* diamond++.png in Resources */,
 				A4BF62A81AEDC681009B38BE /* cloth-b-18.png in Resources */,
@@ -3369,7 +3366,6 @@
 				51ABD24A1AE78CFB005BC8F0 /* 0.png in Resources */,
 				A4BF63121AEDC6A6009B38BE /* eye28.png in Resources */,
 				A40443131AF1CF6800E87C27 /* cloth-b-11-yulan.png in Resources */,
-				A4A211091AD3ADF6006973E0 /* QuestionMark.png in Resources */,
 				A46BBC461ADE52EE009D2280 /* 帽子1.png in Resources */,
 				A4BF62CB1AEDC681009B38BE /* cloth-g-23.png in Resources */,
 				A404422E1AF1CEDC00E87C27 /* glass14-yulan.png in Resources */,
@@ -3450,6 +3446,7 @@
 				A4BF63ED1AEDC827009B38BE /* hat27.png in Resources */,
 				A4BF621A1AEDC610009B38BE /* mouth1.png in Resources */,
 				A40443BB1AF1D11C00E87C27 /* face5-yulan.png in Resources */,
+				A4A963031AFA0DC9008B0738 /* tanchu2.png in Resources */,
 				A404425F1AF1CEF700E87C27 /* facemark20-yulan.png in Resources */,
 				51ABD2631AE78EE0005BC8F0 /* hairG2-7-3-front.png in Resources */,
 				A40441E91AF1CE5500E87C27 /* hat29-yulan.png in Resources */,
@@ -3464,12 +3461,11 @@
 				A40443B81AF1D11C00E87C27 /* face2-yulan.png in Resources */,
 				A4BF622B1AEDC610009B38BE /* mouth18.png in Resources */,
 				A4BF63611AEDC726009B38BE /* facemark12.png in Resources */,
-				51ABD2621AE78EE0005BC8F0 /* hairG2-7-2-front.png in Resources */,
+				51ABD2621AE78EE0005BC8F0 /* hairG2-7-5-front.png in Resources */,
 				A46BBC571ADE52EE009D2280 /* 脸饰.png in Resources */,
 				A4BF62971AEDC681009B38BE /* cloth-b-1.png in Resources */,
 				A404439D1AF1D0FD00E87C27 /* mouth22-yulan.png in Resources */,
 				A4A962F01AF9E142008B0738 /* wenhao10.png in Resources */,
-				A47EF4FD1AE5EFF7005C32E0 /* hair2-4-0.png in Resources */,
 				A44BB7451ADCA647009D2378 /* setting-normal.png in Resources */,
 				A4BF629B1AEDC681009B38BE /* cloth-b-5.png in Resources */,
 				A4BF62311AEDC610009B38BE /* mouth24.png in Resources */,
@@ -3500,7 +3496,6 @@
 				A4BF62A51AEDC681009B38BE /* cloth-b-15.png in Resources */,
 				A46BBC591ADE52EE009D2280 /* 衣服.png in Resources */,
 				A4BF63F21AEDC827009B38BE /* hat32.png in Resources */,
-				A4A211051AD3A411006973E0 /* 01.png in Resources */,
 				A4BF63811AEDC79F009B38BE /* glass1.png in Resources */,
 				A44BB71D1ADCA647009D2378 /* diamond++press.png in Resources */,
 				A4BF63561AEDC726009B38BE /* facemark1.png in Resources */,
@@ -3513,6 +3508,7 @@
 				A4BF63F01AEDC827009B38BE /* hat30.png in Resources */,
 				A40443A51AF1D0FD00E87C27 /* mouth30-yulan.png in Resources */,
 				A40443941AF1D0FD00E87C27 /* mouth13-yulan.png in Resources */,
+				A4A963071AFA0DC9008B0738 /* tanchu6.png in Resources */,
 				A46BBC4D1ADE52EE009D2280 /* 眼睛.png in Resources */,
 				A4BF63381AEDC6FE009B38BE /* eyebrow15.png in Resources */,
 				A40442051AF1CE8000E87C27 /* pet5-yulan.png in Resources */,
@@ -3539,16 +3535,15 @@
 				A40444051AF1D28000E87C27 /* gesture3.5-yulan.png in Resources */,
 				A40442B21AF1CF3600E87C27 /* eye6-yulan.png in Resources */,
 				A404433A1AF1CF6800E87C27 /* cloth-g-20-yulan.png in Resources */,
-				A4C856F51AE64FBD005208F0 /* hair2-4-3.png in Resources */,
 				A4BF61DF1AEDC55A009B38BE /* gesture13.png in Resources */,
 				A4BF638F1AEDC79F009B38BE /* glass15.png in Resources */,
 				A40443A11AF1D0FD00E87C27 /* mouth26-yulan.png in Resources */,
 				A4BF63821AEDC79F009B38BE /* glass2.png in Resources */,
 				A404432C1AF1CF6800E87C27 /* cloth-g-6-yulan.png in Resources */,
 				A404422A1AF1CEDC00E87C27 /* glass10-yulan.png in Resources */,
+				A4A963041AFA0DC9008B0738 /* tanchu3.png in Resources */,
 				A4BF621B1AEDC610009B38BE /* mouth2.png in Resources */,
 				A4BF63D91AEDC827009B38BE /* hat7.png in Resources */,
-				A4C856F31AE64FBD005208F0 /* hair2-4-2.png in Resources */,
 				A40443A71AF1D0FD00E87C27 /* mouth32-yulan.png in Resources */,
 				A44BB7391ADCA647009D2378 /* loading1.png in Resources */,
 				A4BF63671AEDC726009B38BE /* facemark18.png in Resources */,
@@ -3577,6 +3572,8 @@
 				A4BF63F31AEDC827009B38BE /* hat33.png in Resources */,
 				A4BF62BF1AEDC681009B38BE /* cloth-g-11.png in Resources */,
 				A40442591AF1CEF700E87C27 /* facemark14-yulan.png in Resources */,
+				A4A963051AFA0DC9008B0738 /* tanchu4.png in Resources */,
+				A4A963061AFA0DC9008B0738 /* tanchu5.png in Resources */,
 				A4BF63A71AEDC7DC009B38BE /* pet8.png in Resources */,
 				A404439C1AF1D0FD00E87C27 /* mouth21-yulan.png in Resources */,
 				A40442AE1AF1CF3600E87C27 /* eye2-yulan.png in Resources */,
@@ -3584,6 +3581,7 @@
 				A40443D21AF1D13A00E87C27 /* face4.png in Resources */,
 				A40442AF1AF1CF3600E87C27 /* eye3-yulan.png in Resources */,
 				A404431D1AF1CF6800E87C27 /* cloth-b-21-yulan.png in Resources */,
+				A4A963011AFA0DC9008B0738 /* tanchu0.png in Resources */,
 				A4BF63E51AEDC827009B38BE /* hat19.png in Resources */,
 				A40443591AF1D0E700E87C27 /* nose4-yulan.png in Resources */,
 				A4BF63F71AEDC827009B38BE /* hat37.png in Resources */,
@@ -3699,14 +3697,14 @@
 				A40441CD1AF1CE5500E87C27 /* hat1-yulan.png in Resources */,
 				A4BF640B1AEDCB34009B38BE /* sure to quit board.png in Resources */,
 				A40442C31AF1CF3600E87C27 /* eye23-yulan.png in Resources */,
+				A4A963021AFA0DC9008B0738 /* tanchu1.png in Resources */,
 				A4BF64051AEDCB34009B38BE /* music off.png in Resources */,
 				A40442C91AF1CF3600E87C27 /* eye29-yulan.png in Resources */,
 				A40442791AF1CF1A00E87C27 /* eyebrow2-yulan.png in Resources */,
-				51ABD2611AE78EE0005BC8F0 /* hairG2-7-1-front.png in Resources */,
+				51ABD2611AE78EE0005BC8F0 /* hairG2-7-6-front.png in Resources */,
 				A404441C1AF1D28000E87C27 /* gesture26-yulan.png in Resources */,
 				A40443B71AF1D11C00E87C27 /* face1-yulan.png in Resources */,
 				A404438C1AF1D0FD00E87C27 /* mouth5-yulan.png in Resources */,
-				A47EF4FB1AE5EFF7005C32E0 /* hair1-2-0.png in Resources */,
 				A4BF635E1AEDC726009B38BE /* facemark9.png in Resources */,
 				A40441E71AF1CE5500E87C27 /* hat27-yulan.png in Resources */,
 				A46BBC481ADE52EE009D2280 /* 心情1.png in Resources */,
@@ -3729,7 +3727,6 @@
 				A4E6CDE91ACCE54200A1D6EC /* mood1.png in Resources */,
 				A40443A21AF1D0FD00E87C27 /* mouth27-yulan.png in Resources */,
 				A40443D11AF1D13A00E87C27 /* face3.png in Resources */,
-				A4A2110B1AD3B03F006973E0 /* 03.png in Resources */,
 				A4BF63E81AEDC827009B38BE /* hat22.png in Resources */,
 				A40442301AF1CEDC00E87C27 /* glass16-yulan.png in Resources */,
 				A40442091AF1CE8000E87C27 /* pet9-yulan.png in Resources */,
@@ -3823,7 +3820,7 @@
 				A4A962F31AF9E142008B0738 /* wenhao4.png in Resources */,
 				A4BF63D31AEDC827009B38BE /* hat1.png in Resources */,
 				A40441F01AF1CE5500E87C27 /* hat36-yulan.png in Resources */,
-				51ABD2661AE78EE0005BC8F0 /* hairG2-7-6-front.png in Resources */,
+				51ABD2661AE78EE0005BC8F0 /* hairG2-7-2-front.png in Resources */,
 				A4BF61D91AEDC55A009B38BE /* gesture7.png in Resources */,
 				A4BF632A1AEDC6FE009B38BE /* eyebrow1.png in Resources */,
 				A44BB7441ADCA647009D2378 /* save.png in Resources */,
@@ -3850,7 +3847,6 @@
 				A40443261AF1CF6800E87C27 /* cloth-b-30-yulan.png in Resources */,
 				A404433B1AF1CF6800E87C27 /* cloth-g-21-yulan.png in Resources */,
 				A404439A1AF1D0FD00E87C27 /* mouth19-yulan.png in Resources */,
-				A47EF4FE1AE5EFF7005C32E0 /* hair2-4-1.png in Resources */,
 				A40442C51AF1CF3600E87C27 /* eye25-yulan.png in Resources */,
 				A4BF62FB1AEDC6A6009B38BE /* eye5.png in Resources */,
 				A4BF62AC1AEDC681009B38BE /* cloth-b-22.png in Resources */,

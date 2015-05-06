@@ -386,39 +386,39 @@
 	</dict>
 	<key>catalog1</key>
 	<array>
-		<string>脸型</string>
 		<string>头发</string>
-		<string>胡子</string>
-		<string>衣服</string>
+		<string>脸型</string>
 		<string>眼睛</string>
 		<string>眼眉</string>
-		<string>嘴巴</string>
-		<string>手势</string>
-		<string>眼镜</string>
 		<string>鼻子</string>
-		<string>心情</string>
+		<string>嘴巴</string>
 		<string>脸饰</string>
+		<string>胡子</string>
+		<string>眼镜</string>
+		<string>衣服</string>
 		<string>帽子</string>
-		<string>背景</string>
+		<string>手势</string>
 		<string>宠物</string>
+		<string>背景</string>
+		<string>心情</string>
 	</array>
 	<key>catalog1000</key>
 	<array>
-		<string>脸型</string>
 		<string>头发女</string>
-		<string>胡子</string>
-		<string>衣服女</string>
+		<string>脸型</string>
 		<string>眼睛</string>
 		<string>眼眉</string>
-		<string>嘴巴</string>
-		<string>手势</string>
-		<string>眼镜</string>
 		<string>鼻子</string>
-		<string>心情</string>
+		<string>嘴巴</string>
 		<string>脸饰</string>
+		<string>胡子</string>
+		<string>眼镜</string>
+		<string>衣服女</string>
 		<string>帽子</string>
-		<string>背景</string>
+		<string>手势</string>
 		<string>宠物</string>
+		<string>背景</string>
+		<string>心情</string>
 	</array>
 	<key>catalogStore</key>
 	<array>

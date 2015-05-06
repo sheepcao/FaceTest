@@ -53,7 +53,7 @@ bool needSaveAlert;
 
     selectedElement = [[NSMutableDictionary alloc] initWithCapacity:15];
     
-    self.imagesArray = @[self.faceFrameView,@"hair",self.mustacheView,self.clothingView,self.eyeView,self.eyebrowView,self.mouthView,self.gestureView,self.glassesView,self.noseView,self.moodView,self.faceImage,self.hatView,self.backImage,self.petView];
+    self.imagesArray = @[@"hair",self.faceFrameView,self.eyeView,self.eyebrowView,self.noseView,self.mouthView,self.faceImage,self.mustacheView,self.glassesView,self.clothingView,self.hatView,self.gestureView,self.petView,self.backImage,self.moodView];
     
     NSString *path1 = [[NSBundle mainBundle] pathForResource:[NSString stringWithFormat:@"body%d",self.sex] ofType:@"png"];
     [self.bodyImage setImage:[UIImage imageWithContentsOfFile:path1]];
@@ -120,7 +120,6 @@ bool needSaveAlert;
     [self.catalogScrollView setContentSize:CGSizeMake(CATALOG_NUM*CATALOG_BUTTON_WIDTH, self.catalogScrollView.frame.size.height)];
     [self.catalogScrollView setContentOffset:CGPointMake(0, 0)];
     
-//    self.catalogScrollView.pagingEnabled = YES;
 
 
     self.catalogScrollView.canCancelContentTouches = YES;
@@ -499,7 +498,8 @@ bool needSaveAlert;
         [self hideColorViewAnimationFor:self.colorView];
     }
     
-    if ([sender.imageLevel intValue]==1) {
+    if ([sender.imageLevel intValue]==0)//hair
+    {
         
         NSString *imageName = sender.imageName;
         NSArray *imageNameArray = [imageName componentsSeparatedByString:@"-"];
@@ -533,43 +533,43 @@ bool needSaveAlert;
         self.headImage.placardView = self.imagesArray[[sender.imageLevel intValue]];
     }
     
-    if ([sender.imageLevel intValue] == 4)// eye view
+    if ([sender.imageLevel intValue] == 2)// eye view
     {
         self.headImage.swipeOrientation = swipevertical;
         self.headImage.limitationUp = self.headImage.placardView.center.y-48;
         self.headImage.limitationDown =self.headImage.placardView.center.y + 25;
 
-    }else if ([sender.imageLevel intValue] == 2)
+    }else if ([sender.imageLevel intValue] == 7)//mustacheView
     {
         self.headImage.swipeOrientation = swipevertical;
         self.headImage.limitationUp =self.headImage.placardView.center.y - 70;
         self.headImage.limitationDown =self.headImage.placardView.center.y + 70;
-    }else if ([sender.imageLevel intValue] == 5)
+    }else if ([sender.imageLevel intValue] == 3)//eyebrow view
     {
         self.headImage.swipeOrientation = swipevertical;
         self.headImage.limitationUp = self.headImage.placardView.center.y-48;
         self.headImage.limitationDown =self.headImage.placardView.center.y + 25;
-    }else if ([sender.imageLevel intValue] == 8)
+    }else if ([sender.imageLevel intValue] == 8)//glasses view
     {
         self.headImage.swipeOrientation = swipeAll;
         self.headImage.limitationUp = 0;
         self.headImage.limitationDown = 0;
-    }else if ([sender.imageLevel intValue] == 9)
+    }else if ([sender.imageLevel intValue] == 4) //nose view
     {
         self.headImage.swipeOrientation = swipevertical;
         self.headImage.limitationUp = self.headImage.placardView.center.y -72;
         self.headImage.limitationDown = self.headImage.placardView.center.y +72;
-    }else if ([sender.imageLevel intValue] == 6)
+    }else if ([sender.imageLevel intValue] == 5) // mouthView
     {
         self.headImage.swipeOrientation = swipevertical;
         self.headImage.limitationUp =self.headImage.placardView.center.y - 70;
         self.headImage.limitationDown =self.headImage.placardView.center.y + 70;
-    }else if ([sender.imageLevel intValue] == 11)
+    }else if ([sender.imageLevel intValue] == 6)//faceImage
     {
         self.headImage.swipeOrientation = swipeAll;
         self.headImage.limitationUp =0;
         self.headImage.limitationDown =0;
-    }else if ([sender.imageLevel intValue] == 14)
+    }else if ([sender.imageLevel intValue] == 12)//pet view
     {
         self.headImage.swipeOrientation = swipeHorizontal;
         self.headImage.limitationUp =0;
@@ -649,16 +649,17 @@ bool needSaveAlert;
     for (int i = 0; i<sender.imageColor; i++) {
         
         CGFloat btnSize = 0;
-        if (sender.imageColor == 2) {
-            btnSize = (sender.frame.size.width*3/4-10)/1.2;
-        }else if(sender.imageColor == 4)
-        {
-            btnSize = (sender.frame.size.width*3/4-10)/1.6;
-        }else
-        {
-            btnSize = (sender.frame.size.width*3/4-10)/2.0;
-        }
-        
+//        if (sender.imageColor == 2) {
+//            btnSize = (sender.frame.size.width*3/4-10)/1.2;
+//        }else if(sender.imageColor == 4)
+//        {
+//            btnSize = (sender.frame.size.width*3/4-10)/1.6;
+//        }else
+//        {
+//            btnSize = (sender.frame.size.width*3/4-10)/2.0;
+//        }
+        btnSize = (sender.frame.size.width*3/4-12)/1.6;
+
         CGFloat startX = (SCREEN_WIDTH-(btnSize*sender.imageColor + 5*(sender.imageColor-1)))/2;
         
         
@@ -846,7 +847,6 @@ bool needSaveAlert;
         
         element.tag = j+1;
         
-        //            NSLog(@"button:%@",element);
         [oneList addSubview:element];
         
     }
@@ -1141,47 +1141,42 @@ bool needSaveAlert;
     
     [self.photoImage setImage:self.imageShare];
 
+    if (self.photoPage.alpha <0.001) {
+        self.photoPage.alpha = 1.0;
+        [self.view bringSubviewToFront:self.photoPage];
+    }
     
+
     
-    UIView *whiteView = [[UIView alloc] initWithFrame:self.view.frame];
-    [whiteView setBackgroundColor:[UIColor whiteColor]];
-    
-    [self.view addSubview:whiteView];
-    whiteView.alpha = 0.8;
+
     [self.photoPage sendSubviewToBack:self.photoBack];
     
+    [self performSelector:@selector(showFlash) withObject:nil afterDelay:0.25];
+    
 
     
-    [UIView animateWithDuration: 0.75
-                     animations: ^{
-                         whiteView.alpha = 0;
 
-                     }
+}
+
+-(void)showFlash
+{    UIView *whiteView = [[UIView alloc] initWithFrame:self.view.frame];
+    [whiteView setBackgroundColor:[UIColor whiteColor]];
+    [self.view addSubview:whiteView];
+    whiteView.alpha = 0.8;
+    
+    [UIView animateWithDuration:0.75 delay:0.1 options:UIViewAnimationOptionTransitionNone animations: ^{
+
+        whiteView.alpha = 0;
+        
+    }
                      completion: ^(BOOL finished) {
                          
-                         if (self.photoPage.alpha <0.001) {
-                             self.photoPage.alpha = 1.0;
-                             [self.view bringSubviewToFront:self.photoPage];
-                         }
-                         
-//                         [UIView animateWithDuration: 0.4
-//                                          animations: ^{
-//                                              whiteView.alpha = 0;
-//
-//                                              if (self.photoPage.alpha <0.001) {
-//                                                  self.photoPage.alpha = 1.0;
-//                                              }
-//                                          }
-//                                          completion:nil
-//                          ];
-                         
                          [whiteView removeFromSuperview];
-
-
+                         
+                         
                      }
      ];
 }
-
 
 - (void)alertView:(UIAlertView *)alertView clickedButtonAtIndex:(NSInteger)buttonIndex
 {
