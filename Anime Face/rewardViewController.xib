@@ -1,14 +1,16 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="6751" systemVersion="14C109" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="7702" systemVersion="14D136" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES">
     <dependencies>
         <deployment identifier="iOS"/>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="6736"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="7701"/>
         <capability name="Aspect ratio constraints" minToolsVersion="5.1"/>
+        <capability name="Constraints with non-1.0 multipliers" minToolsVersion="5.1"/>
     </dependencies>
     <objects>
         <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="rewardViewController">
             <connections>
-                <outlet property="productView" destination="tkE-is-5iT" id="Ezj-hj-wSu"/>
+                <outlet property="boxImage" destination="tkE-is-5iT" id="5gg-qk-4FC"/>
+                <outlet property="productView" destination="aJg-U1-5aC" id="2HZ-Zw-K30"/>
                 <outlet property="resultLabel" destination="jnK-oV-g0g" id="hhq-k6-2S8"/>
                 <outlet property="startReward" destination="dwv-F1-ghN" id="8MX-oC-Ban"/>
                 <outlet property="view" destination="i5M-Pr-FkT" id="sfx-zR-JGt"/>
@@ -19,31 +21,15 @@
             <rect key="frame" x="0.0" y="0.0" width="414" height="736"/>
             <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
             <subviews>
-                <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="cER-dx-gwI">
+                <view contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="zTl-PQ-Kda" userLabel="rewardCard">
+                    <rect key="frame" x="103" y="184" width="207" height="368"/>
+                    <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                </view>
+                <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="幸运屋.png" translatesAutoresizingMaskIntoConstraints="NO" id="cER-dx-gwI">
                     <rect key="frame" x="0.0" y="0.0" width="414" height="736"/>
                 </imageView>
-                <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="tkE-is-5iT">
-                    <rect key="frame" x="117" y="278" width="180" height="180"/>
-                    <constraints>
-                        <constraint firstAttribute="width" secondItem="tkE-is-5iT" secondAttribute="height" multiplier="1:1" id="Pof-Mc-qDh"/>
-                        <constraint firstAttribute="width" constant="180" id="xso-TA-JN9"/>
-                    </constraints>
-                </imageView>
-                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="dwv-F1-ghN">
-                    <rect key="frame" x="170" y="498" width="75" height="40"/>
-                    <constraints>
-                        <constraint firstAttribute="height" constant="40" id="KeP-n2-iBk"/>
-                        <constraint firstAttribute="width" constant="75" id="NHZ-V9-7w9"/>
-                    </constraints>
-                    <state key="normal" title="开始摇奖">
-                        <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
-                    </state>
-                    <connections>
-                        <action selector="start:" destination="-1" eventType="touchUpInside" id="RG0-Kj-MMB"/>
-                    </connections>
-                </button>
                 <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="2" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" preferredMaxLayoutWidth="161" translatesAutoresizingMaskIntoConstraints="NO" id="jnK-oV-g0g" userLabel="result">
-                    <rect key="frame" x="127" y="181" width="161" height="68"/>
+                    <rect key="frame" x="127" y="196" width="161" height="68"/>
                     <constraints>
                         <constraint firstAttribute="width" constant="161" id="UBo-DJ-qYY"/>
                         <constraint firstAttribute="width" secondItem="jnK-oV-g0g" secondAttribute="height" multiplier="71:30" id="e7U-pE-ryr"/>
@@ -52,32 +38,79 @@
                     <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
                     <nil key="highlightedColor"/>
                 </label>
+                <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="box.png" translatesAutoresizingMaskIntoConstraints="NO" id="tkE-is-5iT">
+                    <rect key="frame" x="140" y="245" width="134" height="154"/>
+                    <constraints>
+                        <constraint firstAttribute="width" secondItem="tkE-is-5iT" secondAttribute="height" multiplier="350:403" id="Pof-Mc-qDh"/>
+                        <constraint firstAttribute="width" constant="134" id="xso-TA-JN9"/>
+                    </constraints>
+                </imageView>
+                <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="wenhao0.png" translatesAutoresizingMaskIntoConstraints="NO" id="aJg-U1-5aC">
+                    <rect key="frame" x="182" y="313" width="51" height="51"/>
+                    <constraints>
+                        <constraint firstAttribute="width" secondItem="aJg-U1-5aC" secondAttribute="height" multiplier="1:1" id="CoV-y8-r7J"/>
+                    </constraints>
+                </imageView>
+                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="dwv-F1-ghN">
+                    <rect key="frame" x="140" y="245" width="134" height="154"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="40" id="KeP-n2-iBk"/>
+                        <constraint firstAttribute="width" constant="75" id="NHZ-V9-7w9"/>
+                    </constraints>
+                    <state key="normal">
+                        <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                    </state>
+                    <variation key="default">
+                        <mask key="constraints">
+                            <exclude reference="KeP-n2-iBk"/>
+                            <exclude reference="NHZ-V9-7w9"/>
+                        </mask>
+                    </variation>
+                    <connections>
+                        <action selector="start:" destination="-1" eventType="touchUpInside" id="RG0-Kj-MMB"/>
+                    </connections>
+                </button>
             </subviews>
             <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
             <constraints>
+                <constraint firstItem="tkE-is-5iT" firstAttribute="centerY" secondItem="aJg-U1-5aC" secondAttribute="centerY" multiplier="19:20" id="0Kc-oS-NAr"/>
+                <constraint firstItem="tkE-is-5iT" firstAttribute="centerY" secondItem="dwv-F1-ghN" secondAttribute="centerY" id="2E1-Rf-6XC"/>
                 <constraint firstItem="jnK-oV-g0g" firstAttribute="centerY" secondItem="cER-dx-gwI" secondAttribute="centerY" constant="-147" id="345-dW-YSB"/>
+                <constraint firstItem="tkE-is-5iT" firstAttribute="centerX" secondItem="aJg-U1-5aC" secondAttribute="centerX" id="Biu-RC-ogp"/>
                 <constraint firstItem="tkE-is-5iT" firstAttribute="centerY" secondItem="jnK-oV-g0g" secondAttribute="centerY" constant="147" id="ENm-oF-W3a"/>
                 <constraint firstItem="tkE-is-5iT" firstAttribute="centerX" secondItem="jnK-oV-g0g" secondAttribute="centerX" id="FGg-Vi-MbH"/>
                 <constraint firstItem="tkE-is-5iT" firstAttribute="centerX" secondItem="cER-dx-gwI" secondAttribute="centerX" id="LSR-bm-MNx"/>
                 <constraint firstAttribute="trailing" secondItem="cER-dx-gwI" secondAttribute="trailing" id="OmN-Lx-0DR"/>
                 <constraint firstItem="cER-dx-gwI" firstAttribute="top" secondItem="i5M-Pr-FkT" secondAttribute="top" id="P0U-xC-eFQ"/>
-                <constraint firstItem="tkE-is-5iT" firstAttribute="top" secondItem="jnK-oV-g0g" secondAttribute="bottom" constant="29" id="SS7-D7-EWB"/>
-                <constraint firstItem="tkE-is-5iT" firstAttribute="centerY" secondItem="cER-dx-gwI" secondAttribute="centerY" id="Svk-dv-N1M"/>
+                <constraint firstItem="tkE-is-5iT" firstAttribute="top" secondItem="jnK-oV-g0g" secondAttribute="bottom" constant="-19" id="SS7-D7-EWB"/>
+                <constraint firstItem="tkE-is-5iT" firstAttribute="centerY" secondItem="cER-dx-gwI" secondAttribute="centerY" constant="-48" id="Svk-dv-N1M"/>
+                <constraint firstItem="tkE-is-5iT" firstAttribute="width" secondItem="aJg-U1-5aC" secondAttribute="height" multiplier="134:51" id="Tuu-8M-bUn"/>
+                <constraint firstItem="tkE-is-5iT" firstAttribute="centerY" secondItem="cER-dx-gwI" secondAttribute="centerY" multiplier="7:8" id="a9L-O7-3fR"/>
                 <constraint firstItem="tkE-is-5iT" firstAttribute="centerX" secondItem="dwv-F1-ghN" secondAttribute="centerX" id="aEm-bm-oc3"/>
                 <constraint firstAttribute="bottom" secondItem="cER-dx-gwI" secondAttribute="bottom" id="bmL-kA-xZQ"/>
-                <constraint firstItem="dwv-F1-ghN" firstAttribute="top" secondItem="tkE-is-5iT" secondAttribute="bottom" constant="40" id="jjq-bI-irW"/>
+                <constraint firstItem="tkE-is-5iT" firstAttribute="height" secondItem="dwv-F1-ghN" secondAttribute="height" id="gva-Yp-mET"/>
+                <constraint firstItem="dwv-F1-ghN" firstAttribute="top" secondItem="tkE-is-5iT" secondAttribute="bottom" id="jjq-bI-irW"/>
+                <constraint firstItem="tkE-is-5iT" firstAttribute="width" secondItem="dwv-F1-ghN" secondAttribute="width" id="kSJ-b5-rjL"/>
                 <constraint firstItem="cER-dx-gwI" firstAttribute="leading" secondItem="i5M-Pr-FkT" secondAttribute="leading" id="mte-Ub-wrY"/>
                 <constraint firstItem="tkE-is-5iT" firstAttribute="leading" secondItem="cER-dx-gwI" secondAttribute="trailing" constant="-297" id="rvo-F2-61K"/>
             </constraints>
+            <nil key="simulatedStatusBarMetrics"/>
             <simulatedScreenMetrics key="simulatedDestinationMetrics" type="retina55"/>
             <variation key="default">
                 <mask key="constraints">
                     <exclude reference="345-dW-YSB"/>
                     <exclude reference="ENm-oF-W3a"/>
+                    <exclude reference="Svk-dv-N1M"/>
                     <exclude reference="rvo-F2-61K"/>
+                    <exclude reference="jjq-bI-irW"/>
                 </mask>
             </variation>
             <point key="canvasLocation" x="334" y="264"/>
         </view>
     </objects>
+    <resources>
+        <image name="box.png" width="350" height="403"/>
+        <image name="wenhao0.png" width="177" height="177"/>
+        <image name="幸运屋.png" width="1080" height="1920"/>
+    </resources>
 </document>

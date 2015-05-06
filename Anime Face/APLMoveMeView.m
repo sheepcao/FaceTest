@@ -140,6 +140,9 @@ float differenceY;
               );
         if (self.swipeOrientation == swipevertical) {
             originalCenter.y+=yTarget;
+        }else if(self.swipeOrientation == swipeHorizontal)
+        {
+            originalCenter.x +=xTarget;
         }else if(self.swipeOrientation == swipeAll)
         {
             originalCenter.x +=xTarget;
@@ -189,6 +192,9 @@ float differenceY;
             
             if (self.swipeOrientation == swipevertical) {
                 originalCenter.y+=yAttached;
+            }else if(self.swipeOrientation == swipeHorizontal)
+            {
+                originalCenter.x +=xAttached;
             }else if(self.swipeOrientation == swipeAll)
             {
                 originalCenter.x +=xAttached;

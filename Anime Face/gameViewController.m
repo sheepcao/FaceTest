@@ -23,9 +23,14 @@
 @property (nonatomic,strong) NSArray *imagesArray;
 @property (nonatomic,strong) UIView *colorView;
 @property (nonatomic,strong) UIImage *imageShare;
+
+@property (nonatomic,strong) NSMutableDictionary *selectedElement;
+
 @end
 
 @implementation gameViewController
+
+@synthesize selectedElement;
 
 
 int lastOffside;
@@ -46,8 +51,7 @@ bool needSaveAlert;
     //eric: button on navigation bar....
     
 
-    
-
+    selectedElement = [[NSMutableDictionary alloc] initWithCapacity:15];
     
     self.imagesArray = @[self.faceFrameView,@"hair",self.mustacheView,self.clothingView,self.eyeView,self.eyebrowView,self.mouthView,self.gestureView,self.glassesView,self.noseView,self.moodView,self.faceImage,self.hatView,self.backImage,self.petView];
     
@@ -286,6 +290,7 @@ bool needSaveAlert;
             
         }
     }
+    
 
 
 
@@ -460,11 +465,13 @@ bool needSaveAlert;
             [element setBackgroundImage: [UIImage imageWithContentsOfFile:[[NSBundle mainBundle] pathForResource:@"fame1" ofType:@"png"]] forState:UIControlStateNormal];
             [element setBackgroundImage:[UIImage imageWithContentsOfFile:[[NSBundle mainBundle] pathForResource:@"fame-choosed1" ofType:@"png"]] forState:UIControlStateSelected];
             
+            element.tag = j+1;
+
             
-            if (j == 0) {
-                
-                [element setSelected:YES];
-            }
+//            if (j == 0) {
+//                
+//                [element setSelected:YES];
+//            }
             
             //            NSLog(@"button:%@",element);
             [oneList addSubview:element];
@@ -564,7 +571,7 @@ bool needSaveAlert;
         self.headImage.limitationDown =0;
     }else if ([sender.imageLevel intValue] == 14)
     {
-        self.headImage.swipeOrientation = swipeAll;
+        self.headImage.swipeOrientation = swipeHorizontal;
         self.headImage.limitationUp =0;
         self.headImage.limitationDown =0;
     }else
@@ -614,6 +621,10 @@ bool needSaveAlert;
             
         }
     }
+    
+    
+    [selectedElement setObject:[NSNumber numberWithInteger:sender.tag] forKey:[NSString stringWithFormat:@"%@",sender.imageLevel]];
+    
     
     
     needSaveAlert = YES;
@@ -833,6 +844,7 @@ bool needSaveAlert;
         [element setBackgroundImage: [UIImage imageWithContentsOfFile:[[NSBundle mainBundle] pathForResource:@"fame1" ofType:@"png"]] forState:UIControlStateNormal];
         [element setBackgroundImage:[UIImage imageWithContentsOfFile:[[NSBundle mainBundle] pathForResource:@"fame-choosed1" ofType:@"png"]] forState:UIControlStateSelected];
         
+        element.tag = j+1;
         
         //            NSLog(@"button:%@",element);
         [oneList addSubview:element];
@@ -840,6 +852,16 @@ bool needSaveAlert;
     }
         
     [oneList setContentOffset:CGPointMake(0, 0) animated:NO];
+    
+    
+    NSNumber *selectedNumber = [selectedElement objectForKey:[NSString stringWithFormat:@"%d",page]];
+    if (selectedNumber) {
+        
+        elemntButton *selectedBtn = (elemntButton *)[oneList viewWithTag:[selectedNumber integerValue]];
+        [self elementTapped:selectedBtn];
+    }
+
+    
 
 }
 

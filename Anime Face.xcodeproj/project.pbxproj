@@ -360,7 +360,6 @@
 		A44563B81AE93D440040D1C5 /* diamond++.png in Resources */ = {isa = PBXBuildFile; fileRef = A44563911AE93D440040D1C5 /* diamond++.png */; };
 		A44563B91AE93D440040D1C5 /* diamond++press.png in Resources */ = {isa = PBXBuildFile; fileRef = A44563921AE93D440040D1C5 /* diamond++press.png */; };
 		A44563BA1AE93D440040D1C5 /* heart.png in Resources */ = {isa = PBXBuildFile; fileRef = A44563931AE93D440040D1C5 /* heart.png */; };
-		A44563BB1AE93D440040D1C5 /* mistery background.png in Resources */ = {isa = PBXBuildFile; fileRef = A44563941AE93D440040D1C5 /* mistery background.png */; };
 		A44563BC1AE93D440040D1C5 /* mistery room card.png in Resources */ = {isa = PBXBuildFile; fileRef = A44563951AE93D440040D1C5 /* mistery room card.png */; };
 		A44563BD1AE93D440040D1C5 /* mistery-above.png in Resources */ = {isa = PBXBuildFile; fileRef = A44563961AE93D440040D1C5 /* mistery-above.png */; };
 		A44563BE1AE93D440040D1C5 /* mistery-back-press.png in Resources */ = {isa = PBXBuildFile; fileRef = A44563971AE93D440040D1C5 /* mistery-back-press.png */; };
@@ -479,6 +478,18 @@
 		A4A211091AD3ADF6006973E0 /* QuestionMark.png in Resources */ = {isa = PBXBuildFile; fileRef = A4A211081AD3ADF6006973E0 /* QuestionMark.png */; };
 		A4A2110B1AD3B03F006973E0 /* 03.png in Resources */ = {isa = PBXBuildFile; fileRef = A4A2110A1AD3B03F006973E0 /* 03.png */; };
 		A4A2110E1AD3B2AE006973E0 /* imageWithName.m in Sources */ = {isa = PBXBuildFile; fileRef = A4A2110D1AD3B2AE006973E0 /* imageWithName.m */; };
+		A4A962E11AF9DDC8008B0738 /* 幸运屋.png in Resources */ = {isa = PBXBuildFile; fileRef = A4A962E01AF9DDC8008B0738 /* 幸运屋.png */; };
+		A4A962EE1AF9E142008B0738 /* wenhao0.png in Resources */ = {isa = PBXBuildFile; fileRef = A4A962E31AF9E142008B0738 /* wenhao0.png */; };
+		A4A962EF1AF9E142008B0738 /* wenhao1.png in Resources */ = {isa = PBXBuildFile; fileRef = A4A962E41AF9E142008B0738 /* wenhao1.png */; };
+		A4A962F01AF9E142008B0738 /* wenhao10.png in Resources */ = {isa = PBXBuildFile; fileRef = A4A962E51AF9E142008B0738 /* wenhao10.png */; };
+		A4A962F11AF9E142008B0738 /* wenhao2.png in Resources */ = {isa = PBXBuildFile; fileRef = A4A962E61AF9E142008B0738 /* wenhao2.png */; };
+		A4A962F21AF9E142008B0738 /* wenhao3.png in Resources */ = {isa = PBXBuildFile; fileRef = A4A962E71AF9E142008B0738 /* wenhao3.png */; };
+		A4A962F31AF9E142008B0738 /* wenhao4.png in Resources */ = {isa = PBXBuildFile; fileRef = A4A962E81AF9E142008B0738 /* wenhao4.png */; };
+		A4A962F41AF9E142008B0738 /* wenhao5.png in Resources */ = {isa = PBXBuildFile; fileRef = A4A962E91AF9E142008B0738 /* wenhao5.png */; };
+		A4A962F51AF9E142008B0738 /* wenhao6.png in Resources */ = {isa = PBXBuildFile; fileRef = A4A962EA1AF9E142008B0738 /* wenhao6.png */; };
+		A4A962F61AF9E142008B0738 /* wenhao7.png in Resources */ = {isa = PBXBuildFile; fileRef = A4A962EB1AF9E142008B0738 /* wenhao7.png */; };
+		A4A962F71AF9E142008B0738 /* wenhao8.png in Resources */ = {isa = PBXBuildFile; fileRef = A4A962EC1AF9E142008B0738 /* wenhao8.png */; };
+		A4A962F81AF9E142008B0738 /* wenhao9.png in Resources */ = {isa = PBXBuildFile; fileRef = A4A962ED1AF9E142008B0738 /* wenhao9.png */; };
 		A4BF61D01AEDC55A009B38BE /* gesture0.png in Resources */ = {isa = PBXBuildFile; fileRef = A4BF61AB1AEDC55A009B38BE /* gesture0.png */; };
 		A4BF61D11AEDC55A009B38BE /* gesture1.png in Resources */ = {isa = PBXBuildFile; fileRef = A4BF61AC1AEDC55A009B38BE /* gesture1.png */; };
 		A4BF61D21AEDC55A009B38BE /* gesture2.5.png in Resources */ = {isa = PBXBuildFile; fileRef = A4BF61AD1AEDC55A009B38BE /* gesture2.5.png */; };
@@ -1206,7 +1217,6 @@
 		A44563911AE93D440040D1C5 /* diamond++.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "diamond++.png"; sourceTree = "<group>"; };
 		A44563921AE93D440040D1C5 /* diamond++press.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "diamond++press.png"; sourceTree = "<group>"; };
 		A44563931AE93D440040D1C5 /* heart.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = heart.png; sourceTree = "<group>"; };
-		A44563941AE93D440040D1C5 /* mistery background.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "mistery background.png"; sourceTree = "<group>"; };
 		A44563951AE93D440040D1C5 /* mistery room card.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "mistery room card.png"; sourceTree = "<group>"; };
 		A44563961AE93D440040D1C5 /* mistery-above.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "mistery-above.png"; sourceTree = "<group>"; };
 		A44563971AE93D440040D1C5 /* mistery-back-press.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "mistery-back-press.png"; sourceTree = "<group>"; };
@@ -1342,6 +1352,18 @@
 		A4A2110A1AD3B03F006973E0 /* 03.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = 03.png; sourceTree = "<group>"; };
 		A4A2110C1AD3B2AE006973E0 /* imageWithName.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = imageWithName.h; sourceTree = "<group>"; };
 		A4A2110D1AD3B2AE006973E0 /* imageWithName.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = imageWithName.m; sourceTree = "<group>"; };
+		A4A962E01AF9DDC8008B0738 /* 幸运屋.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "幸运屋.png"; sourceTree = "<group>"; };
+		A4A962E31AF9E142008B0738 /* wenhao0.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = wenhao0.png; sourceTree = "<group>"; };
+		A4A962E41AF9E142008B0738 /* wenhao1.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = wenhao1.png; sourceTree = "<group>"; };
+		A4A962E51AF9E142008B0738 /* wenhao10.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = wenhao10.png; sourceTree = "<group>"; };
+		A4A962E61AF9E142008B0738 /* wenhao2.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = wenhao2.png; sourceTree = "<group>"; };
+		A4A962E71AF9E142008B0738 /* wenhao3.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = wenhao3.png; sourceTree = "<group>"; };
+		A4A962E81AF9E142008B0738 /* wenhao4.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = wenhao4.png; sourceTree = "<group>"; };
+		A4A962E91AF9E142008B0738 /* wenhao5.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = wenhao5.png; sourceTree = "<group>"; };
+		A4A962EA1AF9E142008B0738 /* wenhao6.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = wenhao6.png; sourceTree = "<group>"; };
+		A4A962EB1AF9E142008B0738 /* wenhao7.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = wenhao7.png; sourceTree = "<group>"; };
+		A4A962EC1AF9E142008B0738 /* wenhao8.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = wenhao8.png; sourceTree = "<group>"; };
+		A4A962ED1AF9E142008B0738 /* wenhao9.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = wenhao9.png; sourceTree = "<group>"; };
 		A4BF61AB1AEDC55A009B38BE /* gesture0.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = gesture0.png; sourceTree = "<group>"; };
 		A4BF61AC1AEDC55A009B38BE /* gesture1.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = gesture1.png; sourceTree = "<group>"; };
 		A4BF61AD1AEDC55A009B38BE /* gesture2.5.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = gesture2.5.png; sourceTree = "<group>"; };
@@ -2169,6 +2191,7 @@
 		A44563341AE93C5E0040D1C5 /* storeLucky */ = {
 			isa = PBXGroup;
 			children = (
+				A4A962E21AF9E142008B0738 /* 问号 */,
 				A44563851AE93D440040D1C5 /* box-open.png */,
 				A44563861AE93D440040D1C5 /* box.png */,
 				A44563871AE93D440040D1C5 /* buy-press.png */,
@@ -2184,7 +2207,7 @@
 				A44563911AE93D440040D1C5 /* diamond++.png */,
 				A44563921AE93D440040D1C5 /* diamond++press.png */,
 				A44563931AE93D440040D1C5 /* heart.png */,
-				A44563941AE93D440040D1C5 /* mistery background.png */,
+				A4A962E01AF9DDC8008B0738 /* 幸运屋.png */,
 				A44563951AE93D440040D1C5 /* mistery room card.png */,
 				A44563961AE93D440040D1C5 /* mistery-above.png */,
 				A44563971AE93D440040D1C5 /* mistery-back-press.png */,
@@ -2377,6 +2400,24 @@
 				A47D6EC91AC3E1ED00AC1768 /* Info.plist */,
 			);
 			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		A4A962E21AF9E142008B0738 /* 问号 */ = {
+			isa = PBXGroup;
+			children = (
+				A4A962E31AF9E142008B0738 /* wenhao0.png */,
+				A4A962E41AF9E142008B0738 /* wenhao1.png */,
+				A4A962E51AF9E142008B0738 /* wenhao10.png */,
+				A4A962E61AF9E142008B0738 /* wenhao2.png */,
+				A4A962E71AF9E142008B0738 /* wenhao3.png */,
+				A4A962E81AF9E142008B0738 /* wenhao4.png */,
+				A4A962E91AF9E142008B0738 /* wenhao5.png */,
+				A4A962EA1AF9E142008B0738 /* wenhao6.png */,
+				A4A962EB1AF9E142008B0738 /* wenhao7.png */,
+				A4A962EC1AF9E142008B0738 /* wenhao8.png */,
+				A4A962ED1AF9E142008B0738 /* wenhao9.png */,
+			);
+			path = "问号";
 			sourceTree = "<group>";
 		};
 		A4BF61AA1AEDC53C009B38BE /* gesture */ = {
@@ -3164,6 +3205,7 @@
 				A46BBC471ADE52EE009D2280 /* 心情.png in Resources */,
 				A404427D1AF1CF1A00E87C27 /* eyebrow6-yulan.png in Resources */,
 				A4BF62BC1AEDC681009B38BE /* cloth-g-8.png in Resources */,
+				A4A962EF1AF9E142008B0738 /* wenhao1.png in Resources */,
 				A40441EC1AF1CE5500E87C27 /* hat32-yulan.png in Resources */,
 				A404430F1AF1CF6800E87C27 /* cloth-b-7-yulan.png in Resources */,
 				A40444011AF1D28000E87C27 /* gesture1-yulan.png in Resources */,
@@ -3199,6 +3241,7 @@
 				A40441D61AF1CE5500E87C27 /* hat10-yulan.png in Resources */,
 				A404427F1AF1CF1A00E87C27 /* eyebrow8-yulan.png in Resources */,
 				A4BF63311AEDC6FE009B38BE /* eyebrow8.png in Resources */,
+				A4A962F51AF9E142008B0738 /* wenhao6.png in Resources */,
 				A44563B21AE93D440040D1C5 /* diamond .png in Resources */,
 				A40442291AF1CEDC00E87C27 /* glass9-yulan.png in Resources */,
 				A4BF62C31AEDC681009B38BE /* cloth-g-15.png in Resources */,
@@ -3265,6 +3308,7 @@
 				A40442AD1AF1CF3600E87C27 /* eye01-yulan.png in Resources */,
 				A40443881AF1D0FD00E87C27 /* mouth1-yulan.png in Resources */,
 				A404435E1AF1D0E700E87C27 /* nose9-yulan.png in Resources */,
+				A4A962F81AF9E142008B0738 /* wenhao9.png in Resources */,
 				A40442781AF1CF1A00E87C27 /* eyebrow1-yulan.png in Resources */,
 				A4BF636A1AEDC726009B38BE /* facemark21.png in Resources */,
 				A4BF63A41AEDC7DC009B38BE /* pet5.png in Resources */,
@@ -3273,7 +3317,6 @@
 				A44BB7601ADCFC18009D2378 /* photo.png in Resources */,
 				A4BF630B1AEDC6A6009B38BE /* eye21.png in Resources */,
 				A40442031AF1CE8000E87C27 /* pet3-yulan.png in Resources */,
-				A44563BB1AE93D440040D1C5 /* mistery background.png in Resources */,
 				A404425A1AF1CEF700E87C27 /* facemark15-yulan.png in Resources */,
 				A404430B1AF1CF6800E87C27 /* cloth-b-3-yulan.png in Resources */,
 				A404438F1AF1D0FD00E87C27 /* mouth8-yulan.png in Resources */,
@@ -3402,6 +3445,7 @@
 				A4BF63AA1AEDC7DC009B38BE /* pet11.png in Resources */,
 				A44BB7461ADCA647009D2378 /* setting-press.png in Resources */,
 				A40443BA1AF1D11C00E87C27 /* face4-yulan.png in Resources */,
+				A4A962F61AF9E142008B0738 /* wenhao7.png in Resources */,
 				A44BB7351ADCA647009D2378 /* inside-clothstore-press.png in Resources */,
 				A4BF63ED1AEDC827009B38BE /* hat27.png in Resources */,
 				A4BF621A1AEDC610009B38BE /* mouth1.png in Resources */,
@@ -3424,6 +3468,7 @@
 				A46BBC571ADE52EE009D2280 /* 脸饰.png in Resources */,
 				A4BF62971AEDC681009B38BE /* cloth-b-1.png in Resources */,
 				A404439D1AF1D0FD00E87C27 /* mouth22-yulan.png in Resources */,
+				A4A962F01AF9E142008B0738 /* wenhao10.png in Resources */,
 				A47EF4FD1AE5EFF7005C32E0 /* hair2-4-0.png in Resources */,
 				A44BB7451ADCA647009D2378 /* setting-normal.png in Resources */,
 				A4BF629B1AEDC681009B38BE /* cloth-b-5.png in Resources */,
@@ -3527,6 +3572,7 @@
 				A404432F1AF1CF6800E87C27 /* cloth-g-9-yulan.png in Resources */,
 				A44BB75F1ADCFC18009D2378 /* photo-press.png in Resources */,
 				A4BF621C1AEDC610009B38BE /* mouth3.png in Resources */,
+				A4A962F11AF9E142008B0738 /* wenhao2.png in Resources */,
 				A4BF62C61AEDC681009B38BE /* cloth-g-18.png in Resources */,
 				A4BF63F31AEDC827009B38BE /* hat33.png in Resources */,
 				A4BF62BF1AEDC681009B38BE /* cloth-g-11.png in Resources */,
@@ -3585,6 +3631,7 @@
 				A46BBC4C1ADE52EE009D2280 /* 眼眉1.png in Resources */,
 				A4BF62341AEDC610009B38BE /* mouth27.png in Resources */,
 				A40443D41AF1D13A00E87C27 /* face6.png in Resources */,
+				A4A962E11AF9DDC8008B0738 /* 幸运屋.png in Resources */,
 				A40442C21AF1CF3600E87C27 /* eye22-yulan.png in Resources */,
 				A40442211AF1CEDC00E87C27 /* glass1-yulan.png in Resources */,
 				A4F199271AF865E60003351E /* ShareSDKLocalizable.strings in Resources */,
@@ -3768,18 +3815,22 @@
 				A44BB7371ADCA647009D2378 /* inside-luckystore-press.png in Resources */,
 				A40443BD1AF1D11C00E87C27 /* face7-yulan.png in Resources */,
 				A44BB72C1ADCA647009D2378 /* girl-pressl.png in Resources */,
+				A4A962F41AF9E142008B0738 /* wenhao5.png in Resources */,
 				A40442C71AF1CF3600E87C27 /* eye27-yulan.png in Resources */,
 				A40443C11AF1D11C00E87C27 /* face11-yulan.png in Resources */,
 				A40443D61AF1D13A00E87C27 /* face8.png in Resources */,
 				A4BF62CE1AEDC681009B38BE /* cloth-g-26.png in Resources */,
+				A4A962F31AF9E142008B0738 /* wenhao4.png in Resources */,
 				A4BF63D31AEDC827009B38BE /* hat1.png in Resources */,
 				A40441F01AF1CE5500E87C27 /* hat36-yulan.png in Resources */,
 				51ABD2661AE78EE0005BC8F0 /* hairG2-7-6-front.png in Resources */,
 				A4BF61D91AEDC55A009B38BE /* gesture7.png in Resources */,
 				A4BF632A1AEDC6FE009B38BE /* eyebrow1.png in Resources */,
 				A44BB7441ADCA647009D2378 /* save.png in Resources */,
+				A4A962F21AF9E142008B0738 /* wenhao3.png in Resources */,
 				A40444021AF1D28000E87C27 /* gesture2-yulan.png in Resources */,
 				A4BF62A01AEDC681009B38BE /* cloth-b-10.png in Resources */,
+				A4A962EE1AF9E142008B0738 /* wenhao0.png in Resources */,
 				A46BBC4E1ADE52EE009D2280 /* 眼睛1.png in Resources */,
 				A4BF61DD1AEDC55A009B38BE /* gesture11.png in Resources */,
 				A4BF61D11AEDC55A009B38BE /* gesture1.png in Resources */,
@@ -3822,6 +3873,7 @@
 				A40442311AF1CEDC00E87C27 /* glass17-yulan.png in Resources */,
 				A40442081AF1CE8000E87C27 /* pet8-yulan.png in Resources */,
 				A4BF63891AEDC79F009B38BE /* glass9.png in Resources */,
+				A4A962F71AF9E142008B0738 /* wenhao8.png in Resources */,
 				A4BF63041AEDC6A6009B38BE /* eye14.png in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

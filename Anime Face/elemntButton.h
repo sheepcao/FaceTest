@@ -14,6 +14,6 @@
 @property (nonatomic,strong) NSNumber *imageLevel;
 @property BOOL haveBackImage;
 @property int imageColor;
-
+@property bool isFromBuy;
 
 @end

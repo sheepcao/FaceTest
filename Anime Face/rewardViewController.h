@@ -13,6 +13,7 @@
 @property (weak, nonatomic) IBOutlet UIButton *startReward;
 @property (weak, nonatomic) IBOutlet UILabel *resultLabel;
 @property (weak, nonatomic) IBOutlet UIImageView *productView;
+@property (strong, nonatomic) IBOutlet UIImageView *boxImage;
 
 - (IBAction)start:(id)sender;
 @end
