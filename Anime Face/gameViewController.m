@@ -18,20 +18,20 @@
 
 
 
-@interface gameViewController ()<UIScrollViewDelegate>
+@interface gameViewController ()<UIScrollViewDelegate,UITextFieldDelegate>
 
 @property (nonatomic,strong) NSArray *imagesArray;
 @property (nonatomic,strong) UIView *colorView;
 @property (nonatomic,strong) UIImage *imageShare;
 
 @property (nonatomic,strong) NSMutableDictionary *selectedElement;
-
+@property (nonatomic,strong) UITextField *invisibleTextFiled;
 @end
 
 @implementation gameViewController
 
 @synthesize selectedElement;
-
+@synthesize invisibleTextFiled;
 
 int lastOffside;
 bool needSaveAlert;
@@ -47,6 +47,15 @@ bool needSaveAlert;
     
     [self.loadPage setHidden:NO];
     
+    
+    //for custom text view
+    [[NSNotificationCenter defaultCenter] addObserver:self
+                                             selector:@selector(keyboardWasShown:)
+                                                 name:UIKeyboardDidShowNotification
+                                               object:nil];
+    
+    [self initCustomTextViewWithY:SCREEN_HEIGHT];
+
     
     //eric: button on navigation bar....
     
@@ -292,6 +301,7 @@ bool needSaveAlert;
     
 
 
+    [self hideCustomTextView];
 
 
     
@@ -361,6 +371,8 @@ bool needSaveAlert;
         oneList.showsHorizontalScrollIndicator=NO;
         oneList.tag = 1000+i;
         oneList.delegate = self;
+            
+
         
         
         if([[NSUserDefaults standardUserDefaults] objectForKey:catalogKey])
@@ -574,6 +586,20 @@ bool needSaveAlert;
         self.headImage.swipeOrientation = swipeHorizontal;
         self.headImage.limitationUp =0;
         self.headImage.limitationDown =0;
+    }else if ([sender.imageLevel intValue] == 14)//mood view
+    {
+        self.headImage.swipeOrientation = swipeNone;
+        self.headImage.limitationUp = 0;
+        self.headImage.limitationDown = 0;
+
+        if (sender.tag == 2) {
+            [invisibleTextFiled becomeFirstResponder];
+        }else
+        {
+            [self.customTextLabel setText:@""];
+            [self hideCustomTextView];
+        }
+        
     }else
     {
         self.headImage.swipeOrientation = swipeNone;
@@ -631,6 +657,72 @@ bool needSaveAlert;
     
     
 }
+
+-(void)initCustomTextViewWithY:(CGFloat)pos_Y
+{
+    UIView *customTextView = [[UIView alloc] initWithFrame:CGRectMake(0, pos_Y, SCREEN_WIDTH, 40)];
+    [customTextView setBackgroundColor:[UIColor whiteColor]];
+    customTextView.tag = 777;
+    invisibleTextFiled = [[UITextField alloc]initWithFrame:CGRectMake(3, 2, customTextView.frame.size.width-80, 36)];
+    invisibleTextFiled.placeholder = @"请输入气泡内容";
+    invisibleTextFiled.layer.borderWidth = 0.5;
+    invisibleTextFiled.layer.cornerRadius = 7;
+    invisibleTextFiled.layer.borderColor = [UIColor lightGrayColor].CGColor;
+    invisibleTextFiled.delegate = self;
+
+    invisibleTextFiled.tag = 7;
+    
+    UIButton *doInput = [[UIButton alloc] initWithFrame:CGRectMake(customTextView.frame.size.width-78, 2, 75, 36)];
+    [doInput setTitle:@"输入" forState:UIControlStateNormal];
+    [doInput setTitleColor:[UIColor blueColor] forState:UIControlStateNormal];
+    [doInput addTarget:self action:@selector(inputText) forControlEvents:UIControlEventTouchUpInside];
+    [customTextView addSubview:invisibleTextFiled];
+    [customTextView addSubview:doInput];
+    
+//    [customTextView setHidden:YES];
+
+    [self.view addSubview:customTextView];
+    
+
+    
+}
+-(void)hideCustomTextView
+{
+    UIView *customTextView = [self.view viewWithTag:777];
+    [invisibleTextFiled setText:@""];
+    [UIView animateWithDuration: 0.01
+                     animations: ^{
+                         [customTextView setFrame:CGRectMake(0, SCREEN_HEIGHT, SCREEN_WIDTH, 40)];
+                         
+                     }
+                     completion:nil
+     ];
+}
+
+
+-(void)keyboardWasShown:(NSNotification*)notification
+{
+    CGSize keyboardSize = [[[notification userInfo] objectForKey:UIKeyboardFrameEndUserInfoKey] CGRectValue].size;
+    
+    UIView *customTextView = [self.view viewWithTag:777];
+    [UIView animateWithDuration: 0.05
+                     animations: ^{
+                         [customTextView setFrame:CGRectMake(0, SCREEN_HEIGHT-keyboardSize.height-40, SCREEN_WIDTH, 40)];
+                         
+                     }
+                     completion:nil
+     ];
+    [self.view layoutIfNeeded];
+}
+
+-(void)inputText
+{
+    UIView *customTextView = [self.view viewWithTag:777];
+    UITextField *txtField = (UITextField *)[customTextView viewWithTag:7];
+    
+    [self.customTextLabel setText:txtField.text];
+}
+
 
 -(void)showHairColorViewWith:(elemntButton *)sender
 {
@@ -1185,4 +1277,28 @@ bool needSaveAlert;
 
     }
 }
+
+//- (void)textFieldDidEndEditing:(UITextField *)textField
+//{
+//    
+//    [textField resignFirstResponder];
+//    
+//}
+- (BOOL)textFieldShouldReturn:(UITextField *)textField
+{
+    [textField resignFirstResponder];
+
+    UIView *customTextView = [self.view viewWithTag:777];
+    [UIView animateWithDuration: 0.15
+                     animations: ^{
+                         [customTextView setFrame:CGRectMake(0, self.catalogScrollView.frame.origin.y-40, SCREEN_WIDTH, 40)];
+                         
+                     }
+                     completion:nil
+     ];
+    [self.view layoutIfNeeded];
+    
+    return YES;
+}
+
 @end

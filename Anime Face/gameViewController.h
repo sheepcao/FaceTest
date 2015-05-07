@@ -37,6 +37,7 @@
 @property (weak, nonatomic) IBOutlet UIImageView *toptextView;
 @property (weak, nonatomic) IBOutlet UIImageView *bottomtextView;
 @property (weak, nonatomic) IBOutlet APLPlacardView *moodView;
+@property (strong, nonatomic) IBOutlet UILabel *customTextLabel;
 
 @property (weak, nonatomic) IBOutlet UIImageView *loadingView;
 @property (strong, nonatomic) IBOutlet UIView *loadPage;
