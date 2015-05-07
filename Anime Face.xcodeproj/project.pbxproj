@@ -357,8 +357,6 @@
 		A44563B41AE93D440040D1C5 /* diamond board button.png in Resources */ = {isa = PBXBuildFile; fileRef = A445638D1AE93D440040D1C5 /* diamond board button.png */; };
 		A44563B61AE93D440040D1C5 /* diamond not enough board.png in Resources */ = {isa = PBXBuildFile; fileRef = A445638F1AE93D440040D1C5 /* diamond not enough board.png */; };
 		A44563B71AE93D440040D1C5 /* diamond purchase board.png in Resources */ = {isa = PBXBuildFile; fileRef = A44563901AE93D440040D1C5 /* diamond purchase board.png */; };
-		A44563B81AE93D440040D1C5 /* diamond++.png in Resources */ = {isa = PBXBuildFile; fileRef = A44563911AE93D440040D1C5 /* diamond++.png */; };
-		A44563B91AE93D440040D1C5 /* diamond++press.png in Resources */ = {isa = PBXBuildFile; fileRef = A44563921AE93D440040D1C5 /* diamond++press.png */; };
 		A44563BA1AE93D440040D1C5 /* heart.png in Resources */ = {isa = PBXBuildFile; fileRef = A44563931AE93D440040D1C5 /* heart.png */; };
 		A44563BC1AE93D440040D1C5 /* mistery room card.png in Resources */ = {isa = PBXBuildFile; fileRef = A44563951AE93D440040D1C5 /* mistery room card.png */; };
 		A44563BD1AE93D440040D1C5 /* mistery-above.png in Resources */ = {isa = PBXBuildFile; fileRef = A44563961AE93D440040D1C5 /* mistery-above.png */; };
@@ -791,6 +789,23 @@
 		A4BF640E1AEDFF63009B38BE /* 衣服女.png in Resources */ = {isa = PBXBuildFile; fileRef = A4BF640C1AEDFF63009B38BE /* 衣服女.png */; };
 		A4BF640F1AEDFF63009B38BE /* 衣服女1.png in Resources */ = {isa = PBXBuildFile; fileRef = A4BF640D1AEDFF63009B38BE /* 衣服女1.png */; };
 		A4BF645B1AEE13FF009B38BE /* buttonProduct.m in Sources */ = {isa = PBXBuildFile; fileRef = A4BF645A1AEE13FF009B38BE /* buttonProduct.m */; };
+		A4C6DFCD1AFB2CC40008C6C8 /* CommonUtility.m in Sources */ = {isa = PBXBuildFile; fileRef = A4C6DFCC1AFB2CC40008C6C8 /* CommonUtility.m */; };
+		A4C6DFD81AFB2D920008C6C8 /* boxOpen.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = A4C6DFCF1AFB2D920008C6C8 /* boxOpen.mp3 */; };
+		A4C6DFDA1AFB2D920008C6C8 /* buyDiamond.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = A4C6DFD11AFB2D920008C6C8 /* buyDiamond.mp3 */; };
+		A4C6DFDC1AFB2D920008C6C8 /* buySuccess.m4a in Resources */ = {isa = PBXBuildFile; fileRef = A4C6DFD31AFB2D920008C6C8 /* buySuccess.m4a */; };
+		A4C6DFDE1AFB2D920008C6C8 /* catalog.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = A4C6DFD51AFB2D920008C6C8 /* catalog.mp3 */; };
+		A4C6DFDF1AFB2D920008C6C8 /* entry.m4a in Resources */ = {isa = PBXBuildFile; fileRef = A4C6DFD61AFB2D920008C6C8 /* entry.m4a */; };
+		A4C6DFE01AFB2D920008C6C8 /* photo.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = A4C6DFD71AFB2D920008C6C8 /* photo.mp3 */; };
+		A4C6DFED1AFB31990008C6C8 /* buyCellView.xib in Resources */ = {isa = PBXBuildFile; fileRef = A4C6DFE21AFB31990008C6C8 /* buyCellView.xib */; };
+		A4C6DFEE1AFB31990008C6C8 /* buyCoinsViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = A4C6DFE41AFB31990008C6C8 /* buyCoinsViewController.m */; };
+		A4C6DFEF1AFB31990008C6C8 /* buyCoinsViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = A4C6DFE51AFB31990008C6C8 /* buyCoinsViewController.xib */; };
+		A4C6DFF01AFB31990008C6C8 /* IAPHelper.m in Sources */ = {isa = PBXBuildFile; fileRef = A4C6DFE71AFB31990008C6C8 /* IAPHelper.m */; };
+		A4C6DFF11AFB31990008C6C8 /* itemTableViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = A4C6DFE91AFB31990008C6C8 /* itemTableViewCell.m */; };
+		A4C6DFF21AFB31990008C6C8 /* itemTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = A4C6DFEA1AFB31990008C6C8 /* itemTableViewCell.xib */; };
+		A4C6DFF31AFB31990008C6C8 /* myIAPHelper.m in Sources */ = {isa = PBXBuildFile; fileRef = A4C6DFEC1AFB31990008C6C8 /* myIAPHelper.m */; };
+		A4C6DFF51AFB38150008C6C8 /* nameBack.png in Resources */ = {isa = PBXBuildFile; fileRef = A4C6DFF41AFB38150008C6C8 /* nameBack.png */; };
+		A4C6DFF71AFB38350008C6C8 /* closeBuyBtn.png in Resources */ = {isa = PBXBuildFile; fileRef = A4C6DFF61AFB38350008C6C8 /* closeBuyBtn.png */; };
+		A4C6DFF91AFB38510008C6C8 /* infoBack.png in Resources */ = {isa = PBXBuildFile; fileRef = A4C6DFF81AFB38510008C6C8 /* infoBack.png */; };
 		A4C856F01AE64FBD005208F0 /* hair2-4-0-front.png in Resources */ = {isa = PBXBuildFile; fileRef = A4C856EA1AE64FBD005208F0 /* hair2-4-0-front.png */; };
 		A4C856F11AE64FBD005208F0 /* hair2-4-1-front.png in Resources */ = {isa = PBXBuildFile; fileRef = A4C856EB1AE64FBD005208F0 /* hair2-4-1-front.png */; };
 		A4C856F21AE64FBD005208F0 /* hair2-4-2-front.png in Resources */ = {isa = PBXBuildFile; fileRef = A4C856EC1AE64FBD005208F0 /* hair2-4-2-front.png */; };
@@ -1211,8 +1226,6 @@
 		A445638D1AE93D440040D1C5 /* diamond board button.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "diamond board button.png"; sourceTree = "<group>"; };
 		A445638F1AE93D440040D1C5 /* diamond not enough board.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "diamond not enough board.png"; sourceTree = "<group>"; };
 		A44563901AE93D440040D1C5 /* diamond purchase board.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "diamond purchase board.png"; sourceTree = "<group>"; };
-		A44563911AE93D440040D1C5 /* diamond++.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "diamond++.png"; sourceTree = "<group>"; };
-		A44563921AE93D440040D1C5 /* diamond++press.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "diamond++press.png"; sourceTree = "<group>"; };
 		A44563931AE93D440040D1C5 /* heart.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = heart.png; sourceTree = "<group>"; };
 		A44563951AE93D440040D1C5 /* mistery room card.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "mistery room card.png"; sourceTree = "<group>"; };
 		A44563961AE93D440040D1C5 /* mistery-above.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "mistery-above.png"; sourceTree = "<group>"; };
@@ -1663,6 +1676,28 @@
 		A4BF640D1AEDFF63009B38BE /* 衣服女1.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "衣服女1.png"; sourceTree = "<group>"; };
 		A4BF64591AEE13FF009B38BE /* buttonProduct.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = buttonProduct.h; sourceTree = "<group>"; };
 		A4BF645A1AEE13FF009B38BE /* buttonProduct.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = buttonProduct.m; sourceTree = "<group>"; };
+		A4C6DFCB1AFB2CC40008C6C8 /* CommonUtility.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CommonUtility.h; sourceTree = "<group>"; };
+		A4C6DFCC1AFB2CC40008C6C8 /* CommonUtility.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CommonUtility.m; sourceTree = "<group>"; };
+		A4C6DFCF1AFB2D920008C6C8 /* boxOpen.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = boxOpen.mp3; sourceTree = "<group>"; };
+		A4C6DFD11AFB2D920008C6C8 /* buyDiamond.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = buyDiamond.mp3; sourceTree = "<group>"; };
+		A4C6DFD31AFB2D920008C6C8 /* buySuccess.m4a */ = {isa = PBXFileReference; lastKnownFileType = file; path = buySuccess.m4a; sourceTree = "<group>"; };
+		A4C6DFD51AFB2D920008C6C8 /* catalog.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = catalog.mp3; sourceTree = "<group>"; };
+		A4C6DFD61AFB2D920008C6C8 /* entry.m4a */ = {isa = PBXFileReference; lastKnownFileType = file; path = entry.m4a; sourceTree = "<group>"; };
+		A4C6DFD71AFB2D920008C6C8 /* photo.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = photo.mp3; sourceTree = "<group>"; };
+		A4C6DFE21AFB31990008C6C8 /* buyCellView.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = buyCellView.xib; sourceTree = "<group>"; };
+		A4C6DFE31AFB31990008C6C8 /* buyCoinsViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = buyCoinsViewController.h; sourceTree = "<group>"; };
+		A4C6DFE41AFB31990008C6C8 /* buyCoinsViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = buyCoinsViewController.m; sourceTree = "<group>"; };
+		A4C6DFE51AFB31990008C6C8 /* buyCoinsViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = buyCoinsViewController.xib; sourceTree = "<group>"; };
+		A4C6DFE61AFB31990008C6C8 /* IAPHelper.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = IAPHelper.h; sourceTree = "<group>"; };
+		A4C6DFE71AFB31990008C6C8 /* IAPHelper.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = IAPHelper.m; sourceTree = "<group>"; };
+		A4C6DFE81AFB31990008C6C8 /* itemTableViewCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = itemTableViewCell.h; sourceTree = "<group>"; };
+		A4C6DFE91AFB31990008C6C8 /* itemTableViewCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = itemTableViewCell.m; sourceTree = "<group>"; };
+		A4C6DFEA1AFB31990008C6C8 /* itemTableViewCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = itemTableViewCell.xib; sourceTree = "<group>"; };
+		A4C6DFEB1AFB31990008C6C8 /* myIAPHelper.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = myIAPHelper.h; sourceTree = "<group>"; };
+		A4C6DFEC1AFB31990008C6C8 /* myIAPHelper.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = myIAPHelper.m; sourceTree = "<group>"; };
+		A4C6DFF41AFB38150008C6C8 /* nameBack.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = nameBack.png; sourceTree = "<group>"; };
+		A4C6DFF61AFB38350008C6C8 /* closeBuyBtn.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = closeBuyBtn.png; sourceTree = "<group>"; };
+		A4C6DFF81AFB38510008C6C8 /* infoBack.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = infoBack.png; sourceTree = "<group>"; };
 		A4C856EA1AE64FBD005208F0 /* hair2-4-0-front.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "hair2-4-0-front.png"; path = "Anime Face/hair2-4-0-front.png"; sourceTree = SOURCE_ROOT; };
 		A4C856EB1AE64FBD005208F0 /* hair2-4-1-front.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "hair2-4-1-front.png"; path = "Anime Face/hair2-4-1-front.png"; sourceTree = SOURCE_ROOT; };
 		A4C856EC1AE64FBD005208F0 /* hair2-4-2-front.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "hair2-4-2-front.png"; path = "Anime Face/hair2-4-2-front.png"; sourceTree = SOURCE_ROOT; };
@@ -2193,8 +2228,6 @@
 				A445638D1AE93D440040D1C5 /* diamond board button.png */,
 				A445638F1AE93D440040D1C5 /* diamond not enough board.png */,
 				A44563901AE93D440040D1C5 /* diamond purchase board.png */,
-				A44563911AE93D440040D1C5 /* diamond++.png */,
-				A44563921AE93D440040D1C5 /* diamond++press.png */,
 				A44563931AE93D440040D1C5 /* heart.png */,
 				A4A962E01AF9DDC8008B0738 /* 幸运屋.png */,
 				A44563951AE93D440040D1C5 /* mistery room card.png */,
@@ -2319,6 +2352,9 @@
 		A47D6EAD1AC3E1ED00AC1768 /* Anime Face */ = {
 			isa = PBXGroup;
 			children = (
+				A4C6DFE11AFB318D0008C6C8 /* IAP */,
+				A4C6DFCB1AFB2CC40008C6C8 /* CommonUtility.h */,
+				A4C6DFCC1AFB2CC40008C6C8 /* CommonUtility.m */,
 				A4CA3ABE1ACA9D3E00D50D80 /* APLMoveMeView.h */,
 				A4CA3ABF1ACA9D3E00D50D80 /* APLMoveMeView.m */,
 				A4CA3AC01ACA9D3E00D50D80 /* APLPlacardView.h */,
@@ -2359,6 +2395,10 @@
 		A47D6EAE1AC3E1ED00AC1768 /* Supporting Files */ = {
 			isa = PBXGroup;
 			children = (
+				A4C6DFF61AFB38350008C6C8 /* closeBuyBtn.png */,
+				A4C6DFF41AFB38150008C6C8 /* nameBack.png */,
+				A4C6DFF81AFB38510008C6C8 /* infoBack.png */,
+				A4C6DFCE1AFB2D890008C6C8 /* sound */,
 				A44563341AE93C5E0040D1C5 /* storeLucky */,
 				A456D27D1AE8C83D0032F41F /* photoViewImage */,
 				A44BB6D61ADCA647009D2378 /* images */,
@@ -2833,6 +2873,37 @@
 			name = yulan;
 			sourceTree = "<group>";
 		};
+		A4C6DFCE1AFB2D890008C6C8 /* sound */ = {
+			isa = PBXGroup;
+			children = (
+				A4C6DFCF1AFB2D920008C6C8 /* boxOpen.mp3 */,
+				A4C6DFD11AFB2D920008C6C8 /* buyDiamond.mp3 */,
+				A4C6DFD31AFB2D920008C6C8 /* buySuccess.m4a */,
+				A4C6DFD51AFB2D920008C6C8 /* catalog.mp3 */,
+				A4C6DFD61AFB2D920008C6C8 /* entry.m4a */,
+				A4C6DFD71AFB2D920008C6C8 /* photo.mp3 */,
+			);
+			name = sound;
+			sourceTree = "<group>";
+		};
+		A4C6DFE11AFB318D0008C6C8 /* IAP */ = {
+			isa = PBXGroup;
+			children = (
+				A4C6DFE21AFB31990008C6C8 /* buyCellView.xib */,
+				A4C6DFE31AFB31990008C6C8 /* buyCoinsViewController.h */,
+				A4C6DFE41AFB31990008C6C8 /* buyCoinsViewController.m */,
+				A4C6DFE51AFB31990008C6C8 /* buyCoinsViewController.xib */,
+				A4C6DFE61AFB31990008C6C8 /* IAPHelper.h */,
+				A4C6DFE71AFB31990008C6C8 /* IAPHelper.m */,
+				A4C6DFE81AFB31990008C6C8 /* itemTableViewCell.h */,
+				A4C6DFE91AFB31990008C6C8 /* itemTableViewCell.m */,
+				A4C6DFEA1AFB31990008C6C8 /* itemTableViewCell.xib */,
+				A4C6DFEB1AFB31990008C6C8 /* myIAPHelper.h */,
+				A4C6DFEC1AFB31990008C6C8 /* myIAPHelper.m */,
+			);
+			name = IAP;
+			sourceTree = "<group>";
+		};
 		A4E6CDAA1ACCE52F00A1D6EC /* element */ = {
 			isa = PBXGroup;
 			children = (
@@ -3099,6 +3170,7 @@
 				A44563B71AE93D440040D1C5 /* diamond purchase board.png in Resources */,
 				A46BBC5C1ADE52EE009D2280 /* 鼻子1.png in Resources */,
 				A404441D1AF1D28000E87C27 /* gesture27-yulan.png in Resources */,
+				A4C6DFDE1AFB2D920008C6C8 /* catalog.mp3 in Resources */,
 				A4CA3AA41ACA440900D50D80 /* gameViewController.xib in Resources */,
 				A4BF632D1AEDC6FE009B38BE /* eyebrow4.png in Resources */,
 				A4BF622D1AEDC610009B38BE /* mouth20.png in Resources */,
@@ -3118,6 +3190,7 @@
 				A4BF635B1AEDC726009B38BE /* facemark6.png in Resources */,
 				A40443431AF1CF6800E87C27 /* cloth-tong2-yulan.png in Resources */,
 				A40442AB1AF1CF3600E87C27 /* eye0-yulan.png in Resources */,
+				A4C6DFDA1AFB2D920008C6C8 /* buyDiamond.mp3 in Resources */,
 				A4BF62F91AEDC6A6009B38BE /* eye3.png in Resources */,
 				A44BB7281ADCA647009D2378 /* gamebackground.png in Resources */,
 				A4E6CDED1ACCE54200A1D6EC /* mustache1.png in Resources */,
@@ -3135,7 +3208,6 @@
 				51ABD24F1AE78CFB005BC8F0 /* 5.png in Resources */,
 				A4BF62261AEDC610009B38BE /* mouth13.png in Resources */,
 				51ABD24D1AE78CFB005BC8F0 /* 3.png in Resources */,
-				A44563B91AE93D440040D1C5 /* diamond++press.png in Resources */,
 				A456D27C1AE8C8370032F41F /* photo-cancel.png in Resources */,
 				A40443311AF1CF6800E87C27 /* cloth-g-11-yulan.png in Resources */,
 				A4BF61ED1AEDC55A009B38BE /* gesture27.png in Resources */,
@@ -3154,6 +3226,7 @@
 				A40441DD1AF1CE5500E87C27 /* hat17-yulan.png in Resources */,
 				A4BF63DC1AEDC827009B38BE /* hat10.png in Resources */,
 				A4BF62281AEDC610009B38BE /* mouth15.png in Resources */,
+				A4C6DFF51AFB38150008C6C8 /* nameBack.png in Resources */,
 				A40442B31AF1CF3600E87C27 /* eye7-yulan.png in Resources */,
 				A4BF61D51AEDC55A009B38BE /* gesture3.png in Resources */,
 				A40443951AF1D0FD00E87C27 /* mouth14-yulan.png in Resources */,
@@ -3177,6 +3250,7 @@
 				A4BF63341AEDC6FE009B38BE /* eyebrow11.png in Resources */,
 				A40442C11AF1CF3600E87C27 /* eye21-yulan.png in Resources */,
 				A45C93881AE8F95F0081346B /* fame1.png in Resources */,
+				A4C6DFDC1AFB2D920008C6C8 /* buySuccess.m4a in Resources */,
 				A4BF62CD1AEDC681009B38BE /* cloth-g-25.png in Resources */,
 				A40444141AF1D28000E87C27 /* gesture18-yulan.png in Resources */,
 				A4BF635C1AEDC726009B38BE /* facemark7.png in Resources */,
@@ -3234,6 +3308,7 @@
 				A40442581AF1CEF700E87C27 /* facemark13-yulan.png in Resources */,
 				A4BF63A81AEDC7DC009B38BE /* pet9.png in Resources */,
 				A4BF61D61AEDC55A009B38BE /* gesture4.png in Resources */,
+				A4C6DFF71AFB38350008C6C8 /* closeBuyBtn.png in Resources */,
 				A4BF62B61AEDC681009B38BE /* cloth-g-2.png in Resources */,
 				A40442001AF1CE8000E87C27 /* pet0-yulan.png in Resources */,
 				A40441D61AF1CE5500E87C27 /* hat10-yulan.png in Resources */,
@@ -3324,7 +3399,6 @@
 				A4BF63601AEDC726009B38BE /* facemark11.png in Resources */,
 				A4E6CDEA1ACCE54200A1D6EC /* mood2.png in Resources */,
 				A4BF62501AEDC64D009B38BE /* nose5.png in Resources */,
-				A44563B81AE93D440040D1C5 /* diamond++.png in Resources */,
 				A40442571AF1CEF700E87C27 /* facemark12-yulan.png in Resources */,
 				A4BF638D1AEDC79F009B38BE /* glass13.png in Resources */,
 				A4024E2A1AF7056F000867D4 /* Notes in Resources */,
@@ -3438,6 +3512,7 @@
 				A4BF62B01AEDC681009B38BE /* cloth-b-26.png in Resources */,
 				A40441CF1AF1CE5500E87C27 /* hat3-yulan.png in Resources */,
 				A44563D21AE93D440040D1C5 /* youpiaotiao.png in Resources */,
+				A4C6DFED1AFB31990008C6C8 /* buyCellView.xib in Resources */,
 				A4BF63AA1AEDC7DC009B38BE /* pet11.png in Resources */,
 				A44BB7461ADCA647009D2378 /* setting-press.png in Resources */,
 				A40443BA1AF1D11C00E87C27 /* face4-yulan.png in Resources */,
@@ -3596,6 +3671,7 @@
 				A44563D41AE93D610040D1C5 /* 虚线.png in Resources */,
 				51ABD2601AE78EE0005BC8F0 /* hairG2-7-0-front.png in Resources */,
 				A40443121AF1CF6800E87C27 /* cloth-b-10-yulan.png in Resources */,
+				A4C6DFF91AFB38510008C6C8 /* infoBack.png in Resources */,
 				A4BF62511AEDC64D009B38BE /* nose6.png in Resources */,
 				A404432B1AF1CF6800E87C27 /* cloth-g-5-yulan.png in Resources */,
 				A44BB7641ADD1814009D2378 /* boy portrait.png in Resources */,
@@ -3607,6 +3683,7 @@
 				A4BF61F01AEDC55A009B38BE /* gesture30.png in Resources */,
 				A4E6CDE11ACCE54200A1D6EC /* hair1-2-1-back.png in Resources */,
 				A40441E41AF1CE5500E87C27 /* hat24-yulan.png in Resources */,
+				A4C6DFEF1AFB31990008C6C8 /* buyCoinsViewController.xib in Resources */,
 				A40444131AF1D28000E87C27 /* gesture17-yulan.png in Resources */,
 				A40442891AF1CF1A00E87C27 /* eyebrow18-yulan.png in Resources */,
 				A4BF63EF1AEDC827009B38BE /* hat29.png in Resources */,
@@ -3727,6 +3804,7 @@
 				A4E6CDE91ACCE54200A1D6EC /* mood1.png in Resources */,
 				A40443A21AF1D0FD00E87C27 /* mouth27-yulan.png in Resources */,
 				A40443D11AF1D13A00E87C27 /* face3.png in Resources */,
+				A4C6DFF21AFB31990008C6C8 /* itemTableViewCell.xib in Resources */,
 				A4BF63E81AEDC827009B38BE /* hat22.png in Resources */,
 				A40442301AF1CEDC00E87C27 /* glass16-yulan.png in Resources */,
 				A40442091AF1CE8000E87C27 /* pet9-yulan.png in Resources */,
@@ -3734,6 +3812,7 @@
 				A4BF62D01AEDC681009B38BE /* cloth-tong1.png in Resources */,
 				A44563C11AE93D440040D1C5 /* photo save-press.png in Resources */,
 				A44BB7471ADCA647009D2378 /* share-press.png in Resources */,
+				A4C6DFDF1AFB2D920008C6C8 /* entry.m4a in Resources */,
 				A40442261AF1CEDC00E87C27 /* glass6-yulan.png in Resources */,
 				A4024E331AF73599000867D4 /* nothing-yulan.png in Resources */,
 				A4BF62CA1AEDC681009B38BE /* cloth-g-22.png in Resources */,
@@ -3830,6 +3909,7 @@
 				A4A962EE1AF9E142008B0738 /* wenhao0.png in Resources */,
 				A46BBC4E1ADE52EE009D2280 /* 眼睛1.png in Resources */,
 				A4BF61DD1AEDC55A009B38BE /* gesture11.png in Resources */,
+				A4C6DFE01AFB2D920008C6C8 /* photo.mp3 in Resources */,
 				A4BF61D11AEDC55A009B38BE /* gesture1.png in Resources */,
 				A40443351AF1CF6800E87C27 /* cloth-g-15-yulan.png in Resources */,
 				A4BF629E1AEDC681009B38BE /* cloth-b-8.png in Resources */,
@@ -3844,6 +3924,7 @@
 				A44BB7171ADCA647009D2378 /* boy-press.png in Resources */,
 				A46BBC581ADE52EE009D2280 /* 脸饰1.png in Resources */,
 				A40443B91AF1D11C00E87C27 /* face3-yulan.png in Resources */,
+				A4C6DFD81AFB2D920008C6C8 /* boxOpen.mp3 in Resources */,
 				A40443261AF1CF6800E87C27 /* cloth-b-30-yulan.png in Resources */,
 				A404433B1AF1CF6800E87C27 /* cloth-g-21-yulan.png in Resources */,
 				A404439A1AF1D0FD00E87C27 /* mouth19-yulan.png in Resources */,
@@ -3891,10 +3972,14 @@
 				A4024E2B1AF7056F000867D4 /* NSDate+NetworkClock.m in Sources */,
 				A4A211001AD3A2F4006973E0 /* rewardViewController.m in Sources */,
 				A4CA3AC31ACA9D3E00D50D80 /* APLPlacardView.m in Sources */,
+				A4C6DFEE1AFB31990008C6C8 /* buyCoinsViewController.m in Sources */,
 				A4024E291AF7056F000867D4 /* NetworkClock.m in Sources */,
+				A4C6DFF11AFB31990008C6C8 /* itemTableViewCell.m in Sources */,
 				A4CA3AA31ACA440900D50D80 /* gameViewController.m in Sources */,
 				A4024E2E1AF70579000867D4 /* GCDAsyncUdpSocket.m in Sources */,
 				A49116F61AEF4FB10050A6DA /* productNow.m in Sources */,
+				A4C6DFF01AFB31990008C6C8 /* IAPHelper.m in Sources */,
+				A4C6DFF31AFB31990008C6C8 /* myIAPHelper.m in Sources */,
 				A47D6EB71AC3E1ED00AC1768 /* ViewController.m in Sources */,
 				A4024E281AF7056F000867D4 /* NetAssociation.m in Sources */,
 				A4A2110E1AD3B2AE006973E0 /* imageWithName.m in Sources */,
@@ -3903,6 +3988,7 @@
 				A4CA3AC21ACA9D3E00D50D80 /* APLMoveMeView.m in Sources */,
 				A47D6EB11AC3E1ED00AC1768 /* main.m in Sources */,
 				A4CA3ACA1ACAA2A500D50D80 /* hairButton.m in Sources */,
+				A4C6DFCD1AFB2CC40008C6C8 /* CommonUtility.m in Sources */,
 				A456D26B1AE8C73B0032F41F /* storeViewController.m in Sources */,
 				A4BF645B1AEE13FF009B38BE /* buttonProduct.m in Sources */,
 			);

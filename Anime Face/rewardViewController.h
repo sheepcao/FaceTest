@@ -7,6 +7,7 @@
 //
 
 #import <UIKit/UIKit.h>
+#import "globalVar.h"
 
 @interface rewardViewController : UIViewController
 

@@ -23,6 +23,7 @@
                 <outlet property="heart3" destination="jZm-GL-pRw" id="xDd-9H-btO"/>
                 <outlet property="heart4" destination="8hY-Ea-ZMm" id="wZw-NG-4AY"/>
                 <outlet property="heart5" destination="7Bf-hP-bba" id="sUi-dZ-WqO"/>
+                <outlet property="loadingBuy" destination="p5O-f1-Prk" id="QCg-sN-pAx"/>
                 <outlet property="loadingView" destination="OO8-40-weh" id="0Gg-5I-WiL"/>
                 <outlet property="priceLabel" destination="xAw-wD-gfr" id="Yfm-Vl-8bn"/>
                 <outlet property="productImage" destination="dSS-ry-enz" id="l5q-Bp-uUU"/>
@@ -1126,6 +1127,29 @@
                     <include reference="uDi-G1-zjY"/>
                 </mask>
             </variation>
+        </view>
+        <view contentMode="scaleToFill" id="p5O-f1-Prk" userLabel="waiting view">
+            <rect key="frame" x="0.0" y="0.0" width="320" height="318"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleToFill" text="Loading..." lineBreakMode="tailTruncation" minimumFontSize="10" translatesAutoresizingMaskIntoConstraints="NO" id="Nnv-Dl-6tg">
+                    <rect key="frame" x="125" y="124.5" width="76.5" height="21.5"/>
+                    <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                    <color key="textColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="calibratedRGB"/>
+                    <nil key="highlightedColor"/>
+                    <color key="shadowColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                </label>
+                <activityIndicatorView opaque="NO" userInteractionEnabled="NO" contentMode="scaleToFill" hidesWhenStopped="YES" animating="YES" style="white" translatesAutoresizingMaskIntoConstraints="NO" id="7e1-wC-OV1">
+                    <rect key="frame" x="150" y="149" width="20" height="20"/>
+                </activityIndicatorView>
+            </subviews>
+            <color key="backgroundColor" red="0.0" green="0.0" blue="0.0" alpha="0.59999999999999998" colorSpace="calibratedRGB"/>
+            <constraints>
+                <constraint firstItem="Nnv-Dl-6tg" firstAttribute="centerX" secondItem="7e1-wC-OV1" secondAttribute="centerX" constant="3" id="KfB-y6-B3E"/>
+                <constraint firstItem="7e1-wC-OV1" firstAttribute="top" secondItem="Nnv-Dl-6tg" secondAttribute="bottom" constant="3" id="Nct-xx-eXw"/>
+                <constraint firstAttribute="centerX" secondItem="7e1-wC-OV1" secondAttribute="centerX" id="TIy-b8-4Tn"/>
+                <constraint firstAttribute="centerY" secondItem="7e1-wC-OV1" secondAttribute="centerY" id="vs7-Sw-DGG"/>
+            </constraints>
         </view>
     </objects>
     <resources>

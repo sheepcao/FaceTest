@@ -261,6 +261,10 @@ bool needSaveAlert;
 }
 -(void)scrollToCatalog:(NSInteger)BtnTag withDuration:(CGFloat)time
 {
+    [CommonUtility tapSound:@"catalog" withType:@"mp3"];
+
+    
+    
     UIButton * catalogBtn =(UIButton *)[self.catalogScrollView viewWithTag:BtnTag];
     
     
@@ -1263,7 +1267,12 @@ bool needSaveAlert;
 }
 
 -(void)showFlash
-{    UIView *whiteView = [[UIView alloc] initWithFrame:self.view.frame];
+
+{
+    [CommonUtility tapSound:@"photo" withType:@"mp3"];
+
+    
+    UIView *whiteView = [[UIView alloc] initWithFrame:self.view.frame];
     [whiteView setBackgroundColor:[UIColor whiteColor]];
     [self.view addSubview:whiteView];
     whiteView.alpha = 0.8;

@@ -160,6 +160,8 @@
 
     myGame.GameData = self.GameDatas;
     myGame.sex = (int)sender.tag;
+    [CommonUtility tapSound:@"entry" withType:@"m4a"];
+
     [self.navigationController pushViewController:myGame animated:YES];
     
 }

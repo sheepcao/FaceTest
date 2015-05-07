@@ -96,6 +96,7 @@
 
 - (IBAction)start:(UIButton *)sender {
 
+    [CommonUtility tapSound:@"boxOpen" withType:@"mp3"];
     [self.productView stopAnimating];
     [self.productView setHidden:YES];
     

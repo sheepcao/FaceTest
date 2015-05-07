@@ -34,9 +34,10 @@
 #define ALLAPP_URL @"itms://itunes.apple.com/us/artist/cao-guangxu/id844914783"
 
 #define VERSIONNUMBER   [[[NSBundle mainBundle] infoDictionary] objectForKey:@"CFBundleShortVersionString"]
-
-
-
+@protocol closeBuyViewDelegate
+-(void)closingBuy;
+@end
+#import "CommonUtility.h"
 
 @protocol refreshProductsDelegates <NSObject>
 

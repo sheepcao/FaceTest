@@ -8,8 +8,9 @@
 
 #import "ViewController.h"
 #import "elemntButton.h"
+#import "buyCoinsViewController.h"
 
-@interface storeViewController : ViewController
+@interface storeViewController : ViewController<closeBuyViewDelegate>
 
 @property (weak,nonatomic) id<refreshProductsDelegates>delegateRefresh;
 
@@ -48,6 +49,14 @@
 
 @property (strong, nonatomic) IBOutlet NSLayoutConstraint *buttonDistanceV1;
 
+
+
+@property (strong,nonatomic) buyCoinsViewController *myBuyController;
+@property (strong,nonatomic) UIView *buyCoinsView;
+
+@property (strong,nonatomic) UITableView *itemsToBuy;
+@property (nonatomic,strong) UIRefreshControl *refreshControl NS_AVAILABLE_IOS(6_0);
+@property (strong, nonatomic) IBOutlet UIView *loadingBuy;
 
 - (IBAction)backTap:(id)sender;
 - (IBAction)goLuckyHouse:(id)sender;
