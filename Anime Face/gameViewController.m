@@ -1180,6 +1180,10 @@ bool needSaveAlert;
         [alert show];
     }else
     {
+        [invisibleTextFiled removeFromSuperview];
+        [invisibleTextFiled resignFirstResponder];
+        [self hideCustomTextView];
+
         [self.navigationController popViewControllerAnimated:YES];
 
     }
@@ -1196,6 +1200,10 @@ bool needSaveAlert;
     myStore.GameData = self.GameData;
     myStore.delegateRefresh = self;
     
+    [invisibleTextFiled removeFromSuperview];
+    [invisibleTextFiled resignFirstResponder];
+    [self hideCustomTextView];
+
     [self.navigationController pushViewController:myStore animated:YES];
     
 }
@@ -1214,6 +1222,10 @@ bool needSaveAlert;
     
     
     rewardViewController *myReward = [[rewardViewController alloc] initWithNibName:@"rewardViewController" bundle:nil];
+    
+    [invisibleTextFiled removeFromSuperview];
+    [invisibleTextFiled resignFirstResponder];
+    [self hideCustomTextView];
     [self.navigationController pushViewController:myReward animated:YES];
     
 }
@@ -1273,6 +1285,11 @@ bool needSaveAlert;
 - (void)alertView:(UIAlertView *)alertView clickedButtonAtIndex:(NSInteger)buttonIndex
 {
     if (buttonIndex == 1) {
+        
+        [invisibleTextFiled removeFromSuperview];
+        [invisibleTextFiled resignFirstResponder];
+        [self hideCustomTextView];
+
         [self.navigationController popViewControllerAnimated:YES];
 
     }
