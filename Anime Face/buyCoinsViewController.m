@@ -192,7 +192,7 @@
 
 - (void)tableView:(UITableView *)tableView didSelectRowAtIndexPath:(NSIndexPath *)indexPath
 {
-    [CommonUtility tapSound:@"click" withType:@"mp3"];
+//    [CommonUtility tapSound:@"click" withType:@"mp3"];
     if ([_products[indexPath.row] isKindOfClass:[SKProduct class]]) {
 
         SKProduct *product = _products[indexPath.row];

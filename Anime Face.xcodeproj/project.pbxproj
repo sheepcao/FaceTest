@@ -829,6 +829,7 @@
 		A4E6CDEA1ACCE54200A1D6EC /* mood2.png in Resources */ = {isa = PBXBuildFile; fileRef = A4E6CDC61ACCE54200A1D6EC /* mood2.png */; };
 		A4E6CDED1ACCE54200A1D6EC /* mustache1.png in Resources */ = {isa = PBXBuildFile; fileRef = A4E6CDC91ACCE54200A1D6EC /* mustache1.png */; };
 		A4E6CDEE1ACCE54200A1D6EC /* mustache2.png in Resources */ = {isa = PBXBuildFile; fileRef = A4E6CDCA1ACCE54200A1D6EC /* mustache2.png */; };
+		A4ECEEC71B0AD00700408F58 /* homeBack.png in Resources */ = {isa = PBXBuildFile; fileRef = A4ECEEC61B0AD00700408F58 /* homeBack.png */; };
 		A4F1985E1AF8559E0003351E /* SystemConfiguration.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A4F1985D1AF8559E0003351E /* SystemConfiguration.framework */; };
 		A4F198601AF855AB0003351E /* QuartzCore.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A4F1985F1AF855AB0003351E /* QuartzCore.framework */; };
 		A4F198621AF855B20003351E /* CoreTelephony.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A4F198611AF855B20003351E /* CoreTelephony.framework */; };
@@ -1728,6 +1729,7 @@
 		A4E6CDC61ACCE54200A1D6EC /* mood2.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = mood2.png; sourceTree = "<group>"; };
 		A4E6CDC91ACCE54200A1D6EC /* mustache1.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = mustache1.png; sourceTree = "<group>"; };
 		A4E6CDCA1ACCE54200A1D6EC /* mustache2.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = mustache2.png; sourceTree = "<group>"; };
+		A4ECEEC61B0AD00700408F58 /* homeBack.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = homeBack.png; sourceTree = "<group>"; };
 		A4F1985D1AF8559E0003351E /* SystemConfiguration.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = SystemConfiguration.framework; path = System/Library/Frameworks/SystemConfiguration.framework; sourceTree = SDKROOT; };
 		A4F1985F1AF855AB0003351E /* QuartzCore.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = QuartzCore.framework; path = System/Library/Frameworks/QuartzCore.framework; sourceTree = SDKROOT; };
 		A4F198611AF855B20003351E /* CoreTelephony.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreTelephony.framework; path = System/Library/Frameworks/CoreTelephony.framework; sourceTree = SDKROOT; };
@@ -2273,6 +2275,7 @@
 				A44BB7551ADCE9BC009D2378 /* fame-choosed1.png */,
 				A45C93871AE8F95F0081346B /* fame1.png */,
 				A44BB6EC1ADCA647009D2378 /* first back ground.png */,
+				A4ECEEC61B0AD00700408F58 /* homeBack.png */,
 				A44BB6ED1ADCA647009D2378 /* gamebackground.png */,
 				A44BB6F01ADCA647009D2378 /* girl-normal.png */,
 				A44BB6F11ADCA647009D2378 /* girl-pressl.png */,
@@ -3828,6 +3831,7 @@
 				A4BF63FA1AEDCAEA009B38BE /* body1.png in Resources */,
 				A404435F1AF1D0E700E87C27 /* nose10-yulan.png in Resources */,
 				A44BB7181ADCA647009D2378 /* choose.png in Resources */,
+				A4ECEEC71B0AD00700408F58 /* homeBack.png in Resources */,
 				A4BF62F51AEDC6A6009B38BE /* eye0.png in Resources */,
 				A40444161AF1D28000E87C27 /* gesture20-yulan.png in Resources */,
 				A404433D1AF1CF6800E87C27 /* cloth-g-23-yulan.png in Resources */,

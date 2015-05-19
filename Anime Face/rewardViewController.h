@@ -24,5 +24,7 @@
 
 - (IBAction)cardTapped:(id)sender;
 
+- (IBAction)backTapped:(id)sender;
+
 - (IBAction)start:(id)sender;
 @end
