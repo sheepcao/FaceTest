@@ -742,6 +742,9 @@ bool needSaveAlert;
     }
     self.colorView.backgroundColor = [UIColor clearColor];
     
+    NSArray *colorKey = [[self.GameData objectForKey:@"colorList"] objectForKey:sender.imageName];
+    
+    
     for (int i = 0; i<sender.imageColor; i++) {
         
         CGFloat btnSize = 0;
@@ -758,13 +761,15 @@ bool needSaveAlert;
 
         CGFloat startX = (SCREEN_WIDTH-(btnSize*sender.imageColor + 5*(sender.imageColor-1)))/2;
         
+
+       
         
         elemntButton *colorBtn = [[elemntButton alloc] initWithFrame:CGRectMake(startX+i*(btnSize+5),(sender.frame.size.height - btnSize-5), btnSize,btnSize)];
 //        NSString *imageWithColor = [NSString stringWithFormat:@"%@-%d",sender.imageName,i];
-        NSString *imageWithColor = [NSString stringWithFormat:@"%d",i];
+//        NSString *imageWithColor = [NSString stringWithFormat:@"%d",i];
 
-        [colorBtn setImage:[UIImage imageWithContentsOfFile:[[NSBundle mainBundle] pathForResource:imageWithColor ofType:@"png"]] forState:UIControlStateNormal];
-        colorBtn.imageName = [NSString stringWithFormat:@"%@-%d",sender.imageName,i];
+        [colorBtn setImage:[UIImage imageWithContentsOfFile:[[NSBundle mainBundle] pathForResource:colorKey[i] ofType:@"png"]] forState:UIControlStateNormal];
+        colorBtn.imageName = [NSString stringWithFormat:@"%@-%@",sender.imageName,colorKey[i]];
         [colorBtn addTarget:self action:@selector(colorTapped:) forControlEvents:UIControlEventTouchUpInside];
         [self.colorView addSubview:colorBtn];
 

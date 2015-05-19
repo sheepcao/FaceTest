@@ -2,6 +2,25 @@
 <!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
 <plist version="1.0">
 <dict>
+	<key>colorList</key>
+	<dict>
+		<key>hairG2-7</key>
+		<array>
+			<string>0</string>
+			<string>1</string>
+			<string>2</string>
+			<string>3</string>
+			<string>4</string>
+			<string>5</string>
+			<string>6</string>
+			<string>7</string>
+		</array>
+		<key>hairG1-2</key>
+		<array>
+			<string>4</string>
+			<string>1</string>
+		</array>
+	</dict>
 	<key>Lists</key>
 	<dict>
 		<key>宠物</key>
