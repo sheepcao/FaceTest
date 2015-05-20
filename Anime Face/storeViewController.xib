@@ -1160,8 +1160,8 @@
         <image name="4.png" width="192" height="192"/>
         <image name="5.png" width="192" height="192"/>
         <image name="6.png" width="192" height="192"/>
-        <image name="back-press.png" width="202" height="123"/>
-        <image name="back.png" width="202" height="123"/>
+        <image name="back-press.png" width="142" height="138"/>
+        <image name="back.png" width="142" height="138"/>
         <image name="buy.png" width="355" height="129"/>
         <image name="diamond .png" width="87" height="68"/>
         <image name="diamond++.png" width="85" height="78"/>

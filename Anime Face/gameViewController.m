@@ -166,7 +166,7 @@ bool needSaveAlert;
         }
         
 
-        [catalogBtn setImageEdgeInsets:UIEdgeInsetsMake(1, 15, 3, 16)];
+        [catalogBtn setImageEdgeInsets:UIEdgeInsetsMake(0, 15, 1, 16)];
         
         catalogBtn.tag = i+1;
         [catalogBtn addTarget:self action:@selector(catalogTapped:) forControlEvents:UIControlEventTouchUpInside];
@@ -477,8 +477,8 @@ bool needSaveAlert;
             element.imageLevel =[NSNumber numberWithInt:i];
             
             [element addTarget:self action:@selector(elementTapped:) forControlEvents:UIControlEventTouchUpInside];
-            [element setBackgroundImage: [UIImage imageWithContentsOfFile:[[NSBundle mainBundle] pathForResource:@"fame1" ofType:@"png"]] forState:UIControlStateNormal];
-            [element setBackgroundImage:[UIImage imageWithContentsOfFile:[[NSBundle mainBundle] pathForResource:@"fame-choosed1" ofType:@"png"]] forState:UIControlStateSelected];
+            [element setBackgroundImage: [UIImage imageWithContentsOfFile:[[NSBundle mainBundle] pathForResource:@"frame" ofType:@"png"]] forState:UIControlStateNormal];
+            [element setBackgroundImage:[UIImage imageWithContentsOfFile:[[NSBundle mainBundle] pathForResource:@"frame selected" ofType:@"png"]] forState:UIControlStateSelected];
             
             element.tag = j+1;
 
@@ -673,6 +673,7 @@ bool needSaveAlert;
     invisibleTextFiled.layer.cornerRadius = 7;
     invisibleTextFiled.layer.borderColor = [UIColor lightGrayColor].CGColor;
     invisibleTextFiled.delegate = self;
+    invisibleTextFiled.returnKeyType = UIReturnKeyDone;
 
     invisibleTextFiled.tag = 7;
     
@@ -943,8 +944,8 @@ bool needSaveAlert;
         element.imageLevel =[NSNumber numberWithInt:page];
         
         [element addTarget:self action:@selector(elementTapped:) forControlEvents:UIControlEventTouchUpInside];
-        [element setBackgroundImage: [UIImage imageWithContentsOfFile:[[NSBundle mainBundle] pathForResource:@"fame1" ofType:@"png"]] forState:UIControlStateNormal];
-        [element setBackgroundImage:[UIImage imageWithContentsOfFile:[[NSBundle mainBundle] pathForResource:@"fame-choosed1" ofType:@"png"]] forState:UIControlStateSelected];
+        [element setBackgroundImage: [UIImage imageWithContentsOfFile:[[NSBundle mainBundle] pathForResource:@"frame" ofType:@"png"]] forState:UIControlStateNormal];
+        [element setBackgroundImage:[UIImage imageWithContentsOfFile:[[NSBundle mainBundle] pathForResource:@"frame selected" ofType:@"png"]] forState:UIControlStateSelected];
         
         element.tag = j+1;
         
@@ -1241,7 +1242,9 @@ bool needSaveAlert;
 
 - (IBAction)saveAndShare:(id)sender {
     
-    
+    [invisibleTextFiled resignFirstResponder];
+    [self hideCustomTextView];
+//    [self hideCustomTextView];
     if ([[UIScreen mainScreen] respondsToSelector:@selector(scale)])
         UIGraphicsBeginImageContextWithOptions(self.headImage.frame.size, NO, [UIScreen mainScreen].scale);
     else
