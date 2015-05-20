@@ -78,13 +78,13 @@
                               redirectUri:@"https://api.weibo.com/oauth2/default.html"
                               weiboSDKCls:[WeiboSDK class]];
     //添加QQ空间应用  注册网址  http://connect.qq.com/intro/login/
-    [ShareSDK connectQZoneWithAppKey:@"1104537775"
-                           appSecret:@"YeNR5ZXfRchrQgQu"
+    [ShareSDK connectQZoneWithAppKey:@"1104652926"
+                           appSecret:@"7EIO3RDSXnhYY7jN"
                    qqApiInterfaceCls:[QQApiInterface class]
                      tencentOAuthCls:[TencentOAuth class]];
     
     //添加QQ应用  注册网址  http://open.qq.com/
-    [ShareSDK connectQQWithQZoneAppKey:@"1104537775"
+    [ShareSDK connectQQWithQZoneAppKey:@"1104652926"
                      qqApiInterfaceCls:[QQApiInterface class]
                        tencentOAuthCls:[TencentOAuth class]];
     
@@ -98,8 +98,8 @@
                            wechatCls:[WXApi class]];
     
     //添加Facebook应用  注册网址 https://developers.facebook.com
-    [ShareSDK connectFacebookWithAppKey:@"501186406701085"
-                              appSecret:@"7e3e31aa9705c9a3e8db701760b92a41"];
+    [ShareSDK connectFacebookWithAppKey:@"1587440558181010"
+                              appSecret:@"81a6e951927f0dc14727c622c45f562b"];
     
     
 }
