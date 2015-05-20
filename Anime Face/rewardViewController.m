@@ -13,15 +13,16 @@
 
 @property (nonatomic,strong) NSMutableArray *arrayGif;
 @property (nonatomic,strong) NSMutableArray *arrayGifOpenBox;
+@property CGFloat baseY;
 
-@property (nonatomic,strong) NSArray *imageOptins;
+//@property (nonatomic,strong) NSArray *imageOptins;
 
 @end
 
 @implementation rewardViewController
 @synthesize arrayGif;
 @synthesize arrayGifOpenBox;
-
+@synthesize baseY;
 
 - (void)viewDidLoad {
     [super viewDidLoad];
@@ -29,7 +30,7 @@
 
     [self.rewardView setHidden:YES];
     
-    self.imageOptins = @[@"wenhao0",@"wenhao1",@"wenhao2",@"wenhao3",@"wenhao4",@"wenhao5",@"wenhao6",@"wenhao7",@"wenhao8",@"wenhao9",@"wenhao10"];
+//    self.imageOptins = @[@"wenhao0",@"wenhao1",@"wenhao2",@"wenhao3",@"wenhao4",@"wenhao5",@"wenhao6",@"wenhao7",@"wenhao8",@"wenhao9",@"wenhao10"];
     
     
     // Do any additional setup after loading the view from its nib.
@@ -44,10 +45,10 @@
 //    UIImage *gif = [UIImage imageWithContentsOfFile:[[NSBundle mainBundle] pathForResource:self ofType:@"png"]];
 //    [arrayGif addObject:gif];
     
-    for (int i = 0; i<self.imageOptins.count; i++) {
-        [arrayGif addObject:[UIImage imageWithContentsOfFile:[[NSBundle mainBundle] pathForResource:self.imageOptins[i] ofType:@"png"]]];
-
-    }
+//    for (int i = 0; i<self.imageOptins.count; i++) {
+//        [arrayGif addObject:[UIImage imageWithContentsOfFile:[[NSBundle mainBundle] pathForResource:self.imageOptins[i] ofType:@"png"]]];
+//
+//    }
     for (int i = 0; i<7; i++) {
         [arrayGifOpenBox addObject:[UIImage imageWithContentsOfFile:[[NSBundle mainBundle] pathForResource:[NSString stringWithFormat:@"tanchu%d",i] ofType:@"png"]]];
     }
@@ -67,10 +68,60 @@
     }
     
 
+    //witch animation
+    
+    baseY = 0;
+    [self performSelector:@selector(animateWitcth) withObject:nil afterDelay:0.9];
     
     
 }
 
+//-(void)viewDidLayoutSubviews
+//{
+//    CGPoint center = self.witch.center;
+//    CGFloat centerYBase = center.y;
+//    [self performSelector:@selector(animateWitcth:) withObject:[NSNumber numberWithFloat:centerYBase] afterDelay:0.5];
+//}
+
+-(void)animateWitcth
+{
+    
+    
+    CGPoint center = self.witch.center;
+    CGFloat centerY = center.y;
+
+    
+    if (baseY <0.001) {
+        baseY = centerY;
+    }
+
+    
+    
+    CGPoint yBig = CGPointMake(center.x,baseY +12);
+    CGPoint ySmall = CGPointMake(center.x,baseY-12);
+
+    if (centerY>=baseY) {
+        [UIView animateWithDuration:1.2 delay:0 options:UIViewAnimationOptionCurveLinear animations:^{
+            [self.witch setCenter:ySmall];
+        } completion:^(BOOL finished) {
+           
+            [self animateWitcth];
+            
+        }];
+
+    }else
+    {
+        [UIView animateWithDuration:1.2 delay:0 options:UIViewAnimationOptionCurveLinear animations:^{
+            [self.witch setCenter:yBig];
+        } completion:^(BOOL finished) {
+            
+            [self animateWitcth];
+            
+        }];
+    }
+
+    
+}
 - (void)didReceiveMemoryWarning {
     [super didReceiveMemoryWarning];
     // Dispose of any resources that can be recreated.
@@ -78,10 +129,13 @@
 
 
 
+- (IBAction)buyDaimond:(id)sender {
+}
+
 - (IBAction)cardTapped:(id)sender {
     
     [self.rewardView setHidden:YES];
-    [self.boxImage setImage:[UIImage imageNamed:@"box.png"]];
+    [self.boxImage setImage:[UIImage imageNamed:@"box-normal.png"]];
 
 
 }
@@ -118,9 +172,11 @@
 {
     [self.rewardView setHidden:NO];
 
-    NSInteger selected =  arc4random() % self.imageOptins.count;
-    [self.productBought setImage:[UIImage imageNamed:self.imageOptins[selected]]];
+    int selected =  arc4random() % 7;
+    [self.productBought setImage:[UIImage imageNamed:[NSString stringWithFormat:@"%d",selected]]];
     
-    [self.productCard setImage:[UIImage imageNamed:@"mistery room card"]];
+    [self.productCard setImage:[UIImage imageNamed:@"card"]];
+    [self.productName setText:[NSString stringWithFormat:@"色块%d",selected]];
+    NSLog(@"frame:%@",self.productName);
 }
 @end

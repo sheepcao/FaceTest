@@ -22,6 +22,13 @@
 
 @property (strong, nonatomic) IBOutlet UIImageView *productBought;
 
+@property (weak, nonatomic) IBOutlet UILabel *productName;
+@property (weak, nonatomic) IBOutlet UILabel *diamondNum;
+@property (weak, nonatomic) IBOutlet UIImageView *witch;
+
+
+- (IBAction)buyDaimond:(id)sender;
+
 - (IBAction)cardTapped:(id)sender;
 
 - (IBAction)backTapped:(id)sender;

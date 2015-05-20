@@ -555,6 +555,24 @@ bool showingDefault;
 //eric: purchased product is a dic with two keys:haveNew(@"yes" or @"no") and purchasedArray(NSMutableArray).
 -(void)writeToPurchased
 {
+    
+    if (self.productNow.sex == 1000) {
+        if ([self.productNow.productCategory isEqualToString:@"衣服"] ||[self.productNow.productCategory isEqualToString:@"头发"] ) {
+            self.productNow.productCategory = [self.productNow.productCategory stringByAppendingString:@"女"];
+        }
+    }else if ((self.productNow.sex == 0))
+    {
+        [self doWrite];
+        if ([self.productNow.productCategory isEqualToString:@"衣服"] ||[self.productNow.productCategory isEqualToString:@"头发"] ) {
+            self.productNow.productCategory = [self.productNow.productCategory stringByAppendingString:@"女"];
+        }
+    }
+    [self doWrite];
+
+}
+
+-(void)doWrite
+{
     if ([[NSUserDefaults standardUserDefaults] objectForKey:self.productNow.productCategory]) {
         
         
@@ -564,16 +582,16 @@ bool showingDefault;
         NSMutableDictionary *purchasedDic = [NSMutableDictionary dictionaryWithDictionary:[[NSUserDefaults standardUserDefaults] objectForKey:self.productNow.productCategory]];
         
         NSMutableArray *purchasedArray = [NSMutableArray arrayWithArray:[purchasedDic objectForKey:@"purchasedArray"]];
-
+        
         
         NSString *newProductName = [NSString stringWithFormat:@"%@+new",self.productNow.productName];
         [purchasedArray addObject:newProductName];
         [purchasedCatelog setObject:purchasedArray forKey:@"purchasedArray"];
-
+        
         
         [[NSUserDefaults standardUserDefaults] setObject:purchasedCatelog forKey:self.productNow.productCategory];
         
-       
+        
     }else
     {
         NSMutableDictionary *purchasedCatelog = [[NSMutableDictionary alloc] init];
@@ -588,6 +606,7 @@ bool showingDefault;
         
         [[NSUserDefaults standardUserDefaults] setObject:purchasedCatelog forKey:self.productNow.productCategory];
     }
+
 }
 
 -(void)deleteItemFromPlist:(NSString *)plistname withCatelog:(NSString *)catelog andElementNum:(int)elementNum
