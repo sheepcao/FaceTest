@@ -344,17 +344,17 @@ bool needSaveAlert;
 
 -(void)makeListElementsForPage:(int)pageNow withData:(NSDictionary *)dic
 {
-    int page = -1;
-    
-    if (pageNow == 0 ) {
-        page =1;
-    }else if(pageNow == CATALOG_NUM-1)
-    {
-        page = CATALOG_NUM-2;
-    }else
-    {
-        page = pageNow;
-    }
+//    int page = -1;
+//    
+//    if (pageNow == 0 ) {
+//        page =1;
+//    }else if(pageNow == CATALOG_NUM-1)
+//    {
+//        page = CATALOG_NUM-2;
+//    }else
+//    {
+//        page = pageNow;
+//    }
     
 //    for (int i = page-1 ; i < page+2 ; i++) {
         for (int i = 0 ; i < CATALOG_NUM ; i++) {
@@ -1232,6 +1232,10 @@ bool needSaveAlert;
     
     
     rewardViewController *myReward = [[rewardViewController alloc] initWithNibName:@"rewardViewController" bundle:nil];
+    
+    self.GameData = [self readDataFromPlist:@"GameData"];
+    
+    myReward.GameData = self.GameData;
     
     [invisibleTextFiled removeFromSuperview];
     [invisibleTextFiled resignFirstResponder];

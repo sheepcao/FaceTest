@@ -138,6 +138,10 @@
 
 - (IBAction)getReward:(id)sender {
     rewardViewController *myReward = [[rewardViewController alloc] initWithNibName:@"rewardViewController" bundle:nil];
+    
+    self.GameDatas = [self readDataFromPlist:@"GameData"];
+    
+    myReward.GameData = self.GameDatas;
     [self.navigationController pushViewController:myReward animated:YES];
 
 }
@@ -188,11 +192,10 @@
 -(void)giveReward:(NSString *)day
 {
     [[NSUserDefaults standardUserDefaults] setObject:day forKey:@"lastDailyReword"];
+    [[NSUserDefaults standardUserDefaults] setObject:@"no" forKey:@"luckyFinished"];
+
     
-    UIAlertView *rewardAlert = [[UIAlertView alloc] initWithTitle:@"感谢您的支持" message:@"幸运屋已开启，快来试试手气吧" delegate:nil cancelButtonTitle:nil otherButtonTitles:@"确定", nil];
-    
-    rewardAlert.tag = 100;
-    [rewardAlert show];
+
     
 }
 
@@ -227,6 +230,17 @@
     }else if(![[[NSUserDefaults standardUserDefaults] objectForKey:@"lastDailyReword"] isEqualToString:today])
     {
         [self giveReward:today];
+    }
+    
+    
+    if ([[[NSUserDefaults standardUserDefaults] objectForKey:@"luckyFinished"] isEqualToString:@"yes"]) {
+        
+    }else
+    {
+        UIAlertView *rewardAlert = [[UIAlertView alloc] initWithTitle:@"感谢您的支持" message:@"幸运屋已开启，快来试试手气吧" delegate:nil cancelButtonTitle:nil otherButtonTitles:@"确定", nil];
+        
+        rewardAlert.tag = 100;
+        [rewardAlert show];
     }
 
     

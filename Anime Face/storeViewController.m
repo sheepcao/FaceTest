@@ -163,7 +163,9 @@ bool showingDefault;
     self.productListScorll.delegate = self;
     
     NSDictionary *listsText = [self.GameData objectForKey:@"productInfo"];
-    
+
+
+    int emptyCount = 0;
     
     for (int i = 0 ; i < CATALOG_NUM_STORE; i++) {
         NSArray *listElements = [listsText objectForKey:[[self.GameData objectForKey:@"catalogStore"] objectAtIndex:i]];
@@ -183,6 +185,7 @@ bool showingDefault;
         
         if (listElements.count == 0) {
            //to be empty ....
+            emptyCount ++;
         }
         
         
@@ -194,6 +197,8 @@ bool showingDefault;
             int elementColors =[[listElements[j] objectForKey:@"colorNum"] intValue];
             int elementSex =[[listElements[j] objectForKey:@"sex"] intValue];
             NSString *elementTitle = [listElements[j] objectForKey:@"title"];
+            NSString *existsAll = [listElements[j] objectForKey:@"existsAll"];
+
 
 
 
@@ -210,6 +215,7 @@ bool showingDefault;
             element.price = elementPrice;
             element.sex = elementSex;
             element.titleName = elementTitle;
+            element.existsAll = existsAll;
             element.producrNum = j;
             element.catelogName =[[self.GameData objectForKey:@"catalogStore"] objectAtIndex:i];
             
@@ -243,6 +249,12 @@ bool showingDefault;
         
     }
     
+    if (emptyCount == CATALOG_NUM_STORE) {
+        [self.productImage setImage: nil];
+        [self.faceImage setImage: nil];
+        [self.backHairImage setImage: nil];
+    }
+    
 //    if (showingDefault) {
 //        [self setDefaultView:self.defaultButton];
 //    }
@@ -273,6 +285,8 @@ bool showingDefault;
     self.productNow.productName = sender.imageName;
     self.productNow.productCategory = sender.catelogName;
     self.productNow.productNumber = sender.producrNum;
+    self.productNow.existsAll = sender.existsAll;
+
     
 
     if ([sender.imageLevel intValue]==0) {
@@ -619,11 +633,36 @@ bool showingDefault;
         if ([manager isWritableFileAtPath:plistPath])
         {
             NSMutableDictionary* infoDict = [NSMutableDictionary dictionaryWithContentsOfFile:plistPath];
-            NSDictionary *allProducts = [infoDict objectForKey:@"productInfo"];
+            NSMutableDictionary *allProducts = [infoDict objectForKey:@"productInfo"];
+            NSMutableDictionary *productTobeRemoved = [[allProducts objectForKey:catelog] objectAtIndex:elementNum];
+            NSString *removeName = [productTobeRemoved objectForKey:@"name"];
+            
             [[allProducts objectForKey:catelog] removeObjectAtIndex:elementNum];
             [infoDict setObject:allProducts forKey:@"productInfo"];
+            
+            if ([[productTobeRemoved objectForKey:@"existsAll"] isEqualToString:@"yes"]) {
+                
+                NSMutableDictionary *allLuckyProducts = [infoDict objectForKey:@"luckyProducts"];
+                NSMutableArray *luckyArray = [allLuckyProducts objectForKey:catelog];
+                NSMutableArray *luckyArrayTemp = [[allLuckyProducts objectForKey:catelog] copy];
+                
+                
+                [luckyArrayTemp enumerateObjectsUsingBlock:^(id obj, NSUInteger idx, BOOL *stop) {
+                    if ([[obj objectForKey:@"name"] isEqualToString:removeName])
+                    {
+                        [luckyArray removeObjectAtIndex:idx];
+                    }
+                }];
+                
+                [infoDict setObject:allLuckyProducts forKey:@"luckyProducts"];
+                
+                
+            }
+           
             [infoDict writeToFile:plistPath atomically:NO];
-            [manager setAttributes:[NSDictionary dictionaryWithObject:[NSDate date] forKey:NSFileModificationDate] ofItemAtPath:[[NSBundle mainBundle] bundlePath] error:nil];
+            
+            
+            [manager setAttributes:[NSDictionary dictionaryWithObject:[NSDate date] forKey:NSFileModificationDate] ofItemAtPath:plistPath error:nil];
         }
     }
 }

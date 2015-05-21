@@ -465,6 +465,15 @@
 		A456D27B1AE8C8370032F41F /* photo-cancel-press.png in Resources */ = {isa = PBXBuildFile; fileRef = A456D2741AE8C8370032F41F /* photo-cancel-press.png */; };
 		A456D27C1AE8C8370032F41F /* photo-cancel.png in Resources */ = {isa = PBXBuildFile; fileRef = A456D2751AE8C8370032F41F /* photo-cancel.png */; };
 		A456D2811AE8D2300032F41F /* AssetsLibrary.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A456D2801AE8D2300032F41F /* AssetsLibrary.framework */; };
+		A4574F4C1B0DB4F900A37DE3 /* hengtiao .png in Resources */ = {isa = PBXBuildFile; fileRef = A4574F431B0DB4F900A37DE3 /* hengtiao .png */; };
+		A4574F4D1B0DB4F900A37DE3 /* jing.png in Resources */ = {isa = PBXBuildFile; fileRef = A4574F441B0DB4F900A37DE3 /* jing.png */; };
+		A4574F4E1B0DB4F900A37DE3 /* price board.png in Resources */ = {isa = PBXBuildFile; fileRef = A4574F451B0DB4F900A37DE3 /* price board.png */; };
+		A4574F4F1B0DB4F900A37DE3 /* price.png in Resources */ = {isa = PBXBuildFile; fileRef = A4574F461B0DB4F900A37DE3 /* price.png */; };
+		A4574F501B0DB4F900A37DE3 /* purchase-normal.png in Resources */ = {isa = PBXBuildFile; fileRef = A4574F471B0DB4F900A37DE3 /* purchase-normal.png */; };
+		A4574F511B0DB4F900A37DE3 /* purchase-pressl.png in Resources */ = {isa = PBXBuildFile; fileRef = A4574F481B0DB4F900A37DE3 /* purchase-pressl.png */; };
+		A4574F521B0DB4F900A37DE3 /* shop back ground.png in Resources */ = {isa = PBXBuildFile; fileRef = A4574F491B0DB4F900A37DE3 /* shop back ground.png */; };
+		A4574F531B0DB4F900A37DE3 /* shop background1.png in Resources */ = {isa = PBXBuildFile; fileRef = A4574F4A1B0DB4F900A37DE3 /* shop background1.png */; };
+		A4574F541B0DB4F900A37DE3 /* shop slippy board.png in Resources */ = {isa = PBXBuildFile; fileRef = A4574F4B1B0DB4F900A37DE3 /* shop slippy board.png */; };
 		A45C938B1AE8F9730081346B /* sharesave normal.png in Resources */ = {isa = PBXBuildFile; fileRef = A45C93891AE8F9730081346B /* sharesave normal.png */; };
 		A45C938C1AE8F9730081346B /* sharesave press.png in Resources */ = {isa = PBXBuildFile; fileRef = A45C938A1AE8F9730081346B /* sharesave press.png */; };
 		A46BBC201ADE40D6009D2280 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = A46BBC1F1ADE40D6009D2280 /* Main.storyboard */; };
@@ -1348,6 +1357,15 @@
 		A456D2751AE8C8370032F41F /* photo-cancel.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "photo-cancel.png"; sourceTree = "<group>"; };
 		A456D27E1AE8C8880032F41F /* youpiaotiao.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = youpiaotiao.png; sourceTree = "<group>"; };
 		A456D2801AE8D2300032F41F /* AssetsLibrary.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AssetsLibrary.framework; path = System/Library/Frameworks/AssetsLibrary.framework; sourceTree = SDKROOT; };
+		A4574F431B0DB4F900A37DE3 /* hengtiao .png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "hengtiao .png"; sourceTree = "<group>"; };
+		A4574F441B0DB4F900A37DE3 /* jing.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = jing.png; sourceTree = "<group>"; };
+		A4574F451B0DB4F900A37DE3 /* price board.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "price board.png"; sourceTree = "<group>"; };
+		A4574F461B0DB4F900A37DE3 /* price.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = price.png; sourceTree = "<group>"; };
+		A4574F471B0DB4F900A37DE3 /* purchase-normal.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "purchase-normal.png"; sourceTree = "<group>"; };
+		A4574F481B0DB4F900A37DE3 /* purchase-pressl.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "purchase-pressl.png"; sourceTree = "<group>"; };
+		A4574F491B0DB4F900A37DE3 /* shop back ground.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "shop back ground.png"; sourceTree = "<group>"; };
+		A4574F4A1B0DB4F900A37DE3 /* shop background1.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "shop background1.png"; sourceTree = "<group>"; };
+		A4574F4B1B0DB4F900A37DE3 /* shop slippy board.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "shop slippy board.png"; sourceTree = "<group>"; };
 		A45C93891AE8F9730081346B /* sharesave normal.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "sharesave normal.png"; sourceTree = "<group>"; };
 		A45C938A1AE8F9730081346B /* sharesave press.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "sharesave press.png"; sourceTree = "<group>"; };
 		A46BBC1F1ADE40D6009D2280 /* Main.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = Main.storyboard; sourceTree = "<group>"; };
@@ -2362,6 +2380,7 @@
 		A44BB6D61ADCA647009D2378 /* images */ = {
 			isa = PBXGroup;
 			children = (
+				A4574F421B0DB4E900A37DE3 /* store */,
 				A42C68A81B0C614B00B2EDDD /* lucky */,
 				A42C67F71B0C239D00B2EDDD /* gamePage */,
 				A42EEE791B0AD5A00027F23B /* homePage */,
@@ -2394,6 +2413,22 @@
 				A456D27E1AE8C8880032F41F /* youpiaotiao.png */,
 			);
 			name = photoViewImage;
+			sourceTree = "<group>";
+		};
+		A4574F421B0DB4E900A37DE3 /* store */ = {
+			isa = PBXGroup;
+			children = (
+				A4574F431B0DB4F900A37DE3 /* hengtiao .png */,
+				A4574F441B0DB4F900A37DE3 /* jing.png */,
+				A4574F451B0DB4F900A37DE3 /* price board.png */,
+				A4574F461B0DB4F900A37DE3 /* price.png */,
+				A4574F471B0DB4F900A37DE3 /* purchase-normal.png */,
+				A4574F481B0DB4F900A37DE3 /* purchase-pressl.png */,
+				A4574F491B0DB4F900A37DE3 /* shop back ground.png */,
+				A4574F4A1B0DB4F900A37DE3 /* shop background1.png */,
+				A4574F4B1B0DB4F900A37DE3 /* shop slippy board.png */,
+			);
+			name = store;
 			sourceTree = "<group>";
 		};
 		A47D6EA21AC3E1ED00AC1768 = {
@@ -3247,6 +3282,7 @@
 				A4BF62FE1AEDC6A6009B38BE /* eye8.png in Resources */,
 				A4BF62C41AEDC681009B38BE /* cloth-g-16.png in Resources */,
 				51ABD24F1AE78CFB005BC8F0 /* 5.png in Resources */,
+				A4574F511B0DB4F900A37DE3 /* purchase-pressl.png in Resources */,
 				A4BF62261AEDC610009B38BE /* mouth13.png in Resources */,
 				51ABD24D1AE78CFB005BC8F0 /* 3.png in Resources */,
 				A42C68861B0C513D00B2EDDD /* 眼睛.png in Resources */,
@@ -3351,6 +3387,7 @@
 				A404427F1AF1CF1A00E87C27 /* eyebrow8-yulan.png in Resources */,
 				A4BF63311AEDC6FE009B38BE /* eyebrow8.png in Resources */,
 				A42C688B1B0C513D00B2EDDD /* 背景1.png in Resources */,
+				A4574F521B0DB4F900A37DE3 /* shop back ground.png in Resources */,
 				A4A962F51AF9E142008B0738 /* wenhao6.png in Resources */,
 				A40442291AF1CEDC00E87C27 /* glass9-yulan.png in Resources */,
 				A42C68071B0C31B500B2EDDD /* photo-normal.png in Resources */,
@@ -3441,6 +3478,7 @@
 				A42C68891B0C513D00B2EDDD /* 眼镜1.png in Resources */,
 				A4E6CDEA1ACCE54200A1D6EC /* mood2.png in Resources */,
 				A4BF62501AEDC64D009B38BE /* nose5.png in Resources */,
+				A4574F531B0DB4F900A37DE3 /* shop background1.png in Resources */,
 				A40442571AF1CEF700E87C27 /* facemark12-yulan.png in Resources */,
 				A4BF638D1AEDC79F009B38BE /* glass13.png in Resources */,
 				A4024E2A1AF7056F000867D4 /* Notes in Resources */,
@@ -3468,6 +3506,7 @@
 				A4BF63641AEDC726009B38BE /* facemark15.png in Resources */,
 				A4C856F01AE64FBD005208F0 /* hair2-4-0-front.png in Resources */,
 				A42C68781B0C513C00B2EDDD /* 头发.png in Resources */,
+				A4574F501B0DB4F900A37DE3 /* purchase-normal.png in Resources */,
 				A42EEE911B0AD6530027F23B /* shop press.png in Resources */,
 				A40443221AF1CF6800E87C27 /* cloth-b-26-yulan.png in Resources */,
 				A4BF62CC1AEDC681009B38BE /* cloth-g-24.png in Resources */,
@@ -3499,6 +3538,7 @@
 				A404440C1AF1D28000E87C27 /* gesture10-yulan.png in Resources */,
 				A44563CC1AE93D440040D1C5 /* store-above.png in Resources */,
 				A4BF63D71AEDC827009B38BE /* hat5.png in Resources */,
+				A4574F4D1B0DB4F900A37DE3 /* jing.png in Resources */,
 				A42C68BE1B0C619400B2EDDD /* box-open.png in Resources */,
 				A44563CE1AE93D440040D1C5 /* store-introduce board.png in Resources */,
 				A40443611AF1D0E700E87C27 /* nose12-yulan.png in Resources */,
@@ -3555,6 +3595,7 @@
 				A4BF63591AEDC726009B38BE /* facemark4.png in Resources */,
 				A40442221AF1CEDC00E87C27 /* glass2-yulan.png in Resources */,
 				A4BF62B01AEDC681009B38BE /* cloth-b-26.png in Resources */,
+				A4574F4F1B0DB4F900A37DE3 /* price.png in Resources */,
 				A40441CF1AF1CE5500E87C27 /* hat3-yulan.png in Resources */,
 				A4C6DFED1AFB31990008C6C8 /* buyCellView.xib in Resources */,
 				A4BF63AA1AEDC7DC009B38BE /* pet11.png in Resources */,
@@ -3572,6 +3613,7 @@
 				A44563C01AE93D440040D1C5 /* photo dark.png in Resources */,
 				A4BF636B1AEDC726009B38BE /* facemark22.png in Resources */,
 				51ABD25F1AE78EE0005BC8F0 /* hairG1-2-yulan.png in Resources */,
+				A4574F541B0DB4F900A37DE3 /* shop slippy board.png in Resources */,
 				A40441D81AF1CE5500E87C27 /* hat12-yulan.png in Resources */,
 				A404433C1AF1CF6800E87C27 /* cloth-g-22-yulan.png in Resources */,
 				A456D26C1AE8C73B0032F41F /* storeViewController.xib in Resources */,
@@ -3694,6 +3736,7 @@
 				A40442591AF1CEF700E87C27 /* facemark14-yulan.png in Resources */,
 				A4A963051AFA0DC9008B0738 /* tanchu4.png in Resources */,
 				A4A963061AFA0DC9008B0738 /* tanchu5.png in Resources */,
+				A4574F4C1B0DB4F900A37DE3 /* hengtiao .png in Resources */,
 				A42C688C1B0C513D00B2EDDD /* 胡子.png in Resources */,
 				A4BF63A71AEDC7DC009B38BE /* pet8.png in Resources */,
 				A404439C1AF1D0FD00E87C27 /* mouth21-yulan.png in Resources */,
@@ -3882,6 +3925,7 @@
 				A4BF63FA1AEDCAEA009B38BE /* body1.png in Resources */,
 				A404435F1AF1D0E700E87C27 /* nose10-yulan.png in Resources */,
 				A44BB7181ADCA647009D2378 /* choose.png in Resources */,
+				A4574F4E1B0DB4F900A37DE3 /* price board.png in Resources */,
 				A4BF62F51AEDC6A6009B38BE /* eye0.png in Resources */,
 				A40444161AF1D28000E87C27 /* gesture20-yulan.png in Resources */,
 				A404433D1AF1CF6800E87C27 /* cloth-g-23-yulan.png in Resources */,

@@ -14,17 +14,19 @@
 @property (weak, nonatomic) IBOutlet UIButton *startReward;
 @property (weak, nonatomic) IBOutlet UILabel *resultLabel;
 @property (weak, nonatomic) IBOutlet UIImageView *productView;
-@property (strong, nonatomic) IBOutlet UIImageView *boxImage;
-@property (strong, nonatomic) IBOutlet UIView *rewardView;
-@property (strong, nonatomic) IBOutlet UIImageView *popAnimation;
+@property (weak, nonatomic) IBOutlet UIImageView *boxImage;
+@property (weak, nonatomic) IBOutlet UIView *rewardView;
+@property (weak, nonatomic) IBOutlet UIImageView *popAnimation;
 
-@property (strong, nonatomic) IBOutlet UIImageView *productCard;
+@property (weak, nonatomic) IBOutlet UIImageView *productCard;
 
-@property (strong, nonatomic) IBOutlet UIImageView *productBought;
+@property (weak, nonatomic) IBOutlet UIImageView *productBought;
 
 @property (weak, nonatomic) IBOutlet UILabel *productName;
 @property (weak, nonatomic) IBOutlet UILabel *diamondNum;
 @property (weak, nonatomic) IBOutlet UIImageView *witch;
+@property (strong,nonatomic) NSDictionary *GameData;
+@property (weak, nonatomic) IBOutlet UIImageView *freeTag;
 
 
 - (IBAction)buyDaimond:(id)sender;

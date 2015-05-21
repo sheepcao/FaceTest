@@ -8,12 +8,14 @@
 
 #import "rewardViewController.h"
 #import "imageWithName.h"
+#import "productNow.h"
 
 @interface rewardViewController ()
 
 @property (nonatomic,strong) NSMutableArray *arrayGif;
 @property (nonatomic,strong) NSMutableArray *arrayGifOpenBox;
 @property CGFloat baseY;
+@property (strong,nonatomic) product *productNow;
 
 //@property (nonatomic,strong) NSArray *imageOptins;
 
@@ -24,68 +26,78 @@
 @synthesize arrayGifOpenBox;
 @synthesize baseY;
 
+bool shouldFinish;
+
 - (void)viewDidLoad {
     [super viewDidLoad];
 //    self.navigationController.navigationBarHidden = NO;
 
     [self.rewardView setHidden:YES];
-    
-//    self.imageOptins = @[@"wenhao0",@"wenhao1",@"wenhao2",@"wenhao3",@"wenhao4",@"wenhao5",@"wenhao6",@"wenhao7",@"wenhao8",@"wenhao9",@"wenhao10"];
-    
-    
-    // Do any additional setup after loading the view from its nib.
-    
-//    [self.startReward setTitle:@"开始抽奖" forState:UIControlStateNormal];
-    
-    [self.productView setImage:[UIImage imageWithContentsOfFile:[[NSBundle mainBundle] pathForResource:@"QuestionMark" ofType:@"png"]]];
-    
+    shouldFinish = NO;
+
     arrayGif=[[NSMutableArray array] init];
     arrayGifOpenBox=[[NSMutableArray array] init];
-
-//    UIImage *gif = [UIImage imageWithContentsOfFile:[[NSBundle mainBundle] pathForResource:self ofType:@"png"]];
-//    [arrayGif addObject:gif];
     
-//    for (int i = 0; i<self.imageOptins.count; i++) {
-//        [arrayGif addObject:[UIImage imageWithContentsOfFile:[[NSBundle mainBundle] pathForResource:self.imageOptins[i] ofType:@"png"]]];
-//
-//    }
+    if ([[[NSUserDefaults standardUserDefaults] objectForKey:@"luckyFinished"] isEqualToString:@"yes"]) {
+        
+        [self.freeTag setHidden:YES];
+
+        
+    }else
+    {
+        [self.freeTag setHidden:NO];
+    }
+    
+
+
     for (int i = 0; i<7; i++) {
         [arrayGifOpenBox addObject:[UIImage imageWithContentsOfFile:[[NSBundle mainBundle] pathForResource:[NSString stringWithFormat:@"tanchu%d",i] ofType:@"png"]]];
     }
     
-    
-    if (arrayGif.count>0) {
-        //设置动画数组
-        [self.productView setAnimationImages:arrayGif];
-        
-        //设置动画播放次数
-        [self.productView setAnimationRepeatCount:0];
-        //设置动画播放时间
-        [self.productView setAnimationDuration:1.85];
-        //开始动画
-        [self.productView startAnimating];
-        
-    }
+//    
+//    if (arrayGif.count>0) {
+//        //设置动画数组
+//        [self.productView setAnimationImages:arrayGif];
+//        
+//        //设置动画播放次数
+//        [self.productView setAnimationRepeatCount:0];
+//        //设置动画播放时间
+//        [self.productView setAnimationDuration:1.85];
+//        //开始动画
+//        [self.productView startAnimating];
+//        
+//    }
     
 
     //witch animation
     
     baseY = 0;
+    
+//    [self animateWitcth];
+    
     [self performSelector:@selector(animateWitcth) withObject:nil afterDelay:0.9];
     
+    NSString *diamond = [[NSUserDefaults standardUserDefaults] objectForKey:@"diamond"];
     
+    if (diamond) {
+        [self.diamondNum setText:diamond];
+    }else
+    {
+        [[NSUserDefaults standardUserDefaults] setObject:@"1000" forKey:@"diamond"];
+        [self.diamondNum setText:@"1000"];
+        
+    }
+
 }
 
-//-(void)viewDidLayoutSubviews
-//{
-//    CGPoint center = self.witch.center;
-//    CGFloat centerYBase = center.y;
-//    [self performSelector:@selector(animateWitcth:) withObject:[NSNumber numberWithFloat:centerYBase] afterDelay:0.5];
-//}
+
 
 -(void)animateWitcth
 {
     
+    if (shouldFinish) {
+        return;
+    }
     
     CGPoint center = self.witch.center;
     CGFloat centerY = center.y;
@@ -142,10 +154,17 @@
 
 - (IBAction)backTapped:(id)sender {
     
+    shouldFinish = YES;
     [self.navigationController popViewControllerAnimated:YES];
 }
 
 - (IBAction)start:(UIButton *)sender {
+    
+    if ([[[NSUserDefaults standardUserDefaults] objectForKey:@"luckyFinished"] isEqualToString:@"no"]) {
+        [[NSUserDefaults standardUserDefaults] setObject:@"yes" forKey:@"luckyFinished"];
+        [self.freeTag setHidden:YES];
+    }
+
 
     [CommonUtility tapSound:@"boxOpen" withType:@"mp3"];
     [self.productView stopAnimating];
@@ -163,20 +182,201 @@
         //开始动画
         [self.popAnimation startAnimating];
         
+        
     }
-    [self performSelector:@selector(showCard) withObject:nil afterDelay:0.15];
+    [self performSelector:@selector(showCard) withObject:nil afterDelay:0.15 ];
     
 }
 
 -(void)showCard
 {
     [self.rewardView setHidden:NO];
+    NSMutableArray *catalogArray = [[NSMutableArray alloc] init];
+    NSMutableArray *catalogKeysArray = [[NSMutableArray alloc] init];
 
-    int selected =  arc4random() % 7;
-    [self.productBought setImage:[UIImage imageNamed:[NSString stringWithFormat:@"%d",selected]]];
+    NSArray *keyArray = @[@"宠物",@"背景",@"帽子",@"脸饰",@"心情",@"鼻子",@"眼镜",@"手势",@"嘴巴",@"眼眉",@"眼睛",@"衣服",@"衣服女",@"胡子",@"头发",@"头发女",@"脸型"];
+
+
     
     [self.productCard setImage:[UIImage imageNamed:@"card"]];
-    [self.productName setText:[NSString stringWithFormat:@"色块%d",selected]];
     NSLog(@"frame:%@",self.productName);
+    
+    NSDictionary *luckyProductsDic = [self.GameData objectForKey:@"luckyProducts"];
+    
+    for(int i = 0;i<keyArray.count;i++)
+    {
+        if ([luckyProductsDic objectForKey:keyArray[i]] &&[[luckyProductsDic objectForKey:keyArray[i]] count]>0) {
+            [catalogArray addObject:[luckyProductsDic objectForKey:keyArray[i]]];
+            [catalogKeysArray addObject:keyArray[i]];
+        }
+    }
+    if(catalogArray.count == 0)
+    {
+        NSLog(@"no more products...");
+        return;
+    }
+    int selected =  arc4random() % catalogArray.count;
+    int selectedElement =  arc4random() % [catalogArray[selected] count];
+    NSDictionary *randomProduct = [catalogArray[selected] objectAtIndex:selectedElement];
+    
+    
+    NSString *elementImageName = [randomProduct objectForKey:@"name"];
+    int elementPrice =[[randomProduct objectForKey:@"price"] intValue];
+//    int elementStars =[[randomProduct objectForKey:@"star"] intValue];
+//    int elementColors =[[randomProduct objectForKey:@"colorNum"] intValue];
+    int elementSex =[[randomProduct objectForKey:@"sex"] intValue];
+    NSString *elementTitle = [randomProduct objectForKey:@"title"];
+    NSString *existsAll = [randomProduct objectForKey:@"existsAll"];
+    
+    self.productNow = [[product alloc] init];
+    self.productNow.price = elementPrice;
+    self.productNow.sex = elementSex;
+    self.productNow.productName = elementImageName;
+    self.productNow.productCategory = catalogKeysArray[selected];
+    self.productNow.existsAll = existsAll;
+    self.productNow.productTitle = elementTitle;
+    self.productNow.productNumber = selectedElement;
+    
+    
+    [self.productBought setImage:[UIImage imageNamed:self.productNow.productName]];
+    [self.productName setText:self.productNow.productTitle];
+    
+    [self writeToPurchased];
+    [self deleteItemFromPlist:@"GameData" withCatelog:self.productNow.productCategory andElementNum:self.productNow.productNumber];
+    self.GameData = [self readDataFromPlist:@"GameData"];
+    
+
+
+    
 }
+
+-(void)costDiamond:(int)price
+{
+    int diamondRemain = [[[NSUserDefaults standardUserDefaults] objectForKey:@"diamond"] intValue];
+    NSString *diamondNow =[NSString stringWithFormat:@"%d",diamondRemain - price];
+    
+    [[NSUserDefaults standardUserDefaults] setObject:diamondNow forKey:@"diamond"];
+    
+    [self.diamondNum setText:diamondNow];
+    
+    
+}
+
+-(void)writeToPurchased
+{
+    
+    if (self.productNow.sex == 1000) {
+        if ([self.productNow.productCategory isEqualToString:@"衣服"] ||[self.productNow.productCategory isEqualToString:@"头发"] ) {
+            self.productNow.productCategory = [self.productNow.productCategory stringByAppendingString:@"女"];
+        }
+    }else if ((self.productNow.sex == 0))
+    {
+        [self doWrite];
+        if ([self.productNow.productCategory isEqualToString:@"衣服"] ||[self.productNow.productCategory isEqualToString:@"头发"] ) {
+            self.productNow.productCategory = [self.productNow.productCategory stringByAppendingString:@"女"];
+        }
+    }
+    [self doWrite];
+    
+}
+
+-(void)doWrite
+{
+    if ([[NSUserDefaults standardUserDefaults] objectForKey:self.productNow.productCategory]) {
+        
+        
+        NSMutableDictionary *purchasedCatelog = [[NSMutableDictionary alloc] init];
+        [purchasedCatelog setObject:@"yes" forKey:@"haveNew"];
+        
+        NSMutableDictionary *purchasedDic = [NSMutableDictionary dictionaryWithDictionary:[[NSUserDefaults standardUserDefaults] objectForKey:self.productNow.productCategory]];
+        
+        NSMutableArray *purchasedArray = [NSMutableArray arrayWithArray:[purchasedDic objectForKey:@"purchasedArray"]];
+        
+        
+        NSString *newProductName = [NSString stringWithFormat:@"%@+new",self.productNow.productName];
+        [purchasedArray addObject:newProductName];
+        [purchasedCatelog setObject:purchasedArray forKey:@"purchasedArray"];
+        
+        
+        [[NSUserDefaults standardUserDefaults] setObject:purchasedCatelog forKey:self.productNow.productCategory];
+        
+        
+    }else
+    {
+        NSMutableDictionary *purchasedCatelog = [[NSMutableDictionary alloc] init];
+        [purchasedCatelog setObject:@"yes" forKey:@"haveNew"];
+        
+        NSMutableArray *purchasedArray = [[NSMutableArray alloc] init];
+        
+        NSString *newProductName = [NSString stringWithFormat:@"%@+new",self.productNow.productName];
+        [purchasedArray addObject:newProductName];
+        
+        [purchasedCatelog setObject:purchasedArray forKey:@"purchasedArray"];
+        
+        [[NSUserDefaults standardUserDefaults] setObject:purchasedCatelog forKey:self.productNow.productCategory];
+    }
+    
+}
+
+-(void)deleteItemFromPlist:(NSString *)plistname withCatelog:(NSString *)catelog andElementNum:(int)elementNum
+{
+    NSString *documentsDirectory = [NSSearchPathForDirectoriesInDomains(NSDocumentDirectory, NSUserDomainMask, YES) objectAtIndex:0];
+    NSString *plistPath = [documentsDirectory stringByAppendingPathComponent:[ NSString stringWithFormat:@"%@.plist",plistname ]];
+    NSFileManager* manager = [NSFileManager defaultManager];
+    if ([manager fileExistsAtPath:plistPath] == YES)
+    {
+        if ([manager isWritableFileAtPath:plistPath])
+        {
+            NSMutableDictionary* infoDict = [NSMutableDictionary dictionaryWithContentsOfFile:plistPath];
+            NSMutableDictionary *allProducts = [infoDict objectForKey:@"luckyProducts"];
+            NSMutableDictionary *productTobeRemoved = [[allProducts objectForKey:catelog] objectAtIndex:elementNum];
+            NSString *removeName = [productTobeRemoved objectForKey:@"name"];
+            
+//            [[allProducts objectForKey:catelog] removeObjectAtIndex:elementNum];
+//            [infoDict setObject:allProducts forKey:@"luckyProducts"];
+            
+            if ([[productTobeRemoved objectForKey:@"existsAll"] isEqualToString:@"yes"]) {
+                
+                NSMutableDictionary *allStoreProducts = [infoDict objectForKey:@"productInfo"];
+                NSMutableArray *StoreArray = [allStoreProducts objectForKey:catelog];
+                NSMutableArray *StoreArrayTemp = [[allStoreProducts objectForKey:catelog] copy];
+                
+                
+                [StoreArrayTemp enumerateObjectsUsingBlock:^(id obj, NSUInteger idx, BOOL *stop) {
+                    if ([[obj objectForKey:@"name"] isEqualToString:removeName])
+                    {
+                        [StoreArray removeObjectAtIndex:idx];
+                    }
+                }];
+                
+                [infoDict setObject:allStoreProducts forKey:@"productInfo"];
+                
+                [infoDict writeToFile:plistPath atomically:NO];
+
+            }
+            
+            
+            
+            [manager setAttributes:[NSDictionary dictionaryWithObject:[NSDate date] forKey:NSFileModificationDate] ofItemAtPath:plistPath error:nil];
+        }
+    }
+}
+
+-(NSMutableDictionary *)readDataFromPlist:(NSString *)plistname
+{
+    //read level data from plist
+    NSString *documentsDirectory = [NSSearchPathForDirectoriesInDomains(NSDocumentDirectory, NSUserDomainMask, YES) objectAtIndex:0];
+    NSString *plistPath = [documentsDirectory stringByAppendingPathComponent:[ NSString stringWithFormat:@"%@.plist",plistname ]];
+    NSMutableDictionary *levelData = [[NSMutableDictionary alloc] initWithContentsOfFile:plistPath];
+    //    NSLog(@"levelData%@",levelData);
+    return levelData;
+    
+}
+
+//-(void)dealloc
+//{
+//    [NSObject cancelPreviousPerformRequestsWithTarget:self];
+//
+//}
+
 @end
