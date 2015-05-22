@@ -516,54 +516,54 @@
 		<array>
 			<dict>
 				<key>name</key>
-				<string>hair1-2</string>
-				<key>existsAll</key>
-				<string>yes</string>
-				<key>title</key>
-				<string>XXX</string>
-				<key>price</key>
-				<string>200</string>
-				<key>star</key>
-				<string>2</string>
-				<key>colorNum</key>
-				<string>2</string>
-				<key>sex</key>
-				<string>1</string>
-			</dict>
-		</array>
-		<key>宠物</key>
-		<array>
-			<dict>
-				<key>name</key>
-				<string>pet0</string>
+				<string>hairG2-7</string>
 				<key>existsAll</key>
 				<string>no</string>
 				<key>title</key>
-				<string>XXX</string>
+				<string>女孩头发</string>
+				<key>price</key>
+				<string>200</string>
+				<key>star</key>
+				<string>1</string>
+				<key>colorNum</key>
+				<string>7</string>
+				<key>sex</key>
+				<string>1000</string>
+			</dict>
+		</array>
+		<key>衣服</key>
+		<array>
+			<dict>
+				<key>name</key>
+				<string>cloth-g-10</string>
+				<key>existsAll</key>
+				<string>no</string>
+				<key>title</key>
+				<string>女款衣服</string>
 				<key>price</key>
 				<string>23</string>
 				<key>star</key>
-				<string>4</string>
-				<key>colorNum</key>
 				<string>1</string>
-				<key>sex</key>
+				<key>colorNum</key>
 				<string>0</string>
+				<key>sex</key>
+				<string>1000</string>
 			</dict>
 			<dict>
 				<key>title</key>
-				<string>XX1</string>
+				<string>通用衣服</string>
 				<key>existsAll</key>
 				<string>yes</string>
 				<key>name</key>
-				<string>pet1</string>
+				<string>cloth-tong1</string>
 				<key>price</key>
 				<string>100</string>
 				<key>star</key>
-				<string>5</string>
-				<key>colorNum</key>
 				<string>1</string>
+				<key>colorNum</key>
+				<string>0</string>
 				<key>sex</key>
-				<string>1000</string>
+				<string>0</string>
 			</dict>
 		</array>
 	</dict>

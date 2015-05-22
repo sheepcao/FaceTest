@@ -345,6 +345,12 @@
 		A40444211AF1D28000E87C27 /* gesture31-yulan.png in Resources */ = {isa = PBXBuildFile; fileRef = A40443FD1AF1D28000E87C27 /* gesture31-yulan.png */; };
 		A40444221AF1D28000E87C27 /* gesture32-yulan.png in Resources */ = {isa = PBXBuildFile; fileRef = A40443FE1AF1D28000E87C27 /* gesture32-yulan.png */; };
 		A40444231AF1D28000E87C27 /* gesture33-yulan.png in Resources */ = {isa = PBXBuildFile; fileRef = A40443FF1AF1D28000E87C27 /* gesture33-yulan.png */; };
+		A409C7EE1B0EC0BC00AD2E99 /* box-normal.png in Resources */ = {isa = PBXBuildFile; fileRef = A409C7E91B0EC0BC00AD2E99 /* box-normal.png */; };
+		A409C7EF1B0EC0BC00AD2E99 /* box-open.png in Resources */ = {isa = PBXBuildFile; fileRef = A409C7EA1B0EC0BC00AD2E99 /* box-open.png */; };
+		A409C7F01B0EC0BC00AD2E99 /* common.png in Resources */ = {isa = PBXBuildFile; fileRef = A409C7EB1B0EC0BC00AD2E99 /* common.png */; };
+		A409C7F11B0EC0BC00AD2E99 /* female.png in Resources */ = {isa = PBXBuildFile; fileRef = A409C7EC1B0EC0BC00AD2E99 /* female.png */; };
+		A409C7F21B0EC0BC00AD2E99 /* male.png in Resources */ = {isa = PBXBuildFile; fileRef = A409C7ED1B0EC0BC00AD2E99 /* male.png */; };
+		A409C7F41B0EC0C800AD2E99 /* 20diamond.png in Resources */ = {isa = PBXBuildFile; fileRef = A409C7F31B0EC0C800AD2E99 /* 20diamond.png */; };
 		A422536F1AEA252B0076E58B /* diamondhowmuch.png in Resources */ = {isa = PBXBuildFile; fileRef = A422536E1AEA252B0076E58B /* diamondhowmuch.png */; };
 		A42C67FF1B0C318900B2EDDD /* background2.png in Resources */ = {isa = PBXBuildFile; fileRef = A42C67F81B0C318900B2EDDD /* background2.png */; };
 		A42C68001B0C318900B2EDDD /* frame selected.png in Resources */ = {isa = PBXBuildFile; fileRef = A42C67F91B0C318900B2EDDD /* frame selected.png */; };
@@ -406,8 +412,6 @@
 		A42C68B81B0C615B00B2EDDD /* message 2.png in Resources */ = {isa = PBXBuildFile; fileRef = A42C68AF1B0C615B00B2EDDD /* message 2.png */; };
 		A42C68B91B0C615B00B2EDDD /* message board.png in Resources */ = {isa = PBXBuildFile; fileRef = A42C68B01B0C615B00B2EDDD /* message board.png */; };
 		A42C68BA1B0C615B00B2EDDD /* message.png in Resources */ = {isa = PBXBuildFile; fileRef = A42C68B11B0C615B00B2EDDD /* message.png */; };
-		A42C68BD1B0C619400B2EDDD /* box-normal.png in Resources */ = {isa = PBXBuildFile; fileRef = A42C68BB1B0C619400B2EDDD /* box-normal.png */; };
-		A42C68BE1B0C619400B2EDDD /* box-open.png in Resources */ = {isa = PBXBuildFile; fileRef = A42C68BC1B0C619400B2EDDD /* box-open.png */; };
 		A42EEE781B0AD4470027F23B /* homeTitle.png in Resources */ = {isa = PBXBuildFile; fileRef = A42EEE771B0AD4470027F23B /* homeTitle.png */; };
 		A42EEE7E1B0AD6230027F23B /* girlenter-normal.png in Resources */ = {isa = PBXBuildFile; fileRef = A42EEE7A1B0AD6230027F23B /* girlenter-normal.png */; };
 		A42EEE7F1B0AD6230027F23B /* girlenter-press.png in Resources */ = {isa = PBXBuildFile; fileRef = A42EEE7B1B0AD6230027F23B /* girlenter-press.png */; };
@@ -1229,6 +1233,12 @@
 		A40443FD1AF1D28000E87C27 /* gesture31-yulan.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "gesture31-yulan.png"; sourceTree = "<group>"; };
 		A40443FE1AF1D28000E87C27 /* gesture32-yulan.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "gesture32-yulan.png"; sourceTree = "<group>"; };
 		A40443FF1AF1D28000E87C27 /* gesture33-yulan.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "gesture33-yulan.png"; sourceTree = "<group>"; };
+		A409C7E91B0EC0BC00AD2E99 /* box-normal.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "box-normal.png"; sourceTree = "<group>"; };
+		A409C7EA1B0EC0BC00AD2E99 /* box-open.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "box-open.png"; sourceTree = "<group>"; };
+		A409C7EB1B0EC0BC00AD2E99 /* common.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = common.png; sourceTree = "<group>"; };
+		A409C7EC1B0EC0BC00AD2E99 /* female.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = female.png; sourceTree = "<group>"; };
+		A409C7ED1B0EC0BC00AD2E99 /* male.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = male.png; sourceTree = "<group>"; };
+		A409C7F31B0EC0C800AD2E99 /* 20diamond.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = 20diamond.png; sourceTree = "<group>"; };
 		A422536E1AEA252B0076E58B /* diamondhowmuch.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = diamondhowmuch.png; sourceTree = "<group>"; };
 		A42C67F81B0C318900B2EDDD /* background2.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = background2.png; sourceTree = "<group>"; };
 		A42C67F91B0C318900B2EDDD /* frame selected.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "frame selected.png"; sourceTree = "<group>"; };
@@ -1290,8 +1300,6 @@
 		A42C68AF1B0C615B00B2EDDD /* message 2.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "message 2.png"; sourceTree = "<group>"; };
 		A42C68B01B0C615B00B2EDDD /* message board.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "message board.png"; sourceTree = "<group>"; };
 		A42C68B11B0C615B00B2EDDD /* message.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = message.png; sourceTree = "<group>"; };
-		A42C68BB1B0C619400B2EDDD /* box-normal.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "box-normal.png"; sourceTree = "<group>"; };
-		A42C68BC1B0C619400B2EDDD /* box-open.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "box-open.png"; sourceTree = "<group>"; };
 		A42EEE771B0AD4470027F23B /* homeTitle.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = homeTitle.png; sourceTree = "<group>"; };
 		A42EEE7A1B0AD6230027F23B /* girlenter-normal.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "girlenter-normal.png"; sourceTree = "<group>"; };
 		A42EEE7B1B0AD6230027F23B /* girlenter-press.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "girlenter-press.png"; sourceTree = "<group>"; };
@@ -2297,9 +2305,13 @@
 		A42C68A81B0C614B00B2EDDD /* lucky */ = {
 			isa = PBXGroup;
 			children = (
+				A409C7F31B0EC0C800AD2E99 /* 20diamond.png */,
+				A409C7E91B0EC0BC00AD2E99 /* box-normal.png */,
+				A409C7EA1B0EC0BC00AD2E99 /* box-open.png */,
+				A409C7EB1B0EC0BC00AD2E99 /* common.png */,
+				A409C7EC1B0EC0BC00AD2E99 /* female.png */,
+				A409C7ED1B0EC0BC00AD2E99 /* male.png */,
 				A42C68A91B0C615B00B2EDDD /* background3.png */,
-				A42C68BB1B0C619400B2EDDD /* box-normal.png */,
-				A42C68BC1B0C619400B2EDDD /* box-open.png */,
 				A42C68AA1B0C615B00B2EDDD /* card.png */,
 				A42C68AB1B0C615B00B2EDDD /* diamond board.png */,
 				A42C68AC1B0C615B00B2EDDD /* diamond.png */,
@@ -3284,6 +3296,7 @@
 				51ABD24F1AE78CFB005BC8F0 /* 5.png in Resources */,
 				A4574F511B0DB4F900A37DE3 /* purchase-pressl.png in Resources */,
 				A4BF62261AEDC610009B38BE /* mouth13.png in Resources */,
+				A409C7F01B0EC0BC00AD2E99 /* common.png in Resources */,
 				51ABD24D1AE78CFB005BC8F0 /* 3.png in Resources */,
 				A42C68861B0C513D00B2EDDD /* 眼睛.png in Resources */,
 				A456D27C1AE8C8370032F41F /* photo-cancel.png in Resources */,
@@ -3332,6 +3345,7 @@
 				A4BF63E71AEDC827009B38BE /* hat21.png in Resources */,
 				A40443291AF1CF6800E87C27 /* cloth-g-3-yulan.png in Resources */,
 				A40442541AF1CEF700E87C27 /* facemark9-yulan.png in Resources */,
+				A409C7F21B0EC0BC00AD2E99 /* male.png in Resources */,
 				A4BF62B71AEDC681009B38BE /* cloth-g-3.png in Resources */,
 				A4BF632E1AEDC6FE009B38BE /* eyebrow5.png in Resources */,
 				A4BF62B51AEDC681009B38BE /* cloth-g-1.png in Resources */,
@@ -3432,6 +3446,7 @@
 				A4BF630D1AEDC6A6009B38BE /* eye23.png in Resources */,
 				A4BF61E01AEDC55A009B38BE /* gesture14.png in Resources */,
 				A4BF63A31AEDC7DC009B38BE /* pet4.png in Resources */,
+				A409C7EE1B0EC0BC00AD2E99 /* box-normal.png in Resources */,
 				A4BF62C81AEDC681009B38BE /* cloth-g-20.png in Resources */,
 				A4BF63651AEDC726009B38BE /* facemark16.png in Resources */,
 				A4C856F11AE64FBD005208F0 /* hair2-4-1-front.png in Resources */,
@@ -3491,6 +3506,7 @@
 				A40441D71AF1CE5500E87C27 /* hat11-yulan.png in Resources */,
 				A4BF62B91AEDC681009B38BE /* cloth-g-5.png in Resources */,
 				A404439E1AF1D0FD00E87C27 /* mouth23-yulan.png in Resources */,
+				A409C7F41B0EC0C800AD2E99 /* 20diamond.png in Resources */,
 				A40443871AF1D0FD00E87C27 /* mouth0-yulan.png in Resources */,
 				A4BF62F81AEDC6A6009B38BE /* eye2.png in Resources */,
 				A42EEE7E1B0AD6230027F23B /* girlenter-normal.png in Resources */,
@@ -3539,7 +3555,6 @@
 				A44563CC1AE93D440040D1C5 /* store-above.png in Resources */,
 				A4BF63D71AEDC827009B38BE /* hat5.png in Resources */,
 				A4574F4D1B0DB4F900A37DE3 /* jing.png in Resources */,
-				A42C68BE1B0C619400B2EDDD /* box-open.png in Resources */,
 				A44563CE1AE93D440040D1C5 /* store-introduce board.png in Resources */,
 				A40443611AF1D0E700E87C27 /* nose12-yulan.png in Resources */,
 				A40443421AF1CF6800E87C27 /* cloth-tong1-yulan.png in Resources */,
@@ -3671,7 +3686,6 @@
 				A4A963071AFA0DC9008B0738 /* tanchu6.png in Resources */,
 				A4BF63381AEDC6FE009B38BE /* eyebrow15.png in Resources */,
 				A40442051AF1CE8000E87C27 /* pet5-yulan.png in Resources */,
-				A42C68BD1B0C619400B2EDDD /* box-normal.png in Resources */,
 				A4BF63841AEDC79F009B38BE /* glass4.png in Resources */,
 				A4BF63551AEDC726009B38BE /* facemark0.png in Resources */,
 				A42EEE901B0AD6530027F23B /* shop normal.png in Resources */,
@@ -3836,6 +3850,7 @@
 				A4BF63131AEDC6A6009B38BE /* eye29.png in Resources */,
 				A47D6EBF1AC3E1ED00AC1768 /* LaunchScreen.xib in Resources */,
 				A47D6EBC1AC3E1ED00AC1768 /* Images.xcassets in Resources */,
+				A409C7EF1B0EC0BC00AD2E99 /* box-open.png in Resources */,
 				A42C68A21B0C5F3600B2EDDD /* girlface-normal.png in Resources */,
 				A4BF635D1AEDC726009B38BE /* facemark8.png in Resources */,
 				A40441DE1AF1CE5500E87C27 /* hat18-yulan.png in Resources */,
@@ -3892,6 +3907,7 @@
 				A4BF624D1AEDC64D009B38BE /* nose2.png in Resources */,
 				A40443901AF1D0FD00E87C27 /* mouth9-yulan.png in Resources */,
 				A42C68971B0C513D00B2EDDD /* 鼻子1.png in Resources */,
+				A409C7F11B0EC0BC00AD2E99 /* female.png in Resources */,
 				A4BF61E91AEDC55A009B38BE /* gesture23.png in Resources */,
 				A4BF630F1AEDC6A6009B38BE /* eye25.png in Resources */,
 				A4BF635A1AEDC726009B38BE /* facemark5.png in Resources */,

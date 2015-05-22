@@ -27,6 +27,7 @@
 @property (weak, nonatomic) IBOutlet UIImageView *witch;
 @property (strong,nonatomic) NSDictionary *GameData;
 @property (weak, nonatomic) IBOutlet UIImageView *freeTag;
+@property (weak, nonatomic) IBOutlet UIImageView *sexImage;
 
 
 - (IBAction)buyDaimond:(id)sender;

@@ -191,17 +191,45 @@ bool shouldFinish;
 -(void)showCard
 {
     [self.rewardView setHidden:NO];
-    NSMutableArray *catalogArray = [[NSMutableArray alloc] init];
-    NSMutableArray *catalogKeysArray = [[NSMutableArray alloc] init];
-
-    NSArray *keyArray = @[@"宠物",@"背景",@"帽子",@"脸饰",@"心情",@"鼻子",@"眼镜",@"手势",@"嘴巴",@"眼眉",@"眼睛",@"衣服",@"衣服女",@"胡子",@"头发",@"头发女",@"脸型"];
-
-
-    
-    [self.productCard setImage:[UIImage imageNamed:@"card"]];
+       [self.productCard setImage:[UIImage imageNamed:@"card"]];
     NSLog(@"frame:%@",self.productName);
     
-    NSDictionary *luckyProductsDic = [self.GameData objectForKey:@"luckyProducts"];
+    int random =  arc4random() % 100;
+    NSLog(@"random number :%d",random);
+    
+    if (random<20) {
+        [self getProductFrom:@"productInfo"];
+    }else if(random<60)
+    {
+        [self getProductFrom:@"luckyProducts"];
+
+    }else
+    {
+        [self getDiamonds];
+
+    }
+
+    
+    
+    
+    [self.productBought setImage:[UIImage imageNamed:self.productNow.productName]];
+    [self.productName setText:self.productNow.productTitle];
+    
+
+
+    
+}
+
+
+-(void)getProductFrom:(NSString *)productFrom
+{
+    NSMutableArray *catalogArray = [[NSMutableArray alloc] init];
+    NSMutableArray *catalogKeysArray = [[NSMutableArray alloc] init];
+    
+    NSArray *keyArray = @[@"宠物",@"背景",@"帽子",@"脸饰",@"心情",@"鼻子",@"眼镜",@"手势",@"嘴巴",@"眼眉",@"眼睛",@"衣服",@"胡子",@"头发",@"脸型"];
+    
+    
+    NSDictionary *luckyProductsDic = [self.GameData objectForKey:productFrom];
     
     for(int i = 0;i<keyArray.count;i++)
     {
@@ -222,8 +250,8 @@ bool shouldFinish;
     
     NSString *elementImageName = [randomProduct objectForKey:@"name"];
     int elementPrice =[[randomProduct objectForKey:@"price"] intValue];
-//    int elementStars =[[randomProduct objectForKey:@"star"] intValue];
-//    int elementColors =[[randomProduct objectForKey:@"colorNum"] intValue];
+    //    int elementStars =[[randomProduct objectForKey:@"star"] intValue];
+    //    int elementColors =[[randomProduct objectForKey:@"colorNum"] intValue];
     int elementSex =[[randomProduct objectForKey:@"sex"] intValue];
     NSString *elementTitle = [randomProduct objectForKey:@"title"];
     NSString *existsAll = [randomProduct objectForKey:@"existsAll"];
@@ -237,17 +265,52 @@ bool shouldFinish;
     self.productNow.productTitle = elementTitle;
     self.productNow.productNumber = selectedElement;
     
-    
-    [self.productBought setImage:[UIImage imageNamed:self.productNow.productName]];
-    [self.productName setText:self.productNow.productTitle];
-    
+
     [self writeToPurchased];
-    [self deleteItemFromPlist:@"GameData" withCatelog:self.productNow.productCategory andElementNum:self.productNow.productNumber];
+    if ([productFrom isEqualToString:@"productInfo"]) {
+        
+        [self deleteItemFromPlist:@"GameData" withCatelog:self.productNow.productCategory andElementNum:self.productNow.productNumber];
+    }else
+    {
+        BOOL hasThisProduct = NO;
+        NSArray *luckyDoneArrayOld = [[NSUserDefaults standardUserDefaults] objectForKey:@"luckyDone"];
+        NSMutableArray *luckyDoneArray = [NSMutableArray arrayWithArray:luckyDoneArrayOld];
+        for (NSString *oneProduct in luckyDoneArray) {
+            if ([oneProduct isEqualToString:self.productNow.productName]) {
+                hasThisProduct =YES;
+                break;
+            }
+        }
+        if (!hasThisProduct) {
+            [luckyDoneArray addObject:self.productNow.productName];
+        }
+        
+        [[NSUserDefaults standardUserDefaults] setObject:luckyDoneArray forKey:@"luckyDone"];
+    }
+
     self.GameData = [self readDataFromPlist:@"GameData"];
     
 
-
+    NSString *sexIcon = @"common";
+    if (self.productNow.sex == 1) {
+        sexIcon = @"male";
+    }else if (self.productNow.sex == 1000)
+    {
+        sexIcon = @"female";
+    }
+    [self.sexImage setImage:[UIImage imageNamed:@"sexIcon"]];
     
+
+
+}
+
+-(void)getDiamonds
+{
+    [self costDiamond:-10];
+    self.productNow.productName = @"1";
+    self.productNow.productTitle = @"111";
+
+
 }
 
 -(void)costDiamond:(int)price
@@ -268,15 +331,20 @@ bool shouldFinish;
     if (self.productNow.sex == 1000) {
         if ([self.productNow.productCategory isEqualToString:@"衣服"] ||[self.productNow.productCategory isEqualToString:@"头发"] ) {
             self.productNow.productCategory = [self.productNow.productCategory stringByAppendingString:@"女"];
+
         }
+        [self doWrite];
+
     }else if ((self.productNow.sex == 0))
     {
         [self doWrite];
         if ([self.productNow.productCategory isEqualToString:@"衣服"] ||[self.productNow.productCategory isEqualToString:@"头发"] ) {
             self.productNow.productCategory = [self.productNow.productCategory stringByAppendingString:@"女"];
+            
+            [self doWrite];
+
         }
     }
-    [self doWrite];
     
 }
 
@@ -328,35 +396,36 @@ bool shouldFinish;
         if ([manager isWritableFileAtPath:plistPath])
         {
             NSMutableDictionary* infoDict = [NSMutableDictionary dictionaryWithContentsOfFile:plistPath];
-            NSMutableDictionary *allProducts = [infoDict objectForKey:@"luckyProducts"];
-            NSMutableDictionary *productTobeRemoved = [[allProducts objectForKey:catelog] objectAtIndex:elementNum];
-            NSString *removeName = [productTobeRemoved objectForKey:@"name"];
+            NSMutableDictionary *allProducts = [infoDict objectForKey:@"productInfo"];
+//            NSMutableDictionary *productTobeRemoved = [[allProducts objectForKey:catelog] objectAtIndex:elementNum];
+//            NSString *removeName = [productTobeRemoved objectForKey:@"name"];
             
-//            [[allProducts objectForKey:catelog] removeObjectAtIndex:elementNum];
-//            [infoDict setObject:allProducts forKey:@"luckyProducts"];
+            [[allProducts objectForKey:catelog] removeObjectAtIndex:elementNum];
+            [infoDict setObject:allProducts forKey:@"productInfo"];
             
-            if ([[productTobeRemoved objectForKey:@"existsAll"] isEqualToString:@"yes"]) {
-                
-                NSMutableDictionary *allStoreProducts = [infoDict objectForKey:@"productInfo"];
-                NSMutableArray *StoreArray = [allStoreProducts objectForKey:catelog];
-                NSMutableArray *StoreArrayTemp = [[allStoreProducts objectForKey:catelog] copy];
-                
-                
-                [StoreArrayTemp enumerateObjectsUsingBlock:^(id obj, NSUInteger idx, BOOL *stop) {
-                    if ([[obj objectForKey:@"name"] isEqualToString:removeName])
-                    {
-                        [StoreArray removeObjectAtIndex:idx];
-                    }
-                }];
-                
-                [infoDict setObject:allStoreProducts forKey:@"productInfo"];
-                
-                [infoDict writeToFile:plistPath atomically:NO];
+//            if ([[productTobeRemoved objectForKey:@"existsAll"] isEqualToString:@"yes"]) {
+//                
+//                NSMutableDictionary *allStoreProducts = [infoDict objectForKey:@"productInfo"];
+//                NSMutableArray *StoreArray = [allStoreProducts objectForKey:catelog];
+//                NSMutableArray *StoreArrayTemp = [[allStoreProducts objectForKey:catelog] copy];
+//                
+//                
+//                [StoreArrayTemp enumerateObjectsUsingBlock:^(id obj, NSUInteger idx, BOOL *stop) {
+//                    if ([[obj objectForKey:@"name"] isEqualToString:removeName])
+//                    {
+//                        [StoreArray removeObjectAtIndex:idx];
+//                    }
+//                }];
+//                
+//                [infoDict setObject:allStoreProducts forKey:@"productInfo"];
+//                
+//                [infoDict writeToFile:plistPath atomically:NO];
+//
+//            }
+//            
+            
+            [infoDict writeToFile:plistPath atomically:NO];
 
-            }
-            
-            
-            
             [manager setAttributes:[NSDictionary dictionaryWithObject:[NSDate date] forKey:NSFileModificationDate] ofItemAtPath:plistPath error:nil];
         }
     }

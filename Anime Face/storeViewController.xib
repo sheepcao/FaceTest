@@ -120,7 +120,9 @@
                         <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="diamond.png" translatesAutoresizingMaskIntoConstraints="NO" id="LEX-ud-7mU">
                             <rect key="frame" x="0.0" y="0.0" width="240" height="128"/>
                             <constraints>
-                                <constraint firstAttribute="width" secondItem="LEX-ud-7mU" secondAttribute="height" multiplier="7:5" id="FLX-ja-xCn"/>
+                                <constraint firstAttribute="width" secondItem="LEX-ud-7mU" secondAttribute="height" multiplier="7:5" id="FLX-ja-xCn">
+                                    <variation key="heightClass=regular-widthClass=compact" constant="0.0"/>
+                                </constraint>
                             </constraints>
                             <variation key="default">
                                 <mask key="constraints">
@@ -128,7 +130,7 @@
                                 </mask>
                             </variation>
                             <variation key="heightClass=regular-widthClass=compact" misplaced="YES">
-                                <rect key="frame" x="1" y="7" width="27" height="18"/>
+                                <rect key="frame" x="1" y="5" width="30" height="22"/>
                                 <mask key="constraints">
                                     <include reference="FLX-ja-xCn"/>
                                 </mask>
@@ -203,14 +205,16 @@
                         <constraint firstAttribute="centerY" secondItem="wpJ-Rt-1hK" secondAttribute="centerY" constant="-0.5" id="gSK-TQ-L7u">
                             <variation key="heightClass=regular-widthClass=compact" constant="0.0"/>
                         </constraint>
-                        <constraint firstAttribute="width" secondItem="Haq-SI-aaJ" secondAttribute="height" multiplier="40:9" id="jMy-UO-8es"/>
+                        <constraint firstAttribute="width" secondItem="Haq-SI-aaJ" secondAttribute="height" multiplier="462:87" id="jMy-UO-8es"/>
                         <constraint firstItem="wpJ-Rt-1hK" firstAttribute="top" secondItem="Haq-SI-aaJ" secondAttribute="top" constant="3" id="jQj-B8-5iO">
                             <variation key="heightClass=regular-widthClass=compact" constant="0.0"/>
                         </constraint>
                         <constraint firstAttribute="trailing" secondItem="wpJ-Rt-1hK" secondAttribute="trailing" constant="46" id="kS1-TO-SwM">
                             <variation key="heightClass=regular-widthClass=compact" constant="0.0"/>
                         </constraint>
-                        <constraint firstAttribute="width" secondItem="LEX-ud-7mU" secondAttribute="height" multiplier="15:2" id="nE0-0I-2SQ"/>
+                        <constraint firstAttribute="width" secondItem="LEX-ud-7mU" secondAttribute="height" multiplier="15:2" id="nE0-0I-2SQ">
+                            <variation key="heightClass=regular-widthClass=compact" constant="3"/>
+                        </constraint>
                         <constraint firstItem="LEX-ud-7mU" firstAttribute="leading" secondItem="Haq-SI-aaJ" secondAttribute="leading" constant="34" id="uY2-7F-bFc">
                             <variation key="heightClass=regular-widthClass=compact" constant="1"/>
                         </constraint>

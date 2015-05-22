@@ -634,31 +634,31 @@ bool showingDefault;
         {
             NSMutableDictionary* infoDict = [NSMutableDictionary dictionaryWithContentsOfFile:plistPath];
             NSMutableDictionary *allProducts = [infoDict objectForKey:@"productInfo"];
-            NSMutableDictionary *productTobeRemoved = [[allProducts objectForKey:catelog] objectAtIndex:elementNum];
-            NSString *removeName = [productTobeRemoved objectForKey:@"name"];
+//            NSMutableDictionary *productTobeRemoved = [[allProducts objectForKey:catelog] objectAtIndex:elementNum];
+//            NSString *removeName = [productTobeRemoved objectForKey:@"name"];
             
             [[allProducts objectForKey:catelog] removeObjectAtIndex:elementNum];
             [infoDict setObject:allProducts forKey:@"productInfo"];
-            
-            if ([[productTobeRemoved objectForKey:@"existsAll"] isEqualToString:@"yes"]) {
-                
-                NSMutableDictionary *allLuckyProducts = [infoDict objectForKey:@"luckyProducts"];
-                NSMutableArray *luckyArray = [allLuckyProducts objectForKey:catelog];
-                NSMutableArray *luckyArrayTemp = [[allLuckyProducts objectForKey:catelog] copy];
-                
-                
-                [luckyArrayTemp enumerateObjectsUsingBlock:^(id obj, NSUInteger idx, BOOL *stop) {
-                    if ([[obj objectForKey:@"name"] isEqualToString:removeName])
-                    {
-                        [luckyArray removeObjectAtIndex:idx];
-                    }
-                }];
-                
-                [infoDict setObject:allLuckyProducts forKey:@"luckyProducts"];
-                
-                
-            }
-           
+//            
+//            if ([[productTobeRemoved objectForKey:@"existsAll"] isEqualToString:@"yes"]) {
+//                
+//                NSMutableDictionary *allLuckyProducts = [infoDict objectForKey:@"luckyProducts"];
+//                NSMutableArray *luckyArray = [allLuckyProducts objectForKey:catelog];
+//                NSMutableArray *luckyArrayTemp = [[allLuckyProducts objectForKey:catelog] copy];
+//                
+//                
+//                [luckyArrayTemp enumerateObjectsUsingBlock:^(id obj, NSUInteger idx, BOOL *stop) {
+//                    if ([[obj objectForKey:@"name"] isEqualToString:removeName])
+//                    {
+//                        [luckyArray removeObjectAtIndex:idx];
+//                    }
+//                }];
+//                
+//                [infoDict setObject:allLuckyProducts forKey:@"luckyProducts"];
+//                
+//                
+//            }
+//           
             [infoDict writeToFile:plistPath atomically:NO];
             
             
