@@ -460,7 +460,7 @@
 			<dict>
 				<key>name</key>
 				<string>hair1-2</string>
-				<key>existsAll</key>
+				<key>isSold</key>
 				<string>yes</string>
 				<key>title</key>
 				<string>XXX</string>
@@ -479,7 +479,7 @@
 			<dict>
 				<key>name</key>
 				<string>pet0</string>
-				<key>existsAll</key>
+				<key>isSold</key>
 				<string>yes</string>
 				<key>title</key>
 				<string>XX2</string>
@@ -497,7 +497,7 @@
 				<string>XX1</string>
 				<key>name</key>
 				<string>pet1</string>
-				<key>existsAll</key>
+				<key>isSold</key>
 				<string>yes</string>
 				<key>price</key>
 				<string>100</string>
@@ -516,8 +516,8 @@
 		<array>
 			<dict>
 				<key>name</key>
-				<string>hairG2-7</string>
-				<key>existsAll</key>
+				<string>hairG2-7-yulan</string>
+				<key>isSold</key>
 				<string>no</string>
 				<key>title</key>
 				<string>女孩头发</string>
@@ -536,7 +536,7 @@
 			<dict>
 				<key>name</key>
 				<string>cloth-g-10</string>
-				<key>existsAll</key>
+				<key>isSold</key>
 				<string>no</string>
 				<key>title</key>
 				<string>女款衣服</string>
@@ -552,7 +552,7 @@
 			<dict>
 				<key>title</key>
 				<string>通用衣服</string>
-				<key>existsAll</key>
+				<key>isSold</key>
 				<string>yes</string>
 				<key>name</key>
 				<string>cloth-tong1</string>

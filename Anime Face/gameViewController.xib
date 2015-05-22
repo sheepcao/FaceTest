@@ -90,6 +90,9 @@
                                             <exclude reference="JhZ-ff-YRt"/>
                                         </mask>
                                     </variation>
+                                    <variation key="heightClass=regular-widthClass=compact" misplaced="YES">
+                                        <rect key="frame" x="30" y="60" width="270" height="42"/>
+                                    </variation>
                                     <connections>
                                         <action selector="share:" destination="-1" eventType="touchUpInside" id="U55-iY-g0Z"/>
                                     </connections>
@@ -105,6 +108,9 @@
                                         <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                         <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
                                     </state>
+                                    <variation key="heightClass=regular-widthClass=compact" misplaced="YES">
+                                        <rect key="frame" x="30" y="159" width="270" height="42"/>
+                                    </variation>
                                     <connections>
                                         <action selector="cancelPhoto:" destination="-1" eventType="touchUpInside" id="MtM-qu-AW2"/>
                                     </connections>
@@ -431,7 +437,8 @@
                                     <exclude reference="s9Q-Qh-5R1"/>
                                 </mask>
                             </variation>
-                            <variation key="heightClass=regular-widthClass=compact">
+                            <variation key="heightClass=regular-widthClass=compact" misplaced="YES">
+                                <rect key="frame" x="36" y="71" width="298" height="299"/>
                                 <mask key="constraints">
                                     <include reference="s9Q-Qh-5R1"/>
                                 </mask>
@@ -481,7 +488,8 @@
                                     <exclude reference="MXz-UV-LpL"/>
                                 </mask>
                             </variation>
-                            <variation key="heightClass=regular-widthClass=compact">
+                            <variation key="heightClass=regular-widthClass=compact" misplaced="YES">
+                                <rect key="frame" x="112" y="84" width="146" height="145"/>
                                 <mask key="constraints">
                                     <include reference="MXz-UV-LpL"/>
                                 </mask>
@@ -529,7 +537,8 @@
                                     <exclude reference="5dO-U6-8E2"/>
                                 </mask>
                             </variation>
-                            <variation key="heightClass=regular-widthClass=compact">
+                            <variation key="heightClass=regular-widthClass=compact" misplaced="YES">
+                                <rect key="frame" x="164" y="191" width="42" height="43"/>
                                 <mask key="constraints">
                                     <include reference="5dO-U6-8E2"/>
                                 </mask>
@@ -563,7 +572,8 @@
                                     <exclude reference="IDT-Ts-5qt"/>
                                 </mask>
                             </variation>
-                            <variation key="heightClass=regular-widthClass=compact">
+                            <variation key="heightClass=regular-widthClass=compact" misplaced="YES">
+                                <rect key="frame" x="70" y="68" width="230" height="231"/>
                                 <mask key="constraints">
                                     <exclude reference="9iY-EP-eeM"/>
                                     <include reference="IDT-Ts-5qt"/>
@@ -615,7 +625,8 @@
                                     <exclude reference="sh3-lp-kz2"/>
                                 </mask>
                             </variation>
-                            <variation key="heightClass=regular-widthClass=compact">
+                            <variation key="heightClass=regular-widthClass=compact" misplaced="YES">
+                                <rect key="frame" x="98" y="197" width="174" height="173"/>
                                 <mask key="constraints">
                                     <include reference="sh3-lp-kz2"/>
                                 </mask>

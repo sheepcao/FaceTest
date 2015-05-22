@@ -40,12 +40,11 @@ bool shouldFinish;
     
     if ([[[NSUserDefaults standardUserDefaults] objectForKey:@"luckyFinished"] isEqualToString:@"yes"]) {
         
-        [self.freeTag setHidden:YES];
-
+        [self.freeTag setImage:[UIImage imageNamed:@"20diamond"]];
         
     }else
     {
-        [self.freeTag setHidden:NO];
+        [self.freeTag setImage:[UIImage imageNamed:@"free"]];
     }
     
 
@@ -54,19 +53,7 @@ bool shouldFinish;
         [arrayGifOpenBox addObject:[UIImage imageWithContentsOfFile:[[NSBundle mainBundle] pathForResource:[NSString stringWithFormat:@"tanchu%d",i] ofType:@"png"]]];
     }
     
-//    
-//    if (arrayGif.count>0) {
-//        //设置动画数组
-//        [self.productView setAnimationImages:arrayGif];
-//        
-//        //设置动画播放次数
-//        [self.productView setAnimationRepeatCount:0];
-//        //设置动画播放时间
-//        [self.productView setAnimationDuration:1.85];
-//        //开始动画
-//        [self.productView startAnimating];
-//        
-//    }
+
     
 
     //witch animation
@@ -162,8 +149,14 @@ bool shouldFinish;
     
     if ([[[NSUserDefaults standardUserDefaults] objectForKey:@"luckyFinished"] isEqualToString:@"no"]) {
         [[NSUserDefaults standardUserDefaults] setObject:@"yes" forKey:@"luckyFinished"];
-        [self.freeTag setHidden:YES];
+        
+        [self.freeTag setImage:[UIImage imageNamed:@"20diamond"]];
+    
+    }else
+    {
+        [self costDiamond:20];
     }
+    
 
 
     [CommonUtility tapSound:@"boxOpen" withType:@"mp3"];
@@ -254,14 +247,14 @@ bool shouldFinish;
     //    int elementColors =[[randomProduct objectForKey:@"colorNum"] intValue];
     int elementSex =[[randomProduct objectForKey:@"sex"] intValue];
     NSString *elementTitle = [randomProduct objectForKey:@"title"];
-    NSString *existsAll = [randomProduct objectForKey:@"existsAll"];
+    NSString *isSold = [randomProduct objectForKey:@"isSold"];
     
     self.productNow = [[product alloc] init];
     self.productNow.price = elementPrice;
     self.productNow.sex = elementSex;
     self.productNow.productName = elementImageName;
     self.productNow.productCategory = catalogKeysArray[selected];
-    self.productNow.existsAll = existsAll;
+    self.productNow.isSold = isSold;
     self.productNow.productTitle = elementTitle;
     self.productNow.productNumber = selectedElement;
     
@@ -269,7 +262,7 @@ bool shouldFinish;
     [self writeToPurchased];
     if ([productFrom isEqualToString:@"productInfo"]) {
         
-        [self deleteItemFromPlist:@"GameData" withCatelog:self.productNow.productCategory andElementNum:self.productNow.productNumber];
+        [self modifyItemFromPlist:@"GameData" withCatelog:self.productNow.productCategory andElementNum:self.productNow.productNumber];
     }else
     {
         BOOL hasThisProduct = NO;
@@ -298,7 +291,7 @@ bool shouldFinish;
     {
         sexIcon = @"female";
     }
-    [self.sexImage setImage:[UIImage imageNamed:@"sexIcon"]];
+    [self.sexImage setImage:[UIImage imageNamed:sexIcon]];
     
 
 
@@ -309,6 +302,8 @@ bool shouldFinish;
     [self costDiamond:-10];
     self.productNow.productName = @"1";
     self.productNow.productTitle = @"111";
+    [self.sexImage setImage:nil];
+
 
 
 }
@@ -386,7 +381,7 @@ bool shouldFinish;
     
 }
 
--(void)deleteItemFromPlist:(NSString *)plistname withCatelog:(NSString *)catelog andElementNum:(int)elementNum
+-(void)modifyItemFromPlist:(NSString *)plistname withCatelog:(NSString *)catelog andElementNum:(int)elementNum
 {
     NSString *documentsDirectory = [NSSearchPathForDirectoriesInDomains(NSDocumentDirectory, NSUserDomainMask, YES) objectAtIndex:0];
     NSString *plistPath = [documentsDirectory stringByAppendingPathComponent:[ NSString stringWithFormat:@"%@.plist",plistname ]];
@@ -397,10 +392,11 @@ bool shouldFinish;
         {
             NSMutableDictionary* infoDict = [NSMutableDictionary dictionaryWithContentsOfFile:plistPath];
             NSMutableDictionary *allProducts = [infoDict objectForKey:@"productInfo"];
-//            NSMutableDictionary *productTobeRemoved = [[allProducts objectForKey:catelog] objectAtIndex:elementNum];
+            NSMutableDictionary *productTobeChanged= [[allProducts objectForKey:catelog] objectAtIndex:elementNum];
 //            NSString *removeName = [productTobeRemoved objectForKey:@"name"];
+            [productTobeChanged setObject:@"yes" forKey:@"isSold"];
             
-            [[allProducts objectForKey:catelog] removeObjectAtIndex:elementNum];
+//            [[allProducts objectForKey:catelog] removeObjectAtIndex:elementNum];
             [infoDict setObject:allProducts forKey:@"productInfo"];
             
 //            if ([[productTobeRemoved objectForKey:@"existsAll"] isEqualToString:@"yes"]) {

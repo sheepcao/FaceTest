@@ -543,7 +543,7 @@
                                         </mask>
                                     </variation>
                                 </label>
-                                <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="WRu-b9-6aT">
+                                <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="male.png" translatesAutoresizingMaskIntoConstraints="NO" id="WRu-b9-6aT">
                                     <rect key="frame" x="0.0" y="0.0" width="240" height="128"/>
                                     <constraints>
                                         <constraint firstAttribute="width" secondItem="WRu-b9-6aT" secondAttribute="height" multiplier="1:1" id="80G-nZ-mYr"/>
@@ -565,17 +565,19 @@
                                     <variation key="heightClass=regular-widthClass=compact" constant="0.0"/>
                                 </constraint>
                                 <constraint firstItem="WRu-b9-6aT" firstAttribute="top" secondItem="D0D-9q-rwy" secondAttribute="top" constant="11" id="4Fz-Gp-n21">
-                                    <variation key="heightClass=regular-widthClass=compact" constant="3"/>
+                                    <variation key="heightClass=regular-widthClass=compact" constant="10"/>
                                 </constraint>
                                 <constraint firstAttribute="bottom" secondItem="WRu-b9-6aT" secondAttribute="bottom" constant="10" id="IDB-O5-R7N">
-                                    <variation key="heightClass=regular-widthClass=compact" constant="3"/>
+                                    <variation key="heightClass=regular-widthClass=compact" constant="10"/>
                                 </constraint>
                                 <constraint firstItem="WRu-b9-6aT" firstAttribute="leading" secondItem="D0D-9q-rwy" secondAttribute="leading" constant="46" id="W2W-pd-Ess"/>
                                 <constraint firstItem="Y7L-Ui-sPL" firstAttribute="top" secondItem="D0D-9q-rwy" secondAttribute="top" id="cef-Nr-4Vd"/>
                                 <constraint firstAttribute="bottom" secondItem="Y7L-Ui-sPL" secondAttribute="bottom" id="esv-TJ-5fH"/>
                                 <constraint firstAttribute="trailing" secondItem="Y7L-Ui-sPL" secondAttribute="trailing" id="oU1-3N-614"/>
                                 <constraint firstAttribute="width" secondItem="D0D-9q-rwy" secondAttribute="height" multiplier="190:43" id="tdF-9D-xTQ"/>
-                                <constraint firstItem="Y7L-Ui-sPL" firstAttribute="leading" secondItem="WRu-b9-6aT" secondAttribute="trailing" id="vUw-z1-laP"/>
+                                <constraint firstItem="Y7L-Ui-sPL" firstAttribute="leading" secondItem="WRu-b9-6aT" secondAttribute="trailing" id="vUw-z1-laP">
+                                    <variation key="heightClass=regular-widthClass=compact" constant="4"/>
+                                </constraint>
                             </constraints>
                             <variation key="default">
                                 <mask key="subviews">
@@ -584,14 +586,14 @@
                                 </mask>
                                 <mask key="constraints">
                                     <exclude reference="tdF-9D-xTQ"/>
-                                    <exclude reference="3hb-8v-Gsp"/>
-                                    <exclude reference="4Fz-Gp-n21"/>
-                                    <exclude reference="IDB-O5-R7N"/>
-                                    <exclude reference="W2W-pd-Ess"/>
                                     <exclude reference="cef-Nr-4Vd"/>
                                     <exclude reference="esv-TJ-5fH"/>
                                     <exclude reference="oU1-3N-614"/>
                                     <exclude reference="vUw-z1-laP"/>
+                                    <exclude reference="3hb-8v-Gsp"/>
+                                    <exclude reference="4Fz-Gp-n21"/>
+                                    <exclude reference="IDB-O5-R7N"/>
+                                    <exclude reference="W2W-pd-Ess"/>
                                 </mask>
                             </variation>
                             <variation key="heightClass=regular-widthClass=compact">
@@ -601,14 +603,14 @@
                                 </mask>
                                 <mask key="constraints">
                                     <include reference="tdF-9D-xTQ"/>
-                                    <include reference="3hb-8v-Gsp"/>
-                                    <include reference="4Fz-Gp-n21"/>
-                                    <include reference="IDB-O5-R7N"/>
-                                    <exclude reference="W2W-pd-Ess"/>
                                     <include reference="cef-Nr-4Vd"/>
                                     <include reference="esv-TJ-5fH"/>
                                     <include reference="oU1-3N-614"/>
                                     <include reference="vUw-z1-laP"/>
+                                    <include reference="3hb-8v-Gsp"/>
+                                    <include reference="4Fz-Gp-n21"/>
+                                    <include reference="IDB-O5-R7N"/>
+                                    <exclude reference="W2W-pd-Ess"/>
                                 </mask>
                             </variation>
                         </view>
@@ -802,6 +804,7 @@
         <image name="diamond.png" width="70" height="50"/>
         <image name="free.png" width="116" height="151"/>
         <image name="little witch.png" width="645" height="944"/>
+        <image name="male.png" width="49" height="49"/>
         <image name="message 2.png" width="251" height="37"/>
         <image name="message board.png" width="530" height="322"/>
         <image name="message.png" width="429" height="162"/>

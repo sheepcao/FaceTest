@@ -41,6 +41,9 @@
 @property (strong, nonatomic) IBOutlet UIView *loadingView;
 
 @property (strong,nonatomic) NSDictionary *GameData;
+@property (weak, nonatomic) IBOutlet UILabel *productName;
+@property (weak, nonatomic) IBOutlet UIImageView *sexImage;
+@property (weak, nonatomic) IBOutlet UIImageView *hotImage;
 
 
 @property (strong, nonatomic) IBOutlet NSLayoutConstraint *buttonDistanceV3;

@@ -48,6 +48,10 @@ bool showingDefault;
 
     }
     
+    if (IS_IPHONE_6P) {
+        self.productName.font = [UIFont boldSystemFontOfSize:18.5];
+    }
+    
     
 }
 
@@ -111,17 +115,17 @@ bool showingDefault;
         
     }
 //    
-    if(IS_IPHONE_4_OR_LESS)
-    {
-
-        
-        [self.buttonDistanceV1 setConstant:3];
-        [self.buttonDistanceV2 setConstant:3];
-        [self.buttonDistanceV3 setConstant:3];
-        
-        [self.view setNeedsUpdateConstraints];
-        [self.view layoutIfNeeded];
-    }
+//    if(IS_IPHONE_4_OR_LESS)
+//    {
+//
+//        
+//        [self.buttonDistanceV1 setConstant:3];
+//        [self.buttonDistanceV2 setConstant:3];
+//        [self.buttonDistanceV3 setConstant:3];
+//        
+//        [self.view setNeedsUpdateConstraints];
+//        [self.view layoutIfNeeded];
+//    }
     
     
 }
@@ -132,6 +136,20 @@ bool showingDefault;
 
     [self scrollToCatalog:sender.tag];
     [self.productListScorll setContentOffset:CGPointMake(SCREEN_WIDTH * sender.tag, 0)];
+    
+    for (UIView *onelist in [self.productListScorll subviews]) {
+        if ([onelist isKindOfClass:[UIScrollView class]]) {
+            for (UIView *btn in [onelist subviews]) {
+                if ([btn isKindOfClass:[UIButton class]]) {
+                    UIButton *button = (UIButton *)btn;
+                    if (button.isSelected) {
+                        [button setSelected:NO];
+                    }
+                }
+            }
+        }
+    }
+ 
     
     UIView *superView = [sender superview];
     for (UIView *subView in [superView subviews]) {
@@ -149,6 +167,8 @@ bool showingDefault;
 {
     UIButton * catalogBtn =(UIButton *)[self.catalogScroll viewWithTag:BtnTag];
     [self.catalogScroll setContentOffset:CGPointMake((catalogBtn.center.x - self.catalogScroll.center.x), 0) animated:YES];
+    
+    
 }
 
 #pragma mark setup Lists
@@ -197,7 +217,7 @@ bool showingDefault;
             int elementColors =[[listElements[j] objectForKey:@"colorNum"] intValue];
             int elementSex =[[listElements[j] objectForKey:@"sex"] intValue];
             NSString *elementTitle = [listElements[j] objectForKey:@"title"];
-            NSString *existsAll = [listElements[j] objectForKey:@"existsAll"];
+            NSString *isSold = [listElements[j] objectForKey:@"isSold"];
 
 
 
@@ -209,13 +229,13 @@ bool showingDefault;
             
             [element setImageEdgeInsets:UIEdgeInsetsMake(0, sidesOffside/2, 0, sidesOffside/2)];
             
-            [element setImage:[UIImage imageWithContentsOfFile:[[NSBundle mainBundle] pathForResource:elementImageName ofType:@"png"]] forState:UIControlStateNormal];
+            [element setImage:[UIImage imageWithContentsOfFile:[[NSBundle mainBundle] pathForResource:[NSString stringWithFormat:@"%@-yulan",elementImageName] ofType:@"png"]] forState:UIControlStateNormal];
             element.imageName = elementImageName;
             element.imageLevel =[NSNumber numberWithInt:i];
             element.price = elementPrice;
             element.sex = elementSex;
             element.titleName = elementTitle;
-            element.existsAll = existsAll;
+            element.isSold = isSold;
             element.producrNum = j;
             element.catelogName =[[self.GameData objectForKey:@"catalogStore"] objectAtIndex:i];
             
@@ -233,14 +253,14 @@ bool showingDefault;
             }
             
             [element addTarget:self action:@selector(elementTapped:) forControlEvents:UIControlEventTouchUpInside];
-            [element setBackgroundImage: [UIImage imageWithContentsOfFile:[[NSBundle mainBundle] pathForResource:@"fame1" ofType:@"png"]] forState:UIControlStateNormal];
-            [element setBackgroundImage:[UIImage imageWithContentsOfFile:[[NSBundle mainBundle] pathForResource:@"fame-choosed1" ofType:@"png"]] forState:UIControlStateSelected];
+            [element setBackgroundImage: [UIImage imageWithContentsOfFile:[[NSBundle mainBundle] pathForResource:@"frame" ofType:@"png"]] forState:UIControlStateNormal];
+            [element setBackgroundImage:[UIImage imageWithContentsOfFile:[[NSBundle mainBundle] pathForResource:@"frame selected" ofType:@"png"]] forState:UIControlStateSelected];
             
             
-            if (j == 0) {
-                
-                [element setSelected:YES];
-            }
+//            if (j == 0) {
+//                
+//                [element setSelected:YES];
+//            }
             
             NSLog(@"button:%@",element);
             [oneList addSubview:element];
@@ -285,18 +305,19 @@ bool showingDefault;
     self.productNow.productName = sender.imageName;
     self.productNow.productCategory = sender.catelogName;
     self.productNow.productNumber = sender.producrNum;
-    self.productNow.existsAll = sender.existsAll;
+    self.productNow.isSold = sender.isSold;
 
     
 
     if ([sender.imageLevel intValue]==0) {
         
-        if (!self.starView.isHidden) {
-            [self.starView setHidden:YES];
-        }
-        if (self.colorView.isHidden) {
-            [self.colorView setHidden:NO];
-        }
+//        if (!self.starView.isHidden) {
+//            [self.starView setHidden:YES];
+//        }
+        //not decide color ...
+//        if (self.colorView.isHidden) {
+//            [self.colorView setHidden:NO];
+//        }
         
         [self.faceImage setImage:[UIImage imageWithContentsOfFile:[[NSBundle mainBundle] pathForResource:@"face0" ofType:@"png"]]];
         
@@ -322,9 +343,9 @@ bool showingDefault;
         
     }else
     {
-        if (self.starView.isHidden) {
-            [self.starView setHidden:NO];
-        }
+//        if (self.starView.isHidden) {
+//            [self.starView setHidden:NO];
+//        }
         if (!self.colorView.isHidden) {
             [self.colorView setHidden:YES];
         }
@@ -334,6 +355,14 @@ bool showingDefault;
         
         NSString *frontImageName = sender.imageName;
         [self.productImage setImage:[UIImage imageWithContentsOfFile:[[NSBundle mainBundle] pathForResource:frontImageName ofType:@"png"]]];
+    }
+    
+    if (sender.stars>0) {
+        [self.hotImage setHidden:NO];
+    }else
+    {
+        [self.hotImage setHidden:YES];
+
     }
     
     

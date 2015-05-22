@@ -154,11 +154,11 @@
             ignoreCount = "0"
             continueAfterRunningActions = "No"
             filePath = "Anime Face/storeViewController.m"
-            timestampString = "452671893.833979"
+            timestampString = "453980536.79288"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "130"
-            endingLineNumber = "130"
+            startingLineNumber = "134"
+            endingLineNumber = "134"
             landmarkName = "-catalogTapped:"
             landmarkType = "5">
          </BreakpointContent>
@@ -170,11 +170,11 @@
             ignoreCount = "0"
             continueAfterRunningActions = "No"
             filePath = "Anime Face/storeViewController.m"
-            timestampString = "452671893.833979"
+            timestampString = "453980536.79288"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "84"
-            endingLineNumber = "84"
+            startingLineNumber = "88"
+            endingLineNumber = "88"
             landmarkName = "-setupCatalog"
             landmarkType = "5">
          </BreakpointContent>
@@ -186,11 +186,11 @@
             ignoreCount = "0"
             continueAfterRunningActions = "No"
             filePath = "Anime Face/storeViewController.m"
-            timestampString = "452671893.833979"
+            timestampString = "453980536.79288"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "138"
-            endingLineNumber = "138"
+            startingLineNumber = "156"
+            endingLineNumber = "156"
             landmarkName = "-catalogTapped:"
             landmarkType = "5">
          </BreakpointContent>
@@ -234,11 +234,11 @@
             ignoreCount = "0"
             continueAfterRunningActions = "No"
             filePath = "Anime Face/storeViewController.m"
-            timestampString = "452671893.833979"
+            timestampString = "453980536.79288"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "157"
-            endingLineNumber = "157"
+            startingLineNumber = "177"
+            endingLineNumber = "177"
             landmarkName = "-setupLists"
             landmarkType = "5">
          </BreakpointContent>
@@ -250,59 +250,11 @@
             ignoreCount = "0"
             continueAfterRunningActions = "No"
             filePath = "Anime Face/storeViewController.m"
-            timestampString = "452671893.833979"
+            timestampString = "453980536.79288"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "114"
-            endingLineNumber = "114"
-            landmarkName = "-setupCatalog"
-            landmarkType = "5">
-            <Locations>
-               <Location
-                  shouldBeEnabled = "Yes"
-                  ignoreCount = "0"
-                  continueAfterRunningActions = "No"
-                  symbolName = "-[storeViewController setupCatalog]"
-                  moduleName = "Anime Face"
-                  usesParentBreakpointCondition = "Yes"
-                  urlString = "file:///Users/ericcao/Documents/develop/iOSTest/Anime%20Face/FaceTest/Anime%20Face/storeViewController.m"
-                  timestampString = "453869785.145993"
-                  startingColumnNumber = "9223372036854775807"
-                  endingColumnNumber = "9223372036854775807"
-                  startingLineNumber = "114"
-                  endingLineNumber = "114"
-                  offsetFromSymbolStart = "1763">
-               </Location>
-               <Location
-                  shouldBeEnabled = "Yes"
-                  ignoreCount = "0"
-                  continueAfterRunningActions = "No"
-                  symbolName = "-[storeViewController setupCatalog]"
-                  moduleName = "Anime Face"
-                  usesParentBreakpointCondition = "Yes"
-                  urlString = "file:///Users/ericcao/Documents/develop/iOSTest/Anime%20Face/FaceTest/Anime%20Face/storeViewController.m"
-                  timestampString = "453869785.146107"
-                  startingColumnNumber = "9223372036854775807"
-                  endingColumnNumber = "9223372036854775807"
-                  startingLineNumber = "114"
-                  endingLineNumber = "114"
-                  offsetFromSymbolStart = "1780">
-               </Location>
-            </Locations>
-         </BreakpointContent>
-      </BreakpointProxy>
-      <BreakpointProxy
-         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
-         <BreakpointContent
-            shouldBeEnabled = "Yes"
-            ignoreCount = "0"
-            continueAfterRunningActions = "No"
-            filePath = "Anime Face/storeViewController.m"
-            timestampString = "453864581.716261"
-            startingColumnNumber = "9223372036854775807"
-            endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "268"
-            endingLineNumber = "268"
+            startingLineNumber = "288"
+            endingLineNumber = "288"
             landmarkName = "-elementTapped:"
             landmarkType = "5">
          </BreakpointContent>
@@ -314,11 +266,11 @@
             ignoreCount = "0"
             continueAfterRunningActions = "No"
             filePath = "Anime Face/storeViewController.m"
-            timestampString = "453864581.716261"
+            timestampString = "453980536.79288"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "291"
-            endingLineNumber = "291"
+            startingLineNumber = "311"
+            endingLineNumber = "311"
             landmarkName = "-elementTapped:"
             landmarkType = "5">
          </BreakpointContent>
@@ -330,11 +282,11 @@
             ignoreCount = "0"
             continueAfterRunningActions = "No"
             filePath = "Anime Face/storeViewController.m"
-            timestampString = "453864581.716261"
+            timestampString = "453980536.79288"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "354"
-            endingLineNumber = "354"
+            startingLineNumber = "382"
+            endingLineNumber = "382"
             landmarkName = "-drawColors:withImageName:"
             landmarkType = "5">
          </BreakpointContent>
@@ -346,11 +298,11 @@
             ignoreCount = "0"
             continueAfterRunningActions = "No"
             filePath = "Anime Face/storeViewController.m"
-            timestampString = "452671893.833979"
+            timestampString = "453980536.79288"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "164"
-            endingLineNumber = "164"
+            startingLineNumber = "184"
+            endingLineNumber = "184"
             landmarkName = "-setupLists"
             landmarkType = "5">
          </BreakpointContent>
@@ -362,11 +314,11 @@
             ignoreCount = "0"
             continueAfterRunningActions = "No"
             filePath = "Anime Face/storeViewController.m"
-            timestampString = "453864581.716261"
+            timestampString = "453980536.79288"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "627"
-            endingLineNumber = "627"
+            startingLineNumber = "655"
+            endingLineNumber = "655"
             landmarkName = "-deleteItemFromPlist:withCatelog:andElementNum:"
             landmarkType = "5">
          </BreakpointContent>
@@ -378,11 +330,11 @@
             ignoreCount = "0"
             continueAfterRunningActions = "No"
             filePath = "Anime Face/storeViewController.m"
-            timestampString = "453864581.716261"
+            timestampString = "453980536.79288"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "641"
-            endingLineNumber = "641"
+            startingLineNumber = "669"
+            endingLineNumber = "669"
             landmarkName = "-deleteItemFromPlist:withCatelog:andElementNum:"
             landmarkType = "5">
          </BreakpointContent>
@@ -394,11 +346,11 @@
             ignoreCount = "0"
             continueAfterRunningActions = "No"
             filePath = "Anime Face/storeViewController.m"
-            timestampString = "452671893.833979"
+            timestampString = "453980536.79288"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "76"
-            endingLineNumber = "76"
+            startingLineNumber = "80"
+            endingLineNumber = "80"
             landmarkName = "-setDefaultView:"
             landmarkType = "5">
          </BreakpointContent>
@@ -410,11 +362,11 @@
             ignoreCount = "0"
             continueAfterRunningActions = "No"
             filePath = "Anime Face/storeViewController.m"
-            timestampString = "453864581.716261"
+            timestampString = "453980536.79288"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "230"
-            endingLineNumber = "230"
+            startingLineNumber = "250"
+            endingLineNumber = "250"
             landmarkName = "-setupLists"
             landmarkType = "5">
          </BreakpointContent>
@@ -426,11 +378,11 @@
             ignoreCount = "0"
             continueAfterRunningActions = "No"
             filePath = "Anime Face/storeViewController.m"
-            timestampString = "453864581.716261"
+            timestampString = "453980536.79288"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "498"
-            endingLineNumber = "498"
+            startingLineNumber = "526"
+            endingLineNumber = "526"
             landmarkName = "-buyProduct:"
             landmarkType = "5">
          </BreakpointContent>
@@ -442,11 +394,11 @@
             ignoreCount = "0"
             continueAfterRunningActions = "No"
             filePath = "Anime Face/storeViewController.m"
-            timestampString = "453864581.716261"
+            timestampString = "453980536.79288"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "572"
-            endingLineNumber = "572"
+            startingLineNumber = "600"
+            endingLineNumber = "600"
             landmarkName = "-writeToPurchased"
             landmarkType = "5">
          </BreakpointContent>
@@ -954,11 +906,11 @@
             ignoreCount = "0"
             continueAfterRunningActions = "No"
             filePath = "Anime Face/storeViewController.m"
-            timestampString = "453864581.716261"
+            timestampString = "453980536.79288"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "508"
-            endingLineNumber = "508"
+            startingLineNumber = "536"
+            endingLineNumber = "536"
             landmarkName = "-buyProduct:"
             landmarkType = "5">
          </BreakpointContent>
@@ -970,11 +922,11 @@
             ignoreCount = "0"
             continueAfterRunningActions = "No"
             filePath = "Anime Face/storeViewController.m"
-            timestampString = "453864581.716261"
+            timestampString = "453980536.79288"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "252"
-            endingLineNumber = "252"
+            startingLineNumber = "272"
+            endingLineNumber = "272"
             landmarkName = "-setupLists"
             landmarkType = "5">
          </BreakpointContent>
@@ -991,14 +943,14 @@
             endingColumnNumber = "9223372036854775807"
             startingLineNumber = "257"
             endingLineNumber = "257"
-            landmarkName = "-showCard"
+            landmarkName = "-getProductFrom:"
             landmarkType = "5">
          </BreakpointContent>
       </BreakpointProxy>
       <BreakpointProxy
          BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
          <BreakpointContent
-            shouldBeEnabled = "Yes"
+            shouldBeEnabled = "No"
             ignoreCount = "0"
             continueAfterRunningActions = "No"
             filePath = "Anime Face/rewardViewController.m"
@@ -1007,7 +959,7 @@
             endingColumnNumber = "9223372036854775807"
             startingLineNumber = "187"
             endingLineNumber = "187"
-            landmarkName = "-start:"
+            landmarkName = "-showCard"
             landmarkType = "5">
          </BreakpointContent>
       </BreakpointProxy>
@@ -1024,6 +976,38 @@
             startingLineNumber = "193"
             endingLineNumber = "193"
             landmarkName = "-showCard"
+            landmarkType = "5">
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            shouldBeEnabled = "Yes"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "Anime Face/rewardViewController.m"
+            timestampString = "453971014.577148"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "286"
+            endingLineNumber = "286"
+            landmarkName = "-getProductFrom:"
+            landmarkType = "5">
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            shouldBeEnabled = "Yes"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "Anime Face/storeViewController.m"
+            timestampString = "453980536.79288"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "167"
+            endingLineNumber = "167"
+            landmarkName = "-scrollToCatalog:"
             landmarkType = "5">
          </BreakpointContent>
       </BreakpointProxy>

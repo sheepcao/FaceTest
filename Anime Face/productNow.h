@@ -16,7 +16,7 @@
 @property (nonatomic,strong) NSString *productName;
 @property (nonatomic, strong)NSString *productCategory;
 @property int productNumber;
-@property (nonatomic, strong)NSString *existsAll;
+@property (nonatomic, strong)NSString *isSold;
 @property (nonatomic, strong)NSString *productTitle;
 
 

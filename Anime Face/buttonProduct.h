@@ -18,7 +18,7 @@
 @property int sex;//1:boy,1000:girl
 @property int producrNum;
 @property (nonatomic, strong) NSString *catelogName;
-@property (nonatomic, strong) NSString *existsAll;
+@property (nonatomic, strong) NSString *isSold;
 
 
 @end

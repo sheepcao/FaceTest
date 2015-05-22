@@ -206,10 +206,10 @@ bool needSaveAlert;
     if (self.colorView) {
         [self hideColorViewAnimationFor:self.colorView];
     }
-    [self scrollToCatalog:sender.tag withDuration:0.35];
+    [self scrollToCatalog:sender.tag withDuration:0.05];
     
     [UIView beginAnimations:nil context:NULL];
-    [UIView setAnimationDuration:0.35];
+    [UIView setAnimationDuration:0.15];
     
 
     [self.ListsScroll setContentOffset:CGPointMake(SCREEN_WIDTH * page, 0)];
