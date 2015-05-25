@@ -34,26 +34,27 @@
                         <viewControllerLayoutGuide type="bottom" id="2fi-mo-0CV"/>
                     </layoutGuides>
                     <view key="view" contentMode="scaleToFill" id="kh9-bI-dsS">
-                        <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="480"/>
                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                         <subviews>
                             <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="homeBack.png" translatesAutoresizingMaskIntoConstraints="NO" id="mcr-nV-DyI">
-                                <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
+                                <rect key="frame" x="0.0" y="0.0" width="320" height="480"/>
                             </imageView>
                             <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="Ibk-Q5-rOZ">
-                                <rect key="frame" x="3" y="121" width="314" height="206"/>
+                                <rect key="frame" x="3" y="77" width="314" height="206"/>
                                 <constraints>
                                     <constraint firstAttribute="width" secondItem="Ibk-Q5-rOZ" secondAttribute="height" multiplier="55:36" id="cMU-VO-94o"/>
                                     <constraint firstAttribute="width" constant="314" id="uGI-UM-qb6"/>
                                 </constraints>
-                                <variation key="widthClass=compact">
+                                <variation key="widthClass=compact" misplaced="YES">
+                                    <rect key="frame" x="5" y="90" width="310" height="204"/>
                                     <mask key="constraints">
                                         <exclude reference="uGI-UM-qb6"/>
                                     </mask>
                                 </variation>
                             </imageView>
                             <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="boyface-normal.png" highlightedImage="boyface-press.png" translatesAutoresizingMaskIntoConstraints="NO" id="MuH-yZ-p8K">
-                                <rect key="frame" x="22" y="141" width="139" height="158"/>
+                                <rect key="frame" x="22" y="97" width="139" height="158"/>
                                 <constraints>
                                     <constraint firstAttribute="width" secondItem="MuH-yZ-p8K" secondAttribute="height" multiplier="385:439" id="GYt-56-ogr"/>
                                     <constraint firstAttribute="height" constant="158" id="lEe-vV-JIE"/>
@@ -65,7 +66,7 @@
                                 </variation>
                             </imageView>
                             <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="girlface-normal.png" highlightedImage="girlface-press.png" translatesAutoresizingMaskIntoConstraints="NO" id="5eh-IV-qq8">
-                                <rect key="frame" x="163" y="141" width="139" height="158"/>
+                                <rect key="frame" x="163" y="97" width="139" height="158"/>
                                 <constraints>
                                     <constraint firstAttribute="width" secondItem="5eh-IV-qq8" secondAttribute="height" multiplier="385:439" id="RRO-Xe-dpf"/>
                                     <constraint firstAttribute="height" constant="158" id="Tts-pB-sYQ"/>
@@ -77,7 +78,7 @@
                                 </variation>
                             </imageView>
                             <button opaque="NO" tag="1" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="BGK-sf-pmI">
-                                <rect key="frame" x="6" y="282" width="145" height="72"/>
+                                <rect key="frame" x="6" y="238" width="145" height="72"/>
                                 <constraints>
                                     <constraint firstAttribute="width" secondItem="BGK-sf-pmI" secondAttribute="height" multiplier="75:44" id="Frj-u9-5MQ"/>
                                     <constraint firstAttribute="width" secondItem="BGK-sf-pmI" secondAttribute="height" multiplier="498:247" id="GUZ-FW-1Tn"/>
@@ -124,7 +125,7 @@
                                 </connections>
                             </button>
                             <button opaque="NO" tag="1000" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="mjn-1j-VOm">
-                                <rect key="frame" x="169" y="282" width="145" height="72"/>
+                                <rect key="frame" x="169" y="238" width="145" height="72"/>
                                 <constraints>
                                     <constraint firstAttribute="width" secondItem="mjn-1j-VOm" secondAttribute="height" multiplier="371:217" id="19P-yr-NmY"/>
                                     <constraint firstAttribute="width" constant="150" id="1LP-64-4AJ">
@@ -162,7 +163,7 @@
                                 </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="uJY-g3-R0d" userLabel="store">
-                                <rect key="frame" x="100" y="391" width="120" height="47"/>
+                                <rect key="frame" x="100" y="342" width="120" height="47"/>
                                 <constraints>
                                     <constraint firstAttribute="width" constant="120" id="DJh-b6-PUm"/>
                                     <constraint firstAttribute="width" secondItem="uJY-g3-R0d" secondAttribute="height" multiplier="448:174" id="vuK-zf-aMh"/>
@@ -171,7 +172,8 @@
                                     <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
                                 </state>
                                 <state key="highlighted" image="shop press.png"/>
-                                <variation key="widthClass=compact">
+                                <variation key="widthClass=compact" misplaced="YES">
+                                    <rect key="frame" x="109" y="354" width="102" height="39"/>
                                     <mask key="constraints">
                                         <exclude reference="DJh-b6-PUm"/>
                                     </mask>
@@ -181,7 +183,7 @@
                                 </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="cBT-iZ-FSD">
-                                <rect key="frame" x="16" y="515" width="50" height="45"/>
+                                <rect key="frame" x="16" y="427" width="50" height="45"/>
                                 <constraints>
                                     <constraint firstAttribute="width" secondItem="cBT-iZ-FSD" secondAttribute="height" multiplier="191:174" id="mmz-ef-gFn"/>
                                     <constraint firstAttribute="width" constant="50" id="uvp-72-F1Z"/>
@@ -197,7 +199,7 @@
                                 </variation>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="dNS-Fr-ZbD" userLabel="luckyHouse">
-                                <rect key="frame" x="100" y="454" width="120" height="46"/>
+                                <rect key="frame" x="100" y="405" width="120" height="46"/>
                                 <constraints>
                                     <constraint firstAttribute="width" constant="120" id="GoG-gS-bIR"/>
                                     <constraint firstAttribute="width" secondItem="dNS-Fr-ZbD" secondAttribute="height" multiplier="448:174" id="HT5-7y-xGA"/>
@@ -216,14 +218,35 @@
                                 </connections>
                             </button>
                             <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="homeTitle.png" translatesAutoresizingMaskIntoConstraints="NO" id="IGh-og-X8A">
-                                <rect key="frame" x="38" y="32" width="245" height="84"/>
+                                <rect key="frame" x="38" y="-12" width="245" height="84"/>
                                 <constraints>
                                     <constraint firstAttribute="width" constant="245" id="0Xd-Pk-c1H"/>
                                     <constraint firstAttribute="width" secondItem="IGh-og-X8A" secondAttribute="height" multiplier="893:305" id="H91-NH-Aoq"/>
                                 </constraints>
-                                <variation key="widthClass=compact">
+                                <variation key="widthClass=compact" misplaced="YES">
+                                    <rect key="frame" x="42" y="28" width="237" height="82"/>
                                     <mask key="constraints">
                                         <exclude reference="0Xd-Pk-c1H"/>
+                                    </mask>
+                                </variation>
+                            </imageView>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="free.png" translatesAutoresizingMaskIntoConstraints="NO" id="Bre-x3-Mej">
+                                <rect key="frame" x="0.0" y="0.0" width="240" height="128"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" secondItem="Bre-x3-Mej" secondAttribute="height" multiplier="19:28" id="CrC-6H-zjc"/>
+                                    <constraint firstAttribute="height" constant="28" id="hak-47-r6f"/>
+                                </constraints>
+                                <variation key="default">
+                                    <mask key="constraints">
+                                        <exclude reference="CrC-6H-zjc"/>
+                                        <exclude reference="hak-47-r6f"/>
+                                    </mask>
+                                </variation>
+                                <variation key="widthClass=compact" misplaced="YES">
+                                    <rect key="frame" x="192" y="409" width="19" height="28"/>
+                                    <mask key="constraints">
+                                        <include reference="CrC-6H-zjc"/>
+                                        <include reference="hak-47-r6f"/>
                                     </mask>
                                 </variation>
                             </imageView>
@@ -259,7 +282,9 @@
                             <constraint firstItem="mjn-1j-VOm" firstAttribute="top" secondItem="BGK-sf-pmI" secondAttribute="bottom" constant="41" id="SZt-ek-ZAY">
                                 <variation key="heightClass=regular-widthClass=compact" constant="30"/>
                             </constraint>
+                            <constraint firstItem="Bre-x3-Mej" firstAttribute="trailing" secondItem="dNS-Fr-ZbD" secondAttribute="trailing" id="TcU-gH-ZHL"/>
                             <constraint firstItem="mjn-1j-VOm" firstAttribute="top" secondItem="5eh-IV-qq8" secondAttribute="bottom" constant="-8" id="U9C-nJ-Jf2"/>
+                            <constraint firstItem="Bre-x3-Mej" firstAttribute="top" secondItem="dNS-Fr-ZbD" secondAttribute="top" id="Vd6-yW-voS"/>
                             <constraint firstItem="IGh-og-X8A" firstAttribute="top" secondItem="jyV-Pf-zRb" secondAttribute="bottom" constant="36" id="Vt6-mb-9Ba">
                                 <variation key="heightClass=regular-widthClass=compact" constant="25"/>
                             </constraint>
@@ -312,7 +337,12 @@
                             <constraint firstAttribute="centerY" secondItem="BGK-sf-pmI" secondAttribute="centerY" constant="0.5" id="zEM-tn-iHs"/>
                         </constraints>
                         <variation key="default">
+                            <mask key="subviews">
+                                <exclude reference="Bre-x3-Mej"/>
+                            </mask>
                             <mask key="constraints">
+                                <exclude reference="TcU-gH-ZHL"/>
+                                <exclude reference="Vd6-yW-voS"/>
                                 <exclude reference="ess-lC-QPA"/>
                                 <exclude reference="sF2-KO-btu"/>
                                 <exclude reference="7wm-S1-Tyt"/>
@@ -345,7 +375,12 @@
                             </mask>
                         </variation>
                         <variation key="widthClass=compact">
+                            <mask key="subviews">
+                                <include reference="Bre-x3-Mej"/>
+                            </mask>
                             <mask key="constraints">
+                                <include reference="TcU-gH-ZHL"/>
+                                <include reference="Vd6-yW-voS"/>
                                 <exclude reference="2lO-ua-0Mi"/>
                                 <include reference="xPw-TZ-TvI"/>
                                 <include reference="NeM-HD-fAI"/>
@@ -388,12 +423,13 @@
                     <simulatedScreenMetrics key="simulatedDestinationMetrics"/>
                     <connections>
                         <outlet property="boyBtn" destination="BGK-sf-pmI" id="NL0-qK-fDe"/>
+                        <outlet property="freeImage" destination="Bre-x3-Mej" id="M0x-5B-DC9"/>
                         <outlet property="girlBtn" destination="mjn-1j-VOm" id="b5f-QN-q6T"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="x5A-6p-PRh" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="423" y="180.75"/>
+            <point key="canvasLocation" x="423" y="180"/>
         </scene>
     </scenes>
     <resources>
@@ -401,6 +437,7 @@
         <image name="boyenter-press.png" width="498" height="247"/>
         <image name="boyface-normal.png" width="385" height="439"/>
         <image name="boyface-press.png" width="385" height="439"/>
+        <image name="free.png" width="116" height="151"/>
         <image name="girlenter-normal.png" width="510" height="252"/>
         <image name="girlenter-press.png" width="510" height="252"/>
         <image name="girlface-normal.png" width="404" height="461"/>

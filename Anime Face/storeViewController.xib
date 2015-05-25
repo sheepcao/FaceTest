@@ -391,13 +391,13 @@
                             <exclude reference="w82-bD-0bf"/>
                         </mask>
                         <mask key="constraints">
+                            <exclude reference="0kB-vj-Li7"/>
+                            <exclude reference="EYh-cr-Rr5"/>
                             <exclude reference="0L9-RA-9lH"/>
                             <exclude reference="9IX-A3-xvp"/>
                             <exclude reference="Lbd-DM-u9A"/>
                             <exclude reference="TcU-Z0-Lbj"/>
                             <exclude reference="hKT-lT-94s"/>
-                            <exclude reference="0kB-vj-Li7"/>
-                            <exclude reference="EYh-cr-Rr5"/>
                             <exclude reference="ZfL-fa-u1t"/>
                         </mask>
                     </variation>
@@ -406,12 +406,12 @@
                             <include reference="w82-bD-0bf"/>
                         </mask>
                         <mask key="constraints">
+                            <include reference="0kB-vj-Li7"/>
+                            <exclude reference="EYh-cr-Rr5"/>
                             <exclude reference="0L9-RA-9lH"/>
                             <include reference="9IX-A3-xvp"/>
                             <include reference="Lbd-DM-u9A"/>
                             <exclude reference="TcU-Z0-Lbj"/>
-                            <include reference="0kB-vj-Li7"/>
-                            <exclude reference="EYh-cr-Rr5"/>
                         </mask>
                     </variation>
                 </view>
@@ -421,19 +421,22 @@
                         <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="shop background1.png" translatesAutoresizingMaskIntoConstraints="NO" id="I2H-ii-iHB">
                             <rect key="frame" x="0.0" y="0.0" width="240" height="128"/>
                         </imageView>
-                        <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="ZMt-bq-2bT" userLabel="showView">
+                        <view contentMode="scaleToFill" misplaced="YES" translatesAutoresizingMaskIntoConstraints="NO" id="ZMt-bq-2bT" userLabel="showView">
                             <rect key="frame" x="8" y="40" width="171" height="171"/>
                             <subviews>
-                                <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="face0.png" translatesAutoresizingMaskIntoConstraints="NO" id="uJb-9s-lbs" userLabel="face">
+                                <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" image="face0.png" translatesAutoresizingMaskIntoConstraints="NO" id="uJb-9s-lbs" userLabel="face">
                                     <rect key="frame" x="28" y="16" width="115" height="115"/>
                                     <constraints>
                                         <constraint firstAttribute="width" secondItem="uJb-9s-lbs" secondAttribute="height" multiplier="1:1" id="St0-Sc-np4"/>
                                     </constraints>
+                                    <variation key="heightClass=regular-widthClass=compact" misplaced="YES">
+                                        <rect key="frame" x="29" y="16" width="122" height="121"/>
+                                    </variation>
                                 </imageView>
-                                <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="OgY-4X-w8p" userLabel="backHair">
+                                <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" translatesAutoresizingMaskIntoConstraints="NO" id="OgY-4X-w8p" userLabel="backHair">
                                     <rect key="frame" x="0.0" y="0.0" width="171" height="171"/>
                                 </imageView>
-                                <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="hairG2-7-0-front.png" translatesAutoresizingMaskIntoConstraints="NO" id="dSS-ry-enz" userLabel="frontHair">
+                                <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" image="hairG2-7-0-front.png" translatesAutoresizingMaskIntoConstraints="NO" id="dSS-ry-enz" userLabel="frontHair">
                                     <rect key="frame" x="0.0" y="0.0" width="171" height="171"/>
                                 </imageView>
                             </subviews>
@@ -459,10 +462,10 @@
                                 </mask>
                             </variation>
                         </view>
-                        <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="w26-LY-PLd" userLabel="infoView">
+                        <view contentMode="scaleToFill" ambiguous="YES" misplaced="YES" translatesAutoresizingMaskIntoConstraints="NO" id="w26-LY-PLd" userLabel="infoView">
                             <rect key="frame" x="182" y="58" width="130" height="139"/>
                             <subviews>
-                                <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="price board.png" translatesAutoresizingMaskIntoConstraints="NO" id="HIP-uB-e9z">
+                                <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" ambiguous="YES" misplaced="YES" image="price board.png" translatesAutoresizingMaskIntoConstraints="NO" id="HIP-uB-e9z">
                                     <rect key="frame" x="0.0" y="0.0" width="130" height="139"/>
                                 </imageView>
                                 <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="jing.png" translatesAutoresizingMaskIntoConstraints="NO" id="Nlh-bF-Uey">
@@ -498,16 +501,16 @@
                                             <variation key="default">
                                                 <mask key="constraints">
                                                     <exclude reference="9jO-6D-cP2"/>
-                                                    <exclude reference="h30-qc-6Dw"/>
                                                     <exclude reference="Z36-ho-Ufe"/>
+                                                    <exclude reference="h30-qc-6Dw"/>
                                                     <exclude reference="xqq-sr-V92"/>
                                                 </mask>
                                             </variation>
                                             <variation key="heightClass=regular-widthClass=compact">
                                                 <mask key="constraints">
                                                     <exclude reference="9jO-6D-cP2"/>
-                                                    <include reference="h30-qc-6Dw"/>
                                                     <exclude reference="Z36-ho-Ufe"/>
+                                                    <include reference="h30-qc-6Dw"/>
                                                     <exclude reference="xqq-sr-V92"/>
                                                 </mask>
                                             </variation>
@@ -555,14 +558,14 @@
                                         </mask>
                                         <mask key="constraints">
                                             <exclude reference="1Va-MC-jCb"/>
-                                            <exclude reference="eR7-1u-gGE"/>
-                                            <exclude reference="DEf-vE-Qea"/>
-                                            <exclude reference="iIS-LB-1Jy"/>
                                             <exclude reference="93a-YQ-lHz"/>
-                                            <exclude reference="iGh-va-8Mv"/>
-                                            <exclude reference="jCz-CU-qW4"/>
+                                            <exclude reference="DEf-vE-Qea"/>
+                                            <exclude reference="eR7-1u-gGE"/>
+                                            <exclude reference="iIS-LB-1Jy"/>
                                             <exclude reference="5ul-AF-WWG"/>
                                             <exclude reference="V1W-VO-H9k"/>
+                                            <exclude reference="iGh-va-8Mv"/>
+                                            <exclude reference="jCz-CU-qW4"/>
                                         </mask>
                                     </variation>
                                     <variation key="heightClass=regular-widthClass=compact">
@@ -572,14 +575,14 @@
                                         </mask>
                                         <mask key="constraints">
                                             <include reference="1Va-MC-jCb"/>
-                                            <include reference="eR7-1u-gGE"/>
-                                            <include reference="DEf-vE-Qea"/>
-                                            <include reference="iIS-LB-1Jy"/>
                                             <include reference="93a-YQ-lHz"/>
-                                            <include reference="iGh-va-8Mv"/>
-                                            <include reference="jCz-CU-qW4"/>
+                                            <include reference="DEf-vE-Qea"/>
+                                            <include reference="eR7-1u-gGE"/>
+                                            <include reference="iIS-LB-1Jy"/>
                                             <include reference="5ul-AF-WWG"/>
                                             <exclude reference="V1W-VO-H9k"/>
+                                            <include reference="iGh-va-8Mv"/>
+                                            <include reference="jCz-CU-qW4"/>
                                         </mask>
                                     </variation>
                                 </view>
@@ -611,16 +614,16 @@
                                         <action selector="buyProduct:" destination="-1" eventType="touchUpInside" id="7YN-r6-CBd"/>
                                     </connections>
                                 </button>
-                                <view hidden="YES" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="MRA-Ct-dDz" userLabel="starView">
+                                <view hidden="YES" contentMode="scaleToFill" ambiguous="YES" misplaced="YES" translatesAutoresizingMaskIntoConstraints="NO" id="MRA-Ct-dDz" userLabel="starView">
                                     <rect key="frame" x="0.0" y="0.0" width="130" height="78"/>
                                     <subviews>
-                                        <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="star.png" translatesAutoresizingMaskIntoConstraints="NO" id="tUX-CA-1tU">
+                                        <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" ambiguous="YES" misplaced="YES" image="star.png" translatesAutoresizingMaskIntoConstraints="NO" id="tUX-CA-1tU">
                                             <rect key="frame" x="8" y="8" width="36" height="18"/>
                                             <constraints>
                                                 <constraint firstAttribute="width" secondItem="tUX-CA-1tU" secondAttribute="height" multiplier="2:1" id="loh-1F-hB8"/>
                                             </constraints>
                                         </imageView>
-                                        <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="heart.png" translatesAutoresizingMaskIntoConstraints="NO" id="KRn-Ep-suf">
+                                        <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" ambiguous="YES" misplaced="YES" image="heart.png" translatesAutoresizingMaskIntoConstraints="NO" id="KRn-Ep-suf">
                                             <rect key="frame" x="8" y="42" width="20" height="15"/>
                                             <constraints>
                                                 <constraint firstAttribute="width" secondItem="KRn-Ep-suf" secondAttribute="height" multiplier="1:1" id="4e8-oF-kjG"/>
@@ -632,7 +635,7 @@
                                                 </mask>
                                             </variation>
                                         </imageView>
-                                        <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="heart.png" translatesAutoresizingMaskIntoConstraints="NO" id="Uca-h0-nbd">
+                                        <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" ambiguous="YES" misplaced="YES" image="heart.png" translatesAutoresizingMaskIntoConstraints="NO" id="Uca-h0-nbd">
                                             <rect key="frame" x="32" y="42" width="20" height="15"/>
                                             <constraints>
                                                 <constraint firstAttribute="width" secondItem="Uca-h0-nbd" secondAttribute="height" multiplier="1:1" id="0sj-eT-Tcc"/>
@@ -644,7 +647,7 @@
                                                 </mask>
                                             </variation>
                                         </imageView>
-                                        <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="heart.png" translatesAutoresizingMaskIntoConstraints="NO" id="jZm-GL-pRw">
+                                        <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" ambiguous="YES" misplaced="YES" image="heart.png" translatesAutoresizingMaskIntoConstraints="NO" id="jZm-GL-pRw">
                                             <rect key="frame" x="56" y="42" width="20" height="15"/>
                                             <constraints>
                                                 <constraint firstAttribute="width" secondItem="jZm-GL-pRw" secondAttribute="height" multiplier="1:1" id="9oV-KK-BNg"/>
@@ -655,8 +658,11 @@
                                                     <exclude reference="9oV-KK-BNg"/>
                                                 </mask>
                                             </variation>
+                                            <variation key="heightClass=regular-widthClass=compact" misplaced="YES">
+                                                <rect key="frame" x="54" y="38" width="18" height="15"/>
+                                            </variation>
                                         </imageView>
-                                        <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="heart.png" translatesAutoresizingMaskIntoConstraints="NO" id="8hY-Ea-ZMm">
+                                        <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" ambiguous="YES" misplaced="YES" image="heart.png" translatesAutoresizingMaskIntoConstraints="NO" id="8hY-Ea-ZMm">
                                             <rect key="frame" x="80" y="42" width="20" height="15"/>
                                             <constraints>
                                                 <constraint firstAttribute="width" secondItem="8hY-Ea-ZMm" secondAttribute="height" multiplier="56:42" id="LEt-5p-mzj"/>
@@ -667,8 +673,11 @@
                                                     <exclude reference="PaI-WX-1eb"/>
                                                 </mask>
                                             </variation>
+                                            <variation key="heightClass=regular-widthClass=compact" misplaced="YES">
+                                                <rect key="frame" x="76" y="38" width="19" height="14"/>
+                                            </variation>
                                         </imageView>
-                                        <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="heart.png" translatesAutoresizingMaskIntoConstraints="NO" id="7Bf-hP-bba">
+                                        <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" ambiguous="YES" misplaced="YES" image="heart.png" translatesAutoresizingMaskIntoConstraints="NO" id="7Bf-hP-bba">
                                             <rect key="frame" x="104" y="42" width="20" height="15"/>
                                             <constraints>
                                                 <constraint firstAttribute="width" secondItem="7Bf-hP-bba" secondAttribute="height" multiplier="1:1" id="YMA-0R-pfw"/>
@@ -678,6 +687,9 @@
                                                 <mask key="constraints">
                                                     <exclude reference="YMA-0R-pfw"/>
                                                 </mask>
+                                            </variation>
+                                            <variation key="heightClass=regular-widthClass=compact" misplaced="YES">
+                                                <rect key="frame" x="99" y="38" width="19" height="14"/>
                                             </variation>
                                         </imageView>
                                     </subviews>
@@ -716,10 +728,10 @@
                                         </mask>
                                     </variation>
                                 </view>
-                                <view hidden="YES" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="2QV-Uc-gfb" userLabel="colorView">
+                                <view hidden="YES" contentMode="scaleToFill" ambiguous="YES" misplaced="YES" translatesAutoresizingMaskIntoConstraints="NO" id="2QV-Uc-gfb" userLabel="colorView">
                                     <rect key="frame" x="0.0" y="0.0" width="130" height="78"/>
                                     <subviews>
-                                        <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="price.png" translatesAutoresizingMaskIntoConstraints="NO" id="K25-fS-jrJ" userLabel="colorText">
+                                        <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" ambiguous="YES" misplaced="YES" image="price.png" translatesAutoresizingMaskIntoConstraints="NO" id="K25-fS-jrJ" userLabel="colorText">
                                             <rect key="frame" x="8" y="8" width="36" height="18"/>
                                             <constraints>
                                                 <constraint firstAttribute="width" secondItem="K25-fS-jrJ" secondAttribute="height" multiplier="2:1" id="J9h-Gw-LRb"/>
@@ -1026,10 +1038,10 @@
                                         </mask>
                                     </variation>
                                 </view>
-                                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Bhx-ul-ZwJ" userLabel="priceView">
+                                <view contentMode="scaleToFill" ambiguous="YES" misplaced="YES" translatesAutoresizingMaskIntoConstraints="NO" id="Bhx-ul-ZwJ" userLabel="priceView">
                                     <rect key="frame" x="0.0" y="78" width="130" height="61"/>
                                     <subviews>
-                                        <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="diamond.png" translatesAutoresizingMaskIntoConstraints="NO" id="Bno-Rf-DXY" userLabel="diamond">
+                                        <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" ambiguous="YES" misplaced="YES" image="diamond.png" translatesAutoresizingMaskIntoConstraints="NO" id="Bno-Rf-DXY" userLabel="diamond">
                                             <rect key="frame" x="6" y="29" width="34" height="27"/>
                                             <constraints>
                                                 <constraint firstAttribute="width" secondItem="Bno-Rf-DXY" secondAttribute="height" multiplier="2:1" id="COq-M2-uB2"/>
@@ -1040,13 +1052,13 @@
                                                 </mask>
                                             </variation>
                                         </imageView>
-                                        <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="price.png" translatesAutoresizingMaskIntoConstraints="NO" id="jKi-OE-0k9" userLabel="priceText">
+                                        <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" ambiguous="YES" misplaced="YES" image="price.png" translatesAutoresizingMaskIntoConstraints="NO" id="jKi-OE-0k9" userLabel="priceText">
                                             <rect key="frame" x="5" y="2" width="36" height="18"/>
                                             <constraints>
                                                 <constraint firstAttribute="width" secondItem="jKi-OE-0k9" secondAttribute="height" multiplier="2:1" id="iaB-ca-pTx"/>
                                             </constraints>
                                         </imageView>
-                                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="500" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="xAw-wD-gfr">
+                                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" ambiguous="YES" misplaced="YES" text="500" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="xAw-wD-gfr">
                                             <rect key="frame" x="44" y="30" width="42" height="21"/>
                                             <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                             <color key="textColor" red="0.34106691919191923" green="0.21277121666495508" blue="0.24726705957780551" alpha="1" colorSpace="calibratedRGB"/>
@@ -1148,18 +1160,18 @@
                                     <exclude reference="75x-Rx-M74"/>
                                 </mask>
                                 <mask key="constraints">
+                                    <exclude reference="CLj-Bg-8nx"/>
+                                    <exclude reference="TzU-AW-sdj"/>
+                                    <exclude reference="eQn-GU-hLi"/>
+                                    <exclude reference="w4I-xS-12c"/>
+                                    <exclude reference="8RC-i7-FwZ"/>
+                                    <exclude reference="guh-sw-IsA"/>
+                                    <exclude reference="hd0-Pe-3oE"/>
                                     <exclude reference="6sy-q4-w1K"/>
                                     <exclude reference="Bth-mZ-eHa"/>
                                     <exclude reference="IMT-cZ-sw3"/>
                                     <exclude reference="QCx-Z5-ASj"/>
                                     <exclude reference="if1-dO-klp"/>
-                                    <exclude reference="8RC-i7-FwZ"/>
-                                    <exclude reference="guh-sw-IsA"/>
-                                    <exclude reference="hd0-Pe-3oE"/>
-                                    <exclude reference="CLj-Bg-8nx"/>
-                                    <exclude reference="TzU-AW-sdj"/>
-                                    <exclude reference="eQn-GU-hLi"/>
-                                    <exclude reference="w4I-xS-12c"/>
                                 </mask>
                             </variation>
                             <variation key="heightClass=regular-widthClass=compact">
@@ -1169,20 +1181,20 @@
                                     <include reference="75x-Rx-M74"/>
                                 </mask>
                                 <mask key="constraints">
+                                    <include reference="CLj-Bg-8nx"/>
+                                    <include reference="TzU-AW-sdj"/>
+                                    <include reference="eQn-GU-hLi"/>
+                                    <include reference="w4I-xS-12c"/>
+                                    <include reference="8RC-i7-FwZ"/>
+                                    <include reference="guh-sw-IsA"/>
+                                    <include reference="hd0-Pe-3oE"/>
+                                    <exclude reference="8rf-gC-RC6"/>
+                                    <exclude reference="SLC-MS-0vt"/>
                                     <include reference="6sy-q4-w1K"/>
                                     <include reference="Bth-mZ-eHa"/>
                                     <include reference="IMT-cZ-sw3"/>
                                     <exclude reference="QCx-Z5-ASj"/>
                                     <exclude reference="if1-dO-klp"/>
-                                    <exclude reference="8rf-gC-RC6"/>
-                                    <exclude reference="SLC-MS-0vt"/>
-                                    <include reference="8RC-i7-FwZ"/>
-                                    <include reference="guh-sw-IsA"/>
-                                    <include reference="hd0-Pe-3oE"/>
-                                    <include reference="CLj-Bg-8nx"/>
-                                    <include reference="TzU-AW-sdj"/>
-                                    <include reference="eQn-GU-hLi"/>
-                                    <include reference="w4I-xS-12c"/>
                                 </mask>
                             </variation>
                         </view>

@@ -462,7 +462,7 @@ bool showingDefault;
     
     
     if (!self.myBuyController) {
-        self.myBuyController = [[buyCoinsViewController alloc] initWithCoinLabel:coinsLabel andParentController:self andParentCoinButton:nil andLoadingView:self.loadingBuy andTableView:self.itemsToBuy];
+        self.myBuyController = [[buyCoinsViewController alloc] initWithCoinLabel:coinsLabel andParentController:self andParentCoinLabel:self.diamondLabel andLoadingView:self.loadingBuy andTableView:self.itemsToBuy];
     }
     
     

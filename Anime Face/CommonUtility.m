@@ -78,12 +78,12 @@
 + (void)coinsChange:(int)coinAmount
 {
 
-    NSString *currentCoinsString = [[NSUserDefaults standardUserDefaults] objectForKey:@"coinsAmount"];
+    NSString *currentCoinsString = [[NSUserDefaults standardUserDefaults] objectForKey:@"diamond"];
     int currentCoins = [currentCoinsString intValue];
     
     int afterCalculate = currentCoins + coinAmount;
     
-    [[NSUserDefaults standardUserDefaults] setObject:[NSString stringWithFormat:@"%d",afterCalculate] forKey:@"coinsAmount"];
+    [[NSUserDefaults standardUserDefaults] setObject:[NSString stringWithFormat:@"%d",afterCalculate] forKey:@"diamond"];
     
 }
 

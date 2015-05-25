@@ -7,6 +7,8 @@
 //
 
 #import "AppDelegate.h"
+#import "myIAPHelper.h"
+#import "globalVar.h"
 
 @interface AppDelegate ()
 
@@ -17,7 +19,11 @@
 
 - (BOOL)application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions {
     // Override point for customization after application launch.
+    [myIAPHelper sharedInstance];
     
+    [MobClick startWithAppkey:@"5508d14dfd98c530ab00043f" reportPolicy:REALTIME   channelId:nil];
+    NSString *version = [[[NSBundle mainBundle] infoDictionary] objectForKey:@"CFBundleShortVersionString"];
+    [MobClick setAppVersion:version];
     
     [self setShareIDs];
     return YES;

@@ -15,20 +15,27 @@
     NSNumberFormatter * _priceFormatter;
     UILabel *currentCoinsLabel;
     UIButton *_parentCoinsButton;
+    UILabel *_parentCoinsLabel;
+
     UIView *_loadingView;
 }
+
+@property (nonatomic,strong) NSArray *prodcutsArray;
 @end
 
 @implementation buyCoinsViewController
 
-- (id)initWithCoinLabel:(UILabel *)coinLabel andParentController:(UIViewController *)controller andParentCoinButton:(UIButton *)parentCoinsButton andLoadingView:(UIView *)loadingView andTableView:(UITableView *)tableview{
+- (id)initWithCoinLabel:(UILabel *)coinLabel andParentController:(UIViewController *)controller andParentCoinLabel:(UILabel *)parentCoinsLabel andLoadingView:(UIView *)loadingView andTableView:(UITableView *)tableview{
     
    	self = [super init];
     if (self != nil) {
+        
+        self.prodcutsArray = @[@"6",@"18",@"60",@"128"];
         self.itemsTable = tableview;
 
         _loadingView = loadingView;
-        _parentCoinsButton = parentCoinsButton;
+//        _parentCoinsButton = parentCoinsButton;
+        _parentCoinsLabel = parentCoinsLabel;
         self.parentControler = controller;
         
         currentCoinsLabel = coinLabel;
@@ -57,23 +64,39 @@
     [_products enumerateObjectsUsingBlock:^(SKProduct * product, NSUInteger idx, BOOL *stop) {
         if ([product.productIdentifier isEqualToString:productIdentifier]) {
             
-            if ([product.productIdentifier isEqualToString:@"sheepcao.mixedMusic.money"]) {
+            if ([product.productIdentifier isEqualToString:@"sheepcao.AnimeFace.diamond1000"]) {
 
                 
-                [CommonUtility coinsChange:1000];
+                [CommonUtility coinsChange:60];
                 
-                [currentCoinsLabel setText:[NSString stringWithFormat:@"%d",[CommonUtility fetchCoinAmount]]];
-                
-                [_parentCoinsButton setTitle:[NSString stringWithFormat:@"%d",[CommonUtility fetchCoinAmount]] forState:UIControlStateNormal];
+                [_parentCoinsLabel setText:[NSString stringWithFormat:@"%d",[CommonUtility fetchCoinAmount]]];
+        
+//                [_parentCoinsButton setTitle:[NSString stringWithFormat:@"%d",[CommonUtility fetchCoinAmount]] forState:UIControlStateNormal];
 
-            }else if([product.productIdentifier isEqualToString:@"sheepcao.mixedMusic.money3000"])
+            }else if([product.productIdentifier isEqualToString:@"sheepcao.AnimeFace.diamond3"])
             {
 
-                [CommonUtility coinsChange:4000];//3元买4000coins
+                [CommonUtility coinsChange:190];//18元买190coins
                 
-                [currentCoinsLabel setText:[NSString stringWithFormat:@"%d",[CommonUtility fetchCoinAmount]]];
+                [_parentCoinsLabel setText:[NSString stringWithFormat:@"%d",[CommonUtility fetchCoinAmount]]];
                 
-                [_parentCoinsButton setTitle:[NSString stringWithFormat:@"%d",[CommonUtility fetchCoinAmount]] forState:UIControlStateNormal];
+//                [_parentCoinsButton setTitle:[NSString stringWithFormat:@"%d",[CommonUtility fetchCoinAmount]] forState:UIControlStateNormal];
+            }else if([product.productIdentifier isEqualToString:@"sheepcao.AnimeFace.diamond9"])
+            {
+                
+                [CommonUtility coinsChange:640];//60元买640coins
+                
+                [_parentCoinsLabel setText:[NSString stringWithFormat:@"%d",[CommonUtility fetchCoinAmount]]];
+                
+//                [_parentCoinsButton setTitle:[NSString stringWithFormat:@"%d",[CommonUtility fetchCoinAmount]] forState:UIControlStateNormal];
+            }else if([product.productIdentifier isEqualToString:@"sheepcao.AnimeFace.diamond20"])
+            {
+                
+                [CommonUtility coinsChange:1448];//128元买1448coins
+                
+                [_parentCoinsLabel setText:[NSString stringWithFormat:@"%d",[CommonUtility fetchCoinAmount]]];
+                
+//                [_parentCoinsButton setTitle:[NSString stringWithFormat:@"%d",[CommonUtility fetchCoinAmount]] forState:UIControlStateNormal];
             }
                 
         }
@@ -118,31 +141,56 @@
     return _products.count;
     
 }
+- (CGFloat)tableView:(UITableView *)tableView heightForRowAtIndexPath:(NSIndexPath *)indexPath
+{
+    return 67;
+}
 
 - (UITableViewCell *)tableView:(UITableView *)tableView cellForRowAtIndexPath:(NSIndexPath *)indexPath
 {
     NSLog(@"2");
     
-    UITableViewCell *cell = [tableView dequeueReusableCellWithIdentifier:@"Cell"];
-    if (nil == cell)
-    {
-        cell = [[[NSBundle mainBundle]loadNibNamed:@"buyCellView" owner:self options:nil] lastObject];//加载nib文件
-    }
-    cell.backgroundColor = [UIColor clearColor];
-    [cell.textLabel setTextColor:[UIColor whiteColor]];
-    cell.textLabel.font = [UIFont systemFontOfSize:17];
+//    buyCellView *cell = [tableView dequeueReusableCellWithIdentifier:@"Cell"];
+//    if (nil == cell)
+//    {
+//        cell =[[NSBundle mainBundle] loadNibNamed:@"buyCellView" owner:self options:nil];
+        NSArray *topLevelObjects = [[NSBundle mainBundle] loadNibNamed:@"buyCellView" owner:self options:nil];
 
-    if ([_products[indexPath.row] isKindOfClass:[SKProduct class]]) {
-        SKProduct * product = (SKProduct *) _products[indexPath.row];
-    
-        cell.textLabel.text = product.localizedTitle;
-    }else if([_products[indexPath.row] isKindOfClass:[NSString class]])
+    buyCellView *cell = [topLevelObjects lastObject];//加载nib文件
+//    }
+    cell.backgroundColor = [UIColor clearColor];
+
+    cell.priceLabel.text = self.prodcutsArray[indexPath.row];
+    [cell.priceBtn addTarget:self action:@selector(buyClicked:) forControlEvents:UIControlEventTouchUpInside];
+    if (indexPath.row==0)
     {
-        NSString *product = (NSString *) _products[indexPath.row];
+        cell.priceBtn.tag = 6;
+        UIImage *sixImage = [UIImage imageNamed:@"6kuai-normal"];
+        [cell.priceBtn setImage:sixImage forState:UIControlStateNormal];
+        [cell.priceBtn setImage:[UIImage imageNamed:@"6kuai-press"] forState:UIControlStateHighlighted];
+
+
+    }else if (indexPath.row==1)
+    {
+        cell.priceBtn.tag = 18;
+        [cell.priceBtn setImage:[UIImage imageNamed:@"18kuai-normal"] forState:UIControlStateNormal];
+        [cell.priceBtn setImage:[UIImage imageNamed:@"18kuai-press"] forState:UIControlStateHighlighted];
+
+    }else if (indexPath.row==2)
+    {
+        cell.priceBtn.tag = 60;
+        [cell.priceBtn setImage:[UIImage imageNamed:@"60kuai-normal"] forState:UIControlStateNormal];
+        [cell.priceBtn setImage:[UIImage imageNamed:@"60kuai-press"] forState:UIControlStateHighlighted];
         
-        cell.textLabel.text = product;
+    }else if (indexPath.row==3)
+    {
+        cell.priceBtn.tag = 128;
+        [cell.priceBtn setImage:[UIImage imageNamed:@"128kuai-normal"] forState:UIControlStateNormal];
+        [cell.priceBtn setImage:[UIImage imageNamed:@"128kuai-press"] forState:UIControlStateHighlighted];
+        
     }
-//    
+
+//
 //    if (indexPath.row < _products.count) {
 //        SKProduct * product = (SKProduct *) _products[indexPath.row];
 //        cell.textLabel.text = product.localizedTitle;
@@ -190,81 +238,97 @@
     return cell;
 }
 
-- (void)tableView:(UITableView *)tableView didSelectRowAtIndexPath:(NSIndexPath *)indexPath
+
+-(void)buyClicked:(UIButton *)sender
 {
-//    [CommonUtility tapSound:@"click" withType:@"mp3"];
-    if ([_products[indexPath.row] isKindOfClass:[SKProduct class]]) {
+ 
+    for (SKProduct *product in _products) {
+        NSString *typeId = [NSString stringWithFormat:@"%@",product.price];
 
-        SKProduct *product = _products[indexPath.row];
-        NSLog(@"Buying %@...", product.productIdentifier);
-        [[myIAPHelper sharedInstance] buyProduct:product withLoadingView:_loadingView];
-        
-        [_loadingView setHidden:NO];
-        
-    }else if([_products[indexPath.row] isKindOfClass:[NSString class]])
-    {
-        NSString *product = (NSString *) _products[indexPath.row];
-        if ([product isEqualToString:@"分享朋友圈奖励300金币"]) {
-            [self shareToWechat];
-
-        }else if([product isEqualToString:@"分享新浪微博奖励300金币"])
-        {
-            [self shareToSina];
+        if ([typeId integerValue] == sender.tag) {
+            [[myIAPHelper sharedInstance] buyProduct:product withLoadingView:_loadingView];
+            
+            [_loadingView setHidden:NO];
         }
-//        }else if([product isEqualToString:@"好评一下，奖励300金币"])
-//        {
-//            [self reviewUS];
-//        }
-        
-        [self.closeDelegate closingBuy];
-
-        
     }
-
-
-//    else if(indexPath.row == _products.count)
+    
+    
+}
+//- (void)tableView:(UITableView *)tableView didSelectRowAtIndexPath:(NSIndexPath *)indexPath
+//{
+////    [CommonUtility tapSound:@"click" withType:@"mp3"];
+//    if ([_products[indexPath.row] isKindOfClass:[SKProduct class]]) {
+//
+//        SKProduct *product = _products[indexPath.row];
+//        NSLog(@"Buying %@...", product.productIdentifier);
+//        [[myIAPHelper sharedInstance] buyProduct:product withLoadingView:_loadingView];
+//        
+//        [_loadingView setHidden:NO];
+//        
+//    }else if([_products[indexPath.row] isKindOfClass:[NSString class]])
 //    {
-//        if(![[[NSUserDefaults standardUserDefaults] objectForKey:@"wechatShare"] isEqualToString:@"yes"])
-//        {
+//        NSString *product = (NSString *) _products[indexPath.row];
+//        if ([product isEqualToString:@"分享朋友圈奖励300金币"]) {
 //            [self shareToWechat];
-//            
-//            
-//        }else if(![[[NSUserDefaults standardUserDefaults] objectForKey:@"sinaShare"] isEqualToString:@"yes"])
-//        {
 //
-//        }else if ([CommonUtility fetchCoinAmount] < 400 && ![[[NSUserDefaults standardUserDefaults] objectForKey:@"reviewed"] isEqualToString:@"yes"])
+//        }else if([product isEqualToString:@"分享新浪微博奖励300金币"])
 //        {
-//            [self reviewUS];
+//            [self shareToSina];
 //        }
-//
+////        }else if([product isEqualToString:@"好评一下，奖励300金币"])
+////        {
+////            [self reviewUS];
+////        }
+//        
+//        [self.closeDelegate closingBuy];
 //
 //        
-//    }else if(indexPath.row == _products.count + 1)
-//    {
-//        if(![[[NSUserDefaults standardUserDefaults] objectForKey:@"sinaShare"] isEqualToString:@"yes"])
-//        {
-//            
-//            [self shareToSina];
-//            
-//        }else if ([CommonUtility fetchCoinAmount] < 400 && ![[[NSUserDefaults standardUserDefaults] objectForKey:@"reviewed"] isEqualToString:@"yes"])
-//        {
-//            [self reviewUS];
-//        }
-//        [self.closeDelegate closingBuy];
-//
-//
-//    }else if ([CommonUtility fetchCoinAmount] < 400 )
-//    {
-//        if(![[[NSUserDefaults standardUserDefaults] objectForKey:@"reviewed"] isEqualToString:@"yes"])
-//        {
-//        [self reviewUS];
-//        }
-//        [self.closeDelegate closingBuy];
-//
 //    }
-//    
-//    
-}
+//
+//
+////    else if(indexPath.row == _products.count)
+////    {
+////        if(![[[NSUserDefaults standardUserDefaults] objectForKey:@"wechatShare"] isEqualToString:@"yes"])
+////        {
+////            [self shareToWechat];
+////            
+////            
+////        }else if(![[[NSUserDefaults standardUserDefaults] objectForKey:@"sinaShare"] isEqualToString:@"yes"])
+////        {
+////
+////        }else if ([CommonUtility fetchCoinAmount] < 400 && ![[[NSUserDefaults standardUserDefaults] objectForKey:@"reviewed"] isEqualToString:@"yes"])
+////        {
+////            [self reviewUS];
+////        }
+////
+////
+////        
+////    }else if(indexPath.row == _products.count + 1)
+////    {
+////        if(![[[NSUserDefaults standardUserDefaults] objectForKey:@"sinaShare"] isEqualToString:@"yes"])
+////        {
+////            
+////            [self shareToSina];
+////            
+////        }else if ([CommonUtility fetchCoinAmount] < 400 && ![[[NSUserDefaults standardUserDefaults] objectForKey:@"reviewed"] isEqualToString:@"yes"])
+////        {
+////            [self reviewUS];
+////        }
+////        [self.closeDelegate closingBuy];
+////
+////
+////    }else if ([CommonUtility fetchCoinAmount] < 400 )
+////    {
+////        if(![[[NSUserDefaults standardUserDefaults] objectForKey:@"reviewed"] isEqualToString:@"yes"])
+////        {
+////        [self reviewUS];
+////        }
+////        [self.closeDelegate closingBuy];
+////
+////    }
+////    
+////    
+//}
 
 -(void)reviewUS
 {

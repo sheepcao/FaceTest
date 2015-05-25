@@ -38,6 +38,7 @@
 -(void)closingBuy;
 @end
 #import "CommonUtility.h"
+#import "MobClick.h"
 
 @protocol refreshProductsDelegates <NSObject>
 

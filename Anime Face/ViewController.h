@@ -15,6 +15,7 @@
 @property (weak, nonatomic) IBOutlet UIButton *boyBtn;
 @property (weak, nonatomic) IBOutlet UIButton *girlBtn;
 @property (strong,nonatomic) NSDictionary *GameDatas;
+@property (weak, nonatomic) IBOutlet UIImageView *freeImage;
 
 - (IBAction)getReward:(id)sender;
 - (IBAction)store:(id)sender;

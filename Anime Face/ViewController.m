@@ -33,11 +33,18 @@
 //    self.GameDatas = [self readDataFromPlist:@"GameData"];
     
     [self updatePlistWhenUpdateing];
-    
-    [self dailyReward];
+
     
 
     
+}
+
+
+-(void)viewWillAppear:(BOOL)animated
+{
+    [super viewWillAppear:animated];
+    [self dailyReward];
+
 }
 
 -(void)updatePlistWhenUpdateing
@@ -235,12 +242,12 @@
     
     if ([[[NSUserDefaults standardUserDefaults] objectForKey:@"luckyFinished"] isEqualToString:@"yes"]) {
         
+        [self.freeImage setHidden:YES];
+        
     }else
     {
-        UIAlertView *rewardAlert = [[UIAlertView alloc] initWithTitle:@"感谢您的支持" message:@"幸运屋已开启，快来试试手气吧" delegate:nil cancelButtonTitle:nil otherButtonTitles:@"确定", nil];
-        
-        rewardAlert.tag = 100;
-        [rewardAlert show];
+        [self.freeImage setHidden:NO];
+
     }
 
     

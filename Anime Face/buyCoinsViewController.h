@@ -9,6 +9,7 @@
 #import <UIKit/UIKit.h>
 
 #import "globalVar.h"
+#import "buyCellView.h"
 
 
 @interface buyCoinsViewController : UIViewController<UITableViewDataSource,UITableViewDelegate>
@@ -18,9 +19,10 @@
 @property (weak,nonatomic) id<closeBuyViewDelegate> closeDelegate;
 
 @property (strong, nonatomic) UITableView *itemsTable;
+
 //
 //@property (nonatomic,strong) UIRefreshControl *refreshControl NS_AVAILABLE_IOS(6_0);
 @property (nonatomic,weak) UIViewController *parentControler;
-- (id)initWithCoinLabel:(UILabel *)coinLabel andParentController:(UIViewController *)controller andParentCoinButton:(UIButton *)parentCoinsButton andLoadingView:(UIView *)loadingView andTableView:(UITableView *)tableview;
+- (id)initWithCoinLabel:(UILabel *)coinLabel andParentController:(UIViewController *)controller andParentCoinLabel:(UILabel *)parentCoinsLabel andLoadingView:(UIView *)loadingView andTableView:(UITableView *)tableview;
 -(void)reloadwithRefreshControl:(UIRefreshControl *)refreshControl;
 @end
