@@ -27,7 +27,7 @@
                         <color key="textColor" red="0.71764705880000002" green="0.38431372549999998" blue="0.38431372549999998" alpha="1" colorSpace="calibratedRGB"/>
                         <nil key="highlightedColor"/>
                     </label>
-                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="cFp-lO-YA6">
+                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="cFp-lO-YA6" customClass="IAPButton">
                         <rect key="frame" x="211" y="15" width="85" height="35"/>
                         <constraints>
                             <constraint firstAttribute="width" secondItem="cFp-lO-YA6" secondAttribute="height" multiplier="5:3" id="4vb-W4-6hc"/>
@@ -75,10 +75,10 @@
                 <variation key="default">
                     <mask key="constraints">
                         <exclude reference="Xyz-KW-unA"/>
+                        <exclude reference="Wd9-H1-Ayx"/>
                         <exclude reference="QJ0-7d-rRx"/>
                         <exclude reference="atx-R2-8kz"/>
                         <exclude reference="jki-VY-dgi"/>
-                        <exclude reference="Wd9-H1-Ayx"/>
                         <exclude reference="uEz-qh-yGi"/>
                     </mask>
                 </variation>

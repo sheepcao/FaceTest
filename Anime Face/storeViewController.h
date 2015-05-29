@@ -8,7 +8,7 @@
 
 #import "ViewController.h"
 #import "elemntButton.h"
-#import "buyCoinsViewController.h"
+#import "buyingViewController.h"
 
 @interface storeViewController : ViewController<closeBuyViewDelegate>
 
@@ -54,8 +54,8 @@
 
 
 
-@property (strong,nonatomic) buyCoinsViewController *myBuyController;
-@property (strong,nonatomic) UIView *buyCoinsView;
+@property (strong,nonatomic) buyingViewController *myBuyController;
+@property (strong,nonatomic) UIView *buyView;
 
 @property (strong,nonatomic) UITableView *itemsToBuy;
 @property (nonatomic,strong) UIRefreshControl *refreshControl NS_AVAILABLE_IOS(6_0);

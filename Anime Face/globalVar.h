@@ -36,6 +36,11 @@
 #define VERSIONNUMBER   [[[NSBundle mainBundle] infoDictionary] objectForKey:@"CFBundleShortVersionString"]
 @protocol closeBuyViewDelegate
 -(void)closingBuy;
+
+@optional
+-(void)makeDiamondLabel:(NSString *)diamondNum;
+
+
 @end
 #import "CommonUtility.h"
 #import "MobClick.h"

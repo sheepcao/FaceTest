@@ -7,9 +7,10 @@
 //
 
 #import <UIKit/UIKit.h>
+#import "IAPButton.h"
 
 @interface buyCellView : UITableViewCell
 @property (weak, nonatomic) IBOutlet UILabel *priceLabel;
-@property (weak, nonatomic) IBOutlet UIButton *priceBtn;
+@property (weak, nonatomic) IBOutlet IAPButton *priceBtn;
 
 @end

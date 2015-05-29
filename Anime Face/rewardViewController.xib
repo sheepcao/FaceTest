@@ -81,6 +81,9 @@
                     <constraints>
                         <constraint firstAttribute="width" secondItem="aJg-U1-5aC" secondAttribute="height" multiplier="1:1" id="CoV-y8-r7J"/>
                     </constraints>
+                    <variation key="heightClass=regular-widthClass=compact" misplaced="YES">
+                        <rect key="frame" x="158" y="177" width="98" height="97"/>
+                    </variation>
                 </imageView>
                 <button opaque="NO" contentMode="scaleToFill" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="dwv-F1-ghN">
                     <rect key="frame" x="149" y="268" width="116" height="134"/>
@@ -120,7 +123,8 @@
                                             <exclude reference="Kra-Fl-4BG"/>
                                         </mask>
                                     </variation>
-                                    <variation key="heightClass=regular-widthClass=compact">
+                                    <variation key="heightClass=regular-widthClass=compact" misplaced="YES">
+                                        <rect key="frame" x="1" y="5" width="30" height="21"/>
                                         <mask key="constraints">
                                             <include reference="Kra-Fl-4BG"/>
                                         </mask>
@@ -347,7 +351,8 @@
                                     <exclude reference="aiM-R5-vuG"/>
                                 </mask>
                             </variation>
-                            <variation key="heightClass=regular-widthClass=compact">
+                            <variation key="heightClass=regular-widthClass=compact" misplaced="YES">
+                                <rect key="frame" x="43" y="100" width="95" height="13"/>
                                 <mask key="constraints">
                                     <include reference="aiM-R5-vuG"/>
                                 </mask>
@@ -382,7 +387,8 @@
                                     <exclude reference="UKO-7F-TmX"/>
                                 </mask>
                             </variation>
-                            <variation key="heightClass=regular-widthClass=compact">
+                            <variation key="heightClass=regular-widthClass=compact" misplaced="YES">
+                                <rect key="frame" x="144" y="99" width="41" height="14"/>
                                 <mask key="constraints">
                                     <include reference="UKO-7F-TmX"/>
                                 </mask>
@@ -503,7 +509,8 @@
                                     <exclude reference="uVI-xy-cDj"/>
                                 </mask>
                             </variation>
-                            <variation key="heightClass=regular-widthClass=compact">
+                            <variation key="heightClass=regular-widthClass=compact" misplaced="YES">
+                                <rect key="frame" x="8" y="58" width="216" height="213"/>
                                 <mask key="constraints">
                                     <exclude reference="84V-OB-lRO"/>
                                     <include reference="eEI-Up-f5h"/>
@@ -534,7 +541,8 @@
                                             <exclude reference="dqN-KY-Ot6"/>
                                         </mask>
                                     </variation>
-                                    <variation key="heightClass=regular-widthClass=compact">
+                                    <variation key="heightClass=regular-widthClass=compact" misplaced="YES">
+                                        <rect key="frame" x="76" y="0.0" width="112" height="43"/>
                                         <mask key="constraints">
                                             <exclude reference="M86-gE-qF4"/>
                                             <include reference="UYH-Oz-HMq"/>
@@ -553,7 +561,8 @@
                                             <exclude reference="80G-nZ-mYr"/>
                                         </mask>
                                     </variation>
-                                    <variation key="heightClass=regular-widthClass=compact">
+                                    <variation key="heightClass=regular-widthClass=compact" misplaced="YES">
+                                        <rect key="frame" x="49" y="10" width="23" height="23"/>
                                         <mask key="constraints">
                                             <include reference="80G-nZ-mYr"/>
                                         </mask>
@@ -596,7 +605,8 @@
                                     <exclude reference="W2W-pd-Ess"/>
                                 </mask>
                             </variation>
-                            <variation key="heightClass=regular-widthClass=compact">
+                            <variation key="heightClass=regular-widthClass=compact" misplaced="YES">
+                                <rect key="frame" x="22" y="271" width="188" height="43"/>
                                 <mask key="subviews">
                                     <include reference="Y7L-Ui-sPL"/>
                                     <include reference="WRu-b9-6aT"/>

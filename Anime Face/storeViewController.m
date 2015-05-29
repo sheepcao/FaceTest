@@ -441,60 +441,20 @@ bool showingDefault;
 }
 
 - (IBAction)addDiamond:(id)sender {
+//
+        self.myBuyController = [[buyingViewController alloc] initWithNibName:@"buyingViewController" bundle:nil];
+        self.myBuyController.closeDelegate =self;
     
+        [self.myBuyController view];
+
+        self.buyView = self.myBuyController.view;
+        [self.view addSubview:self.buyView];
+
     
-    if (!self.buyCoinsView) {
-        
-        self.buyCoinsView = [[[NSBundle mainBundle] loadNibNamed:@"buyCoinsViewController" owner:self options:nil] objectAtIndex:0];
-        [self.view addSubview:self.buyCoinsView];
-        
-        [self.loadingView setFrame:CGRectMake(0, 0, self.buyCoinsView.frame.size.width, self.buyCoinsView.frame.size.height)];
-        [self.loadingView setHidden:YES];
-        [self.buyCoinsView addSubview:self.loadingView];
-        
-    }
-    
-    
-    UILabel *coinsLabel = (UILabel *)[self.buyCoinsView viewWithTag:2];
-    [coinsLabel setText:[NSString stringWithFormat:@"%d",[CommonUtility fetchCoinAmount]]];
-    self.itemsToBuy = (UITableView *)[self.buyCoinsView viewWithTag:10];
-    
-    
-    
-    if (!self.myBuyController) {
-        self.myBuyController = [[buyCoinsViewController alloc] initWithCoinLabel:coinsLabel andParentController:self andParentCoinLabel:self.diamondLabel andLoadingView:self.loadingBuy andTableView:self.itemsToBuy];
-    }
-    
-    
-    [self.buyCoinsView setFrame:CGRectMake(0, [UIScreen mainScreen].bounds.size.height, [UIScreen mainScreen].bounds.size.width, [UIScreen mainScreen].bounds.size.height)];
-    
-    self.myBuyController.closeDelegate =self;
-    
-    UIButton *closeBuyView = (UIButton *)[self.buyCoinsView viewWithTag:1];
-    [closeBuyView addTarget:self action:@selector(closingBuy) forControlEvents:UIControlEventTouchUpInside];
-    
-    
-    self.itemsToBuy.delegate = self.myBuyController;
-    self.itemsToBuy.dataSource = self.myBuyController;
-    if(!self.refreshControl)
-    {
-        self.refreshControl = [[UIRefreshControl alloc] init];
-        [self.itemsToBuy addSubview:self.refreshControl];
-    }
-    
-    
-    [self.refreshControl addTarget:self.myBuyController action:@selector(reloadwithRefreshControl:) forControlEvents:UIControlEventValueChanged];
-    [self.myBuyController reloadwithRefreshControl:self.refreshControl];
-    [self.refreshControl beginRefreshing];
     
     [UIView animateWithDuration:0.45 delay:0.05 usingSpringWithDamping:1.0 initialSpringVelocity:0.4 options:0 animations:^{
-        [self.buyCoinsView setFrame:CGRectMake(0, 0, [UIScreen mainScreen].bounds.size.width, [UIScreen mainScreen].bounds.size.height)];
+        [self.buyView setFrame:CGRectMake(0, 0, [UIScreen mainScreen].bounds.size.width, [UIScreen mainScreen].bounds.size.height)];
     } completion:nil];
-    
-    
-    [self.itemsToBuy reloadData];
-    
-    
     
 
     
@@ -563,14 +523,18 @@ bool showingDefault;
     
     
 }
-
+-(void)makeDiamondLabel:(NSString *)diamondNum
+{
+    [self.diamondLabel setText:diamondNum];
+}
 
 -(void)closingBuy
 {
     [UIView animateWithDuration:0.45 delay:0.05 usingSpringWithDamping:1.0 initialSpringVelocity:0.4 options:0 animations:^{
-        [self.buyCoinsView setFrame:CGRectMake(0, [UIScreen mainScreen].bounds.size.height, [UIScreen mainScreen].bounds.size.width, [UIScreen mainScreen].bounds.size.height)];
+        [self.buyView setFrame:CGRectMake(0, [UIScreen mainScreen].bounds.size.height, [UIScreen mainScreen].bounds.size.width, [UIScreen mainScreen].bounds.size.height)];
         
     } completion:nil];
+    
 
 }
 

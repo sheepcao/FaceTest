@@ -42,9 +42,13 @@ NSString *const IAPHelperProductPurchasedNotification = @"IAPHelperProductPurcha
 
 - (void)requestProductsWithCompletionHandler:(RequestProductsCompletionHandler)completionHandler {
     
+    NSLog(@"3333");
+
     
     // 1
-    _completionHandler = [completionHandler copy];
+    _completionHandler = completionHandler;
+
+//    _completionHandler = [completionHandler copy];
     
     // 2
     _productsRequest = [[SKProductsRequest alloc] initWithProductIdentifiers:_productIdentifiers];
@@ -85,7 +89,7 @@ NSString *const IAPHelperProductPurchasedNotification = @"IAPHelperProductPurcha
     }
     if (skProducts.count>0) {
         _completionHandler(YES, skProducts);
-        _completionHandler = nil;
+//        _completionHandler = nil;
     }
 
     
@@ -97,7 +101,7 @@ NSString *const IAPHelperProductPurchasedNotification = @"IAPHelperProductPurcha
     _productsRequest = nil;
     
     _completionHandler(NO, nil);
-    _completionHandler = nil;
+//    _completionHandler = nil;
     
 }
 
@@ -105,6 +109,7 @@ NSString *const IAPHelperProductPurchasedNotification = @"IAPHelperProductPurcha
 
 - (void)paymentQueue:(SKPaymentQueue *)queue updatedTransactions:(NSArray *)transactions
 {
+    NSLog(@"1111");
     for (SKPaymentTransaction * transaction in transactions) {
         switch (transaction.transactionState)
         {
@@ -137,10 +142,11 @@ NSString *const IAPHelperProductPurchasedNotification = @"IAPHelperProductPurcha
     
     [self provideContentForProductIdentifier:transaction.originalTransaction.payment.productIdentifier];
     [[SKPaymentQueue defaultQueue] finishTransaction:transaction];
+    
 }
 
 - (void)failedTransaction:(SKPaymentTransaction *)transaction {
-    
+
     NSLog(@"failedTransaction...");
     if (transaction.error.code != SKErrorPaymentCancelled)
     {
@@ -152,6 +158,7 @@ NSString *const IAPHelperProductPurchasedNotification = @"IAPHelperProductPurcha
 
 - (void)provideContentForProductIdentifier:(NSString *)productIdentifier {
     
+    NSLog(@"2222");
 
     [[NSNotificationCenter defaultCenter] postNotificationName:IAPHelperProductPurchasedNotification object:productIdentifier userInfo:nil];
     

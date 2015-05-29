@@ -10,6 +10,7 @@
 #import "gameViewController.h"
 #import "rewardViewController.h"
 #import "storeViewController.h"
+#import "buyOneViewController.h"
 
 @interface ViewController ()
 {
@@ -176,6 +177,40 @@
     [self.navigationController pushViewController:myGame animated:YES];
     
 }
+
+- (IBAction)oneBuyClick:(id)sender {
+    
+    if(!self.myBuyOneController)
+    {
+    self.myBuyOneController = [[buyOneViewController alloc] initWithNibName:@"buyOneViewController" bundle:nil];
+    self.myBuyOneController.closeDelegate =self;
+    
+    [self.myBuyOneController view];
+    
+    
+    self.buyDiamondView = self.myBuyOneController.view;
+    [self.buyDiamondView setCenter:CGPointMake(SCREEN_WIDTH/2, SCREEN_HEIGHT)];
+    [self.view addSubview:self.buyDiamondView];
+    }
+    
+    
+    [UIView animateWithDuration:0.45 delay:0.05 usingSpringWithDamping:1.0 initialSpringVelocity:0.4 options:0 animations:^{
+        [self.buyDiamondView setFrame:CGRectMake(0, 0, [UIScreen mainScreen].bounds.size.width, [UIScreen mainScreen].bounds.size.height)];
+    } completion:nil];
+    
+    
+}
+
+-(void)closingBuy
+{
+    [UIView animateWithDuration:0.45 delay:0.05 usingSpringWithDamping:1.0 initialSpringVelocity:0.4 options:0 animations:^{
+        [self.buyDiamondView setFrame:CGRectMake(0, [UIScreen mainScreen].bounds.size.height, [UIScreen mainScreen].bounds.size.width, [UIScreen mainScreen].bounds.size.height)];
+        
+    } completion:nil];
+    
+    
+}
+
 
 #pragma mark Daily reward
 - (void)dailyReward
