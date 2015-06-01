@@ -129,7 +129,50 @@ bool shouldFinish;
 
 
 - (IBAction)buyDaimond:(id)sender {
+    
+    self.myBuyController = [[buyingViewController alloc] initWithNibName:@"buyingViewController" bundle:nil];
+    self.myBuyController.closeDelegate =self;
+    
+    [self.myBuyController view];
+    
+    self.buyView = self.myBuyController.view;
+    [self.view addSubview:self.buyView];
+    
+    
+    
+    [UIView animateWithDuration:0.45 delay:0.05 usingSpringWithDamping:1.0 initialSpringVelocity:0.4 options:0 animations:^{
+        [self.buyView setFrame:CGRectMake(0, 0, [UIScreen mainScreen].bounds.size.width, [UIScreen mainScreen].bounds.size.height)];
+    } completion:nil];
+    
+
+    
 }
+
+
+
+
+-(BOOL)checkDiamond:(int)price;
+{
+    int diamondRemain = [[[NSUserDefaults standardUserDefaults] objectForKey:@"diamond"] intValue];
+    
+    return diamondRemain>=price;
+}
+
+-(void)makeDiamondLabel:(NSString *)diamondNum
+{
+    [self.diamondNum setText:diamondNum];
+}
+
+-(void)closingBuy
+{
+    [UIView animateWithDuration:0.45 delay:0.05 usingSpringWithDamping:1.0 initialSpringVelocity:0.4 options:0 animations:^{
+        [self.buyView setFrame:CGRectMake(0, [UIScreen mainScreen].bounds.size.height, [UIScreen mainScreen].bounds.size.width, [UIScreen mainScreen].bounds.size.height)];
+        
+    } completion:nil];
+    
+    
+}
+
 
 - (IBAction)cardTapped:(id)sender {
     
@@ -205,8 +248,46 @@ bool shouldFinish;
     
     
     
-    [self.productBought setImage:[UIImage imageNamed:self.productNow.productName]];
     [self.productName setText:self.productNow.productTitle];
+    
+    if ([self.productNow.productCategory isEqualToString:@"头发"] || [self.productNow.productCategory isEqualToString:@"头发女"]) {
+        
+        [self.faceImage setImage:[UIImage imageWithContentsOfFile:[[NSBundle mainBundle] pathForResource:@"face0" ofType:@"png"]]];
+        [self.bodyImage setImage:[UIImage imageWithContentsOfFile:[[NSBundle mainBundle] pathForResource:@"body1" ofType:@"png"]]];
+        
+
+        NSArray *nameArray = [self.productNow.productName componentsSeparatedByString:@"-"];
+        NSString *backImageName = @"";
+        NSString *frontImageName = @"";
+        if (nameArray.count>1) {
+            backImageName = [NSString stringWithFormat:@"%@-%@-0-back",nameArray[0],nameArray[1]];
+            frontImageName = [NSString stringWithFormat:@"%@-%@-0-front",nameArray[0],nameArray[1]];
+            
+        }
+        UIImage *frontImage = [UIImage imageWithContentsOfFile:[[NSBundle mainBundle] pathForResource:frontImageName ofType:@"png"]];
+        if (frontImage) {
+            [self.productBought setImage:[UIImage imageWithContentsOfFile:[[NSBundle mainBundle] pathForResource:frontImageName ofType:@"png"]]];
+        }
+        
+        UIImage *backImage = [UIImage imageWithContentsOfFile:[[NSBundle mainBundle] pathForResource:backImageName ofType:@"png"]];
+        if (backImage) {
+            
+            [self.backHairImage setImage:[UIImage imageWithContentsOfFile:[[NSBundle mainBundle] pathForResource:backImageName ofType:@"png"]]];
+            //            self.headImage.attachedView = self.backHairImage;
+        }else
+        {
+            [self.backHairImage setImage:nil];
+            
+        }
+    }else
+    {
+        [self.backHairImage setImage:nil];
+        [self.faceImage setImage:nil];
+        [self.bodyImage setImage:nil];
+        [self.productBought setImage:[UIImage imageWithContentsOfFile:[[NSBundle mainBundle] pathForResource:self.productNow.productName ofType:@"png"]]];
+
+
+    }
     
 
 
@@ -299,6 +380,8 @@ bool shouldFinish;
 
 -(void)getDiamonds
 {
+    self.productNow = [[product alloc] init];
+
     [self costDiamond:-10];
     self.productNow.productName = @"1";
     self.productNow.productTitle = @"111";
@@ -306,6 +389,14 @@ bool shouldFinish;
 
 
 
+}
+
+-(void)updateCollectionNum
+{
+    NSArray *luckyDoneArrayOld = [[NSUserDefaults standardUserDefaults] objectForKey:@"luckyDone"];
+    NSMutableArray *luckyDoneArray = [NSMutableArray arrayWithArray:luckyDoneArrayOld];
+    
+    [self.collectionNum setText:[NSString stringWithFormat:@"%lu/30",(unsigned long)luckyDoneArray.count]];
 }
 
 -(void)costDiamond:(int)price
@@ -339,6 +430,10 @@ bool shouldFinish;
             [self doWrite];
 
         }
+    }else
+    {
+        [self doWrite];
+
     }
     
 }
@@ -354,9 +449,16 @@ bool shouldFinish;
         NSMutableDictionary *purchasedDic = [NSMutableDictionary dictionaryWithDictionary:[[NSUserDefaults standardUserDefaults] objectForKey:self.productNow.productCategory]];
         
         NSMutableArray *purchasedArray = [NSMutableArray arrayWithArray:[purchasedDic objectForKey:@"purchasedArray"]];
-        
-        
         NSString *newProductName = [NSString stringWithFormat:@"%@+new",self.productNow.productName];
+
+        for (NSString *purchasedProduct in purchasedArray) {
+            if ([purchasedProduct isEqualToString:newProductName] ||[purchasedProduct isEqualToString:self.productNow.productName] )
+            {
+                return;
+            }
+        }
+        
+        
         [purchasedArray addObject:newProductName];
         [purchasedCatelog setObject:purchasedArray forKey:@"purchasedArray"];
         

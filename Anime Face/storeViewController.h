@@ -19,6 +19,7 @@
 
 @property (strong, nonatomic) IBOutlet UIImageView *faceImage;
 @property (strong, nonatomic) IBOutlet UIImageView *backHairImage;
+@property (weak, nonatomic) IBOutlet UIImageView *bodyImage;
 
 @property (strong, nonatomic) IBOutlet UIImageView *productImage;
 
@@ -65,7 +66,7 @@
 - (IBAction)goLuckyHouse:(id)sender;
 - (IBAction)addDiamond:(id)sender;
 
-- (IBAction)colorBtnTapped:(elemntButton *)sender;
+//- (IBAction)colorBtnTapped:(elemntButton *)sender;
 @property (strong, nonatomic) IBOutlet UIButton *buyAction;
 - (IBAction)buyProduct:(id)sender;
 

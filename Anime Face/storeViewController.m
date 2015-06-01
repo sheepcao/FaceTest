@@ -272,6 +272,8 @@ bool showingDefault;
     if (emptyCount == CATALOG_NUM_STORE) {
         [self.productImage setImage: nil];
         [self.faceImage setImage: nil];
+        [self.bodyImage setImage: nil];
+
         [self.backHairImage setImage: nil];
     }
     
@@ -320,13 +322,25 @@ bool showingDefault;
 //        }
         
         [self.faceImage setImage:[UIImage imageWithContentsOfFile:[[NSBundle mainBundle] pathForResource:@"face0" ofType:@"png"]]];
+        [self.bodyImage setImage:[UIImage imageWithContentsOfFile:[[NSBundle mainBundle] pathForResource:@"body1" ofType:@"png"]]];
+
+        NSArray *nameArray = [sender.imageName componentsSeparatedByString:@"-"];
+        NSString *backImageName = @"";
+        NSString *frontImageName = @"";
+        if (nameArray.count>1) {
+            backImageName = [NSString stringWithFormat:@"%@-%@-0-back",nameArray[0],nameArray[1]];
+            frontImageName = [NSString stringWithFormat:@"%@-%@-0-front",nameArray[0],nameArray[1]];
+            
+        }
         
-        NSString *frontImageName = [NSString stringWithFormat:@"%@-0-front",sender.imageName];
-        [self.productImage setImage:[UIImage imageWithContentsOfFile:[[NSBundle mainBundle] pathForResource:frontImageName ofType:@"png"]]];
+        UIImage *frontImage = [UIImage imageWithContentsOfFile:[[NSBundle mainBundle] pathForResource:frontImageName ofType:@"png"]];
+        if (frontImage) {
+            [self.productImage setImage:[UIImage imageWithContentsOfFile:[[NSBundle mainBundle] pathForResource:frontImageName ofType:@"png"]]];
+        }
         
         
         
-        NSString *backImageName = [NSString stringWithFormat:@"%@-0-back",sender.imageName];
+//        NSString *backImageName = [NSString stringWithFormat:@"%@-0-back",sender.imageName];
         UIImage *backImage = [UIImage imageWithContentsOfFile:[[NSBundle mainBundle] pathForResource:backImageName ofType:@"png"]];
         if (backImage) {
             
@@ -352,7 +366,21 @@ bool showingDefault;
         
         [self.backHairImage setImage:nil];
         [self.faceImage setImage:nil];
-        
+        [self.bodyImage setImage:nil];
+
+//        NSArray *nameArray = [sender.imageName componentsSeparatedByString:@"-"];
+//        NSString *backImageName = @"";
+//        NSString *frontImageName = @"";
+//        if (nameArray.count>1) {
+//            backImageName = [NSString stringWithFormat:@"%@-%@-0-back",nameArray[0],nameArray[1]];
+//            frontImageName = [NSString stringWithFormat:@"%@-%@-0-front",nameArray[0],nameArray[1]];
+//            
+//        }
+//        
+//        if (frontImageName) {
+//            [self.productImage setImage:[UIImage imageWithContentsOfFile:[[NSBundle mainBundle] pathForResource:frontImageName ofType:@"png"]]];
+//        }
+
         NSString *frontImageName = sender.imageName;
         [self.productImage setImage:[UIImage imageWithContentsOfFile:[[NSBundle mainBundle] pathForResource:frontImageName ofType:@"png"]]];
     }
@@ -460,26 +488,26 @@ bool showingDefault;
     
 }
 
-- (IBAction)colorBtnTapped:(elemntButton *)sender {
-    
-    NSString *frontImageName = [NSString stringWithFormat:@"%@-%ld-front",sender.imageName,(long)sender.tag];
-    [self.productImage setImage:[UIImage imageWithContentsOfFile:[[NSBundle mainBundle] pathForResource:frontImageName ofType:@"png"]]];
-    
-    
-    
-    NSString *backImageName = [NSString stringWithFormat:@"%@-%ld-back",sender.imageName,(long)sender.tag];
-    UIImage *backImage = [UIImage imageWithContentsOfFile:[[NSBundle mainBundle] pathForResource:backImageName ofType:@"png"]];
-    if (backImage) {
-        
-        [self.backHairImage setImage:[UIImage imageWithContentsOfFile:[[NSBundle mainBundle] pathForResource:backImageName ofType:@"png"]]];
-    }else
-    {
-        [self.backHairImage setImage:nil];
-        
-    }
-    
-    
-}
+//- (IBAction)colorBtnTapped:(elemntButton *)sender {
+//    
+//    NSString *frontImageName = [NSString stringWithFormat:@"%@-%ld-front",sender.imageName,(long)sender.tag];
+//    [self.productImage setImage:[UIImage imageWithContentsOfFile:[[NSBundle mainBundle] pathForResource:frontImageName ofType:@"png"]]];
+//    
+//    
+//    
+//    NSString *backImageName = [NSString stringWithFormat:@"%@-%ld-back",sender.imageName,(long)sender.tag];
+//    UIImage *backImage = [UIImage imageWithContentsOfFile:[[NSBundle mainBundle] pathForResource:backImageName ofType:@"png"]];
+//    if (backImage) {
+//        
+//        [self.backHairImage setImage:[UIImage imageWithContentsOfFile:[[NSBundle mainBundle] pathForResource:backImageName ofType:@"png"]]];
+//    }else
+//    {
+//        [self.backHairImage setImage:nil];
+//        
+//    }
+//    
+//    
+//}
 - (IBAction)buyProduct:(id)sender {
     if (!self.productNow) {
         return;
@@ -566,15 +594,37 @@ bool showingDefault;
     if (self.productNow.sex == 1000) {
         if ([self.productNow.productCategory isEqualToString:@"衣服"] ||[self.productNow.productCategory isEqualToString:@"头发"] ) {
             self.productNow.productCategory = [self.productNow.productCategory stringByAppendingString:@"女"];
+            
         }
+        [self doWrite];
+        
     }else if ((self.productNow.sex == 0))
     {
         [self doWrite];
         if ([self.productNow.productCategory isEqualToString:@"衣服"] ||[self.productNow.productCategory isEqualToString:@"头发"] ) {
             self.productNow.productCategory = [self.productNow.productCategory stringByAppendingString:@"女"];
+            
+            [self doWrite];
+            
         }
+    }else
+    {
+        [self doWrite];
+        
     }
-    [self doWrite];
+    
+//    if (self.productNow.sex == 1000) {
+//        if ([self.productNow.productCategory isEqualToString:@"衣服"] ||[self.productNow.productCategory isEqualToString:@"头发"] ) {
+//            self.productNow.productCategory = [self.productNow.productCategory stringByAppendingString:@"女"];
+//        }
+//    }else if ((self.productNow.sex == 0))
+//    {
+//        [self doWrite];
+//        if ([self.productNow.productCategory isEqualToString:@"衣服"] ||[self.productNow.productCategory isEqualToString:@"头发"] ) {
+//            self.productNow.productCategory = [self.productNow.productCategory stringByAppendingString:@"女"];
+//        }
+//    }
+//    [self doWrite];
 
 }
 
@@ -592,6 +642,14 @@ bool showingDefault;
         
         
         NSString *newProductName = [NSString stringWithFormat:@"%@+new",self.productNow.productName];
+        
+        for (NSString *purchasedProduct in purchasedArray) {
+            if ([purchasedProduct isEqualToString:newProductName] ||[purchasedProduct isEqualToString:self.productNow.productName] )
+            {
+                return;
+            }
+        }
+        
         [purchasedArray addObject:newProductName];
         [purchasedCatelog setObject:purchasedArray forKey:@"purchasedArray"];
         

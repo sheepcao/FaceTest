@@ -219,5 +219,7 @@
 
 - (IBAction)closeIAP:(id)sender {
     [self.closeDelegate closingBuy];
+    [self.loadingView setHidden:YES];
+
 }
 @end

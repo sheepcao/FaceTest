@@ -161,17 +161,17 @@
                     </variation>
                 </view>
                 <view hidden="YES" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="9EW-7j-1yr" userLabel="waiting">
-                    <rect key="frame" x="-140" y="-16" width="600" height="600"/>
+                    <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
                     <subviews>
                         <activityIndicatorView opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="750" verticalHuggingPriority="750" hidesWhenStopped="YES" animating="YES" style="white" translatesAutoresizingMaskIntoConstraints="NO" id="s4P-7I-rTb">
-                            <rect key="frame" x="277" y="277" width="46" height="46"/>
+                            <rect key="frame" x="148" y="272" width="24" height="24"/>
                             <constraints>
                                 <constraint firstAttribute="width" secondItem="s4P-7I-rTb" secondAttribute="height" multiplier="1:1" id="rLU-US-dWA"/>
                             </constraints>
                             <color key="color" white="0.0" alpha="1" colorSpace="calibratedWhite"/>
                         </activityIndicatorView>
                         <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text=" Loading" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="5wb-vi-31r">
-                            <rect key="frame" x="264" y="253" width="72" height="22"/>
+                            <rect key="frame" x="126" y="249" width="68" height="21"/>
                             <constraints>
                                 <constraint firstAttribute="width" secondItem="5wb-vi-31r" secondAttribute="height" multiplier="68:21" id="Mb8-6C-uQE"/>
                                 <constraint firstAttribute="width" secondItem="5wb-vi-31r" secondAttribute="height" multiplier="67:24" id="TDo-Zn-62x"/>
@@ -210,12 +210,12 @@
             </subviews>
             <constraints>
                 <constraint firstAttribute="centerY" secondItem="sEe-R4-cmy" secondAttribute="centerY" id="13c-ae-0ET"/>
-                <constraint firstAttribute="bottom" secondItem="9EW-7j-1yr" secondAttribute="bottom" constant="-16" id="8L9-8k-Sg5"/>
-                <constraint firstAttribute="trailing" secondItem="9EW-7j-1yr" secondAttribute="trailing" constant="-140" id="9Cq-ea-x5m"/>
+                <constraint firstAttribute="bottom" secondItem="9EW-7j-1yr" secondAttribute="bottom" id="8L9-8k-Sg5"/>
+                <constraint firstAttribute="trailing" secondItem="9EW-7j-1yr" secondAttribute="trailing" id="9Cq-ea-x5m"/>
                 <constraint firstAttribute="trailing" secondItem="sEe-R4-cmy" secondAttribute="trailing" constant="-140" id="FXn-gm-Gl1"/>
-                <constraint firstItem="9EW-7j-1yr" firstAttribute="leading" secondItem="i5M-Pr-FkT" secondAttribute="leading" constant="-140" id="RPS-Td-b1o"/>
+                <constraint firstItem="9EW-7j-1yr" firstAttribute="leading" secondItem="i5M-Pr-FkT" secondAttribute="leading" id="RPS-Td-b1o"/>
                 <constraint firstItem="sEe-R4-cmy" firstAttribute="leading" secondItem="i5M-Pr-FkT" secondAttribute="leading" constant="10" id="ahQ-YP-DPc"/>
-                <constraint firstItem="9EW-7j-1yr" firstAttribute="top" secondItem="i5M-Pr-FkT" secondAttribute="top" constant="-16" id="gNF-93-6oF"/>
+                <constraint firstItem="9EW-7j-1yr" firstAttribute="top" secondItem="i5M-Pr-FkT" secondAttribute="top" id="gNF-93-6oF"/>
                 <constraint firstAttribute="centerX" secondItem="sEe-R4-cmy" secondAttribute="centerX" id="sb9-pB-9GE"/>
             </constraints>
             <simulatedScreenMetrics key="simulatedDestinationMetrics" type="retina4"/>

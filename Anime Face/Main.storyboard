@@ -46,8 +46,7 @@
                                     <constraint firstAttribute="width" secondItem="Ibk-Q5-rOZ" secondAttribute="height" multiplier="55:36" id="cMU-VO-94o"/>
                                     <constraint firstAttribute="width" constant="314" id="uGI-UM-qb6"/>
                                 </constraints>
-                                <variation key="widthClass=compact" misplaced="YES">
-                                    <rect key="frame" x="5" y="90" width="310" height="204"/>
+                                <variation key="widthClass=compact">
                                     <mask key="constraints">
                                         <exclude reference="uGI-UM-qb6"/>
                                     </mask>
@@ -172,8 +171,7 @@
                                     <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
                                 </state>
                                 <state key="highlighted" image="shop press.png"/>
-                                <variation key="widthClass=compact" misplaced="YES">
-                                    <rect key="frame" x="109" y="354" width="102" height="39"/>
+                                <variation key="widthClass=compact">
                                     <mask key="constraints">
                                         <exclude reference="DJh-b6-PUm"/>
                                     </mask>
@@ -223,8 +221,7 @@
                                     <constraint firstAttribute="width" constant="245" id="0Xd-Pk-c1H"/>
                                     <constraint firstAttribute="width" secondItem="IGh-og-X8A" secondAttribute="height" multiplier="893:305" id="H91-NH-Aoq"/>
                                 </constraints>
-                                <variation key="widthClass=compact" misplaced="YES">
-                                    <rect key="frame" x="42" y="28" width="237" height="82"/>
+                                <variation key="widthClass=compact">
                                     <mask key="constraints">
                                         <exclude reference="0Xd-Pk-c1H"/>
                                     </mask>

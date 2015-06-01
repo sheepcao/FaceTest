@@ -156,6 +156,7 @@
 
 - (IBAction)closeBuy:(id)sender {
     [self.closeDelegate closingBuy];
+    [self.loadingView setHidden:YES];
 
 }
 @end

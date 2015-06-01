@@ -207,6 +207,7 @@
         [self.buyDiamondView setFrame:CGRectMake(0, [UIScreen mainScreen].bounds.size.height, [UIScreen mainScreen].bounds.size.width, [UIScreen mainScreen].bounds.size.height)];
         
     } completion:nil];
+
     
     
 }

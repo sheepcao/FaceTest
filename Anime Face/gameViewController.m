@@ -749,15 +749,7 @@ bool needSaveAlert;
     for (int i = 0; i<sender.imageColor; i++) {
         
         CGFloat btnSize = 0;
-//        if (sender.imageColor == 2) {
-//            btnSize = (sender.frame.size.width*3/4-10)/1.2;
-//        }else if(sender.imageColor == 4)
-//        {
-//            btnSize = (sender.frame.size.width*3/4-10)/1.6;
-//        }else
-//        {
-//            btnSize = (sender.frame.size.width*3/4-10)/2.0;
-//        }
+
         btnSize = (sender.frame.size.width*3/4-12)/1.6;
 
         CGFloat startX = (SCREEN_WIDTH-(btnSize*sender.imageColor + 5*(sender.imageColor-1)))/2;
@@ -766,8 +758,7 @@ bool needSaveAlert;
        
         
         elemntButton *colorBtn = [[elemntButton alloc] initWithFrame:CGRectMake(startX+i*(btnSize+5),(sender.frame.size.height - btnSize-5), btnSize,btnSize)];
-//        NSString *imageWithColor = [NSString stringWithFormat:@"%@-%d",sender.imageName,i];
-//        NSString *imageWithColor = [NSString stringWithFormat:@"%d",i];
+
 
         [colorBtn setImage:[UIImage imageWithContentsOfFile:[[NSBundle mainBundle] pathForResource:colorKey[i] ofType:@"png"]] forState:UIControlStateNormal];
         colorBtn.imageName = [NSString stringWithFormat:@"%@-%@",sender.imageName,colorKey[i]];
@@ -775,7 +766,6 @@ bool needSaveAlert;
         [self.colorView addSubview:colorBtn];
 
     }
-//    colorView.backgroundColor = [UIColor yellowColor];
     [self.view addSubview:self.colorView];
     
     [self showColorViewAnimationFor:self.colorView];
