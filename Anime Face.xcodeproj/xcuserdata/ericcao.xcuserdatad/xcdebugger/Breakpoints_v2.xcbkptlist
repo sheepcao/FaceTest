@@ -698,11 +698,11 @@
             ignoreCount = "0"
             continueAfterRunningActions = "No"
             filePath = "Anime Face/ViewController.m"
-            timestampString = "454584166.927556"
+            timestampString = "454925675.167294"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "249"
-            endingLineNumber = "249"
+            startingLineNumber = "291"
+            endingLineNumber = "291"
             landmarkName = "-reportFromDelegate"
             landmarkType = "5">
          </BreakpointContent>
@@ -714,11 +714,11 @@
             ignoreCount = "0"
             continueAfterRunningActions = "No"
             filePath = "Anime Face/ViewController.m"
-            timestampString = "454584166.927556"
+            timestampString = "454925675.167294"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "221"
-            endingLineNumber = "221"
+            startingLineNumber = "263"
+            endingLineNumber = "263"
             landmarkName = "-dailyReward"
             landmarkType = "5">
          </BreakpointContent>
@@ -730,11 +730,11 @@
             ignoreCount = "0"
             continueAfterRunningActions = "No"
             filePath = "Anime Face/ViewController.m"
-            timestampString = "454584166.927556"
+            timestampString = "454925675.167294"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "263"
-            endingLineNumber = "263"
+            startingLineNumber = "305"
+            endingLineNumber = "305"
             landmarkName = "-reportFromDelegate"
             landmarkType = "5">
          </BreakpointContent>
@@ -1002,11 +1002,11 @@
             ignoreCount = "0"
             continueAfterRunningActions = "No"
             filePath = "Anime Face/ViewController.m"
-            timestampString = "454581666.230414"
+            timestampString = "454925675.167294"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "170"
-            endingLineNumber = "170"
+            startingLineNumber = "207"
+            endingLineNumber = "207"
             landmarkName = "-enterGame:"
             landmarkType = "5">
          </BreakpointContent>
@@ -1018,11 +1018,11 @@
             ignoreCount = "0"
             continueAfterRunningActions = "No"
             filePath = "Anime Face/ViewController.m"
-            timestampString = "454581666.230414"
+            timestampString = "454925675.167294"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "46"
-            endingLineNumber = "46"
+            startingLineNumber = "74"
+            endingLineNumber = "74"
             landmarkName = "-viewWillAppear:"
             landmarkType = "5">
          </BreakpointContent>
@@ -1466,11 +1466,11 @@
             ignoreCount = "0"
             continueAfterRunningActions = "No"
             filePath = "Anime Face/buyOneViewController.m"
-            timestampString = "454582232.2193"
+            timestampString = "454925675.167294"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "60"
-            endingLineNumber = "60"
+            startingLineNumber = "63"
+            endingLineNumber = "63"
             landmarkName = "-writeToPurchasedFor:withProduct:"
             landmarkType = "5">
          </BreakpointContent>
@@ -1482,11 +1482,11 @@
             ignoreCount = "0"
             continueAfterRunningActions = "No"
             filePath = "Anime Face/buyOneViewController.m"
-            timestampString = "454582232.2193"
+            timestampString = "454925675.167294"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "100"
-            endingLineNumber = "100"
+            startingLineNumber = "103"
+            endingLineNumber = "103"
             landmarkName = "-reloadwithRefreshControl"
             landmarkType = "5">
          </BreakpointContent>
@@ -1498,11 +1498,11 @@
             ignoreCount = "0"
             continueAfterRunningActions = "No"
             filePath = "Anime Face/buyOneViewController.m"
-            timestampString = "454582232.2193"
+            timestampString = "454925675.167294"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "123"
-            endingLineNumber = "123"
+            startingLineNumber = "126"
+            endingLineNumber = "126"
             landmarkName = "-buyAction"
             landmarkType = "5">
          </BreakpointContent>
@@ -1514,11 +1514,11 @@
             ignoreCount = "0"
             continueAfterRunningActions = "No"
             filePath = "Anime Face/buyOneViewController.m"
-            timestampString = "454582232.2193"
+            timestampString = "454925675.167294"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "152"
-            endingLineNumber = "152"
+            startingLineNumber = "155"
+            endingLineNumber = "155"
             landmarkName = "-buyOneTap:"
             landmarkType = "5">
          </BreakpointContent>
@@ -1530,11 +1530,11 @@
             ignoreCount = "0"
             continueAfterRunningActions = "No"
             filePath = "Anime Face/buyOneViewController.m"
-            timestampString = "454583851.127079"
+            timestampString = "454925675.167294"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "158"
-            endingLineNumber = "158"
+            startingLineNumber = "161"
+            endingLineNumber = "161"
             landmarkName = "-closeBuy:"
             landmarkType = "5">
          </BreakpointContent>

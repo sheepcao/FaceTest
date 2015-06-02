@@ -39,6 +39,7 @@
 
 @optional
 -(void)makeDiamondLabel:(NSString *)diamondNum;
+-(void)stopJump;
 
 
 @end
@@ -50,5 +51,6 @@
 -(void)refreshLists;
 
 @end
+
 
 #endif

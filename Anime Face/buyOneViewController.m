@@ -47,6 +47,9 @@
                 [self writeToPurchasedFor:@"头发女" withProduct:@"xuezhizi"];
                 [self writeToPurchasedFor:@"头发" withProduct:@"xuezhizi"];
 
+                [[NSUserDefaults standardUserDefaults] setObject:@"yes" forKey:@"hasBoughtHotSale"];
+                
+                [self.closeDelegate stopJump];
                 [self.closeDelegate closingBuy];
                 
             }

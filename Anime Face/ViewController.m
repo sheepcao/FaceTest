@@ -36,8 +36,36 @@
     [self updatePlistWhenUpdateing];
 
     
-
     
+}
+-(void)goUpper
+{
+    UIButton *button = self.oneBuy;
+    
+    [UIView beginAnimations:nil context:NULL];
+    [UIView setAnimationDuration:0.2];
+    [button setFrame:CGRectMake(button.frame.origin.x, button.frame.origin.y-10, button.frame.size.width,button.frame.size.height)];
+    [UIView commitAnimations];
+    
+    [self performSelector:@selector(startBounce:) withObject:button afterDelay:0.22];
+}
+
+-(void)startBounce:(UIButton *)button
+{
+    [UIView animateWithDuration:0.6
+                          delay:0
+         usingSpringWithDamping:0.25
+          initialSpringVelocity:0.4
+                        options:0 animations:^{
+                            
+                            CGRect aframe = button.frame;
+                            aframe.origin.y +=10;
+                            [button setFrame:aframe];
+                        }
+                     completion:^(BOOL finished) {
+
+                         [self performSelector:@selector(goUpper) withObject:nil afterDelay:1.95];
+                     }];
 }
 
 
@@ -45,6 +73,15 @@
 {
     [super viewWillAppear:animated];
     [self dailyReward];
+    
+    if ([[NSUserDefaults standardUserDefaults] objectForKey:@"hasBoughtHotSale"]){
+        [self.oneBuy setHidden:YES];
+        return;
+    }else
+    {
+        [self goUpper];
+    }
+
 
 }
 
@@ -201,6 +238,11 @@
     
 }
 
+
+-(void)stopJump
+{
+    [self.oneBuy setHidden:YES];
+}
 -(void)closingBuy
 {
     [UIView animateWithDuration:0.45 delay:0.05 usingSpringWithDamping:1.0 initialSpringVelocity:0.4 options:0 animations:^{
