@@ -46,6 +46,9 @@
 @property (strong, nonatomic) IBOutlet UIView *photoPage;
 @property (strong, nonatomic) IBOutlet UIImageView *photoImage;
 @property (strong, nonatomic) IBOutlet UIImageView *photoBack;
+@property (weak, nonatomic) IBOutlet UIImageView *photoGirl;
+@property (weak, nonatomic) IBOutlet UILabel *photoText;
+@property (weak, nonatomic) IBOutlet UIImageView *photoTextFrame;
 
 
 - (IBAction)share:(id)sender;

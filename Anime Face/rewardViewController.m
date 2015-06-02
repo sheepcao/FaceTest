@@ -16,8 +16,7 @@
 @property (nonatomic,strong) NSMutableArray *arrayGifOpenBox;
 @property CGFloat baseY;
 @property (strong,nonatomic) product *productNow;
-
-//@property (nonatomic,strong) NSArray *imageOptins;
+@property (strong,nonatomic) UIImageView *flashImage;
 
 @end
 
@@ -36,7 +35,7 @@ bool shouldFinish;
     shouldFinish = NO;
 
     arrayGif=[[NSMutableArray array] init];
-    arrayGifOpenBox=[[NSMutableArray array] init];
+//    arrayGifOpenBox=[[NSMutableArray array] init];
     
     if ([[[NSUserDefaults standardUserDefaults] objectForKey:@"luckyFinished"] isEqualToString:@"yes"]) {
         
@@ -49,13 +48,15 @@ bool shouldFinish;
     
 
 
-    for (int i = 0; i<7; i++) {
-        [arrayGifOpenBox addObject:[UIImage imageWithContentsOfFile:[[NSBundle mainBundle] pathForResource:[NSString stringWithFormat:@"tanchu%d",i] ofType:@"png"]]];
-    }
+//    for (int i = 0; i<7; i++) {
+//        [arrayGifOpenBox addObject:[UIImage imageWithContentsOfFile:[[NSBundle mainBundle] pathForResource:[NSString stringWithFormat:@"tanchu%d",i] ofType:@"png"]]];
+//    }
     
 
-    
+    [self updateCollectionNum];
 
+    [self spinwithView:self.spinView];
+    
     //witch animation
     
     baseY = 0;
@@ -177,6 +178,7 @@ bool shouldFinish;
 - (IBAction)cardTapped:(id)sender {
     
     [self.rewardView setHidden:YES];
+    [self.spinView setHidden:YES];
     [self.boxImage setImage:[UIImage imageNamed:@"box-normal.png"]];
 
 
@@ -185,6 +187,8 @@ bool shouldFinish;
 - (IBAction)backTapped:(id)sender {
     
     shouldFinish = YES;
+    [self.delegateRefresh refreshLists];
+
     [self.navigationController popViewControllerAnimated:YES];
 }
 
@@ -207,21 +211,83 @@ bool shouldFinish;
     [self.productView setHidden:YES];
     
     [self.boxImage setImage:[UIImage imageNamed:@"box-open.png"]];
-    if (arrayGifOpenBox.count>0) {
-        //设置动画数组
-        [self.popAnimation setAnimationImages:arrayGifOpenBox];
+//    if (arrayGifOpenBox.count>0) {
+//        //设置动画数组
+//        [self.popAnimation setAnimationImages:arrayGifOpenBox];
+//        
+//        //设置动画播放次数
+//        [self.popAnimation setAnimationRepeatCount:1];
+//        //设置动画播放时间
+//        [self.popAnimation setAnimationDuration:0.35];
+//        //开始动画
+//        [self.popAnimation startAnimating];
+//        
+//        
+//    }
+    self.flashImage = [[UIImageView alloc] initWithImage:[UIImage imageNamed:@"halo"]];
+    [self.flashImage setFrame:CGRectMake(self.rewardView.center.x-5, self.rewardView.center.y-5, 10, 10)];
+    [self.view addSubview:self.flashImage];
+    [UIView animateWithDuration:0.15 delay:0 options:UIViewAnimationOptionCurveLinear animations:^{
+        [self.flashImage setFrame:CGRectMake(self.rewardView.center.x-SCREEN_WIDTH, self.rewardView.center.y-SCREEN_WIDTH, SCREEN_WIDTH*2, SCREEN_WIDTH*2)];
+    } completion:^(BOOL finished) {
         
-        //设置动画播放次数
-        [self.popAnimation setAnimationRepeatCount:1];
-        //设置动画播放时间
-        [self.popAnimation setAnimationDuration:0.35];
-        //开始动画
-        [self.popAnimation startAnimating];
+        [self.flashImage removeFromSuperview];
+        self.flashImage = nil;
         
         
-    }
+        [self.spinView setHidden:NO];
+
+        
+        
+    }];
     [self performSelector:@selector(showCard) withObject:nil afterDelay:0.15 ];
     
+}
+
+
+-(void)spinwithView:(UIView *)spinningView
+{
+    CABasicAnimation *rotation;
+    rotation = [CABasicAnimation animationWithKeyPath:@"transform.rotation"];
+    rotation.fromValue = [NSNumber numberWithFloat:0];
+    rotation.toValue = [NSNumber numberWithFloat:(2*M_PI)];
+    rotation.duration = 8.8; // Speed
+    rotation.repeatCount = HUGE_VALF; // Repeat forever. Can be a finite number.
+    [spinningView.layer addAnimation:rotation forKey:@"Spin"];
+}
+
+
+- (void)spinWithOptions: (UIViewAnimationOptions) options :(UIView *)destRotateView {
+    
+    CGFloat duration ;
+    CGFloat spinAngle ;
+    
+    
+    if(IS_IPAD)
+    {
+        duration = 0.5f;
+        spinAngle = M_PI/8;
+        
+    }else
+    {
+        duration = 0.25f;
+        spinAngle = M_PI/128;
+    }
+    
+    [UIView animateWithDuration: duration
+                          delay: 0.0f
+                        options: options
+                     animations: ^{
+                         destRotateView.transform = CGAffineTransformRotate(destRotateView.transform, spinAngle );
+                     }
+                     completion: ^(BOOL finished) {
+                         if (finished) {
+                                 
+                                 [self spinWithOptions:UIViewAnimationOptionTransitionNone :destRotateView];
+                                 
+                             }
+                         
+                     }];
 }
 
 -(void)showCard
@@ -290,6 +356,7 @@ bool shouldFinish;
     }
     
 
+    [self updateCollectionNum];
 
     
 }

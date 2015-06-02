@@ -24,6 +24,7 @@
                 <outlet property="resultLabel" destination="jnK-oV-g0g" id="hhq-k6-2S8"/>
                 <outlet property="rewardView" destination="zTl-PQ-Kda" id="gCU-Vg-gcm"/>
                 <outlet property="sexImage" destination="WRu-b9-6aT" id="q1Y-qb-hvY"/>
+                <outlet property="spinView" destination="oXD-TA-1N5" id="BuP-2K-gMe"/>
                 <outlet property="startReward" destination="dwv-F1-ghN" id="8MX-oC-Ban"/>
                 <outlet property="view" destination="i5M-Pr-FkT" id="sfx-zR-JGt"/>
                 <outlet property="witch" destination="QdA-V8-0Nr" id="CRB-5j-vhl"/>
@@ -36,6 +37,22 @@
             <subviews>
                 <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="background3.png" translatesAutoresizingMaskIntoConstraints="NO" id="cER-dx-gwI">
                     <rect key="frame" x="0.0" y="0.0" width="414" height="736"/>
+                </imageView>
+                <imageView hidden="YES" userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="halozhuan.png" translatesAutoresizingMaskIntoConstraints="NO" id="oXD-TA-1N5" userLabel="spinView">
+                    <rect key="frame" x="0.0" y="0.0" width="240" height="128"/>
+                    <constraints>
+                        <constraint firstAttribute="width" secondItem="oXD-TA-1N5" secondAttribute="height" multiplier="1:1" id="wEf-sf-0qI"/>
+                    </constraints>
+                    <variation key="default">
+                        <mask key="constraints">
+                            <exclude reference="wEf-sf-0qI"/>
+                        </mask>
+                    </variation>
+                    <variation key="heightClass=regular-widthClass=compact">
+                        <mask key="constraints">
+                            <include reference="wEf-sf-0qI"/>
+                        </mask>
+                    </variation>
                 </imageView>
                 <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" text="" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="2" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" preferredMaxLayoutWidth="161" translatesAutoresizingMaskIntoConstraints="NO" id="jnK-oV-g0g" userLabel="result">
                     <rect key="frame" x="127" y="219" width="161" height="68"/>
@@ -285,7 +302,7 @@
                             <state key="normal" image="back.png">
                                 <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
                             </state>
-                            <state key="highlighted" image="mistery-back-press.png"/>
+                            <state key="highlighted" image="back-press.png"/>
                             <connections>
                                 <action selector="backTapped:" destination="-1" eventType="touchUpInside" id="0UY-qO-ojd"/>
                             </connections>
@@ -736,6 +753,14 @@
                             <exclude reference="bmW-CK-KnE"/>
                             <exclude reference="cpQ-aw-6OP"/>
                             <exclude reference="wHn-GV-3Td"/>
+                            <exclude reference="M1K-aP-MoB"/>
+                            <exclude reference="dx7-cL-2Ti"/>
+                            <exclude reference="sQT-gX-e7g"/>
+                            <exclude reference="MR8-y5-xQs"/>
+                            <exclude reference="TZV-MR-JIk"/>
+                            <exclude reference="cT9-NN-pBL"/>
+                            <exclude reference="pK5-nN-IPA"/>
+                            <exclude reference="rkg-88-c4j"/>
                             <exclude reference="5bt-AI-RDj"/>
                             <exclude reference="9K4-9d-f2Y"/>
                             <exclude reference="9Nu-G0-7wm"/>
@@ -745,14 +770,6 @@
                             <exclude reference="drk-W2-mTZ"/>
                             <exclude reference="mRt-4F-iGD"/>
                             <exclude reference="uvC-o5-omB"/>
-                            <exclude reference="M1K-aP-MoB"/>
-                            <exclude reference="dx7-cL-2Ti"/>
-                            <exclude reference="sQT-gX-e7g"/>
-                            <exclude reference="MR8-y5-xQs"/>
-                            <exclude reference="TZV-MR-JIk"/>
-                            <exclude reference="cT9-NN-pBL"/>
-                            <exclude reference="pK5-nN-IPA"/>
-                            <exclude reference="rkg-88-c4j"/>
                             <exclude reference="7eo-jz-cLg"/>
                             <exclude reference="LJy-xM-tzW"/>
                             <exclude reference="qC2-wB-kPa"/>
@@ -770,6 +787,14 @@
                             <include reference="bmW-CK-KnE"/>
                             <include reference="cpQ-aw-6OP"/>
                             <include reference="wHn-GV-3Td"/>
+                            <include reference="M1K-aP-MoB"/>
+                            <include reference="dx7-cL-2Ti"/>
+                            <include reference="sQT-gX-e7g"/>
+                            <exclude reference="MR8-y5-xQs"/>
+                            <include reference="TZV-MR-JIk"/>
+                            <include reference="cT9-NN-pBL"/>
+                            <exclude reference="pK5-nN-IPA"/>
+                            <include reference="rkg-88-c4j"/>
                             <exclude reference="2J5-8E-tV3"/>
                             <include reference="5bt-AI-RDj"/>
                             <include reference="9K4-9d-f2Y"/>
@@ -782,14 +807,6 @@
                             <exclude reference="drk-W2-mTZ"/>
                             <exclude reference="mRt-4F-iGD"/>
                             <exclude reference="uvC-o5-omB"/>
-                            <include reference="M1K-aP-MoB"/>
-                            <include reference="dx7-cL-2Ti"/>
-                            <include reference="sQT-gX-e7g"/>
-                            <exclude reference="MR8-y5-xQs"/>
-                            <include reference="TZV-MR-JIk"/>
-                            <include reference="cT9-NN-pBL"/>
-                            <exclude reference="pK5-nN-IPA"/>
-                            <include reference="rkg-88-c4j"/>
                             <include reference="7eo-jz-cLg"/>
                             <include reference="LJy-xM-tzW"/>
                             <include reference="qC2-wB-kPa"/>
@@ -834,15 +851,24 @@
                     <variation key="heightClass=regular-widthClass=compact" constant="0.0"/>
                 </constraint>
                 <constraint firstItem="3ut-xh-9Qc" firstAttribute="leading" secondItem="i5M-Pr-FkT" secondAttribute="leading" id="cp2-6a-1hq"/>
+                <constraint firstItem="zTl-PQ-Kda" firstAttribute="centerY" secondItem="oXD-TA-1N5" secondAttribute="centerY" constant="-105" id="gFL-9I-gcq">
+                    <variation key="heightClass=regular-widthClass=compact" constant="0.0"/>
+                </constraint>
                 <constraint firstItem="tkE-is-5iT" firstAttribute="height" secondItem="dwv-F1-ghN" secondAttribute="height" id="gva-Yp-mET"/>
                 <constraint firstItem="dwv-F1-ghN" firstAttribute="top" secondItem="tkE-is-5iT" secondAttribute="bottom" id="jjq-bI-irW"/>
                 <constraint firstItem="tkE-is-5iT" firstAttribute="width" secondItem="dwv-F1-ghN" secondAttribute="width" id="kSJ-b5-rjL"/>
                 <constraint firstItem="zTl-PQ-Kda" firstAttribute="height" secondItem="cER-dx-gwI" secondAttribute="height" multiplier="3:7" id="klN-br-pHi"/>
                 <constraint firstItem="cER-dx-gwI" firstAttribute="leading" secondItem="i5M-Pr-FkT" secondAttribute="leading" id="mte-Ub-wrY"/>
+                <constraint firstAttribute="trailing" secondItem="oXD-TA-1N5" secondAttribute="trailing" constant="149" id="qE7-35-ic0">
+                    <variation key="heightClass=regular-widthClass=compact" constant="-20"/>
+                </constraint>
                 <constraint firstItem="tkE-is-5iT" firstAttribute="leading" secondItem="cER-dx-gwI" secondAttribute="trailing" constant="-297" id="rvo-F2-61K"/>
                 <constraint firstAttribute="bottom" secondItem="GJG-DK-vSi" secondAttribute="bottom" id="t4Y-Bg-cee"/>
                 <constraint firstItem="eiV-M5-Hnl" firstAttribute="top" secondItem="tkE-is-5iT" secondAttribute="bottom" multiplier="13:11" constant="84" id="uX3-zw-38g">
                     <variation key="heightClass=regular-widthClass=compact" constant="0.0"/>
+                </constraint>
+                <constraint firstItem="oXD-TA-1N5" firstAttribute="leading" secondItem="i5M-Pr-FkT" secondAttribute="leading" constant="149" id="xtw-iY-5ga">
+                    <variation key="heightClass=regular-widthClass=compact" constant="-20"/>
                 </constraint>
             </constraints>
             <nil key="simulatedStatusBarMetrics"/>
@@ -850,29 +876,37 @@
             <simulatedScreenMetrics key="simulatedDestinationMetrics" type="retina55"/>
             <variation key="default">
                 <mask key="subviews">
+                    <exclude reference="oXD-TA-1N5"/>
                     <exclude reference="vKS-9D-cr1"/>
                     <exclude reference="eiV-M5-Hnl"/>
                 </mask>
                 <mask key="constraints">
+                    <exclude reference="gFL-9I-gcq"/>
+                    <exclude reference="jjq-bI-irW"/>
+                    <exclude reference="ENm-oF-W3a"/>
+                    <exclude reference="Svk-dv-N1M"/>
+                    <exclude reference="rvo-F2-61K"/>
+                    <exclude reference="345-dW-YSB"/>
+                    <exclude reference="qE7-35-ic0"/>
+                    <exclude reference="xtw-iY-5ga"/>
                     <exclude reference="F0C-gD-Aj3"/>
                     <exclude reference="cLb-KW-auR"/>
                     <exclude reference="6dN-k2-fpV"/>
                     <exclude reference="Qmk-Ng-fWC"/>
                     <exclude reference="YNR-wB-A0g"/>
                     <exclude reference="uX3-zw-38g"/>
-                    <exclude reference="345-dW-YSB"/>
-                    <exclude reference="jjq-bI-irW"/>
-                    <exclude reference="ENm-oF-W3a"/>
-                    <exclude reference="Svk-dv-N1M"/>
-                    <exclude reference="rvo-F2-61K"/>
                 </mask>
             </variation>
             <variation key="heightClass=regular-widthClass=compact">
                 <mask key="subviews">
+                    <include reference="oXD-TA-1N5"/>
                     <include reference="vKS-9D-cr1"/>
                     <include reference="eiV-M5-Hnl"/>
                 </mask>
                 <mask key="constraints">
+                    <include reference="gFL-9I-gcq"/>
+                    <include reference="qE7-35-ic0"/>
+                    <include reference="xtw-iY-5ga"/>
                     <include reference="F0C-gD-Aj3"/>
                     <include reference="cLb-KW-auR"/>
                     <include reference="6dN-k2-fpV"/>
@@ -883,8 +917,16 @@
             </variation>
             <point key="canvasLocation" x="334" y="264"/>
         </view>
+        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="7Ab-iA-pz0">
+            <rect key="frame" x="0.0" y="-21" width="42" height="21"/>
+            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+            <fontDescription key="fontDescription" type="system" pointSize="17"/>
+            <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+            <nil key="highlightedColor"/>
+        </label>
     </objects>
     <resources>
+        <image name="back-press.png" width="142" height="138"/>
         <image name="back.png" width="142" height="138"/>
         <image name="background3.png" width="1080" height="1920"/>
         <image name="body1.png" width="540" height="540"/>
@@ -894,11 +936,11 @@
         <image name="diamond.png" width="70" height="50"/>
         <image name="face0.png" width="728" height="728"/>
         <image name="free.png" width="116" height="151"/>
+        <image name="halozhuan.png" width="1400" height="1411"/>
         <image name="little witch.png" width="645" height="944"/>
         <image name="male.png" width="49" height="49"/>
         <image name="message 2.png" width="251" height="37"/>
         <image name="message board.png" width="530" height="322"/>
         <image name="message.png" width="429" height="162"/>
-        <image name="mistery-back-press.png" width="202" height="123"/>
     </resources>
 </document>

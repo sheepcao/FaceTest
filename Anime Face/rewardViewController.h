@@ -12,6 +12,9 @@
 
 @interface rewardViewController : UIViewController<closeBuyViewDelegate>
 
+
+@property (weak,nonatomic) id<refreshProductsDelegates>delegateRefresh;
+
 @property (weak, nonatomic) IBOutlet UIButton *startReward;
 @property (weak, nonatomic) IBOutlet UILabel *resultLabel;
 @property (weak, nonatomic) IBOutlet UIImageView *productView;
@@ -25,6 +28,7 @@
 @property (weak, nonatomic) IBOutlet UIImageView *backHairImage;
 @property (weak, nonatomic) IBOutlet UIImageView *bodyImage;
 @property (weak, nonatomic) IBOutlet UIImageView *faceImage;
+@property (weak, nonatomic) IBOutlet UIImageView *spinView;
 
 @property (weak, nonatomic) IBOutlet UILabel *productName;
 @property (weak, nonatomic) IBOutlet UILabel *diamondNum;

@@ -943,7 +943,7 @@ bool needSaveAlert;
         
     }
         
-    [oneList setContentOffset:CGPointMake(0, 0) animated:NO];
+//    [oneList setContentOffset:CGPointMake(0, 0) animated:NO];
     
     
     NSNumber *selectedNumber = [selectedElement objectForKey:[NSString stringWithFormat:@"%d",page]];
@@ -952,8 +952,7 @@ bool needSaveAlert;
         elemntButton *selectedBtn = (elemntButton *)[oneList viewWithTag:[selectedNumber integerValue]];
         [self elementTapped:selectedBtn];
     }
-
-    
+   
 
 }
 
@@ -1226,7 +1225,8 @@ bool needSaveAlert;
     self.GameData = [self readDataFromPlist:@"GameData"];
     
     myReward.GameData = self.GameData;
-    
+    myReward.delegateRefresh = self;
+
     [invisibleTextFiled removeFromSuperview];
     [invisibleTextFiled resignFirstResponder];
     [self hideCustomTextView];
@@ -1253,6 +1253,9 @@ bool needSaveAlert;
 
     if (self.photoPage.alpha <0.001) {
         self.photoPage.alpha = 1.0;
+        [self.photoGirl setImage:[UIImage imageNamed:@"girlphoto2"]];
+        [self.photoTextFrame setHidden:YES];
+        [self.photoText setHidden:YES];
         [self.view bringSubviewToFront:self.photoPage];
     }
     
@@ -1261,7 +1264,7 @@ bool needSaveAlert;
 
     [self.photoPage sendSubviewToBack:self.photoBack];
     
-    [self performSelector:@selector(showFlash) withObject:nil afterDelay:0.25];
+    [self performSelector:@selector(showFlash) withObject:nil afterDelay:0.35];
     
 
     
@@ -1271,6 +1274,8 @@ bool needSaveAlert;
 -(void)showFlash
 
 {
+    [self.photoGirl setImage:[UIImage imageNamed:@"girlphoto1"]];
+    
     [CommonUtility tapSound:@"photo" withType:@"mp3"];
 
     
@@ -1288,6 +1293,11 @@ bool needSaveAlert;
                          
                          [whiteView removeFromSuperview];
                          
+                         [self.photoGirl setImage:[UIImage imageNamed:@"girlphoto2"]];
+                         [self.photoTextFrame setHidden:NO];
+                         [self.photoText setHidden:NO];
+                         [self.photoText setText:@"世上竟有如此出尘绝艳的女子"];
+
                          
                      }
      ];
