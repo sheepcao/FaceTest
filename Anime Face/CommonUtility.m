@@ -38,17 +38,17 @@
     }
 }
 
-+(void)tapSound
-{
-    SystemSoundID soundTap;
-    
-    CFBundleRef CNbundle=CFBundleGetMainBundle();
-    
-    CFURLRef soundfileurl=CFBundleCopyResourceURL(CNbundle,(__bridge CFStringRef)@"tapSound",CFSTR("wav"),NULL);
-    //创建system sound 对象
-    AudioServicesCreateSystemSoundID(soundfileurl, &soundTap);
-    AudioServicesPlaySystemSound(soundTap);
-}
+//+(void)tapSound
+//{
+//    SystemSoundID soundTap;
+//    
+//    CFBundleRef CNbundle=CFBundleGetMainBundle();
+//    
+//    CFURLRef soundfileurl=CFBundleCopyResourceURL(CNbundle,(__bridge CFStringRef)@"tapSound",CFSTR("wav"),NULL);
+//    //创建system sound 对象
+//    AudioServicesCreateSystemSoundID(soundfileurl, &soundTap);
+//    AudioServicesPlaySystemSound(soundTap);
+//}
 
 +(BOOL)isSystemVersionLessThan7{
     if (floor(NSFoundationVersionNumber) <= NSFoundationVersionNumber_iOS_6_1) {
@@ -63,7 +63,15 @@
     
     NSString *soundFilePath = [[NSBundle mainBundle] pathForResource:name ofType:type];
     NSURL *fileURL = [[NSURL alloc] initFileURLWithPath:soundFilePath ];
-    [CommonUtility sharedCommonUtility].myAudioPlayer= [[AVAudioPlayer alloc] initWithContentsOfURL:fileURL error:nil];
+    
+    NSError *error;
+    
+    NSData *data =[NSData dataWithContentsOfURL:fileURL];
+
+    [CommonUtility sharedCommonUtility].myAudioPlayer  = [[AVAudioPlayer alloc] initWithData:data error:nil];
+
+//    [CommonUtility sharedCommonUtility].myAudioPlayer= [[AVAudioPlayer alloc] initWithContentsOfURL:fileURL error:&error];
+    NSLog(@"error is : %@",error);
     [CommonUtility sharedCommonUtility].myAudioPlayer.volume = 1.0f;
     [[CommonUtility sharedCommonUtility].myAudioPlayer play];
     

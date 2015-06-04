@@ -26,7 +26,7 @@
     [super viewDidLoad];
     // Do any additional setup after loading the view from its nib.
     
-    self.prodcutsArray = @[@"6",@"18",@"60",@"128"];
+    self.prodcutsArray = @[@"60",@"190",@"640",@"1448"];
     
     [[NSNotificationCenter defaultCenter] addObserver:self selector:@selector(productPurchased:) name:IAPHelperProductPurchasedNotification object:nil];
     [self.loadingView setHidden:YES];

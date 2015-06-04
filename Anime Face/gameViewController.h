@@ -13,7 +13,7 @@
 
 
 
-@interface gameViewController : ViewController<refreshProductsDelegates>
+@interface gameViewController : UIViewController<refreshProductsDelegates>
 
 @property (weak, nonatomic) IBOutlet APLMoveMeView *headImage;
 @property (weak, nonatomic) IBOutlet UIScrollView *catalogScrollView;
@@ -37,18 +37,19 @@
 @property (weak, nonatomic) IBOutlet UIImageView *toptextView;
 @property (weak, nonatomic) IBOutlet UIImageView *bottomtextView;
 @property (weak, nonatomic) IBOutlet APLPlacardView *moodView;
-@property (strong, nonatomic) IBOutlet UILabel *customTextLabel;
+@property (weak, nonatomic) IBOutlet UILabel *customTextLabel;
 
 @property (weak, nonatomic) IBOutlet UIImageView *loadingView;
-@property (strong, nonatomic) IBOutlet UIView *loadPage;
+@property (weak, nonatomic) IBOutlet UIView *loadPage;
 
 
-@property (strong, nonatomic) IBOutlet UIView *photoPage;
-@property (strong, nonatomic) IBOutlet UIImageView *photoImage;
-@property (strong, nonatomic) IBOutlet UIImageView *photoBack;
+@property (weak, nonatomic) IBOutlet UIView *photoPage;
+@property (weak, nonatomic) IBOutlet UIImageView *photoImage;
+@property (weak, nonatomic) IBOutlet UIImageView *photoBack;
 @property (weak, nonatomic) IBOutlet UIImageView *photoGirl;
 @property (weak, nonatomic) IBOutlet UILabel *photoText;
 @property (weak, nonatomic) IBOutlet UIImageView *photoTextFrame;
+@property (weak, nonatomic) IBOutlet UIImageView *shareGift;
 
 
 - (IBAction)share:(id)sender;

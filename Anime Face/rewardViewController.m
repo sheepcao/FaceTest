@@ -131,6 +131,9 @@ bool shouldFinish;
 
 - (IBAction)buyDaimond:(id)sender {
     
+    
+    [CommonUtility tapSound:@"buyDiamond" withType:@"mp3"];
+
     self.myBuyController = [[buyingViewController alloc] initWithNibName:@"buyingViewController" bundle:nil];
     self.myBuyController.closeDelegate =self;
     
@@ -201,7 +204,52 @@ bool shouldFinish;
     
     }else
     {
-        [self costDiamond:20];
+        if([self checkDiamond:20])
+        {
+            [self costDiamond:20];
+
+        }else
+        {
+            UIView *alertBack = [[UIView alloc] initWithFrame:self.view.frame];
+            [alertBack setBackgroundColor:[UIColor clearColor]];
+            
+            
+            UIView *alertView = [[UIView alloc] initWithFrame:CGRectMake((SCREEN_WIDTH-280)/2, SCREEN_HEIGHT+10, 280, 185)];
+            alertView.alpha = 0.0f;
+            [alertBack addSubview:alertView];
+            
+            [self.view addSubview:alertBack];
+            UIImageView *backImg = [[UIImageView alloc] initWithFrame:CGRectMake(0, 0, 280, 185)];
+            [backImg setImage:[UIImage imageWithContentsOfFile:[[NSBundle mainBundle] pathForResource:@"diamond not enough board" ofType:@"png"]]];
+            [alertView addSubview:backImg];
+            
+            
+            UIButton *cancelBtn = [[UIButton alloc] initWithFrame:CGRectMake(alertView.frame.size.width/2-90, alertView.frame.size.height-80, 70, 42)];
+            [cancelBtn setImage:[UIImage imageNamed:@"cancel"] forState:UIControlStateNormal];
+            [cancelBtn setImage:[UIImage imageNamed:@"cancel-press"] forState:UIControlStateHighlighted];
+            [cancelBtn addTarget:self action:@selector(cancelAlert:) forControlEvents:UIControlEventTouchUpInside];
+            
+            
+            UIButton *sureBtn = [[UIButton alloc] initWithFrame:CGRectMake(alertView.frame.size.width/2+20, alertView.frame.size.height-80, 70, 42)];
+            [sureBtn setImage:[UIImage imageNamed:@"sure"] forState:UIControlStateNormal];
+            [sureBtn setImage:[UIImage imageNamed:@"sure-press"] forState:UIControlStateHighlighted];
+            [sureBtn addTarget:self action:@selector(sureAlert:) forControlEvents:UIControlEventTouchUpInside];
+            
+            [alertView addSubview:sureBtn];
+            [alertView addSubview:cancelBtn];
+            
+            
+            [UIView beginAnimations:nil context:NULL];
+            [UIView setAnimationDuration:0.5];
+            
+            [alertView setFrame:CGRectMake((SCREEN_WIDTH-280)/2, (SCREEN_HEIGHT-185)/2, 280, 185)];
+            alertView.alpha = 1;
+            
+            [UIView commitAnimations];
+            
+            
+            return;
+        }
     }
     
 
@@ -211,19 +259,7 @@ bool shouldFinish;
     [self.productView setHidden:YES];
     
     [self.boxImage setImage:[UIImage imageNamed:@"box-open.png"]];
-//    if (arrayGifOpenBox.count>0) {
-//        //设置动画数组
-//        [self.popAnimation setAnimationImages:arrayGifOpenBox];
-//        
-//        //设置动画播放次数
-//        [self.popAnimation setAnimationRepeatCount:1];
-//        //设置动画播放时间
-//        [self.popAnimation setAnimationDuration:0.35];
-//        //开始动画
-//        [self.popAnimation startAnimating];
-//        
-//        
-//    }
+
     self.flashImage = [[UIImageView alloc] initWithImage:[UIImage imageNamed:@"halo"]];
     [self.flashImage setFrame:CGRectMake(self.rewardView.center.x-5, self.rewardView.center.y-5, 10, 10)];
     [self.view addSubview:self.flashImage];
@@ -244,6 +280,24 @@ bool shouldFinish;
     
 }
 
+-(void)cancelAlert:(UIButton *)sender
+{
+    UIView *theAlertView = [[sender superview] superview];
+    
+    [theAlertView removeFromSuperview];
+    
+}
+
+-(void)sureAlert:(UIButton *)sender
+{
+    UIView *theAlertView = [[sender superview] superview];
+    
+    [theAlertView removeFromSuperview];
+
+    [self buyDaimond:nil];
+    
+    
+}
 
 -(void)spinwithView:(UIView *)spinningView
 {

@@ -22,7 +22,7 @@
 
 + (CommonUtility *)sharedCommonUtility;
 + (BOOL)isSystemLangChinese;
-+ (void)tapSound;
+//+ (void)tapSound;
 + (void)tapSound:(NSString *)name withType:(NSString *)type;
 + (BOOL)isSystemVersionLessThan7;
 

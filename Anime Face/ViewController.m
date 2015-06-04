@@ -11,6 +11,7 @@
 #import "rewardViewController.h"
 #import "storeViewController.h"
 #import "buyOneViewController.h"
+#import "TestViewController.h"
 
 @interface ViewController ()
 {
@@ -205,6 +206,7 @@
 
 - (IBAction)enterGame:(UIButton *)sender {
     gameViewController *myGame = [[gameViewController alloc] initWithNibName:@"gameViewController" bundle:nil];
+    
     self.GameDatas = [self readDataFromPlist:@"GameData"];
 
     myGame.GameData = self.GameDatas;
@@ -212,6 +214,7 @@
     [CommonUtility tapSound:@"entry" withType:@"m4a"];
 
     [self.navigationController pushViewController:myGame animated:YES];
+//    [self presentViewController:myGame animated:YES completion:nil];
     
 }
 
@@ -260,9 +263,12 @@
 {
     
     //eric:set last day
-    
-    netAssociation = [[NetAssociation alloc] initWithServerName:@"time.apple.com"];
-    netAssociation.delegate = self;
+    if(!netAssociation)
+    {
+        netAssociation = [[NetAssociation alloc] initWithServerName:@"time.apple.com"];
+        netAssociation.delegate = self;
+    }
+
     [netAssociation sendTimeQuery];
 
     

@@ -41,9 +41,9 @@ bool needSaveAlert;
     
     needSaveAlert = NO;
 
-    NSString *path = [[NSBundle mainBundle] pathForResource:[NSString stringWithFormat:@"loading%d",self.sex] ofType:@"png"];
-
-    [self.loadingView setImage:[UIImage imageWithContentsOfFile:path]];
+//    NSString *path = [[NSBundle mainBundle] pathForResource:[NSString stringWithFormat:@"loading%d",self.sex] ofType:@"png"];
+//
+//    [self.loadingView setImage:[UIImage imageWithContentsOfFile:path]];
     
     [self.loadPage setHidden:NO];
     
@@ -77,7 +77,7 @@ bool needSaveAlert;
     
 //    self.catalogScrollView.backgroundColor = [UIColor colorWithPatternImage:[UIImage imageWithContentsOfFile:@"slip-background.png"]];
 
-    [self performSelector:@selector(setupCatalog) withObject:nil afterDelay:0.8];
+    [self performSelector:@selector(setupGameCatalog) withObject:nil afterDelay:0.8];
     [self performSelector:@selector(setupListsForPage:) withObject:@"0" afterDelay:0.9];
     
     self.imageShare = [[UIImage alloc] init];
@@ -101,22 +101,22 @@ bool needSaveAlert;
 -(void)refreshLists
 {
     
-    NSString *path = [[NSBundle mainBundle] pathForResource:[NSString stringWithFormat:@"loading%d",self.sex] ofType:@"png"];
-    
-    [self.loadingView setImage:[UIImage imageWithContentsOfFile:path]];
+//    NSString *path = [[NSBundle mainBundle] pathForResource:[NSString stringWithFormat:@"loading%d",self.sex] ofType:@"png"];
+//    
+//    [self.loadingView setImage:[UIImage imageWithContentsOfFile:path]];
     
     [self.loadPage setHidden:NO];
     
     
     
-    [self performSelector:@selector(setupCatalog) withObject:nil afterDelay:0.8];
+    [self performSelector:@selector(setupGameCatalog) withObject:nil afterDelay:0.8];
     [self performSelector:@selector(setupListsForPage:) withObject:@"0" afterDelay:0.9];
 
 }
 
 
 #pragma mark setup Catalog
--(void)setupCatalog
+-(void)setupGameCatalog
 {
     
     for (UIView *subScroll in [self.catalogScrollView subviews]) {
@@ -132,6 +132,9 @@ bool needSaveAlert;
 
 
     self.catalogScrollView.canCancelContentTouches = YES;
+  
+    
+
     
     
     NSArray *catalogText = [self.GameData objectForKey:[NSString stringWithFormat:@"catalog%d",self.sex]];
@@ -314,6 +317,9 @@ bool needSaveAlert;
 #pragma mark setup Lists
 -(void)setupListsForPage:(NSString *)pageNum
 {
+    
+
+    
     [self.ListsScroll setFrame:CGRectMake(0, self.catalogScrollView.frame.origin.y+self.catalogScrollView.frame.size.height, SCREEN_WIDTH, SCREEN_HEIGHT - (self.catalogScrollView.frame.origin.y+self.catalogScrollView.frame.size.height))];
     [self.ListsScroll setContentSize:CGSizeMake(CATALOG_NUM*SCREEN_WIDTH,self.ListsScroll.frame.size.height)];
     self.ListsScroll.canCancelContentTouches = YES;
@@ -465,13 +471,7 @@ bool needSaveAlert;
                 
                 [element setImage:[UIImage imageWithContentsOfFile:[[NSBundle mainBundle] pathForResource:preView ofType:@"png"]] forState:UIControlStateNormal];
                 element.imageName = allListElements[j];
-//                if(i==7)//guesture
-//                {
-//                    NSString *preView = [NSString stringWithFormat:@"%@-yulan",allListElements[j]];
-//                    
-//                    [element setImage:[UIImage imageWithContentsOfFile:[[NSBundle mainBundle] pathForResource:preView ofType:@"png"]] forState:UIControlStateNormal];
-//                    
-//                }
+
             }
             
             element.imageLevel =[NSNumber numberWithInt:i];
@@ -1077,9 +1077,7 @@ bool needSaveAlert;
                 // INSERT CODE TO PERFORM WHEN USER TAPS OK eg. :
                 UIImageWriteToSavedPhotosAlbum(self.imageShare, nil, nil,nil);
                 
-//                UIAlertView *successAlert = [[UIAlertView alloc] initWithTitle:@"成功保存" message:@"已将保存萌照至系统相册" delegate:nil cancelButtonTitle:@"确定" otherButtonTitles: nil];
-//                
-//                [successAlert show];
+//
                 NSLog(@"saved Image!");
                 
                 return;
@@ -1096,8 +1094,7 @@ bool needSaveAlert;
     {
         UIImageWriteToSavedPhotosAlbum(self.imageShare, nil, nil,nil);
         
-//        UIAlertView *successAlert = [[UIAlertView alloc] initWithTitle:@"成功保存" message:@"已将保存萌照至系统相册" delegate:nil cancelButtonTitle:@"确定" otherButtonTitles: nil];
-//        
+//
 //        [successAlert show];
         NSLog(@"saved Image!");
         
@@ -1113,10 +1110,10 @@ bool needSaveAlert;
 
     
     //构造分享内容
-    id<ISSContent> publishContent = [ShareSDK content:@"萌漫头"
+    id<ISSContent> publishContent = [ShareSDK content:@"萌漫头像"
                                        defaultContent:NSLocalizedString(@"",nil)
                                                 image:[ShareSDK pngImageWithImage:self.imageShare]
-                                                title:@"萌漫头"
+                                                title:@"萌漫头像"
                                                   url:REVIEW_URL
                                           description:NSLocalizedString(@"",nil)
                                             mediaType:SSPublishContentMediaTypeImage];
@@ -1135,8 +1132,9 @@ bool needSaveAlert;
                                 
                                 if (state == SSResponseStateSuccess)
                                 {
-//                                    [MobClick event:@"share"];
-                                    
+                                    //eric: to be sned da bai....
+                                    [self writeToPurchasedFor:@"宠物" withProduct:@"dabai"];
+                                    [[NSUserDefaults standardUserDefaults] setObject:@"yes" forKey:@"hasShared"];
                                     NSLog(NSLocalizedString(@"TEXT_ShARE_SUC", @"分享成功"));
                                 }
                                 else if (state == SSResponseStateFail)
@@ -1256,7 +1254,19 @@ bool needSaveAlert;
         [self.photoGirl setImage:[UIImage imageNamed:@"girlphoto2"]];
         [self.photoTextFrame setHidden:YES];
         [self.photoText setHidden:YES];
+        
+        if ([[[NSUserDefaults standardUserDefaults] objectForKey:@"hasShared"] isEqualToString:@"yes"]) {
+            [self.shareGift setHidden:YES];
+        }else
+        {
+            [self.shareGift setHidden:NO];
+
+        }
+        
         [self.view bringSubviewToFront:self.photoPage];
+        
+        
+        
     }
     
 
@@ -1338,5 +1348,46 @@ bool needSaveAlert;
     
     return YES;
 }
+
+
+-(void)writeToPurchasedFor:(NSString *)catalog withProduct:(NSString *)productName
+{
+    if ([[NSUserDefaults standardUserDefaults] objectForKey:catalog]) {
+        
+        
+        NSMutableDictionary *purchasedCatelog = [[NSMutableDictionary alloc] init];
+        [purchasedCatelog setObject:@"yes" forKey:@"haveNew"];
+        
+        NSMutableDictionary *purchasedDic = [NSMutableDictionary dictionaryWithDictionary:[[NSUserDefaults standardUserDefaults] objectForKey:catalog]];
+        
+        NSMutableArray *purchasedArray = [NSMutableArray arrayWithArray:[purchasedDic objectForKey:@"purchasedArray"]];
+        
+        
+        NSString *newProductName = [NSString stringWithFormat:@"%@+new",productName];
+        [purchasedArray addObject:newProductName];
+        [purchasedCatelog setObject:purchasedArray forKey:@"purchasedArray"];
+        
+        
+        [[NSUserDefaults standardUserDefaults] setObject:purchasedCatelog forKey:catalog];
+        
+        
+    }else
+    {
+        NSMutableDictionary *purchasedCatelog = [[NSMutableDictionary alloc] init];
+        [purchasedCatelog setObject:@"yes" forKey:@"haveNew"];
+        
+        NSMutableArray *purchasedArray = [[NSMutableArray alloc] init];
+        
+        NSString *newProductName = [NSString stringWithFormat:@"%@+new",productName];
+        [purchasedArray addObject:newProductName];
+        
+        [purchasedCatelog setObject:purchasedArray forKey:@"purchasedArray"];
+        
+        [[NSUserDefaults standardUserDefaults] setObject:purchasedCatelog forKey:catalog];
+    }
+    
+}
+
+
 
 @end

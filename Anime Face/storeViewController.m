@@ -43,8 +43,8 @@ bool showingDefault;
         [self.diamondLabel setText:diamond];
     }else
     {
-        [[NSUserDefaults standardUserDefaults] setObject:@"1000" forKey:@"diamond"];
-        [self.diamondLabel setText:@"1000"];
+        [[NSUserDefaults standardUserDefaults] setObject:StartDiamond forKey:@"diamond"];
+        [self.diamondLabel setText:StartDiamond];
 
     }
     
@@ -457,8 +457,11 @@ bool showingDefault;
 
 - (IBAction)backTap:(id)sender {
     
+    
+    
     [self.delegateRefresh refreshLists];
     [self.navigationController popViewControllerAnimated:YES];
+    
 }
 
 - (IBAction)goLuckyHouse:(id)sender {
@@ -470,6 +473,9 @@ bool showingDefault;
 
 - (IBAction)addDiamond:(id)sender {
 //
+    [CommonUtility tapSound:@"buyDiamond" withType:@"mp3"];
+
+    
         self.myBuyController = [[buyingViewController alloc] initWithNibName:@"buyingViewController" bundle:nil];
         self.myBuyController.closeDelegate =self;
     
@@ -531,11 +537,33 @@ bool showingDefault;
 
     }else
     {
+        UIView *alertBack = [[UIView alloc] initWithFrame:self.view.frame];
+        [alertBack setBackgroundColor:[UIColor clearColor]];
+        
+        
         UIView *alertView = [[UIView alloc] initWithFrame:CGRectMake((SCREEN_WIDTH-280)/2, SCREEN_HEIGHT+10, 280, 185)];
         alertView.alpha = 0.0f;
+        [alertBack addSubview:alertView];
+        
+        [self.view addSubview:alertBack];
         UIImageView *backImg = [[UIImageView alloc] initWithFrame:CGRectMake(0, 0, 280, 185)];
         [backImg setImage:[UIImage imageWithContentsOfFile:[[NSBundle mainBundle] pathForResource:@"diamond not enough board" ofType:@"png"]]];
         [alertView addSubview:backImg];
+        
+        
+        UIButton *cancelBtn = [[UIButton alloc] initWithFrame:CGRectMake(alertView.frame.size.width/2-90, alertView.frame.size.height-80, 70, 42)];
+        [cancelBtn setImage:[UIImage imageNamed:@"cancel"] forState:UIControlStateNormal];
+        [cancelBtn setImage:[UIImage imageNamed:@"cancel-press"] forState:UIControlStateHighlighted];
+        [cancelBtn addTarget:self action:@selector(cancelAlert:) forControlEvents:UIControlEventTouchUpInside];
+        
+        
+        UIButton *sureBtn = [[UIButton alloc] initWithFrame:CGRectMake(alertView.frame.size.width/2+20, alertView.frame.size.height-80, 70, 42)];
+        [sureBtn setImage:[UIImage imageNamed:@"sure"] forState:UIControlStateNormal];
+        [sureBtn setImage:[UIImage imageNamed:@"sure-press"] forState:UIControlStateHighlighted];
+        [sureBtn addTarget:self action:@selector(sureAlert:) forControlEvents:UIControlEventTouchUpInside];
+        
+        [alertView addSubview:sureBtn];
+        [alertView addSubview:cancelBtn];
         
         
         [UIView beginAnimations:nil context:NULL];
@@ -547,10 +575,31 @@ bool showingDefault;
         [UIView commitAnimations];
         
         
+        
     }
     
     
 }
+
+-(void)cancelAlert:(UIButton *)sender
+{
+    UIView *theAlertView = [[sender superview] superview];
+    
+    [theAlertView removeFromSuperview];
+    
+}
+
+-(void)sureAlert:(UIButton *)sender
+{
+    UIView *theAlertView = [[sender superview] superview];
+    
+    [theAlertView removeFromSuperview];
+    
+    [self addDiamond:nil];
+    
+    
+}
+
 -(void)makeDiamondLabel:(NSString *)diamondNum
 {
     [self.diamondLabel setText:diamondNum];

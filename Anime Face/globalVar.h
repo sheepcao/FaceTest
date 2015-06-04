@@ -34,6 +34,9 @@
 #define ALLAPP_URL @"itms://itunes.apple.com/us/artist/cao-guangxu/id844914783"
 
 #define VERSIONNUMBER   [[[NSBundle mainBundle] infoDictionary] objectForKey:@"CFBundleShortVersionString"]
+
+#define StartDiamond @"100"
+
 @protocol closeBuyViewDelegate
 -(void)closingBuy;
 
