@@ -8,6 +8,7 @@
 
 
 #import "CommonUtility.h"
+#import "globalVar.h"
 
 @implementation CommonUtility
 
@@ -61,19 +62,22 @@
 +(void)tapSound:(NSString *)name withType:(NSString *)type
 {
     
-    NSString *soundFilePath = [[NSBundle mainBundle] pathForResource:name ofType:type];
-    NSURL *fileURL = [[NSURL alloc] initFileURLWithPath:soundFilePath ];
-    
-    NSError *error;
-    
-    NSData *data =[NSData dataWithContentsOfURL:fileURL];
-
-    [CommonUtility sharedCommonUtility].myAudioPlayer  = [[AVAudioPlayer alloc] initWithData:data error:nil];
-
-//    [CommonUtility sharedCommonUtility].myAudioPlayer= [[AVAudioPlayer alloc] initWithContentsOfURL:fileURL error:&error];
-    NSLog(@"error is : %@",error);
-    [CommonUtility sharedCommonUtility].myAudioPlayer.volume = 1.0f;
-    [[CommonUtility sharedCommonUtility].myAudioPlayer play];
+    if(soundSwitch)
+    {
+        NSString *soundFilePath = [[NSBundle mainBundle] pathForResource:name ofType:type];
+        NSURL *fileURL = [[NSURL alloc] initFileURLWithPath:soundFilePath ];
+        
+        NSError *error;
+        
+        NSData *data =[NSData dataWithContentsOfURL:fileURL];
+        
+        [CommonUtility sharedCommonUtility].myAudioPlayer  = [[AVAudioPlayer alloc] initWithData:data error:nil];
+        
+        //    [CommonUtility sharedCommonUtility].myAudioPlayer= [[AVAudioPlayer alloc] initWithContentsOfURL:fileURL error:&error];
+        NSLog(@"error is : %@",error);
+        [CommonUtility sharedCommonUtility].myAudioPlayer.volume = 1.0f;
+        [[CommonUtility sharedCommonUtility].myAudioPlayer play];
+    }
     
 }
 

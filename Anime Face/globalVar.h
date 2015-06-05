@@ -37,6 +37,9 @@
 
 #define StartDiamond @"100"
 
+BOOL soundSwitch;
+BOOL musicSwitch;
+
 @protocol closeBuyViewDelegate
 -(void)closingBuy;
 

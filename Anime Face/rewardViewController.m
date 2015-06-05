@@ -71,8 +71,9 @@ bool shouldFinish;
         [self.diamondNum setText:diamond];
     }else
     {
-        [[NSUserDefaults standardUserDefaults] setObject:@"1000" forKey:@"diamond"];
-        [self.diamondNum setText:@"1000"];
+        [[NSUserDefaults standardUserDefaults] setObject:StartDiamond forKey:@"diamond"];
+        [self.diamondNum setText:StartDiamond];
+
         
     }
 
@@ -131,9 +132,10 @@ bool shouldFinish;
 
 - (IBAction)buyDaimond:(id)sender {
     
-    
+    if(soundSwitch)
+    {
     [CommonUtility tapSound:@"buyDiamond" withType:@"mp3"];
-
+    }
     self.myBuyController = [[buyingViewController alloc] initWithNibName:@"buyingViewController" bundle:nil];
     self.myBuyController.closeDelegate =self;
     

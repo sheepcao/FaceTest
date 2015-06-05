@@ -26,6 +26,9 @@
     [MobClick setAppVersion:version];
     
     [self setShareIDs];
+    
+    [self getSettings];
+    
     return YES;
 }
 
@@ -108,5 +111,24 @@
                               appSecret:@"81a6e951927f0dc14727c622c45f562b"];
     
     
+}
+
+-(void)getSettings
+{
+    if([[[NSUserDefaults standardUserDefaults] objectForKey:@"soundSwitch"] isEqualToString:@"no"])
+    {
+        soundSwitch = NO;
+    }else
+    {
+        soundSwitch = YES;
+    }
+    
+    if([[[NSUserDefaults standardUserDefaults] objectForKey:@"musicSwitch"] isEqualToString:@"no"])
+    {
+        musicSwitch = NO;
+    }else
+    {
+        musicSwitch = YES;
+    }
 }
 @end

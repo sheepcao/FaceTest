@@ -198,6 +198,9 @@
                                         <exclude reference="uvp-72-F1Z"/>
                                     </mask>
                                 </variation>
+                                <connections>
+                                    <action selector="settingTap:" destination="vXZ-lx-hvc" eventType="touchUpInside" id="bXK-nn-Ila"/>
+                                </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="dNS-Fr-ZbD" userLabel="luckyHouse">
                                 <rect key="frame" x="100" y="405" width="120" height="46"/>
@@ -247,7 +250,7 @@
                                     </mask>
                                 </variation>
                                 <variation key="widthClass=compact" misplaced="YES">
-                                    <rect key="frame" x="184" y="400" width="37" height="20"/>
+                                    <rect key="frame" x="185" y="400" width="36" height="19"/>
                                     <mask key="constraints">
                                         <include reference="CrC-6H-zjc"/>
                                         <exclude reference="hak-47-r6f"/>

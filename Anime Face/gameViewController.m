@@ -264,8 +264,9 @@ bool needSaveAlert;
 }
 -(void)scrollToCatalog:(NSInteger)BtnTag withDuration:(CGFloat)time
 {
-    [CommonUtility tapSound:@"catalog" withType:@"mp3"];
 
+        [CommonUtility tapSound:@"catalog" withType:@"mp3"];
+    
     
     
     UIButton * catalogBtn =(UIButton *)[self.catalogScrollView viewWithTag:BtnTag];
@@ -1130,11 +1131,18 @@ bool needSaveAlert;
                       shareOptions:nil
                             result:^(ShareType type, SSResponseState state, id<ISSPlatformShareInfo> statusInfo, id<ICMErrorInfo> error, BOOL end) {
                                 
-                                if (state == SSResponseStateSuccess)
+                                if (state == SSResponseStateSuccess )
                                 {
+                                    if(type ==ShareTypeWeixiTimeline && ![[NSUserDefaults standardUserDefaults] objectForKey:@"hasShared"])
+                                    {
                                     //eric: to be sned da bai....
                                     [self writeToPurchasedFor:@"宠物" withProduct:@"dabai"];
                                     [[NSUserDefaults standardUserDefaults] setObject:@"yes" forKey:@"hasShared"];
+                                    [self.shareGift setHidden:YES];
+                                        
+                                        NSLog(@"song da bai");
+                                    }
+                                    
                                     NSLog(NSLocalizedString(@"TEXT_ShARE_SUC", @"分享成功"));
                                 }
                                 else if (state == SSResponseStateFail)
@@ -1270,8 +1278,6 @@ bool needSaveAlert;
     }
     
 
-    
-
     [self.photoPage sendSubviewToBack:self.photoBack];
     
     [self performSelector:@selector(showFlash) withObject:nil afterDelay:0.35];
@@ -1285,9 +1291,10 @@ bool needSaveAlert;
 
 {
     [self.photoGirl setImage:[UIImage imageNamed:@"girlphoto1"]];
-    
-    [CommonUtility tapSound:@"photo" withType:@"mp3"];
-
+    if(soundSwitch)
+    {
+        [CommonUtility tapSound:@"photo" withType:@"mp3"];
+    }
     
     UIView *whiteView = [[UIView alloc] initWithFrame:self.view.frame];
     [whiteView setBackgroundColor:[UIColor whiteColor]];

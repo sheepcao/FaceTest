@@ -27,5 +27,6 @@
 
 - (IBAction)enterGame:(UIButton *)sender;
 - (IBAction)oneBuyClick:(id)sender;
+- (IBAction)settingTap:(id)sender;
 @end
 
