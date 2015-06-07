@@ -126,7 +126,7 @@ bool needSaveAlert;
     }
     
     
-    [self.catalogScrollView setContentSize:CGSizeMake(CATALOG_NUM*CATALOG_BUTTON_WIDTH, self.catalogScrollView.frame.size.height)];
+    [self.catalogScrollView setContentSize:CGSizeMake(CATALOG_NUM*CATALOG_BUTTON_WIDTH, 0)];
     [self.catalogScrollView setContentOffset:CGPointMake(0, 0)];
     
 
@@ -322,7 +322,9 @@ bool needSaveAlert;
 
     
     [self.ListsScroll setFrame:CGRectMake(0, self.catalogScrollView.frame.origin.y+self.catalogScrollView.frame.size.height, SCREEN_WIDTH, SCREEN_HEIGHT - (self.catalogScrollView.frame.origin.y+self.catalogScrollView.frame.size.height))];
-    [self.ListsScroll setContentSize:CGSizeMake(CATALOG_NUM*SCREEN_WIDTH,self.ListsScroll.frame.size.height)];
+    [self.ListsScroll setContentSize:CGSizeMake(CATALOG_NUM*SCREEN_WIDTH,0)];
+    self.ListsScroll.panGestureRecognizer.delaysTouchesBegan = YES;
+
     self.ListsScroll.canCancelContentTouches = YES;
     self.ListsScroll.pagingEnabled = YES;
     self.ListsScroll.bounces = NO;
@@ -375,10 +377,13 @@ bool needSaveAlert;
         
         UIScrollView *oneList = [[UIScrollView alloc] initWithFrame:CGRectMake(0+i*SCREEN_WIDTH, 0, SCREEN_WIDTH,  self.ListsScroll.frame.size.height)];
         int rowForNotFull = (listElements.count%3 == 0)?0:1;
-        [oneList setContentSize:CGSizeMake(SCREEN_WIDTH,(rowForNotFull+listElements.count/3)*(ELEMENT_WIDTH+6)/1.2)];
+        [oneList setContentSize:CGSizeMake(0,10+(rowForNotFull+listElements.count/3)*(ELEMENT_WIDTH+6)/1.2)];
         oneList.canCancelContentTouches = YES;
+//        oneList.panGestureRecognizer.delaysTouchesBegan = YES;
+
+            
         oneList.bounces = NO;
-        oneList.showsVerticalScrollIndicator=NO;
+        oneList.showsVerticalScrollIndicator=YES;
         oneList.showsHorizontalScrollIndicator=NO;
         oneList.tag = 1000+i;
         oneList.delegate = self;
@@ -504,8 +509,13 @@ bool needSaveAlert;
     NSLog(@"element:%@",sender.imageLevel);
     
     UIView *superView = [sender superview];
-    for (UIButton *subBtn in [superView subviews]) {
-        [subBtn setSelected:NO];
+    for (UIView *subBtn in [superView subviews]) {
+        if([subBtn isKindOfClass:[UIButton class]])
+        {
+            UIButton *btn = (UIButton *)subBtn;
+            [btn setSelected:NO];
+
+        }
     }
     [sender setSelected:YES];
 
@@ -854,7 +864,7 @@ bool needSaveAlert;
         
     }
     int rowForNotFull = (allListElements.count%3 == 0)?0:1;
-    [oneList setContentSize:CGSizeMake(SCREEN_WIDTH,(rowForNotFull+allListElements.count/3)*(ELEMENT_WIDTH+6)/1.2)];
+    [oneList setContentSize:CGSizeMake(SCREEN_WIDTH-10,10+(rowForNotFull+allListElements.count/3)*(ELEMENT_WIDTH+6)/1.2)];
     
     
     for (int j = 0 ; j<allListElements.count; j++) {
@@ -983,7 +993,7 @@ bool needSaveAlert;
 {
     if (scrollView == self.ListsScroll ){
         CGFloat pageWidth = SCREEN_WIDTH;
-        [scrollView setContentOffset:CGPointMake((pageWidth * (int)(scrollView.contentOffset.x / pageWidth)), 0)];
+//        [scrollView setContentOffset:CGPointMake((pageWidth * (int)(scrollView.contentOffset.x / pageWidth)), 0)];
         int page = (int)(scrollView.contentOffset.x / pageWidth);
 
         [self scrollToCatalog:page+1 withDuration:0];

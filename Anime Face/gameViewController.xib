@@ -103,7 +103,8 @@
                                             <exclude reference="AZ6-6a-vIg"/>
                                         </mask>
                                     </variation>
-                                    <variation key="heightClass=regular-widthClass=compact">
+                                    <variation key="heightClass=regular-widthClass=compact" misplaced="YES">
+                                        <rect key="frame" x="23" y="20" width="239" height="53"/>
                                         <mask key="constraints">
                                             <include reference="AZ6-6a-vIg"/>
                                         </mask>
@@ -114,6 +115,9 @@
                                     <fontDescription key="fontDescription" name="HelveticaNeue" family="Helvetica Neue" pointSize="15"/>
                                     <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
                                     <nil key="highlightedColor"/>
+                                    <variation key="heightClass=regular-widthClass=compact" misplaced="YES">
+                                        <rect key="frame" x="27" y="24" width="231" height="45"/>
+                                    </variation>
                                 </label>
                                 <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="songdabai.png" translatesAutoresizingMaskIntoConstraints="NO" id="7Lx-Jh-39M">
                                     <rect key="frame" x="0.0" y="0.0" width="240" height="128"/>
@@ -261,8 +265,6 @@
                                     <exclude reference="7Lx-Jh-39M"/>
                                 </mask>
                                 <mask key="constraints">
-                                    <exclude reference="Vcq-P5-6AZ"/>
-                                    <exclude reference="m3M-Kn-jJq"/>
                                     <exclude reference="Fst-1F-Z2m"/>
                                     <exclude reference="K07-AR-fXY"/>
                                     <exclude reference="MgQ-Qy-ABn"/>
@@ -270,6 +272,12 @@
                                     <exclude reference="2pQ-xv-UTh"/>
                                     <exclude reference="A29-up-rml"/>
                                     <exclude reference="g1W-vD-1wz"/>
+                                    <exclude reference="Vcq-P5-6AZ"/>
+                                    <exclude reference="m3M-Kn-jJq"/>
+                                    <exclude reference="NsZ-3k-B3A"/>
+                                    <exclude reference="Udf-Gg-w55"/>
+                                    <exclude reference="xQr-b2-oy9"/>
+                                    <exclude reference="yIu-Em-Nwi"/>
                                     <exclude reference="Rg3-CB-jM9"/>
                                     <exclude reference="SKZ-Sw-ajf"/>
                                     <exclude reference="75F-sQ-6RD"/>
@@ -280,10 +288,6 @@
                                     <exclude reference="pAB-ND-gHY"/>
                                     <exclude reference="rfj-qG-tWD"/>
                                     <exclude reference="jTk-ta-uyx"/>
-                                    <exclude reference="NsZ-3k-B3A"/>
-                                    <exclude reference="Udf-Gg-w55"/>
-                                    <exclude reference="xQr-b2-oy9"/>
-                                    <exclude reference="yIu-Em-Nwi"/>
                                 </mask>
                             </variation>
                             <variation key="heightClass=regular-widthClass=compact">
@@ -294,8 +298,6 @@
                                     <include reference="7Lx-Jh-39M"/>
                                 </mask>
                                 <mask key="constraints">
-                                    <include reference="Vcq-P5-6AZ"/>
-                                    <exclude reference="m3M-Kn-jJq"/>
                                     <include reference="Fst-1F-Z2m"/>
                                     <include reference="K07-AR-fXY"/>
                                     <include reference="MgQ-Qy-ABn"/>
@@ -303,6 +305,12 @@
                                     <exclude reference="2pQ-xv-UTh"/>
                                     <include reference="A29-up-rml"/>
                                     <include reference="g1W-vD-1wz"/>
+                                    <include reference="Vcq-P5-6AZ"/>
+                                    <exclude reference="m3M-Kn-jJq"/>
+                                    <include reference="NsZ-3k-B3A"/>
+                                    <include reference="Udf-Gg-w55"/>
+                                    <include reference="xQr-b2-oy9"/>
+                                    <include reference="yIu-Em-Nwi"/>
                                     <include reference="Rg3-CB-jM9"/>
                                     <include reference="SKZ-Sw-ajf"/>
                                     <exclude reference="75F-sQ-6RD"/>
@@ -313,10 +321,6 @@
                                     <include reference="rfj-qG-tWD"/>
                                     <exclude reference="yfs-vQ-K8Z"/>
                                     <include reference="jTk-ta-uyx"/>
-                                    <include reference="NsZ-3k-B3A"/>
-                                    <include reference="Udf-Gg-w55"/>
-                                    <include reference="xQr-b2-oy9"/>
-                                    <include reference="yIu-Em-Nwi"/>
                                 </mask>
                             </variation>
                         </view>
@@ -594,7 +598,8 @@
                                     <exclude reference="s9Q-Qh-5R1"/>
                                 </mask>
                             </variation>
-                            <variation key="heightClass=regular-widthClass=compact">
+                            <variation key="heightClass=regular-widthClass=compact" misplaced="YES">
+                                <rect key="frame" x="36" y="71" width="298" height="299"/>
                                 <mask key="constraints">
                                     <include reference="s9Q-Qh-5R1"/>
                                 </mask>
@@ -644,7 +649,8 @@
                                     <exclude reference="MXz-UV-LpL"/>
                                 </mask>
                             </variation>
-                            <variation key="heightClass=regular-widthClass=compact">
+                            <variation key="heightClass=regular-widthClass=compact" misplaced="YES">
+                                <rect key="frame" x="112" y="84" width="146" height="145"/>
                                 <mask key="constraints">
                                     <include reference="MXz-UV-LpL"/>
                                 </mask>
@@ -692,7 +698,8 @@
                                     <exclude reference="5dO-U6-8E2"/>
                                 </mask>
                             </variation>
-                            <variation key="heightClass=regular-widthClass=compact">
+                            <variation key="heightClass=regular-widthClass=compact" misplaced="YES">
+                                <rect key="frame" x="164" y="191" width="42" height="43"/>
                                 <mask key="constraints">
                                     <include reference="5dO-U6-8E2"/>
                                 </mask>
@@ -726,7 +733,8 @@
                                     <exclude reference="IDT-Ts-5qt"/>
                                 </mask>
                             </variation>
-                            <variation key="heightClass=regular-widthClass=compact">
+                            <variation key="heightClass=regular-widthClass=compact" misplaced="YES">
+                                <rect key="frame" x="70" y="68" width="230" height="231"/>
                                 <mask key="constraints">
                                     <exclude reference="9iY-EP-eeM"/>
                                     <include reference="IDT-Ts-5qt"/>
@@ -778,7 +786,8 @@
                                     <exclude reference="sh3-lp-kz2"/>
                                 </mask>
                             </variation>
-                            <variation key="heightClass=regular-widthClass=compact">
+                            <variation key="heightClass=regular-widthClass=compact" misplaced="YES">
+                                <rect key="frame" x="98" y="197" width="174" height="173"/>
                                 <mask key="constraints">
                                     <include reference="sh3-lp-kz2"/>
                                 </mask>
@@ -1592,13 +1601,6 @@
                             <exclude reference="vK2-PB-3H7"/>
                         </mask>
                         <mask key="constraints">
-                            <exclude reference="9cB-yq-m1L"/>
-                            <exclude reference="9ei-H6-diB"/>
-                            <exclude reference="C2p-n3-Ejx"/>
-                            <exclude reference="HCg-Y9-sqw"/>
-                            <exclude reference="PRH-xc-1qk"/>
-                            <exclude reference="d8n-qw-equ"/>
-                            <exclude reference="yfg-Xf-qZ4"/>
                             <exclude reference="3xa-Sv-OCM"/>
                             <exclude reference="AHO-0J-C2U"/>
                             <exclude reference="AdQ-4g-2Np"/>
@@ -1606,6 +1608,13 @@
                             <exclude reference="RCb-Gv-aNW"/>
                             <exclude reference="SM4-d4-3Dw"/>
                             <exclude reference="wSt-MH-eBH"/>
+                            <exclude reference="9cB-yq-m1L"/>
+                            <exclude reference="9ei-H6-diB"/>
+                            <exclude reference="C2p-n3-Ejx"/>
+                            <exclude reference="HCg-Y9-sqw"/>
+                            <exclude reference="PRH-xc-1qk"/>
+                            <exclude reference="d8n-qw-equ"/>
+                            <exclude reference="yfg-Xf-qZ4"/>
                             <exclude reference="yBE-7q-Fki"/>
                         </mask>
                     </variation>
@@ -1616,13 +1625,6 @@
                             <include reference="vK2-PB-3H7"/>
                         </mask>
                         <mask key="constraints">
-                            <exclude reference="9cB-yq-m1L"/>
-                            <exclude reference="9ei-H6-diB"/>
-                            <include reference="C2p-n3-Ejx"/>
-                            <include reference="HCg-Y9-sqw"/>
-                            <include reference="PRH-xc-1qk"/>
-                            <include reference="d8n-qw-equ"/>
-                            <exclude reference="yfg-Xf-qZ4"/>
                             <include reference="3xa-Sv-OCM"/>
                             <include reference="AHO-0J-C2U"/>
                             <exclude reference="AdQ-4g-2Np"/>
@@ -1630,6 +1632,13 @@
                             <include reference="RCb-Gv-aNW"/>
                             <include reference="SM4-d4-3Dw"/>
                             <include reference="wSt-MH-eBH"/>
+                            <exclude reference="9cB-yq-m1L"/>
+                            <exclude reference="9ei-H6-diB"/>
+                            <include reference="C2p-n3-Ejx"/>
+                            <include reference="HCg-Y9-sqw"/>
+                            <include reference="PRH-xc-1qk"/>
+                            <include reference="d8n-qw-equ"/>
+                            <exclude reference="yfg-Xf-qZ4"/>
                             <include reference="yBE-7q-Fki"/>
                         </mask>
                     </variation>
@@ -1891,7 +1900,7 @@
         <image name="sharesave normal.png" width="830" height="137"/>
         <image name="sharesave press.png" width="830" height="137"/>
         <image name="slideBar.png" width="1718" height="166"/>
-        <image name="songdabai.png" width="115" height="93"/>
+        <image name="songdabai.png" width="184" height="115"/>
         <image name="youpiaotiao.png" width="1077" height="99"/>
     </resources>
 </document>

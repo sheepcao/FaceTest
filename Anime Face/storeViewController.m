@@ -86,7 +86,7 @@ bool showingDefault;
 -(void)setupCatalog
 {
     
-    [self.catalogScroll setContentSize:CGSizeMake(CATALOG_NUM_STORE*CATALOG_BUTTON_WIDTH, self.catalogScroll.frame.size.height)];
+    [self.catalogScroll setContentSize:CGSizeMake(CATALOG_NUM_STORE*CATALOG_BUTTON_WIDTH, 0)];
     
 //    self.catalogScroll.pagingEnabled = YES;
 
@@ -175,7 +175,7 @@ bool showingDefault;
 -(void)setupLists
 {
 //    [self.productListScorll setFrame:CGRectMake(0, self.catalogScroll.frame.origin.y+self.catalogScroll.frame.size.height, SCREEN_WIDTH, self.productListScorll.frame.size.height)];
-    [self.productListScorll setContentSize:CGSizeMake(CATALOG_NUM_STORE*SCREEN_WIDTH,self.productListScorll.frame.size.height)];
+    [self.productListScorll setContentSize:CGSizeMake(CATALOG_NUM_STORE*SCREEN_WIDTH,0)];
     self.productListScorll.canCancelContentTouches = YES;
     self.productListScorll.pagingEnabled = YES;
     self.productListScorll.bounces = NO;
@@ -191,7 +191,7 @@ bool showingDefault;
         NSArray *listElements = [listsText objectForKey:[[self.GameData objectForKey:@"catalogStore"] objectAtIndex:i]];
         
         UIScrollView *oneList = [[UIScrollView alloc] initWithFrame:CGRectMake(0+i*SCREEN_WIDTH, 0, SCREEN_WIDTH,  self.productListScorll.frame.size.height)];
-        [oneList setContentSize:CGSizeMake(SCREEN_WIDTH,(1+listElements.count/3)*(ELEMENT_WIDTH/1.2))];
+        [oneList setContentSize:CGSizeMake(SCREEN_WIDTH,10+(1+listElements.count/3)*(ELEMENT_WIDTH/1.2))];
         oneList.canCancelContentTouches = YES;
         oneList.bounces = NO;
         oneList.showsVerticalScrollIndicator=NO;
