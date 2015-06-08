@@ -62,18 +62,22 @@ bool needSaveAlert;
 
     selectedElement = [[NSMutableDictionary alloc] initWithCapacity:15];
     
+    
+    
+    
     self.imagesArray = @[@"hair",self.faceFrameView,self.eyeView,self.eyebrowView,self.noseView,self.mouthView,self.faceImage,self.mustacheView,self.glassesView,self.clothingView,self.hatView,self.gestureView,self.petView,self.backImage,self.moodView];
     
     NSString *path1 = [[NSBundle mainBundle] pathForResource:[NSString stringWithFormat:@"body%d",self.sex] ofType:@"png"];
     [self.bodyImage setImage:[UIImage imageWithContentsOfFile:path1]];
     
-    [self.backImage setImage:[UIImage imageWithContentsOfFile:[[NSBundle mainBundle] pathForResource:@"background1" ofType:@"png"]]];
+    [self.backImage setImage:[UIImage imageWithContentsOfFile:[[NSBundle mainBundle] pathForResource:@"background9" ofType:@"png"]]];
     
     [self.faceFrameView setImage:[UIImage imageWithContentsOfFile:[[NSBundle mainBundle] pathForResource:@"face1" ofType:@"png"]]];
     [self.frontHairView setImage:[UIImage imageWithContentsOfFile:[[NSBundle mainBundle] pathForResource:@"hair1-2-0-front" ofType:@"png"]]];
     [self.backHairImage setImage:[UIImage imageWithContentsOfFile:[[NSBundle mainBundle] pathForResource:@"hair1-2-0-back" ofType:@"png"]]];
     
     
+
     
 //    self.catalogScrollView.backgroundColor = [UIColor colorWithPatternImage:[UIImage imageWithContentsOfFile:@"slip-background.png"]];
 
@@ -94,6 +98,7 @@ bool needSaveAlert;
     [super viewWillAppear:animated];
     self.navigationController.navigationBarHidden = YES;
     
+
 
 
 }
@@ -344,7 +349,16 @@ bool needSaveAlert;
     NSDictionary *listsText = [self.GameData objectForKey:@"Lists"];
  
     [self makeListElementsForPage:[pageNum intValue] withData:listsText];
+    [self makeListFullElementsForPage:[pageNum intValue] withData:listsText];
+
     
+    UILabel *moodTextLabel = [[UILabel alloc] initWithFrame:CGRectMake(2, self.moodView.frame.size.height/2-27, self.moodView.frame.size.width-4, 54)];
+    moodTextLabel.textAlignment = NSTextAlignmentCenter;
+    moodTextLabel.textColor = [UIColor blackColor];
+    moodTextLabel.backgroundColor = [UIColor clearColor];
+    moodTextLabel.font = [UIFont boldSystemFontOfSize:18.0f];
+    self.customTextLabel = moodTextLabel;
+    [self.moodView addSubview:moodTextLabel];
     
     [self.loadPage setHidden:YES];
 
@@ -603,7 +617,7 @@ bool needSaveAlert;
         self.headImage.limitationDown =0;
     }else if ([sender.imageLevel intValue] == 14)//mood view
     {
-        self.headImage.swipeOrientation = swipeNone;
+        self.headImage.swipeOrientation = swipeAll;
         self.headImage.limitationUp = 0;
         self.headImage.limitationDown = 0;
 

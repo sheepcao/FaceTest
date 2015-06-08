@@ -665,7 +665,7 @@ bool shouldFinish;
 
 //-(void)dealloc
 //{
-//    [NSObject cancelPreviousPerformRequestsWithTarget:self];
+//    NSLog(@"deeeeee");
 //
 //}
 

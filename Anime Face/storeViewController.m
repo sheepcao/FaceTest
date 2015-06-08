@@ -102,7 +102,7 @@ bool showingDefault;
         [catalogBtn setImage:[UIImage imageWithContentsOfFile:[[NSBundle mainBundle] pathForResource:[NSString stringWithFormat:@"%@1",catalogText[i]] ofType:@"png"]] forState:UIControlStateSelected];
         
         
-        [catalogBtn setImageEdgeInsets:UIEdgeInsetsMake(1, 15, 3, 16)];
+        [catalogBtn setImageEdgeInsets:UIEdgeInsetsMake(6, 15, -3, 16)];
         
         catalogBtn.tag = i;
         [catalogBtn addTarget:self action:@selector(catalogTapped:) forControlEvents:UIControlEventTouchUpInside];
@@ -297,7 +297,7 @@ bool showingDefault;
     
     [self.priceLabel setText:[NSString stringWithFormat:@"%d",sender.price]];
     
-    [self drawStars:sender.stars];
+//    [self drawStars:sender.stars];
 
     sexSelectedNow = sender.sex;
     
@@ -328,8 +328,8 @@ bool showingDefault;
         NSString *backImageName = @"";
         NSString *frontImageName = @"";
         if (nameArray.count>1) {
-            backImageName = [NSString stringWithFormat:@"%@-%@-0-back",nameArray[0],nameArray[1]];
-            frontImageName = [NSString stringWithFormat:@"%@-%@-0-front",nameArray[0],nameArray[1]];
+            backImageName = [NSString stringWithFormat:@"%@-%@-%d-back",nameArray[0],nameArray[1],sender.colorNum];
+            frontImageName = [NSString stringWithFormat:@"%@-%@-%d-front",nameArray[0],nameArray[1],sender.colorNum];
             
         }
         
@@ -339,8 +339,6 @@ bool showingDefault;
         }
         
         
-        
-//        NSString *backImageName = [NSString stringWithFormat:@"%@-0-back",sender.imageName];
         UIImage *backImage = [UIImage imageWithContentsOfFile:[[NSBundle mainBundle] pathForResource:backImageName ofType:@"png"]];
         if (backImage) {
             
@@ -352,7 +350,7 @@ bool showingDefault;
             
         }
         
-        [self drawColors:sender.colorNum withImageName:sender.imageName];
+//        [self drawColors:sender.colorNum withImageName:sender.imageName];
 
         
     }else

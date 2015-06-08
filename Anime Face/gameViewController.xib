@@ -18,7 +18,6 @@
                 <outlet property="bottomtextView" destination="PWg-zF-hye" id="uNu-lm-bqX"/>
                 <outlet property="catalogScrollView" destination="2t8-n1-aLq" id="wWB-70-eHy"/>
                 <outlet property="clothingView" destination="8IZ-HA-Aai" id="lkw-cb-QAo"/>
-                <outlet property="customTextLabel" destination="38B-xT-Id0" id="7YF-2l-aZn"/>
                 <outlet property="eyeView" destination="GwI-sl-iGQ" id="3Ru-7A-ByY"/>
                 <outlet property="eyebrowView" destination="EcT-uC-SSS" id="aO8-Ze-WdN"/>
                 <outlet property="faceFrameView" destination="bar-hd-gKp" id="wWv-mU-MnE"/>
@@ -113,7 +112,7 @@
                                 <label hidden="YES" opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="世上竟有如此出尘绝艳的女子" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="YD8-Qt-1uz">
                                     <rect key="frame" x="0.0" y="-21" width="42" height="21"/>
                                     <fontDescription key="fontDescription" name="HelveticaNeue" family="Helvetica Neue" pointSize="15"/>
-                                    <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                    <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
                                     <nil key="highlightedColor"/>
                                     <variation key="heightClass=regular-widthClass=compact" misplaced="YES">
                                         <rect key="frame" x="27" y="24" width="231" height="45"/>
@@ -351,7 +350,7 @@
                         <constraint firstItem="wgk-fP-oC9" firstAttribute="centerX" secondItem="sI8-9f-iVk" secondAttribute="centerX" id="zXh-yB-aUS"/>
                     </constraints>
                 </view>
-                <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="background2.png" translatesAutoresizingMaskIntoConstraints="NO" id="tnF-9C-y2b">
+                <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="backgroundGame.png" translatesAutoresizingMaskIntoConstraints="NO" id="tnF-9C-y2b">
                     <rect key="frame" x="0.0" y="0.0" width="240" height="128"/>
                 </imageView>
                 <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="hengleng1.png" translatesAutoresizingMaskIntoConstraints="NO" id="DDq-Oy-nan" userLabel="line">
@@ -841,7 +840,7 @@
                                 </mask>
                             </variation>
                         </imageView>
-                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="3" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" preferredMaxLayoutWidth="97" translatesAutoresizingMaskIntoConstraints="NO" id="38B-xT-Id0" userLabel="costomText">
+                        <label hidden="YES" opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="3" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" preferredMaxLayoutWidth="97" translatesAutoresizingMaskIntoConstraints="NO" id="38B-xT-Id0" userLabel="costomText">
                             <rect key="frame" x="0.0" y="-21" width="42" height="21"/>
                             <constraints>
                                 <constraint firstAttribute="width" secondItem="38B-xT-Id0" secondAttribute="height" multiplier="9:5" id="1t7-MU-oyT"/>
@@ -1884,7 +1883,7 @@
     <resources>
         <image name="back-press.png" width="142" height="138"/>
         <image name="back.png" width="142" height="138"/>
-        <image name="background2.png" width="1080" height="1920"/>
+        <image name="backgroundGame.png" width="1080" height="1920"/>
         <image name="girlphoto2.png" width="301" height="437"/>
         <image name="girlphotoframe.png" width="649" height="145"/>
         <image name="hengleng1.png" width="1080" height="7"/>

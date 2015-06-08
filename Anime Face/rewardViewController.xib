@@ -35,7 +35,7 @@
             <rect key="frame" x="0.0" y="0.0" width="414" height="736"/>
             <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
             <subviews>
-                <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="background3.png" translatesAutoresizingMaskIntoConstraints="NO" id="cER-dx-gwI">
+                <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="backgroundLuck.png" translatesAutoresizingMaskIntoConstraints="NO" id="cER-dx-gwI">
                     <rect key="frame" x="0.0" y="0.0" width="414" height="736"/>
                 </imageView>
                 <imageView hidden="YES" userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="halozhuan.png" translatesAutoresizingMaskIntoConstraints="NO" id="oXD-TA-1N5" userLabel="spinView">
@@ -61,7 +61,7 @@
                         <constraint firstAttribute="width" secondItem="jnK-oV-g0g" secondAttribute="height" multiplier="71:30" id="e7U-pE-ryr"/>
                     </constraints>
                     <fontDescription key="fontDescription" type="system" pointSize="17"/>
-                    <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                    <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
                     <nil key="highlightedColor"/>
                 </label>
                 <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" image="box-normal.png" translatesAutoresizingMaskIntoConstraints="NO" id="tkE-is-5iT">
@@ -144,8 +144,7 @@
                                             <exclude reference="Kra-Fl-4BG"/>
                                         </mask>
                                     </variation>
-                                    <variation key="heightClass=regular-widthClass=compact" misplaced="YES">
-                                        <rect key="frame" x="1" y="5" width="30" height="21"/>
+                                    <variation key="heightClass=regular-widthClass=compact">
                                         <mask key="constraints">
                                             <include reference="Kra-Fl-4BG"/>
                                         </mask>
@@ -532,7 +531,7 @@
                                 </mask>
                             </variation>
                             <variation key="heightClass=regular-widthClass=compact" misplaced="YES">
-                                <rect key="frame" x="63" y="164" width="106" height="107"/>
+                                <rect key="frame" x="62" y="164" width="108" height="107"/>
                                 <mask key="constraints">
                                     <include reference="Bvx-ss-B0j"/>
                                 </mask>
@@ -548,8 +547,7 @@
                                     <exclude reference="UqG-p9-TU1"/>
                                 </mask>
                             </variation>
-                            <variation key="heightClass=regular-widthClass=compact" misplaced="YES">
-                                <rect key="frame" x="44" y="78" width="144" height="143"/>
+                            <variation key="heightClass=regular-widthClass=compact">
                                 <mask key="constraints">
                                     <include reference="UqG-p9-TU1"/>
                                 </mask>
@@ -936,14 +934,14 @@
             <rect key="frame" x="0.0" y="-21" width="42" height="21"/>
             <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
             <fontDescription key="fontDescription" type="system" pointSize="17"/>
-            <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+            <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
             <nil key="highlightedColor"/>
         </label>
     </objects>
     <resources>
         <image name="back-press.png" width="142" height="138"/>
         <image name="back.png" width="142" height="138"/>
-        <image name="background3.png" width="1080" height="1920"/>
+        <image name="backgroundLuck.png" width="1080" height="1920"/>
         <image name="body1.png" width="540" height="540"/>
         <image name="box-normal.png" width="689" height="537"/>
         <image name="card.png" width="613" height="843"/>
