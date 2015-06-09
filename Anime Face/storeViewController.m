@@ -102,7 +102,7 @@ bool showingDefault;
         [catalogBtn setImage:[UIImage imageWithContentsOfFile:[[NSBundle mainBundle] pathForResource:[NSString stringWithFormat:@"%@1",catalogText[i]] ofType:@"png"]] forState:UIControlStateSelected];
         
         
-        [catalogBtn setImageEdgeInsets:UIEdgeInsetsMake(0, 15, 0, 16)];
+        [catalogBtn setImageEdgeInsets:UIEdgeInsetsMake(-2, 15, 4, 16)];
         
         catalogBtn.tag = i;
         [catalogBtn addTarget:self action:@selector(catalogTapped:) forControlEvents:UIControlEventTouchUpInside];
@@ -257,6 +257,13 @@ bool showingDefault;
             [element setBackgroundImage:[UIImage imageWithContentsOfFile:[[NSBundle mainBundle] pathForResource:@"frame selected" ofType:@"png"]] forState:UIControlStateSelected];
             
             
+            if([element.isSold isEqualToString:@"yes"])
+            {
+                UIImageView *isSoldImg = [[UIImageView alloc] initWithFrame:CGRectMake(ELEMENT_WIDTH/5, element.frame.size.height/2-ELEMENT_WIDTH*3*11/208, ELEMENT_WIDTH*3/5, ELEMENT_WIDTH*3*22/208)];
+                [isSoldImg setImage:[UIImage imageNamed:@"sold out"]];
+                [element addSubview:isSoldImg];
+            }
+            
 //            if (j == 0) {
 //                
 //                [element setSelected:YES];
@@ -393,6 +400,17 @@ bool showingDefault;
 
     }
     
+    if ([sender.isSold isEqualToString:@"yes"]) {
+        [self.buyAction setImage:[UIImage imageNamed:@"sold out1"] forState:UIControlStateNormal];
+        [self.buyAction setEnabled:NO];
+
+    }else
+    {
+        [self.buyAction setEnabled:YES];
+        [self.buyAction setImage:[UIImage imageNamed:@"purchase-normal"] forState:UIControlStateNormal];
+        [self.buyAction setImage:[UIImage imageNamed:@"purchase-pressl"] forState:UIControlStateHighlighted];
+    }
+    
     
 }
 
@@ -525,7 +543,10 @@ bool showingDefault;
     if ([self checkDiamond:self.productNow.price]) {
         
         [self writeToPurchased];
-        [self deleteItemFromPlist:@"GameData" withCatelog:self.productNow.productCategory andElementNum:self.productNow.productNumber];
+        
+        [self modifyItemFromPlist:@"GameData" withCatelog:self.productNow.productCategory andElementNum:self.productNow.productNumber];
+
+//        [self deleteItemFromPlist:@"GameData" withCatelog:self.productNow.productCategory andElementNum:self.productNow.productNumber];
         self.GameData = [self readDataFromPlist:@"GameData"];
         [self costDiamond:self.productNow.price];
         
@@ -554,13 +575,13 @@ bool showingDefault;
         [alertView addSubview:backImg];
         
         
-        UIButton *cancelBtn = [[UIButton alloc] initWithFrame:CGRectMake(alertView.frame.size.width/2-90, alertView.frame.size.height-80, 70, 42)];
+        UIButton *cancelBtn = [[UIButton alloc] initWithFrame:CGRectMake(alertView.frame.size.width/2-120, alertView.frame.size.height-80, 100, 35)];
         [cancelBtn setImage:[UIImage imageNamed:@"cancel"] forState:UIControlStateNormal];
         [cancelBtn setImage:[UIImage imageNamed:@"cancel-press"] forState:UIControlStateHighlighted];
         [cancelBtn addTarget:self action:@selector(cancelAlert:) forControlEvents:UIControlEventTouchUpInside];
         
         
-        UIButton *sureBtn = [[UIButton alloc] initWithFrame:CGRectMake(alertView.frame.size.width/2+20, alertView.frame.size.height-80, 70, 42)];
+        UIButton *sureBtn = [[UIButton alloc] initWithFrame:CGRectMake(alertView.frame.size.width/2+20, alertView.frame.size.height-80, 100, 35)];
         [sureBtn setImage:[UIImage imageNamed:@"sure"] forState:UIControlStateNormal];
         [sureBtn setImage:[UIImage imageNamed:@"sure-press"] forState:UIControlStateHighlighted];
         [sureBtn addTarget:self action:@selector(sureAlert:) forControlEvents:UIControlEventTouchUpInside];
@@ -728,6 +749,9 @@ bool showingDefault;
 
 -(void)deleteItemFromPlist:(NSString *)plistname withCatelog:(NSString *)catelog andElementNum:(int)elementNum
 {
+    
+    
+    
     NSString *documentsDirectory = [NSSearchPathForDirectoriesInDomains(NSDocumentDirectory, NSUserDomainMask, YES) objectAtIndex:0];
     NSString *plistPath = [documentsDirectory stringByAppendingPathComponent:[ NSString stringWithFormat:@"%@.plist",plistname ]];
     NSFileManager* manager = [NSFileManager defaultManager];
@@ -769,6 +793,42 @@ bool showingDefault;
         }
     }
 }
+-(void)modifyItemFromPlist:(NSString *)plistname withCatelog:(NSString *)catelog andElementNum:(int)elementNum
+{
+    if ([catelog isEqualToString:@"头发女"])
+    {
+        catelog = @"头发";
+    }
+    if ([catelog isEqualToString:@"衣服女"])
+    {
+        catelog = @"衣服";
+    }
+    
+    NSString *documentsDirectory = [NSSearchPathForDirectoriesInDomains(NSDocumentDirectory, NSUserDomainMask, YES) objectAtIndex:0];
+    NSString *plistPath = [documentsDirectory stringByAppendingPathComponent:[ NSString stringWithFormat:@"%@.plist",plistname ]];
+    NSFileManager* manager = [NSFileManager defaultManager];
+    if ([manager fileExistsAtPath:plistPath] == YES)
+    {
+        if ([manager isWritableFileAtPath:plistPath])
+        {
+            NSMutableDictionary* infoDict = [NSMutableDictionary dictionaryWithContentsOfFile:plistPath];
+            NSMutableDictionary *allProducts = [infoDict objectForKey:@"productInfo"];
+            NSMutableDictionary *productTobeChanged= [[allProducts objectForKey:catelog] objectAtIndex:elementNum];
+            //            NSString *removeName = [productTobeRemoved objectForKey:@"name"];
+            [productTobeChanged setObject:@"yes" forKey:@"isSold"];
+            
+            //            [[allProducts objectForKey:catelog] removeObjectAtIndex:elementNum];
+            [infoDict setObject:allProducts forKey:@"productInfo"];
+            
+
+            
+            [infoDict writeToFile:plistPath atomically:NO];
+            
+            [manager setAttributes:[NSDictionary dictionaryWithObject:[NSDate date] forKey:NSFileModificationDate] ofItemAtPath:plistPath error:nil];
+        }
+    }
+}
+
 
 -(NSMutableDictionary *)readDataFromPlist:(NSString *)plistname
 {

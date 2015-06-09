@@ -69,7 +69,7 @@
                             <color key="color" white="0.0" alpha="1" colorSpace="calibratedWhite"/>
                         </activityIndicatorView>
                         <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text=" Loading" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Bt1-ca-k8b">
-                            <rect key="frame" x="126" y="249" width="68" height="21"/>
+                            <rect key="frame" x="119" y="244" width="82" height="26"/>
                             <constraints>
                                 <constraint firstAttribute="width" secondItem="Bt1-ca-k8b" secondAttribute="height" multiplier="7:3" id="2aU-vS-CZO"/>
                                 <constraint firstAttribute="width" secondItem="Bt1-ca-k8b" secondAttribute="height" multiplier="68:21" id="adE-vu-NZf"/>
@@ -94,7 +94,7 @@
                         <constraint firstItem="Bt1-ca-k8b" firstAttribute="width" secondItem="KL4-hV-Zo4" secondAttribute="height" multiplier="1:10" id="ZDe-XI-4zx"/>
                         <constraint firstAttribute="centerX" secondItem="NPE-Gr-sg6" secondAttribute="centerX" id="ejR-xf-GPn"/>
                         <constraint firstItem="Bt1-ca-k8b" firstAttribute="top" secondItem="NPE-Gr-sg6" secondAttribute="bottom" constant="-22" id="kBZ-OH-B30"/>
-                        <constraint firstItem="Bt1-ca-k8b" firstAttribute="width" secondItem="KL4-hV-Zo4" secondAttribute="height" multiplier="17:142" id="rmY-5V-mPu"/>
+                        <constraint firstItem="Bt1-ca-k8b" firstAttribute="width" secondItem="KL4-hV-Zo4" secondAttribute="height" multiplier="20:139" id="rmY-5V-mPu"/>
                         <constraint firstItem="Bt1-ca-k8b" firstAttribute="centerX" secondItem="NPE-Gr-sg6" secondAttribute="centerX" id="y9X-zh-YXK"/>
                     </constraints>
                     <variation key="default">

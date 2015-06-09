@@ -35,7 +35,7 @@
 
 #define VERSIONNUMBER   [[[NSBundle mainBundle] infoDictionary] objectForKey:@"CFBundleShortVersionString"]
 
-#define StartDiamond @"100"
+#define StartDiamond @"66"
 
 BOOL soundSwitch;
 BOOL musicSwitch;

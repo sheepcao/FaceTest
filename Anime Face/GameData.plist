@@ -4,7 +4,395 @@
 <dict>
 	<key>colorList</key>
 	<dict>
-		<key>hairG2-7</key>
+		<key>hair0-4</key>
+		<array>
+			<string>1</string>
+			<string>2</string>
+			<string>4</string>
+			<string>7</string>
+		</array>
+		<key>hair1-5</key>
+		<array>
+			<string>0</string>
+			<string>1</string>
+			<string>2</string>
+			<string>4</string>
+			<string>7</string>
+		</array>
+		<key>hair2-2</key>
+		<array>
+			<string>0</string>
+			<string>7</string>
+		</array>
+		<key>hair3-5</key>
+		<array>
+			<string>0</string>
+			<string>1</string>
+			<string>2</string>
+			<string>4</string>
+			<string>5</string>
+		</array>
+		<key>hair4-3</key>
+		<array>
+			<string>0</string>
+			<string>1</string>
+			<string>2</string>
+		</array>
+		<key>hair5-5</key>
+		<array>
+			<string>0</string>
+			<string>1</string>
+			<string>4</string>
+			<string>5</string>
+			<string>7</string>
+		</array>
+		<key>hair6-3</key>
+		<array>
+			<string>0</string>
+			<string>1</string>
+			<string>2</string>
+		</array>
+		<key>hair7-6</key>
+		<array>
+			<string>0</string>
+			<string>1</string>
+			<string>2</string>
+			<string>5</string>
+			<string>6</string>
+			<string>7</string>
+		</array>
+		<key>hair8-6</key>
+		<array>
+			<string>0</string>
+			<string>1</string>
+			<string>2</string>
+			<string>4</string>
+			<string>5</string>
+			<string>7</string>
+		</array>
+		<key>hair9-2</key>
+		<array>
+			<string>0</string>
+			<string>7</string>
+		</array>
+		<key>hair10-4</key>
+		<array>
+			<string>0</string>
+			<string>1</string>
+			<string>2</string>
+			<string>7</string>
+		</array>
+		<key>hair11-4</key>
+		<array>
+			<string>0</string>
+			<string>1</string>
+			<string>4</string>
+			<string>7</string>
+		</array>
+		<key>hair12-4</key>
+		<array>
+			<string>0</string>
+			<string>1</string>
+			<string>4</string>
+			<string>7</string>
+		</array>
+		<key>hair13-6</key>
+		<array>
+			<string>0</string>
+			<string>1</string>
+			<string>2</string>
+			<string>4</string>
+			<string>6</string>
+			<string>7</string>
+		</array>
+		<key>hair14-4</key>
+		<array>
+			<string>0</string>
+			<string>1</string>
+			<string>4</string>
+			<string>7</string>
+		</array>
+		<key>hair15-3</key>
+		<array>
+			<string>0</string>
+			<string>1</string>
+			<string>7</string>
+		</array>
+		<key>hair16-4</key>
+		<array>
+			<string>0</string>
+			<string>1</string>
+			<string>4</string>
+			<string>7</string>
+		</array>
+		<key>hair17-2</key>
+		<array>
+			<string>0</string>
+			<string>7</string>
+		</array>
+		<key>hair18-2</key>
+		<array>
+			<string>0</string>
+			<string>7</string>
+		</array>
+		<key>hair19-2</key>
+		<array>
+			<string>0</string>
+			<string>7</string>
+		</array>
+		<key>hair20-2</key>
+		<array>
+			<string>0</string>
+			<string>7</string>
+		</array>
+		<key>hair21-3</key>
+		<array>
+			<string>0</string>
+			<string>1</string>
+			<string>4</string>
+		</array>
+		<key>hairtong0-3</key>
+		<array>
+			<string>0</string>
+			<string>1</string>
+			<string>2</string>
+		</array>
+		<key>hairtong1-3</key>
+		<array>
+			<string>0</string>
+			<string>1</string>
+			<string>2</string>
+		</array>
+		<key>hairtong2-3</key>
+		<array>
+			<string>0</string>
+			<string>1</string>
+			<string>2</string>
+		</array>
+		<key>hairtong3-3</key>
+		<array>
+			<string>0</string>
+			<string>1</string>
+			<string>6</string>
+		</array>
+		<key>hairtong4-3</key>
+		<array>
+			<string>0</string>
+			<string>1</string>
+			<string>2</string>
+		</array>
+		<key>hairtong5-6</key>
+		<array>
+			<string>0</string>
+			<string>1</string>
+			<string>3</string>
+			<string>4</string>
+			<string>6</string>
+			<string>7</string>
+		</array>
+		<key>hairtong6-3</key>
+		<array>
+			<string>0</string>
+			<string>1</string>
+			<string>2</string>
+		</array>
+		<key>hairtong7-6</key>
+		<array>
+			<string>0</string>
+			<string>1</string>
+			<string>2</string>
+			<string>4</string>
+			<string>5</string>
+			<string>7</string>
+		</array>
+		<key>hairtong8-3</key>
+		<array>
+			<string>1</string>
+			<string>4</string>
+			<string>7</string>
+		</array>
+		<key>hairtong9-4</key>
+		<array>
+			<string>0</string>
+			<string>2</string>
+			<string>4</string>
+			<string>7</string>
+		</array>
+		<key>hairtong10-3</key>
+		<array>
+			<string>0</string>
+			<string>1</string>
+			<string>2</string>
+		</array>
+		<key>hairtong11-3</key>
+		<array>
+			<string>0</string>
+			<string>10</string>
+			<string>7</string>
+		</array>
+		<key>hairtong12-2</key>
+		<array>
+			<string>0</string>
+			<string>1</string>
+		</array>
+		<key>hairtong13-2</key>
+		<array>
+			<string>0</string>
+			<string>1</string>
+		</array>
+		<key>hairtong14-2</key>
+		<array>
+			<string>0</string>
+			<string>7</string>
+		</array>
+		<key>hairtong15-2</key>
+		<array>
+			<string>0</string>
+			<string>7</string>
+		</array>
+		<key>hairtong16-2</key>
+		<array>
+			<string>0</string>
+			<string>7</string>
+		</array>
+		<key>hairtong17-3</key>
+		<array>
+			<string>0</string>
+			<string>4</string>
+			<string>7</string>
+		</array>
+		<key>hairG0-3</key>
+		<array>
+			<string>0</string>
+			<string>1</string>
+			<string>2</string>
+		</array>
+		<key>hairG1-3</key>
+		<array>
+			<string>0</string>
+			<string>1</string>
+			<string>2</string>
+		</array>
+		<key>hairG2-3</key>
+		<array>
+			<string>0</string>
+			<string>1</string>
+			<string>2</string>
+		</array>
+		<key>hairG3-3</key>
+		<array>
+			<string>0</string>
+			<string>1</string>
+			<string>2</string>
+		</array>
+		<key>hairG4-3</key>
+		<array>
+			<string>0</string>
+			<string>1</string>
+			<string>2</string>
+		</array>
+		<key>hairG5-3</key>
+		<array>
+			<string>0</string>
+			<string>1</string>
+			<string>2</string>
+		</array>
+		<key>hairG6-3</key>
+		<array>
+			<string>0</string>
+			<string>1</string>
+			<string>2</string>
+		</array>
+		<key>hairG7-3</key>
+		<array>
+			<string>0</string>
+			<string>1</string>
+			<string>2</string>
+		</array>
+		<key>hairG8-3</key>
+		<array>
+			<string>0</string>
+			<string>1</string>
+			<string>2</string>
+		</array>
+		<key>hairG9-3</key>
+		<array>
+			<string>0</string>
+			<string>1</string>
+			<string>2</string>
+		</array>
+		<key>hairG10-3</key>
+		<array>
+			<string>0</string>
+			<string>1</string>
+			<string>2</string>
+		</array>
+		<key>hairG11-3</key>
+		<array>
+			<string>0</string>
+			<string>1</string>
+			<string>2</string>
+		</array>
+		<key>hairG13-3</key>
+		<array>
+			<string>0</string>
+			<string>1</string>
+			<string>2</string>
+		</array>
+		<key>hairG14-3</key>
+		<array>
+			<string>0</string>
+			<string>1</string>
+			<string>2</string>
+		</array>
+		<key>hairG15-6</key>
+		<array>
+			<string>0</string>
+			<string>1</string>
+			<string>2</string>
+			<string>3</string>
+			<string>4</string>
+			<string>7</string>
+		</array>
+		<key>hairG16-3</key>
+		<array>
+			<string>0</string>
+			<string>1</string>
+			<string>2</string>
+		</array>
+		<key>hairG17-6</key>
+		<array>
+			<string>0</string>
+			<string>1</string>
+			<string>2</string>
+			<string>3</string>
+			<string>4</string>
+			<string>8</string>
+		</array>
+		<key>hairG18-4</key>
+		<array>
+			<string>0</string>
+			<string>1</string>
+			<string>2</string>
+			<string>3</string>
+		</array>
+		<key>hairG19-6</key>
+		<array>
+			<string>0</string>
+			<string>1</string>
+			<string>3</string>
+			<string>7</string>
+			<string>8</string>
+			<string>9</string>
+		</array>
+		<key>hairG20-4</key>
+		<array>
+			<string>0</string>
+			<string>1</string>
+			<string>3</string>
+			<string>4</string>
+		</array>
+		<key>hairG21-6</key>
 		<array>
 			<string>0</string>
 			<string>1</string>
@@ -12,13 +400,140 @@
 			<string>3</string>
 			<string>4</string>
 			<string>5</string>
+		</array>
+		<key>hairG22-6</key>
+		<array>
+			<string>0</string>
+			<string>1</string>
+			<string>2</string>
+			<string>3</string>
+			<string>4</string>
+			<string>5</string>
+		</array>
+		<key>hairG23-4</key>
+		<array>
+			<string>0</string>
+			<string>1</string>
+			<string>2</string>
+			<string>6</string>
+		</array>
+		<key>hairG24-3</key>
+		<array>
+			<string>0</string>
+			<string>1</string>
+			<string>4</string>
+		</array>
+		<key>hairG25-3</key>
+		<array>
+			<string>0</string>
+			<string>1</string>
+			<string>2</string>
+		</array>
+		<key>hairG26-3</key>
+		<array>
+			<string>0</string>
+			<string>1</string>
+			<string>2</string>
+		</array>
+		<key>hairG27-4</key>
+		<array>
+			<string>0</string>
+			<string>1</string>
+			<string>3</string>
+			<string>4</string>
+		</array>
+		<key>hairG28-3</key>
+		<array>
+			<string>0</string>
+			<string>1</string>
+			<string>2</string>
+		</array>
+		<key>hairG29-3</key>
+		<array>
+			<string>0</string>
+			<string>1</string>
+			<string>2</string>
+		</array>
+		<key>hairG30-3</key>
+		<array>
+			<string>0</string>
+			<string>1</string>
+			<string>2</string>
+		</array>
+		<key>hairG32-1</key>
+		<array/>
+		<key>hairG33-3</key>
+		<array>
+			<string>0</string>
+			<string>1</string>
+			<string>4</string>
+		</array>
+		<key>hairG34-5</key>
+		<array>
+			<string>0</string>
+			<string>1</string>
+			<string>2</string>
+			<string>3</string>
+			<string>7</string>
+		</array>
+		<key>hairG35-4</key>
+		<array>
+			<string>1</string>
+			<string>4</string>
 			<string>6</string>
 			<string>7</string>
 		</array>
-		<key>hairG1-2</key>
+		<key>hairG36-4</key>
 		<array>
+			<string>0</string>
+			<string>2</string>
 			<string>4</string>
+			<string>7</string>
+		</array>
+		<key>hairG37-2</key>
+		<array>
+			<string>0</string>
+			<string>7</string>
+		</array>
+		<key>hairG38-2</key>
+		<array>
+			<string>0</string>
+			<string>7</string>
+		</array>
+		<key>hairG39-1</key>
+		<array/>
+		<key>hairG40-3</key>
+		<array>
+			<string>0</string>
+			<string>2</string>
+			<string>5</string>
+		</array>
+		<key>hairG41-3</key>
+		<array>
+			<string>0</string>
 			<string>1</string>
+			<string>2</string>
+		</array>
+		<key>hairG42-2</key>
+		<array>
+			<string>0</string>
+			<string>7</string>
+		</array>
+		<key>hairG43-6</key>
+		<array>
+			<string>0</string>
+			<string>1</string>
+			<string>2</string>
+			<string>3</string>
+			<string>4</string>
+			<string>5</string>
+		</array>
+		<key>hairG44-4</key>
+		<array>
+			<string>0</string>
+			<string>1</string>
+			<string>2</string>
+			<string>4</string>
 		</array>
 	</dict>
 	<key>Lists</key>
@@ -450,7 +965,7 @@
 			<string>hair2-2</string>
 			<string>hair3-5</string>
 			<string>hair4-3</string>
-			<string>hair5-4</string>
+			<string>hair5-5</string>
 			<string>hair6-3</string>
 			<string>hair7-6</string>
 			<string>hair8-6</string>
@@ -459,7 +974,7 @@
 			<string>hair11-4</string>
 			<string>hair12-4</string>
 			<string>hair13-6</string>
-			<string>hair14-3</string>
+			<string>hair14-4</string>
 			<string>hair15-3</string>
 			<string>hair17-2</string>
 			<string>hair18-2</string>
@@ -604,7 +1119,7 @@
 				<key>name</key>
 				<string>hair16-4</string>
 				<key>isSold</key>
-				<string>yes</string>
+				<string>no</string>
 				<key>title</key>
 				<string>闪耀之星</string>
 				<key>price</key>
@@ -620,7 +1135,7 @@
 				<key>name</key>
 				<string>hair19-2</string>
 				<key>isSold</key>
-				<string>yes</string>
+				<string>no</string>
 				<key>title</key>
 				<string>侠客心</string>
 				<key>price</key>
@@ -636,7 +1151,7 @@
 				<key>name</key>
 				<string>hairG29-3</string>
 				<key>isSold</key>
-				<string>yes</string>
+				<string>no</string>
 				<key>title</key>
 				<string>允允</string>
 				<key>price</key>
@@ -652,7 +1167,7 @@
 				<key>name</key>
 				<string>hairG34-5</string>
 				<key>isSold</key>
-				<string>yes</string>
+				<string>no</string>
 				<key>title</key>
 				<string>提线娃娃</string>
 				<key>price</key>
@@ -668,7 +1183,7 @@
 				<key>name</key>
 				<string>hairG39-1</string>
 				<key>isSold</key>
-				<string>yes</string>
+				<string>no</string>
 				<key>title</key>
 				<string>谷女</string>
 				<key>price</key>
@@ -684,7 +1199,7 @@
 				<key>name</key>
 				<string>hairtong12-2</string>
 				<key>isSold</key>
-				<string>yes</string>
+				<string>no</string>
 				<key>title</key>
 				<string>出水芙蓉</string>
 				<key>price</key>
@@ -700,7 +1215,7 @@
 				<key>name</key>
 				<string>hairtong13-2</string>
 				<key>isSold</key>
-				<string>yes</string>
+				<string>no</string>
 				<key>title</key>
 				<string>精灵</string>
 				<key>price</key>
@@ -719,7 +1234,7 @@
 				<key>name</key>
 				<string>pet4</string>
 				<key>isSold</key>
-				<string>yes</string>
+				<string>no</string>
 				<key>title</key>
 				<string>金毛</string>
 				<key>price</key>
@@ -735,7 +1250,7 @@
 				<key>name</key>
 				<string>pet16</string>
 				<key>isSold</key>
-				<string>yes</string>
+				<string>no</string>
 				<key>title</key>
 				<string>眯眼灰猫</string>
 				<key>price</key>
@@ -751,7 +1266,7 @@
 				<key>name</key>
 				<string>pet0</string>
 				<key>isSold</key>
-				<string>yes</string>
+				<string>no</string>
 				<key>title</key>
 				<string>呱太</string>
 				<key>price</key>
@@ -767,7 +1282,7 @@
 				<key>name</key>
 				<string>pet17</string>
 				<key>isSold</key>
-				<string>yes</string>
+				<string>no</string>
 				<key>title</key>
 				<string>帅气羊驼</string>
 				<key>price</key>
@@ -783,7 +1298,7 @@
 				<key>name</key>
 				<string>pet19</string>
 				<key>isSold</key>
-				<string>yes</string>
+				<string>no</string>
 				<key>title</key>
 				<string>粉毛娃娃</string>
 				<key>price</key>
@@ -802,7 +1317,7 @@
 				<key>name</key>
 				<string>hat32</string>
 				<key>isSold</key>
-				<string>yes</string>
+				<string>no</string>
 				<key>title</key>
 				<string>步步生莲</string>
 				<key>price</key>
@@ -818,7 +1333,7 @@
 				<key>name</key>
 				<string>hat33</string>
 				<key>isSold</key>
-				<string>yes</string>
+				<string>no</string>
 				<key>title</key>
 				<string>国色天香</string>
 				<key>price</key>
@@ -834,7 +1349,7 @@
 				<key>name</key>
 				<string>hat44</string>
 				<key>isSold</key>
-				<string>yes</string>
+				<string>no</string>
 				<key>title</key>
 				<string>白蝴蝶结</string>
 				<key>price</key>
@@ -853,7 +1368,7 @@
 				<key>name</key>
 				<string>mouth17</string>
 				<key>isSold</key>
-				<string>yes</string>
+				<string>no</string>
 				<key>title</key>
 				<string>樱桃唇</string>
 				<key>price</key>
@@ -869,7 +1384,7 @@
 				<key>name</key>
 				<string>mouth23</string>
 				<key>isSold</key>
-				<string>yes</string>
+				<string>no</string>
 				<key>title</key>
 				<string>弥惑</string>
 				<key>price</key>
@@ -885,7 +1400,7 @@
 				<key>name</key>
 				<string>mouth38</string>
 				<key>isSold</key>
-				<string>yes</string>
+				<string>no</string>
 				<key>title</key>
 				<string>口吐彩虹</string>
 				<key>price</key>
@@ -901,7 +1416,7 @@
 				<key>name</key>
 				<string>mouth41</string>
 				<key>isSold</key>
-				<string>yes</string>
+				<string>no</string>
 				<key>title</key>
 				<string>羊驼嘴</string>
 				<key>price</key>
@@ -920,7 +1435,7 @@
 				<key>name</key>
 				<string>gesture12</string>
 				<key>isSold</key>
-				<string>yes</string>
+				<string>no</string>
 				<key>title</key>
 				<string>我要做菜</string>
 				<key>price</key>
@@ -936,7 +1451,7 @@
 				<key>name</key>
 				<string>gesture30</string>
 				<key>isSold</key>
-				<string>yes</string>
+				<string>no</string>
 				<key>title</key>
 				<string>桃花枝</string>
 				<key>price</key>
@@ -952,7 +1467,7 @@
 				<key>name</key>
 				<string>gesture34</string>
 				<key>isSold</key>
-				<string>yes</string>
+				<string>no</string>
 				<key>title</key>
 				<string>手持大剑</string>
 				<key>price</key>
@@ -968,7 +1483,7 @@
 				<key>name</key>
 				<string>gesture36</string>
 				<key>isSold</key>
-				<string>yes</string>
+				<string>no</string>
 				<key>title</key>
 				<string>苗疆古笛</string>
 				<key>price</key>
@@ -987,7 +1502,7 @@
 				<key>name</key>
 				<string>eye11</string>
 				<key>isSold</key>
-				<string>yes</string>
+				<string>no</string>
 				<key>title</key>
 				<string>邪魅</string>
 				<key>price</key>
@@ -1003,7 +1518,7 @@
 				<key>name</key>
 				<string>eye13</string>
 				<key>isSold</key>
-				<string>yes</string>
+				<string>no</string>
 				<key>title</key>
 				<string>武媚娘眼</string>
 				<key>price</key>
@@ -1019,7 +1534,7 @@
 				<key>name</key>
 				<string>eye14</string>
 				<key>isSold</key>
-				<string>yes</string>
+				<string>no</string>
 				<key>title</key>
 				<string>时尚甜心</string>
 				<key>price</key>
@@ -1035,7 +1550,7 @@
 				<key>name</key>
 				<string>eye35</string>
 				<key>isSold</key>
-				<string>yes</string>
+				<string>no</string>
 				<key>title</key>
 				<string>轻音眼.棕</string>
 				<key>price</key>
@@ -1051,7 +1566,7 @@
 				<key>name</key>
 				<string>eye36</string>
 				<key>isSold</key>
-				<string>yes</string>
+				<string>no</string>
 				<key>title</key>
 				<string>白瞳</string>
 				<key>price</key>
@@ -1067,7 +1582,7 @@
 				<key>name</key>
 				<string>eye37</string>
 				<key>isSold</key>
-				<string>yes</string>
+				<string>no</string>
 				<key>title</key>
 				<string>放电波</string>
 				<key>price</key>
@@ -1086,7 +1601,7 @@
 				<key>name</key>
 				<string>cloth-b-19</string>
 				<key>isSold</key>
-				<string>yes</string>
+				<string>no</string>
 				<key>title</key>
 				<string>贵气公子</string>
 				<key>price</key>
@@ -1102,7 +1617,7 @@
 				<key>name</key>
 				<string>cloth-g-9</string>
 				<key>isSold</key>
-				<string>yes</string>
+				<string>no</string>
 				<key>title</key>
 				<string>童话梦</string>
 				<key>price</key>
@@ -1118,7 +1633,7 @@
 				<key>name</key>
 				<string>cloth-g-20</string>
 				<key>isSold</key>
-				<string>yes</string>
+				<string>no</string>
 				<key>title</key>
 				<string>轻舞.蓝</string>
 				<key>price</key>
@@ -1134,7 +1649,7 @@
 				<key>name</key>
 				<string>cloth-g-32</string>
 				<key>isSold</key>
-				<string>yes</string>
+				<string>no</string>
 				<key>title</key>
 				<string>西域情.白</string>
 				<key>price</key>
@@ -1150,7 +1665,7 @@
 				<key>name</key>
 				<string>cloth-g-35</string>
 				<key>isSold</key>
-				<string>yes</string>
+				<string>no</string>
 				<key>title</key>
 				<string>灰姑娘</string>
 				<key>price</key>
@@ -1166,7 +1681,7 @@
 				<key>name</key>
 				<string>cloth-g-36</string>
 				<key>isSold</key>
-				<string>yes</string>
+				<string>no</string>
 				<key>title</key>
 				<string>誓约</string>
 				<key>price</key>
@@ -1182,7 +1697,7 @@
 				<key>name</key>
 				<string>cloth-tong12</string>
 				<key>isSold</key>
-				<string>yes</string>
+				<string>no</string>
 				<key>title</key>
 				<string>经典风衣</string>
 				<key>price</key>
@@ -1198,7 +1713,7 @@
 				<key>name</key>
 				<string>cloth-tong7</string>
 				<key>isSold</key>
-				<string>yes</string>
+				<string>no</string>
 				<key>title</key>
 				<string>小鸡背剑</string>
 				<key>price</key>
@@ -1214,7 +1729,7 @@
 				<key>name</key>
 				<string>cloth-tong25</string>
 				<key>isSold</key>
-				<string>yes</string>
+				<string>no</string>
 				<key>title</key>
 				<string>绅士西服</string>
 				<key>price</key>

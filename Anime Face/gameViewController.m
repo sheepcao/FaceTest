@@ -21,6 +21,8 @@
 @interface gameViewController ()<UIScrollViewDelegate,UITextFieldDelegate>
 
 @property (nonatomic,strong) NSArray *imagesArray;
+@property (nonatomic,strong) NSArray *originYArray;
+
 @property (nonatomic,strong) UIView *colorView;
 @property (nonatomic,strong) UIImage *imageShare;
 
@@ -67,14 +69,21 @@ bool needSaveAlert;
     
     self.imagesArray = @[@"hair",self.faceFrameView,self.eyeView,self.eyebrowView,self.noseView,self.mouthView,self.faceImage,self.mustacheView,self.glassesView,self.clothingView,self.hatView,self.gestureView,self.petView,self.backImage,self.moodView];
     
+    
+    
+    
+    
     NSString *path1 = [[NSBundle mainBundle] pathForResource:[NSString stringWithFormat:@"body%d",self.sex] ofType:@"png"];
     [self.bodyImage setImage:[UIImage imageWithContentsOfFile:path1]];
     
     [self.backImage setImage:[UIImage imageWithContentsOfFile:[[NSBundle mainBundle] pathForResource:@"background9" ofType:@"png"]]];
     
     [self.faceFrameView setImage:[UIImage imageWithContentsOfFile:[[NSBundle mainBundle] pathForResource:@"face1" ofType:@"png"]]];
-    [self.frontHairView setImage:[UIImage imageWithContentsOfFile:[[NSBundle mainBundle] pathForResource:@"hair1-2-0-front" ofType:@"png"]]];
-    [self.backHairImage setImage:[UIImage imageWithContentsOfFile:[[NSBundle mainBundle] pathForResource:@"hair1-2-0-back" ofType:@"png"]]];
+    if (self.sex == 1000) {
+        [self.frontHairView setImage:[UIImage imageWithContentsOfFile:[[NSBundle mainBundle] pathForResource:@"hairG41-3-0-front" ofType:@"png"]]];
+
+    }
+//    [self.backHairImage setImage:[UIImage imageWithContentsOfFile:[[NSBundle mainBundle] pathForResource:@"hair1-2-0-back" ofType:@"png"]]];
     
     
 
@@ -324,6 +333,9 @@ bool needSaveAlert;
 -(void)setupListsForPage:(NSString *)pageNum
 {
     
+    
+    self.originYArray = @[@"0", [NSNumber numberWithFloat:self.faceFrameView.center.y],[NSNumber numberWithFloat:self.eyeView.center.y],[NSNumber numberWithFloat:self.eyebrowView.center.y],[NSNumber numberWithFloat:self.noseView.center.y],[NSNumber numberWithFloat:self.mouthView.center.y],[NSNumber numberWithFloat:self.faceImage.center.y],[NSNumber numberWithFloat:self.mustacheView.center.y],[NSNumber numberWithFloat:self.glassesView.center.y],[NSNumber numberWithFloat:self.clothingView.center.y],[NSNumber numberWithFloat:self.hatView.center.y],[NSNumber numberWithFloat:self.gestureView.center.y],[NSNumber numberWithFloat:self.petView.center.y],[NSNumber numberWithFloat:self.backImage.center.y],[NSNumber numberWithFloat:self.moodView.center.y]];
+
 
     
     [self.ListsScroll setFrame:CGRectMake(0, self.catalogScrollView.frame.origin.y+self.catalogScrollView.frame.size.height, SCREEN_WIDTH, SCREEN_HEIGHT - (self.catalogScrollView.frame.origin.y+self.catalogScrollView.frame.size.height))];
@@ -572,24 +584,25 @@ bool needSaveAlert;
     {
         [self.imagesArray[[sender.imageLevel intValue]] setImage:[UIImage imageWithContentsOfFile:[[NSBundle mainBundle] pathForResource:sender.imageName ofType:@"png"]]];
         self.headImage.placardView = self.imagesArray[[sender.imageLevel intValue]];
+        
     }
     
     if ([sender.imageLevel intValue] == 2)// eye view
     {
         self.headImage.swipeOrientation = swipevertical;
-        self.headImage.limitationUp = self.headImage.placardView.center.y-48;
-        self.headImage.limitationDown =self.headImage.placardView.center.y + 25;
+        self.headImage.limitationUp = [self.originYArray[[sender.imageLevel intValue]] floatValue]-20;
+        self.headImage.limitationDown =[self.originYArray[[sender.imageLevel intValue]] floatValue] + 20;
 
     }else if ([sender.imageLevel intValue] == 7)//mustacheView
     {
         self.headImage.swipeOrientation = swipevertical;
-        self.headImage.limitationUp =self.headImage.placardView.center.y - 70;
-        self.headImage.limitationDown =self.headImage.placardView.center.y + 70;
+        self.headImage.limitationUp =[self.originYArray[[sender.imageLevel intValue]] floatValue] - 10;
+        self.headImage.limitationDown =[self.originYArray[[sender.imageLevel intValue]] floatValue] + 7;
     }else if ([sender.imageLevel intValue] == 3)//eyebrow view
     {
         self.headImage.swipeOrientation = swipevertical;
-        self.headImage.limitationUp = self.headImage.placardView.center.y-48;
-        self.headImage.limitationDown =self.headImage.placardView.center.y + 25;
+        self.headImage.limitationUp = [self.originYArray[[sender.imageLevel intValue]] floatValue]-20;
+        self.headImage.limitationDown =[self.originYArray[[sender.imageLevel intValue]] floatValue] + 20;
     }else if ([sender.imageLevel intValue] == 8)//glasses view
     {
         self.headImage.swipeOrientation = swipeAll;
@@ -598,13 +611,13 @@ bool needSaveAlert;
     }else if ([sender.imageLevel intValue] == 4) //nose view
     {
         self.headImage.swipeOrientation = swipevertical;
-        self.headImage.limitationUp = self.headImage.placardView.center.y -72;
-        self.headImage.limitationDown = self.headImage.placardView.center.y +72;
+        self.headImage.limitationUp = [self.originYArray[[sender.imageLevel intValue]] floatValue] -12;
+        self.headImage.limitationDown = [self.originYArray[[sender.imageLevel intValue]] floatValue] +12;
     }else if ([sender.imageLevel intValue] == 5) // mouthView
     {
         self.headImage.swipeOrientation = swipevertical;
-        self.headImage.limitationUp =self.headImage.placardView.center.y - 70;
-        self.headImage.limitationDown =self.headImage.placardView.center.y + 70;
+        self.headImage.limitationUp = [self.originYArray[[sender.imageLevel intValue]] floatValue] - 10;
+        self.headImage.limitationDown =[self.originYArray[[sender.imageLevel intValue]] floatValue] + 7;
     }else if ([sender.imageLevel intValue] == 6)//faceImage
     {
         self.headImage.swipeOrientation = swipeAll;
@@ -1165,7 +1178,10 @@ bool needSaveAlert;
                                     [[NSUserDefaults standardUserDefaults] setObject:@"yes" forKey:@"hasShared"];
                                     [self.shareGift setHidden:YES];
                                         
+                                        
                                         NSLog(@"song da bai");
+                                        [self cancelPhoto:nil];
+
                                     }
                                     
                                     NSLog(NSLocalizedString(@"TEXT_ShARE_SUC", @"分享成功"));
@@ -1183,6 +1199,7 @@ bool needSaveAlert;
 
 - (IBAction)saveAlbum:(id)sender {
     [self saveImage:self.imageShare];
+    [self cancelPhoto:nil];
 
 }
 
@@ -1195,6 +1212,12 @@ bool needSaveAlert;
                      }
                      completion:nil
      ];
+    
+    for (UIView *subview in [self.photoTextFrame subviews]) {
+        if ([subview isKindOfClass:[UIImageView class]]) {
+            [subview removeFromSuperview];
+        }
+    }
     
 
 }
@@ -1337,6 +1360,19 @@ bool needSaveAlert;
         [CommonUtility tapSound:@"photo" withType:@"wav"];
     }
     
+    int random =  arc4random() % 11;
+    
+    NSString *sexPrefix = @"";
+    
+    (self.sex == 1)?(sexPrefix = @"boysay"):(sexPrefix = @"girlsay");
+    
+    NSString *wordsName = [NSString stringWithFormat:@"%@%d",sexPrefix,random];
+    UIImageView *wordImage = [[UIImageView alloc] initWithFrame:CGRectMake(1, 1, self.photoTextFrame.frame.size.width-2, self.photoTextFrame.frame.size.height-2)];
+    [wordImage setImage:[UIImage imageNamed:wordsName]];
+    [self.photoTextFrame addSubview:wordImage];
+
+    
+    
     UIView *whiteView = [[UIView alloc] initWithFrame:self.view.frame];
     [whiteView setBackgroundColor:[UIColor whiteColor]];
     [self.view addSubview:whiteView];
@@ -1352,7 +1388,14 @@ bool needSaveAlert;
                          [whiteView removeFromSuperview];
                          
                          [self.photoGirl setImage:[UIImage imageNamed:@"girlphoto2"]];
-                         [self.photoTextFrame setHidden:NO];
+                         if (IS_IPHONE_4_OR_LESS)
+                         {
+
+                         }else
+                         {
+                             [self.photoTextFrame setHidden:NO];
+
+                         }
 //                         [self.photoText setHidden:NO];
 //                         [self.photoText setText:@"世上竟有如此出尘绝艳的女子"];
 

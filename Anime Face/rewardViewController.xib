@@ -38,7 +38,7 @@
                 <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="backgroundLuck.png" translatesAutoresizingMaskIntoConstraints="NO" id="cER-dx-gwI">
                     <rect key="frame" x="0.0" y="0.0" width="414" height="736"/>
                 </imageView>
-                <imageView hidden="YES" userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="halozhuan.png" translatesAutoresizingMaskIntoConstraints="NO" id="oXD-TA-1N5" userLabel="spinView">
+                <imageView hidden="YES" userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="halozhuan3.png" translatesAutoresizingMaskIntoConstraints="NO" id="oXD-TA-1N5" userLabel="spinView">
                     <rect key="frame" x="0.0" y="0.0" width="240" height="128"/>
                     <constraints>
                         <constraint firstAttribute="width" secondItem="oXD-TA-1N5" secondAttribute="height" multiplier="1:1" id="wEf-sf-0qI"/>
@@ -873,7 +873,7 @@
                 <constraint firstItem="zTl-PQ-Kda" firstAttribute="height" secondItem="cER-dx-gwI" secondAttribute="height" multiplier="3:7" id="klN-br-pHi"/>
                 <constraint firstItem="cER-dx-gwI" firstAttribute="leading" secondItem="i5M-Pr-FkT" secondAttribute="leading" id="mte-Ub-wrY"/>
                 <constraint firstAttribute="trailing" secondItem="oXD-TA-1N5" secondAttribute="trailing" constant="149" id="qE7-35-ic0">
-                    <variation key="heightClass=regular-widthClass=compact" constant="-20"/>
+                    <variation key="heightClass=regular-widthClass=compact" constant="-120"/>
                 </constraint>
                 <constraint firstItem="tkE-is-5iT" firstAttribute="leading" secondItem="cER-dx-gwI" secondAttribute="trailing" constant="-297" id="rvo-F2-61K"/>
                 <constraint firstAttribute="bottom" secondItem="GJG-DK-vSi" secondAttribute="bottom" id="t4Y-Bg-cee"/>
@@ -881,7 +881,7 @@
                     <variation key="heightClass=regular-widthClass=compact" constant="0.0"/>
                 </constraint>
                 <constraint firstItem="oXD-TA-1N5" firstAttribute="leading" secondItem="i5M-Pr-FkT" secondAttribute="leading" constant="149" id="xtw-iY-5ga">
-                    <variation key="heightClass=regular-widthClass=compact" constant="-20"/>
+                    <variation key="heightClass=regular-widthClass=compact" constant="-120"/>
                 </constraint>
             </constraints>
             <nil key="simulatedStatusBarMetrics"/>
@@ -949,7 +949,7 @@
         <image name="diamond.png" width="70" height="50"/>
         <image name="face0.png" width="728" height="728"/>
         <image name="free.png" width="116" height="151"/>
-        <image name="halozhuan.png" width="1400" height="1411"/>
+        <image name="halozhuan3.png" width="1500" height="1512"/>
         <image name="little witch.png" width="645" height="944"/>
         <image name="male.png" width="49" height="49"/>
         <image name="message 2.png" width="251" height="37"/>

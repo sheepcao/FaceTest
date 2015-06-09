@@ -236,13 +236,14 @@ bool shouldFinish;
             [alertView addSubview:backImg];
             
             
-            UIButton *cancelBtn = [[UIButton alloc] initWithFrame:CGRectMake(alertView.frame.size.width/2-90, alertView.frame.size.height-80, 70, 42)];
+            UIButton *cancelBtn = [[UIButton alloc] initWithFrame:CGRectMake(alertView.frame.size.width/2-120, alertView.frame.size.height-80, 100, 35)];
             [cancelBtn setImage:[UIImage imageNamed:@"cancel"] forState:UIControlStateNormal];
             [cancelBtn setImage:[UIImage imageNamed:@"cancel-press"] forState:UIControlStateHighlighted];
             [cancelBtn addTarget:self action:@selector(cancelAlert:) forControlEvents:UIControlEventTouchUpInside];
             
             
-            UIButton *sureBtn = [[UIButton alloc] initWithFrame:CGRectMake(alertView.frame.size.width/2+20, alertView.frame.size.height-80, 70, 42)];
+            UIButton *sureBtn = [[UIButton alloc] initWithFrame:CGRectMake(alertView.frame.size.width/2+20, alertView.frame.size.height-80, 100, 35)];
+
             [sureBtn setImage:[UIImage imageNamed:@"sure"] forState:UIControlStateNormal];
             [sureBtn setImage:[UIImage imageNamed:@"sure-press"] forState:UIControlStateHighlighted];
             [sureBtn addTarget:self action:@selector(sureAlert:) forControlEvents:UIControlEventTouchUpInside];
@@ -516,8 +517,8 @@ bool shouldFinish;
     self.productNow = [[product alloc] init];
 
     [self costDiamond:-10];
-    self.productNow.productName = @"1";
-    self.productNow.productTitle = @"111";
+    self.productNow.productName = @"10zuan";
+    self.productNow.productTitle = @"10钻";
     [self.sexImage setImage:nil];
 
 
@@ -618,6 +619,16 @@ bool shouldFinish;
 
 -(void)modifyItemFromPlist:(NSString *)plistname withCatelog:(NSString *)catelog andElementNum:(int)elementNum
 {
+    if ([catelog isEqualToString:@"头发女"])
+    {
+        catelog = @"头发";
+    }
+    if ([catelog isEqualToString:@"衣服女"])
+    {
+        catelog = @"衣服";
+    }
+    
+    
     NSString *documentsDirectory = [NSSearchPathForDirectoriesInDomains(NSDocumentDirectory, NSUserDomainMask, YES) objectAtIndex:0];
     NSString *plistPath = [documentsDirectory stringByAppendingPathComponent:[ NSString stringWithFormat:@"%@.plist",plistname ]];
     NSFileManager* manager = [NSFileManager defaultManager];

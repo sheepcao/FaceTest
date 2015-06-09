@@ -44,8 +44,40 @@
     {
         [self goUpper];
     }
+    
+    NSString *diamond = [[NSUserDefaults standardUserDefaults] objectForKey:@"diamond"];
+    
+    if (diamond) {
+    }else
+    {
+        [[NSUserDefaults standardUserDefaults] setObject:StartDiamond forKey:@"diamond"];
+        UIButton *firstLogin = [[UIButton alloc] initWithFrame:CGRectMake(SCREEN_WIDTH/6, SCREEN_HEIGHT+20, SCREEN_WIDTH*2/3, SCREEN_WIDTH)];
+        [firstLogin setImage:[UIImage imageNamed:@"shoudengdali"] forState:UIControlStateNormal];
+        [firstLogin setImage:[UIImage imageNamed:@"shoudengdali"] forState:UIControlStateHighlighted];
+        [firstLogin addTarget:self action:@selector(cancelift:) forControlEvents:UIControlEventTouchUpInside];
+
+        [self.view addSubview:firstLogin];
+
+        
+        [UIView animateWithDuration:0.45 delay:0.05 usingSpringWithDamping:1.0 initialSpringVelocity:0.4 options:0 animations:^{
+            [firstLogin setFrame:CGRectMake(SCREEN_WIDTH/6, SCREEN_HEIGHT/2-SCREEN_WIDTH/2, SCREEN_WIDTH*2/3, SCREEN_WIDTH)];
+        } completion:nil];
+
+        
+        
+    }
 
     
+    
+}
+
+-(void)cancelift:(UIButton *)sender
+{
+    
+    [UIView animateWithDuration:0.45 delay:0.05 usingSpringWithDamping:1.0 initialSpringVelocity:0.4 options:0 animations:^{
+        [sender setFrame:CGRectMake(SCREEN_WIDTH/6, SCREEN_HEIGHT+20, SCREEN_WIDTH*2/3, SCREEN_WIDTH)];
+    } completion:nil];
+    [sender removeFromSuperview];
     
 }
 -(void)goUpper
