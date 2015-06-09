@@ -517,7 +517,7 @@ bool shouldFinish;
     self.productNow = [[product alloc] init];
 
     [self costDiamond:-10];
-    self.productNow.productName = @"10zuan";
+    self.productNow.productName = @"10diamonds";
     self.productNow.productTitle = @"10钻";
     [self.sexImage setImage:nil];
 

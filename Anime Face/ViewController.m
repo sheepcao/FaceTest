@@ -11,7 +11,6 @@
 #import "rewardViewController.h"
 #import "storeViewController.h"
 #import "buyOneViewController.h"
-#import "TestViewController.h"
 #import <MessageUI/MessageUI.h>
 
 @interface ViewController ()<MFMailComposeViewControllerDelegate>

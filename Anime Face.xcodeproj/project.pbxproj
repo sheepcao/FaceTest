@@ -1422,7 +1422,6 @@
 		A47D6EB41AC3E1ED00AC1768 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = A47D6EB31AC3E1ED00AC1768 /* AppDelegate.m */; };
 		A47D6EB71AC3E1ED00AC1768 /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = A47D6EB61AC3E1ED00AC1768 /* ViewController.m */; };
 		A47D6EBC1AC3E1ED00AC1768 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = A47D6EBB1AC3E1ED00AC1768 /* Images.xcassets */; };
-		A47D6EBF1AC3E1ED00AC1768 /* LaunchScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = A47D6EBD1AC3E1ED00AC1768 /* LaunchScreen.xib */; };
 		A47D6ECB1AC3E1ED00AC1768 /* Anime_FaceTests.m in Sources */ = {isa = PBXBuildFile; fileRef = A47D6ECA1AC3E1ED00AC1768 /* Anime_FaceTests.m */; };
 		A49116F61AEF4FB10050A6DA /* productNow.m in Sources */ = {isa = PBXBuildFile; fileRef = A49116F51AEF4FB10050A6DA /* productNow.m */; };
 		A4A211001AD3A2F4006973E0 /* rewardViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = A4A210FE1AD3A2F4006973E0 /* rewardViewController.m */; };
@@ -1470,6 +1469,8 @@
 		A4B6EFEA1B26B432007EBFC7 /* boysay9.png in Resources */ = {isa = PBXBuildFile; fileRef = A4B6EFD31B26B432007EBFC7 /* boysay9.png */; };
 		A4B6EFEE1B26BF54007EBFC7 /* shoudengdali.png in Resources */ = {isa = PBXBuildFile; fileRef = A4B6EFED1B26BF54007EBFC7 /* shoudengdali.png */; };
 		A4B6EFF01B26E43E007EBFC7 /* halozhuan3.png in Resources */ = {isa = PBXBuildFile; fileRef = A4B6EFEF1B26E43E007EBFC7 /* halozhuan3.png */; };
+		A4B6EFF21B26E815007EBFC7 /* 10diamonds.png in Resources */ = {isa = PBXBuildFile; fileRef = A4B6EFF11B26E815007EBFC7 /* 10diamonds.png */; };
+		A4B6EFF41B26ED36007EBFC7 /* Images-2.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = A4B6EFF31B26ED36007EBFC7 /* Images-2.xcassets */; };
 		A4BCC0791B17FAEE00108C72 /* buyingViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = A4BCC0771B17FAEE00108C72 /* buyingViewController.m */; };
 		A4BCC07A1B17FAEE00108C72 /* buyingViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = A4BCC0781B17FAEE00108C72 /* buyingViewController.xib */; };
 		A4BCC07E1B18428200108C72 /* buyOneViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = A4BCC07C1B18428200108C72 /* buyOneViewController.m */; };
@@ -1516,8 +1517,6 @@
 		A4BF63911AEDC79F009B38BE /* glass17.png in Resources */ = {isa = PBXBuildFile; fileRef = A4BF637F1AEDC79F009B38BE /* glass17.png */; };
 		A4BF63FA1AEDCAEA009B38BE /* body1.png in Resources */ = {isa = PBXBuildFile; fileRef = A4BF63F81AEDCAEA009B38BE /* body1.png */; };
 		A4BF63FB1AEDCAEA009B38BE /* body1000.png in Resources */ = {isa = PBXBuildFile; fileRef = A4BF63F91AEDCAEA009B38BE /* body1000.png */; };
-		A4BF64051AEDCB34009B38BE /* music off.png in Resources */ = {isa = PBXBuildFile; fileRef = A4BF63FD1AEDCB34009B38BE /* music off.png */; };
-		A4BF64061AEDCB34009B38BE /* music on.png in Resources */ = {isa = PBXBuildFile; fileRef = A4BF63FE1AEDCB34009B38BE /* music on.png */; };
 		A4BF64071AEDCB34009B38BE /* new big.png in Resources */ = {isa = PBXBuildFile; fileRef = A4BF63FF1AEDCB34009B38BE /* new big.png */; };
 		A4BF64081AEDCB34009B38BE /* new small.png in Resources */ = {isa = PBXBuildFile; fileRef = A4BF64001AEDCB34009B38BE /* new small.png */; };
 		A4BF645B1AEE13FF009B38BE /* buttonProduct.m in Sources */ = {isa = PBXBuildFile; fileRef = A4BF645A1AEE13FF009B38BE /* buttonProduct.m */; };
@@ -1534,8 +1533,6 @@
 		A4CA3AC31ACA9D3E00D50D80 /* APLPlacardView.m in Sources */ = {isa = PBXBuildFile; fileRef = A4CA3AC11ACA9D3E00D50D80 /* APLPlacardView.m */; };
 		A4CA3AC71ACAA0D300D50D80 /* elemntButton.m in Sources */ = {isa = PBXBuildFile; fileRef = A4CA3AC61ACAA0D300D50D80 /* elemntButton.m */; };
 		A4CA3ACA1ACAA2A500D50D80 /* hairButton.m in Sources */ = {isa = PBXBuildFile; fileRef = A4CA3AC91ACAA2A500D50D80 /* hairButton.m */; };
-		A4DBDAD41B20071A00CCCAE0 /* TestViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = A4DBDAD21B20071A00CCCAE0 /* TestViewController.m */; };
-		A4DBDAD51B20071A00CCCAE0 /* TestViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = A4DBDAD31B20071A00CCCAE0 /* TestViewController.xib */; };
 		A4DBDB1A1B213B0400CCCAE0 /* 60kuai-normal.png in Resources */ = {isa = PBXBuildFile; fileRef = A4DBDB0D1B213B0400CCCAE0 /* 60kuai-normal.png */; };
 		A4DBDB1B1B213B0400CCCAE0 /* 60kuai-press.png in Resources */ = {isa = PBXBuildFile; fileRef = A4DBDB0E1B213B0400CCCAE0 /* 60kuai-press.png */; };
 		A4DBDB1C1B213B0400CCCAE0 /* contact us.png in Resources */ = {isa = PBXBuildFile; fileRef = A4DBDB0F1B213B0400CCCAE0 /* contact us.png */; };
@@ -3044,7 +3041,6 @@
 		A47D6EB51AC3E1ED00AC1768 /* ViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ViewController.h; sourceTree = "<group>"; };
 		A47D6EB61AC3E1ED00AC1768 /* ViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ViewController.m; sourceTree = "<group>"; };
 		A47D6EBB1AC3E1ED00AC1768 /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
-		A47D6EBE1AC3E1ED00AC1768 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = Base; path = Base.lproj/LaunchScreen.xib; sourceTree = "<group>"; };
 		A47D6EC41AC3E1ED00AC1768 /* Anime FaceTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "Anime FaceTests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
 		A47D6EC91AC3E1ED00AC1768 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		A47D6ECA1AC3E1ED00AC1768 /* Anime_FaceTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = Anime_FaceTests.m; sourceTree = "<group>"; };
@@ -3098,6 +3094,8 @@
 		A4B6EFD31B26B432007EBFC7 /* boysay9.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = boysay9.png; sourceTree = "<group>"; };
 		A4B6EFED1B26BF54007EBFC7 /* shoudengdali.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = shoudengdali.png; sourceTree = "<group>"; };
 		A4B6EFEF1B26E43E007EBFC7 /* halozhuan3.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = halozhuan3.png; sourceTree = "<group>"; };
+		A4B6EFF11B26E815007EBFC7 /* 10diamonds.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = 10diamonds.png; sourceTree = "<group>"; };
+		A4B6EFF31B26ED36007EBFC7 /* Images-2.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Images-2.xcassets"; sourceTree = "<group>"; };
 		A4BCC0761B17FAEE00108C72 /* buyingViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = buyingViewController.h; sourceTree = "<group>"; };
 		A4BCC0771B17FAEE00108C72 /* buyingViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = buyingViewController.m; sourceTree = "<group>"; };
 		A4BCC0781B17FAEE00108C72 /* buyingViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = buyingViewController.xib; sourceTree = "<group>"; };
@@ -3147,8 +3145,6 @@
 		A4BF637F1AEDC79F009B38BE /* glass17.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = glass17.png; sourceTree = "<group>"; };
 		A4BF63F81AEDCAEA009B38BE /* body1.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = body1.png; sourceTree = "<group>"; };
 		A4BF63F91AEDCAEA009B38BE /* body1000.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = body1000.png; sourceTree = "<group>"; };
-		A4BF63FD1AEDCB34009B38BE /* music off.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "music off.png"; sourceTree = "<group>"; };
-		A4BF63FE1AEDCB34009B38BE /* music on.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "music on.png"; sourceTree = "<group>"; };
 		A4BF63FF1AEDCB34009B38BE /* new big.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "new big.png"; sourceTree = "<group>"; };
 		A4BF64001AEDCB34009B38BE /* new small.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "new small.png"; sourceTree = "<group>"; };
 		A4BF64591AEE13FF009B38BE /* buttonProduct.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = buttonProduct.h; sourceTree = "<group>"; };
@@ -3177,9 +3173,6 @@
 		A4CA3AC61ACAA0D300D50D80 /* elemntButton.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = elemntButton.m; sourceTree = "<group>"; };
 		A4CA3AC81ACAA2A500D50D80 /* hairButton.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = hairButton.h; sourceTree = "<group>"; };
 		A4CA3AC91ACAA2A500D50D80 /* hairButton.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = hairButton.m; sourceTree = "<group>"; };
-		A4DBDAD11B20071A00CCCAE0 /* TestViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TestViewController.h; sourceTree = "<group>"; };
-		A4DBDAD21B20071A00CCCAE0 /* TestViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TestViewController.m; sourceTree = "<group>"; };
-		A4DBDAD31B20071A00CCCAE0 /* TestViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = TestViewController.xib; sourceTree = "<group>"; };
 		A4DBDB0D1B213B0400CCCAE0 /* 60kuai-normal.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "60kuai-normal.png"; sourceTree = "<group>"; };
 		A4DBDB0E1B213B0400CCCAE0 /* 60kuai-press.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "60kuai-press.png"; sourceTree = "<group>"; };
 		A4DBDB0F1B213B0400CCCAE0 /* contact us.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "contact us.png"; sourceTree = "<group>"; };
@@ -3771,6 +3764,7 @@
 			isa = PBXGroup;
 			children = (
 				A472403E1B1D560B0010B238 /* halo.png */,
+				A4B6EFF11B26E815007EBFC7 /* 10diamonds.png */,
 				A4B6EFEF1B26E43E007EBFC7 /* halozhuan3.png */,
 				A409C7F31B0EC0C800AD2E99 /* 20diamond.png */,
 				A409C7E91B0EC0BC00AD2E99 /* box-normal.png */,
@@ -5261,12 +5255,9 @@
 				A4A210FF1AD3A2F4006973E0 /* rewardViewController.xib */,
 				A46BBC1F1ADE40D6009D2280 /* Main.storyboard */,
 				A47D6EBB1AC3E1ED00AC1768 /* Images.xcassets */,
-				A47D6EBD1AC3E1ED00AC1768 /* LaunchScreen.xib */,
+				A4B6EFF31B26ED36007EBFC7 /* Images-2.xcassets */,
 				A47D6EAE1AC3E1ED00AC1768 /* Supporting Files */,
 				A4CA3AC41ACA9D9300D50D80 /* MoveMe-Prefix.pch */,
-				A4DBDAD11B20071A00CCCAE0 /* TestViewController.h */,
-				A4DBDAD21B20071A00CCCAE0 /* TestViewController.m */,
-				A4DBDAD31B20071A00CCCAE0 /* TestViewController.xib */,
 			);
 			path = "Anime Face";
 			sourceTree = "<group>";
@@ -6032,8 +6023,6 @@
 				A4BCC0881B185CE200108C72 /* hotSale */,
 				A4024E311AF73599000867D4 /* nothing-yulan.png */,
 				A4024E321AF73599000867D4 /* nothing.png */,
-				A4BF63FD1AEDCB34009B38BE /* music off.png */,
-				A4BF63FE1AEDCB34009B38BE /* music on.png */,
 				A4BF63FF1AEDCB34009B38BE /* new big.png */,
 				A4BF64001AEDCB34009B38BE /* new small.png */,
 				A4BF63F81AEDCAEA009B38BE /* body1.png */,
@@ -6432,6 +6421,7 @@
 				A4B6EF9F1B2681A2007EBFC7 /* photo.wav in Resources */,
 				A4362A091B2537EF001FEFFA /* hairG22-6-2-back.png in Resources */,
 				A4362A031B2537EF001FEFFA /* hairG21-6-5-front.png in Resources */,
+				A4B6EFF41B26ED36007EBFC7 /* Images-2.xcassets in Resources */,
 				A409C7FC1B0F326800AD2E99 /* sold out1.png in Resources */,
 				A4362BA91B255A5D001FEFFA /* cloth-b-5.png in Resources */,
 				A43629671B2537EF001FEFFA /* hair18-2-7-back.png in Resources */,
@@ -6775,7 +6765,6 @@
 				A4362BBD1B255A5D001FEFFA /* cloth-b-25.png in Resources */,
 				A4362CB01B255A78001FEFFA /* cloth-tong12-yulan.png in Resources */,
 				A43629491B2537EF001FEFFA /* hair13-6-1-back.png in Resources */,
-				A4BF64061AEDCB34009B38BE /* music on.png in Resources */,
 				A4362DCA1B255BEE001FEFFA /* pet20-yulan.png in Resources */,
 				A472BF4F1B1E9053001708AA /* 1yuan icon-press.png in Resources */,
 				A43625831B25336E001FEFFA /* facemark2-yulan.png in Resources */,
@@ -7190,6 +7179,7 @@
 				A4DBDB241B213B0400CCCAE0 /* share.png in Resources */,
 				A4362DEA1B255BFF001FEFFA /* pet3.png in Resources */,
 				A43629521B2537EF001FEFFA /* hair13-6-7-front.png in Resources */,
+				A4B6EFF21B26E815007EBFC7 /* 10diamonds.png in Resources */,
 				A4574F4C1B0DB4F900A37DE3 /* hengtiao .png in Resources */,
 				A4362D551B255ACC001FEFFA /* hat28 .png in Resources */,
 				A42C688C1B0C513D00B2EDDD /* 胡子.png in Resources */,
@@ -7355,7 +7345,6 @@
 				A43626911B25360A001FEFFA /* mouth27.png in Resources */,
 				A472BF5E1B1EC5E2001708AA /* 2.png in Resources */,
 				A4362DFE1B255BFF001FEFFA /* pet18-yulan.png in Resources */,
-				A47D6EBF1AC3E1ED00AC1768 /* LaunchScreen.xib in Resources */,
 				A43624A11B253165001FEFFA /* eye15-yulan.png in Resources */,
 				A4362B411B253872001FEFFA /* huzi5-yulan.png in Resources */,
 				A4362B301B253872001FEFFA /* huzi10.png in Resources */,
@@ -7401,7 +7390,6 @@
 				A4362BC01B255A5D001FEFFA /* cloth-b-28.png in Resources */,
 				A4362DB81B255B16001FEFFA /* hat33-yulan.png in Resources */,
 				A43626761B25360A001FEFFA /* mouth0.png in Resources */,
-				A4BF64051AEDCB34009B38BE /* music off.png in Resources */,
 				A4362DB71B255B16001FEFFA /* hat32-yulan.png in Resources */,
 				A4362A411B2537EF001FEFFA /* hairG33-3-0-front.png in Resources */,
 				A43625E31B253396001FEFFA /* gesture30.png in Resources */,
@@ -7760,7 +7748,6 @@
 				A43629A41B2537EF001FEFFA /* hair8-6-4-front.png in Resources */,
 				A4362CA51B255A78001FEFFA /* cloth-tong1-yulan.png in Resources */,
 				A4362A371B2537EF001FEFFA /* hairG2-3-1-front.png in Resources */,
-				A4DBDAD51B20071A00CCCAE0 /* TestViewController.xib in Resources */,
 				A43625521B253359001FEFFA /* facemark1.png in Resources */,
 				A43625951B25336E001FEFFA /* facemark20-yulan.png in Resources */,
 				A43629941B2537EF001FEFFA /* hair5-5-7-front.png in Resources */,
@@ -7821,7 +7808,6 @@
 				A47D6EB71AC3E1ED00AC1768 /* ViewController.m in Sources */,
 				A4024E281AF7056F000867D4 /* NetAssociation.m in Sources */,
 				A4A2110E1AD3B2AE006973E0 /* imageWithName.m in Sources */,
-				A4DBDAD41B20071A00CCCAE0 /* TestViewController.m in Sources */,
 				A4CA3AC71ACAA0D300D50D80 /* elemntButton.m in Sources */,
 				A4BCC07E1B18428200108C72 /* buyOneViewController.m in Sources */,
 				A42382111B13110B008683B4 /* buyCellView.m in Sources */,
@@ -7855,14 +7841,6 @@
 /* End PBXTargetDependency section */
 
 /* Begin PBXVariantGroup section */
-		A47D6EBD1AC3E1ED00AC1768 /* LaunchScreen.xib */ = {
-			isa = PBXVariantGroup;
-			children = (
-				A47D6EBE1AC3E1ED00AC1768 /* Base */,
-			);
-			name = LaunchScreen.xib;
-			sourceTree = "<group>";
-		};
 		A4F1990A1AF865E60003351E /* ShareSDKLocalizable.strings */ = {
 			isa = PBXVariantGroup;
 			children = (
@@ -7996,8 +7974,8 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
-				CODE_SIGN_IDENTITY = "iPhone Developer";
-				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				CODE_SIGN_IDENTITY = "iPhone Distribution: CAO GUANGXU";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Distribution: CAO GUANGXU";
 				FRAMEWORK_SEARCH_PATHS = (
 					"$(inherited)",
 					"$(PROJECT_DIR)/ShareSDK",
@@ -8027,7 +8005,7 @@
 					"-ObjC",
 				);
 				PRODUCT_NAME = "$(TARGET_NAME)";
-				PROVISIONING_PROFILE = "c8f11a73-fbc6-4d59-ad46-8cf98d986ab4";
+				PROVISIONING_PROFILE = "59b47dbf-6f60-4257-bbcc-e3738598e3fa";
 			};
 			name = Release;
 		};
