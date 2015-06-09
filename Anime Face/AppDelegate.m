@@ -9,6 +9,8 @@
 #import "AppDelegate.h"
 #import "myIAPHelper.h"
 #import "globalVar.h"
+#import "CommonUtility.h"
+
 
 @interface AppDelegate ()
 
@@ -17,10 +19,11 @@
 @implementation AppDelegate
 
 
+
 - (BOOL)application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions {
     // Override point for customization after application launch.
     [myIAPHelper sharedInstance];
-    
+
     [MobClick startWithAppkey:@"5508d14dfd98c530ab00043f" reportPolicy:REALTIME   channelId:nil];
     NSString *version = [[[NSBundle mainBundle] infoDictionary] objectForKey:@"CFBundleShortVersionString"];
     [MobClick setAppVersion:version];
@@ -28,6 +31,12 @@
     [self setShareIDs];
     
     [self getSettings];
+    
+
+    
+    if (musicSwitch) {
+        [CommonUtility playBackMusic];
+    }
     
     return YES;
 }
@@ -53,6 +62,9 @@
 - (void)applicationWillTerminate:(UIApplication *)application {
     // Called when the application is about to terminate. Save data if appropriate. See also applicationDidEnterBackground:.
 }
+
+
+
 
 - (BOOL)application:(UIApplication *)application
       handleOpenURL:(NSURL *)url

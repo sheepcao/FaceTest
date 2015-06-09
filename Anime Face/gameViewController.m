@@ -621,7 +621,7 @@ bool needSaveAlert;
         self.headImage.limitationUp = 0;
         self.headImage.limitationDown = 0;
 
-        if (sender.tag == 2) {
+        if (sender.tag == 2  || sender.tag == 3) {
             [invisibleTextFiled becomeFirstResponder];
         }else
         {
@@ -704,7 +704,8 @@ bool needSaveAlert;
     
     UIButton *doInput = [[UIButton alloc] initWithFrame:CGRectMake(customTextView.frame.size.width-78, 2, 75, 36)];
     [doInput setTitle:@"输入" forState:UIControlStateNormal];
-    [doInput setTitleColor:[UIColor blueColor] forState:UIControlStateNormal];
+    doInput.titleLabel.font = [UIFont boldSystemFontOfSize:16.0f];
+    [doInput setTitleColor:[UIColor blackColor] forState:UIControlStateNormal];
     [doInput addTarget:self action:@selector(inputText) forControlEvents:UIControlEventTouchUpInside];
     [customTextView addSubview:invisibleTextFiled];
     [customTextView addSubview:doInput];
@@ -1204,6 +1205,11 @@ bool needSaveAlert;
 
 - (IBAction)backTapp:(id)sender {
     
+    if(soundSwitch)
+    {
+        [CommonUtility tapSound:@"click" withType:@"mp3"];
+    }
+    
     if (needSaveAlert) {
         UIAlertView *alert = [[UIAlertView alloc] initWithTitle:@"注意" message:@"当前形象尚未保存，确定返回主界面吗" delegate:self cancelButtonTitle:@"取消" otherButtonTitles:@"返回主界面", nil];
         [alert show];
@@ -1221,7 +1227,10 @@ bool needSaveAlert;
 }
 
 - (IBAction)storeTap:(id)sender {
-
+    if(soundSwitch)
+    {
+        [CommonUtility tapSound:@"click" withType:@"mp3"];
+    }
 
     storeViewController *myStore = [[storeViewController alloc] initWithNibName:@"storeViewController" bundle:nil];
     self.GameData = [self readDataFromPlist:@"GameData"];
@@ -1248,7 +1257,10 @@ bool needSaveAlert;
 }
 
 - (IBAction)luckyHouseTap:(id)sender {
-    
+    if(soundSwitch)
+    {
+        [CommonUtility tapSound:@"click" withType:@"mp3"];
+    }
     
     rewardViewController *myReward = [[rewardViewController alloc] initWithNibName:@"rewardViewController" bundle:nil];
     
@@ -1265,6 +1277,11 @@ bool needSaveAlert;
 }
 
 - (IBAction)saveAndShare:(id)sender {
+    
+    if(soundSwitch)
+    {
+        [CommonUtility tapSound:@"click" withType:@"mp3"];
+    }
     
     [invisibleTextFiled resignFirstResponder];
     [self hideCustomTextView];
@@ -1285,7 +1302,7 @@ bool needSaveAlert;
         self.photoPage.alpha = 1.0;
         [self.photoGirl setImage:[UIImage imageNamed:@"girlphoto2"]];
         [self.photoTextFrame setHidden:YES];
-        [self.photoText setHidden:YES];
+//        [self.photoText setHidden:YES];
         
         if ([[[NSUserDefaults standardUserDefaults] objectForKey:@"hasShared"] isEqualToString:@"yes"]) {
             [self.shareGift setHidden:YES];
@@ -1317,7 +1334,7 @@ bool needSaveAlert;
     [self.photoGirl setImage:[UIImage imageNamed:@"girlphoto1"]];
     if(soundSwitch)
     {
-        [CommonUtility tapSound:@"photo" withType:@"mp3"];
+        [CommonUtility tapSound:@"photo" withType:@"wav"];
     }
     
     UIView *whiteView = [[UIView alloc] initWithFrame:self.view.frame];
@@ -1336,8 +1353,8 @@ bool needSaveAlert;
                          
                          [self.photoGirl setImage:[UIImage imageNamed:@"girlphoto2"]];
                          [self.photoTextFrame setHidden:NO];
-                         [self.photoText setHidden:NO];
-                         [self.photoText setText:@"世上竟有如此出尘绝艳的女子"];
+//                         [self.photoText setHidden:NO];
+//                         [self.photoText setText:@"世上竟有如此出尘绝艳的女子"];
 
                          
                      }

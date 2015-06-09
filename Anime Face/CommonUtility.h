@@ -19,6 +19,7 @@
 }
 
 @property (nonatomic, strong) AVAudioPlayer *myAudioPlayer;
+@property (nonatomic, strong) AVAudioPlayer *backgroundMusicPlayer;
 
 + (CommonUtility *)sharedCommonUtility;
 + (BOOL)isSystemLangChinese;
@@ -29,6 +30,8 @@
 
 + (void)coinsChange:(int)coinAmount;
 + (int)fetchCoinAmount;
++ (void)playBackMusic;
++ (void)stopBackMusic;
 
 
 @end

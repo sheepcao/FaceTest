@@ -137,8 +137,8 @@
 		<key>心情</key>
 		<array>
 			<string>nothing</string>
+			<string>mood0</string>
 			<string>mood1</string>
-			<string>mood2</string>
 		</array>
 		<key>鼻子</key>
 		<array>

@@ -102,7 +102,7 @@ bool showingDefault;
         [catalogBtn setImage:[UIImage imageWithContentsOfFile:[[NSBundle mainBundle] pathForResource:[NSString stringWithFormat:@"%@1",catalogText[i]] ofType:@"png"]] forState:UIControlStateSelected];
         
         
-        [catalogBtn setImageEdgeInsets:UIEdgeInsetsMake(6, 15, -3, 16)];
+        [catalogBtn setImageEdgeInsets:UIEdgeInsetsMake(0, 15, 0, 16)];
         
         catalogBtn.tag = i;
         [catalogBtn addTarget:self action:@selector(catalogTapped:) forControlEvents:UIControlEventTouchUpInside];
@@ -243,10 +243,10 @@ bool showingDefault;
             if (i == 0)//hair list
             {
                 element.colorNum = elementColors;
-            }else
-            {
-                element.stars = elementStars;
             }
+        
+            element.stars = elementStars;
+            
             
             if (showingDefault) {
                 [self setDefaultView:element];
@@ -308,8 +308,10 @@ bool showingDefault;
     self.productNow.productCategory = sender.catelogName;
     self.productNow.productNumber = sender.producrNum;
     self.productNow.isSold = sender.isSold;
+    self.productNow.productTitle = sender.titleName;
 
     
+    [self.productName setText:sender.titleName];
 
     if ([sender.imageLevel intValue]==0) {
         
@@ -455,7 +457,10 @@ bool showingDefault;
 
 - (IBAction)backTap:(id)sender {
     
-    
+    if(soundSwitch)
+    {
+        [CommonUtility tapSound:@"click" withType:@"mp3"];
+    }
     
     [self.delegateRefresh refreshLists];
     [self.navigationController popViewControllerAnimated:YES];
@@ -527,7 +532,7 @@ bool showingDefault;
         
         [self refreshProducts];
         
-        [CommonUtility tapSound:@"buySuccess" withType:@"m4a"];
+        [CommonUtility tapSound:@"buySuccess" withType:@"wav"];
 
         
         UIAlertView *success = [[UIAlertView alloc] initWithTitle:@"success!" message:@"购买成功" delegate:nil cancelButtonTitle:@"OK" otherButtonTitles:nil, nil];

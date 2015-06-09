@@ -114,4 +114,36 @@
     
 }
 
+
+
++(void)playBackMusic
+{
+    NSError *error;
+    NSString *soundFilePath = [[NSBundle mainBundle] pathForResource:@"backMusic" ofType:@"mp3"];
+    
+    
+    NSURL *fileURL = [[NSURL alloc] initFileURLWithPath:soundFilePath];
+    
+    NSData *data =[NSData dataWithContentsOfURL:fileURL];
+    
+    
+    [CommonUtility sharedCommonUtility].backgroundMusicPlayer  = [[AVAudioPlayer alloc] initWithData:data error:&error];
+    
+    
+    
+    //    self.backgroundMusicPlayer = [[AVAudioPlayer alloc]
+    //                                  initWithContentsOfURL:fileURL error:&error];
+    [[CommonUtility sharedCommonUtility].backgroundMusicPlayer prepareToPlay];
+    [CommonUtility sharedCommonUtility].backgroundMusicPlayer.numberOfLoops = -1; //infinite
+    
+    [CommonUtility sharedCommonUtility].backgroundMusicPlayer.volume = 0.3;
+    [[CommonUtility sharedCommonUtility].backgroundMusicPlayer play];
+}
+
++(void)stopBackMusic
+{
+    if ([CommonUtility sharedCommonUtility].backgroundMusicPlayer) {
+        [[CommonUtility sharedCommonUtility].backgroundMusicPlayer stop];
+    }
+}
 @end

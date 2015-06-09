@@ -182,6 +182,11 @@ bool shouldFinish;
 
 - (IBAction)cardTapped:(id)sender {
     
+    if(soundSwitch)
+    {
+        [CommonUtility tapSound:@"cardClose" withType:@"mp3"];
+    }
+    
     [self.rewardView setHidden:YES];
     [self.spinView setHidden:YES];
     [self.boxImage setImage:[UIImage imageNamed:@"box-normal.png"]];
@@ -190,6 +195,11 @@ bool shouldFinish;
 }
 
 - (IBAction)backTapped:(id)sender {
+    
+    if(soundSwitch)
+    {
+        [CommonUtility tapSound:@"click" withType:@"mp3"];
+    }
     
     shouldFinish = YES;
     [self.delegateRefresh refreshLists];

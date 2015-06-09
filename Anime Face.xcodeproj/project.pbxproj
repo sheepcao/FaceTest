@@ -64,7 +64,6 @@
 		A409C7F21B0EC0BC00AD2E99 /* male.png in Resources */ = {isa = PBXBuildFile; fileRef = A409C7ED1B0EC0BC00AD2E99 /* male.png */; };
 		A409C7F41B0EC0C800AD2E99 /* 20diamond.png in Resources */ = {isa = PBXBuildFile; fileRef = A409C7F31B0EC0C800AD2E99 /* 20diamond.png */; };
 		A409C7F61B0EFBF100AD2E99 /* price board.png in Resources */ = {isa = PBXBuildFile; fileRef = A409C7F51B0EFBF100AD2E99 /* price board.png */; };
-		A409C7F81B0F1B0900AD2E99 /* slideStore.png in Resources */ = {isa = PBXBuildFile; fileRef = A409C7F71B0F1B0900AD2E99 /* slideStore.png */; };
 		A409C7FA1B0F284A00AD2E99 /* sold out.png in Resources */ = {isa = PBXBuildFile; fileRef = A409C7F91B0F284A00AD2E99 /* sold out.png */; };
 		A409C7FC1B0F326800AD2E99 /* sold out1.png in Resources */ = {isa = PBXBuildFile; fileRef = A409C7FB1B0F326800AD2E99 /* sold out1.png */; };
 		A422536F1AEA252B0076E58B /* diamondhowmuch.png in Resources */ = {isa = PBXBuildFile; fileRef = A422536E1AEA252B0076E58B /* diamondhowmuch.png */; };
@@ -1401,7 +1400,6 @@
 		A4574F511B0DB4F900A37DE3 /* purchase-pressl.png in Resources */ = {isa = PBXBuildFile; fileRef = A4574F481B0DB4F900A37DE3 /* purchase-pressl.png */; };
 		A4574F521B0DB4F900A37DE3 /* shop back ground.png in Resources */ = {isa = PBXBuildFile; fileRef = A4574F491B0DB4F900A37DE3 /* shop back ground.png */; };
 		A4574F531B0DB4F900A37DE3 /* shop background1.png in Resources */ = {isa = PBXBuildFile; fileRef = A4574F4A1B0DB4F900A37DE3 /* shop background1.png */; };
-		A4574F541B0DB4F900A37DE3 /* shop slippy board.png in Resources */ = {isa = PBXBuildFile; fileRef = A4574F4B1B0DB4F900A37DE3 /* shop slippy board.png */; };
 		A45C938B1AE8F9730081346B /* sharesave normal.png in Resources */ = {isa = PBXBuildFile; fileRef = A45C93891AE8F9730081346B /* sharesave normal.png */; };
 		A45C938C1AE8F9730081346B /* sharesave press.png in Resources */ = {isa = PBXBuildFile; fileRef = A45C938A1AE8F9730081346B /* sharesave press.png */; };
 		A46BBC201ADE40D6009D2280 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = A46BBC1F1ADE40D6009D2280 /* Main.storyboard */; };
@@ -1439,6 +1437,21 @@
 		A4A211011AD3A2F4006973E0 /* rewardViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = A4A210FF1AD3A2F4006973E0 /* rewardViewController.xib */; };
 		A4A2110E1AD3B2AE006973E0 /* imageWithName.m in Sources */ = {isa = PBXBuildFile; fileRef = A4A2110D1AD3B2AE006973E0 /* imageWithName.m */; };
 		A4B2EE5F1B170109006E111F /* IAPButton.m in Sources */ = {isa = PBXBuildFile; fileRef = A4B2EE5E1B170109006E111F /* IAPButton.m */; };
+		A4B6EF8C1B26761F007EBFC7 /* 1yuangou stuff.png in Resources */ = {isa = PBXBuildFile; fileRef = A4B6EF8B1B26761F007EBFC7 /* 1yuangou stuff.png */; };
+		A4B6EF9F1B2681A2007EBFC7 /* photo.wav in Resources */ = {isa = PBXBuildFile; fileRef = A4B6EF901B2681A2007EBFC7 /* photo.wav */; };
+		A4B6EFA01B2681A2007EBFC7 /* catalog.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = A4B6EF921B2681A2007EBFC7 /* catalog.mp3 */; };
+		A4B6EFA11B2681A2007EBFC7 /* entry.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = A4B6EF941B2681A2007EBFC7 /* entry.mp3 */; };
+		A4B6EFA21B2681A2007EBFC7 /* boxOpen.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = A4B6EF961B2681A2007EBFC7 /* boxOpen.mp3 */; };
+		A4B6EFA31B2681A2007EBFC7 /* cardClose.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = A4B6EF971B2681A2007EBFC7 /* cardClose.mp3 */; };
+		A4B6EFA41B2681A2007EBFC7 /* buyDiamond.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = A4B6EF991B2681A2007EBFC7 /* buyDiamond.mp3 */; };
+		A4B6EFA51B2681A2007EBFC7 /* click.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = A4B6EF9B1B2681A2007EBFC7 /* click.mp3 */; };
+		A4B6EFA61B2681A2007EBFC7 /* buySuccess.wav in Resources */ = {isa = PBXBuildFile; fileRef = A4B6EF9D1B2681A2007EBFC7 /* buySuccess.wav */; };
+		A4B6EFAD1B2687F3007EBFC7 /* mood0-yulan.png in Resources */ = {isa = PBXBuildFile; fileRef = A4B6EFAA1B2687F3007EBFC7 /* mood0-yulan.png */; };
+		A4B6EFAE1B2687F3007EBFC7 /* mood1-yulan.png in Resources */ = {isa = PBXBuildFile; fileRef = A4B6EFAB1B2687F3007EBFC7 /* mood1-yulan.png */; };
+		A4B6EFAF1B2687F3007EBFC7 /* mood1.png in Resources */ = {isa = PBXBuildFile; fileRef = A4B6EFAC1B2687F3007EBFC7 /* mood1.png */; };
+		A4B6EFB11B268964007EBFC7 /* mood0.png in Resources */ = {isa = PBXBuildFile; fileRef = A4B6EFB01B268964007EBFC7 /* mood0.png */; };
+		A4B6EFB31B268C67007EBFC7 /* slidestore.png in Resources */ = {isa = PBXBuildFile; fileRef = A4B6EFB21B268C67007EBFC7 /* slidestore.png */; };
+		A4B6EFB51B2691F7007EBFC7 /* backMusic.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = A4B6EFB41B2691F7007EBFC7 /* backMusic.mp3 */; };
 		A4BCC0791B17FAEE00108C72 /* buyingViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = A4BCC0771B17FAEE00108C72 /* buyingViewController.m */; };
 		A4BCC07A1B17FAEE00108C72 /* buyingViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = A4BCC0781B17FAEE00108C72 /* buyingViewController.xib */; };
 		A4BCC07E1B18428200108C72 /* buyOneViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = A4BCC07C1B18428200108C72 /* buyOneViewController.m */; };
@@ -1491,12 +1504,6 @@
 		A4BF64081AEDCB34009B38BE /* new small.png in Resources */ = {isa = PBXBuildFile; fileRef = A4BF64001AEDCB34009B38BE /* new small.png */; };
 		A4BF645B1AEE13FF009B38BE /* buttonProduct.m in Sources */ = {isa = PBXBuildFile; fileRef = A4BF645A1AEE13FF009B38BE /* buttonProduct.m */; };
 		A4C6DFCD1AFB2CC40008C6C8 /* CommonUtility.m in Sources */ = {isa = PBXBuildFile; fileRef = A4C6DFCC1AFB2CC40008C6C8 /* CommonUtility.m */; };
-		A4C6DFD81AFB2D920008C6C8 /* boxOpen.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = A4C6DFCF1AFB2D920008C6C8 /* boxOpen.mp3 */; };
-		A4C6DFDA1AFB2D920008C6C8 /* buyDiamond.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = A4C6DFD11AFB2D920008C6C8 /* buyDiamond.mp3 */; };
-		A4C6DFDC1AFB2D920008C6C8 /* buySuccess.m4a in Resources */ = {isa = PBXBuildFile; fileRef = A4C6DFD31AFB2D920008C6C8 /* buySuccess.m4a */; };
-		A4C6DFDE1AFB2D920008C6C8 /* catalog.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = A4C6DFD51AFB2D920008C6C8 /* catalog.mp3 */; };
-		A4C6DFDF1AFB2D920008C6C8 /* entry.m4a in Resources */ = {isa = PBXBuildFile; fileRef = A4C6DFD61AFB2D920008C6C8 /* entry.m4a */; };
-		A4C6DFE01AFB2D920008C6C8 /* photo.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = A4C6DFD71AFB2D920008C6C8 /* photo.mp3 */; };
 		A4C6DFED1AFB31990008C6C8 /* buyCellView.xib in Resources */ = {isa = PBXBuildFile; fileRef = A4C6DFE21AFB31990008C6C8 /* buyCellView.xib */; };
 		A4C6DFF01AFB31990008C6C8 /* IAPHelper.m in Sources */ = {isa = PBXBuildFile; fileRef = A4C6DFE71AFB31990008C6C8 /* IAPHelper.m */; };
 		A4C6DFF11AFB31990008C6C8 /* itemTableViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = A4C6DFE91AFB31990008C6C8 /* itemTableViewCell.m */; };
@@ -1649,7 +1656,6 @@
 		A409C7ED1B0EC0BC00AD2E99 /* male.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = male.png; sourceTree = "<group>"; };
 		A409C7F31B0EC0C800AD2E99 /* 20diamond.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = 20diamond.png; sourceTree = "<group>"; };
 		A409C7F51B0EFBF100AD2E99 /* price board.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "price board.png"; sourceTree = "<group>"; };
-		A409C7F71B0F1B0900AD2E99 /* slideStore.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = slideStore.png; sourceTree = "<group>"; };
 		A409C7F91B0F284A00AD2E99 /* sold out.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "sold out.png"; sourceTree = "<group>"; };
 		A409C7FB1B0F326800AD2E99 /* sold out1.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "sold out1.png"; sourceTree = "<group>"; };
 		A422536E1AEA252B0076E58B /* diamondhowmuch.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = diamondhowmuch.png; sourceTree = "<group>"; };
@@ -2995,7 +3001,6 @@
 		A4574F481B0DB4F900A37DE3 /* purchase-pressl.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "purchase-pressl.png"; sourceTree = "<group>"; };
 		A4574F491B0DB4F900A37DE3 /* shop back ground.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "shop back ground.png"; sourceTree = "<group>"; };
 		A4574F4A1B0DB4F900A37DE3 /* shop background1.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "shop background1.png"; sourceTree = "<group>"; };
-		A4574F4B1B0DB4F900A37DE3 /* shop slippy board.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "shop slippy board.png"; sourceTree = "<group>"; };
 		A45C93891AE8F9730081346B /* sharesave normal.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "sharesave normal.png"; sourceTree = "<group>"; };
 		A45C938A1AE8F9730081346B /* sharesave press.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "sharesave press.png"; sourceTree = "<group>"; };
 		A46BBC1F1ADE40D6009D2280 /* Main.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = Main.storyboard; sourceTree = "<group>"; };
@@ -3042,6 +3047,21 @@
 		A4A2110D1AD3B2AE006973E0 /* imageWithName.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = imageWithName.m; sourceTree = "<group>"; };
 		A4B2EE5D1B170109006E111F /* IAPButton.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = IAPButton.h; sourceTree = "<group>"; };
 		A4B2EE5E1B170109006E111F /* IAPButton.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = IAPButton.m; sourceTree = "<group>"; };
+		A4B6EF8B1B26761F007EBFC7 /* 1yuangou stuff.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "1yuangou stuff.png"; sourceTree = "<group>"; };
+		A4B6EF901B2681A2007EBFC7 /* photo.wav */ = {isa = PBXFileReference; lastKnownFileType = audio.wav; path = photo.wav; sourceTree = "<group>"; };
+		A4B6EF921B2681A2007EBFC7 /* catalog.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = catalog.mp3; sourceTree = "<group>"; };
+		A4B6EF941B2681A2007EBFC7 /* entry.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = entry.mp3; sourceTree = "<group>"; };
+		A4B6EF961B2681A2007EBFC7 /* boxOpen.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = boxOpen.mp3; sourceTree = "<group>"; };
+		A4B6EF971B2681A2007EBFC7 /* cardClose.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = cardClose.mp3; sourceTree = "<group>"; };
+		A4B6EF991B2681A2007EBFC7 /* buyDiamond.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = buyDiamond.mp3; sourceTree = "<group>"; };
+		A4B6EF9B1B2681A2007EBFC7 /* click.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = click.mp3; sourceTree = "<group>"; };
+		A4B6EF9D1B2681A2007EBFC7 /* buySuccess.wav */ = {isa = PBXFileReference; lastKnownFileType = audio.wav; path = buySuccess.wav; sourceTree = "<group>"; };
+		A4B6EFAA1B2687F3007EBFC7 /* mood0-yulan.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "mood0-yulan.png"; sourceTree = "<group>"; };
+		A4B6EFAB1B2687F3007EBFC7 /* mood1-yulan.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "mood1-yulan.png"; sourceTree = "<group>"; };
+		A4B6EFAC1B2687F3007EBFC7 /* mood1.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = mood1.png; sourceTree = "<group>"; };
+		A4B6EFB01B268964007EBFC7 /* mood0.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = mood0.png; sourceTree = "<group>"; };
+		A4B6EFB21B268C67007EBFC7 /* slidestore.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = slidestore.png; sourceTree = "<group>"; };
+		A4B6EFB41B2691F7007EBFC7 /* backMusic.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = backMusic.mp3; sourceTree = "<group>"; };
 		A4BCC0761B17FAEE00108C72 /* buyingViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = buyingViewController.h; sourceTree = "<group>"; };
 		A4BCC0771B17FAEE00108C72 /* buyingViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = buyingViewController.m; sourceTree = "<group>"; };
 		A4BCC0781B17FAEE00108C72 /* buyingViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = buyingViewController.xib; sourceTree = "<group>"; };
@@ -3099,12 +3119,6 @@
 		A4BF645A1AEE13FF009B38BE /* buttonProduct.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = buttonProduct.m; sourceTree = "<group>"; };
 		A4C6DFCB1AFB2CC40008C6C8 /* CommonUtility.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CommonUtility.h; sourceTree = "<group>"; };
 		A4C6DFCC1AFB2CC40008C6C8 /* CommonUtility.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CommonUtility.m; sourceTree = "<group>"; };
-		A4C6DFCF1AFB2D920008C6C8 /* boxOpen.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = boxOpen.mp3; sourceTree = "<group>"; };
-		A4C6DFD11AFB2D920008C6C8 /* buyDiamond.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = buyDiamond.mp3; sourceTree = "<group>"; };
-		A4C6DFD31AFB2D920008C6C8 /* buySuccess.m4a */ = {isa = PBXFileReference; lastKnownFileType = file; path = buySuccess.m4a; sourceTree = "<group>"; };
-		A4C6DFD51AFB2D920008C6C8 /* catalog.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = catalog.mp3; sourceTree = "<group>"; };
-		A4C6DFD61AFB2D920008C6C8 /* entry.m4a */ = {isa = PBXFileReference; lastKnownFileType = file; path = entry.m4a; sourceTree = "<group>"; };
-		A4C6DFD71AFB2D920008C6C8 /* photo.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = photo.mp3; sourceTree = "<group>"; };
 		A4C6DFE21AFB31990008C6C8 /* buyCellView.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = buyCellView.xib; sourceTree = "<group>"; };
 		A4C6DFE61AFB31990008C6C8 /* IAPHelper.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = IAPHelper.h; sourceTree = "<group>"; };
 		A4C6DFE71AFB31990008C6C8 /* IAPHelper.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = IAPHelper.m; sourceTree = "<group>"; };
@@ -5105,7 +5119,6 @@
 			isa = PBXGroup;
 			children = (
 				A4574F431B0DB4F900A37DE3 /* hengtiao .png */,
-				A409C7F71B0F1B0900AD2E99 /* slideStore.png */,
 				A409C7F91B0F284A00AD2E99 /* sold out.png */,
 				A409C7FB1B0F326800AD2E99 /* sold out1.png */,
 				A409C7F51B0EFBF100AD2E99 /* price board.png */,
@@ -5114,8 +5127,8 @@
 				A4574F471B0DB4F900A37DE3 /* purchase-normal.png */,
 				A4574F481B0DB4F900A37DE3 /* purchase-pressl.png */,
 				A4574F491B0DB4F900A37DE3 /* shop back ground.png */,
+				A4B6EFB21B268C67007EBFC7 /* slidestore.png */,
 				A4574F4A1B0DB4F900A37DE3 /* shop background1.png */,
-				A4574F4B1B0DB4F900A37DE3 /* shop slippy board.png */,
 			);
 			name = store;
 			sourceTree = "<group>";
@@ -5271,6 +5284,74 @@
 				A4CA3AC61ACAA0D300D50D80 /* elemntButton.m */,
 			);
 			name = buttons;
+			sourceTree = "<group>";
+		};
+		A4B6EF8F1B2681A2007EBFC7 /* 拍照音效 */ = {
+			isa = PBXGroup;
+			children = (
+				A4B6EF901B2681A2007EBFC7 /* photo.wav */,
+			);
+			path = "拍照音效";
+			sourceTree = "<group>";
+		};
+		A4B6EF911B2681A2007EBFC7 /* 操作界面及商店界面选择种类音效 */ = {
+			isa = PBXGroup;
+			children = (
+				A4B6EF921B2681A2007EBFC7 /* catalog.mp3 */,
+			);
+			path = "操作界面及商店界面选择种类音效";
+			sourceTree = "<group>";
+		};
+		A4B6EF931B2681A2007EBFC7 /* 男孩女孩登陆音效 */ = {
+			isa = PBXGroup;
+			children = (
+				A4B6EF941B2681A2007EBFC7 /* entry.mp3 */,
+			);
+			path = "男孩女孩登陆音效";
+			sourceTree = "<group>";
+		};
+		A4B6EF951B2681A2007EBFC7 /* 神秘屋音效 */ = {
+			isa = PBXGroup;
+			children = (
+				A4B6EF961B2681A2007EBFC7 /* boxOpen.mp3 */,
+				A4B6EF971B2681A2007EBFC7 /* cardClose.mp3 */,
+			);
+			path = "神秘屋音效";
+			sourceTree = "<group>";
+		};
+		A4B6EF981B2681A2007EBFC7 /* 购买音效 */ = {
+			isa = PBXGroup;
+			children = (
+				A4B6EF991B2681A2007EBFC7 /* buyDiamond.mp3 */,
+			);
+			path = "购买音效";
+			sourceTree = "<group>";
+		};
+		A4B6EF9A1B2681A2007EBFC7 /* 通用音效 */ = {
+			isa = PBXGroup;
+			children = (
+				A4B6EF9B1B2681A2007EBFC7 /* click.mp3 */,
+			);
+			path = "通用音效";
+			sourceTree = "<group>";
+		};
+		A4B6EF9C1B2681A2007EBFC7 /* 钻石及1元购购买成功特效 */ = {
+			isa = PBXGroup;
+			children = (
+				A4B6EF9D1B2681A2007EBFC7 /* buySuccess.wav */,
+			);
+			path = "钻石及1元购购买成功特效";
+			sourceTree = "<group>";
+		};
+		A4B6EFA91B2687C2007EBFC7 /* mood */ = {
+			isa = PBXGroup;
+			children = (
+				A4B6EFAA1B2687F3007EBFC7 /* mood0-yulan.png */,
+				A4B6EFB01B268964007EBFC7 /* mood0.png */,
+				A4B6EFAB1B2687F3007EBFC7 /* mood1-yulan.png */,
+				A4B6EFAC1B2687F3007EBFC7 /* mood1.png */,
+			);
+			name = mood;
 			sourceTree = "<group>";
 		};
 		A4BCC0881B185CE200108C72 /* hotSale */ = {
@@ -5810,12 +5891,14 @@
 		A4C6DFCE1AFB2D890008C6C8 /* sound */ = {
 			isa = PBXGroup;
 			children = (
-				A4C6DFCF1AFB2D920008C6C8 /* boxOpen.mp3 */,
-				A4C6DFD11AFB2D920008C6C8 /* buyDiamond.mp3 */,
-				A4C6DFD31AFB2D920008C6C8 /* buySuccess.m4a */,
-				A4C6DFD51AFB2D920008C6C8 /* catalog.mp3 */,
-				A4C6DFD61AFB2D920008C6C8 /* entry.m4a */,
-				A4C6DFD71AFB2D920008C6C8 /* photo.mp3 */,
+				A4B6EFB41B2691F7007EBFC7 /* backMusic.mp3 */,
+				A4B6EF8F1B2681A2007EBFC7 /* 拍照音效 */,
+				A4B6EF911B2681A2007EBFC7 /* 操作界面及商店界面选择种类音效 */,
+				A4B6EF931B2681A2007EBFC7 /* 男孩女孩登陆音效 */,
+				A4B6EF951B2681A2007EBFC7 /* 神秘屋音效 */,
+				A4B6EF981B2681A2007EBFC7 /* 购买音效 */,
+				A4B6EF9A1B2681A2007EBFC7 /* 通用音效 */,
+				A4B6EF9C1B2681A2007EBFC7 /* 钻石及1元购购买成功特效 */,
 			);
 			name = sound;
 			sourceTree = "<group>";
@@ -5878,6 +5961,7 @@
 				A4BF63F81AEDCAEA009B38BE /* body1.png */,
 				A4BF63F91AEDCAEA009B38BE /* body1000.png */,
 				A43622A71B252EFC001FEFFA /* background */,
+				A4B6EFA91B2687C2007EBFC7 /* mood */,
 				A4BF63AB1AEDC7E2009B38BE /* hat */,
 				A4BF63921AEDC7CC009B38BE /* pet */,
 				A4BF636D1AEDC72D009B38BE /* glass */,
@@ -5898,6 +5982,7 @@
 		A4EBD81D1B12C51E006B1C9D /* iap Image */ = {
 			isa = PBXGroup;
 			children = (
+				A4B6EF8B1B26761F007EBFC7 /* 1yuangou stuff.png */,
 				A4BCC0801B1843B400108C72 /* 1yuan frame.png */,
 				A4BCC0811B1843B400108C72 /* 1yuanboard.png */,
 				A4DBDB451B2190BD00CCCAE0 /* closeBuyBtn.png */,
@@ -6121,7 +6206,6 @@
 				A4362C6D1B255A78001FEFFA /* cloth-b-13-yulan.png in Resources */,
 				A43626431B2533BD001FEFFA /* gesture38-yulan.png in Resources */,
 				A4362AA71B2537EF001FEFFA /* hairG8-3-2-front.png in Resources */,
-				A4C6DFDE1AFB2D920008C6C8 /* catalog.mp3 in Resources */,
 				A4CA3AA41ACA440900D50D80 /* gameViewController.xib in Resources */,
 				A43629641B2537EF001FEFFA /* hair17-2-yulan.png in Resources */,
 				A436250C1B2531A8001FEFFA /* eye36.png in Resources */,
@@ -6155,7 +6239,6 @@
 				A4362A1B1B2537EF001FEFFA /* hairG24-3-0-front.png in Resources */,
 				A4362A671B2537EF001FEFFA /* hairG3-3-2-front.png in Resources */,
 				A43622E41B252F81001FEFFA /* background5.png in Resources */,
-				A4C6DFDA1AFB2D920008C6C8 /* buyDiamond.mp3 in Resources */,
 				A436267E1B25360A001FEFFA /* mouth8.png in Resources */,
 				A4BCC08E1B185D0900108C72 /* xuezhizi.png in Resources */,
 				A4362AD11B2537EF001FEFFA /* hairtong15-2-yulan.png in Resources */,
@@ -6200,6 +6283,7 @@
 				A404422F1AF1CEDC00E87C27 /* glass15-yulan.png in Resources */,
 				A4362B031B2537EF001FEFFA /* hairtong7-6-4-front.png in Resources */,
 				A43626DA1B253663001FEFFA /* mouth10-yulan.png in Resources */,
+				A4B6EFA51B2681A2007EBFC7 /* click.mp3 in Resources */,
 				A43622C81B252F1F001FEFFA /* background13-yulan.png in Resources */,
 				A43629B01B2537EF001FEFFA /* hairG0-3-1-front.png in Resources */,
 				A4362C6C1B255A78001FEFFA /* cloth-b-12-yulan.png in Resources */,
@@ -6218,7 +6302,7 @@
 				A43626321B2533BD001FEFFA /* gesture21-yulan.png in Resources */,
 				A4362A3D1B2537EF001FEFFA /* hairG30-3-2-front.png in Resources */,
 				A43629A91B2537EF001FEFFA /* hair9-2-0-front.png in Resources */,
-				A409C7F81B0F1B0900AD2E99 /* slideStore.png in Resources */,
+				A4B6EFA01B2681A2007EBFC7 /* catalog.mp3 in Resources */,
 				A43626881B25360A001FEFFA /* mouth18.png in Resources */,
 				A4362DBB1B255B16001FEFFA /* hat36-yulan.png in Resources */,
 				A436294C1B2537EF001FEFFA /* hair13-6-2-front.png in Resources */,
@@ -6250,7 +6334,6 @@
 				A43629F61B2537EF001FEFFA /* hairG20-4-4-front.png in Resources */,
 				A43625EC1B253396001FEFFA /* gesture39.png in Resources */,
 				A43629E61B2537EF001FEFFA /* hairG19-6-1-front.png in Resources */,
-				A4C6DFDC1AFB2D920008C6C8 /* buySuccess.m4a in Resources */,
 				A4362DBC1B255B16001FEFFA /* hat37-yulan.png in Resources */,
 				A42C68BA1B0C615B00B2EDDD /* message.png in Resources */,
 				A43626201B2533BD001FEFFA /* gesture3-yulan.png in Resources */,
@@ -6265,6 +6348,7 @@
 				A409C7F21B0EC0BC00AD2E99 /* male.png in Resources */,
 				A43629FC1B2537EF001FEFFA /* hairG21-6-2-back.png in Resources */,
 				A43629FD1B2537EF001FEFFA /* hairG21-6-2-front.png in Resources */,
+				A4B6EF9F1B2681A2007EBFC7 /* photo.wav in Resources */,
 				A4362A091B2537EF001FEFFA /* hairG22-6-2-back.png in Resources */,
 				A4362A031B2537EF001FEFFA /* hairG21-6-5-front.png in Resources */,
 				A409C7FC1B0F326800AD2E99 /* sold out1.png in Resources */,
@@ -6367,6 +6451,7 @@
 				A436258E1B25336E001FEFFA /* facemark13-yulan.png in Resources */,
 				A4362A341B2537EF001FEFFA /* hairG2-3-0-back.png in Resources */,
 				A4362A951B2537EF001FEFFA /* hairG4-3-yulan.png in Resources */,
+				A4B6EFA61B2681A2007EBFC7 /* buySuccess.wav in Resources */,
 				A436249C1B253165001FEFFA /* eye10-yulan.png in Resources */,
 				A4362BB61B255A5D001FEFFA /* cloth-b-18.png in Resources */,
 				A4362B441B253872001FEFFA /* huzi8-yulan.png in Resources */,
@@ -6438,6 +6523,7 @@
 				A4362B011B2537EF001FEFFA /* hairtong7-6-2-front.png in Resources */,
 				A4362BAD1B255A5D001FEFFA /* cloth-b-9.png in Resources */,
 				A4362CD71B255A8C001FEFFA /* eyebrow6.png in Resources */,
+				A4B6EFB51B2691F7007EBFC7 /* backMusic.mp3 in Resources */,
 				A4362C661B255A78001FEFFA /* cloth-b-6-yulan.png in Resources */,
 				A4362DFC1B255BFF001FEFFA /* pet17-yulan.png in Resources */,
 				A43629C01B2537EF001FEFFA /* hairG11-3-2-front.png in Resources */,
@@ -6462,6 +6548,7 @@
 				A4362DAB1B255B16001FEFFA /* hat20-yulan.png in Resources */,
 				A436294A1B2537EF001FEFFA /* hair13-6-1-front.png in Resources */,
 				A4362AAE1B2537EF001FEFFA /* hairG9-3-2-front.png in Resources */,
+				A4B6EFA21B2681A2007EBFC7 /* boxOpen.mp3 in Resources */,
 				A43629D21B2537EF001FEFFA /* hairG16-3-1-front.png in Resources */,
 				A436296A1B2537EF001FEFFA /* hair19-2-0-back.png in Resources */,
 				A4362C7A1B255A78001FEFFA /* cloth-b-26-yulan.png in Resources */,
@@ -6629,6 +6716,7 @@
 				A4362D3A1B255ACC001FEFFA /* hat1.png in Resources */,
 				A4362AF21B2537EF001FEFFA /* hairtong5-6-1-front.png in Resources */,
 				A4362AA61B2537EF001FEFFA /* hairG8-3-2-back.png in Resources */,
+				A4B6EFA41B2681A2007EBFC7 /* buyDiamond.mp3 in Resources */,
 				A42C68B51B0C615B00B2EDDD /* diamond.png in Resources */,
 				A4362A4E1B2537EF001FEFFA /* hairG35-4-4-front.png in Resources */,
 				A43622C21B252F1F001FEFFA /* background7-yulan.png in Resources */,
@@ -6685,6 +6773,7 @@
 				A4362BD11B255A5D001FEFFA /* cloth-g-15.png in Resources */,
 				A43624F11B2531A8001FEFFA /* eye9.png in Resources */,
 				A4362BA51B255A5D001FEFFA /* cloth-b-1.png in Resources */,
+				A4B6EFAF1B2687F3007EBFC7 /* mood1.png in Resources */,
 				A4362D431B255ACC001FEFFA /* hat10.png in Resources */,
 				A43622C11B252F1F001FEFFA /* background6-yulan.png in Resources */,
 				A4BF62531AEDC64D009B38BE /* nose8.png in Resources */,
@@ -6775,7 +6864,6 @@
 				A4362A271B2537EF001FEFFA /* hairG27-4-0-front.png in Resources */,
 				A4362C931B255A78001FEFFA /* cloth-g-21-yulan.png in Resources */,
 				A43629421B2537EF001FEFFA /* hair12-4-0-front.png in Resources */,
-				A4574F541B0DB4F900A37DE3 /* shop slippy board.png in Resources */,
 				A4362A861B2537EF001FEFFA /* hairG44-4-0-back.png in Resources */,
 				A4362A791B2537EF001FEFFA /* hairG43-6-0-back.png in Resources */,
 				A456D26C1AE8C73B0032F41F /* storeViewController.xib in Resources */,
@@ -7153,6 +7241,7 @@
 				A43625D91B253396001FEFFA /* gesture20.png in Resources */,
 				A43625DD1B253396001FEFFA /* gesture24.png in Resources */,
 				A43625E21B253396001FEFFA /* gesture29.png in Resources */,
+				A4B6EFB11B268964007EBFC7 /* mood0.png in Resources */,
 				A4362A3B1B2537EF001FEFFA /* hairG30-3-0-front.png in Resources */,
 				A4362D3C1B255ACC001FEFFA /* hat3.png in Resources */,
 				A4362A981B2537EF001FEFFA /* hairG5-3-2-front.png in Resources */,
@@ -7272,6 +7361,7 @@
 				A43626991B25360A001FEFFA /* mouth35.png in Resources */,
 				A4BCC0851B1843B400108C72 /* 1yuanboard.png in Resources */,
 				A43622E71B252F81001FEFFA /* background8.png in Resources */,
+				A4B6EFA31B2681A2007EBFC7 /* cardClose.mp3 in Resources */,
 				A43626DF1B253663001FEFFA /* mouth15-yulan.png in Resources */,
 				A43626411B2533BD001FEFFA /* gesture36-yulan.png in Resources */,
 				A4362E341B25690F001FEFFA /* face10-yulan.png in Resources */,
@@ -7318,9 +7408,9 @@
 				A4362CBA1B255A78001FEFFA /* cloth-tong22-yulan.png in Resources */,
 				A436267A1B25360A001FEFFA /* mouth4.png in Resources */,
 				A40442301AF1CEDC00E87C27 /* glass16-yulan.png in Resources */,
+				A4B6EF8C1B26761F007EBFC7 /* 1yuangou stuff.png in Resources */,
 				A43625531B253359001FEFFA /* facemark2.png in Resources */,
 				A44563C11AE93D440040D1C5 /* photo save-press.png in Resources */,
-				A4C6DFDF1AFB2D920008C6C8 /* entry.m4a in Resources */,
 				A40442261AF1CEDC00E87C27 /* glass6-yulan.png in Resources */,
 				A4362C641B255A78001FEFFA /* cloth-b-4-yulan.png in Resources */,
 				A436295D1B2537EF001FEFFA /* hair16-4-0-front.png in Resources */,
@@ -7370,6 +7460,7 @@
 				A4362AB61B2537EF001FEFFA /* hairtong0-3-yulan.png in Resources */,
 				A43625911B25336E001FEFFA /* facemark16-yulan.png in Resources */,
 				A4362A9C1B2537EF001FEFFA /* hairG6-3-2-front.png in Resources */,
+				A4B6EFAE1B2687F3007EBFC7 /* mood1-yulan.png in Resources */,
 				A4BF63FA1AEDCAEA009B38BE /* body1.png in Resources */,
 				A4362BF31B255A5D001FEFFA /* cloth-tong10.png in Resources */,
 				A4DBDB1A1B213B0400CCCAE0 /* 60kuai-normal.png in Resources */,
@@ -7379,6 +7470,7 @@
 				A404435F1AF1D0E700E87C27 /* nose10-yulan.png in Resources */,
 				A4362CB31B255A78001FEFFA /* cloth-tong15-yulan.png in Resources */,
 				A43622EA1B252F81001FEFFA /* background11.png in Resources */,
+				A4B6EFB31B268C67007EBFC7 /* slidestore.png in Resources */,
 				A4362AF91B2537EF001FEFFA /* hairtong6-3-1-front.png in Resources */,
 				A4362AC31B2537EF001FEFFA /* hairtong12-2-0-front.png in Resources */,
 				A436249E1B253165001FEFFA /* eye12-yulan.png in Resources */,
@@ -7498,6 +7590,7 @@
 				A4362CB71B255A78001FEFFA /* cloth-tong19-yulan.png in Resources */,
 				A4362E2B1B25690F001FEFFA /* face1-yulan.png in Resources */,
 				A4362DF61B255BFF001FEFFA /* pet14-yulan.png in Resources */,
+				A4B6EFA11B2681A2007EBFC7 /* entry.mp3 in Resources */,
 				A44563B31AE93D440040D1C5 /* diamond board button-press.png in Resources */,
 				A43629A31B2537EF001FEFFA /* hair8-6-2-front.png in Resources */,
 				A4362AC51B2537EF001FEFFA /* hairtong12-2-1-front.png in Resources */,
@@ -7533,7 +7626,6 @@
 				A43625841B25336E001FEFFA /* facemark3-yulan.png in Resources */,
 				A43625D71B253396001FEFFA /* gesture18.png in Resources */,
 				A436297F1B2537EF001FEFFA /* hair2-2-7-front.png in Resources */,
-				A4C6DFE01AFB2D920008C6C8 /* photo.mp3 in Resources */,
 				A4362CAD1B255A78001FEFFA /* cloth-tong9-yulan.png in Resources */,
 				A4BF624F1AEDC64D009B38BE /* nose4.png in Resources */,
 				A4362AFD1B2537EF001FEFFA /* hairtong7-6-0-front.png in Resources */,
@@ -7546,7 +7638,6 @@
 				A43624EB1B2531A8001FEFFA /* eye3.png in Resources */,
 				A4362D511B255ACC001FEFFA /* hat24.png in Resources */,
 				A4362DA71B255B16001FEFFA /* hat16-yulan.png in Resources */,
-				A4C6DFD81AFB2D920008C6C8 /* boxOpen.mp3 in Resources */,
 				A42EEE7F1B0AD6230027F23B /* girlenter-press.png in Resources */,
 				A436269B1B25360A001FEFFA /* mouth37.png in Resources */,
 				A43622EE1B252F81001FEFFA /* background15.png in Resources */,
@@ -7559,6 +7650,7 @@
 				A43622E01B252F81001FEFFA /* background1.png in Resources */,
 				A4362D3E1B255ACC001FEFFA /* hat5.png in Resources */,
 				A4362BE11B255A5D001FEFFA /* cloth-g-31.png in Resources */,
+				A4B6EFAD1B2687F3007EBFC7 /* mood0-yulan.png in Resources */,
 				A4362CD91B255A8C001FEFFA /* eyebrow8.png in Resources */,
 				A43629AB1B2537EF001FEFFA /* hair9-2-7-front.png in Resources */,
 				A4362D091B255AB7001FEFFA /* eyebrow18-yulan.png in Resources */,

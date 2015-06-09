@@ -203,6 +203,12 @@
 
 
 - (IBAction)getReward:(id)sender {
+    
+    if(soundSwitch)
+    {
+        [CommonUtility tapSound:@"click" withType:@"mp3"];
+    }
+    
     rewardViewController *myReward = [[rewardViewController alloc] initWithNibName:@"rewardViewController" bundle:nil];
     
     self.GameDatas = [self readDataFromPlist:@"GameData"];
@@ -213,6 +219,11 @@
 }
 
 - (IBAction)store:(id)sender {
+    
+    if(soundSwitch)
+    {
+        [CommonUtility tapSound:@"click" withType:@"mp3"];
+    }
     
     storeViewController *myStore = [[storeViewController alloc] initWithNibName:@"storeViewController" bundle:nil];
     self.GameDatas = [self readDataFromPlist:@"GameData"];
@@ -231,7 +242,7 @@
 
     myGame.GameData = self.GameDatas;
     myGame.sex = (int)sender.tag;
-    [CommonUtility tapSound:@"entry" withType:@"m4a"];
+    [CommonUtility tapSound:@"entry" withType:@"mp3"];
 
     [self.navigationController pushViewController:myGame animated:YES];
 //    [self presentViewController:myGame animated:YES completion:nil];
@@ -239,6 +250,10 @@
 }
 
 - (IBAction)oneBuyClick:(id)sender {
+    if(soundSwitch)
+    {
+        [CommonUtility tapSound:@"click" withType:@"mp3"];
+    }
     
     if(!self.myBuyOneController)
     {
@@ -262,7 +277,10 @@
 }
 
 - (IBAction)settingTap:(id)sender {
-    
+    if(soundSwitch)
+    {
+        [CommonUtility tapSound:@"click" withType:@"mp3"];
+    }
     [self setupSettingView];
 }
 
@@ -273,6 +291,11 @@
 }
 -(void)closingBuy
 {
+    if(soundSwitch)
+    {
+        [CommonUtility tapSound:@"click" withType:@"mp3"];
+    }
+    
     [UIView animateWithDuration:0.45 delay:0.05 usingSpringWithDamping:1.0 initialSpringVelocity:0.4 options:0 animations:^{
         [self.buyDiamondView setFrame:CGRectMake(0, [UIScreen mainScreen].bounds.size.height, [UIScreen mainScreen].bounds.size.width, [UIScreen mainScreen].bounds.size.height)];
         
@@ -513,11 +536,16 @@
         [sender setSelected:YES];
         [[NSUserDefaults standardUserDefaults] setObject:@"no" forKey:@"musicSwitch"];
         musicSwitch = NO;
+        [CommonUtility stopBackMusic];
+
+        
     }else
     {
         [sender setSelected:NO];
         [[NSUserDefaults standardUserDefaults] setObject:@"yes" forKey:@"musicSwitch"];
         musicSwitch = YES;
+        [CommonUtility playBackMusic];
+
     }
     
     

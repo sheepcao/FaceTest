@@ -22,7 +22,7 @@
                     <rect key="frame" x="30" y="154" width="260" height="260"/>
                     <subviews>
                         <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="iapBoard.png" translatesAutoresizingMaskIntoConstraints="NO" id="VQV-yJ-mF2">
-                            <rect key="frame" x="0.0" y="20" width="240" height="240"/>
+                            <rect key="frame" x="0.0" y="0.0" width="260" height="260"/>
                         </imageView>
                         <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" scrollEnabled="NO" showsHorizontalScrollIndicator="NO" showsVerticalScrollIndicator="NO" style="plain" separatorStyle="none" allowsSelection="NO" rowHeight="44" sectionHeaderHeight="22" sectionFooterHeight="22" translatesAutoresizingMaskIntoConstraints="NO" id="xll-bi-WM8">
                             <rect key="frame" x="10" y="25" width="230" height="225"/>
@@ -54,8 +54,8 @@
                         <constraint firstItem="vmI-2C-s29" firstAttribute="top" secondItem="XGi-62-AnG" secondAttribute="top" id="e9X-qJ-qWp"/>
                         <constraint firstAttribute="bottom" secondItem="VQV-yJ-mF2" secondAttribute="bottom" id="h6N-qZ-qf7"/>
                         <constraint firstAttribute="trailing" secondItem="vmI-2C-s29" secondAttribute="trailing" id="ibm-pb-HTn"/>
-                        <constraint firstAttribute="trailing" secondItem="VQV-yJ-mF2" secondAttribute="trailing" constant="20" id="svv-aG-PN1"/>
-                        <constraint firstItem="VQV-yJ-mF2" firstAttribute="top" secondItem="XGi-62-AnG" secondAttribute="top" constant="20" id="xeZ-4x-EMH"/>
+                        <constraint firstAttribute="trailing" secondItem="VQV-yJ-mF2" secondAttribute="trailing" id="svv-aG-PN1"/>
+                        <constraint firstItem="VQV-yJ-mF2" firstAttribute="top" secondItem="XGi-62-AnG" secondAttribute="top" id="xeZ-4x-EMH"/>
                     </constraints>
                 </view>
                 <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="KL4-hV-Zo4" userLabel="waiting">
@@ -131,7 +131,7 @@
         </view>
     </objects>
     <resources>
-        <image name="closeBuyBtn.png" width="102" height="102"/>
+        <image name="closeBuyBtn.png" width="91" height="86"/>
         <image name="iapBoard.png" width="876" height="828"/>
     </resources>
 </document>
