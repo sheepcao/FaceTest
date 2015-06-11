@@ -50,17 +50,33 @@
     }else
     {
         [[NSUserDefaults standardUserDefaults] setObject:StartDiamond forKey:@"diamond"];
-        UIButton *firstLogin = [[UIButton alloc] initWithFrame:CGRectMake(SCREEN_WIDTH/6, SCREEN_HEIGHT+20, SCREEN_WIDTH*2/3, SCREEN_WIDTH)];
+        UIButton *firstLogin = [[UIButton alloc] initWithFrame:CGRectMake(0, 0, SCREEN_WIDTH/30, 1.5*SCREEN_WIDTH/30)];
+        [firstLogin setCenter:CGPointMake(SCREEN_WIDTH/2, SCREEN_HEIGHT/2)];
+        
         [firstLogin setImage:[UIImage imageNamed:@"shoudengdali"] forState:UIControlStateNormal];
         [firstLogin setImage:[UIImage imageNamed:@"shoudengdali"] forState:UIControlStateHighlighted];
         [firstLogin addTarget:self action:@selector(cancelift:) forControlEvents:UIControlEventTouchUpInside];
 
         [self.view addSubview:firstLogin];
 
+        [CommonUtility tapSound:@"boxOpen" withType:@"mp3"];
         
-        [UIView animateWithDuration:0.45 delay:0.05 usingSpringWithDamping:1.0 initialSpringVelocity:0.4 options:0 animations:^{
-            [firstLogin setFrame:CGRectMake(SCREEN_WIDTH/6, SCREEN_HEIGHT/2-SCREEN_WIDTH/2, SCREEN_WIDTH*2/3, SCREEN_WIDTH)];
-        } completion:nil];
+
+        [UIView beginAnimations:nil context:NULL];
+        
+        CGAffineTransform  transform;
+        transform = CGAffineTransformScale(firstLogin.transform,28,28);
+        [UIView setAnimationDuration:0.8];
+        [UIView setAnimationDelegate:self];
+        [firstLogin setTransform:transform];
+//        [firstLogin setFrame:CGRectMake(0, SCREEN_HEIGHT/2-SCREEN_WIDTH*1.5/2, SCREEN_WIDTH, 1.5*SCREEN_WIDTH)];
+        
+        [UIView commitAnimations];
+
+        
+//        [UIView animateWithDuration:0.45 delay:0.05 usingSpringWithDamping:1.0 initialSpringVelocity:0.4 options:0 animations:^{
+//            [firstLogin setFrame:CGRectMake(SCREEN_WIDTH/6, SCREEN_HEIGHT/2-SCREEN_WIDTH/2, SCREEN_WIDTH*2/3, SCREEN_WIDTH)];
+//        } completion:nil];
 
         
         
@@ -72,6 +88,12 @@
 
 -(void)cancelift:(UIButton *)sender
 {
+    
+    if(soundSwitch)
+    {
+        [CommonUtility tapSound:@"cardClose" withType:@"mp3"];
+    }
+    
     
     [UIView animateWithDuration:0.45 delay:0.05 usingSpringWithDamping:1.0 initialSpringVelocity:0.4 options:0 animations:^{
         [sender setFrame:CGRectMake(SCREEN_WIDTH/6, SCREEN_HEIGHT+20, SCREEN_WIDTH*2/3, SCREEN_WIDTH)];
@@ -373,6 +395,9 @@
  ┃ Called when that single NetAssociation has a network time to report.                             ┃
  ┗━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━┛*/
 - (void) reportFromDelegate {
+    
+    NSLog(@"time net:%f",netAssociation.offset);
+    
     NSDateFormatter *dateFormat = [[NSDateFormatter alloc] init];
     [dateFormat setDateFormat:@"MM/dd"];
     

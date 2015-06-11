@@ -207,7 +207,7 @@
 		</array>
 		<key>hairtong8-3</key>
 		<array>
-			<string>1</string>
+			<string>0</string>
 			<string>4</string>
 			<string>7</string>
 		</array>
@@ -531,9 +531,9 @@
 		<key>hairG44-4</key>
 		<array>
 			<string>0</string>
-			<string>1</string>
 			<string>2</string>
 			<string>4</string>
+			<string>7</string>
 		</array>
 	</dict>
 	<key>Lists</key>
@@ -552,7 +552,6 @@
 			<string>pet10</string>
 			<string>pet11</string>
 			<string>pet12</string>
-			<string>pet13</string>
 			<string>pet18</string>
 			<string>pet20</string>
 		</array>
@@ -707,8 +706,8 @@
 			<string>gesture9</string>
 			<string>gesture10</string>
 			<string>gesture11</string>
+			<string>gesture12</string>
 			<string>gesture13</string>
-			<string>gesture14</string>
 			<string>gesture15</string>
 			<string>gesture16</string>
 			<string>gesture17</string>
@@ -723,15 +722,14 @@
 			<string>gesture26</string>
 			<string>gesture28</string>
 			<string>gesture29</string>
-			<string>gesture31</string>
+			<string>gesture30</string>
 			<string>gesture32</string>
 			<string>gesture33</string>
-			<string>gesture35</string>
-			<string>gesture37</string>
+			<string>gesture34</string>
+			<string>gesture36</string>
 			<string>gesture38</string>
 			<string>gesture39</string>
 			<string>gesture42</string>
-			<string>gesture43</string>
 		</array>
 		<key>嘴巴</key>
 		<array>
@@ -837,6 +835,7 @@
 			<string>eye40</string>
 			<string>eye41</string>
 			<string>eye42</string>
+			<string>eye43</string>
 		</array>
 		<key>衣服</key>
 		<array>
@@ -870,7 +869,7 @@
 			<string>cloth-b-29</string>
 			<string>cloth-tong1</string>
 			<string>cloth-tong2</string>
-			<string>cloth-tong3</string>
+			<string>cloth-tong7</string>
 			<string>cloth-tong4</string>
 			<string>cloth-tong5</string>
 			<string>cloth-tong6</string>
@@ -922,7 +921,7 @@
 			<string>cloth-g-37</string>
 			<string>cloth-tong1</string>
 			<string>cloth-tong2</string>
-			<string>cloth-tong3</string>
+			<string>cloth-tong7</string>
 			<string>cloth-tong4</string>
 			<string>cloth-tong5</string>
 			<string>cloth-tong6</string>
@@ -993,7 +992,6 @@
 			<string>hairtong14-2</string>
 			<string>hairtong15-2</string>
 			<string>hairtong16-2</string>
-			<string>hairtong17-3</string>
 		</array>
 		<key>头发女</key>
 		<array>
@@ -1047,7 +1045,6 @@
 			<string>hairtong14-2</string>
 			<string>hairtong15-2</string>
 			<string>hairtong16-2</string>
-			<string>hairtong17-3</string>
 		</array>
 		<key>脸型</key>
 		<array>
@@ -1433,7 +1430,7 @@
 		<array>
 			<dict>
 				<key>name</key>
-				<string>gesture12</string>
+				<string>gesture43</string>
 				<key>isSold</key>
 				<string>no</string>
 				<key>title</key>
@@ -1449,7 +1446,7 @@
 			</dict>
 			<dict>
 				<key>name</key>
-				<string>gesture30</string>
+				<string>gesture31</string>
 				<key>isSold</key>
 				<string>no</string>
 				<key>title</key>
@@ -1465,7 +1462,7 @@
 			</dict>
 			<dict>
 				<key>name</key>
-				<string>gesture34</string>
+				<string>gesture35</string>
 				<key>isSold</key>
 				<string>no</string>
 				<key>title</key>
@@ -1481,7 +1478,7 @@
 			</dict>
 			<dict>
 				<key>name</key>
-				<string>gesture36</string>
+				<string>gesture37</string>
 				<key>isSold</key>
 				<string>no</string>
 				<key>title</key>
@@ -1711,7 +1708,7 @@
 			</dict>
 			<dict>
 				<key>name</key>
-				<string>cloth-tong7</string>
+				<string>cloth-tong3</string>
 				<key>isSold</key>
 				<string>no</string>
 				<key>title</key>

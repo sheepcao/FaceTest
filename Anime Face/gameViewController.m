@@ -78,10 +78,29 @@ bool needSaveAlert;
     
     [self.backImage setImage:[UIImage imageWithContentsOfFile:[[NSBundle mainBundle] pathForResource:@"background9" ofType:@"png"]]];
     
-    [self.faceFrameView setImage:[UIImage imageWithContentsOfFile:[[NSBundle mainBundle] pathForResource:@"face1" ofType:@"png"]]];
-    if (self.sex == 1000) {
-        [self.frontHairView setImage:[UIImage imageWithContentsOfFile:[[NSBundle mainBundle] pathForResource:@"hairG41-3-0-front" ofType:@"png"]]];
+    [self.faceFrameView setImage:[UIImage imageWithContentsOfFile:[[NSBundle mainBundle] pathForResource:@"face0" ofType:@"png"]]];
+    [self.mouthView setImage:[UIImage imageWithContentsOfFile:[[NSBundle mainBundle] pathForResource:@"mouth0" ofType:@"png"]]];
+    [self.noseView setImage:[UIImage imageWithContentsOfFile:[[NSBundle mainBundle] pathForResource:@"nose0" ofType:@"png"]]];
+//    
+//    [self.eyeView setImage:[UIImage imageWithContentsOfFile:[[NSBundle mainBundle] pathForResource:@"eye3" ofType:@"png"]]];
+//    [self.noseView setImage:[UIImage imageWithContentsOfFile:[[NSBundle mainBundle] pathForResource:@"nose0" ofType:@"png"]]];
+//    [self.eyebrowView setImage:[UIImage imageWithContentsOfFile:[[NSBundle mainBundle] pathForResource:@"eyebrow0" ofType:@"png"]]];
+//    [self.frontHairView setImage:[UIImage imageWithContentsOfFile:[[NSBundle mainBundle] pathForResource:@"hairG0-3-0-front" ofType:@"png"]]];
+//    [self.backHairImage setImage:[UIImage imageWithContentsOfFile:[[NSBundle mainBundle] pathForResource:@"hairG0-3-0-back" ofType:@"png"]]];
 
+
+
+    
+    if (self.sex == 1000) {
+        [self.eyeView setImage:[UIImage imageWithContentsOfFile:[[NSBundle mainBundle] pathForResource:@"eye2" ofType:@"png"]]];
+        [self.eyebrowView setImage:[UIImage imageWithContentsOfFile:[[NSBundle mainBundle] pathForResource:@"eyebrow0" ofType:@"png"]]];
+        [self.frontHairView setImage:[UIImage imageWithContentsOfFile:[[NSBundle mainBundle] pathForResource:@"hairG0-3-0-front" ofType:@"png"]]];
+        [self.backHairImage setImage:[UIImage imageWithContentsOfFile:[[NSBundle mainBundle] pathForResource:@"hairG0-3-0-back" ofType:@"png"]]];
+    }else
+    {
+        [self.eyeView setImage:[UIImage imageWithContentsOfFile:[[NSBundle mainBundle] pathForResource:@"eye3" ofType:@"png"]]];
+        [self.eyebrowView setImage:[UIImage imageWithContentsOfFile:[[NSBundle mainBundle] pathForResource:@"eyebrow1" ofType:@"png"]]];
+        [self.frontHairView setImage:[UIImage imageWithContentsOfFile:[[NSBundle mainBundle] pathForResource:@"hair0-4-1-front" ofType:@"png"]]];
     }
 //    [self.backHairImage setImage:[UIImage imageWithContentsOfFile:[[NSBundle mainBundle] pathForResource:@"hair1-2-0-back" ofType:@"png"]]];
     
@@ -364,11 +383,12 @@ bool needSaveAlert;
     [self makeListFullElementsForPage:[pageNum intValue] withData:listsText];
 
     
-    UILabel *moodTextLabel = [[UILabel alloc] initWithFrame:CGRectMake(2, self.moodView.frame.size.height/2-27, self.moodView.frame.size.width-4, 54)];
+    UILabel *moodTextLabel = [[UILabel alloc] initWithFrame:CGRectMake(7, self.moodView.frame.size.height/2-40, self.moodView.frame.size.width-14, 70)];
     moodTextLabel.textAlignment = NSTextAlignmentCenter;
     moodTextLabel.textColor = [UIColor blackColor];
     moodTextLabel.backgroundColor = [UIColor clearColor];
-    moodTextLabel.font = [UIFont boldSystemFontOfSize:18.0f];
+    moodTextLabel.font = [UIFont systemFontOfSize:16.0f];
+    moodTextLabel.numberOfLines = 3;
     self.customTextLabel = moodTextLabel;
     [self.moodView addSubview:moodTextLabel];
     
@@ -623,6 +643,11 @@ bool needSaveAlert;
         self.headImage.swipeOrientation = swipeAll;
         self.headImage.limitationUp =0;
         self.headImage.limitationDown =0;
+    }else if ([sender.imageLevel intValue] == 10)//hat
+    {
+        self.headImage.swipeOrientation = swipevertical;
+        self.headImage.limitationUp = [self.originYArray[[sender.imageLevel intValue]] floatValue] - 10;
+        self.headImage.limitationDown =[self.originYArray[[sender.imageLevel intValue]] floatValue] + 10;
     }else if ([sender.imageLevel intValue] == 12)//pet view
     {
         self.headImage.swipeOrientation = swipeHorizontal;
@@ -634,9 +659,21 @@ bool needSaveAlert;
         self.headImage.limitationUp = 0;
         self.headImage.limitationDown = 0;
 
-        if (sender.tag == 2  || sender.tag == 3) {
+        if (sender.tag == 3) {
+            [self.customTextLabel setFrame:CGRectMake(7, self.moodView.frame.size.height/2-40, self.moodView.frame.size.width-14, 70)];
+
+            self.customTextLabel.numberOfLines = 3;
             [invisibleTextFiled becomeFirstResponder];
-        }else
+        }else if (sender.tag == 2)
+        {
+            [self.customTextLabel setFrame:CGRectMake(1, self.moodView.frame.size.height/2-40, SCREEN_WIDTH*5/6, 40)];
+
+            self.customTextLabel.numberOfLines = 1;
+            [invisibleTextFiled becomeFirstResponder];
+
+
+        }
+        else
         {
             [self.customTextLabel setText:@""];
             [self hideCustomTextView];
@@ -741,6 +778,9 @@ bool needSaveAlert;
                      }
                      completion:nil
      ];
+    
+    [self hideColorViewAnimationFor:self.colorView];
+
 }
 
 
@@ -771,8 +811,12 @@ bool needSaveAlert;
 -(void)showHairColorViewWith:(elemntButton *)sender
 {
 
+    CGFloat btnSize = 0;
+    
+    btnSize = (sender.frame.size.width*3/4-12)/1.6;
+    
     if (!self.colorView) {
-        self.colorView = [[UIView alloc] initWithFrame:CGRectMake(0, SCREEN_HEIGHT, SCREEN_WIDTH, sender.frame.size.height)];
+        self.colorView = [[UIView alloc] initWithFrame:CGRectMake(0, SCREEN_HEIGHT, SCREEN_WIDTH,btnSize)];
     }else
     {
         
@@ -787,16 +831,14 @@ bool needSaveAlert;
     
     for (int i = 0; i<sender.imageColor; i++) {
         
-        CGFloat btnSize = 0;
 
-        btnSize = (sender.frame.size.width*3/4-12)/1.6;
 
         CGFloat startX = (SCREEN_WIDTH-(btnSize*sender.imageColor + 5*(sender.imageColor-1)))/2;
         
 
        
         
-        elemntButton *colorBtn = [[elemntButton alloc] initWithFrame:CGRectMake(startX+i*(btnSize+5),(sender.frame.size.height - btnSize-5), btnSize,btnSize)];
+        elemntButton *colorBtn = [[elemntButton alloc] initWithFrame:CGRectMake(startX+i*(btnSize+5),0, btnSize,btnSize)];
 
 
         [colorBtn setImage:[UIImage imageWithContentsOfFile:[[NSBundle mainBundle] pathForResource:colorKey[i] ofType:@"png"]] forState:UIControlStateNormal];
@@ -1173,8 +1215,7 @@ bool needSaveAlert;
                                 {
                                     if(type ==ShareTypeWeixiTimeline && ![[NSUserDefaults standardUserDefaults] objectForKey:@"hasShared"])
                                     {
-                                    //eric: to be sned da bai....
-                                    [self writeToPurchasedFor:@"宠物" withProduct:@"dabai"];
+                                    [self writeToPurchasedFor:@"宠物" withProduct:@"pet13"];
                                     [[NSUserDefaults standardUserDefaults] setObject:@"yes" forKey:@"hasShared"];
                                     [self.shareGift setHidden:YES];
                                         

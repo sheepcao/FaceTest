@@ -144,7 +144,8 @@
                                             <exclude reference="Kra-Fl-4BG"/>
                                         </mask>
                                     </variation>
-                                    <variation key="heightClass=regular-widthClass=compact">
+                                    <variation key="heightClass=regular-widthClass=compact" misplaced="YES">
+                                        <rect key="frame" x="1" y="5" width="30" height="21"/>
                                         <mask key="constraints">
                                             <include reference="Kra-Fl-4BG"/>
                                         </mask>
@@ -547,7 +548,8 @@
                                     <exclude reference="UqG-p9-TU1"/>
                                 </mask>
                             </variation>
-                            <variation key="heightClass=regular-widthClass=compact">
+                            <variation key="heightClass=regular-widthClass=compact" misplaced="YES">
+                                <rect key="frame" x="44" y="78" width="144" height="143"/>
                                 <mask key="constraints">
                                     <include reference="UqG-p9-TU1"/>
                                 </mask>

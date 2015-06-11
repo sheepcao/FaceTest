@@ -43,9 +43,9 @@
             if ([product.productIdentifier isEqualToString:@"sheepcao.AnimeFace.hotSale"]) {
                 
                 [CommonUtility coinsChange:20];
-                [self writeToPurchasedFor:@"手势" withProduct:@"diannaoshoushi"];
-                [self writeToPurchasedFor:@"头发女" withProduct:@"xuezhizi"];
-                [self writeToPurchasedFor:@"头发" withProduct:@"xuezhizi"];
+                [self writeToPurchasedFor:@"手势" withProduct:@"gesture14"];
+                [self writeToPurchasedFor:@"头发女" withProduct:@"hairtong17-3"];
+                [self writeToPurchasedFor:@"头发" withProduct:@"hairtong17-3"];
 
                 [[NSUserDefaults standardUserDefaults] setObject:@"yes" forKey:@"hasBoughtHotSale"];
                 

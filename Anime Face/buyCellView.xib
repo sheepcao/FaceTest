@@ -15,6 +15,9 @@
             <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="PXe-qG-4ll" id="nXQ-GZ-Vh3">
                 <autoresizingMask key="autoresizingMask"/>
                 <subviews>
+                    <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="横条.png" translatesAutoresizingMaskIntoConstraints="NO" id="2bd-vs-ebj">
+                        <rect key="frame" x="8" y="8" width="304" height="50"/>
+                    </imageView>
                     <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="diamond.png" translatesAutoresizingMaskIntoConstraints="NO" id="r4o-P3-8Y6">
                         <rect key="frame" x="20" y="13" width="46" height="33"/>
                         <constraints>
@@ -44,7 +47,7 @@
                             </mask>
                         </variation>
                     </button>
-                    <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="xuxian.png" translatesAutoresizingMaskIntoConstraints="NO" id="aE5-x1-KSe">
+                    <imageView hidden="YES" userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="xuxian.png" translatesAutoresizingMaskIntoConstraints="NO" id="aE5-x1-KSe">
                         <rect key="frame" x="8" y="54" width="304" height="4"/>
                         <constraints>
                             <constraint firstAttribute="height" constant="4" id="sCg-Qi-4zk"/>
@@ -66,11 +69,15 @@
                     <constraint firstAttribute="centerX" secondItem="r4o-P3-8Y6" secondAttribute="centerX" constant="169.5" id="Xyz-KW-unA"/>
                     <constraint firstItem="oQ6-Hf-sSz" firstAttribute="bottom" secondItem="nXQ-GZ-Vh3" secondAttribute="bottomMargin" constant="3" id="atx-R2-8kz"/>
                     <constraint firstItem="cFp-lO-YA6" firstAttribute="width" secondItem="oQ6-Hf-sSz" secondAttribute="height" multiplier="50:23" id="bkd-rz-NJk"/>
+                    <constraint firstItem="2bd-vs-ebj" firstAttribute="bottom" secondItem="nXQ-GZ-Vh3" secondAttribute="bottomMargin" id="hXs-kt-2pj"/>
+                    <constraint firstAttribute="trailingMargin" secondItem="2bd-vs-ebj" secondAttribute="trailing" id="iEA-4B-b9i"/>
                     <constraint firstAttribute="centerY" secondItem="oQ6-Hf-sSz" secondAttribute="centerY" id="jki-VY-dgi"/>
                     <constraint firstAttribute="trailingMargin" secondItem="cFp-lO-YA6" secondAttribute="trailing" constant="16" id="s3B-Gm-JY2"/>
+                    <constraint firstItem="2bd-vs-ebj" firstAttribute="top" secondItem="nXQ-GZ-Vh3" secondAttribute="topMargin" id="s6b-iR-GT6"/>
                     <constraint firstAttribute="bottomMargin" secondItem="cFp-lO-YA6" secondAttribute="bottom" id="uEz-qh-yGi"/>
                     <constraint firstItem="r4o-P3-8Y6" firstAttribute="top" secondItem="nXQ-GZ-Vh3" secondAttribute="topMargin" constant="5" id="vpr-30-8D3"/>
                     <constraint firstItem="oQ6-Hf-sSz" firstAttribute="leading" secondItem="r4o-P3-8Y6" secondAttribute="trailing" constant="3" id="xVG-Jg-hmq"/>
+                    <constraint firstItem="2bd-vs-ebj" firstAttribute="leading" secondItem="nXQ-GZ-Vh3" secondAttribute="leadingMargin" id="yTN-bf-cfz"/>
                 </constraints>
                 <variation key="default">
                     <mask key="constraints">
@@ -95,5 +102,6 @@
         <image name="6kuai-normal.png" width="194" height="89"/>
         <image name="diamond.png" width="70" height="50"/>
         <image name="xuxian.png" width="724" height="4"/>
+        <image name="横条.png" width="778" height="116"/>
     </resources>
 </document>

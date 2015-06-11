@@ -64,7 +64,7 @@ bool showingDefault;
         }
         
     }
-    showingDefault = YES;
+//    showingDefault = YES;
     [self setupLists];
 }
 
@@ -331,7 +331,7 @@ bool showingDefault;
 //        }
         
         [self.faceImage setImage:[UIImage imageWithContentsOfFile:[[NSBundle mainBundle] pathForResource:@"face0" ofType:@"png"]]];
-        [self.bodyImage setImage:[UIImage imageWithContentsOfFile:[[NSBundle mainBundle] pathForResource:@"body1" ofType:@"png"]]];
+        [self.bodyImage setImage:[UIImage imageWithContentsOfFile:[[NSBundle mainBundle] pathForResource:@"shop body" ofType:@"png"]]];
 
         NSArray *nameArray = [sender.imageName componentsSeparatedByString:@"-"];
         NSString *backImageName = @"";
@@ -409,6 +409,18 @@ bool showingDefault;
         [self.buyAction setEnabled:YES];
         [self.buyAction setImage:[UIImage imageNamed:@"purchase-normal"] forState:UIControlStateNormal];
         [self.buyAction setImage:[UIImage imageNamed:@"purchase-pressl"] forState:UIControlStateHighlighted];
+    }
+    
+    if(sender.sex == 1)
+    {
+        [self.sexImage setImage:[UIImage imageNamed:@"male"]];
+    }else if(sender.sex == 0)
+    {
+        [self.sexImage setImage:[UIImage imageNamed:@"common"]];
+
+    }else if(sender.sex == 1000)
+    {
+        [self.sexImage setImage:[UIImage imageNamed:@"female"]];
     }
     
     
@@ -550,7 +562,10 @@ bool showingDefault;
         self.GameData = [self readDataFromPlist:@"GameData"];
         [self costDiamond:self.productNow.price];
         
-        
+        [self.buyAction setImage:[UIImage imageNamed:@"sold out1"] forState:UIControlStateNormal];
+        [self.buyAction setEnabled:NO];
+
+
         [self refreshProducts];
         
         [CommonUtility tapSound:@"buySuccess" withType:@"wav"];

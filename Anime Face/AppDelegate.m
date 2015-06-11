@@ -38,6 +38,9 @@
         [CommonUtility playBackMusic];
     }
     
+    
+    [NSThread sleepForTimeInterval:1.0];
+
     return YES;
 }
 

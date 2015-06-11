@@ -209,6 +209,9 @@ bool shouldFinish;
 
 - (IBAction)start:(UIButton *)sender {
     
+    
+    [sender setEnabled:NO];
+    
     if ([[[NSUserDefaults standardUserDefaults] objectForKey:@"luckyFinished"] isEqualToString:@"no"]) {
         [[NSUserDefaults standardUserDefaults] setObject:@"yes" forKey:@"luckyFinished"];
         
@@ -424,6 +427,9 @@ bool shouldFinish;
     
 
     [self updateCollectionNum];
+    
+    [self.startReward setEnabled:YES];
+
 
     
 }
