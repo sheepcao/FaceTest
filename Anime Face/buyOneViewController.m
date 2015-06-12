@@ -32,6 +32,9 @@
     // Dispose of any resources that can be recreated.
 }
 - (void)productPurchased:(NSNotification *)notification {
+    
+    [MobClick event:@"1yuan"];
+
     if (![self.loadingView isHidden]) {
         [self.loadingView setHidden:YES];
     }

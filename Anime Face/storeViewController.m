@@ -29,6 +29,9 @@ bool showingDefault;
 
 - (void)viewDidLoad {
     [super viewDidLoad];
+    
+    [MobClick event:@"store"];
+
     // Do any additional setup after loading the view from its nib.
     
     self.heartArray = @[self.heart1,self.heart2,self.heart3,self.heart4,self.heart5];
@@ -552,6 +555,10 @@ bool showingDefault;
 //    
 //}
 - (IBAction)buyProduct:(id)sender {
+    
+    [MobClick event:@"bugProduct"];
+
+    
     if (!self.productNow) {
         return;
     }

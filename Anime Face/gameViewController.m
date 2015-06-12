@@ -96,11 +96,16 @@ bool needSaveAlert;
         [self.eyebrowView setImage:[UIImage imageWithContentsOfFile:[[NSBundle mainBundle] pathForResource:@"eyebrow0" ofType:@"png"]]];
         [self.frontHairView setImage:[UIImage imageWithContentsOfFile:[[NSBundle mainBundle] pathForResource:@"hairG0-3-0-front" ofType:@"png"]]];
         [self.backHairImage setImage:[UIImage imageWithContentsOfFile:[[NSBundle mainBundle] pathForResource:@"hairG0-3-0-back" ofType:@"png"]]];
+        
+        [MobClick event:@"girlGame"];
+
     }else
     {
         [self.eyeView setImage:[UIImage imageWithContentsOfFile:[[NSBundle mainBundle] pathForResource:@"eye3" ofType:@"png"]]];
         [self.eyebrowView setImage:[UIImage imageWithContentsOfFile:[[NSBundle mainBundle] pathForResource:@"eyebrow1" ofType:@"png"]]];
         [self.frontHairView setImage:[UIImage imageWithContentsOfFile:[[NSBundle mainBundle] pathForResource:@"hair0-4-1-front" ofType:@"png"]]];
+        [MobClick event:@"boyGame"];
+
     }
 //    [self.backHairImage setImage:[UIImage imageWithContentsOfFile:[[NSBundle mainBundle] pathForResource:@"hair1-2-0-back" ofType:@"png"]]];
     
@@ -236,6 +241,9 @@ bool needSaveAlert;
 }
 -(void)catalogTapped:(UIButton *)sender
 {
+    [MobClick event:@"catalogTap"];
+
+    
     NSLog(@"tag:%ld",(long)sender.tag);
     int page = (int)(sender.tag-1);
 
@@ -552,6 +560,10 @@ bool needSaveAlert;
 
 -(void)elementTapped:(elemntButton *)sender
 {
+    
+    [MobClick event:@"element"];
+
+    
     NSLog(@"element:%@",sender.imageLevel);
     
     UIView *superView = [sender superview];
@@ -1151,6 +1163,9 @@ bool needSaveAlert;
 
 - (IBAction)share:(id)sender {
     
+    [MobClick event:@"sharephoto"];
+
+    
     if ([ALAssetsLibrary authorizationStatus] == ALAuthorizationStatusNotDetermined) {
         ALAssetsLibrary *assetsLibrary = [[ALAssetsLibrary alloc] init];
         [assetsLibrary enumerateGroupsWithTypes:ALAssetsGroupAll usingBlock:^(ALAssetsGroup *group, BOOL *stop) {
@@ -1239,6 +1254,9 @@ bool needSaveAlert;
 }
 
 - (IBAction)saveAlbum:(id)sender {
+    
+    [MobClick event:@"savephoto"];
+
     [self saveImage:self.imageShare];
     [self cancelPhoto:nil];
 
@@ -1342,6 +1360,8 @@ bool needSaveAlert;
 
 - (IBAction)saveAndShare:(id)sender {
     
+    [MobClick event:@"photo"];
+
     if(soundSwitch)
     {
         [CommonUtility tapSound:@"click" withType:@"mp3"];

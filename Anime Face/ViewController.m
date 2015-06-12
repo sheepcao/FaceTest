@@ -303,6 +303,7 @@
 }
 
 - (IBAction)oneBuyClick:(id)sender {
+    
     if(soundSwitch)
     {
         [CommonUtility tapSound:@"click" withType:@"mp3"];
@@ -330,6 +331,9 @@
 }
 
 - (IBAction)settingTap:(id)sender {
+    
+    [MobClick event:@"setting"];
+
     if(soundSwitch)
     {
         [CommonUtility tapSound:@"click" withType:@"mp3"];
@@ -608,16 +612,24 @@
 }
 -(void)reviewTapped:(UIButton *)sender
 {
+    [MobClick event:@"review"];
+
     [[UIApplication sharedApplication] openURL:[NSURL URLWithString:REVIEW_URL]];
 
 }
 -(void)teamProductTapped:(UIButton *)sender
 {
+    [MobClick event:@"allApp"];
+
     [[UIApplication sharedApplication] openURL:[NSURL URLWithString:ALLAPP_URL]];
 
 }
 -(void)shareAppTapped:(UIButton *)sender
+
 {
+    [MobClick event:@"shareApp"];
+
+    
     UIImage *icon = [UIImage imageNamed:@"ICON 512"];
     
     id<ISSContent> publishContent = [ShareSDK content:@"萌漫头像"
@@ -657,6 +669,10 @@
 
 -(void)contactTapped:(UIButton *)sender
 {
+    
+    [MobClick event:@"email"];
+
+    
     MFMailComposeViewController *picker = [[MFMailComposeViewController alloc] init];
     [picker.view setFrame:CGRectMake(0,20 , 320, self.view.frame.size.height-20)];
     picker.mailComposeDelegate = self;

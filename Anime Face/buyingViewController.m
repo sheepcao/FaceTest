@@ -59,6 +59,10 @@
 }
 
 - (void)productPurchased:(NSNotification *)notification {
+    
+    [MobClick event:@"buyDiamond"];
+
+    
     if (![self.loadingView isHidden]) {
         [self.loadingView setHidden:YES];
     }

@@ -29,6 +29,8 @@ bool shouldFinish;
 
 - (void)viewDidLoad {
     [super viewDidLoad];
+    [MobClick event:@"lucky"];
+
 //    self.navigationController.navigationBarHidden = NO;
 
     [self.rewardView setHidden:YES];
@@ -221,6 +223,8 @@ bool shouldFinish;
 
     
     if ([[[NSUserDefaults standardUserDefaults] objectForKey:@"luckyFinished"] isEqualToString:@"no"] || ![[NSUserDefaults standardUserDefaults] objectForKey:@"luckyFinished"] ) {
+        [MobClick event:@"freeLucky"];
+
         
         [[NSUserDefaults standardUserDefaults] setObject:@"yes" forKey:@"luckyFinished"];
         
@@ -228,6 +232,8 @@ bool shouldFinish;
     
     }else
     {
+        [MobClick event:@"costLucky"];
+
         if([self checkDiamond:20])
         {
             [self costDiamond:20];
