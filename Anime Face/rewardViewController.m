@@ -55,7 +55,7 @@ bool shouldFinish;
 
     [self updateCollectionNum];
 
-    [self spinwithView:self.spinView];
+//    [self spinwithView:self.spinView];
     
     //witch animation
     
@@ -79,7 +79,11 @@ bool shouldFinish;
 
 }
 
-
+-(void)viewDidAppear:(BOOL)animated
+{
+    [super viewDidAppear:animated];
+//    [self spinwithView:self.spinView];
+}
 
 -(void)animateWitcth
 {
@@ -209,10 +213,15 @@ bool shouldFinish;
 
 - (IBAction)start:(UIButton *)sender {
     
+    [self spinwithView:self.spinView];
+
     
     [sender setEnabled:NO];
     
-    if ([[[NSUserDefaults standardUserDefaults] objectForKey:@"luckyFinished"] isEqualToString:@"no"]) {
+
+    
+    if ([[[NSUserDefaults standardUserDefaults] objectForKey:@"luckyFinished"] isEqualToString:@"no"] || ![[NSUserDefaults standardUserDefaults] objectForKey:@"luckyFinished"] ) {
+        
         [[NSUserDefaults standardUserDefaults] setObject:@"yes" forKey:@"luckyFinished"];
         
         [self.freeTag setImage:[UIImage imageNamed:@"20diamond"]];

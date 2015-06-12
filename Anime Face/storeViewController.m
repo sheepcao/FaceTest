@@ -164,7 +164,11 @@ bool showingDefault;
     
 }
 -(void)scrollToCatalog:(NSInteger)BtnTag
+
 {
+    [CommonUtility tapSound:@"catalog" withType:@"mp3"];
+
+    
     UIButton * catalogBtn =(UIButton *)[self.catalogScroll viewWithTag:BtnTag];
     [self.catalogScroll setContentOffset:CGPointMake((catalogBtn.center.x - self.catalogScroll.center.x), 0) animated:YES];
     

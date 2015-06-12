@@ -233,7 +233,7 @@
 		<key>hairtong12-2</key>
 		<array>
 			<string>0</string>
-			<string>1</string>
+			<string>7</string>
 		</array>
 		<key>hairtong13-2</key>
 		<array>
@@ -554,6 +554,10 @@
 			<string>pet12</string>
 			<string>pet18</string>
 			<string>pet20</string>
+			<string>pet21</string>
+			<string>pet22</string>
+			<string>pet23</string>
+			<string>pet24</string>
 		</array>
 		<key>背景</key>
 		<array>
@@ -887,6 +891,7 @@
 			<string>cloth-tong22</string>
 			<string>cloth-tong23</string>
 			<string>cloth-tong24</string>
+			<string>cloth-tong26</string>
 		</array>
 		<key>衣服女</key>
 		<array>
@@ -939,6 +944,7 @@
 			<string>cloth-tong22</string>
 			<string>cloth-tong23</string>
 			<string>cloth-tong24</string>
+			<string>cloth-tong26</string>
 		</array>
 		<key>胡子</key>
 		<array>
@@ -1302,6 +1308,22 @@
 				<string>100</string>
 				<key>star</key>
 				<string>2</string>
+				<key>colorNum</key>
+				<string>1</string>
+				<key>sex</key>
+				<string>0</string>
+			</dict>
+			<dict>
+				<key>name</key>
+				<string>pet25</string>
+				<key>isSold</key>
+				<string>no</string>
+				<key>title</key>
+				<string>田园犬</string>
+				<key>price</key>
+				<string>60</string>
+				<key>star</key>
+				<string>0</string>
 				<key>colorNum</key>
 				<string>1</string>
 				<key>sex</key>
