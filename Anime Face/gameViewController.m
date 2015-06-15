@@ -675,12 +675,15 @@ bool needSaveAlert;
             [self.customTextLabel setFrame:CGRectMake(7, self.moodView.frame.size.height/2-40, self.moodView.frame.size.width-14, 70)];
 
             self.customTextLabel.numberOfLines = 3;
+            [invisibleTextFiled setHidden:NO];
             [invisibleTextFiled becomeFirstResponder];
         }else if (sender.tag == 2)
         {
             [self.customTextLabel setFrame:CGRectMake(1, self.moodView.frame.size.height/2-40, SCREEN_WIDTH*5/6, 40)];
 
             self.customTextLabel.numberOfLines = 1;
+            [invisibleTextFiled setHidden:NO];
+
             [invisibleTextFiled becomeFirstResponder];
 
 
@@ -1126,6 +1129,8 @@ bool needSaveAlert;
                
                 [successAlert show];
                 NSLog(@"saved Image!");
+                needSaveAlert = NO;
+
 
                 return;
             }
@@ -1175,6 +1180,8 @@ bool needSaveAlert;
                 
 //
                 NSLog(@"saved Image!");
+                
+                needSaveAlert = NO;
                 
                 return;
             }
@@ -1320,7 +1327,7 @@ bool needSaveAlert;
     myStore.GameData = self.GameData;
     myStore.delegateRefresh = self;
     
-    [invisibleTextFiled removeFromSuperview];
+    [invisibleTextFiled setHidden:YES];
     [invisibleTextFiled resignFirstResponder];
     [self hideCustomTextView];
 
@@ -1351,7 +1358,7 @@ bool needSaveAlert;
     myReward.GameData = self.GameData;
     myReward.delegateRefresh = self;
 
-    [invisibleTextFiled removeFromSuperview];
+    [invisibleTextFiled setHidden:YES];
     [invisibleTextFiled resignFirstResponder];
     [self hideCustomTextView];
     [self.navigationController pushViewController:myReward animated:YES];

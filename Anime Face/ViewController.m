@@ -464,7 +464,7 @@
  
     
     
-    UIButton *musicBtn = [[UIButton alloc] initWithFrame:CGRectMake(backImg.frame.size.width/2-128, 55, 116, 35)];
+    UIButton *musicBtn = [[UIButton alloc] initWithFrame:CGRectMake(backImg.frame.size.width/2-128, 50, 116, 35)];
     [musicBtn setImage:[UIImage imageNamed:@"music on"] forState:UIControlStateNormal];
     [musicBtn setImage:[UIImage imageNamed:@"music off"] forState:UIControlStateSelected];
     [musicBtn addTarget:self action:@selector(musicTapped:) forControlEvents:UIControlEventTouchUpInside];
@@ -476,7 +476,7 @@
         [musicBtn setSelected:YES];
     }
     
-    UIButton *soundBtn = [[UIButton alloc] initWithFrame:CGRectMake(backImg.frame.size.width/2+12, 55, 116, 35)];
+    UIButton *soundBtn = [[UIButton alloc] initWithFrame:CGRectMake(backImg.frame.size.width/2+12, 50, 116, 35)];
     [soundBtn setImage:[UIImage imageNamed:@"voice on"] forState:UIControlStateNormal];
     [soundBtn setImage:[UIImage imageNamed:@"voice off"] forState:UIControlStateSelected];
     [soundBtn addTarget:self action:@selector(soundTapped:) forControlEvents:UIControlEventTouchUpInside];
@@ -488,37 +488,51 @@
         [soundBtn setSelected:YES];
     }
     
-    UIButton *reviewBtn = [[UIButton alloc] initWithFrame:CGRectMake(33, soundBtn.frame.origin.y+48, 214, 35)];
+    UIButton *reviewBtn = [[UIButton alloc] initWithFrame:CGRectMake(33, soundBtn.frame.origin.y+45, 214, 35)];
     [reviewBtn setImage:[UIImage imageNamed:@"give advice normal"] forState:UIControlStateNormal];
     [reviewBtn setImage:[UIImage imageNamed:@"give advice press"] forState:UIControlStateHighlighted];
     [reviewBtn addTarget:self action:@selector(reviewTapped:) forControlEvents:UIControlEventTouchUpInside];
     
-    UIButton *teamProductBtn = [[UIButton alloc] initWithFrame:CGRectMake(33, reviewBtn.frame.origin.y+48, 214, 35)];
+    UIButton *teamProductBtn = [[UIButton alloc] initWithFrame:CGRectMake(33, reviewBtn.frame.origin.y+45, 214, 35)];
     [teamProductBtn setImage:[UIImage imageNamed:@"team production normal"] forState:UIControlStateNormal];
     [teamProductBtn setImage:[UIImage imageNamed:@"team production press"] forState:UIControlStateHighlighted];
     [teamProductBtn addTarget:self action:@selector(teamProductTapped:) forControlEvents:UIControlEventTouchUpInside];
     
     
-    UIButton *shareBtn = [[UIButton alloc] initWithFrame:CGRectMake(33, teamProductBtn.frame.origin.y+48, 214, 35)];
+    UIButton *shareBtn = [[UIButton alloc] initWithFrame:CGRectMake(33, teamProductBtn.frame.origin.y+45, 214, 35)];
     [shareBtn setImage:[UIImage imageNamed:@"share normal"] forState:UIControlStateNormal];
     [shareBtn setImage:[UIImage imageNamed:@"share press"] forState:UIControlStateHighlighted];
     [shareBtn addTarget:self action:@selector(shareAppTapped:) forControlEvents:UIControlEventTouchUpInside];
     
-    UIImageView *line = [[UIImageView alloc] initWithFrame:CGRectMake(10, shareBtn.frame.origin.y+45, 260, 3)];
+    UIImageView *line = [[UIImageView alloc] initWithFrame:CGRectMake(10, shareBtn.frame.origin.y+43, 260, 3)];
     [line setImage:[UIImage imageNamed:@"xuxian"]];
     
-    UIButton *contact = [[UIButton alloc] initWithFrame:CGRectMake(10, line.frame.origin.y+10, 260, 35)];
+    UIButton *contact = [[UIButton alloc] initWithFrame:CGRectMake(10, line.frame.origin.y, 260, 35)];
     contact.backgroundColor = [UIColor clearColor];
-    contact.titleLabel.font = [UIFont boldSystemFontOfSize:17.0f];
+    contact.titleLabel.font = [UIFont boldSystemFontOfSize:16.0f];
     [contact setTitleColor:[UIColor colorWithRed:155/255.0f green:86/255.0f blue:65/255.0f alpha:1.0] forState:UIControlStateNormal] ;
     [contact setTitle:@"联系我们: 3284753277@qq.com" forState:UIControlStateNormal];
     [contact addTarget:self action:@selector(contactTapped:) forControlEvents:UIControlEventTouchUpInside];
     
-    UILabel *versionLabel = [[UILabel alloc] initWithFrame:CGRectMake(settingView.frame.size.width-140, settingView.frame.size.height-35, 130, 30)];
+    UILabel *wechatLabel = [[UILabel alloc] initWithFrame:CGRectMake(10, contact.frame.origin.y+23, 260, 35)];
+    [wechatLabel setText:@"   微信公众号: FaceAnime"];
+    wechatLabel.backgroundColor = [UIColor clearColor];
+    wechatLabel.textColor = [UIColor colorWithRed:155/255.0f green:86/255.0f blue:65/255.0f alpha:1.0];
+    wechatLabel.font = [UIFont boldSystemFontOfSize:16.0];
+    
+    
+    UILabel *sinaLabel = [[UILabel alloc] initWithFrame:CGRectMake(10, wechatLabel.frame.origin.y+23, 260, 35)];
+    [sinaLabel setText:@"   官方微博: 萌漫头像"];
+    sinaLabel.backgroundColor = [UIColor clearColor];
+    sinaLabel.textColor = [UIColor colorWithRed:155/255.0f green:86/255.0f blue:65/255.0f alpha:1.0];
+    sinaLabel.font = [UIFont boldSystemFontOfSize:16.0];
+    
+    
+    UILabel *versionLabel = [[UILabel alloc] initWithFrame:CGRectMake(settingView.frame.size.width-120, settingView.frame.size.height-25, 120, 30)];
     [versionLabel setText:[NSString stringWithFormat:@"版本号: V%@",VERSIONNUMBER]];
     versionLabel.backgroundColor = [UIColor clearColor];
     versionLabel.textColor = [UIColor colorWithRed:146/255.0f green:127/255.0f blue:122/255.0f alpha:1.0];
-    versionLabel.font = [UIFont systemFontOfSize:14.0];
+    versionLabel.font = [UIFont systemFontOfSize:13.0];
 
     
     
@@ -535,6 +549,9 @@
     [settingView addSubview:shareBtn];
     [settingView addSubview:line];
     [settingView addSubview:contact];
+    [settingView addSubview:wechatLabel];
+    [settingView addSubview:sinaLabel];
+
     [settingView addSubview:versionLabel];
 
     [settingView addSubview:cancelBtn];

@@ -22,7 +22,7 @@
                     <rect key="frame" x="30" y="154" width="260" height="260"/>
                     <subviews>
                         <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="iapBoard.png" translatesAutoresizingMaskIntoConstraints="NO" id="VQV-yJ-mF2">
-                            <rect key="frame" x="0.0" y="0.0" width="260" height="260"/>
+                            <rect key="frame" x="0.0" y="0.0" width="245" height="260"/>
                         </imageView>
                         <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" scrollEnabled="NO" showsHorizontalScrollIndicator="NO" showsVerticalScrollIndicator="NO" style="plain" separatorStyle="none" allowsSelection="NO" rowHeight="44" sectionHeaderHeight="22" sectionFooterHeight="22" translatesAutoresizingMaskIntoConstraints="NO" id="xll-bi-WM8">
                             <rect key="frame" x="10" y="25" width="230" height="225"/>
@@ -47,6 +47,7 @@
                     <constraints>
                         <constraint firstAttribute="trailing" secondItem="xll-bi-WM8" secondAttribute="trailing" constant="20" id="6l3-xe-gm9"/>
                         <constraint firstItem="xll-bi-WM8" firstAttribute="top" secondItem="XGi-62-AnG" secondAttribute="top" constant="25" id="Gpi-ui-Lxd"/>
+                        <constraint firstAttribute="width" constant="260" id="Meb-tD-d50"/>
                         <constraint firstAttribute="bottom" secondItem="xll-bi-WM8" secondAttribute="bottom" constant="10" id="No6-dG-Cgv"/>
                         <constraint firstAttribute="width" secondItem="XGi-62-AnG" secondAttribute="height" multiplier="1:1" id="U1K-z8-Ga8"/>
                         <constraint firstItem="xll-bi-WM8" firstAttribute="leading" secondItem="XGi-62-AnG" secondAttribute="leading" constant="10" id="V8u-in-uye"/>
@@ -54,7 +55,7 @@
                         <constraint firstItem="vmI-2C-s29" firstAttribute="top" secondItem="XGi-62-AnG" secondAttribute="top" id="e9X-qJ-qWp"/>
                         <constraint firstAttribute="bottom" secondItem="VQV-yJ-mF2" secondAttribute="bottom" id="h6N-qZ-qf7"/>
                         <constraint firstAttribute="trailing" secondItem="vmI-2C-s29" secondAttribute="trailing" id="ibm-pb-HTn"/>
-                        <constraint firstAttribute="trailing" secondItem="VQV-yJ-mF2" secondAttribute="trailing" id="svv-aG-PN1"/>
+                        <constraint firstAttribute="trailing" secondItem="VQV-yJ-mF2" secondAttribute="trailing" constant="15" id="svv-aG-PN1"/>
                         <constraint firstItem="VQV-yJ-mF2" firstAttribute="top" secondItem="XGi-62-AnG" secondAttribute="top" id="xeZ-4x-EMH"/>
                     </constraints>
                 </view>
@@ -122,6 +123,7 @@
             <simulatedScreenMetrics key="simulatedDestinationMetrics" type="retina4"/>
             <variation key="default">
                 <mask key="constraints">
+                    <exclude reference="Dp1-oT-M4K"/>
                     <exclude reference="Z0j-KA-XgW"/>
                     <exclude reference="dyv-Mw-vpG"/>
                     <exclude reference="nbL-bh-AfA"/>

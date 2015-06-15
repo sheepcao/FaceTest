@@ -250,7 +250,7 @@
                                     </mask>
                                 </variation>
                                 <variation key="widthClass=compact" misplaced="YES">
-                                    <rect key="frame" x="184" y="400" width="37" height="20"/>
+                                    <rect key="frame" x="185" y="400" width="36" height="19"/>
                                     <mask key="constraints">
                                         <include reference="CrC-6H-zjc"/>
                                         <exclude reference="hak-47-r6f"/>
