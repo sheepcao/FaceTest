@@ -15,5 +15,6 @@
 
 - (IBAction)buyOneTap:(id)sender;
 - (IBAction)closeBuy:(id)sender;
+- (IBAction)restoreTap:(id)sender;
 
 @end

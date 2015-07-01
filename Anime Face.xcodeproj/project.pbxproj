@@ -1419,6 +1419,7 @@
 		A47D6EB71AC3E1ED00AC1768 /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = A47D6EB61AC3E1ED00AC1768 /* ViewController.m */; };
 		A47D6EBC1AC3E1ED00AC1768 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = A47D6EBB1AC3E1ED00AC1768 /* Images.xcassets */; };
 		A47D6ECB1AC3E1ED00AC1768 /* Anime_FaceTests.m in Sources */ = {isa = PBXBuildFile; fileRef = A47D6ECA1AC3E1ED00AC1768 /* Anime_FaceTests.m */; };
+		A48B16D91B395A8C00B5CB92 /* huifugoumai.png in Resources */ = {isa = PBXBuildFile; fileRef = A48B16D81B395A8C00B5CB92 /* huifugoumai.png */; };
 		A49116F61AEF4FB10050A6DA /* productNow.m in Sources */ = {isa = PBXBuildFile; fileRef = A49116F51AEF4FB10050A6DA /* productNow.m */; };
 		A4A211001AD3A2F4006973E0 /* rewardViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = A4A210FE1AD3A2F4006973E0 /* rewardViewController.m */; };
 		A4A211011AD3A2F4006973E0 /* rewardViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = A4A210FF1AD3A2F4006973E0 /* rewardViewController.xib */; };
@@ -3052,6 +3053,7 @@
 		A47D6EC41AC3E1ED00AC1768 /* Anime FaceTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "Anime FaceTests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
 		A47D6EC91AC3E1ED00AC1768 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		A47D6ECA1AC3E1ED00AC1768 /* Anime_FaceTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = Anime_FaceTests.m; sourceTree = "<group>"; };
+		A48B16D81B395A8C00B5CB92 /* huifugoumai.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = huifugoumai.png; sourceTree = "<group>"; };
 		A49116F41AEF4FB10050A6DA /* productNow.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = productNow.h; sourceTree = "<group>"; };
 		A49116F51AEF4FB10050A6DA /* productNow.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = productNow.m; sourceTree = "<group>"; };
 		A4A210FD1AD3A2F4006973E0 /* rewardViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = rewardViewController.h; sourceTree = "<group>"; };
@@ -6067,6 +6069,7 @@
 		A4EBD81D1B12C51E006B1C9D /* iap Image */ = {
 			isa = PBXGroup;
 			children = (
+				A48B16D81B395A8C00B5CB92 /* huifugoumai.png */,
 				A4FF86D81B295E120088B930 /* iapBoard.png */,
 				A4FF86D91B295E120088B930 /* 横条.png */,
 				A4B6EF8B1B26761F007EBFC7 /* 1yuangou stuff.png */,
@@ -7241,6 +7244,7 @@
 				A43629621B2537EF001FEFFA /* hair17-2-0-front.png in Resources */,
 				A43625051B2531A8001FEFFA /* eye29.png in Resources */,
 				A42C68051B0C318900B2EDDD /* inside shop-press.png in Resources */,
+				A48B16D91B395A8C00B5CB92 /* huifugoumai.png in Resources */,
 				A4362CFA1B255AB7001FEFFA /* eyebrow3-yulan.png in Resources */,
 				A40443591AF1D0E700E87C27 /* nose4-yulan.png in Resources */,
 				A4362BE51B255A5D001FEFFA /* cloth-g-35.png in Resources */,

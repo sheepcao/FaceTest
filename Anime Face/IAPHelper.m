@@ -6,6 +6,9 @@
 
 NSString *const IAPHelperProductPurchasedNotification = @"IAPHelperProductPurchasedNotification";
 
+NSString *const IAPHelperRestored = @"IAPHelperRestored";
+
+
 // 2
 @interface IAPHelper () <SKProductsRequestDelegate, SKPaymentTransactionObserver>
 {
@@ -95,12 +98,14 @@ NSString *const IAPHelperProductPurchasedNotification = @"IAPHelperProductPurcha
     
 }
 
+
 - (void)request:(SKRequest *)request didFailWithError:(NSError *)error {
     
-    NSLog(@"Failed to load list of products.");
+    NSLog(@"Failed to load list of products.%@",error);
     _productsRequest = nil;
     
-    _completionHandler(NO, nil);
+    NSArray *errorArray = @[error];
+    _completionHandler(NO, errorArray);
 //    _completionHandler = nil;
     
 }
@@ -128,6 +133,21 @@ NSString *const IAPHelperProductPurchasedNotification = @"IAPHelperProductPurcha
     
     [_loadingView setHidden:YES];
     
+}
+
+- (void)paymentQueue:(SKPaymentQueue *)queue restoreCompletedTransactionsFailedWithError:(NSError *)error
+{
+    NSLog(@"Fail restore:%@",error);
+    
+}
+- (void)paymentQueueRestoreCompletedTransactionsFinished:(SKPaymentQueue *)queue
+{
+    NSLog(@"yese!");
+    
+    [[NSNotificationCenter defaultCenter] postNotificationName:IAPHelperRestored object:nil userInfo:nil];
+
+    
+
 }
 
 - (void)completeTransaction:(SKPaymentTransaction *)transaction {

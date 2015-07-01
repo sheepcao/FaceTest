@@ -126,10 +126,11 @@
             [self.itemTable reloadData];
         }else
         {
-            UIAlertView *netAlert = [[UIAlertView alloc] initWithTitle:@"提示" message:@"获取网络数据失败,请检查您的网络状态。" delegate:nil cancelButtonTitle:@"确定" otherButtonTitles:nil, nil];
+            UIAlertView *netAlert = [[UIAlertView alloc] initWithTitle:@"提示" message:[NSString stringWithFormat:@"获取网络数据失败,请检查您的网络状态\n%@",products[0]] delegate:nil cancelButtonTitle:@"确定" otherButtonTitles:nil, nil];
             [netAlert show];
             [self.closeDelegate closingBuy];
         }
+        
         [self.loadingView setHidden:YES];
         
     }];
